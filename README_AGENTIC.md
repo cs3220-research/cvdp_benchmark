@@ -64,6 +64,49 @@ docker build -t my-agent .
 python run_benchmark.py -f dataset.jsonl -l -g my-agent
 ```
 
+### Subscription-Backed CLI Agents (Claude Code / Codex)
+
+This repo includes simple starter agents that run CLI coding agents in-container:
+
+- `examples/agent_claude/` (image: `cvdp-claude-agent`)
+- `examples/agent_codex/` (image: `cvdp-codex-agent`)
+
+Starter image toolset includes common utilities (`ripgrep`, `fd`, `jq`, `curl`, `less`, `make`, `gcc/g++`) and local verification tools (`iverilog`, `verilator`) so agents can inspect and sanity-check RTL in-container.
+
+Build them:
+
+```bash
+cd examples/agent_claude && ./build_agent.sh
+cd ../agent_codex && ./build_agent.sh
+cd ../..
+```
+
+To pass host auth/config into the agent container, set:
+
+- `AGENT_EXTRA_VOLUMES` as comma/newline-separated Docker mount specs
+- `AGENT_EXTRA_ENV` as comma/newline-separated `KEY=VALUE` pairs
+
+Example (minimal file-level mounts, read-only):
+
+```bash
+export AGENT_EXTRA_VOLUMES="$HOME/.codex/auth.json:/host_auth/codex-auth.json:ro,$HOME/.codex/config.toml:/host_auth/codex-config.toml:ro,$HOME/.codex/version.json:/host_auth/codex-version.json:ro,$HOME/.claude.json:/host_auth/claude-auth.json:ro,$HOME/.claude/settings.json:/host_auth/claude-settings.json:ro"
+export AGENT_EXTRA_ENV="CODEX_AUTH_FILE=/host_auth/codex-auth.json,CODEX_CONFIG_FILE=/host_auth/codex-config.toml,CODEX_VERSION_FILE=/host_auth/codex-version.json,CODEX_MODEL=gpt-5.3-codex,CODEX_REASONING_EFFORT=high,CLAUDE_AUTH_FILE=/host_auth/claude-auth.json,CLAUDE_SETTINGS_FILE=/host_auth/claude-settings.json"
+```
+
+Codex tuning:
+- `CODEX_MODEL` selects the model (e.g. `gpt-5.3-codex`)
+- `CODEX_REASONING_EFFORT` sets reasoning level (commonly `low`, `medium`, `high`, `xhigh`)
+
+Then run:
+
+```bash
+uv run python run_samples.py -f dataset.jsonl -l -g cvdp-codex-agent -n 5 -k 1 -p work_codex_agent
+uv run python run_samples.py -f dataset.jsonl -l -g cvdp-claude-agent -n 5 -k 1 -p work_claude_agent
+```
+
+Note: avoid mounting full `~/.codex`/`~/.claude` directories; they are often large and can trigger benchmark disk quota guards. Mount only the specific files you need as `:ro`.  
+Note: Claude Code credentials may use OS keychain/credential manager depending on host setup; mounted files alone may not always be sufficient.
+
 👉 **[Complete Agent Examples](examples/README.md)**
 
 ## Container Base Images and Tool Availability

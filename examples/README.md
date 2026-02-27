@@ -136,6 +136,8 @@ python run_benchmark.py -f dataset.jsonl -l -g my-agent
 - **`agent/Dockerfile-base`** - Base image with common dependencies  
 - **`agent/agent.py`** - Example agent implementation
 - **`agent/build_agent.sh`** - Build script for example agent
+- **`agent_codex/`** - Codex CLI-backed agent starter (`cvdp-codex-agent`)
+- **`agent_claude/`** - Claude Code CLI-backed agent starter (`cvdp-claude-agent`)
 
 ### Agent Requirements
 

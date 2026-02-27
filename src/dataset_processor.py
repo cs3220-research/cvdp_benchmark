@@ -1522,6 +1522,61 @@ class AgenticProcessor (DatasetProcessor):
         else:
             return self.result_context(int(name [-1]), context, self.context [id]['patch'])
 
+    def _split_config_list(self, raw_value: str):
+        """
+        Parse comma/newline separated config values.
+
+        Args:
+            raw_value: Raw string from environment/config
+
+        Returns:
+            list[str]: Parsed non-empty items
+        """
+        if raw_value is None:
+            return []
+        items = []
+        for item in str(raw_value).replace("\n", ",").split(","):
+            item = item.strip()
+            if item:
+                items.append(item)
+        return items
+
+    def _parse_agent_extra_volumes(self):
+        """
+        Parse AGENT_EXTRA_VOLUMES and normalize host path expansions.
+        """
+        volumes = []
+        raw_value = config.get("AGENT_EXTRA_VOLUMES", "")
+        for volume in self._split_config_list(raw_value):
+            # Support paths like ~/.codex:/host_auth/.codex:ro
+            parts = volume.split(":")
+            if len(parts) >= 2:
+                host_path = os.path.expandvars(os.path.expanduser(parts[0]))
+                if host_path != parts[0]:
+                    parts[0] = host_path
+                    volume = ":".join(parts)
+            volumes.append(volume)
+        return volumes
+
+    def _parse_agent_extra_env(self):
+        """
+        Parse AGENT_EXTRA_ENV entries in KEY=VALUE format.
+        """
+        env_map = {}
+        raw_value = config.get("AGENT_EXTRA_ENV", "")
+        for entry in self._split_config_list(raw_value):
+            if "=" not in entry:
+                logging.warning(f"Ignoring invalid AGENT_EXTRA_ENV entry (missing '='): {entry}")
+                continue
+            key, value = entry.split("=", 1)
+            key = key.strip()
+            value = value.strip()
+            if not key:
+                logging.warning(f"Ignoring invalid AGENT_EXTRA_ENV entry (empty key): {entry}")
+                continue
+            env_map[key] = value
+        return env_map
+
     def agent_run (self, issue_path : str = '', agent : str = '', monitor_size=True, **kargs):
         # Create docker-compose-agent.yml file
         docker_compose_path = os.path.join(issue_path, "docker-compose-agent.yml")
@@ -1617,7 +1672,9 @@ class AgenticProcessor (DatasetProcessor):
                         ],
                         'working_dir': '/code',
                         'environment': {
-                            'OPENAI_USER_KEY': config.get('OPENAI_USER_KEY', '')
+                            'OPENAI_USER_KEY': config.get('OPENAI_USER_KEY', ''),
+                            'OPENAI_API_KEY': config.get('OPENAI_API_KEY', config.get('OPENAI_USER_KEY', '')),
+                            'ANTHROPIC_API_KEY': config.get('ANTHROPIC_API_KEY', '')
                         }
                     }
                 },
@@ -1643,7 +1700,9 @@ class AgenticProcessor (DatasetProcessor):
                         ],
                         'working_dir': '/code',
                         'environment': {
-                            'OPENAI_USER_KEY': config.get('OPENAI_USER_KEY', '')
+                            'OPENAI_USER_KEY': config.get('OPENAI_USER_KEY', ''),
+                            'OPENAI_API_KEY': config.get('OPENAI_API_KEY', config.get('OPENAI_USER_KEY', '')),
+                            'ANTHROPIC_API_KEY': config.get('ANTHROPIC_API_KEY', '')
                         }
                     }
                 }
@@ -1673,6 +1732,18 @@ class AgenticProcessor (DatasetProcessor):
             if os.path.exists(docker_compose_yml):
                 docker_compose['services']['agent']['volumes'].append('./docker-compose.yml:/code/docker-compose.yml')
                 print("Original docker-compose.yml will be mounted in the agent container at /code/docker-compose.yml")
+
+        # Optional user-provided mounts/env for auth/config passthrough.
+        extra_volumes = self._parse_agent_extra_volumes()
+        for volume in extra_volumes:
+            if volume not in docker_compose['services']['agent']['volumes']:
+                docker_compose['services']['agent']['volumes'].append(volume)
+                print(f"Added extra agent volume mount: {volume}")
+
+        extra_env = self._parse_agent_extra_env()
+        if extra_env:
+            docker_compose['services']['agent']['environment'].update(extra_env)
+            print(f"Added extra agent environment variables: {', '.join(extra_env.keys())}")
         
         # Add network configuration if we have a network name
         if hasattr(self, 'network_name') and self.network_name:
@@ -1966,9 +2037,9 @@ class AgenticProcessor (DatasetProcessor):
             script_file.write(f"GROUP_ID=$(id -g)\n\n")
             script_file.write(f"if [ \"$DEBUG_MODE\" = true ]; then\n")
             script_file.write(f"  echo \"DEBUG MODE: Starting container with bash entrypoint\"\n")
-            script_file.write(f"  docker compose -f {docker_compose_path} -p {project_name} run --rm --user $USER_ID:$GROUP_ID --entrypoint bash agent\n")
+            script_file.write(f"  docker compose -f {docker_compose_path} -p {project_name} run --rm --user $USER_ID:$GROUP_ID -e HOME=/tmp/agent-home -e XDG_CONFIG_HOME=/tmp/agent-home/.config --entrypoint bash agent\n")
             script_file.write(f"else\n")
-            script_file.write(f"  docker compose -f {docker_compose_path} -p {project_name} run --rm --user $USER_ID:$GROUP_ID agent\n")
+            script_file.write(f"  docker compose -f {docker_compose_path} -p {project_name} run --rm --user $USER_ID:$GROUP_ID -e HOME=/tmp/agent-home -e XDG_CONFIG_HOME=/tmp/agent-home/.config agent\n")
             script_file.write(f"fi\n")
             script_file.write(f"exit_code=$?\n\n")
             script_file.write(f"# Exit with the same code as the docker command\n")
