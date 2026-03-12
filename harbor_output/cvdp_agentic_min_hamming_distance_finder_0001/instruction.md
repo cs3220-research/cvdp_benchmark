@@ -1,0 +1,11 @@
+Design a `Min_Hamming_Distance_Finder` module in SystemVerilog. Refer to the specification provided in `docs/min_hamming_distance_finder_spec.md` to design the RTL. The specification describes a parameterized module that computes the minimum Hamming distance between a query vector and a set of reference vectors. The module accepts one input query and a configurable number of reference vectors and outputs the index of the reference vector with the smallest Hamming distance, along with the corresponding distance value.
+
+## Design Considerations
+
+- The design should be hierarchical, with the **Min_Hamming_Distance_Finder** module as the top-level and the following submodules:
+  - **Bit_Difference_Counter**: Calculates the Hamming distance between two vectors.
+  - **Data_Reduction**: Performs bitwise reduction (e.g., XOR) on paired bits from two vectors.
+  - **Bitwise_Reduction**: Handles the actual logic operation specified (XOR in this case).
+- The design should be parameterized using **BIT_WIDTH** and **REFERENCE_COUNT** to allow flexibility in vector width and number of references.
+- The code should be well-documented with clear comments explaining the functionality of each major block and how the minimum distance and best match index are computed.
+- The design should follow best practices in **SystemVerilog** coding, ensuring readability, modularity, and maintainability.

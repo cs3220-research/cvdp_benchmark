@@ -1,0 +1,50 @@
+#!/usr/bin/env bash
+set -uo pipefail
+
+mkdir -p /logs/verifier
+mkdir -p /code/rundir
+mkdir -p /code/rundir/.cache
+mkdir -p /code/rundir/harness/.cache
+mkdir -p /rundir
+mkdir -p /rundir/.cache
+mkdir -p /rundir/harness/.cache
+
+status=0
+
+echo "Running service: sanity"
+if ! (
+  set -e
+  source /code/cvdp_harness_env.sh /code/src/.env
+  cd /code/rundir
+  sh -lc 'pytest /src/test_runner.py -s -v -o cache_dir=/rundir/harness/.cache'
+); then
+  status=1
+fi
+
+echo "Running service: des_enc"
+if ! (
+  set -e
+  source /code/cvdp_harness_env.sh /code/src/.env_des_enc
+  cd /code/rundir
+  sh -lc 'pytest /src/test_runner.py -s -v -o cache_dir=/rundir/harness/.cache'
+); then
+  status=1
+fi
+
+echo "Running service: des_dec"
+if ! (
+  set -e
+  source /code/cvdp_harness_env.sh /code/src/.env_des_dec
+  cd /code/rundir
+  sh -lc 'pytest /src/test_runner.py -s -v -o cache_dir=/rundir/harness/.cache'
+); then
+  status=1
+fi
+
+if [ "$status" -eq 0 ]; then
+  echo 1 > /logs/verifier/reward.txt
+else
+  echo 0 > /logs/verifier/reward.txt
+fi
+
+exit "$status"
