@@ -1,0 +1,734 @@
+Running service: 01-new-tb
+============================= test session starts ==============================
+platform linux -- Python 3.9.2, pytest-8.3.2, pluggy-1.5.0 -- /usr/bin/python3
+cachedir: /code/rundir/.cache
+rootdir: /src
+collecting ... collected 16 items
+
+../src/test_runner.py::test_direct_cache[3-3-8-64-0]      -.--ns INFO     gpi                                ..mbed/gpi_embed.cpp:79   in set_program_name_in_venv        Did not detect Python virtual environment. Using system-wide Python interpreter
+     -.--ns INFO     gpi                                ../gpi/GpiCommon.cpp:101  in gpi_print_registered_impl       VPI registered
+     0.00ns INFO     cocotb                             Running on Icarus Verilog version 13.0 (devel)
+     0.00ns INFO     cocotb                             Running tests with cocotb v1.9.2 from /usr/local/lib/python3.9/dist-packages/cocotb
+     0.00ns INFO     cocotb                             Seeding Python random module with supplied seed 1742307655
+     0.00ns INFO     cocotb.regression                  Found test test_direct_map_cache.test_direct_map_cache
+     0.00ns INFO     cocotb.regression                  running test_direct_map_cache (1/1)
+     0.00ns INFO     cocotb.direct_map_cache            Detected DUT parameters:
+     0.00ns INFO     cocotb.direct_map_cache              CACHE_SIZE   = 64
+     0.00ns INFO     cocotb.direct_map_cache              DATA_WIDTH   = 8
+     0.00ns INFO     cocotb.direct_map_cache              TAG_WIDTH    = 3
+     0.00ns INFO     cocotb.direct_map_cache              OFFSET_WIDTH = 3
+     0.00ns INFO     cocotb.direct_map_cache              INDEX_WIDTH  = 6
+    30.00ns INFO     cocotb.direct_map_cache            [RESET] Completed
+    40.00ns INFO     cocotb.direct_map_cache            [WRITE_COMP0] idx=4, off=2, tag=03, data=0022
+    55.00ns INFO     cocotb.direct_map_cache            [READ_COMP1] idx=4, off=2, tag=03, dout=0022, valid=1, hit=1
+    55.00ns INFO     cocotb.direct_map_cache              PASS: Read hit and data matched.
+    65.00ns INFO     cocotb.direct_map_cache            [WRITE_COMP1] idx=4, off=2, tag=03, data=0063, hit=1, dirty=1, valid=1
+    65.00ns INFO     cocotb.direct_map_cache              PASS: Compare write hit, line is now dirty as expected.
+    85.00ns INFO     cocotb.direct_map_cache            [READ_COMP1] idx=4, off=2, tag=03, dout=0063, valid=1, hit=1
+    85.00ns INFO     cocotb.direct_map_cache              PASS: Read hit and data matched.
+   105.00ns INFO     cocotb.direct_map_cache            [MISS_TEST] new_idx=5, off=0, tag=06, hit=0
+   105.00ns INFO     cocotb.direct_map_cache              PASS: Expected miss, got hit=0.
+   115.00ns INFO     cocotb.direct_map_cache            [WRITE_COMP1] idx=4, off=2, tag=03, data=0064, hit=1, dirty=1, valid=1
+   115.00ns INFO     cocotb.direct_map_cache              PASS: Compare write hit, line is now dirty as expected.
+   135.00ns INFO     cocotb.direct_map_cache            [READ_COMP0] idx=4, off=2, tag=03, hit=0
+   155.00ns INFO     cocotb.direct_map_cache            [OFFSET_ERROR_TEST] offset=001, error=1
+   155.00ns INFO     cocotb.direct_map_cache              PASS: 'error' asserted as expected when offset LSB=1.
+   155.00ns INFO     cocotb.direct_map_cache            All test steps completed successfully.
+   156.00ns INFO     cocotb.regression                  test_direct_map_cache passed
+   156.00ns INFO     cocotb.regression                  *****************************************************************************************************
+                                                        ** TEST                                         STATUS  SIM TIME (ns)  REAL TIME (s)  RATIO (ns/s) **
+                                                        *****************************************************************************************************
+                                                        ** test_direct_map_cache.test_direct_map_cache   PASS         156.00           0.01      31117.68  **
+                                                        *****************************************************************************************************
+                                                        ** TESTS=1 PASS=1 FAIL=0 SKIP=0                               156.00           0.03       4729.05  **
+                                                        *****************************************************************************************************
+                                                        
+FST info: dumpfile /code/sim_build/direct_map_cache.fst opened for output.
+[DEBUG] Parameters: {'CACHE_SIZE': 64, 'DATA_WIDTH': 8, 'TAG_WIDTH': 3, 'OFFSET_WIDTH': 3}
+INFO: Running command iverilog -o /code/sim_build/sim.vvp -D COCOTB_SIM=1 -s direct_map_cache -g2012 -Pdirect_map_cache.CACHE_SIZE=64 -Pdirect_map_cache.DATA_WIDTH=8 -Pdirect_map_cache.TAG_WIDTH=3 -Pdirect_map_cache.OFFSET_WIDTH=3 -s cocotb_iverilog_dump -f /code/sim_build/cmds.f /code/rtl/direct_map_cache.sv /code/sim_build/cocotb_iverilog_dump.v in directory /code/sim_build
+INFO: Running command vvp -M /usr/local/lib/python3.9/dist-packages/cocotb/libs -m libcocotbvpi_icarus /code/sim_build/sim.vvp -fst in directory /code/sim_build
+INFO: Results file: /code/sim_build/test_direct_cache[3-3-8-64-0].None
+PASSED
+../src/test_runner.py::test_direct_cache[3-3-8-256-0]      -.--ns INFO     gpi                                ..mbed/gpi_embed.cpp:79   in set_program_name_in_venv        Did not detect Python virtual environment. Using system-wide Python interpreter
+     -.--ns INFO     gpi                                ../gpi/GpiCommon.cpp:101  in gpi_print_registered_impl       VPI registered
+     0.00ns INFO     cocotb                             Running on Icarus Verilog version 13.0 (devel)
+     0.00ns INFO     cocotb                             Running tests with cocotb v1.9.2 from /usr/local/lib/python3.9/dist-packages/cocotb
+     0.00ns INFO     cocotb                             Seeding Python random module with supplied seed 1742307655
+     0.00ns INFO     cocotb.regression                  Found test test_direct_map_cache.test_direct_map_cache
+     0.00ns INFO     cocotb.regression                  running test_direct_map_cache (1/1)
+     0.00ns INFO     cocotb.direct_map_cache            Detected DUT parameters:
+     0.00ns INFO     cocotb.direct_map_cache              CACHE_SIZE   = 256
+     0.00ns INFO     cocotb.direct_map_cache              DATA_WIDTH   = 8
+     0.00ns INFO     cocotb.direct_map_cache              TAG_WIDTH    = 3
+     0.00ns INFO     cocotb.direct_map_cache              OFFSET_WIDTH = 3
+     0.00ns INFO     cocotb.direct_map_cache              INDEX_WIDTH  = 8
+    30.00ns INFO     cocotb.direct_map_cache            [RESET] Completed
+    40.00ns INFO     cocotb.direct_map_cache            [WRITE_COMP0] idx=18, off=2, tag=03, data=0022
+    55.00ns INFO     cocotb.direct_map_cache            [READ_COMP1] idx=18, off=2, tag=03, dout=0022, valid=1, hit=1
+    55.00ns INFO     cocotb.direct_map_cache              PASS: Read hit and data matched.
+    65.00ns INFO     cocotb.direct_map_cache            [WRITE_COMP1] idx=18, off=2, tag=03, data=0063, hit=1, dirty=1, valid=1
+    65.00ns INFO     cocotb.direct_map_cache              PASS: Compare write hit, line is now dirty as expected.
+    85.00ns INFO     cocotb.direct_map_cache            [READ_COMP1] idx=18, off=2, tag=03, dout=0063, valid=1, hit=1
+    85.00ns INFO     cocotb.direct_map_cache              PASS: Read hit and data matched.
+   105.00ns INFO     cocotb.direct_map_cache            [MISS_TEST] new_idx=19, off=0, tag=06, hit=0
+   105.00ns INFO     cocotb.direct_map_cache              PASS: Expected miss, got hit=0.
+   115.00ns INFO     cocotb.direct_map_cache            [WRITE_COMP1] idx=18, off=2, tag=03, data=0064, hit=1, dirty=1, valid=1
+   115.00ns INFO     cocotb.direct_map_cache              PASS: Compare write hit, line is now dirty as expected.
+   135.00ns INFO     cocotb.direct_map_cache            [READ_COMP0] idx=18, off=2, tag=03, hit=0
+   155.00ns INFO     cocotb.direct_map_cache            [OFFSET_ERROR_TEST] offset=001, error=1
+   155.00ns INFO     cocotb.direct_map_cache              PASS: 'error' asserted as expected when offset LSB=1.
+   155.00ns INFO     cocotb.direct_map_cache            All test steps completed successfully.
+   156.00ns INFO     cocotb.regression                  test_direct_map_cache passed
+   156.00ns INFO     cocotb.regression                  *****************************************************************************************************
+                                                        ** TEST                                         STATUS  SIM TIME (ns)  REAL TIME (s)  RATIO (ns/s) **
+                                                        *****************************************************************************************************
+                                                        ** test_direct_map_cache.test_direct_map_cache   PASS         156.00           0.01      21259.75  **
+                                                        *****************************************************************************************************
+                                                        ** TESTS=1 PASS=1 FAIL=0 SKIP=0                               156.00           0.04       3768.53  **
+                                                        *****************************************************************************************************
+                                                        
+FST info: dumpfile /code/sim_build/direct_map_cache.fst opened for output.
+[DEBUG] Parameters: {'CACHE_SIZE': 256, 'DATA_WIDTH': 8, 'TAG_WIDTH': 3, 'OFFSET_WIDTH': 3}
+Removing: /code/sim_build
+INFO: Running command iverilog -o /code/sim_build/sim.vvp -D COCOTB_SIM=1 -s direct_map_cache -g2012 -Pdirect_map_cache.CACHE_SIZE=256 -Pdirect_map_cache.DATA_WIDTH=8 -Pdirect_map_cache.TAG_WIDTH=3 -Pdirect_map_cache.OFFSET_WIDTH=3 -s cocotb_iverilog_dump -f /code/sim_build/cmds.f /code/rtl/direct_map_cache.sv /code/sim_build/cocotb_iverilog_dump.v in directory /code/sim_build
+INFO: Running command vvp -M /usr/local/lib/python3.9/dist-packages/cocotb/libs -m libcocotbvpi_icarus /code/sim_build/sim.vvp -fst in directory /code/sim_build
+INFO: Results file: /code/sim_build/test_direct_cache[3-3-8-256-0].None
+PASSED
+../src/test_runner.py::test_direct_cache[3-3-16-64-0]      -.--ns INFO     gpi                                ..mbed/gpi_embed.cpp:79   in set_program_name_in_venv        Did not detect Python virtual environment. Using system-wide Python interpreter
+     -.--ns INFO     gpi                                ../gpi/GpiCommon.cpp:101  in gpi_print_registered_impl       VPI registered
+     0.00ns INFO     cocotb                             Running on Icarus Verilog version 13.0 (devel)
+     0.00ns INFO     cocotb                             Running tests with cocotb v1.9.2 from /usr/local/lib/python3.9/dist-packages/cocotb
+     0.00ns INFO     cocotb                             Seeding Python random module with supplied seed 1742307655
+     0.00ns INFO     cocotb.regression                  Found test test_direct_map_cache.test_direct_map_cache
+     0.00ns INFO     cocotb.regression                  running test_direct_map_cache (1/1)
+     0.00ns INFO     cocotb.direct_map_cache            Detected DUT parameters:
+     0.00ns INFO     cocotb.direct_map_cache              CACHE_SIZE   = 64
+     0.00ns INFO     cocotb.direct_map_cache              DATA_WIDTH   = 16
+     0.00ns INFO     cocotb.direct_map_cache              TAG_WIDTH    = 3
+     0.00ns INFO     cocotb.direct_map_cache              OFFSET_WIDTH = 3
+     0.00ns INFO     cocotb.direct_map_cache              INDEX_WIDTH  = 6
+    30.00ns INFO     cocotb.direct_map_cache            [RESET] Completed
+    40.00ns INFO     cocotb.direct_map_cache            [WRITE_COMP0] idx=4, off=2, tag=03, data=2260
+    55.00ns INFO     cocotb.direct_map_cache            [READ_COMP1] idx=4, off=2, tag=03, dout=2260, valid=1, hit=1
+    55.00ns INFO     cocotb.direct_map_cache              PASS: Read hit and data matched.
+    65.00ns INFO     cocotb.direct_map_cache            [WRITE_COMP1] idx=4, off=2, tag=03, data=63DB, hit=1, dirty=1, valid=1
+    65.00ns INFO     cocotb.direct_map_cache              PASS: Compare write hit, line is now dirty as expected.
+    85.00ns INFO     cocotb.direct_map_cache            [READ_COMP1] idx=4, off=2, tag=03, dout=63DB, valid=1, hit=1
+    85.00ns INFO     cocotb.direct_map_cache              PASS: Read hit and data matched.
+   105.00ns INFO     cocotb.direct_map_cache            [MISS_TEST] new_idx=5, off=0, tag=06, hit=0
+   105.00ns INFO     cocotb.direct_map_cache              PASS: Expected miss, got hit=0.
+   115.00ns INFO     cocotb.direct_map_cache            [WRITE_COMP1] idx=4, off=2, tag=03, data=6485, hit=1, dirty=1, valid=1
+   115.00ns INFO     cocotb.direct_map_cache              PASS: Compare write hit, line is now dirty as expected.
+   135.00ns INFO     cocotb.direct_map_cache            [READ_COMP0] idx=4, off=2, tag=03, hit=0
+   155.00ns INFO     cocotb.direct_map_cache            [OFFSET_ERROR_TEST] offset=001, error=1
+   155.00ns INFO     cocotb.direct_map_cache              PASS: 'error' asserted as expected when offset LSB=1.
+   155.00ns INFO     cocotb.direct_map_cache            All test steps completed successfully.
+   156.00ns INFO     cocotb.regression                  test_direct_map_cache passed
+   156.00ns INFO     cocotb.regression                  *****************************************************************************************************
+                                                        ** TEST                                         STATUS  SIM TIME (ns)  REAL TIME (s)  RATIO (ns/s) **
+                                                        *****************************************************************************************************
+                                                        ** test_direct_map_cache.test_direct_map_cache   PASS         156.00           0.01      28728.11  **
+                                                        *****************************************************************************************************
+                                                        ** TESTS=1 PASS=1 FAIL=0 SKIP=0                               156.00           0.04       3792.85  **
+                                                        *****************************************************************************************************
+                                                        
+FST info: dumpfile /code/sim_build/direct_map_cache.fst opened for output.
+[DEBUG] Parameters: {'CACHE_SIZE': 64, 'DATA_WIDTH': 16, 'TAG_WIDTH': 3, 'OFFSET_WIDTH': 3}
+Removing: /code/sim_build
+INFO: Running command iverilog -o /code/sim_build/sim.vvp -D COCOTB_SIM=1 -s direct_map_cache -g2012 -Pdirect_map_cache.CACHE_SIZE=64 -Pdirect_map_cache.DATA_WIDTH=16 -Pdirect_map_cache.TAG_WIDTH=3 -Pdirect_map_cache.OFFSET_WIDTH=3 -s cocotb_iverilog_dump -f /code/sim_build/cmds.f /code/rtl/direct_map_cache.sv /code/sim_build/cocotb_iverilog_dump.v in directory /code/sim_build
+INFO: Running command vvp -M /usr/local/lib/python3.9/dist-packages/cocotb/libs -m libcocotbvpi_icarus /code/sim_build/sim.vvp -fst in directory /code/sim_build
+INFO: Results file: /code/sim_build/test_direct_cache[3-3-16-64-0].None
+PASSED
+../src/test_runner.py::test_direct_cache[3-3-16-256-0]      -.--ns INFO     gpi                                ..mbed/gpi_embed.cpp:79   in set_program_name_in_venv        Did not detect Python virtual environment. Using system-wide Python interpreter
+     -.--ns INFO     gpi                                ../gpi/GpiCommon.cpp:101  in gpi_print_registered_impl       VPI registered
+     0.00ns INFO     cocotb                             Running on Icarus Verilog version 13.0 (devel)
+     0.00ns INFO     cocotb                             Running tests with cocotb v1.9.2 from /usr/local/lib/python3.9/dist-packages/cocotb
+     0.00ns INFO     cocotb                             Seeding Python random module with supplied seed 1742307655
+     0.00ns INFO     cocotb.regression                  Found test test_direct_map_cache.test_direct_map_cache
+     0.00ns INFO     cocotb.regression                  running test_direct_map_cache (1/1)
+     0.00ns INFO     cocotb.direct_map_cache            Detected DUT parameters:
+     0.00ns INFO     cocotb.direct_map_cache              CACHE_SIZE   = 256
+     0.00ns INFO     cocotb.direct_map_cache              DATA_WIDTH   = 16
+     0.00ns INFO     cocotb.direct_map_cache              TAG_WIDTH    = 3
+     0.00ns INFO     cocotb.direct_map_cache              OFFSET_WIDTH = 3
+     0.00ns INFO     cocotb.direct_map_cache              INDEX_WIDTH  = 8
+    30.00ns INFO     cocotb.direct_map_cache            [RESET] Completed
+    40.00ns INFO     cocotb.direct_map_cache            [WRITE_COMP0] idx=18, off=2, tag=03, data=2260
+    55.00ns INFO     cocotb.direct_map_cache            [READ_COMP1] idx=18, off=2, tag=03, dout=2260, valid=1, hit=1
+    55.00ns INFO     cocotb.direct_map_cache              PASS: Read hit and data matched.
+    65.00ns INFO     cocotb.direct_map_cache            [WRITE_COMP1] idx=18, off=2, tag=03, data=63DB, hit=1, dirty=1, valid=1
+    65.00ns INFO     cocotb.direct_map_cache              PASS: Compare write hit, line is now dirty as expected.
+    85.00ns INFO     cocotb.direct_map_cache            [READ_COMP1] idx=18, off=2, tag=03, dout=63DB, valid=1, hit=1
+    85.00ns INFO     cocotb.direct_map_cache              PASS: Read hit and data matched.
+   105.00ns INFO     cocotb.direct_map_cache            [MISS_TEST] new_idx=19, off=0, tag=06, hit=0
+   105.00ns INFO     cocotb.direct_map_cache              PASS: Expected miss, got hit=0.
+   115.00ns INFO     cocotb.direct_map_cache            [WRITE_COMP1] idx=18, off=2, tag=03, data=6485, hit=1, dirty=1, valid=1
+   115.00ns INFO     cocotb.direct_map_cache              PASS: Compare write hit, line is now dirty as expected.
+   135.00ns INFO     cocotb.direct_map_cache            [READ_COMP0] idx=18, off=2, tag=03, hit=0
+   155.00ns INFO     cocotb.direct_map_cache            [OFFSET_ERROR_TEST] offset=001, error=1
+   155.00ns INFO     cocotb.direct_map_cache              PASS: 'error' asserted as expected when offset LSB=1.
+   155.00ns INFO     cocotb.direct_map_cache            All test steps completed successfully.
+   156.00ns INFO     cocotb.regression                  test_direct_map_cache passed
+   156.00ns INFO     cocotb.regression                  *****************************************************************************************************
+                                                        ** TEST                                         STATUS  SIM TIME (ns)  REAL TIME (s)  RATIO (ns/s) **
+                                                        *****************************************************************************************************
+                                                        ** test_direct_map_cache.test_direct_map_cache   PASS         156.00           0.01      20822.69  **
+                                                        *****************************************************************************************************
+                                                        ** TESTS=1 PASS=1 FAIL=0 SKIP=0                               156.00           0.04       3760.56  **
+                                                        *****************************************************************************************************
+                                                        
+FST info: dumpfile /code/sim_build/direct_map_cache.fst opened for output.
+[DEBUG] Parameters: {'CACHE_SIZE': 256, 'DATA_WIDTH': 16, 'TAG_WIDTH': 3, 'OFFSET_WIDTH': 3}
+Removing: /code/sim_build
+INFO: Running command iverilog -o /code/sim_build/sim.vvp -D COCOTB_SIM=1 -s direct_map_cache -g2012 -Pdirect_map_cache.CACHE_SIZE=256 -Pdirect_map_cache.DATA_WIDTH=16 -Pdirect_map_cache.TAG_WIDTH=3 -Pdirect_map_cache.OFFSET_WIDTH=3 -s cocotb_iverilog_dump -f /code/sim_build/cmds.f /code/rtl/direct_map_cache.sv /code/sim_build/cocotb_iverilog_dump.v in directory /code/sim_build
+INFO: Running command vvp -M /usr/local/lib/python3.9/dist-packages/cocotb/libs -m libcocotbvpi_icarus /code/sim_build/sim.vvp -fst in directory /code/sim_build
+INFO: Results file: /code/sim_build/test_direct_cache[3-3-16-256-0].None
+PASSED
+../src/test_runner.py::test_direct_cache[3-5-8-64-0]      -.--ns INFO     gpi                                ..mbed/gpi_embed.cpp:79   in set_program_name_in_venv        Did not detect Python virtual environment. Using system-wide Python interpreter
+     -.--ns INFO     gpi                                ../gpi/GpiCommon.cpp:101  in gpi_print_registered_impl       VPI registered
+     0.00ns INFO     cocotb                             Running on Icarus Verilog version 13.0 (devel)
+     0.00ns INFO     cocotb                             Running tests with cocotb v1.9.2 from /usr/local/lib/python3.9/dist-packages/cocotb
+     0.00ns INFO     cocotb                             Seeding Python random module with supplied seed 1742307655
+     0.00ns INFO     cocotb.regression                  Found test test_direct_map_cache.test_direct_map_cache
+     0.00ns INFO     cocotb.regression                  running test_direct_map_cache (1/1)
+     0.00ns INFO     cocotb.direct_map_cache            Detected DUT parameters:
+     0.00ns INFO     cocotb.direct_map_cache              CACHE_SIZE   = 64
+     0.00ns INFO     cocotb.direct_map_cache              DATA_WIDTH   = 8
+     0.00ns INFO     cocotb.direct_map_cache              TAG_WIDTH    = 5
+     0.00ns INFO     cocotb.direct_map_cache              OFFSET_WIDTH = 3
+     0.00ns INFO     cocotb.direct_map_cache              INDEX_WIDTH  = 6
+    30.00ns INFO     cocotb.direct_map_cache            [RESET] Completed
+    40.00ns INFO     cocotb.direct_map_cache            [WRITE_COMP0] idx=4, off=2, tag=0E, data=0022
+    55.00ns INFO     cocotb.direct_map_cache            [READ_COMP1] idx=4, off=2, tag=0E, dout=0022, valid=1, hit=1
+    55.00ns INFO     cocotb.direct_map_cache              PASS: Read hit and data matched.
+    65.00ns INFO     cocotb.direct_map_cache            [WRITE_COMP1] idx=4, off=2, tag=0E, data=0063, hit=1, dirty=1, valid=1
+    65.00ns INFO     cocotb.direct_map_cache              PASS: Compare write hit, line is now dirty as expected.
+    85.00ns INFO     cocotb.direct_map_cache            [READ_COMP1] idx=4, off=2, tag=0E, dout=0063, valid=1, hit=1
+    85.00ns INFO     cocotb.direct_map_cache              PASS: Read hit and data matched.
+   105.00ns INFO     cocotb.direct_map_cache            [MISS_TEST] new_idx=5, off=0, tag=19, hit=0
+   105.00ns INFO     cocotb.direct_map_cache              PASS: Expected miss, got hit=0.
+   115.00ns INFO     cocotb.direct_map_cache            [WRITE_COMP1] idx=4, off=2, tag=0E, data=0064, hit=1, dirty=1, valid=1
+   115.00ns INFO     cocotb.direct_map_cache              PASS: Compare write hit, line is now dirty as expected.
+   135.00ns INFO     cocotb.direct_map_cache            [READ_COMP0] idx=4, off=2, tag=0E, hit=0
+   155.00ns INFO     cocotb.direct_map_cache            [OFFSET_ERROR_TEST] offset=001, error=1
+   155.00ns INFO     cocotb.direct_map_cache              PASS: 'error' asserted as expected when offset LSB=1.
+   155.00ns INFO     cocotb.direct_map_cache            All test steps completed successfully.
+   156.00ns INFO     cocotb.regression                  test_direct_map_cache passed
+   156.00ns INFO     cocotb.regression                  *****************************************************************************************************
+                                                        ** TEST                                         STATUS  SIM TIME (ns)  REAL TIME (s)  RATIO (ns/s) **
+                                                        *****************************************************************************************************
+                                                        ** test_direct_map_cache.test_direct_map_cache   PASS         156.00           0.01      30401.98  **
+                                                        *****************************************************************************************************
+                                                        ** TESTS=1 PASS=1 FAIL=0 SKIP=0                               156.00           0.03       4574.84  **
+                                                        *****************************************************************************************************
+                                                        
+FST info: dumpfile /code/sim_build/direct_map_cache.fst opened for output.
+[DEBUG] Parameters: {'CACHE_SIZE': 64, 'DATA_WIDTH': 8, 'TAG_WIDTH': 5, 'OFFSET_WIDTH': 3}
+Removing: /code/sim_build
+INFO: Running command iverilog -o /code/sim_build/sim.vvp -D COCOTB_SIM=1 -s direct_map_cache -g2012 -Pdirect_map_cache.CACHE_SIZE=64 -Pdirect_map_cache.DATA_WIDTH=8 -Pdirect_map_cache.TAG_WIDTH=5 -Pdirect_map_cache.OFFSET_WIDTH=3 -s cocotb_iverilog_dump -f /code/sim_build/cmds.f /code/rtl/direct_map_cache.sv /code/sim_build/cocotb_iverilog_dump.v in directory /code/sim_build
+INFO: Running command vvp -M /usr/local/lib/python3.9/dist-packages/cocotb/libs -m libcocotbvpi_icarus /code/sim_build/sim.vvp -fst in directory /code/sim_build
+INFO: Results file: /code/sim_build/test_direct_cache[3-5-8-64-0].None
+PASSED
+../src/test_runner.py::test_direct_cache[3-5-8-256-0]      -.--ns INFO     gpi                                ..mbed/gpi_embed.cpp:79   in set_program_name_in_venv        Did not detect Python virtual environment. Using system-wide Python interpreter
+     -.--ns INFO     gpi                                ../gpi/GpiCommon.cpp:101  in gpi_print_registered_impl       VPI registered
+     0.00ns INFO     cocotb                             Running on Icarus Verilog version 13.0 (devel)
+     0.00ns INFO     cocotb                             Running tests with cocotb v1.9.2 from /usr/local/lib/python3.9/dist-packages/cocotb
+     0.00ns INFO     cocotb                             Seeding Python random module with supplied seed 1742307655
+     0.00ns INFO     cocotb.regression                  Found test test_direct_map_cache.test_direct_map_cache
+     0.00ns INFO     cocotb.regression                  running test_direct_map_cache (1/1)
+     0.00ns INFO     cocotb.direct_map_cache            Detected DUT parameters:
+     0.00ns INFO     cocotb.direct_map_cache              CACHE_SIZE   = 256
+     0.00ns INFO     cocotb.direct_map_cache              DATA_WIDTH   = 8
+     0.00ns INFO     cocotb.direct_map_cache              TAG_WIDTH    = 5
+     0.00ns INFO     cocotb.direct_map_cache              OFFSET_WIDTH = 3
+     0.00ns INFO     cocotb.direct_map_cache              INDEX_WIDTH  = 8
+    30.00ns INFO     cocotb.direct_map_cache            [RESET] Completed
+    40.00ns INFO     cocotb.direct_map_cache            [WRITE_COMP0] idx=18, off=2, tag=0E, data=0022
+    55.00ns INFO     cocotb.direct_map_cache            [READ_COMP1] idx=18, off=2, tag=0E, dout=0022, valid=1, hit=1
+    55.00ns INFO     cocotb.direct_map_cache              PASS: Read hit and data matched.
+    65.00ns INFO     cocotb.direct_map_cache            [WRITE_COMP1] idx=18, off=2, tag=0E, data=0063, hit=1, dirty=1, valid=1
+    65.00ns INFO     cocotb.direct_map_cache              PASS: Compare write hit, line is now dirty as expected.
+    85.00ns INFO     cocotb.direct_map_cache            [READ_COMP1] idx=18, off=2, tag=0E, dout=0063, valid=1, hit=1
+    85.00ns INFO     cocotb.direct_map_cache              PASS: Read hit and data matched.
+   105.00ns INFO     cocotb.direct_map_cache            [MISS_TEST] new_idx=19, off=0, tag=19, hit=0
+   105.00ns INFO     cocotb.direct_map_cache              PASS: Expected miss, got hit=0.
+   115.00ns INFO     cocotb.direct_map_cache            [WRITE_COMP1] idx=18, off=2, tag=0E, data=0064, hit=1, dirty=1, valid=1
+   115.00ns INFO     cocotb.direct_map_cache              PASS: Compare write hit, line is now dirty as expected.
+   135.00ns INFO     cocotb.direct_map_cache            [READ_COMP0] idx=18, off=2, tag=0E, hit=0
+   155.00ns INFO     cocotb.direct_map_cache            [OFFSET_ERROR_TEST] offset=001, error=1
+   155.00ns INFO     cocotb.direct_map_cache              PASS: 'error' asserted as expected when offset LSB=1.
+   155.00ns INFO     cocotb.direct_map_cache            All test steps completed successfully.
+   156.00ns INFO     cocotb.regression                  test_direct_map_cache passed
+   156.00ns INFO     cocotb.regression                  *****************************************************************************************************
+                                                        ** TEST                                         STATUS  SIM TIME (ns)  REAL TIME (s)  RATIO (ns/s) **
+                                                        *****************************************************************************************************
+                                                        ** test_direct_map_cache.test_direct_map_cache   PASS         156.00           0.01      22695.51  **
+                                                        *****************************************************************************************************
+                                                        ** TESTS=1 PASS=1 FAIL=0 SKIP=0                               156.00           0.03       4591.92  **
+                                                        *****************************************************************************************************
+                                                        
+FST info: dumpfile /code/sim_build/direct_map_cache.fst opened for output.
+[DEBUG] Parameters: {'CACHE_SIZE': 256, 'DATA_WIDTH': 8, 'TAG_WIDTH': 5, 'OFFSET_WIDTH': 3}
+Removing: /code/sim_build
+INFO: Running command iverilog -o /code/sim_build/sim.vvp -D COCOTB_SIM=1 -s direct_map_cache -g2012 -Pdirect_map_cache.CACHE_SIZE=256 -Pdirect_map_cache.DATA_WIDTH=8 -Pdirect_map_cache.TAG_WIDTH=5 -Pdirect_map_cache.OFFSET_WIDTH=3 -s cocotb_iverilog_dump -f /code/sim_build/cmds.f /code/rtl/direct_map_cache.sv /code/sim_build/cocotb_iverilog_dump.v in directory /code/sim_build
+INFO: Running command vvp -M /usr/local/lib/python3.9/dist-packages/cocotb/libs -m libcocotbvpi_icarus /code/sim_build/sim.vvp -fst in directory /code/sim_build
+INFO: Results file: /code/sim_build/test_direct_cache[3-5-8-256-0].None
+PASSED
+../src/test_runner.py::test_direct_cache[3-5-16-64-0]      -.--ns INFO     gpi                                ..mbed/gpi_embed.cpp:79   in set_program_name_in_venv        Did not detect Python virtual environment. Using system-wide Python interpreter
+     -.--ns INFO     gpi                                ../gpi/GpiCommon.cpp:101  in gpi_print_registered_impl       VPI registered
+     0.00ns INFO     cocotb                             Running on Icarus Verilog version 13.0 (devel)
+     0.00ns INFO     cocotb                             Running tests with cocotb v1.9.2 from /usr/local/lib/python3.9/dist-packages/cocotb
+     0.00ns INFO     cocotb                             Seeding Python random module with supplied seed 1742307655
+     0.00ns INFO     cocotb.regression                  Found test test_direct_map_cache.test_direct_map_cache
+     0.00ns INFO     cocotb.regression                  running test_direct_map_cache (1/1)
+     0.00ns INFO     cocotb.direct_map_cache            Detected DUT parameters:
+     0.00ns INFO     cocotb.direct_map_cache              CACHE_SIZE   = 64
+     0.00ns INFO     cocotb.direct_map_cache              DATA_WIDTH   = 16
+     0.00ns INFO     cocotb.direct_map_cache              TAG_WIDTH    = 5
+     0.00ns INFO     cocotb.direct_map_cache              OFFSET_WIDTH = 3
+     0.00ns INFO     cocotb.direct_map_cache              INDEX_WIDTH  = 6
+    30.00ns INFO     cocotb.direct_map_cache            [RESET] Completed
+    40.00ns INFO     cocotb.direct_map_cache            [WRITE_COMP0] idx=4, off=2, tag=0E, data=2260
+    55.00ns INFO     cocotb.direct_map_cache            [READ_COMP1] idx=4, off=2, tag=0E, dout=2260, valid=1, hit=1
+    55.00ns INFO     cocotb.direct_map_cache              PASS: Read hit and data matched.
+    65.00ns INFO     cocotb.direct_map_cache            [WRITE_COMP1] idx=4, off=2, tag=0E, data=63DB, hit=1, dirty=1, valid=1
+    65.00ns INFO     cocotb.direct_map_cache              PASS: Compare write hit, line is now dirty as expected.
+    85.00ns INFO     cocotb.direct_map_cache            [READ_COMP1] idx=4, off=2, tag=0E, dout=63DB, valid=1, hit=1
+    85.00ns INFO     cocotb.direct_map_cache              PASS: Read hit and data matched.
+   105.00ns INFO     cocotb.direct_map_cache            [MISS_TEST] new_idx=5, off=0, tag=19, hit=0
+   105.00ns INFO     cocotb.direct_map_cache              PASS: Expected miss, got hit=0.
+   115.00ns INFO     cocotb.direct_map_cache            [WRITE_COMP1] idx=4, off=2, tag=0E, data=6485, hit=1, dirty=1, valid=1
+   115.00ns INFO     cocotb.direct_map_cache              PASS: Compare write hit, line is now dirty as expected.
+   135.00ns INFO     cocotb.direct_map_cache            [READ_COMP0] idx=4, off=2, tag=0E, hit=0
+   155.00ns INFO     cocotb.direct_map_cache            [OFFSET_ERROR_TEST] offset=001, error=1
+   155.00ns INFO     cocotb.direct_map_cache              PASS: 'error' asserted as expected when offset LSB=1.
+   155.00ns INFO     cocotb.direct_map_cache            All test steps completed successfully.
+   156.00ns INFO     cocotb.regression                  test_direct_map_cache passed
+   156.00ns INFO     cocotb.regression                  *****************************************************************************************************
+                                                        ** TEST                                         STATUS  SIM TIME (ns)  REAL TIME (s)  RATIO (ns/s) **
+                                                        *****************************************************************************************************
+                                                        ** test_direct_map_cache.test_direct_map_cache   PASS         156.00           0.00      31257.41  **
+                                                        *****************************************************************************************************
+                                                        ** TESTS=1 PASS=1 FAIL=0 SKIP=0                               156.00           0.03       4969.82  **
+                                                        *****************************************************************************************************
+                                                        
+FST info: dumpfile /code/sim_build/direct_map_cache.fst opened for output.
+[DEBUG] Parameters: {'CACHE_SIZE': 64, 'DATA_WIDTH': 16, 'TAG_WIDTH': 5, 'OFFSET_WIDTH': 3}
+Removing: /code/sim_build
+INFO: Running command iverilog -o /code/sim_build/sim.vvp -D COCOTB_SIM=1 -s direct_map_cache -g2012 -Pdirect_map_cache.CACHE_SIZE=64 -Pdirect_map_cache.DATA_WIDTH=16 -Pdirect_map_cache.TAG_WIDTH=5 -Pdirect_map_cache.OFFSET_WIDTH=3 -s cocotb_iverilog_dump -f /code/sim_build/cmds.f /code/rtl/direct_map_cache.sv /code/sim_build/cocotb_iverilog_dump.v in directory /code/sim_build
+INFO: Running command vvp -M /usr/local/lib/python3.9/dist-packages/cocotb/libs -m libcocotbvpi_icarus /code/sim_build/sim.vvp -fst in directory /code/sim_build
+INFO: Results file: /code/sim_build/test_direct_cache[3-5-16-64-0].None
+PASSED
+../src/test_runner.py::test_direct_cache[3-5-16-256-0]      -.--ns INFO     gpi                                ..mbed/gpi_embed.cpp:79   in set_program_name_in_venv        Did not detect Python virtual environment. Using system-wide Python interpreter
+     -.--ns INFO     gpi                                ../gpi/GpiCommon.cpp:101  in gpi_print_registered_impl       VPI registered
+     0.00ns INFO     cocotb                             Running on Icarus Verilog version 13.0 (devel)
+     0.00ns INFO     cocotb                             Running tests with cocotb v1.9.2 from /usr/local/lib/python3.9/dist-packages/cocotb
+     0.00ns INFO     cocotb                             Seeding Python random module with supplied seed 1742307655
+     0.00ns INFO     cocotb.regression                  Found test test_direct_map_cache.test_direct_map_cache
+     0.00ns INFO     cocotb.regression                  running test_direct_map_cache (1/1)
+     0.00ns INFO     cocotb.direct_map_cache            Detected DUT parameters:
+     0.00ns INFO     cocotb.direct_map_cache              CACHE_SIZE   = 256
+     0.00ns INFO     cocotb.direct_map_cache              DATA_WIDTH   = 16
+     0.00ns INFO     cocotb.direct_map_cache              TAG_WIDTH    = 5
+     0.00ns INFO     cocotb.direct_map_cache              OFFSET_WIDTH = 3
+     0.00ns INFO     cocotb.direct_map_cache              INDEX_WIDTH  = 8
+    30.00ns INFO     cocotb.direct_map_cache            [RESET] Completed
+    40.00ns INFO     cocotb.direct_map_cache            [WRITE_COMP0] idx=18, off=2, tag=0E, data=2260
+    55.00ns INFO     cocotb.direct_map_cache            [READ_COMP1] idx=18, off=2, tag=0E, dout=2260, valid=1, hit=1
+    55.00ns INFO     cocotb.direct_map_cache              PASS: Read hit and data matched.
+    65.00ns INFO     cocotb.direct_map_cache            [WRITE_COMP1] idx=18, off=2, tag=0E, data=63DB, hit=1, dirty=1, valid=1
+    65.00ns INFO     cocotb.direct_map_cache              PASS: Compare write hit, line is now dirty as expected.
+    85.00ns INFO     cocotb.direct_map_cache            [READ_COMP1] idx=18, off=2, tag=0E, dout=63DB, valid=1, hit=1
+    85.00ns INFO     cocotb.direct_map_cache              PASS: Read hit and data matched.
+   105.00ns INFO     cocotb.direct_map_cache            [MISS_TEST] new_idx=19, off=0, tag=19, hit=0
+   105.00ns INFO     cocotb.direct_map_cache              PASS: Expected miss, got hit=0.
+   115.00ns INFO     cocotb.direct_map_cache            [WRITE_COMP1] idx=18, off=2, tag=0E, data=6485, hit=1, dirty=1, valid=1
+   115.00ns INFO     cocotb.direct_map_cache              PASS: Compare write hit, line is now dirty as expected.
+   135.00ns INFO     cocotb.direct_map_cache            [READ_COMP0] idx=18, off=2, tag=0E, hit=0
+   155.00ns INFO     cocotb.direct_map_cache            [OFFSET_ERROR_TEST] offset=001, error=1
+   155.00ns INFO     cocotb.direct_map_cache              PASS: 'error' asserted as expected when offset LSB=1.
+   155.00ns INFO     cocotb.direct_map_cache            All test steps completed successfully.
+   156.00ns INFO     cocotb.regression                  test_direct_map_cache passed
+   156.00ns INFO     cocotb.regression                  *****************************************************************************************************
+                                                        ** TEST                                         STATUS  SIM TIME (ns)  REAL TIME (s)  RATIO (ns/s) **
+                                                        *****************************************************************************************************
+                                                        ** test_direct_map_cache.test_direct_map_cache   PASS         156.00           0.01      20100.50  **
+                                                        *****************************************************************************************************
+                                                        ** TESTS=1 PASS=1 FAIL=0 SKIP=0                               156.00           0.03       4605.85  **
+                                                        *****************************************************************************************************
+                                                        
+FST info: dumpfile /code/sim_build/direct_map_cache.fst opened for output.
+[DEBUG] Parameters: {'CACHE_SIZE': 256, 'DATA_WIDTH': 16, 'TAG_WIDTH': 5, 'OFFSET_WIDTH': 3}
+Removing: /code/sim_build
+INFO: Running command iverilog -o /code/sim_build/sim.vvp -D COCOTB_SIM=1 -s direct_map_cache -g2012 -Pdirect_map_cache.CACHE_SIZE=256 -Pdirect_map_cache.DATA_WIDTH=16 -Pdirect_map_cache.TAG_WIDTH=5 -Pdirect_map_cache.OFFSET_WIDTH=3 -s cocotb_iverilog_dump -f /code/sim_build/cmds.f /code/rtl/direct_map_cache.sv /code/sim_build/cocotb_iverilog_dump.v in directory /code/sim_build
+INFO: Running command vvp -M /usr/local/lib/python3.9/dist-packages/cocotb/libs -m libcocotbvpi_icarus /code/sim_build/sim.vvp -fst in directory /code/sim_build
+INFO: Results file: /code/sim_build/test_direct_cache[3-5-16-256-0].None
+PASSED
+../src/test_runner.py::test_direct_cache[6-3-8-64-0]      -.--ns INFO     gpi                                ..mbed/gpi_embed.cpp:79   in set_program_name_in_venv        Did not detect Python virtual environment. Using system-wide Python interpreter
+     -.--ns INFO     gpi                                ../gpi/GpiCommon.cpp:101  in gpi_print_registered_impl       VPI registered
+     0.00ns INFO     cocotb                             Running on Icarus Verilog version 13.0 (devel)
+     0.00ns INFO     cocotb                             Running tests with cocotb v1.9.2 from /usr/local/lib/python3.9/dist-packages/cocotb
+     0.00ns INFO     cocotb                             Seeding Python random module with supplied seed 1742307655
+     0.00ns INFO     cocotb.regression                  Found test test_direct_map_cache.test_direct_map_cache
+     0.00ns INFO     cocotb.regression                  running test_direct_map_cache (1/1)
+     0.00ns INFO     cocotb.direct_map_cache            Detected DUT parameters:
+     0.00ns INFO     cocotb.direct_map_cache              CACHE_SIZE   = 64
+     0.00ns INFO     cocotb.direct_map_cache              DATA_WIDTH   = 8
+     0.00ns INFO     cocotb.direct_map_cache              TAG_WIDTH    = 3
+     0.00ns INFO     cocotb.direct_map_cache              OFFSET_WIDTH = 6
+     0.00ns INFO     cocotb.direct_map_cache              INDEX_WIDTH  = 6
+    30.00ns INFO     cocotb.direct_map_cache            [RESET] Completed
+    40.00ns INFO     cocotb.direct_map_cache            [WRITE_COMP0] idx=4, off=18, tag=03, data=0022
+    55.00ns INFO     cocotb.direct_map_cache            [READ_COMP1] idx=4, off=18, tag=03, dout=0022, valid=1, hit=1
+    55.00ns INFO     cocotb.direct_map_cache              PASS: Read hit and data matched.
+    65.00ns INFO     cocotb.direct_map_cache            [WRITE_COMP1] idx=4, off=18, tag=03, data=0063, hit=1, dirty=1, valid=1
+    65.00ns INFO     cocotb.direct_map_cache              PASS: Compare write hit, line is now dirty as expected.
+    85.00ns INFO     cocotb.direct_map_cache            [READ_COMP1] idx=4, off=18, tag=03, dout=0063, valid=1, hit=1
+    85.00ns INFO     cocotb.direct_map_cache              PASS: Read hit and data matched.
+   105.00ns INFO     cocotb.direct_map_cache            [MISS_TEST] new_idx=5, off=6, tag=06, hit=0
+   105.00ns INFO     cocotb.direct_map_cache              PASS: Expected miss, got hit=0.
+   115.00ns INFO     cocotb.direct_map_cache            [WRITE_COMP1] idx=4, off=18, tag=03, data=0064, hit=1, dirty=1, valid=1
+   115.00ns INFO     cocotb.direct_map_cache              PASS: Compare write hit, line is now dirty as expected.
+   135.00ns INFO     cocotb.direct_map_cache            [READ_COMP0] idx=4, off=18, tag=03, hit=0
+   155.00ns INFO     cocotb.direct_map_cache            [OFFSET_ERROR_TEST] offset=000001, error=1
+   155.00ns INFO     cocotb.direct_map_cache              PASS: 'error' asserted as expected when offset LSB=1.
+   155.00ns INFO     cocotb.direct_map_cache            All test steps completed successfully.
+   156.00ns INFO     cocotb.regression                  test_direct_map_cache passed
+   156.00ns INFO     cocotb.regression                  *****************************************************************************************************
+                                                        ** TEST                                         STATUS  SIM TIME (ns)  REAL TIME (s)  RATIO (ns/s) **
+                                                        *****************************************************************************************************
+                                                        ** test_direct_map_cache.test_direct_map_cache   PASS         156.00           0.01      19806.01  **
+                                                        *****************************************************************************************************
+                                                        ** TESTS=1 PASS=1 FAIL=0 SKIP=0                               156.00           0.03       4590.15  **
+                                                        *****************************************************************************************************
+                                                        
+FST info: dumpfile /code/sim_build/direct_map_cache.fst opened for output.
+[DEBUG] Parameters: {'CACHE_SIZE': 64, 'DATA_WIDTH': 8, 'TAG_WIDTH': 3, 'OFFSET_WIDTH': 6}
+Removing: /code/sim_build
+INFO: Running command iverilog -o /code/sim_build/sim.vvp -D COCOTB_SIM=1 -s direct_map_cache -g2012 -Pdirect_map_cache.CACHE_SIZE=64 -Pdirect_map_cache.DATA_WIDTH=8 -Pdirect_map_cache.TAG_WIDTH=3 -Pdirect_map_cache.OFFSET_WIDTH=6 -s cocotb_iverilog_dump -f /code/sim_build/cmds.f /code/rtl/direct_map_cache.sv /code/sim_build/cocotb_iverilog_dump.v in directory /code/sim_build
+INFO: Running command vvp -M /usr/local/lib/python3.9/dist-packages/cocotb/libs -m libcocotbvpi_icarus /code/sim_build/sim.vvp -fst in directory /code/sim_build
+INFO: Results file: /code/sim_build/test_direct_cache[6-3-8-64-0].None
+PASSED
+../src/test_runner.py::test_direct_cache[6-3-8-256-0]      -.--ns INFO     gpi                                ..mbed/gpi_embed.cpp:79   in set_program_name_in_venv        Did not detect Python virtual environment. Using system-wide Python interpreter
+     -.--ns INFO     gpi                                ../gpi/GpiCommon.cpp:101  in gpi_print_registered_impl       VPI registered
+     0.00ns INFO     cocotb                             Running on Icarus Verilog version 13.0 (devel)
+     0.00ns INFO     cocotb                             Running tests with cocotb v1.9.2 from /usr/local/lib/python3.9/dist-packages/cocotb
+     0.00ns INFO     cocotb                             Seeding Python random module with supplied seed 1742307655
+     0.00ns INFO     cocotb.regression                  Found test test_direct_map_cache.test_direct_map_cache
+     0.00ns INFO     cocotb.regression                  running test_direct_map_cache (1/1)
+     0.00ns INFO     cocotb.direct_map_cache            Detected DUT parameters:
+     0.00ns INFO     cocotb.direct_map_cache              CACHE_SIZE   = 256
+     0.00ns INFO     cocotb.direct_map_cache              DATA_WIDTH   = 8
+     0.00ns INFO     cocotb.direct_map_cache              TAG_WIDTH    = 3
+     0.00ns INFO     cocotb.direct_map_cache              OFFSET_WIDTH = 6
+     0.00ns INFO     cocotb.direct_map_cache              INDEX_WIDTH  = 8
+    30.00ns INFO     cocotb.direct_map_cache            [RESET] Completed
+    40.00ns INFO     cocotb.direct_map_cache            [WRITE_COMP0] idx=18, off=18, tag=03, data=0022
+    55.00ns INFO     cocotb.direct_map_cache            [READ_COMP1] idx=18, off=18, tag=03, dout=0022, valid=1, hit=1
+    55.00ns INFO     cocotb.direct_map_cache              PASS: Read hit and data matched.
+    65.00ns INFO     cocotb.direct_map_cache            [WRITE_COMP1] idx=18, off=18, tag=03, data=0063, hit=1, dirty=1, valid=1
+    65.00ns INFO     cocotb.direct_map_cache              PASS: Compare write hit, line is now dirty as expected.
+    85.00ns INFO     cocotb.direct_map_cache            [READ_COMP1] idx=18, off=18, tag=03, dout=0063, valid=1, hit=1
+    85.00ns INFO     cocotb.direct_map_cache              PASS: Read hit and data matched.
+   105.00ns INFO     cocotb.direct_map_cache            [MISS_TEST] new_idx=19, off=6, tag=06, hit=0
+   105.00ns INFO     cocotb.direct_map_cache              PASS: Expected miss, got hit=0.
+   115.00ns INFO     cocotb.direct_map_cache            [WRITE_COMP1] idx=18, off=18, tag=03, data=0064, hit=1, dirty=1, valid=1
+   115.00ns INFO     cocotb.direct_map_cache              PASS: Compare write hit, line is now dirty as expected.
+   135.00ns INFO     cocotb.direct_map_cache            [READ_COMP0] idx=18, off=18, tag=03, hit=0
+   155.00ns INFO     cocotb.direct_map_cache            [OFFSET_ERROR_TEST] offset=000001, error=1
+   155.00ns INFO     cocotb.direct_map_cache              PASS: 'error' asserted as expected when offset LSB=1.
+   155.00ns INFO     cocotb.direct_map_cache            All test steps completed successfully.
+   156.00ns INFO     cocotb.regression                  test_direct_map_cache passed
+   156.00ns INFO     cocotb.regression                  *****************************************************************************************************
+                                                        ** TEST                                         STATUS  SIM TIME (ns)  REAL TIME (s)  RATIO (ns/s) **
+                                                        *****************************************************************************************************
+                                                        ** test_direct_map_cache.test_direct_map_cache   PASS         156.00           0.02       7702.95  **
+                                                        *****************************************************************************************************
+                                                        ** TESTS=1 PASS=1 FAIL=0 SKIP=0                               156.00           0.05       3205.51  **
+                                                        *****************************************************************************************************
+                                                        
+FST info: dumpfile /code/sim_build/direct_map_cache.fst opened for output.
+[DEBUG] Parameters: {'CACHE_SIZE': 256, 'DATA_WIDTH': 8, 'TAG_WIDTH': 3, 'OFFSET_WIDTH': 6}
+Removing: /code/sim_build
+INFO: Running command iverilog -o /code/sim_build/sim.vvp -D COCOTB_SIM=1 -s direct_map_cache -g2012 -Pdirect_map_cache.CACHE_SIZE=256 -Pdirect_map_cache.DATA_WIDTH=8 -Pdirect_map_cache.TAG_WIDTH=3 -Pdirect_map_cache.OFFSET_WIDTH=6 -s cocotb_iverilog_dump -f /code/sim_build/cmds.f /code/rtl/direct_map_cache.sv /code/sim_build/cocotb_iverilog_dump.v in directory /code/sim_build
+INFO: Running command vvp -M /usr/local/lib/python3.9/dist-packages/cocotb/libs -m libcocotbvpi_icarus /code/sim_build/sim.vvp -fst in directory /code/sim_build
+INFO: Results file: /code/sim_build/test_direct_cache[6-3-8-256-0].None
+PASSED
+../src/test_runner.py::test_direct_cache[6-3-16-64-0]      -.--ns INFO     gpi                                ..mbed/gpi_embed.cpp:79   in set_program_name_in_venv        Did not detect Python virtual environment. Using system-wide Python interpreter
+     -.--ns INFO     gpi                                ../gpi/GpiCommon.cpp:101  in gpi_print_registered_impl       VPI registered
+     0.00ns INFO     cocotb                             Running on Icarus Verilog version 13.0 (devel)
+     0.00ns INFO     cocotb                             Running tests with cocotb v1.9.2 from /usr/local/lib/python3.9/dist-packages/cocotb
+     0.00ns INFO     cocotb                             Seeding Python random module with supplied seed 1742307655
+     0.00ns INFO     cocotb.regression                  Found test test_direct_map_cache.test_direct_map_cache
+     0.00ns INFO     cocotb.regression                  running test_direct_map_cache (1/1)
+     0.00ns INFO     cocotb.direct_map_cache            Detected DUT parameters:
+     0.00ns INFO     cocotb.direct_map_cache              CACHE_SIZE   = 64
+     0.00ns INFO     cocotb.direct_map_cache              DATA_WIDTH   = 16
+     0.00ns INFO     cocotb.direct_map_cache              TAG_WIDTH    = 3
+     0.00ns INFO     cocotb.direct_map_cache              OFFSET_WIDTH = 6
+     0.00ns INFO     cocotb.direct_map_cache              INDEX_WIDTH  = 6
+    30.00ns INFO     cocotb.direct_map_cache            [RESET] Completed
+    40.00ns INFO     cocotb.direct_map_cache            [WRITE_COMP0] idx=4, off=18, tag=03, data=2260
+    55.00ns INFO     cocotb.direct_map_cache            [READ_COMP1] idx=4, off=18, tag=03, dout=2260, valid=1, hit=1
+    55.00ns INFO     cocotb.direct_map_cache              PASS: Read hit and data matched.
+    65.00ns INFO     cocotb.direct_map_cache            [WRITE_COMP1] idx=4, off=18, tag=03, data=63DB, hit=1, dirty=1, valid=1
+    65.00ns INFO     cocotb.direct_map_cache              PASS: Compare write hit, line is now dirty as expected.
+    85.00ns INFO     cocotb.direct_map_cache            [READ_COMP1] idx=4, off=18, tag=03, dout=63DB, valid=1, hit=1
+    85.00ns INFO     cocotb.direct_map_cache              PASS: Read hit and data matched.
+   105.00ns INFO     cocotb.direct_map_cache            [MISS_TEST] new_idx=5, off=6, tag=06, hit=0
+   105.00ns INFO     cocotb.direct_map_cache              PASS: Expected miss, got hit=0.
+   115.00ns INFO     cocotb.direct_map_cache            [WRITE_COMP1] idx=4, off=18, tag=03, data=6485, hit=1, dirty=1, valid=1
+   115.00ns INFO     cocotb.direct_map_cache              PASS: Compare write hit, line is now dirty as expected.
+   135.00ns INFO     cocotb.direct_map_cache            [READ_COMP0] idx=4, off=18, tag=03, hit=0
+   155.00ns INFO     cocotb.direct_map_cache            [OFFSET_ERROR_TEST] offset=000001, error=1
+   155.00ns INFO     cocotb.direct_map_cache              PASS: 'error' asserted as expected when offset LSB=1.
+   155.00ns INFO     cocotb.direct_map_cache            All test steps completed successfully.
+   156.00ns INFO     cocotb.regression                  test_direct_map_cache passed
+   156.00ns INFO     cocotb.regression                  *****************************************************************************************************
+                                                        ** TEST                                         STATUS  SIM TIME (ns)  REAL TIME (s)  RATIO (ns/s) **
+                                                        *****************************************************************************************************
+                                                        ** test_direct_map_cache.test_direct_map_cache   PASS         156.00           0.01      19135.83  **
+                                                        *****************************************************************************************************
+                                                        ** TESTS=1 PASS=1 FAIL=0 SKIP=0                               156.00           0.03       4544.11  **
+                                                        *****************************************************************************************************
+                                                        
+FST info: dumpfile /code/sim_build/direct_map_cache.fst opened for output.
+[DEBUG] Parameters: {'CACHE_SIZE': 64, 'DATA_WIDTH': 16, 'TAG_WIDTH': 3, 'OFFSET_WIDTH': 6}
+Removing: /code/sim_build
+INFO: Running command iverilog -o /code/sim_build/sim.vvp -D COCOTB_SIM=1 -s direct_map_cache -g2012 -Pdirect_map_cache.CACHE_SIZE=64 -Pdirect_map_cache.DATA_WIDTH=16 -Pdirect_map_cache.TAG_WIDTH=3 -Pdirect_map_cache.OFFSET_WIDTH=6 -s cocotb_iverilog_dump -f /code/sim_build/cmds.f /code/rtl/direct_map_cache.sv /code/sim_build/cocotb_iverilog_dump.v in directory /code/sim_build
+INFO: Running command vvp -M /usr/local/lib/python3.9/dist-packages/cocotb/libs -m libcocotbvpi_icarus /code/sim_build/sim.vvp -fst in directory /code/sim_build
+INFO: Results file: /code/sim_build/test_direct_cache[6-3-16-64-0].None
+PASSED
+../src/test_runner.py::test_direct_cache[6-3-16-256-0]      -.--ns INFO     gpi                                ..mbed/gpi_embed.cpp:79   in set_program_name_in_venv        Did not detect Python virtual environment. Using system-wide Python interpreter
+     -.--ns INFO     gpi                                ../gpi/GpiCommon.cpp:101  in gpi_print_registered_impl       VPI registered
+     0.00ns INFO     cocotb                             Running on Icarus Verilog version 13.0 (devel)
+     0.00ns INFO     cocotb                             Running tests with cocotb v1.9.2 from /usr/local/lib/python3.9/dist-packages/cocotb
+     0.00ns INFO     cocotb                             Seeding Python random module with supplied seed 1742307655
+     0.00ns INFO     cocotb.regression                  Found test test_direct_map_cache.test_direct_map_cache
+     0.00ns INFO     cocotb.regression                  running test_direct_map_cache (1/1)
+     0.00ns INFO     cocotb.direct_map_cache            Detected DUT parameters:
+     0.00ns INFO     cocotb.direct_map_cache              CACHE_SIZE   = 256
+     0.00ns INFO     cocotb.direct_map_cache              DATA_WIDTH   = 16
+     0.00ns INFO     cocotb.direct_map_cache              TAG_WIDTH    = 3
+     0.00ns INFO     cocotb.direct_map_cache              OFFSET_WIDTH = 6
+     0.00ns INFO     cocotb.direct_map_cache              INDEX_WIDTH  = 8
+    30.00ns INFO     cocotb.direct_map_cache            [RESET] Completed
+    40.00ns INFO     cocotb.direct_map_cache            [WRITE_COMP0] idx=18, off=18, tag=03, data=2260
+    55.00ns INFO     cocotb.direct_map_cache            [READ_COMP1] idx=18, off=18, tag=03, dout=2260, valid=1, hit=1
+    55.00ns INFO     cocotb.direct_map_cache              PASS: Read hit and data matched.
+    65.00ns INFO     cocotb.direct_map_cache            [WRITE_COMP1] idx=18, off=18, tag=03, data=63DB, hit=1, dirty=1, valid=1
+    65.00ns INFO     cocotb.direct_map_cache              PASS: Compare write hit, line is now dirty as expected.
+    85.00ns INFO     cocotb.direct_map_cache            [READ_COMP1] idx=18, off=18, tag=03, dout=63DB, valid=1, hit=1
+    85.00ns INFO     cocotb.direct_map_cache              PASS: Read hit and data matched.
+   105.00ns INFO     cocotb.direct_map_cache            [MISS_TEST] new_idx=19, off=6, tag=06, hit=0
+   105.00ns INFO     cocotb.direct_map_cache              PASS: Expected miss, got hit=0.
+   115.00ns INFO     cocotb.direct_map_cache            [WRITE_COMP1] idx=18, off=18, tag=03, data=6485, hit=1, dirty=1, valid=1
+   115.00ns INFO     cocotb.direct_map_cache              PASS: Compare write hit, line is now dirty as expected.
+   135.00ns INFO     cocotb.direct_map_cache            [READ_COMP0] idx=18, off=18, tag=03, hit=0
+   155.00ns INFO     cocotb.direct_map_cache            [OFFSET_ERROR_TEST] offset=000001, error=1
+   155.00ns INFO     cocotb.direct_map_cache              PASS: 'error' asserted as expected when offset LSB=1.
+   155.00ns INFO     cocotb.direct_map_cache            All test steps completed successfully.
+   156.00ns INFO     cocotb.regression                  test_direct_map_cache passed
+   156.00ns INFO     cocotb.regression                  *****************************************************************************************************
+                                                        ** TEST                                         STATUS  SIM TIME (ns)  REAL TIME (s)  RATIO (ns/s) **
+                                                        *****************************************************************************************************
+                                                        ** test_direct_map_cache.test_direct_map_cache   PASS         156.00           0.02       7346.53  **
+                                                        *****************************************************************************************************
+                                                        ** TESTS=1 PASS=1 FAIL=0 SKIP=0                               156.00           0.05       3114.36  **
+                                                        *****************************************************************************************************
+                                                        
+FST info: dumpfile /code/sim_build/direct_map_cache.fst opened for output.
+[DEBUG] Parameters: {'CACHE_SIZE': 256, 'DATA_WIDTH': 16, 'TAG_WIDTH': 3, 'OFFSET_WIDTH': 6}
+Removing: /code/sim_build
+INFO: Running command iverilog -o /code/sim_build/sim.vvp -D COCOTB_SIM=1 -s direct_map_cache -g2012 -Pdirect_map_cache.CACHE_SIZE=256 -Pdirect_map_cache.DATA_WIDTH=16 -Pdirect_map_cache.TAG_WIDTH=3 -Pdirect_map_cache.OFFSET_WIDTH=6 -s cocotb_iverilog_dump -f /code/sim_build/cmds.f /code/rtl/direct_map_cache.sv /code/sim_build/cocotb_iverilog_dump.v in directory /code/sim_build
+INFO: Running command vvp -M /usr/local/lib/python3.9/dist-packages/cocotb/libs -m libcocotbvpi_icarus /code/sim_build/sim.vvp -fst in directory /code/sim_build
+INFO: Results file: /code/sim_build/test_direct_cache[6-3-16-256-0].None
+PASSED
+../src/test_runner.py::test_direct_cache[6-5-8-64-0]      -.--ns INFO     gpi                                ..mbed/gpi_embed.cpp:79   in set_program_name_in_venv        Did not detect Python virtual environment. Using system-wide Python interpreter
+     -.--ns INFO     gpi                                ../gpi/GpiCommon.cpp:101  in gpi_print_registered_impl       VPI registered
+     0.00ns INFO     cocotb                             Running on Icarus Verilog version 13.0 (devel)
+     0.00ns INFO     cocotb                             Running tests with cocotb v1.9.2 from /usr/local/lib/python3.9/dist-packages/cocotb
+     0.00ns INFO     cocotb                             Seeding Python random module with supplied seed 1742307655
+     0.00ns INFO     cocotb.regression                  Found test test_direct_map_cache.test_direct_map_cache
+     0.00ns INFO     cocotb.regression                  running test_direct_map_cache (1/1)
+     0.00ns INFO     cocotb.direct_map_cache            Detected DUT parameters:
+     0.00ns INFO     cocotb.direct_map_cache              CACHE_SIZE   = 64
+     0.00ns INFO     cocotb.direct_map_cache              DATA_WIDTH   = 8
+     0.00ns INFO     cocotb.direct_map_cache              TAG_WIDTH    = 5
+     0.00ns INFO     cocotb.direct_map_cache              OFFSET_WIDTH = 6
+     0.00ns INFO     cocotb.direct_map_cache              INDEX_WIDTH  = 6
+    30.00ns INFO     cocotb.direct_map_cache            [RESET] Completed
+    40.00ns INFO     cocotb.direct_map_cache            [WRITE_COMP0] idx=4, off=18, tag=0E, data=0022
+    55.00ns INFO     cocotb.direct_map_cache            [READ_COMP1] idx=4, off=18, tag=0E, dout=0022, valid=1, hit=1
+    55.00ns INFO     cocotb.direct_map_cache              PASS: Read hit and data matched.
+    65.00ns INFO     cocotb.direct_map_cache            [WRITE_COMP1] idx=4, off=18, tag=0E, data=0063, hit=1, dirty=1, valid=1
+    65.00ns INFO     cocotb.direct_map_cache              PASS: Compare write hit, line is now dirty as expected.
+    85.00ns INFO     cocotb.direct_map_cache            [READ_COMP1] idx=4, off=18, tag=0E, dout=0063, valid=1, hit=1
+    85.00ns INFO     cocotb.direct_map_cache              PASS: Read hit and data matched.
+   105.00ns INFO     cocotb.direct_map_cache            [MISS_TEST] new_idx=5, off=6, tag=19, hit=0
+   105.00ns INFO     cocotb.direct_map_cache              PASS: Expected miss, got hit=0.
+   115.00ns INFO     cocotb.direct_map_cache            [WRITE_COMP1] idx=4, off=18, tag=0E, data=0064, hit=1, dirty=1, valid=1
+   115.00ns INFO     cocotb.direct_map_cache              PASS: Compare write hit, line is now dirty as expected.
+   135.00ns INFO     cocotb.direct_map_cache            [READ_COMP0] idx=4, off=18, tag=0E, hit=0
+   155.00ns INFO     cocotb.direct_map_cache            [OFFSET_ERROR_TEST] offset=000001, error=1
+   155.00ns INFO     cocotb.direct_map_cache              PASS: 'error' asserted as expected when offset LSB=1.
+   155.00ns INFO     cocotb.direct_map_cache            All test steps completed successfully.
+   156.00ns INFO     cocotb.regression                  test_direct_map_cache passed
+   156.00ns INFO     cocotb.regression                  *****************************************************************************************************
+                                                        ** TEST                                         STATUS  SIM TIME (ns)  REAL TIME (s)  RATIO (ns/s) **
+                                                        *****************************************************************************************************
+                                                        ** test_direct_map_cache.test_direct_map_cache   PASS         156.00           0.01      19787.44  **
+                                                        *****************************************************************************************************
+                                                        ** TESTS=1 PASS=1 FAIL=0 SKIP=0                               156.00           0.03       4565.93  **
+                                                        *****************************************************************************************************
+                                                        
+FST info: dumpfile /code/sim_build/direct_map_cache.fst opened for output.
+[DEBUG] Parameters: {'CACHE_SIZE': 64, 'DATA_WIDTH': 8, 'TAG_WIDTH': 5, 'OFFSET_WIDTH': 6}
+Removing: /code/sim_build
+INFO: Running command iverilog -o /code/sim_build/sim.vvp -D COCOTB_SIM=1 -s direct_map_cache -g2012 -Pdirect_map_cache.CACHE_SIZE=64 -Pdirect_map_cache.DATA_WIDTH=8 -Pdirect_map_cache.TAG_WIDTH=5 -Pdirect_map_cache.OFFSET_WIDTH=6 -s cocotb_iverilog_dump -f /code/sim_build/cmds.f /code/rtl/direct_map_cache.sv /code/sim_build/cocotb_iverilog_dump.v in directory /code/sim_build
+INFO: Running command vvp -M /usr/local/lib/python3.9/dist-packages/cocotb/libs -m libcocotbvpi_icarus /code/sim_build/sim.vvp -fst in directory /code/sim_build
+INFO: Results file: /code/sim_build/test_direct_cache[6-5-8-64-0].None
+PASSED
+../src/test_runner.py::test_direct_cache[6-5-8-256-0]      -.--ns INFO     gpi                                ..mbed/gpi_embed.cpp:79   in set_program_name_in_venv        Did not detect Python virtual environment. Using system-wide Python interpreter
+     -.--ns INFO     gpi                                ../gpi/GpiCommon.cpp:101  in gpi_print_registered_impl       VPI registered
+     0.00ns INFO     cocotb                             Running on Icarus Verilog version 13.0 (devel)
+     0.00ns INFO     cocotb                             Running tests with cocotb v1.9.2 from /usr/local/lib/python3.9/dist-packages/cocotb
+     0.00ns INFO     cocotb                             Seeding Python random module with supplied seed 1742307655
+     0.00ns INFO     cocotb.regression                  Found test test_direct_map_cache.test_direct_map_cache
+     0.00ns INFO     cocotb.regression                  running test_direct_map_cache (1/1)
+     0.00ns INFO     cocotb.direct_map_cache            Detected DUT parameters:
+     0.00ns INFO     cocotb.direct_map_cache              CACHE_SIZE   = 256
+     0.00ns INFO     cocotb.direct_map_cache              DATA_WIDTH   = 8
+     0.00ns INFO     cocotb.direct_map_cache              TAG_WIDTH    = 5
+     0.00ns INFO     cocotb.direct_map_cache              OFFSET_WIDTH = 6
+     0.00ns INFO     cocotb.direct_map_cache              INDEX_WIDTH  = 8
+    30.00ns INFO     cocotb.direct_map_cache            [RESET] Completed
+    40.00ns INFO     cocotb.direct_map_cache            [WRITE_COMP0] idx=18, off=18, tag=0E, data=0022
+    55.00ns INFO     cocotb.direct_map_cache            [READ_COMP1] idx=18, off=18, tag=0E, dout=0022, valid=1, hit=1
+    55.00ns INFO     cocotb.direct_map_cache              PASS: Read hit and data matched.
+    65.00ns INFO     cocotb.direct_map_cache            [WRITE_COMP1] idx=18, off=18, tag=0E, data=0063, hit=1, dirty=1, valid=1
+    65.00ns INFO     cocotb.direct_map_cache              PASS: Compare write hit, line is now dirty as expected.
+    85.00ns INFO     cocotb.direct_map_cache            [READ_COMP1] idx=18, off=18, tag=0E, dout=0063, valid=1, hit=1
+    85.00ns INFO     cocotb.direct_map_cache              PASS: Read hit and data matched.
+   105.00ns INFO     cocotb.direct_map_cache            [MISS_TEST] new_idx=19, off=6, tag=19, hit=0
+   105.00ns INFO     cocotb.direct_map_cache              PASS: Expected miss, got hit=0.
+   115.00ns INFO     cocotb.direct_map_cache            [WRITE_COMP1] idx=18, off=18, tag=0E, data=0064, hit=1, dirty=1, valid=1
+   115.00ns INFO     cocotb.direct_map_cache              PASS: Compare write hit, line is now dirty as expected.
+   135.00ns INFO     cocotb.direct_map_cache            [READ_COMP0] idx=18, off=18, tag=0E, hit=0
+   155.00ns INFO     cocotb.direct_map_cache            [OFFSET_ERROR_TEST] offset=000001, error=1
+   155.00ns INFO     cocotb.direct_map_cache              PASS: 'error' asserted as expected when offset LSB=1.
+   155.00ns INFO     cocotb.direct_map_cache            All test steps completed successfully.
+   156.00ns INFO     cocotb.regression                  test_direct_map_cache passed
+   156.00ns INFO     cocotb.regression                  *****************************************************************************************************
+                                                        ** TEST                                         STATUS  SIM TIME (ns)  REAL TIME (s)  RATIO (ns/s) **
+                                                        *****************************************************************************************************
+                                                        ** test_direct_map_cache.test_direct_map_cache   PASS         156.00           0.02       7571.73  **
+                                                        *****************************************************************************************************
+                                                        ** TESTS=1 PASS=1 FAIL=0 SKIP=0                               156.00           0.05       3173.91  **
+                                                        *****************************************************************************************************
+                                                        
+FST info: dumpfile /code/sim_build/direct_map_cache.fst opened for output.
+[DEBUG] Parameters: {'CACHE_SIZE': 256, 'DATA_WIDTH': 8, 'TAG_WIDTH': 5, 'OFFSET_WIDTH': 6}
+Removing: /code/sim_build
+INFO: Running command iverilog -o /code/sim_build/sim.vvp -D COCOTB_SIM=1 -s direct_map_cache -g2012 -Pdirect_map_cache.CACHE_SIZE=256 -Pdirect_map_cache.DATA_WIDTH=8 -Pdirect_map_cache.TAG_WIDTH=5 -Pdirect_map_cache.OFFSET_WIDTH=6 -s cocotb_iverilog_dump -f /code/sim_build/cmds.f /code/rtl/direct_map_cache.sv /code/sim_build/cocotb_iverilog_dump.v in directory /code/sim_build
+INFO: Running command vvp -M /usr/local/lib/python3.9/dist-packages/cocotb/libs -m libcocotbvpi_icarus /code/sim_build/sim.vvp -fst in directory /code/sim_build
+INFO: Results file: /code/sim_build/test_direct_cache[6-5-8-256-0].None
+PASSED
+../src/test_runner.py::test_direct_cache[6-5-16-64-0]      -.--ns INFO     gpi                                ..mbed/gpi_embed.cpp:79   in set_program_name_in_venv        Did not detect Python virtual environment. Using system-wide Python interpreter
+     -.--ns INFO     gpi                                ../gpi/GpiCommon.cpp:101  in gpi_print_registered_impl       VPI registered
+     0.00ns INFO     cocotb                             Running on Icarus Verilog version 13.0 (devel)
+     0.00ns INFO     cocotb                             Running tests with cocotb v1.9.2 from /usr/local/lib/python3.9/dist-packages/cocotb
+     0.00ns INFO     cocotb                             Seeding Python random module with supplied seed 1742307655
+     0.00ns INFO     cocotb.regression                  Found test test_direct_map_cache.test_direct_map_cache
+     0.00ns INFO     cocotb.regression                  running test_direct_map_cache (1/1)
+     0.00ns INFO     cocotb.direct_map_cache            Detected DUT parameters:
+     0.00ns INFO     cocotb.direct_map_cache              CACHE_SIZE   = 64
+     0.00ns INFO     cocotb.direct_map_cache              DATA_WIDTH   = 16
+     0.00ns INFO     cocotb.direct_map_cache              TAG_WIDTH    = 5
+     0.00ns INFO     cocotb.direct_map_cache              OFFSET_WIDTH = 6
+     0.00ns INFO     cocotb.direct_map_cache              INDEX_WIDTH  = 6
+    30.00ns INFO     cocotb.direct_map_cache            [RESET] Completed
+    40.00ns INFO     cocotb.direct_map_cache            [WRITE_COMP0] idx=4, off=18, tag=0E, data=2260
+    55.00ns INFO     cocotb.direct_map_cache            [READ_COMP1] idx=4, off=18, tag=0E, dout=2260, valid=1, hit=1
+    55.00ns INFO     cocotb.direct_map_cache              PASS: Read hit and data matched.
+    65.00ns INFO     cocotb.direct_map_cache            [WRITE_COMP1] idx=4, off=18, tag=0E, data=63DB, hit=1, dirty=1, valid=1
+    65.00ns INFO     cocotb.direct_map_cache              PASS: Compare write hit, line is now dirty as expected.
+    85.00ns INFO     cocotb.direct_map_cache            [READ_COMP1] idx=4, off=18, tag=0E, dout=63DB, valid=1, hit=1
+    85.00ns INFO     cocotb.direct_map_cache              PASS: Read hit and data matched.
+   105.00ns INFO     cocotb.direct_map_cache            [MISS_TEST] new_idx=5, off=6, tag=19, hit=0
+   105.00ns INFO     cocotb.direct_map_cache              PASS: Expected miss, got hit=0.
+   115.00ns INFO     cocotb.direct_map_cache            [WRITE_COMP1] idx=4, off=18, tag=0E, data=6485, hit=1, dirty=1, valid=1
+   115.00ns INFO     cocotb.direct_map_cache              PASS: Compare write hit, line is now dirty as expected.
+   135.00ns INFO     cocotb.direct_map_cache            [READ_COMP0] idx=4, off=18, tag=0E, hit=0
+   155.00ns INFO     cocotb.direct_map_cache            [OFFSET_ERROR_TEST] offset=000001, error=1
+   155.00ns INFO     cocotb.direct_map_cache              PASS: 'error' asserted as expected when offset LSB=1.
+   155.00ns INFO     cocotb.direct_map_cache            All test steps completed successfully.
+   156.00ns INFO     cocotb.regression                  test_direct_map_cache passed
+   156.00ns INFO     cocotb.regression                  *****************************************************************************************************
+                                                        ** TEST                                         STATUS  SIM TIME (ns)  REAL TIME (s)  RATIO (ns/s) **
+                                                        *****************************************************************************************************
+                                                        ** test_direct_map_cache.test_direct_map_cache   PASS         156.00           0.01      14948.17  **
+                                                        *****************************************************************************************************
+                                                        ** TESTS=1 PASS=1 FAIL=0 SKIP=0                               156.00           0.04       3792.49  **
+                                                        *****************************************************************************************************
+                                                        
+FST info: dumpfile /code/sim_build/direct_map_cache.fst opened for output.
+[DEBUG] Parameters: {'CACHE_SIZE': 64, 'DATA_WIDTH': 16, 'TAG_WIDTH': 5, 'OFFSET_WIDTH': 6}
+Removing: /code/sim_build
+INFO: Running command iverilog -o /code/sim_build/sim.vvp -D COCOTB_SIM=1 -s direct_map_cache -g2012 -Pdirect_map_cache.CACHE_SIZE=64 -Pdirect_map_cache.DATA_WIDTH=16 -Pdirect_map_cache.TAG_WIDTH=5 -Pdirect_map_cache.OFFSET_WIDTH=6 -s cocotb_iverilog_dump -f /code/sim_build/cmds.f /code/rtl/direct_map_cache.sv /code/sim_build/cocotb_iverilog_dump.v in directory /code/sim_build
+INFO: Running command vvp -M /usr/local/lib/python3.9/dist-packages/cocotb/libs -m libcocotbvpi_icarus /code/sim_build/sim.vvp -fst in directory /code/sim_build
+INFO: Results file: /code/sim_build/test_direct_cache[6-5-16-64-0].None
+PASSED
+../src/test_runner.py::test_direct_cache[6-5-16-256-0]      -.--ns INFO     gpi                                ..mbed/gpi_embed.cpp:79   in set_program_name_in_venv        Did not detect Python virtual environment. Using system-wide Python interpreter
+     -.--ns INFO     gpi                                ../gpi/GpiCommon.cpp:101  in gpi_print_registered_impl       VPI registered
+     0.00ns INFO     cocotb                             Running on Icarus Verilog version 13.0 (devel)
+     0.00ns INFO     cocotb                             Running tests with cocotb v1.9.2 from /usr/local/lib/python3.9/dist-packages/cocotb
+     0.00ns INFO     cocotb                             Seeding Python random module with supplied seed 1742307655
+     0.00ns INFO     cocotb.regression                  Found test test_direct_map_cache.test_direct_map_cache
+     0.00ns INFO     cocotb.regression                  running test_direct_map_cache (1/1)
+     0.00ns INFO     cocotb.direct_map_cache            Detected DUT parameters:
+     0.00ns INFO     cocotb.direct_map_cache              CACHE_SIZE   = 256
+     0.00ns INFO     cocotb.direct_map_cache              DATA_WIDTH   = 16
+     0.00ns INFO     cocotb.direct_map_cache              TAG_WIDTH    = 5
+     0.00ns INFO     cocotb.direct_map_cache              OFFSET_WIDTH = 6
+     0.00ns INFO     cocotb.direct_map_cache              INDEX_WIDTH  = 8
+    30.00ns INFO     cocotb.direct_map_cache            [RESET] Completed
+    40.00ns INFO     cocotb.direct_map_cache            [WRITE_COMP0] idx=18, off=18, tag=0E, data=2260
+    55.00ns INFO     cocotb.direct_map_cache            [READ_COMP1] idx=18, off=18, tag=0E, dout=2260, valid=1, hit=1
+    55.00ns INFO     cocotb.direct_map_cache              PASS: Read hit and data matched.
+    65.00ns INFO     cocotb.direct_map_cache            [WRITE_COMP1] idx=18, off=18, tag=0E, data=63DB, hit=1, dirty=1, valid=1
+    65.00ns INFO     cocotb.direct_map_cache              PASS: Compare write hit, line is now dirty as expected.
+    85.00ns INFO     cocotb.direct_map_cache            [READ_COMP1] idx=18, off=18, tag=0E, dout=63DB, valid=1, hit=1
+    85.00ns INFO     cocotb.direct_map_cache              PASS: Read hit and data matched.
+   105.00ns INFO     cocotb.direct_map_cache            [MISS_TEST] new_idx=19, off=6, tag=19, hit=0
+   105.00ns INFO     cocotb.direct_map_cache              PASS: Expected miss, got hit=0.
+   115.00ns INFO     cocotb.direct_map_cache            [WRITE_COMP1] idx=18, off=18, tag=0E, data=6485, hit=1, dirty=1, valid=1
+   115.00ns INFO     cocotb.direct_map_cache              PASS: Compare write hit, line is now dirty as expected.
+   135.00ns INFO     cocotb.direct_map_cache            [READ_COMP0] idx=18, off=18, tag=0E, hit=0
+   155.00ns INFO     cocotb.direct_map_cache            [OFFSET_ERROR_TEST] offset=000001, error=1
+   155.00ns INFO     cocotb.direct_map_cache              PASS: 'error' asserted as expected when offset LSB=1.
+   155.00ns INFO     cocotb.direct_map_cache            All test steps completed successfully.
+   156.00ns INFO     cocotb.regression                  test_direct_map_cache passed
+   156.00ns INFO     cocotb.regression                  *****************************************************************************************************
+                                                        ** TEST                                         STATUS  SIM TIME (ns)  REAL TIME (s)  RATIO (ns/s) **
+                                                        *****************************************************************************************************
+                                                        ** test_direct_map_cache.test_direct_map_cache   PASS         156.00           0.03       5192.66  **
+                                                        *****************************************************************************************************
+                                                        ** TESTS=1 PASS=1 FAIL=0 SKIP=0                               156.00           0.07       2284.91  **
+                                                        *****************************************************************************************************
+                                                        
+FST info: dumpfile /code/sim_build/direct_map_cache.fst opened for output.
+[DEBUG] Parameters: {'CACHE_SIZE': 256, 'DATA_WIDTH': 16, 'TAG_WIDTH': 5, 'OFFSET_WIDTH': 6}
+Removing: /code/sim_build
+INFO: Running command iverilog -o /code/sim_build/sim.vvp -D COCOTB_SIM=1 -s direct_map_cache -g2012 -Pdirect_map_cache.CACHE_SIZE=256 -Pdirect_map_cache.DATA_WIDTH=16 -Pdirect_map_cache.TAG_WIDTH=5 -Pdirect_map_cache.OFFSET_WIDTH=6 -s cocotb_iverilog_dump -f /code/sim_build/cmds.f /code/rtl/direct_map_cache.sv /code/sim_build/cocotb_iverilog_dump.v in directory /code/sim_build
+INFO: Running command vvp -M /usr/local/lib/python3.9/dist-packages/cocotb/libs -m libcocotbvpi_icarus /code/sim_build/sim.vvp -fst in directory /code/sim_build
+INFO: Results file: /code/sim_build/test_direct_cache[6-5-16-256-0].None
+PASSED
+
+=============================== warnings summary ===============================
+src/test_runner.py:2
+  /code/src/test_runner.py:2: UserWarning: Python runners and associated APIs are an experimental feature and subject to change.
+    from cocotb.runner import get_runner
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+======================== 16 passed, 1 warning in 3.04s =========================

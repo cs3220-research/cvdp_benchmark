@@ -1,0 +1,112 @@
+{
+    "id": "e30d2fa4-5d92-4e00-bac7-2911eeca4236",
+    "task_name": "cvdp_agentic_thermostat_secure_0001",
+    "trial_name": "cvdp_agentic_thermostat_secure_0__6f22QTH",
+    "trial_uri": "file:///home/saketh/research/cvdp_benchmark/output/terminus-2/openrouter__anthropic__claude-opus-4.6/2026-03-12__10-44-45/cvdp_agentic_thermostat_secure_0__6f22QTH",
+    "task_id": {
+        "path": "/home/saketh/research/cvdp_benchmark/harbor_output/cvdp_agentic_thermostat_secure_0001"
+    },
+    "source": "cvdp_v1.0.4_agentic_code_generation_no_commercial",
+    "task_checksum": "3ff364e1fb8f2f264428dae1d8015f48573459910256a6d9d87a2414330816db",
+    "config": {
+        "task": {
+            "path": "/home/saketh/research/cvdp_benchmark/harbor_output/cvdp_agentic_thermostat_secure_0001",
+            "git_url": null,
+            "git_commit_id": null,
+            "overwrite": false,
+            "download_dir": null,
+            "source": "cvdp_v1.0.4_agentic_code_generation_no_commercial"
+        },
+        "trial_name": "cvdp_agentic_thermostat_secure_0__6f22QTH",
+        "trials_dir": "/home/saketh/research/cvdp_benchmark/output/terminus-2/openrouter__anthropic__claude-opus-4.6/2026-03-12__10-44-45",
+        "timeout_multiplier": 1.0,
+        "agent_timeout_multiplier": null,
+        "verifier_timeout_multiplier": null,
+        "agent_setup_timeout_multiplier": null,
+        "environment_build_timeout_multiplier": null,
+        "agent": {
+            "name": "terminus-2",
+            "import_path": null,
+            "model_name": "openrouter/anthropic/claude-opus-4.6",
+            "override_timeout_sec": null,
+            "override_setup_timeout_sec": null,
+            "max_timeout_sec": null,
+            "kwargs": {},
+            "env": {}
+        },
+        "environment": {
+            "type": "docker",
+            "import_path": null,
+            "force_build": false,
+            "delete": true,
+            "override_cpus": null,
+            "override_memory_mb": null,
+            "override_storage_mb": null,
+            "override_gpus": null,
+            "suppress_override_warnings": false,
+            "kwargs": {}
+        },
+        "verifier": {
+            "override_timeout_sec": null,
+            "max_timeout_sec": null,
+            "disable": false
+        },
+        "artifacts": [],
+        "job_id": "1e837cdd-7fdd-4f0f-a767-a87d6fc07400"
+    },
+    "agent_info": {
+        "name": "terminus-2",
+        "version": "2.0.0",
+        "model_info": {
+            "name": "anthropic/claude-opus-4.6",
+            "provider": "openrouter"
+        }
+    },
+    "agent_result": {
+        "n_input_tokens": 115860,
+        "n_cache_tokens": 96666,
+        "n_output_tokens": 5820,
+        "cost_usd": null,
+        "rollout_details": [],
+        "metadata": {
+            "n_episodes": 10,
+            "api_request_times_msec": [
+                6406.2745571136475,
+                31804.62408065796,
+                7307.135343551636,
+                9383.257389068604,
+                5148.043155670166,
+                6017.908096313477,
+                8677.08945274353,
+                4261.866807937622,
+                9581.671714782715,
+                5972.605466842651
+            ],
+            "summarization_count": 0
+        }
+    },
+    "verifier_result": {
+        "rewards": {
+            "reward": 0.0
+        }
+    },
+    "exception_info": null,
+    "started_at": "2026-03-12T16:10:42.359585Z",
+    "finished_at": "2026-03-12T16:12:47.677716Z",
+    "environment_setup": {
+        "started_at": "2026-03-12T16:10:42.360078Z",
+        "finished_at": "2026-03-12T16:10:44.806012Z"
+    },
+    "agent_setup": {
+        "started_at": "2026-03-12T16:10:44.806021Z",
+        "finished_at": "2026-03-12T16:10:50.619659Z"
+    },
+    "agent_execution": {
+        "started_at": "2026-03-12T16:10:50.619693Z",
+        "finished_at": "2026-03-12T16:12:36.657706Z"
+    },
+    "verifier": {
+        "started_at": "2026-03-12T16:12:36.657767Z",
+        "finished_at": "2026-03-12T16:12:37.243645Z"
+    }
+}

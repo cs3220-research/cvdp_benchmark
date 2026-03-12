@@ -1,0 +1,111 @@
+{
+    "id": "001e794a-ec87-492d-8d4e-a7c0fedbcdf6",
+    "task_name": "cvdp_agentic_cache_controller_0001",
+    "trial_name": "cvdp_agentic_cache_controller_00__GoSPoqd",
+    "trial_uri": "file:///home/saketh/research/cvdp_benchmark/output/terminus-2/openrouter__anthropic__claude-opus-4.6/2026-03-12__10-44-45/cvdp_agentic_cache_controller_00__GoSPoqd",
+    "task_id": {
+        "path": "/home/saketh/research/cvdp_benchmark/harbor_output/cvdp_agentic_cache_controller_0001"
+    },
+    "source": "cvdp_v1.0.4_agentic_code_generation_no_commercial",
+    "task_checksum": "f638a8b8722d3508074a21f5011bbfcfa22752ac98222eae7205a179f830e698",
+    "config": {
+        "task": {
+            "path": "/home/saketh/research/cvdp_benchmark/harbor_output/cvdp_agentic_cache_controller_0001",
+            "git_url": null,
+            "git_commit_id": null,
+            "overwrite": false,
+            "download_dir": null,
+            "source": "cvdp_v1.0.4_agentic_code_generation_no_commercial"
+        },
+        "trial_name": "cvdp_agentic_cache_controller_00__GoSPoqd",
+        "trials_dir": "/home/saketh/research/cvdp_benchmark/output/terminus-2/openrouter__anthropic__claude-opus-4.6/2026-03-12__10-44-45",
+        "timeout_multiplier": 1.0,
+        "agent_timeout_multiplier": null,
+        "verifier_timeout_multiplier": null,
+        "agent_setup_timeout_multiplier": null,
+        "environment_build_timeout_multiplier": null,
+        "agent": {
+            "name": "terminus-2",
+            "import_path": null,
+            "model_name": "openrouter/anthropic/claude-opus-4.6",
+            "override_timeout_sec": null,
+            "override_setup_timeout_sec": null,
+            "max_timeout_sec": null,
+            "kwargs": {},
+            "env": {}
+        },
+        "environment": {
+            "type": "docker",
+            "import_path": null,
+            "force_build": false,
+            "delete": true,
+            "override_cpus": null,
+            "override_memory_mb": null,
+            "override_storage_mb": null,
+            "override_gpus": null,
+            "suppress_override_warnings": false,
+            "kwargs": {}
+        },
+        "verifier": {
+            "override_timeout_sec": null,
+            "max_timeout_sec": null,
+            "disable": false
+        },
+        "artifacts": [],
+        "job_id": "1e837cdd-7fdd-4f0f-a767-a87d6fc07400"
+    },
+    "agent_info": {
+        "name": "terminus-2",
+        "version": "2.0.0",
+        "model_info": {
+            "name": "anthropic/claude-opus-4.6",
+            "provider": "openrouter"
+        }
+    },
+    "agent_result": {
+        "n_input_tokens": 73692,
+        "n_cache_tokens": 52163,
+        "n_output_tokens": 6474,
+        "cost_usd": null,
+        "rollout_details": [],
+        "metadata": {
+            "n_episodes": 9,
+            "api_request_times_msec": [
+                6405.418395996094,
+                4595.611333847046,
+                4335.716485977173,
+                31368.202924728394,
+                4789.538383483887,
+                19491.06192588806,
+                22255.308151245117,
+                7595.6737995147705,
+                4327.8326988220215
+            ],
+            "summarization_count": 0
+        }
+    },
+    "verifier_result": {
+        "rewards": {
+            "reward": 1.0
+        }
+    },
+    "exception_info": null,
+    "started_at": "2026-03-12T15:05:12.720520Z",
+    "finished_at": "2026-03-12T15:08:57.115533Z",
+    "environment_setup": {
+        "started_at": "2026-03-12T15:05:12.721324Z",
+        "finished_at": "2026-03-12T15:05:15.010758Z"
+    },
+    "agent_setup": {
+        "started_at": "2026-03-12T15:05:15.010767Z",
+        "finished_at": "2026-03-12T15:05:21.507410Z"
+    },
+    "agent_execution": {
+        "started_at": "2026-03-12T15:05:21.507444Z",
+        "finished_at": "2026-03-12T15:08:46.004514Z"
+    },
+    "verifier": {
+        "started_at": "2026-03-12T15:08:46.004584Z",
+        "finished_at": "2026-03-12T15:08:46.605426Z"
+    }
+}

@@ -1,0 +1,110 @@
+{
+    "id": "741406ab-b106-4ed5-a3d7-596040c0bc17",
+    "task_name": "cvdp_agentic_axi4lite_to_pcie_config_0003",
+    "trial_name": "cvdp_agentic_axi4lite_to_pcie_co__gmXacmG",
+    "trial_uri": "file:///home/saketh/research/cvdp_benchmark/output/terminus-2/openrouter__anthropic__claude-opus-4.6/2026-03-12__10-44-45/cvdp_agentic_axi4lite_to_pcie_co__gmXacmG",
+    "task_id": {
+        "path": "/home/saketh/research/cvdp_benchmark/harbor_output/cvdp_agentic_axi4lite_to_pcie_config_0003"
+    },
+    "source": "cvdp_v1.0.4_agentic_code_generation_no_commercial",
+    "task_checksum": "edc1e8fb7884e52b684132c0da1328a5738c35963f70eb9db44ed00a38492a1e",
+    "config": {
+        "task": {
+            "path": "/home/saketh/research/cvdp_benchmark/harbor_output/cvdp_agentic_axi4lite_to_pcie_config_0003",
+            "git_url": null,
+            "git_commit_id": null,
+            "overwrite": false,
+            "download_dir": null,
+            "source": "cvdp_v1.0.4_agentic_code_generation_no_commercial"
+        },
+        "trial_name": "cvdp_agentic_axi4lite_to_pcie_co__gmXacmG",
+        "trials_dir": "/home/saketh/research/cvdp_benchmark/output/terminus-2/openrouter__anthropic__claude-opus-4.6/2026-03-12__10-44-45",
+        "timeout_multiplier": 1.0,
+        "agent_timeout_multiplier": null,
+        "verifier_timeout_multiplier": null,
+        "agent_setup_timeout_multiplier": null,
+        "environment_build_timeout_multiplier": null,
+        "agent": {
+            "name": "terminus-2",
+            "import_path": null,
+            "model_name": "openrouter/anthropic/claude-opus-4.6",
+            "override_timeout_sec": null,
+            "override_setup_timeout_sec": null,
+            "max_timeout_sec": null,
+            "kwargs": {},
+            "env": {}
+        },
+        "environment": {
+            "type": "docker",
+            "import_path": null,
+            "force_build": false,
+            "delete": true,
+            "override_cpus": null,
+            "override_memory_mb": null,
+            "override_storage_mb": null,
+            "override_gpus": null,
+            "suppress_override_warnings": false,
+            "kwargs": {}
+        },
+        "verifier": {
+            "override_timeout_sec": null,
+            "max_timeout_sec": null,
+            "disable": false
+        },
+        "artifacts": [],
+        "job_id": "1e837cdd-7fdd-4f0f-a767-a87d6fc07400"
+    },
+    "agent_info": {
+        "name": "terminus-2",
+        "version": "2.0.0",
+        "model_info": {
+            "name": "anthropic/claude-opus-4.6",
+            "provider": "openrouter"
+        }
+    },
+    "agent_result": {
+        "n_input_tokens": 121821,
+        "n_cache_tokens": 95998,
+        "n_output_tokens": 6819,
+        "cost_usd": null,
+        "rollout_details": [],
+        "metadata": {
+            "n_episodes": 8,
+            "api_request_times_msec": [
+                7401.073694229126,
+                5383.139610290527,
+                54278.25331687927,
+                12652.543544769287,
+                6358.179807662964,
+                5204.881429672241,
+                7709.057092666626,
+                10010.583639144897
+            ],
+            "summarization_count": 0
+        }
+    },
+    "verifier_result": {
+        "rewards": {
+            "reward": 1.0
+        }
+    },
+    "exception_info": null,
+    "started_at": "2026-03-12T14:57:29.244253Z",
+    "finished_at": "2026-03-12T15:00:13.869037Z",
+    "environment_setup": {
+        "started_at": "2026-03-12T14:57:29.244805Z",
+        "finished_at": "2026-03-12T14:57:31.272250Z"
+    },
+    "agent_setup": {
+        "started_at": "2026-03-12T14:57:31.272258Z",
+        "finished_at": "2026-03-12T14:57:36.551911Z"
+    },
+    "agent_execution": {
+        "started_at": "2026-03-12T14:57:36.551944Z",
+        "finished_at": "2026-03-12T15:00:02.808950Z"
+    },
+    "verifier": {
+        "started_at": "2026-03-12T15:00:02.809011Z",
+        "finished_at": "2026-03-12T15:00:03.368775Z"
+    }
+}

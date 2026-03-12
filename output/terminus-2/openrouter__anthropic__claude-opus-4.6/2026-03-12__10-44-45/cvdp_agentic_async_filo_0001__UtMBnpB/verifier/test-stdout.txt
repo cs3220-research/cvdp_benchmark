@@ -1,0 +1,480 @@
+Running service: direct
+============================= test session starts ==============================
+platform linux -- Python 3.9.2, pytest-8.3.2, pluggy-1.5.0 -- /usr/bin/python3
+cachedir: /code/rundir/.cache
+rootdir: /src
+collecting ... collected 5 items
+
+../../src/test_runner.py::test_runner      -.--ns INFO     gpi                                ..mbed/gpi_embed.cpp:79   in set_program_name_in_venv        Did not detect Python virtual environment. Using system-wide Python interpreter
+     -.--ns INFO     gpi                                ../gpi/GpiCommon.cpp:101  in gpi_print_registered_impl       VPI registered
+     0.00ns INFO     cocotb                             Running on Icarus Verilog version 13.0 (devel)
+     0.00ns INFO     cocotb                             Running tests with cocotb v2.0.0.dev0+8d6c1a63 from /usr/local/lib/python3.9/dist-packages/cocotb
+     0.00ns INFO     cocotb                             Seeding Python random module with 1773327604
+     0.00ns INFO     cocotb.regression                  running test_async_filo.test_filo_default_clocks (1/2)
+                                                            Run FILO test with default clock frequencies.
+     0.00ns INFO     cocotb                             Running FILO test with DEPTH=16, DATA_WIDTH=8, w_clk_period=10ns, r_clk_period=15ns
+     0.00ns INFO     cocotb                             Starting reset test...
+    20.00ns INFO     cocotb                             Reset complete
+    20.00ns INFO     cocotb                             Reset test passed: FILO is empty after reset.
+    20.00ns INFO     cocotb                             Starting push to full test...
+    30.00ns INFO     cocotb                             Pushed: 0x0 | Counter: 1 | Full=0 | Empty=0
+    40.00ns INFO     cocotb                             Pushed: 0xc7 | Counter: 2 | Full=0 | Empty=0
+    50.00ns INFO     cocotb                             Pushed: 0x4d | Counter: 3 | Full=0 | Empty=0
+    60.00ns INFO     cocotb                             Pushed: 0x12 | Counter: 4 | Full=0 | Empty=0
+    70.00ns INFO     cocotb                             Pushed: 0xe6 | Counter: 5 | Full=0 | Empty=0
+    80.00ns INFO     cocotb                             Pushed: 0x44 | Counter: 6 | Full=0 | Empty=0
+    90.00ns INFO     cocotb                             Pushed: 0x81 | Counter: 7 | Full=0 | Empty=0
+   100.00ns INFO     cocotb                             Pushed: 0xcd | Counter: 8 | Full=0 | Empty=0
+   110.00ns INFO     cocotb                             Pushed: 0xc5 | Counter: 9 | Full=0 | Empty=0
+   120.00ns INFO     cocotb                             Pushed: 0xdd | Counter: 10 | Full=0 | Empty=0
+   130.00ns INFO     cocotb                             Pushed: 0x95 | Counter: 11 | Full=0 | Empty=0
+   140.00ns INFO     cocotb                             Pushed: 0xe9 | Counter: 12 | Full=0 | Empty=0
+   150.00ns INFO     cocotb                             Pushed: 0xa7 | Counter: 13 | Full=0 | Empty=0
+   160.00ns INFO     cocotb                             Pushed: 0x27 | Counter: 14 | Full=0 | Empty=0
+   170.00ns INFO     cocotb                             Pushed: 0xad | Counter: 15 | Full=0 | Empty=0
+   180.00ns INFO     cocotb                             Pushed: 0x7a | Counter: 16 | Full=1 | Empty=0
+   180.00ns INFO     cocotb                             Push to full test passed: FILO is full.
+   180.00ns INFO     cocotb                             Starting pop to empty test...
+   196.00ns INFO     cocotb                             Popped: 0x95 | Counter: 15 | Full=0 | Empty=0
+   211.00ns INFO     cocotb                             Popped: 0xdd | Counter: 14 | Full=0 | Empty=0
+   226.00ns INFO     cocotb                             Popped: 0xc5 | Counter: 13 | Full=0 | Empty=0
+   241.00ns INFO     cocotb                             Popped: 0xcd | Counter: 12 | Full=0 | Empty=0
+   256.00ns INFO     cocotb                             Popped: 0x81 | Counter: 11 | Full=0 | Empty=0
+   271.00ns INFO     cocotb                             Popped: 0x44 | Counter: 10 | Full=0 | Empty=0
+   286.00ns INFO     cocotb                             Popped: 0xe6 | Counter: 9 | Full=0 | Empty=0
+   301.00ns INFO     cocotb                             Popped: 0x12 | Counter: 8 | Full=0 | Empty=0
+   316.00ns INFO     cocotb                             Popped: 0x4d | Counter: 7 | Full=0 | Empty=0
+   331.00ns INFO     cocotb                             Popped: 0xc7 | Counter: 6 | Full=0 | Empty=0
+   346.00ns INFO     cocotb                             Popped: 0x0 | Counter: 5 | Full=0 | Empty=0
+   361.00ns INFO     cocotb                             Popped: 0x7a | Counter: 4 | Full=0 | Empty=0
+   376.00ns INFO     cocotb                             Popped: 0x7a | Counter: 3 | Full=0 | Empty=0
+   391.00ns INFO     cocotb                             Popped: 0x7a | Counter: 2 | Full=0 | Empty=0
+   406.00ns INFO     cocotb                             Popped: 0x7a | Counter: 1 | Full=0 | Empty=0
+   421.00ns INFO     cocotb                             Popped: 0x7a | Counter: 0 | Full=0 | Empty=1
+   421.00ns INFO     cocotb                             Pop to empty test passed: FILO is empty.
+   421.00ns INFO     cocotb                             All tests completed with w_clk=10ns and r_clk=15ns.
+   421.00ns INFO     cocotb.regression                  test_async_filo.test_filo_default_clocks passed
+   421.00ns INFO     cocotb.regression                  running test_async_filo.test_filo_random_clocks (2/2)
+                                                            Run FILO test with random clock frequencies.
+   422.00ns INFO     cocotb                             Running FILO test with random clocks: w_clk=43ns, r_clk=21ns
+   422.00ns INFO     cocotb                             Running FILO test with DEPTH=16, DATA_WIDTH=8, w_clk_period=43ns, r_clk_period=21ns
+   422.00ns INFO     cocotb                             Starting reset test...
+   465.00ns INFO     cocotb                             Reset complete
+   465.00ns INFO     cocotb                             Reset test passed: FILO is empty after reset.
+   465.00ns INFO     cocotb                             Starting push to full test...
+   508.00ns INFO     cocotb                             Pushed: 0x1d | Counter: 1 | Full=0 | Empty=0
+   551.00ns INFO     cocotb                             Pushed: 0x61 | Counter: 2 | Full=0 | Empty=0
+   594.00ns INFO     cocotb                             Pushed: 0x9e | Counter: 3 | Full=0 | Empty=0
+   637.00ns INFO     cocotb                             Pushed: 0xce | Counter: 4 | Full=0 | Empty=0
+   680.00ns INFO     cocotb                             Pushed: 0x7d | Counter: 5 | Full=0 | Empty=0
+   723.00ns INFO     cocotb                             Pushed: 0x61 | Counter: 6 | Full=0 | Empty=0
+   766.00ns INFO     cocotb                             Pushed: 0x99 | Counter: 7 | Full=0 | Empty=0
+   809.00ns INFO     cocotb                             Pushed: 0x92 | Counter: 8 | Full=0 | Empty=0
+   852.00ns INFO     cocotb                             Pushed: 0x62 | Counter: 9 | Full=0 | Empty=0
+   895.00ns INFO     cocotb                             Pushed: 0x64 | Counter: 10 | Full=0 | Empty=0
+   938.00ns INFO     cocotb                             Pushed: 0x6d | Counter: 11 | Full=0 | Empty=0
+   981.00ns INFO     cocotb                             Pushed: 0x50 | Counter: 12 | Full=0 | Empty=0
+  1024.00ns INFO     cocotb                             Pushed: 0xd5 | Counter: 13 | Full=0 | Empty=0
+  1067.00ns INFO     cocotb                             Pushed: 0x9f | Counter: 14 | Full=0 | Empty=0
+  1110.00ns INFO     cocotb                             Pushed: 0x3e | Counter: 15 | Full=0 | Empty=0
+  1153.00ns INFO     cocotb                             Pushed: 0x23 | Counter: 16 | Full=1 | Empty=0
+  1153.00ns INFO     cocotb                             Push to full test passed: FILO is full.
+  1153.00ns INFO     cocotb                             Starting pop to empty test...
+  1158.00ns INFO     cocotb                             Popped: 0xd5 | Counter: 15 | Full=0 | Empty=0
+  1179.00ns INFO     cocotb                             Popped: 0x50 | Counter: 14 | Full=0 | Empty=0
+  1200.00ns INFO     cocotb                             Popped: 0x6d | Counter: 13 | Full=0 | Empty=0
+  1221.00ns INFO     cocotb                             Popped: 0x64 | Counter: 12 | Full=0 | Empty=0
+  1242.00ns INFO     cocotb                             Popped: 0x62 | Counter: 11 | Full=0 | Empty=0
+  1263.00ns INFO     cocotb                             Popped: 0x92 | Counter: 10 | Full=0 | Empty=0
+  1284.00ns INFO     cocotb                             Popped: 0x99 | Counter: 9 | Full=0 | Empty=0
+  1305.00ns INFO     cocotb                             Popped: 0x61 | Counter: 8 | Full=0 | Empty=0
+  1326.00ns INFO     cocotb                             Popped: 0x7d | Counter: 7 | Full=0 | Empty=0
+  1347.00ns INFO     cocotb                             Popped: 0xce | Counter: 6 | Full=0 | Empty=0
+  1368.00ns INFO     cocotb                             Popped: 0x9e | Counter: 5 | Full=0 | Empty=0
+  1389.00ns INFO     cocotb                             Popped: 0x7a | Counter: 4 | Full=0 | Empty=0
+  1410.00ns INFO     cocotb                             Popped: 0xad | Counter: 3 | Full=0 | Empty=0
+  1431.00ns INFO     cocotb                             Popped: 0x23 | Counter: 2 | Full=0 | Empty=0
+  1452.00ns INFO     cocotb                             Popped: 0x3e | Counter: 1 | Full=0 | Empty=0
+  1473.00ns INFO     cocotb                             Popped: 0x9f | Counter: 0 | Full=0 | Empty=1
+  1473.00ns INFO     cocotb                             Pop to empty test passed: FILO is empty.
+  1473.00ns INFO     cocotb                             All tests completed with w_clk=43ns and r_clk=21ns.
+  1473.00ns INFO     cocotb.regression                  test_async_filo.test_filo_random_clocks passed
+  1473.00ns INFO     cocotb.regression                  **************************************************************************************************
+                                                        ** TEST                                      STATUS  SIM TIME (ns)  REAL TIME (s)  RATIO (ns/s) **
+                                                        **************************************************************************************************
+                                                        ** test_async_filo.test_filo_default_clocks   PASS         421.00           0.01      45161.18  **
+                                                        ** test_async_filo.test_filo_random_clocks    PASS        1052.00           0.01      75298.35  **
+                                                        **************************************************************************************************
+                                                        ** TESTS=2 PASS=2 FAIL=0 SKIP=0                           1473.00           0.03      53203.56  **
+                                                        **************************************************************************************************
+                                                        
+FST info: dumpfile /code/rundir/sim_build/async_filo.fst opened for output.
+[DEBUG] Running simulation with DATA_WIDTH=8, DEPTH=16
+[DEBUG] Parameters: {'DATA_WIDTH': 8, 'DEPTH': 16}
+PASSED
+../../src/test_runner.py::test_filo[8-8]      -.--ns INFO     gpi                                ..mbed/gpi_embed.cpp:79   in set_program_name_in_venv        Did not detect Python virtual environment. Using system-wide Python interpreter
+     -.--ns INFO     gpi                                ../gpi/GpiCommon.cpp:101  in gpi_print_registered_impl       VPI registered
+     0.00ns INFO     cocotb                             Running on Icarus Verilog version 13.0 (devel)
+     0.00ns INFO     cocotb                             Running tests with cocotb v2.0.0.dev0+8d6c1a63 from /usr/local/lib/python3.9/dist-packages/cocotb
+     0.00ns INFO     cocotb                             Seeding Python random module with 1773327604
+     0.00ns INFO     cocotb.regression                  running test_async_filo.test_filo_default_clocks (1/2)
+                                                            Run FILO test with default clock frequencies.
+     0.00ns INFO     cocotb                             Running FILO test with DEPTH=8, DATA_WIDTH=8, w_clk_period=10ns, r_clk_period=15ns
+     0.00ns INFO     cocotb                             Starting reset test...
+    20.00ns INFO     cocotb                             Reset complete
+    20.00ns INFO     cocotb                             Reset test passed: FILO is empty after reset.
+    20.00ns INFO     cocotb                             Starting push to full test...
+    30.00ns INFO     cocotb                             Pushed: 0x0 | Counter: 1 | Full=0 | Empty=0
+    40.00ns INFO     cocotb                             Pushed: 0xc7 | Counter: 2 | Full=0 | Empty=0
+    50.00ns INFO     cocotb                             Pushed: 0x4d | Counter: 3 | Full=0 | Empty=0
+    60.00ns INFO     cocotb                             Pushed: 0x12 | Counter: 4 | Full=0 | Empty=0
+    70.00ns INFO     cocotb                             Pushed: 0xe6 | Counter: 5 | Full=0 | Empty=0
+    80.00ns INFO     cocotb                             Pushed: 0x44 | Counter: 6 | Full=0 | Empty=0
+    90.00ns INFO     cocotb                             Pushed: 0x81 | Counter: 7 | Full=0 | Empty=0
+   100.00ns INFO     cocotb                             Pushed: 0xcd | Counter: 8 | Full=1 | Empty=0
+   100.00ns INFO     cocotb                             Push to full test passed: FILO is full.
+   100.00ns INFO     cocotb                             Starting pop to empty test...
+   106.00ns INFO     cocotb                             Popped: 0xc7 | Counter: 7 | Full=0 | Empty=0
+   121.00ns INFO     cocotb                             Popped: 0x0 | Counter: 6 | Full=0 | Empty=0
+   136.00ns INFO     cocotb                             Popped: 0xcd | Counter: 5 | Full=0 | Empty=0
+   151.00ns INFO     cocotb                             Popped: 0xcd | Counter: 4 | Full=0 | Empty=0
+   166.00ns INFO     cocotb                             Popped: 0xcd | Counter: 3 | Full=0 | Empty=0
+   181.00ns INFO     cocotb                             Popped: 0xcd | Counter: 2 | Full=0 | Empty=0
+   196.00ns INFO     cocotb                             Popped: 0xcd | Counter: 1 | Full=0 | Empty=0
+   211.00ns INFO     cocotb                             Popped: 0xcd | Counter: 0 | Full=0 | Empty=1
+   211.00ns INFO     cocotb                             Pop to empty test passed: FILO is empty.
+   211.00ns INFO     cocotb                             All tests completed with w_clk=10ns and r_clk=15ns.
+   211.00ns INFO     cocotb.regression                  test_async_filo.test_filo_default_clocks passed
+   211.00ns INFO     cocotb.regression                  running test_async_filo.test_filo_random_clocks (2/2)
+                                                            Run FILO test with random clock frequencies.
+   212.00ns INFO     cocotb                             Running FILO test with random clocks: w_clk=43ns, r_clk=21ns
+   212.00ns INFO     cocotb                             Running FILO test with DEPTH=8, DATA_WIDTH=8, w_clk_period=43ns, r_clk_period=21ns
+   212.00ns INFO     cocotb                             Starting reset test...
+   255.00ns INFO     cocotb                             Reset complete
+   255.00ns INFO     cocotb                             Reset test passed: FILO is empty after reset.
+   255.00ns INFO     cocotb                             Starting push to full test...
+   298.00ns INFO     cocotb                             Pushed: 0x1d | Counter: 1 | Full=0 | Empty=0
+   341.00ns INFO     cocotb                             Pushed: 0x61 | Counter: 2 | Full=0 | Empty=0
+   384.00ns INFO     cocotb                             Pushed: 0x9e | Counter: 3 | Full=0 | Empty=0
+   427.00ns INFO     cocotb                             Pushed: 0xce | Counter: 4 | Full=0 | Empty=0
+   470.00ns INFO     cocotb                             Pushed: 0x7d | Counter: 5 | Full=0 | Empty=0
+   513.00ns INFO     cocotb                             Pushed: 0x61 | Counter: 6 | Full=0 | Empty=0
+   556.00ns INFO     cocotb                             Pushed: 0x99 | Counter: 7 | Full=0 | Empty=0
+   599.00ns INFO     cocotb                             Pushed: 0x92 | Counter: 8 | Full=1 | Empty=0
+   599.00ns INFO     cocotb                             Push to full test passed: FILO is full.
+   599.00ns INFO     cocotb                             Starting pop to empty test...
+   612.00ns INFO     cocotb                             Popped: 0x7d | Counter: 7 | Full=0 | Empty=0
+   633.00ns INFO     cocotb                             Popped: 0xce | Counter: 6 | Full=0 | Empty=0
+   654.00ns INFO     cocotb                             Popped: 0x9e | Counter: 5 | Full=0 | Empty=0
+   675.00ns INFO     cocotb                             Popped: 0xcd | Counter: 4 | Full=0 | Empty=0
+   696.00ns INFO     cocotb                             Popped: 0x81 | Counter: 3 | Full=0 | Empty=0
+   717.00ns INFO     cocotb                             Popped: 0x92 | Counter: 2 | Full=0 | Empty=0
+   738.00ns INFO     cocotb                             Popped: 0x99 | Counter: 1 | Full=0 | Empty=0
+   759.00ns INFO     cocotb                             Popped: 0x61 | Counter: 0 | Full=0 | Empty=1
+   759.00ns INFO     cocotb                             Pop to empty test passed: FILO is empty.
+   759.00ns INFO     cocotb                             All tests completed with w_clk=43ns and r_clk=21ns.
+   759.00ns INFO     cocotb.regression                  test_async_filo.test_filo_random_clocks passed
+   759.00ns INFO     cocotb.regression                  **************************************************************************************************
+                                                        ** TEST                                      STATUS  SIM TIME (ns)  REAL TIME (s)  RATIO (ns/s) **
+                                                        **************************************************************************************************
+                                                        ** test_async_filo.test_filo_default_clocks   PASS         211.00           0.01      40135.97  **
+                                                        ** test_async_filo.test_filo_random_clocks    PASS         548.00           0.00     110477.22  **
+                                                        **************************************************************************************************
+                                                        ** TESTS=2 PASS=2 FAIL=0 SKIP=0                            759.00           0.01      55369.63  **
+                                                        **************************************************************************************************
+                                                        
+FST info: dumpfile /code/rundir/sim_build/async_filo.fst opened for output.
+[DEBUG] Running simulation with DATA_WIDTH=8, DEPTH=8
+[DEBUG] Parameters: {'DATA_WIDTH': 8, 'DEPTH': 8}
+PASSED
+../../src/test_runner.py::test_filo[8-12]      -.--ns INFO     gpi                                ..mbed/gpi_embed.cpp:79   in set_program_name_in_venv        Did not detect Python virtual environment. Using system-wide Python interpreter
+     -.--ns INFO     gpi                                ../gpi/GpiCommon.cpp:101  in gpi_print_registered_impl       VPI registered
+     0.00ns INFO     cocotb                             Running on Icarus Verilog version 13.0 (devel)
+     0.00ns INFO     cocotb                             Running tests with cocotb v2.0.0.dev0+8d6c1a63 from /usr/local/lib/python3.9/dist-packages/cocotb
+     0.00ns INFO     cocotb                             Seeding Python random module with 1773327604
+     0.00ns INFO     cocotb.regression                  running test_async_filo.test_filo_default_clocks (1/2)
+                                                            Run FILO test with default clock frequencies.
+     0.00ns INFO     cocotb                             Running FILO test with DEPTH=8, DATA_WIDTH=12, w_clk_period=10ns, r_clk_period=15ns
+     0.00ns INFO     cocotb                             Starting reset test...
+    20.00ns INFO     cocotb                             Reset complete
+    20.00ns INFO     cocotb                             Reset test passed: FILO is empty after reset.
+    20.00ns INFO     cocotb                             Starting push to full test...
+    30.00ns INFO     cocotb                             Pushed: 0x1 | Counter: 1 | Full=0 | Empty=0
+    40.00ns INFO     cocotb                             Pushed: 0xc71 | Counter: 2 | Full=0 | Empty=0
+    50.00ns INFO     cocotb                             Pushed: 0x4dc | Counter: 3 | Full=0 | Empty=0
+    60.00ns INFO     cocotb                             Pushed: 0x12b | Counter: 4 | Full=0 | Empty=0
+    70.00ns INFO     cocotb                             Pushed: 0xe6f | Counter: 5 | Full=0 | Empty=0
+    80.00ns INFO     cocotb                             Pushed: 0x440 | Counter: 6 | Full=0 | Empty=0
+    90.00ns INFO     cocotb                             Pushed: 0x81c | Counter: 7 | Full=0 | Empty=0
+   100.00ns INFO     cocotb                             Pushed: 0xcd8 | Counter: 8 | Full=1 | Empty=0
+   100.00ns INFO     cocotb                             Push to full test passed: FILO is full.
+   100.00ns INFO     cocotb                             Starting pop to empty test...
+   106.00ns INFO     cocotb                             Popped: 0xc71 | Counter: 7 | Full=0 | Empty=0
+   121.00ns INFO     cocotb                             Popped: 0x1 | Counter: 6 | Full=0 | Empty=0
+   136.00ns INFO     cocotb                             Popped: 0xcd8 | Counter: 5 | Full=0 | Empty=0
+   151.00ns INFO     cocotb                             Popped: 0xcd8 | Counter: 4 | Full=0 | Empty=0
+   166.00ns INFO     cocotb                             Popped: 0xcd8 | Counter: 3 | Full=0 | Empty=0
+   181.00ns INFO     cocotb                             Popped: 0xcd8 | Counter: 2 | Full=0 | Empty=0
+   196.00ns INFO     cocotb                             Popped: 0xcd8 | Counter: 1 | Full=0 | Empty=0
+   211.00ns INFO     cocotb                             Popped: 0xcd8 | Counter: 0 | Full=0 | Empty=1
+   211.00ns INFO     cocotb                             Pop to empty test passed: FILO is empty.
+   211.00ns INFO     cocotb                             All tests completed with w_clk=10ns and r_clk=15ns.
+   211.00ns INFO     cocotb.regression                  test_async_filo.test_filo_default_clocks passed
+   211.00ns INFO     cocotb.regression                  running test_async_filo.test_filo_random_clocks (2/2)
+                                                            Run FILO test with random clock frequencies.
+   212.00ns INFO     cocotb                             Running FILO test with random clocks: w_clk=43ns, r_clk=21ns
+   212.00ns INFO     cocotb                             Running FILO test with DEPTH=8, DATA_WIDTH=12, w_clk_period=43ns, r_clk_period=21ns
+   212.00ns INFO     cocotb                             Starting reset test...
+   255.00ns INFO     cocotb                             Reset complete
+   255.00ns INFO     cocotb                             Reset test passed: FILO is empty after reset.
+   255.00ns INFO     cocotb                             Starting push to full test...
+   298.00ns INFO     cocotb                             Pushed: 0x1d5 | Counter: 1 | Full=0 | Empty=0
+   341.00ns INFO     cocotb                             Pushed: 0x619 | Counter: 2 | Full=0 | Empty=0
+   384.00ns INFO     cocotb                             Pushed: 0x9e9 | Counter: 3 | Full=0 | Empty=0
+   427.00ns INFO     cocotb                             Pushed: 0xcee | Counter: 4 | Full=0 | Empty=0
+   470.00ns INFO     cocotb                             Pushed: 0x7d2 | Counter: 5 | Full=0 | Empty=0
+   513.00ns INFO     cocotb                             Pushed: 0x615 | Counter: 6 | Full=0 | Empty=0
+   556.00ns INFO     cocotb                             Pushed: 0x995 | Counter: 7 | Full=0 | Empty=0
+   599.00ns INFO     cocotb                             Pushed: 0x920 | Counter: 8 | Full=1 | Empty=0
+   599.00ns INFO     cocotb                             Push to full test passed: FILO is full.
+   599.00ns INFO     cocotb                             Starting pop to empty test...
+   612.00ns INFO     cocotb                             Popped: 0x7d2 | Counter: 7 | Full=0 | Empty=0
+   633.00ns INFO     cocotb                             Popped: 0xcee | Counter: 6 | Full=0 | Empty=0
+   654.00ns INFO     cocotb                             Popped: 0x9e9 | Counter: 5 | Full=0 | Empty=0
+   675.00ns INFO     cocotb                             Popped: 0xcd8 | Counter: 4 | Full=0 | Empty=0
+   696.00ns INFO     cocotb                             Popped: 0x81c | Counter: 3 | Full=0 | Empty=0
+   717.00ns INFO     cocotb                             Popped: 0x920 | Counter: 2 | Full=0 | Empty=0
+   738.00ns INFO     cocotb                             Popped: 0x995 | Counter: 1 | Full=0 | Empty=0
+   759.00ns INFO     cocotb                             Popped: 0x615 | Counter: 0 | Full=0 | Empty=1
+   759.00ns INFO     cocotb                             Pop to empty test passed: FILO is empty.
+   759.00ns INFO     cocotb                             All tests completed with w_clk=43ns and r_clk=21ns.
+   759.00ns INFO     cocotb.regression                  test_async_filo.test_filo_random_clocks passed
+   759.00ns INFO     cocotb.regression                  **************************************************************************************************
+                                                        ** TEST                                      STATUS  SIM TIME (ns)  REAL TIME (s)  RATIO (ns/s) **
+                                                        **************************************************************************************************
+                                                        ** test_async_filo.test_filo_default_clocks   PASS         211.00           0.01      40830.36  **
+                                                        ** test_async_filo.test_filo_random_clocks    PASS         548.00           0.00     109634.08  **
+                                                        **************************************************************************************************
+                                                        ** TESTS=2 PASS=2 FAIL=0 SKIP=0                            759.00           0.01      55605.61  **
+                                                        **************************************************************************************************
+                                                        
+FST info: dumpfile /code/rundir/sim_build/async_filo.fst opened for output.
+[DEBUG] Running simulation with DATA_WIDTH=12, DEPTH=8
+[DEBUG] Parameters: {'DATA_WIDTH': 12, 'DEPTH': 8}
+PASSED
+../../src/test_runner.py::test_filo[16-8]      -.--ns INFO     gpi                                ..mbed/gpi_embed.cpp:79   in set_program_name_in_venv        Did not detect Python virtual environment. Using system-wide Python interpreter
+     -.--ns INFO     gpi                                ../gpi/GpiCommon.cpp:101  in gpi_print_registered_impl       VPI registered
+     0.00ns INFO     cocotb                             Running on Icarus Verilog version 13.0 (devel)
+     0.00ns INFO     cocotb                             Running tests with cocotb v2.0.0.dev0+8d6c1a63 from /usr/local/lib/python3.9/dist-packages/cocotb
+     0.00ns INFO     cocotb                             Seeding Python random module with 1773327604
+     0.00ns INFO     cocotb.regression                  running test_async_filo.test_filo_default_clocks (1/2)
+                                                            Run FILO test with default clock frequencies.
+     0.00ns INFO     cocotb                             Running FILO test with DEPTH=16, DATA_WIDTH=8, w_clk_period=10ns, r_clk_period=15ns
+     0.00ns INFO     cocotb                             Starting reset test...
+    20.00ns INFO     cocotb                             Reset complete
+    20.00ns INFO     cocotb                             Reset test passed: FILO is empty after reset.
+    20.00ns INFO     cocotb                             Starting push to full test...
+    30.00ns INFO     cocotb                             Pushed: 0x0 | Counter: 1 | Full=0 | Empty=0
+    40.00ns INFO     cocotb                             Pushed: 0xc7 | Counter: 2 | Full=0 | Empty=0
+    50.00ns INFO     cocotb                             Pushed: 0x4d | Counter: 3 | Full=0 | Empty=0
+    60.00ns INFO     cocotb                             Pushed: 0x12 | Counter: 4 | Full=0 | Empty=0
+    70.00ns INFO     cocotb                             Pushed: 0xe6 | Counter: 5 | Full=0 | Empty=0
+    80.00ns INFO     cocotb                             Pushed: 0x44 | Counter: 6 | Full=0 | Empty=0
+    90.00ns INFO     cocotb                             Pushed: 0x81 | Counter: 7 | Full=0 | Empty=0
+   100.00ns INFO     cocotb                             Pushed: 0xcd | Counter: 8 | Full=0 | Empty=0
+   110.00ns INFO     cocotb                             Pushed: 0xc5 | Counter: 9 | Full=0 | Empty=0
+   120.00ns INFO     cocotb                             Pushed: 0xdd | Counter: 10 | Full=0 | Empty=0
+   130.00ns INFO     cocotb                             Pushed: 0x95 | Counter: 11 | Full=0 | Empty=0
+   140.00ns INFO     cocotb                             Pushed: 0xe9 | Counter: 12 | Full=0 | Empty=0
+   150.00ns INFO     cocotb                             Pushed: 0xa7 | Counter: 13 | Full=0 | Empty=0
+   160.00ns INFO     cocotb                             Pushed: 0x27 | Counter: 14 | Full=0 | Empty=0
+   170.00ns INFO     cocotb                             Pushed: 0xad | Counter: 15 | Full=0 | Empty=0
+   180.00ns INFO     cocotb                             Pushed: 0x7a | Counter: 16 | Full=1 | Empty=0
+   180.00ns INFO     cocotb                             Push to full test passed: FILO is full.
+   180.00ns INFO     cocotb                             Starting pop to empty test...
+   196.00ns INFO     cocotb                             Popped: 0x95 | Counter: 15 | Full=0 | Empty=0
+   211.00ns INFO     cocotb                             Popped: 0xdd | Counter: 14 | Full=0 | Empty=0
+   226.00ns INFO     cocotb                             Popped: 0xc5 | Counter: 13 | Full=0 | Empty=0
+   241.00ns INFO     cocotb                             Popped: 0xcd | Counter: 12 | Full=0 | Empty=0
+   256.00ns INFO     cocotb                             Popped: 0x81 | Counter: 11 | Full=0 | Empty=0
+   271.00ns INFO     cocotb                             Popped: 0x44 | Counter: 10 | Full=0 | Empty=0
+   286.00ns INFO     cocotb                             Popped: 0xe6 | Counter: 9 | Full=0 | Empty=0
+   301.00ns INFO     cocotb                             Popped: 0x12 | Counter: 8 | Full=0 | Empty=0
+   316.00ns INFO     cocotb                             Popped: 0x4d | Counter: 7 | Full=0 | Empty=0
+   331.00ns INFO     cocotb                             Popped: 0xc7 | Counter: 6 | Full=0 | Empty=0
+   346.00ns INFO     cocotb                             Popped: 0x0 | Counter: 5 | Full=0 | Empty=0
+   361.00ns INFO     cocotb                             Popped: 0x7a | Counter: 4 | Full=0 | Empty=0
+   376.00ns INFO     cocotb                             Popped: 0x7a | Counter: 3 | Full=0 | Empty=0
+   391.00ns INFO     cocotb                             Popped: 0x7a | Counter: 2 | Full=0 | Empty=0
+   406.00ns INFO     cocotb                             Popped: 0x7a | Counter: 1 | Full=0 | Empty=0
+   421.00ns INFO     cocotb                             Popped: 0x7a | Counter: 0 | Full=0 | Empty=1
+   421.00ns INFO     cocotb                             Pop to empty test passed: FILO is empty.
+   421.00ns INFO     cocotb                             All tests completed with w_clk=10ns and r_clk=15ns.
+   421.00ns INFO     cocotb.regression                  test_async_filo.test_filo_default_clocks passed
+   421.00ns INFO     cocotb.regression                  running test_async_filo.test_filo_random_clocks (2/2)
+                                                            Run FILO test with random clock frequencies.
+   422.00ns INFO     cocotb                             Running FILO test with random clocks: w_clk=43ns, r_clk=21ns
+   422.00ns INFO     cocotb                             Running FILO test with DEPTH=16, DATA_WIDTH=8, w_clk_period=43ns, r_clk_period=21ns
+   422.00ns INFO     cocotb                             Starting reset test...
+   465.00ns INFO     cocotb                             Reset complete
+   465.00ns INFO     cocotb                             Reset test passed: FILO is empty after reset.
+   465.00ns INFO     cocotb                             Starting push to full test...
+   508.00ns INFO     cocotb                             Pushed: 0x1d | Counter: 1 | Full=0 | Empty=0
+   551.00ns INFO     cocotb                             Pushed: 0x61 | Counter: 2 | Full=0 | Empty=0
+   594.00ns INFO     cocotb                             Pushed: 0x9e | Counter: 3 | Full=0 | Empty=0
+   637.00ns INFO     cocotb                             Pushed: 0xce | Counter: 4 | Full=0 | Empty=0
+   680.00ns INFO     cocotb                             Pushed: 0x7d | Counter: 5 | Full=0 | Empty=0
+   723.00ns INFO     cocotb                             Pushed: 0x61 | Counter: 6 | Full=0 | Empty=0
+   766.00ns INFO     cocotb                             Pushed: 0x99 | Counter: 7 | Full=0 | Empty=0
+   809.00ns INFO     cocotb                             Pushed: 0x92 | Counter: 8 | Full=0 | Empty=0
+   852.00ns INFO     cocotb                             Pushed: 0x62 | Counter: 9 | Full=0 | Empty=0
+   895.00ns INFO     cocotb                             Pushed: 0x64 | Counter: 10 | Full=0 | Empty=0
+   938.00ns INFO     cocotb                             Pushed: 0x6d | Counter: 11 | Full=0 | Empty=0
+   981.00ns INFO     cocotb                             Pushed: 0x50 | Counter: 12 | Full=0 | Empty=0
+  1024.00ns INFO     cocotb                             Pushed: 0xd5 | Counter: 13 | Full=0 | Empty=0
+  1067.00ns INFO     cocotb                             Pushed: 0x9f | Counter: 14 | Full=0 | Empty=0
+  1110.00ns INFO     cocotb                             Pushed: 0x3e | Counter: 15 | Full=0 | Empty=0
+  1153.00ns INFO     cocotb                             Pushed: 0x23 | Counter: 16 | Full=1 | Empty=0
+  1153.00ns INFO     cocotb                             Push to full test passed: FILO is full.
+  1153.00ns INFO     cocotb                             Starting pop to empty test...
+  1158.00ns INFO     cocotb                             Popped: 0xd5 | Counter: 15 | Full=0 | Empty=0
+  1179.00ns INFO     cocotb                             Popped: 0x50 | Counter: 14 | Full=0 | Empty=0
+  1200.00ns INFO     cocotb                             Popped: 0x6d | Counter: 13 | Full=0 | Empty=0
+  1221.00ns INFO     cocotb                             Popped: 0x64 | Counter: 12 | Full=0 | Empty=0
+  1242.00ns INFO     cocotb                             Popped: 0x62 | Counter: 11 | Full=0 | Empty=0
+  1263.00ns INFO     cocotb                             Popped: 0x92 | Counter: 10 | Full=0 | Empty=0
+  1284.00ns INFO     cocotb                             Popped: 0x99 | Counter: 9 | Full=0 | Empty=0
+  1305.00ns INFO     cocotb                             Popped: 0x61 | Counter: 8 | Full=0 | Empty=0
+  1326.00ns INFO     cocotb                             Popped: 0x7d | Counter: 7 | Full=0 | Empty=0
+  1347.00ns INFO     cocotb                             Popped: 0xce | Counter: 6 | Full=0 | Empty=0
+  1368.00ns INFO     cocotb                             Popped: 0x9e | Counter: 5 | Full=0 | Empty=0
+  1389.00ns INFO     cocotb                             Popped: 0x7a | Counter: 4 | Full=0 | Empty=0
+  1410.00ns INFO     cocotb                             Popped: 0xad | Counter: 3 | Full=0 | Empty=0
+  1431.00ns INFO     cocotb                             Popped: 0x23 | Counter: 2 | Full=0 | Empty=0
+  1452.00ns INFO     cocotb                             Popped: 0x3e | Counter: 1 | Full=0 | Empty=0
+  1473.00ns INFO     cocotb                             Popped: 0x9f | Counter: 0 | Full=0 | Empty=1
+  1473.00ns INFO     cocotb                             Pop to empty test passed: FILO is empty.
+  1473.00ns INFO     cocotb                             All tests completed with w_clk=43ns and r_clk=21ns.
+  1473.00ns INFO     cocotb.regression                  test_async_filo.test_filo_random_clocks passed
+  1473.00ns INFO     cocotb.regression                  **************************************************************************************************
+                                                        ** TEST                                      STATUS  SIM TIME (ns)  REAL TIME (s)  RATIO (ns/s) **
+                                                        **************************************************************************************************
+                                                        ** test_async_filo.test_filo_default_clocks   PASS         421.00           0.01      43317.68  **
+                                                        ** test_async_filo.test_filo_random_clocks    PASS        1052.00           0.01      98643.17  **
+                                                        **************************************************************************************************
+                                                        ** TESTS=2 PASS=2 FAIL=0 SKIP=0                           1473.00           0.02      61246.80  **
+                                                        **************************************************************************************************
+                                                        
+FST info: dumpfile /code/rundir/sim_build/async_filo.fst opened for output.
+[DEBUG] Running simulation with DATA_WIDTH=8, DEPTH=16
+[DEBUG] Parameters: {'DATA_WIDTH': 8, 'DEPTH': 16}
+PASSED
+../../src/test_runner.py::test_filo[16-12]      -.--ns INFO     gpi                                ..mbed/gpi_embed.cpp:79   in set_program_name_in_venv        Did not detect Python virtual environment. Using system-wide Python interpreter
+     -.--ns INFO     gpi                                ../gpi/GpiCommon.cpp:101  in gpi_print_registered_impl       VPI registered
+     0.00ns INFO     cocotb                             Running on Icarus Verilog version 13.0 (devel)
+     0.00ns INFO     cocotb                             Running tests with cocotb v2.0.0.dev0+8d6c1a63 from /usr/local/lib/python3.9/dist-packages/cocotb
+     0.00ns INFO     cocotb                             Seeding Python random module with 1773327604
+     0.00ns INFO     cocotb.regression                  running test_async_filo.test_filo_default_clocks (1/2)
+                                                            Run FILO test with default clock frequencies.
+     0.00ns INFO     cocotb                             Running FILO test with DEPTH=16, DATA_WIDTH=12, w_clk_period=10ns, r_clk_period=15ns
+     0.00ns INFO     cocotb                             Starting reset test...
+    20.00ns INFO     cocotb                             Reset complete
+    20.00ns INFO     cocotb                             Reset test passed: FILO is empty after reset.
+    20.00ns INFO     cocotb                             Starting push to full test...
+    30.00ns INFO     cocotb                             Pushed: 0x1 | Counter: 1 | Full=0 | Empty=0
+    40.00ns INFO     cocotb                             Pushed: 0xc71 | Counter: 2 | Full=0 | Empty=0
+    50.00ns INFO     cocotb                             Pushed: 0x4dc | Counter: 3 | Full=0 | Empty=0
+    60.00ns INFO     cocotb                             Pushed: 0x12b | Counter: 4 | Full=0 | Empty=0
+    70.00ns INFO     cocotb                             Pushed: 0xe6f | Counter: 5 | Full=0 | Empty=0
+    80.00ns INFO     cocotb                             Pushed: 0x440 | Counter: 6 | Full=0 | Empty=0
+    90.00ns INFO     cocotb                             Pushed: 0x81c | Counter: 7 | Full=0 | Empty=0
+   100.00ns INFO     cocotb                             Pushed: 0xcd8 | Counter: 8 | Full=0 | Empty=0
+   110.00ns INFO     cocotb                             Pushed: 0xc55 | Counter: 9 | Full=0 | Empty=0
+   120.00ns INFO     cocotb                             Pushed: 0xdd2 | Counter: 10 | Full=0 | Empty=0
+   130.00ns INFO     cocotb                             Pushed: 0x95a | Counter: 11 | Full=0 | Empty=0
+   140.00ns INFO     cocotb                             Pushed: 0xe98 | Counter: 12 | Full=0 | Empty=0
+   150.00ns INFO     cocotb                             Pushed: 0xa74 | Counter: 13 | Full=0 | Empty=0
+   160.00ns INFO     cocotb                             Pushed: 0x271 | Counter: 14 | Full=0 | Empty=0
+   170.00ns INFO     cocotb                             Pushed: 0xadc | Counter: 15 | Full=0 | Empty=0
+   180.00ns INFO     cocotb                             Pushed: 0x7a1 | Counter: 16 | Full=1 | Empty=0
+   180.00ns INFO     cocotb                             Push to full test passed: FILO is full.
+   180.00ns INFO     cocotb                             Starting pop to empty test...
+   196.00ns INFO     cocotb                             Popped: 0x95a | Counter: 15 | Full=0 | Empty=0
+   211.00ns INFO     cocotb                             Popped: 0xdd2 | Counter: 14 | Full=0 | Empty=0
+   226.00ns INFO     cocotb                             Popped: 0xc55 | Counter: 13 | Full=0 | Empty=0
+   241.00ns INFO     cocotb                             Popped: 0xcd8 | Counter: 12 | Full=0 | Empty=0
+   256.00ns INFO     cocotb                             Popped: 0x81c | Counter: 11 | Full=0 | Empty=0
+   271.00ns INFO     cocotb                             Popped: 0x440 | Counter: 10 | Full=0 | Empty=0
+   286.00ns INFO     cocotb                             Popped: 0xe6f | Counter: 9 | Full=0 | Empty=0
+   301.00ns INFO     cocotb                             Popped: 0x12b | Counter: 8 | Full=0 | Empty=0
+   316.00ns INFO     cocotb                             Popped: 0x4dc | Counter: 7 | Full=0 | Empty=0
+   331.00ns INFO     cocotb                             Popped: 0xc71 | Counter: 6 | Full=0 | Empty=0
+   346.00ns INFO     cocotb                             Popped: 0x1 | Counter: 5 | Full=0 | Empty=0
+   361.00ns INFO     cocotb                             Popped: 0x7a1 | Counter: 4 | Full=0 | Empty=0
+   376.00ns INFO     cocotb                             Popped: 0x7a1 | Counter: 3 | Full=0 | Empty=0
+   391.00ns INFO     cocotb                             Popped: 0x7a1 | Counter: 2 | Full=0 | Empty=0
+   406.00ns INFO     cocotb                             Popped: 0x7a1 | Counter: 1 | Full=0 | Empty=0
+   421.00ns INFO     cocotb                             Popped: 0x7a1 | Counter: 0 | Full=0 | Empty=1
+   421.00ns INFO     cocotb                             Pop to empty test passed: FILO is empty.
+   421.00ns INFO     cocotb                             All tests completed with w_clk=10ns and r_clk=15ns.
+   421.00ns INFO     cocotb.regression                  test_async_filo.test_filo_default_clocks passed
+   421.00ns INFO     cocotb.regression                  running test_async_filo.test_filo_random_clocks (2/2)
+                                                            Run FILO test with random clock frequencies.
+   422.00ns INFO     cocotb                             Running FILO test with random clocks: w_clk=43ns, r_clk=21ns
+   422.00ns INFO     cocotb                             Running FILO test with DEPTH=16, DATA_WIDTH=12, w_clk_period=43ns, r_clk_period=21ns
+   422.00ns INFO     cocotb                             Starting reset test...
+   465.00ns INFO     cocotb                             Reset complete
+   465.00ns INFO     cocotb                             Reset test passed: FILO is empty after reset.
+   465.00ns INFO     cocotb                             Starting push to full test...
+   508.00ns INFO     cocotb                             Pushed: 0x1d5 | Counter: 1 | Full=0 | Empty=0
+   551.00ns INFO     cocotb                             Pushed: 0x619 | Counter: 2 | Full=0 | Empty=0
+   594.00ns INFO     cocotb                             Pushed: 0x9e9 | Counter: 3 | Full=0 | Empty=0
+   637.00ns INFO     cocotb                             Pushed: 0xcee | Counter: 4 | Full=0 | Empty=0
+   680.00ns INFO     cocotb                             Pushed: 0x7d2 | Counter: 5 | Full=0 | Empty=0
+   723.00ns INFO     cocotb                             Pushed: 0x615 | Counter: 6 | Full=0 | Empty=0
+   766.00ns INFO     cocotb                             Pushed: 0x995 | Counter: 7 | Full=0 | Empty=0
+   809.00ns INFO     cocotb                             Pushed: 0x920 | Counter: 8 | Full=0 | Empty=0
+   852.00ns INFO     cocotb                             Pushed: 0x622 | Counter: 9 | Full=0 | Empty=0
+   895.00ns INFO     cocotb                             Pushed: 0x640 | Counter: 10 | Full=0 | Empty=0
+   938.00ns INFO     cocotb                             Pushed: 0x6d5 | Counter: 11 | Full=0 | Empty=0
+   981.00ns INFO     cocotb                             Pushed: 0x508 | Counter: 12 | Full=0 | Empty=0
+  1024.00ns INFO     cocotb                             Pushed: 0xd53 | Counter: 13 | Full=0 | Empty=0
+  1067.00ns INFO     cocotb                             Pushed: 0x9f2 | Counter: 14 | Full=0 | Empty=0
+  1110.00ns INFO     cocotb                             Pushed: 0x3e1 | Counter: 15 | Full=0 | Empty=0
+  1153.00ns INFO     cocotb                             Pushed: 0x23b | Counter: 16 | Full=1 | Empty=0
+  1153.00ns INFO     cocotb                             Push to full test passed: FILO is full.
+  1153.00ns INFO     cocotb                             Starting pop to empty test...
+  1158.00ns INFO     cocotb                             Popped: 0xd53 | Counter: 15 | Full=0 | Empty=0
+  1179.00ns INFO     cocotb                             Popped: 0x508 | Counter: 14 | Full=0 | Empty=0
+  1200.00ns INFO     cocotb                             Popped: 0x6d5 | Counter: 13 | Full=0 | Empty=0
+  1221.00ns INFO     cocotb                             Popped: 0x640 | Counter: 12 | Full=0 | Empty=0
+  1242.00ns INFO     cocotb                             Popped: 0x622 | Counter: 11 | Full=0 | Empty=0
+  1263.00ns INFO     cocotb                             Popped: 0x920 | Counter: 10 | Full=0 | Empty=0
+  1284.00ns INFO     cocotb                             Popped: 0x995 | Counter: 9 | Full=0 | Empty=0
+  1305.00ns INFO     cocotb                             Popped: 0x615 | Counter: 8 | Full=0 | Empty=0
+  1326.00ns INFO     cocotb                             Popped: 0x7d2 | Counter: 7 | Full=0 | Empty=0
+  1347.00ns INFO     cocotb                             Popped: 0xcee | Counter: 6 | Full=0 | Empty=0
+  1368.00ns INFO     cocotb                             Popped: 0x9e9 | Counter: 5 | Full=0 | Empty=0
+  1389.00ns INFO     cocotb                             Popped: 0x7a1 | Counter: 4 | Full=0 | Empty=0
+  1410.00ns INFO     cocotb                             Popped: 0xadc | Counter: 3 | Full=0 | Empty=0
+  1431.00ns INFO     cocotb                             Popped: 0x23b | Counter: 2 | Full=0 | Empty=0
+  1452.00ns INFO     cocotb                             Popped: 0x3e1 | Counter: 1 | Full=0 | Empty=0
+  1473.00ns INFO     cocotb                             Popped: 0x9f2 | Counter: 0 | Full=0 | Empty=1
+  1473.00ns INFO     cocotb                             Pop to empty test passed: FILO is empty.
+  1473.00ns INFO     cocotb                             All tests completed with w_clk=43ns and r_clk=21ns.
+  1473.00ns INFO     cocotb.regression                  test_async_filo.test_filo_random_clocks passed
+  1473.00ns INFO     cocotb.regression                  **************************************************************************************************
+                                                        ** TEST                                      STATUS  SIM TIME (ns)  REAL TIME (s)  RATIO (ns/s) **
+                                                        **************************************************************************************************
+                                                        ** test_async_filo.test_filo_default_clocks   PASS         421.00           0.01      45104.65  **
+                                                        ** test_async_filo.test_filo_random_clocks    PASS        1052.00           0.01     113403.27  **
+                                                        **************************************************************************************************
+                                                        ** TESTS=2 PASS=2 FAIL=0 SKIP=0                           1473.00           0.02      66784.24  **
+                                                        **************************************************************************************************
+                                                        
+FST info: dumpfile /code/rundir/sim_build/async_filo.fst opened for output.
+[DEBUG] Running simulation with DATA_WIDTH=12, DEPTH=16
+[DEBUG] Parameters: {'DATA_WIDTH': 12, 'DEPTH': 16}
+PASSED
+
+============================== 5 passed in 0.96s ===============================

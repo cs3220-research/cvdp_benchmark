@@ -1,0 +1,228 @@
+Running service: direct
+============================= test session starts ==============================
+platform linux -- Python 3.9.2, pytest-8.3.2, pluggy-1.5.0 -- /usr/bin/python3
+cachedir: /code/rundir/.cache
+rootdir: /src
+collecting ... collected 4 items
+
+../../src/test_runner.py::test_runner script: N=8
+
+-------------------------------- live log call ---------------------------------
+INFO     Icarus:runner.py:468 Running command iverilog -o /code/rundir/sim_build/sim.vvp -s elevator_control_system -g2012 -DSIMULATION=None -Pelevator_control_system.N=8 -s cocotb_iverilog_dump -f /code/rundir/sim_build/cmds.f /code/rtl/elevator_control_system.sv /code/rundir/sim_build/cocotb_iverilog_dump.v in directory /code/rundir/sim_build
+INFO     Icarus:runner.py:468 Running command vvp -M /usr/local/lib/python3.9/dist-packages/cocotb/libs -m libcocotbvpi_icarus /code/rundir/sim_build/sim.vvp +N=8 -fst in directory /code/rundir/sim_build
+     -.--ns INFO     gpi                                ..mbed/gpi_embed.cpp:79   in set_program_name_in_venv        Did not detect Python virtual environment. Using system-wide Python interpreter
+     -.--ns INFO     gpi                                ../gpi/GpiCommon.cpp:101  in gpi_print_registered_impl       VPI registered
+     0.00ns INFO     cocotb                             Running on Icarus Verilog version 13.0 (devel)
+     0.00ns INFO     cocotb                             Running tests with cocotb v2.0.0.dev0+8d6c1a63 from /usr/local/lib/python3.9/dist-packages/cocotb
+     0.00ns INFO     cocotb                             Seeding Python random module with 1773331136
+     0.00ns INFO     cocotb.regression                  running elevator_control.test_elevator_control_system (1/1)
+                                                            Main test function for elevator control system
+System FLOOR Size: 0 to 7
+    30.00ns INFO     cocotb.elevator_control_system     Requesting floor 3
+   130.00ns INFO     cocotb.elevator_control_system     Elevator reached floor 3 successfully
+   130.00ns INFO     cocotb.elevator_control_system     Waiting for the door to close
+ 50100.00ns INFO     cocotb.elevator_control_system     Door closed successfully after reaching floor
+ 50120.00ns INFO     cocotb.elevator_control_system     Requesting floor 2,4,6
+ 50190.00ns INFO     cocotb.elevator_control_system     Elevator reached floor 2
+ 50190.00ns INFO     cocotb.elevator_control_system     Waiting for the door to close
+100160.00ns INFO     cocotb.elevator_control_system     Door closed successfully after reaching floor
+100220.00ns INFO     cocotb.elevator_control_system     Elevator reached floor 4
+100220.00ns INFO     cocotb.elevator_control_system     Waiting for the door to close
+150190.00ns INFO     cocotb.elevator_control_system     Door closed successfully after reaching floor
+150250.00ns INFO     cocotb.elevator_control_system     Elevator reached floor 6
+150250.00ns INFO     cocotb.elevator_control_system     Waiting for the door to close
+200220.00ns INFO     cocotb.elevator_control_system     Door closed successfully after reaching floor
+200220.00ns INFO     cocotb.elevator_control_system     Elevator served multiple requests successfully
+200270.00ns INFO     cocotb.elevator_control_system     Requesting floor 4
+200310.00ns INFO     cocotb.elevator_control_system     Activating emergency stop
+200340.00ns INFO     cocotb.elevator_control_system     Elevator entered emergency halt state
+200350.00ns INFO     cocotb.elevator_control_system     Emergency stop cleared, elevator resumed operation
+200390.00ns INFO     cocotb.elevator_control_system     Applying reset during operation
+200410.00ns INFO     cocotb.elevator_control_system     Reset applied successfully, elevator returned to idle
+200490.00ns INFO     cocotb.elevator_control_system     Activating overload
+200590.00ns INFO     cocotb.elevator_control_system     Overload active: door open and elevator stationary
+200640.00ns INFO     cocotb.elevator_control_system     Overload cleared
+200670.00ns INFO     cocotb.elevator_control_system     Elevator reached requested floor after overload
+200670.00ns INFO     cocotb.elevator_control_system     Waiting for the door to close
+250650.00ns INFO     cocotb.elevator_control_system     Requesting floor 2 (downward motion)
+250750.00ns INFO     cocotb.elevator_control_system     Elevator resumed and reached floor 2 after overload
+250750.00ns INFO     cocotb.elevator_control_system     Waiting for the door to close
+300710.00ns INFO     cocotb.regression                  elevator_control.test_elevator_control_system passed
+300710.00ns INFO     cocotb.regression                  *******************************************************************************************************
+                                                        ** TEST                                           STATUS  SIM TIME (ns)  REAL TIME (s)  RATIO (ns/s) **
+                                                        *******************************************************************************************************
+                                                        ** elevator_control.test_elevator_control_system   PASS      300710.00           3.05      98617.43  **
+                                                        *******************************************************************************************************
+                                                        ** TESTS=1 PASS=1 FAIL=0 SKIP=0                              300710.00           3.05      98497.89  **
+                                                        *******************************************************************************************************
+                                                        
+FST info: dumpfile /code/rundir/sim_build/elevator_control_system.fst opened for output.
+INFO     Icarus:runner.py:438 Results file: /code/rundir/sim_build/test_runner.None
+PASSED
+../../src/test_runner.py::test_elevator_control_system[8] Runner script: N=8
+script: N=8
+
+-------------------------------- live log call ---------------------------------
+INFO     Icarus:runner.py:480 Removing: /code/rundir/sim_build
+INFO     Icarus:runner.py:468 Running command iverilog -o /code/rundir/sim_build/sim.vvp -s elevator_control_system -g2012 -DSIMULATION=None -Pelevator_control_system.N=8 -s cocotb_iverilog_dump -f /code/rundir/sim_build/cmds.f /code/rtl/elevator_control_system.sv /code/rundir/sim_build/cocotb_iverilog_dump.v in directory /code/rundir/sim_build
+INFO     Icarus:runner.py:468 Running command vvp -M /usr/local/lib/python3.9/dist-packages/cocotb/libs -m libcocotbvpi_icarus /code/rundir/sim_build/sim.vvp +N=8 -fst in directory /code/rundir/sim_build
+     -.--ns INFO     gpi                                ..mbed/gpi_embed.cpp:79   in set_program_name_in_venv        Did not detect Python virtual environment. Using system-wide Python interpreter
+     -.--ns INFO     gpi                                ../gpi/GpiCommon.cpp:101  in gpi_print_registered_impl       VPI registered
+     0.00ns INFO     cocotb                             Running on Icarus Verilog version 13.0 (devel)
+     0.00ns INFO     cocotb                             Running tests with cocotb v2.0.0.dev0+8d6c1a63 from /usr/local/lib/python3.9/dist-packages/cocotb
+     0.00ns INFO     cocotb                             Seeding Python random module with 1773331140
+     0.00ns INFO     cocotb.regression                  running elevator_control.test_elevator_control_system (1/1)
+                                                            Main test function for elevator control system
+System FLOOR Size: 0 to 7
+    30.00ns INFO     cocotb.elevator_control_system     Requesting floor 3
+   130.00ns INFO     cocotb.elevator_control_system     Elevator reached floor 3 successfully
+   130.00ns INFO     cocotb.elevator_control_system     Waiting for the door to close
+ 50100.00ns INFO     cocotb.elevator_control_system     Door closed successfully after reaching floor
+ 50120.00ns INFO     cocotb.elevator_control_system     Requesting floor 2,4,6
+ 50190.00ns INFO     cocotb.elevator_control_system     Elevator reached floor 2
+ 50190.00ns INFO     cocotb.elevator_control_system     Waiting for the door to close
+100160.00ns INFO     cocotb.elevator_control_system     Door closed successfully after reaching floor
+100220.00ns INFO     cocotb.elevator_control_system     Elevator reached floor 4
+100220.00ns INFO     cocotb.elevator_control_system     Waiting for the door to close
+150190.00ns INFO     cocotb.elevator_control_system     Door closed successfully after reaching floor
+150250.00ns INFO     cocotb.elevator_control_system     Elevator reached floor 6
+150250.00ns INFO     cocotb.elevator_control_system     Waiting for the door to close
+200220.00ns INFO     cocotb.elevator_control_system     Door closed successfully after reaching floor
+200220.00ns INFO     cocotb.elevator_control_system     Elevator served multiple requests successfully
+200270.00ns INFO     cocotb.elevator_control_system     Requesting floor 4
+200310.00ns INFO     cocotb.elevator_control_system     Activating emergency stop
+200340.00ns INFO     cocotb.elevator_control_system     Elevator entered emergency halt state
+200350.00ns INFO     cocotb.elevator_control_system     Emergency stop cleared, elevator resumed operation
+200390.00ns INFO     cocotb.elevator_control_system     Applying reset during operation
+200410.00ns INFO     cocotb.elevator_control_system     Reset applied successfully, elevator returned to idle
+200490.00ns INFO     cocotb.elevator_control_system     Activating overload
+200590.00ns INFO     cocotb.elevator_control_system     Overload active: door open and elevator stationary
+200640.00ns INFO     cocotb.elevator_control_system     Overload cleared
+200670.00ns INFO     cocotb.elevator_control_system     Elevator reached requested floor after overload
+200670.00ns INFO     cocotb.elevator_control_system     Waiting for the door to close
+250650.00ns INFO     cocotb.elevator_control_system     Requesting floor 2 (downward motion)
+250750.00ns INFO     cocotb.elevator_control_system     Elevator resumed and reached floor 2 after overload
+250750.00ns INFO     cocotb.elevator_control_system     Waiting for the door to close
+300710.00ns INFO     cocotb.regression                  elevator_control.test_elevator_control_system passed
+300710.00ns INFO     cocotb.regression                  *******************************************************************************************************
+                                                        ** TEST                                           STATUS  SIM TIME (ns)  REAL TIME (s)  RATIO (ns/s) **
+                                                        *******************************************************************************************************
+                                                        ** elevator_control.test_elevator_control_system   PASS      300710.00           2.92     102851.31  **
+                                                        *******************************************************************************************************
+                                                        ** TESTS=1 PASS=1 FAIL=0 SKIP=0                              300710.00           2.93     102717.54  **
+                                                        *******************************************************************************************************
+                                                        
+FST info: dumpfile /code/rundir/sim_build/elevator_control_system.fst opened for output.
+INFO     Icarus:runner.py:438 Results file: /code/rundir/sim_build/test_elevator_control_system[8].None
+PASSED
+../../src/test_runner.py::test_elevator_control_system[5] Runner script: N=5
+script: N=5
+
+-------------------------------- live log call ---------------------------------
+INFO     Icarus:runner.py:480 Removing: /code/rundir/sim_build
+INFO     Icarus:runner.py:468 Running command iverilog -o /code/rundir/sim_build/sim.vvp -s elevator_control_system -g2012 -DSIMULATION=None -Pelevator_control_system.N=5 -s cocotb_iverilog_dump -f /code/rundir/sim_build/cmds.f /code/rtl/elevator_control_system.sv /code/rundir/sim_build/cocotb_iverilog_dump.v in directory /code/rundir/sim_build
+INFO     Icarus:runner.py:468 Running command vvp -M /usr/local/lib/python3.9/dist-packages/cocotb/libs -m libcocotbvpi_icarus /code/rundir/sim_build/sim.vvp +N=5 -fst in directory /code/rundir/sim_build
+     -.--ns INFO     gpi                                ..mbed/gpi_embed.cpp:79   in set_program_name_in_venv        Did not detect Python virtual environment. Using system-wide Python interpreter
+     -.--ns INFO     gpi                                ../gpi/GpiCommon.cpp:101  in gpi_print_registered_impl       VPI registered
+     0.00ns INFO     cocotb                             Running on Icarus Verilog version 13.0 (devel)
+     0.00ns INFO     cocotb                             Running tests with cocotb v2.0.0.dev0+8d6c1a63 from /usr/local/lib/python3.9/dist-packages/cocotb
+     0.00ns INFO     cocotb                             Seeding Python random module with 1773331143
+     0.00ns INFO     cocotb.regression                  running elevator_control.test_elevator_control_system (1/1)
+                                                            Main test function for elevator control system
+System FLOOR Size: 0 to 4
+    30.00ns INFO     cocotb.elevator_control_system     Requesting floor 3
+   130.00ns INFO     cocotb.elevator_control_system     Elevator reached floor 3 successfully
+   130.00ns INFO     cocotb.elevator_control_system     Waiting for the door to close
+ 50100.00ns INFO     cocotb.elevator_control_system     Door closed successfully after reaching floor
+ 50120.00ns INFO     cocotb.elevator_control_system     Requesting floor 2,4
+ 50190.00ns INFO     cocotb.elevator_control_system     Elevator reached floor 2
+ 50190.00ns INFO     cocotb.elevator_control_system     Waiting for the door to close
+100160.00ns INFO     cocotb.elevator_control_system     Door closed successfully after reaching floor
+100220.00ns INFO     cocotb.elevator_control_system     Elevator reached floor 4
+100220.00ns INFO     cocotb.elevator_control_system     Waiting for the door to close
+150190.00ns INFO     cocotb.elevator_control_system     Door closed successfully after reaching floor
+150190.00ns INFO     cocotb.elevator_control_system     Elevator served multiple requests successfully
+150240.00ns INFO     cocotb.elevator_control_system     Requesting floor 4
+150280.00ns INFO     cocotb.elevator_control_system     Activating emergency stop
+150310.00ns INFO     cocotb.elevator_control_system     Elevator entered emergency halt state
+150320.00ns INFO     cocotb.elevator_control_system     Emergency stop cleared, elevator resumed operation
+150360.00ns INFO     cocotb.elevator_control_system     Applying reset during operation
+150380.00ns INFO     cocotb.elevator_control_system     Reset applied successfully, elevator returned to idle
+150460.00ns INFO     cocotb.elevator_control_system     Activating overload
+150560.00ns INFO     cocotb.elevator_control_system     Overload active: door open and elevator stationary
+150610.00ns INFO     cocotb.elevator_control_system     Overload cleared
+150640.00ns INFO     cocotb.elevator_control_system     Elevator reached requested floor after overload
+150640.00ns INFO     cocotb.elevator_control_system     Waiting for the door to close
+200620.00ns INFO     cocotb.elevator_control_system     Requesting floor 2 (downward motion)
+200720.00ns INFO     cocotb.elevator_control_system     Elevator resumed and reached floor 2 after overload
+200720.00ns INFO     cocotb.elevator_control_system     Waiting for the door to close
+250680.00ns INFO     cocotb.regression                  elevator_control.test_elevator_control_system passed
+250680.00ns INFO     cocotb.regression                  *******************************************************************************************************
+                                                        ** TEST                                           STATUS  SIM TIME (ns)  REAL TIME (s)  RATIO (ns/s) **
+                                                        *******************************************************************************************************
+                                                        ** elevator_control.test_elevator_control_system   PASS      250680.00           2.47     101634.38  **
+                                                        *******************************************************************************************************
+                                                        ** TESTS=1 PASS=1 FAIL=0 SKIP=0                              250680.00           2.47     101478.85  **
+                                                        *******************************************************************************************************
+                                                        
+FST info: dumpfile /code/rundir/sim_build/elevator_control_system.fst opened for output.
+INFO     Icarus:runner.py:438 Results file: /code/rundir/sim_build/test_elevator_control_system[5].None
+PASSED
+../../src/test_runner.py::test_elevator_control_system[10] Runner script: N=10
+script: N=10
+
+-------------------------------- live log call ---------------------------------
+INFO     Icarus:runner.py:480 Removing: /code/rundir/sim_build
+INFO     Icarus:runner.py:468 Running command iverilog -o /code/rundir/sim_build/sim.vvp -s elevator_control_system -g2012 -DSIMULATION=None -Pelevator_control_system.N=10 -s cocotb_iverilog_dump -f /code/rundir/sim_build/cmds.f /code/rtl/elevator_control_system.sv /code/rundir/sim_build/cocotb_iverilog_dump.v in directory /code/rundir/sim_build
+INFO     Icarus:runner.py:468 Running command vvp -M /usr/local/lib/python3.9/dist-packages/cocotb/libs -m libcocotbvpi_icarus /code/rundir/sim_build/sim.vvp +N=10 -fst in directory /code/rundir/sim_build
+     -.--ns INFO     gpi                                ..mbed/gpi_embed.cpp:79   in set_program_name_in_venv        Did not detect Python virtual environment. Using system-wide Python interpreter
+     -.--ns INFO     gpi                                ../gpi/GpiCommon.cpp:101  in gpi_print_registered_impl       VPI registered
+     0.00ns INFO     cocotb                             Running on Icarus Verilog version 13.0 (devel)
+     0.00ns INFO     cocotb                             Running tests with cocotb v2.0.0.dev0+8d6c1a63 from /usr/local/lib/python3.9/dist-packages/cocotb
+     0.00ns INFO     cocotb                             Seeding Python random module with 1773331145
+     0.00ns INFO     cocotb.regression                  running elevator_control.test_elevator_control_system (1/1)
+                                                            Main test function for elevator control system
+System FLOOR Size: 0 to 9
+    30.00ns INFO     cocotb.elevator_control_system     Requesting floor 3
+   130.00ns INFO     cocotb.elevator_control_system     Elevator reached floor 3 successfully
+   130.00ns INFO     cocotb.elevator_control_system     Waiting for the door to close
+ 50100.00ns INFO     cocotb.elevator_control_system     Door closed successfully after reaching floor
+ 50120.00ns INFO     cocotb.elevator_control_system     Requesting floor 2,4,6
+ 50190.00ns INFO     cocotb.elevator_control_system     Elevator reached floor 2
+ 50190.00ns INFO     cocotb.elevator_control_system     Waiting for the door to close
+100160.00ns INFO     cocotb.elevator_control_system     Door closed successfully after reaching floor
+100220.00ns INFO     cocotb.elevator_control_system     Elevator reached floor 4
+100220.00ns INFO     cocotb.elevator_control_system     Waiting for the door to close
+150190.00ns INFO     cocotb.elevator_control_system     Door closed successfully after reaching floor
+150250.00ns INFO     cocotb.elevator_control_system     Elevator reached floor 6
+150250.00ns INFO     cocotb.elevator_control_system     Waiting for the door to close
+200220.00ns INFO     cocotb.elevator_control_system     Door closed successfully after reaching floor
+200220.00ns INFO     cocotb.elevator_control_system     Elevator served multiple requests successfully
+200270.00ns INFO     cocotb.elevator_control_system     Requesting floor 4
+200310.00ns INFO     cocotb.elevator_control_system     Activating emergency stop
+200340.00ns INFO     cocotb.elevator_control_system     Elevator entered emergency halt state
+200350.00ns INFO     cocotb.elevator_control_system     Emergency stop cleared, elevator resumed operation
+200390.00ns INFO     cocotb.elevator_control_system     Applying reset during operation
+200410.00ns INFO     cocotb.elevator_control_system     Reset applied successfully, elevator returned to idle
+200490.00ns INFO     cocotb.elevator_control_system     Activating overload
+200590.00ns INFO     cocotb.elevator_control_system     Overload active: door open and elevator stationary
+200640.00ns INFO     cocotb.elevator_control_system     Overload cleared
+200670.00ns INFO     cocotb.elevator_control_system     Elevator reached requested floor after overload
+200670.00ns INFO     cocotb.elevator_control_system     Waiting for the door to close
+250650.00ns INFO     cocotb.elevator_control_system     Requesting floor 2 (downward motion)
+250750.00ns INFO     cocotb.elevator_control_system     Elevator resumed and reached floor 2 after overload
+250750.00ns INFO     cocotb.elevator_control_system     Waiting for the door to close
+300710.00ns INFO     cocotb.regression                  elevator_control.test_elevator_control_system passed
+300710.00ns INFO     cocotb.regression                  *******************************************************************************************************
+                                                        ** TEST                                           STATUS  SIM TIME (ns)  REAL TIME (s)  RATIO (ns/s) **
+                                                        *******************************************************************************************************
+                                                        ** elevator_control.test_elevator_control_system   PASS      300710.00           4.23      71073.85  **
+                                                        *******************************************************************************************************
+                                                        ** TESTS=1 PASS=1 FAIL=0 SKIP=0                              300710.00           4.23      71012.11  **
+                                                        *******************************************************************************************************
+                                                        
+FST info: dumpfile /code/rundir/sim_build/elevator_control_system.fst opened for output.
+INFO     Icarus:runner.py:438 Results file: /code/rundir/sim_build/test_elevator_control_system[10].None
+PASSED
+
+============================== 4 passed in 13.40s ==============================

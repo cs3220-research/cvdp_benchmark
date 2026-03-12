@@ -1,0 +1,87 @@
+Running service: direct
+============================= test session starts ==============================
+platform linux -- Python 3.9.2, pytest-8.3.2, pluggy-1.5.0 -- /usr/bin/python3
+cachedir: /rundir/harness/.cache
+rootdir: /src
+collecting ... collected 1 item
+
+../../src/test_runner.py::test_runner 
+-------------------------------- live log call ---------------------------------
+INFO     Icarus:runner.py:468 Running command iverilog -o /code/rundir/sim_build/sim.vvp -s pcie_endpoint -g2012 -s cocotb_iverilog_dump -f /code/rundir/sim_build/cmds.f /code/rtl/pcie_endpoint.sv /code/rundir/sim_build/cocotb_iverilog_dump.v in directory /code/rundir/sim_build
+INFO     Icarus:runner.py:468 Running command vvp -M /usr/local/lib/python3.9/dist-packages/cocotb/libs -m libcocotbvpi_icarus /code/rundir/sim_build/sim.vvp -fst in directory /code/rundir/sim_build
+     -.--ns INFO     gpi                                ..mbed/gpi_embed.cpp:79   in set_program_name_in_venv        Did not detect Python virtual environment. Using system-wide Python interpreter
+     -.--ns INFO     gpi                                ../gpi/GpiCommon.cpp:101  in gpi_print_registered_impl       VPI registered
+     0.00ns INFO     cocotb                             Running on Icarus Verilog version 13.0 (devel)
+     0.00ns INFO     cocotb                             Running tests with cocotb v2.0.0.dev0+8d6c1a63 from /usr/local/lib/python3.9/dist-packages/cocotb
+     0.00ns INFO     cocotb                             Seeding Python random module with 1773327306
+     0.00ns INFO     cocotb.regression                  running test_pcie_ep.run_test (1/1)
+                                                            Main test function 
+    20.00ns INFO     cocotb                             Reset complete.
+    30.00ns INFO     cocotb                             [WRITE] Addr: 0x1000, Data: 0xa5a5a5a5a5a5a5a5a5a5a5a5a5a5a5a5
+    50.00ns INFO     cocotb                             [READ] Addr: 0x1000, Data: 0xa5a5a5a5a5a5a5a5a5a5a5a5a5a5a5a5
+    50.00ns INFO     cocotb                             [PASS] Data Matched!
+    50.00ns INFO     cocotb                             [BURST WRITE] Addr: 0x2000, Count: 16
+    60.00ns INFO     cocotb                             [WRITE 0] Addr: 0x2000, Data: 0x2617a7d4e97f4633c6d5f373b9a19692
+    70.00ns INFO     cocotb                             [WRITE 1] Addr: 0x2004, Data: 0x7e6ffd685b0054eb89de757489015a8
+    80.00ns INFO     cocotb                             [WRITE 2] Addr: 0x2008, Data: 0xbbac22b764fb4cd6dcd6ea94ac4619a2
+    90.00ns INFO     cocotb                             [WRITE 3] Addr: 0x200c, Data: 0x20751340e9091d625a4c7176431394ee
+   100.00ns INFO     cocotb                             [WRITE 4] Addr: 0x2010, Data: 0xd3ea1e62006c415e8cf973c9e2c7dd75
+   110.00ns INFO     cocotb                             [WRITE 5] Addr: 0x2014, Data: 0xcf27e0f483d7773737ac7705b9057151
+   120.00ns INFO     cocotb                             [WRITE 6] Addr: 0x2018, Data: 0xc3a1f6ed068327d782a111a24847e6d
+   130.00ns INFO     cocotb                             [WRITE 7] Addr: 0x201c, Data: 0x7e4e708fe488e2084cf3e7c967e4286d
+   140.00ns INFO     cocotb                             [WRITE 8] Addr: 0x2020, Data: 0xadbed19c8dbb5f2c54395caa698b190c
+   150.00ns INFO     cocotb                             [WRITE 9] Addr: 0x2024, Data: 0x136507e3f2414574d924bd99eb452cd2
+   160.00ns INFO     cocotb                             [WRITE 10] Addr: 0x2028, Data: 0xbc36b828295cf54ef7eb2ea801cf8cb6
+   170.00ns INFO     cocotb                             [WRITE 11] Addr: 0x202c, Data: 0xb28ea03ee8a6c033f968e8783e82e53f
+   180.00ns INFO     cocotb                             [WRITE 12] Addr: 0x2030, Data: 0xbc902981a5c3a3a34950b911de50b881
+   190.00ns INFO     cocotb                             [WRITE 13] Addr: 0x2034, Data: 0xe575a80b1fe47b35de6402a32b9c3352
+   200.00ns INFO     cocotb                             [WRITE 14] Addr: 0x2038, Data: 0x3d304366f83b4c11ecf6a03be104dbda
+   210.00ns INFO     cocotb                             [WRITE 15] Addr: 0x203c, Data: 0xe54f473abf4415abd40598f6b3a7527f
+   230.00ns INFO     cocotb                             [BURST READ] Addr: 0x2000, Count: 16
+   250.00ns INFO     cocotb                             [READ 0] Addr: 0x2000, Data: 0x2617a7d4e97f4633c6d5f373b9a19692
+   250.00ns INFO     cocotb                             [PASS] Data Matched at index 0!
+   270.00ns INFO     cocotb                             [READ 1] Addr: 0x2004, Data: 0x7e6ffd685b0054eb89de757489015a8
+   270.00ns INFO     cocotb                             [PASS] Data Matched at index 1!
+   290.00ns INFO     cocotb                             [READ 2] Addr: 0x2008, Data: 0xbbac22b764fb4cd6dcd6ea94ac4619a2
+   290.00ns INFO     cocotb                             [PASS] Data Matched at index 2!
+   310.00ns INFO     cocotb                             [READ 3] Addr: 0x200c, Data: 0x20751340e9091d625a4c7176431394ee
+   310.00ns INFO     cocotb                             [PASS] Data Matched at index 3!
+   330.00ns INFO     cocotb                             [READ 4] Addr: 0x2010, Data: 0xd3ea1e62006c415e8cf973c9e2c7dd75
+   330.00ns INFO     cocotb                             [PASS] Data Matched at index 4!
+   350.00ns INFO     cocotb                             [READ 5] Addr: 0x2014, Data: 0xcf27e0f483d7773737ac7705b9057151
+   350.00ns INFO     cocotb                             [PASS] Data Matched at index 5!
+   370.00ns INFO     cocotb                             [READ 6] Addr: 0x2018, Data: 0xc3a1f6ed068327d782a111a24847e6d
+   370.00ns INFO     cocotb                             [PASS] Data Matched at index 6!
+   390.00ns INFO     cocotb                             [READ 7] Addr: 0x201c, Data: 0x7e4e708fe488e2084cf3e7c967e4286d
+   390.00ns INFO     cocotb                             [PASS] Data Matched at index 7!
+   410.00ns INFO     cocotb                             [READ 8] Addr: 0x2020, Data: 0xadbed19c8dbb5f2c54395caa698b190c
+   410.00ns INFO     cocotb                             [PASS] Data Matched at index 8!
+   430.00ns INFO     cocotb                             [READ 9] Addr: 0x2024, Data: 0x136507e3f2414574d924bd99eb452cd2
+   430.00ns INFO     cocotb                             [PASS] Data Matched at index 9!
+   450.00ns INFO     cocotb                             [READ 10] Addr: 0x2028, Data: 0xbc36b828295cf54ef7eb2ea801cf8cb6
+   450.00ns INFO     cocotb                             [PASS] Data Matched at index 10!
+   470.00ns INFO     cocotb                             [READ 11] Addr: 0x202c, Data: 0xb28ea03ee8a6c033f968e8783e82e53f
+   470.00ns INFO     cocotb                             [PASS] Data Matched at index 11!
+   490.00ns INFO     cocotb                             [READ 12] Addr: 0x2030, Data: 0xbc902981a5c3a3a34950b911de50b881
+   490.00ns INFO     cocotb                             [PASS] Data Matched at index 12!
+   510.00ns INFO     cocotb                             [READ 13] Addr: 0x2034, Data: 0xe575a80b1fe47b35de6402a32b9c3352
+   510.00ns INFO     cocotb                             [PASS] Data Matched at index 13!
+   530.00ns INFO     cocotb                             [READ 14] Addr: 0x2038, Data: 0x3d304366f83b4c11ecf6a03be104dbda
+   530.00ns INFO     cocotb                             [PASS] Data Matched at index 14!
+   550.00ns INFO     cocotb                             [READ 15] Addr: 0x203c, Data: 0xe54f473abf4415abd40598f6b3a7527f
+   550.00ns INFO     cocotb                             [PASS] Data Matched at index 15!
+   550.00ns INFO     cocotb                             [TEST COMPLETED]
+   550.00ns INFO     cocotb.regression                  test_pcie_ep.run_test passed
+   550.00ns INFO     cocotb.regression                  **************************************************************************************
+                                                        ** TEST                          STATUS  SIM TIME (ns)  REAL TIME (s)  RATIO (ns/s) **
+                                                        **************************************************************************************
+                                                        ** test_pcie_ep.run_test          PASS         550.00           0.01      62732.64  **
+                                                        **************************************************************************************
+                                                        ** TESTS=1 PASS=1 FAIL=0 SKIP=0                550.00           0.01      45591.16  **
+                                                        **************************************************************************************
+                                                        
+FST info: dumpfile /code/rundir/sim_build/pcie_endpoint.fst opened for output.
+INFO     Icarus:runner.py:438 Results file: /code/rundir/sim_build/test_runner.None
+PASSED
+
+============================== 1 passed in 0.19s ===============================

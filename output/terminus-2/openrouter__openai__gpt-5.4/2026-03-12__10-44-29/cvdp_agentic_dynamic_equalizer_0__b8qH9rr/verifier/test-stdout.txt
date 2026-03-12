@@ -1,0 +1,147 @@
+Running service: direct
+============================= test session starts ==============================
+platform linux -- Python 3.9.2, pytest-8.3.2, pluggy-1.5.0 -- /usr/bin/python3
+cachedir: /code/rundir/.cache
+rootdir: /src
+collecting ... collected 1 item
+
+../../src/test_runner.py::test_cvdp_agentic_dynamic_equalizer[7-16-16-15] FAILED [100%]
+
+=================================== FAILURES ===================================
+_______________ test_cvdp_agentic_dynamic_equalizer[7-16-16-15] ________________
+
+TAP_NUM = 7, DATA_WIDTH = 16, COEFF_WIDTH = 16, MU = 15
+
+    @pytest.mark.parametrize("TAP_NUM, DATA_WIDTH, COEFF_WIDTH, MU", [(7, 16, 16, 15)])
+    def test_cvdp_agentic_dynamic_equalizer(TAP_NUM, DATA_WIDTH, COEFF_WIDTH, MU):
+        try:
+>           runner(TAP_NUM, DATA_WIDTH, COEFF_WIDTH, MU)
+
+/src/test_runner.py:53: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+TAP_NUM = 7, DATA_WIDTH = 16, COEFF_WIDTH = 16, MU = 15
+
+    def runner(TAP_NUM, DATA_WIDTH, COEFF_WIDTH, MU):
+        # Initialize the simulator runner
+        runner = get_runner(sim)
+    
+        # Build the simulation with the specified TAP_NUM, DATA_WIDTH, COEFF_WIDTH, and MU parameters
+        runner.build(
+            sources=verilog_sources,
+            hdl_toplevel=toplevel,
+            parameters={
+                "TAP_NUM": TAP_NUM,
+                "DATA_WIDTH": DATA_WIDTH,
+                "COEFF_WIDTH": COEFF_WIDTH,
+                "MU": MU},
+            # Simulator Arguments
+            always=True,
+            clean=True,
+            waves=True,        # Disable waveform generation for faster runs
+            verbose=True,      # Set to True for detailed simulator logs
+            timescale=("1ns", "1ps"),
+            log_file=f"sim_{toplevel}.log"
+        )
+    
+        # Run the simulation
+>       runner.test(
+            hdl_toplevel=toplevel,
+            test_module=module,
+            waves=True
+        )
+E       SystemExit: ERROR: Failed 2 of 2 tests.
+
+/src/test_runner.py:42: SystemExit
+----------------------------- Captured stdout call -----------------------------
+INFO: Running command iverilog -o /code/rundir/sim_build/sim.vvp -D COCOTB_SIM=1 -s dynamic_equalizer -g2012 -Pdynamic_equalizer.TAP_NUM=7 -Pdynamic_equalizer.DATA_WIDTH=16 -Pdynamic_equalizer.COEFF_WIDTH=16 -Pdynamic_equalizer.MU=15 -s cocotb_iverilog_dump -f /code/rundir/sim_build/cmds.f /code/rtl/dynamic_equalizer.sv /code/rtl/error_calc.sv /code/rtl/coeff_update.sv /code/rundir/sim_build/cocotb_iverilog_dump.v in directory /code/rundir/sim_build
+INFO: Running command vvp -M /usr/local/lib/python3.9/dist-packages/cocotb/libs -m libcocotbvpi_icarus /code/rundir/sim_build/sim.vvp -fst in directory /code/rundir/sim_build
+     -.--ns INFO     gpi                                ..mbed/gpi_embed.cpp:79   in set_program_name_in_venv        Did not detect Python virtual environment. Using system-wide Python interpreter
+     -.--ns INFO     gpi                                ../gpi/GpiCommon.cpp:101  in gpi_print_registered_impl       VPI registered
+     0.00ns INFO     cocotb                             Running on Icarus Verilog version 13.0 (devel)
+     0.00ns INFO     cocotb                             Running tests with cocotb v1.9.2 from /usr/local/lib/python3.9/dist-packages/cocotb
+     0.00ns INFO     cocotb                             Seeding Python random module with 1773327625
+     0.00ns INFO     cocotb.regression                  Found test test_dynamic_equalizer_harness.test_equalizer_learns_identity
+     0.00ns INFO     cocotb.regression                  Found test test_dynamic_equalizer_harness.test_equalizer_data_quadrant
+     0.00ns INFO     cocotb.regression                  running test_equalizer_learns_identity (1/2)
+                                                          Test if output equals input after 3 cycles when input == desired
+     0.00ns INFO     cocotb.dynamic_equalizer           Test if output equals input after 3 cycles when input == desired
+    60.00ns ERROR    root                               FAIL: Data Output Real mismatch. Expected: -8192, Got: 0
+    60.00ns ERROR    root                               FAIL: Data Output Imaginary mismatch. Expected: 8192, Got: 0
+    70.00ns ERROR    root                               FAIL: Data Output Real mismatch. Expected: 8192, Got: 0
+    70.00ns ERROR    root                               FAIL: Data Output Imaginary mismatch. Expected: 8192, Got: 0
+    80.00ns ERROR    root                               FAIL: Data Output Real mismatch. Expected: -8192, Got: 0
+    80.00ns ERROR    root                               FAIL: Data Output Imaginary mismatch. Expected: 8192, Got: 0
+    90.00ns ERROR    root                               FAIL: Data Output Imaginary mismatch. Expected: -8192, Got: 8192
+   100.00ns ERROR    root                               FAIL: Data Output Real mismatch. Expected: -8192, Got: 8192
+   100.00ns ERROR    root                               FAIL: Data Output Imaginary mismatch. Expected: -8192, Got: 8192
+   110.00ns ERROR    root                               FAIL: Data Output Imaginary mismatch. Expected: -8192, Got: 8192
+   120.00ns ERROR    root                               FAIL: Data Output Real mismatch. Expected: 8192, Got: -8192
+   130.00ns ERROR    root                               FAIL: Data Output Imaginary mismatch. Expected: 8192, Got: -8192
+   140.00ns ERROR    root                               FAIL: Data Output Real mismatch. Expected: 8192, Got: -8192
+   150.00ns ERROR    root                               FAIL: Data Output Real mismatch. Expected: -8192, Got: 8192
+   160.00ns ERROR    root                               FAIL: Data Output Real mismatch. Expected: 8192, Got: -8192
+   170.00ns ERROR    root                               FAIL: Data Output Imaginary mismatch. Expected: 8192, Got: -8192
+   180.00ns ERROR    root                               FAIL: Data Output Real mismatch. Expected: 8192, Got: -8192
+   190.00ns ERROR    root                               FAIL: Data Output Real mismatch. Expected: -8192, Got: 8192
+   200.00ns ERROR    root                               FAIL: Data Output Real mismatch. Expected: -8192, Got: 8192
+   200.00ns ERROR    root                               FAIL: Data Output Imaginary mismatch. Expected: -8192, Got: 8192
+   210.00ns ERROR    cocotb.dynamic_equalizer           Test identity completed with failures:
+                                                        FAIL: Data Output Real mismatch. Expected: -8192, Got: 8192
+                                                        FAIL: Data Output Imaginary mismatch. Expected: -8192, Got: 8192
+   210.00ns INFO     cocotb.regression                  test_equalizer_learns_identity failed
+                                                        Traceback (most recent call last):
+                                                          File "/src/test_dynamic_equalizer_harness.py", line 86, in test_equalizer_learns_identity
+                                                            assert False, f"Some test cases failed. Check the log for details:\n{failure_message}"
+                                                        AssertionError: Some test cases failed. Check the log for details:
+                                                          FAIL: Data Output Real mismatch. Expected: -8192, Got: 8192
+                                                          FAIL: Data Output Imaginary mismatch. Expected: -8192, Got: 8192
+                                                        assert False
+   210.00ns INFO     cocotb.regression                  running test_equalizer_data_quadrant (2/2)
+                                                          Test if output data quadrant is the desired
+   210.00ns INFO     cocotb.dynamic_equalizer           Test if output data quadrant is the desired
+   280.00ns ERROR    root                               FAIL: Data Output Imaginary Quadrant mismatch. Expected: True, Got: False
+   300.00ns ERROR    root                               FAIL: Data Output Real Quadrant mismatch. Expected: True, Got: False
+   310.00ns ERROR    root                               FAIL: Data Output Real Quadrant mismatch. Expected: True, Got: False
+   310.00ns ERROR    root                               FAIL: Data Output Imaginary Quadrant mismatch. Expected: False, Got: True
+   330.00ns ERROR    root                               FAIL: Data Output Real Quadrant mismatch. Expected: False, Got: True
+   340.00ns ERROR    root                               FAIL: Data Output Real Quadrant mismatch. Expected: False, Got: True
+   360.00ns ERROR    root                               FAIL: Data Output Real Quadrant mismatch. Expected: True, Got: False
+   360.00ns ERROR    root                               FAIL: Data Output Imaginary Quadrant mismatch. Expected: True, Got: False
+   370.00ns ERROR    root                               FAIL: Data Output Real Quadrant mismatch. Expected: True, Got: False
+   370.00ns ERROR    root                               FAIL: Data Output Imaginary Quadrant mismatch. Expected: True, Got: False
+   380.00ns ERROR    root                               FAIL: Data Output Imaginary Quadrant mismatch. Expected: True, Got: False
+   410.00ns ERROR    root                               FAIL: Data Output Real Quadrant mismatch. Expected: True, Got: False
+   410.00ns ERROR    root                               FAIL: Data Output Imaginary Quadrant mismatch. Expected: False, Got: True
+   420.00ns ERROR    root                               FAIL: Data Output Real Quadrant mismatch. Expected: False, Got: True
+   420.00ns ERROR    root                               FAIL: Data Output Imaginary Quadrant mismatch. Expected: False, Got: True
+   430.00ns ERROR    cocotb.dynamic_equalizer           Test quadrant completed with failures:
+                                                        FAIL: Data Output Real Quadrant mismatch. Expected: False, Got: True
+                                                        FAIL: Data Output Imaginary Quadrant mismatch. Expected: False, Got: True
+   430.00ns INFO     cocotb.regression                  test_equalizer_data_quadrant failed
+                                                        Traceback (most recent call last):
+                                                          File "/src/test_dynamic_equalizer_harness.py", line 169, in test_equalizer_data_quadrant
+                                                            assert False, f"Some test cases failed. Check the log for details:\n{failure_message}"
+                                                        AssertionError: Some test cases failed. Check the log for details:
+                                                          FAIL: Data Output Real Quadrant mismatch. Expected: False, Got: True
+                                                          FAIL: Data Output Imaginary Quadrant mismatch. Expected: False, Got: True
+                                                        assert False
+   430.00ns INFO     cocotb.regression                  ***********************************************************************************************************************
+                                                        ** TEST                                                           STATUS  SIM TIME (ns)  REAL TIME (s)  RATIO (ns/s) **
+                                                        ***********************************************************************************************************************
+                                                        ** test_dynamic_equalizer_harness.test_equalizer_learns_identity   FAIL         210.00           0.01      29399.47  **
+                                                        ** test_dynamic_equalizer_harness.test_equalizer_data_quadrant     FAIL         220.00           0.01      32053.32  **
+                                                        ***********************************************************************************************************************
+                                                        ** TESTS=2 PASS=0 FAIL=2 SKIP=0                                                 430.00           0.05       9382.44  **
+                                                        ***********************************************************************************************************************
+                                                        
+FST info: dumpfile /code/rundir/sim_build/dynamic_equalizer.fst opened for output.
+=============================== warnings summary ===============================
+../../src/test_runner.py:4
+  /src/test_runner.py:4: UserWarning: Python runners and associated APIs are an experimental feature and subject to change.
+    from cocotb.runner import get_runner
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+=========================== short test summary info ============================
+FAILED ../../src/test_runner.py::test_cvdp_agentic_dynamic_equalizer[7-16-16-15]
+========================= 1 failed, 1 warning in 0.25s =========================

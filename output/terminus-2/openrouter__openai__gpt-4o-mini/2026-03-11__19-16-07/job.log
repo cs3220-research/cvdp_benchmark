@@ -1,0 +1,1138 @@
+Installing: tmux, asciinema
+Installing: tmux, asciinema
+Detected system: {'os': 'debian-based', 'package_manager': 'apt-get', 'update_command': None}
+Installing tools using apt-get: DEBIAN_FRONTEND=noninteractive apt-get update && DEBIAN_FRONTEND=noninteractive apt-get install -y tmux asciinema
+Detected system: {'os': 'debian-based', 'package_manager': 'apt-get', 'update_command': None}
+Installing tools using apt-get: DEBIAN_FRONTEND=noninteractive apt-get update && DEBIAN_FRONTEND=noninteractive apt-get install -y tmux asciinema
+Starting recording.
+Sending keys: ['asciinema rec --stdin /logs/agent/recording.cast', 'Enter'] min_timeout_sec: 1.0 max_timeout_sec: 180.0
+Starting recording.
+Sending keys: ['asciinema rec --stdin /logs/agent/recording.cast', 'Enter'] min_timeout_sec: 1.0 max_timeout_sec: 180.0
+Sending keys: ['clear', 'Enter'] min_timeout_sec: 0.0 max_timeout_sec: 180.0
+Sending keys: ['clear', 'Enter'] min_timeout_sec: 0.0 max_timeout_sec: 180.0
+Failed to retrieve model info for 'openrouter/openai/gpt-4o-mini': This model isn't mapped yet. model=openrouter/openai/gpt-4o-mini, custom_llm_provider=openrouter. Add it here - https://github.com/BerriAI/litellm/blob/main/model_prices_and_context_window.json.. Using fallback context limit: 1000000
+Failed to retrieve model info for 'openrouter/openai/gpt-4o-mini': This model isn't mapped yet. model=openrouter/openai/gpt-4o-mini, custom_llm_provider=openrouter. Add it here - https://github.com/BerriAI/litellm/blob/main/model_prices_and_context_window.json.. Using fallback context limit: 1000000
+Parser warnings: - Extra text detected before JSON object
+- Extra text detected after JSON object
+Sending keys: ['ls -la rtl\n'] min_timeout_sec: 0.1 max_timeout_sec: 180.0
+Sending keys: ['ls -la docs\n'] min_timeout_sec: 0.1 max_timeout_sec: 180.0
+Sending keys: ['touch rtl/top_64b66b_codec.sv\n'] min_timeout_sec: 0.1 max_timeout_sec: 180.0
+Trajectory dumped to /home/saketh/research/cvdp_benchmark/jobs/2026-03-11__19-16-07/cvdp_agentic_64b66b_codec_0001__JiHJEGV/agent/trajectory.json
+Failed to retrieve model info for 'openrouter/openai/gpt-4o-mini': This model isn't mapped yet. model=openrouter/openai/gpt-4o-mini, custom_llm_provider=openrouter. Add it here - https://github.com/BerriAI/litellm/blob/main/model_prices_and_context_window.json.. Using fallback context limit: 1000000
+Parser warnings: - Extra text detected before JSON object
+- Extra text detected after JSON object
+Sending keys: ['ls -la\n'] min_timeout_sec: 0.1 max_timeout_sec: 180.0
+Trajectory dumped to /home/saketh/research/cvdp_benchmark/jobs/2026-03-11__19-16-07/cvdp_agentic_aes_encryption_decr__98Lx4zR/agent/trajectory.json
+Failed to retrieve model info for 'openrouter/openai/gpt-4o-mini': This model isn't mapped yet. model=openrouter/openai/gpt-4o-mini, custom_llm_provider=openrouter. Add it here - https://github.com/BerriAI/litellm/blob/main/model_prices_and_context_window.json.. Using fallback context limit: 1000000
+Parser warnings: - Extra text detected before JSON object
+- Extra text detected after JSON object
+Sending keys: ['cat docs/specification.md\n'] min_timeout_sec: 0.1 max_timeout_sec: 180.0
+Sending keys: ['nano rtl/top_64b66b_codec.sv\n'] min_timeout_sec: 1.0 max_timeout_sec: 180.0
+Parser warnings: - Extra text detected before JSON object
+- Extra text detected after JSON object
+Sending keys: ['cd rtl\n'] min_timeout_sec: 0.1 max_timeout_sec: 180.0
+Sending keys: ['ls -la\n'] min_timeout_sec: 0.1 max_timeout_sec: 180.0
+Trajectory dumped to /home/saketh/research/cvdp_benchmark/jobs/2026-03-11__19-16-07/cvdp_agentic_aes_encryption_decr__98Lx4zR/agent/trajectory.json
+Failed to retrieve model info for 'openrouter/openai/gpt-4o-mini': This model isn't mapped yet. model=openrouter/openai/gpt-4o-mini, custom_llm_provider=openrouter. Add it here - https://github.com/BerriAI/litellm/blob/main/model_prices_and_context_window.json.. Using fallback context limit: 1000000
+Trajectory dumped to /home/saketh/research/cvdp_benchmark/jobs/2026-03-11__19-16-07/cvdp_agentic_64b66b_codec_0001__JiHJEGV/agent/trajectory.json
+Failed to retrieve model info for 'openrouter/openai/gpt-4o-mini': This model isn't mapped yet. model=openrouter/openai/gpt-4o-mini, custom_llm_provider=openrouter. Add it here - https://github.com/BerriAI/litellm/blob/main/model_prices_and_context_window.json.. Using fallback context limit: 1000000
+Parser warnings: - Extra text detected before JSON object
+- Extra text detected after JSON object
+Sending keys: ['cat aes128_encrypt.sv\n'] min_timeout_sec: 0.1 max_timeout_sec: 180.0
+Trajectory dumped to /home/saketh/research/cvdp_benchmark/jobs/2026-03-11__19-16-07/cvdp_agentic_aes_encryption_decr__98Lx4zR/agent/trajectory.json
+Failed to retrieve model info for 'openrouter/openai/gpt-4o-mini': This model isn't mapped yet. model=openrouter/openai/gpt-4o-mini, custom_llm_provider=openrouter. Add it here - https://github.com/BerriAI/litellm/blob/main/model_prices_and_context_window.json.. Using fallback context limit: 1000000
+Parser warnings: - Extra text detected before JSON object
+- Extra text detected after JSON object
+Sending keys: ['vi rtl/top_64b66b_codec.sv\n'] min_timeout_sec: 1.0 max_timeout_sec: 180.0
+Trajectory dumped to /home/saketh/research/cvdp_benchmark/jobs/2026-03-11__19-16-07/cvdp_agentic_64b66b_codec_0001__JiHJEGV/agent/trajectory.json
+Failed to retrieve model info for 'openrouter/openai/gpt-4o-mini': This model isn't mapped yet. model=openrouter/openai/gpt-4o-mini, custom_llm_provider=openrouter. Add it here - https://github.com/BerriAI/litellm/blob/main/model_prices_and_context_window.json.. Using fallback context limit: 1000000
+Parser warnings: - Extra text detected before JSON object
+- Extra text detected after JSON object
+Sending keys: ['cd ../verif\n'] min_timeout_sec: 0.1 max_timeout_sec: 180.0
+Sending keys: ['ls -la\n'] min_timeout_sec: 0.1 max_timeout_sec: 180.0
+Trajectory dumped to /home/saketh/research/cvdp_benchmark/jobs/2026-03-11__19-16-07/cvdp_agentic_aes_encryption_decr__98Lx4zR/agent/trajectory.json
+Failed to retrieve model info for 'openrouter/openai/gpt-4o-mini': This model isn't mapped yet. model=openrouter/openai/gpt-4o-mini, custom_llm_provider=openrouter. Add it here - https://github.com/BerriAI/litellm/blob/main/model_prices_and_context_window.json.. Using fallback context limit: 1000000
+Parser warnings: - Extra text detected before JSON object
+- Extra text detected after JSON object
+Sending keys: ['ls -la /usr/bin\n'] min_timeout_sec: 0.1 max_timeout_sec: 180.0
+Trajectory dumped to /home/saketh/research/cvdp_benchmark/jobs/2026-03-11__19-16-07/cvdp_agentic_64b66b_codec_0001__JiHJEGV/agent/trajectory.json
+Failed to retrieve model info for 'openrouter/openai/gpt-4o-mini': This model isn't mapped yet. model=openrouter/openai/gpt-4o-mini, custom_llm_provider=openrouter. Add it here - https://github.com/BerriAI/litellm/blob/main/model_prices_and_context_window.json.. Using fallback context limit: 1000000
+Parser warnings: - Extra text detected before JSON object
+- Extra text detected after JSON object
+Sending keys: ['cat tb_aes128_enc.sv\n'] min_timeout_sec: 0.1 max_timeout_sec: 180.0
+Trajectory dumped to /home/saketh/research/cvdp_benchmark/jobs/2026-03-11__19-16-07/cvdp_agentic_aes_encryption_decr__98Lx4zR/agent/trajectory.json
+Failed to retrieve model info for 'openrouter/openai/gpt-4o-mini': This model isn't mapped yet. model=openrouter/openai/gpt-4o-mini, custom_llm_provider=openrouter. Add it here - https://github.com/BerriAI/litellm/blob/main/model_prices_and_context_window.json.. Using fallback context limit: 1000000
+Parser warnings: - Extra text detected before JSON object
+- Extra text detected after JSON object
+Trajectory dumped to /home/saketh/research/cvdp_benchmark/jobs/2026-03-11__19-16-07/cvdp_agentic_aes_encryption_decr__98Lx4zR/agent/trajectory.json
+Failed to retrieve model info for 'openrouter/openai/gpt-4o-mini': This model isn't mapped yet. model=openrouter/openai/gpt-4o-mini, custom_llm_provider=openrouter. Add it here - https://github.com/BerriAI/litellm/blob/main/model_prices_and_context_window.json.. Using fallback context limit: 1000000
+Parser warnings: - Extra text detected before JSON object
+- Extra text detected after JSON object
+Trajectory dumped to /home/saketh/research/cvdp_benchmark/jobs/2026-03-11__19-16-07/cvdp_agentic_aes_encryption_decr__98Lx4zR/agent/trajectory.json
+Failed to retrieve model info for 'openrouter/openai/gpt-4o-mini': This model isn't mapped yet. model=openrouter/openai/gpt-4o-mini, custom_llm_provider=openrouter. Add it here - https://github.com/BerriAI/litellm/blob/main/model_prices_and_context_window.json.. Using fallback context limit: 1000000
+Parser warnings: - Extra text detected before JSON object
+- Extra text detected after JSON object
+Sending keys: ['echo "module top_64b66b_codec (" > rtl/top_64b66b_codec.sv\n'] min_timeout_sec: 0.1 max_timeout_sec: 180.0
+Sending keys: ['echo "    input clk_in," >> rtl/top_64b66b_codec.sv\n'] min_timeout_sec: 0.1 max_timeout_sec: 180.0
+Sending keys: ['echo "    input rst_in," >> rtl/top_64b66b_codec.sv\n'] min_timeout_sec: 0.1 max_timeout_sec: 180.0
+Sending keys: ['echo "    input [63:0] enc_data_in," >> rtl/top_64b66b_codec.sv\n'] min_timeout_sec: 0.1 max_timeout_sec: 180.0
+Sending keys: ['echo "    input [7:0] enc_control_in," >> rtl/top_64b66b_codec.sv\n'] min_timeout_sec: 0.1 max_timeout_sec: 180.0
+Sending keys: ['echo "    output [65:0] enc_data_out," >> rtl/top_64b66b_codec.sv\n'] min_timeout_sec: 0.1 max_timeout_sec: 180.0
+Sending keys: ['echo "    input dec_data_valid_in," >> rtl/top_64b66b_codec.sv\n'] min_timeout_sec: 0.1 max_timeout_sec: 180.0
+Sending keys: ['echo "    input [65:0] dec_data_in," >> rtl/top_64b66b_codec.sv\n'] min_timeout_sec: 0.1 max_timeout_sec: 180.0
+Sending keys: ['echo "    output [63:0] dec_data_out," >> rtl/top_64b66b_codec.sv\n'] min_timeout_sec: 0.1 max_timeout_sec: 180.0
+Sending keys: ['echo "    output [7:0] dec_control_out," >> rtl/top_64b66b_codec.sv\n'] min_timeout_sec: 0.1 max_timeout_sec: 180.0
+Sending keys: ['echo "    output dec_sync_error," >> rtl/top_64b66b_codec.sv\n'] min_timeout_sec: 0.1 max_timeout_sec: 180.0
+Sending keys: ['echo "    output dec_error_out" >> rtl/top_64b66b_codec.sv\n'] min_timeout_sec: 0.1 max_timeout_sec: 180.0
+Sending keys: ['echo ");" >> rtl/top_64b66b_codec.sv\n'] min_timeout_sec: 0.1 max_timeout_sec: 180.0
+Sending keys: ['echo "// Module logic goes here" >> rtl/top_64b66b_codec.sv\n'] min_timeout_sec: 0.1 max_timeout_sec: 180.0
+Sending keys: ['echo "endmodule" >> rtl/top_64b66b_codec.sv\n'] min_timeout_sec: 0.1 max_timeout_sec: 180.0
+Parser warnings: - Extra text detected before JSON object
+- Extra text detected after JSON object
+Trajectory dumped to /home/saketh/research/cvdp_benchmark/jobs/2026-03-11__19-16-07/cvdp_agentic_aes_encryption_decr__98Lx4zR/agent/trajectory.json
+Trajectory dumped to /home/saketh/research/cvdp_benchmark/jobs/2026-03-11__19-16-07/cvdp_agentic_64b66b_codec_0001__JiHJEGV/agent/trajectory.json
+Failed to retrieve model info for 'openrouter/openai/gpt-4o-mini': This model isn't mapped yet. model=openrouter/openai/gpt-4o-mini, custom_llm_provider=openrouter. Add it here - https://github.com/BerriAI/litellm/blob/main/model_prices_and_context_window.json.. Using fallback context limit: 1000000
+Failed to retrieve model info for 'openrouter/openai/gpt-4o-mini': This model isn't mapped yet. model=openrouter/openai/gpt-4o-mini, custom_llm_provider=openrouter. Add it here - https://github.com/BerriAI/litellm/blob/main/model_prices_and_context_window.json.. Using fallback context limit: 1000000
+Parser warnings: - Extra text detected before JSON object
+- Extra text detected after JSON object
+Trajectory dumped to /home/saketh/research/cvdp_benchmark/jobs/2026-03-11__19-16-07/cvdp_agentic_aes_encryption_decr__98Lx4zR/agent/trajectory.json
+Failed to retrieve model info for 'openrouter/openai/gpt-4o-mini': This model isn't mapped yet. model=openrouter/openai/gpt-4o-mini, custom_llm_provider=openrouter. Add it here - https://github.com/BerriAI/litellm/blob/main/model_prices_and_context_window.json.. Using fallback context limit: 1000000
+Parser warnings: - Extra text detected before JSON object
+- Extra text detected after JSON object
+Trajectory dumped to /home/saketh/research/cvdp_benchmark/jobs/2026-03-11__19-16-07/cvdp_agentic_aes_encryption_decr__98Lx4zR/agent/trajectory.json
+Failed to retrieve model info for 'openrouter/openai/gpt-4o-mini': This model isn't mapped yet. model=openrouter/openai/gpt-4o-mini, custom_llm_provider=openrouter. Add it here - https://github.com/BerriAI/litellm/blob/main/model_prices_and_context_window.json.. Using fallback context limit: 1000000
+Parser warnings: - Extra text detected before JSON object
+- Extra text detected after JSON object
+Trajectory dumped to /home/saketh/research/cvdp_benchmark/jobs/2026-03-11__19-16-07/cvdp_agentic_aes_encryption_decr__98Lx4zR/agent/trajectory.json
+Failed to retrieve model info for 'openrouter/openai/gpt-4o-mini': This model isn't mapped yet. model=openrouter/openai/gpt-4o-mini, custom_llm_provider=openrouter. Add it here - https://github.com/BerriAI/litellm/blob/main/model_prices_and_context_window.json.. Using fallback context limit: 1000000
+Parser warnings: - Extra text detected before JSON object
+- Extra text detected after JSON object
+Trajectory dumped to /home/saketh/research/cvdp_benchmark/jobs/2026-03-11__19-16-07/cvdp_agentic_aes_encryption_decr__98Lx4zR/agent/trajectory.json
+Failed to retrieve model info for 'openrouter/openai/gpt-4o-mini': This model isn't mapped yet. model=openrouter/openai/gpt-4o-mini, custom_llm_provider=openrouter. Add it here - https://github.com/BerriAI/litellm/blob/main/model_prices_and_context_window.json.. Using fallback context limit: 1000000
+Parser warnings: - Extra text detected before JSON object
+- Extra text detected after JSON object
+Trajectory dumped to /home/saketh/research/cvdp_benchmark/jobs/2026-03-11__19-16-07/cvdp_agentic_aes_encryption_decr__98Lx4zR/agent/trajectory.json
+Failed to retrieve model info for 'openrouter/openai/gpt-4o-mini': This model isn't mapped yet. model=openrouter/openai/gpt-4o-mini, custom_llm_provider=openrouter. Add it here - https://github.com/BerriAI/litellm/blob/main/model_prices_and_context_window.json.. Using fallback context limit: 1000000
+Parser warnings: - Extra text detected before JSON object
+- Extra text detected after JSON object
+Trajectory dumped to /home/saketh/research/cvdp_benchmark/jobs/2026-03-11__19-16-07/cvdp_agentic_aes_encryption_decr__98Lx4zR/agent/trajectory.json
+Failed to retrieve model info for 'openrouter/openai/gpt-4o-mini': This model isn't mapped yet. model=openrouter/openai/gpt-4o-mini, custom_llm_provider=openrouter. Add it here - https://github.com/BerriAI/litellm/blob/main/model_prices_and_context_window.json.. Using fallback context limit: 1000000
+Parser warnings: - Extra text detected before JSON object
+- Extra text detected after JSON object
+Sending keys: ['echo "// Internal signal declarations" >> rtl/top_64b66b_codec.sv\n'] min_timeout_sec: 0.1 max_timeout_sec: 180.0
+Sending keys: ['echo "wire [65:0] enc_data_out_data;" >> rtl/top_64b66b_codec.sv\n'] min_timeout_sec: 0.1 max_timeout_sec: 180.0
+Sending keys: ['echo "wire [7:0] dec_control_out_data;" >> rtl/top_64b66b_codec.sv\n'] min_timeout_sec: 0.1 max_timeout_sec: 180.0
+Sending keys: ['echo "// Instantiate data encoder" >> rtl/top_64b66b_codec.sv\n'] min_timeout_sec: 0.1 max_timeout_sec: 180.0
+Sending keys: ['echo "encoder_data_64b66b data_encoder (" >> rtl/top_64b66b_codec.sv\n'] min_timeout_sec: 0.1 max_timeout_sec: 180.0
+Sending keys: ['echo "    .clk_in(clk_in)," >> rtl/top_64b66b_codec.sv\n'] min_timeout_sec: 0.1 max_timeout_sec: 180.0
+Sending keys: ['echo "    .rst_in(rst_in)," >> rtl/top_64b66b_codec.sv\n'] min_timeout_sec: 0.1 max_timeout_sec: 180.0
+Sending keys: ['echo "    .encoder_data_in(enc_data_in)," >> rtl/top_64b66b_codec.sv\n'] min_timeout_sec: 0.1 max_timeout_sec: 180.0
+Sending keys: ['echo "    .encoder_control_in(enc_control_in)," >> rtl/top_64b66b_codec.sv\n'] min_timeout_sec: 0.1 max_timeout_sec: 180.0
+Sending keys: ['echo "    .encoder_data_out(enc_data_out_data)" >> rtl/top_64b66b_codec.sv\n'] min_timeout_sec: 0.1 max_timeout_sec: 180.0
+Sending keys: ['echo ");" >> rtl/top_64b66b_codec.sv\n'] min_timeout_sec: 0.1 max_timeout_sec: 180.0
+Sending keys: ['echo "// Instantiate control encoder" >> rtl/top_64b66b_codec.sv\n'] min_timeout_sec: 0.1 max_timeout_sec: 180.0
+Sending keys: ['echo "encoder_control_64b66b control_encoder (" >> rtl/top_64b66b_codec.sv\n'] min_timeout_sec: 0.1 max_timeout_sec: 180.0
+Sending keys: ['echo "    .clk_in(clk_in)," >> rtl/top_64b66b_codec.sv\n'] min_timeout_sec: 0.1 max_timeout_sec: 180.0
+Sending keys: ['echo "    .rst_in(rst_in)," >> rtl/top_64b66b_codec.sv\n'] min_timeout_sec: 0.1 max_timeout_sec: 180.0
+Sending keys: ['echo "    .encoder_data_in(enc_data_in)," >> rtl/top_64b66b_codec.sv\n'] min_timeout_sec: 0.1 max_timeout_sec: 180.0
+Sending keys: ['echo "    .encoder_control_in(enc_control_in)," >> rtl/top_64b66b_codec.sv\n'] min_timeout_sec: 0.1 max_timeout_sec: 180.0
+Sending keys: ['echo "    .encoder_data_out(enc_data_out_data)" >> rtl/top_64b66b_codec.sv\n'] min_timeout_sec: 0.1 max_timeout_sec: 180.0
+Sending keys: ['echo ");" >> rtl/top_64b66b_codec.sv\n'] min_timeout_sec: 0.1 max_timeout_sec: 180.0
+Sending keys: ['echo "// Instantiate decoder" >> rtl/top_64b66b_codec.sv\n'] min_timeout_sec: 0.1 max_timeout_sec: 180.0
+Sending keys: ['echo "decoder_data_control_64b66b data_decoder (" >> rtl/top_64b66b_codec.sv\n'] min_timeout_sec: 0.1 max_timeout_sec: 180.0
+Sending keys: ['echo "    .clk_in(clk_in)," >> rtl/top_64b66b_codec.sv\n'] min_timeout_sec: 0.1 max_timeout_sec: 180.0
+Sending keys: ['echo "    .rst_in(rst_in)," >> rtl/top_64b66b_codec.sv\n'] min_timeout_sec: 0.1 max_timeout_sec: 180.0
+Parser warnings: - Extra text detected before JSON object
+- Extra text detected after JSON object
+Trajectory dumped to /home/saketh/research/cvdp_benchmark/jobs/2026-03-11__19-16-07/cvdp_agentic_aes_encryption_decr__98Lx4zR/agent/trajectory.json
+Sending keys: ['echo "    .decoder_data_valid_in(dec_data_valid_in)," >> rtl/top_64b66b_codec.sv\n'] min_timeout_sec: 0.1 max_timeout_sec: 180.0
+Failed to retrieve model info for 'openrouter/openai/gpt-4o-mini': This model isn't mapped yet. model=openrouter/openai/gpt-4o-mini, custom_llm_provider=openrouter. Add it here - https://github.com/BerriAI/litellm/blob/main/model_prices_and_context_window.json.. Using fallback context limit: 1000000
+Sending keys: ['echo "    .decoder_data_in(dec_data_in)," >> rtl/top_64b66b_codec.sv\n'] min_timeout_sec: 0.1 max_timeout_sec: 180.0
+Sending keys: ['echo "    .decoder_data_out(dec_data_out)," >> rtl/top_64b66b_codec.sv\n'] min_timeout_sec: 0.1 max_timeout_sec: 180.0
+Sending keys: ['echo "    .decoder_control_out(dec_control_out_data)," >> rtl/top_64b66b_codec.sv\n'] min_timeout_sec: 0.1 max_timeout_sec: 180.0
+Sending keys: ['echo "    .sync_error(dec_sync_error)," >> rtl/top_64b66b_codec.sv\n'] min_timeout_sec: 0.1 max_timeout_sec: 180.0
+Sending keys: ['echo "    .decoder_error_out(dec_error_out)" >> rtl/top_64b66b_codec.sv\n'] min_timeout_sec: 0.1 max_timeout_sec: 180.0
+Sending keys: ['echo ");" >> rtl/top_64b66b_codec.sv\n'] min_timeout_sec: 0.1 max_timeout_sec: 180.0
+Trajectory dumped to /home/saketh/research/cvdp_benchmark/jobs/2026-03-11__19-16-07/cvdp_agentic_64b66b_codec_0001__JiHJEGV/agent/trajectory.json
+Failed to retrieve model info for 'openrouter/openai/gpt-4o-mini': This model isn't mapped yet. model=openrouter/openai/gpt-4o-mini, custom_llm_provider=openrouter. Add it here - https://github.com/BerriAI/litellm/blob/main/model_prices_and_context_window.json.. Using fallback context limit: 1000000
+Parser warnings: - Extra text detected before JSON object
+- Extra text detected after JSON object
+Trajectory dumped to /home/saketh/research/cvdp_benchmark/jobs/2026-03-11__19-16-07/cvdp_agentic_aes_encryption_decr__98Lx4zR/agent/trajectory.json
+Failed to retrieve model info for 'openrouter/openai/gpt-4o-mini': This model isn't mapped yet. model=openrouter/openai/gpt-4o-mini, custom_llm_provider=openrouter. Add it here - https://github.com/BerriAI/litellm/blob/main/model_prices_and_context_window.json.. Using fallback context limit: 1000000
+Parser warnings: - Extra text detected before JSON object
+- Extra text detected after JSON object
+Sending keys: ['echo "// Module functionality and processing logic goes here" >> rtl/top_64b66b_codec.sv\n'] min_timeout_sec: 0.1 max_timeout_sec: 180.0
+Sending keys: ['echo "// Add any additional functionality as required" >> rtl/top_64b66b_codec.sv\n'] min_timeout_sec: 0.1 max_timeout_sec: 180.0
+Sending keys: ['echo "// End of top_64b66b_codec module" >> rtl/top_64b66b_codec.sv\n'] min_timeout_sec: 0.1 max_timeout_sec: 180.0
+Trajectory dumped to /home/saketh/research/cvdp_benchmark/jobs/2026-03-11__19-16-07/cvdp_agentic_64b66b_codec_0001__JiHJEGV/agent/trajectory.json
+Failed to retrieve model info for 'openrouter/openai/gpt-4o-mini': This model isn't mapped yet. model=openrouter/openai/gpt-4o-mini, custom_llm_provider=openrouter. Add it here - https://github.com/BerriAI/litellm/blob/main/model_prices_and_context_window.json.. Using fallback context limit: 1000000
+Parser warnings: - Extra text detected before JSON object
+- Extra text detected after JSON object
+Trajectory dumped to /home/saketh/research/cvdp_benchmark/jobs/2026-03-11__19-16-07/cvdp_agentic_aes_encryption_decr__98Lx4zR/agent/trajectory.json
+Failed to retrieve model info for 'openrouter/openai/gpt-4o-mini': This model isn't mapped yet. model=openrouter/openai/gpt-4o-mini, custom_llm_provider=openrouter. Add it here - https://github.com/BerriAI/litellm/blob/main/model_prices_and_context_window.json.. Using fallback context limit: 1000000
+Parser warnings: - Extra text detected before JSON object
+- Extra text detected after JSON object
+Trajectory dumped to /home/saketh/research/cvdp_benchmark/jobs/2026-03-11__19-16-07/cvdp_agentic_64b66b_codec_0001__JiHJEGV/agent/trajectory.json
+Trajectory dumped to /home/saketh/research/cvdp_benchmark/jobs/2026-03-11__19-16-07/cvdp_agentic_64b66b_codec_0001__JiHJEGV/agent/trajectory.json
+Parser warnings: - Extra text detected before JSON object
+- Extra text detected after JSON object
+Trajectory dumped to /home/saketh/research/cvdp_benchmark/jobs/2026-03-11__19-16-07/cvdp_agentic_aes_encryption_decr__98Lx4zR/agent/trajectory.json
+Failed to retrieve model info for 'openrouter/openai/gpt-4o-mini': This model isn't mapped yet. model=openrouter/openai/gpt-4o-mini, custom_llm_provider=openrouter. Add it here - https://github.com/BerriAI/litellm/blob/main/model_prices_and_context_window.json.. Using fallback context limit: 1000000
+Parser warnings: - Extra text detected before JSON object
+- Extra text detected after JSON object
+Trajectory dumped to /home/saketh/research/cvdp_benchmark/jobs/2026-03-11__19-16-07/cvdp_agentic_aes_encryption_decr__98Lx4zR/agent/trajectory.json
+Failed to retrieve model info for 'openrouter/openai/gpt-4o-mini': This model isn't mapped yet. model=openrouter/openai/gpt-4o-mini, custom_llm_provider=openrouter. Add it here - https://github.com/BerriAI/litellm/blob/main/model_prices_and_context_window.json.. Using fallback context limit: 1000000
+Installing: tmux, asciinema
+Detected system: {'os': 'debian-based', 'package_manager': 'apt-get', 'update_command': None}
+Installing tools using apt-get: DEBIAN_FRONTEND=noninteractive apt-get update && DEBIAN_FRONTEND=noninteractive apt-get install -y tmux asciinema
+Parser warnings: - Extra text detected before JSON object
+- Extra text detected after JSON object
+Trajectory dumped to /home/saketh/research/cvdp_benchmark/jobs/2026-03-11__19-16-07/cvdp_agentic_aes_encryption_decr__98Lx4zR/agent/trajectory.json
+Failed to retrieve model info for 'openrouter/openai/gpt-4o-mini': This model isn't mapped yet. model=openrouter/openai/gpt-4o-mini, custom_llm_provider=openrouter. Add it here - https://github.com/BerriAI/litellm/blob/main/model_prices_and_context_window.json.. Using fallback context limit: 1000000
+Starting recording.
+Sending keys: ['asciinema rec --stdin /logs/agent/recording.cast', 'Enter'] min_timeout_sec: 1.0 max_timeout_sec: 180.0
+Sending keys: ['clear', 'Enter'] min_timeout_sec: 0.0 max_timeout_sec: 180.0
+Failed to retrieve model info for 'openrouter/openai/gpt-4o-mini': This model isn't mapped yet. model=openrouter/openai/gpt-4o-mini, custom_llm_provider=openrouter. Add it here - https://github.com/BerriAI/litellm/blob/main/model_prices_and_context_window.json.. Using fallback context limit: 1000000
+Parser warnings: - Extra text detected before JSON object
+- Extra text detected after JSON object
+Trajectory dumped to /home/saketh/research/cvdp_benchmark/jobs/2026-03-11__19-16-07/cvdp_agentic_aes_encryption_decr__98Lx4zR/agent/trajectory.json
+Failed to retrieve model info for 'openrouter/openai/gpt-4o-mini': This model isn't mapped yet. model=openrouter/openai/gpt-4o-mini, custom_llm_provider=openrouter. Add it here - https://github.com/BerriAI/litellm/blob/main/model_prices_and_context_window.json.. Using fallback context limit: 1000000
+Sending keys: ['ls -la\n'] min_timeout_sec: 0.1 max_timeout_sec: 180.0
+Trajectory dumped to /home/saketh/research/cvdp_benchmark/jobs/2026-03-11__19-16-07/cvdp_agentic_aes_encryption_decr__bXpWUVB/agent/trajectory.json
+Failed to retrieve model info for 'openrouter/openai/gpt-4o-mini': This model isn't mapped yet. model=openrouter/openai/gpt-4o-mini, custom_llm_provider=openrouter. Add it here - https://github.com/BerriAI/litellm/blob/main/model_prices_and_context_window.json.. Using fallback context limit: 1000000
+Parser warnings: - Extra text detected before JSON object
+- Extra text detected after JSON object
+Trajectory dumped to /home/saketh/research/cvdp_benchmark/jobs/2026-03-11__19-16-07/cvdp_agentic_aes_encryption_decr__98Lx4zR/agent/trajectory.json
+Failed to retrieve model info for 'openrouter/openai/gpt-4o-mini': This model isn't mapped yet. model=openrouter/openai/gpt-4o-mini, custom_llm_provider=openrouter. Add it here - https://github.com/BerriAI/litellm/blob/main/model_prices_and_context_window.json.. Using fallback context limit: 1000000
+Sending keys: ['cd rtl\n'] min_timeout_sec: 0.1 max_timeout_sec: 180.0
+Sending keys: ['ls -la\n'] min_timeout_sec: 0.1 max_timeout_sec: 180.0
+Trajectory dumped to /home/saketh/research/cvdp_benchmark/jobs/2026-03-11__19-16-07/cvdp_agentic_aes_encryption_decr__bXpWUVB/agent/trajectory.json
+Failed to retrieve model info for 'openrouter/openai/gpt-4o-mini': This model isn't mapped yet. model=openrouter/openai/gpt-4o-mini, custom_llm_provider=openrouter. Add it here - https://github.com/BerriAI/litellm/blob/main/model_prices_and_context_window.json.. Using fallback context limit: 1000000
+Parser warnings: - Extra text detected before JSON object
+- Extra text detected after JSON object
+Trajectory dumped to /home/saketh/research/cvdp_benchmark/jobs/2026-03-11__19-16-07/cvdp_agentic_aes_encryption_decr__98Lx4zR/agent/trajectory.json
+Failed to retrieve model info for 'openrouter/openai/gpt-4o-mini': This model isn't mapped yet. model=openrouter/openai/gpt-4o-mini, custom_llm_provider=openrouter. Add it here - https://github.com/BerriAI/litellm/blob/main/model_prices_and_context_window.json.. Using fallback context limit: 1000000
+Parser warnings: - Extra text detected before JSON object
+- Extra text detected after JSON object
+Sending keys: ['cat aes128_decrypt.sv\n'] min_timeout_sec: 1.0 max_timeout_sec: 180.0
+Trajectory dumped to /home/saketh/research/cvdp_benchmark/jobs/2026-03-11__19-16-07/cvdp_agentic_aes_encryption_decr__98Lx4zR/agent/trajectory.json
+Failed to retrieve model info for 'openrouter/openai/gpt-4o-mini': This model isn't mapped yet. model=openrouter/openai/gpt-4o-mini, custom_llm_provider=openrouter. Add it here - https://github.com/BerriAI/litellm/blob/main/model_prices_and_context_window.json.. Using fallback context limit: 1000000
+Trajectory dumped to /home/saketh/research/cvdp_benchmark/jobs/2026-03-11__19-16-07/cvdp_agentic_aes_encryption_decr__bXpWUVB/agent/trajectory.json
+Failed to retrieve model info for 'openrouter/openai/gpt-4o-mini': This model isn't mapped yet. model=openrouter/openai/gpt-4o-mini, custom_llm_provider=openrouter. Add it here - https://github.com/BerriAI/litellm/blob/main/model_prices_and_context_window.json.. Using fallback context limit: 1000000
+Parser warnings: - Extra text detected before JSON object
+- Extra text detected after JSON object
+Trajectory dumped to /home/saketh/research/cvdp_benchmark/jobs/2026-03-11__19-16-07/cvdp_agentic_aes_encryption_decr__98Lx4zR/agent/trajectory.json
+Failed to retrieve model info for 'openrouter/openai/gpt-4o-mini': This model isn't mapped yet. model=openrouter/openai/gpt-4o-mini, custom_llm_provider=openrouter. Add it here - https://github.com/BerriAI/litellm/blob/main/model_prices_and_context_window.json.. Using fallback context limit: 1000000
+Sending keys: ['cat aes128_key_expansion.sv\n'] min_timeout_sec: 1.0 max_timeout_sec: 180.0
+Parser warnings: - Extra text detected before JSON object
+- Extra text detected after JSON object
+Trajectory dumped to /home/saketh/research/cvdp_benchmark/jobs/2026-03-11__19-16-07/cvdp_agentic_aes_encryption_decr__98Lx4zR/agent/trajectory.json
+Failed to retrieve model info for 'openrouter/openai/gpt-4o-mini': This model isn't mapped yet. model=openrouter/openai/gpt-4o-mini, custom_llm_provider=openrouter. Add it here - https://github.com/BerriAI/litellm/blob/main/model_prices_and_context_window.json.. Using fallback context limit: 1000000
+Trajectory dumped to /home/saketh/research/cvdp_benchmark/jobs/2026-03-11__19-16-07/cvdp_agentic_aes_encryption_decr__bXpWUVB/agent/trajectory.json
+Failed to retrieve model info for 'openrouter/openai/gpt-4o-mini': This model isn't mapped yet. model=openrouter/openai/gpt-4o-mini, custom_llm_provider=openrouter. Add it here - https://github.com/BerriAI/litellm/blob/main/model_prices_and_context_window.json.. Using fallback context limit: 1000000
+Parser warnings: - Extra text detected before JSON object
+- Extra text detected after JSON object
+Trajectory dumped to /home/saketh/research/cvdp_benchmark/jobs/2026-03-11__19-16-07/cvdp_agentic_aes_encryption_decr__98Lx4zR/agent/trajectory.json
+Failed to retrieve model info for 'openrouter/openai/gpt-4o-mini': This model isn't mapped yet. model=openrouter/openai/gpt-4o-mini, custom_llm_provider=openrouter. Add it here - https://github.com/BerriAI/litellm/blob/main/model_prices_and_context_window.json.. Using fallback context limit: 1000000
+Sending keys: ['cd ../verif\n'] min_timeout_sec: 0.1 max_timeout_sec: 180.0
+Sending keys: ['ls -la\n'] min_timeout_sec: 0.1 max_timeout_sec: 180.0
+Trajectory dumped to /home/saketh/research/cvdp_benchmark/jobs/2026-03-11__19-16-07/cvdp_agentic_aes_encryption_decr__bXpWUVB/agent/trajectory.json
+Failed to retrieve model info for 'openrouter/openai/gpt-4o-mini': This model isn't mapped yet. model=openrouter/openai/gpt-4o-mini, custom_llm_provider=openrouter. Add it here - https://github.com/BerriAI/litellm/blob/main/model_prices_and_context_window.json.. Using fallback context limit: 1000000
+Parser warnings: - Extra text detected before JSON object
+- Extra text detected after JSON object
+Trajectory dumped to /home/saketh/research/cvdp_benchmark/jobs/2026-03-11__19-16-07/cvdp_agentic_aes_encryption_decr__98Lx4zR/agent/trajectory.json
+Failed to retrieve model info for 'openrouter/openai/gpt-4o-mini': This model isn't mapped yet. model=openrouter/openai/gpt-4o-mini, custom_llm_provider=openrouter. Add it here - https://github.com/BerriAI/litellm/blob/main/model_prices_and_context_window.json.. Using fallback context limit: 1000000
+Sending keys: ['cat tb_aes128_dec.sv\n'] min_timeout_sec: 1.0 max_timeout_sec: 180.0
+Trajectory dumped to /home/saketh/research/cvdp_benchmark/jobs/2026-03-11__19-16-07/cvdp_agentic_aes_encryption_decr__bXpWUVB/agent/trajectory.json
+Failed to retrieve model info for 'openrouter/openai/gpt-4o-mini': This model isn't mapped yet. model=openrouter/openai/gpt-4o-mini, custom_llm_provider=openrouter. Add it here - https://github.com/BerriAI/litellm/blob/main/model_prices_and_context_window.json.. Using fallback context limit: 1000000
+Parser warnings: - Extra text detected before JSON object
+- Extra text detected after JSON object
+Trajectory dumped to /home/saketh/research/cvdp_benchmark/jobs/2026-03-11__19-16-07/cvdp_agentic_aes_encryption_decr__98Lx4zR/agent/trajectory.json
+Failed to retrieve model info for 'openrouter/openai/gpt-4o-mini': This model isn't mapped yet. model=openrouter/openai/gpt-4o-mini, custom_llm_provider=openrouter. Add it here - https://github.com/BerriAI/litellm/blob/main/model_prices_and_context_window.json.. Using fallback context limit: 1000000
+Parser warnings: - Extra text detected before JSON object
+- Extra text detected after JSON object
+Trajectory dumped to /home/saketh/research/cvdp_benchmark/jobs/2026-03-11__19-16-07/cvdp_agentic_aes_encryption_decr__98Lx4zR/agent/trajectory.json
+Failed to retrieve model info for 'openrouter/openai/gpt-4o-mini': This model isn't mapped yet. model=openrouter/openai/gpt-4o-mini, custom_llm_provider=openrouter. Add it here - https://github.com/BerriAI/litellm/blob/main/model_prices_and_context_window.json.. Using fallback context limit: 1000000
+Sending keys: ['verilator --cc tb_aes128_dec.sv --exe --build -o tb_aes128_dec\n'] min_timeout_sec: 1.0 max_timeout_sec: 180.0
+Sending keys: ['./tb_aes128_dec\n'] min_timeout_sec: 10.0 max_timeout_sec: 180.0
+Parser warnings: - Extra text detected before JSON object
+- Extra text detected after JSON object
+Trajectory dumped to /home/saketh/research/cvdp_benchmark/jobs/2026-03-11__19-16-07/cvdp_agentic_aes_encryption_decr__98Lx4zR/agent/trajectory.json
+Failed to retrieve model info for 'openrouter/openai/gpt-4o-mini': This model isn't mapped yet. model=openrouter/openai/gpt-4o-mini, custom_llm_provider=openrouter. Add it here - https://github.com/BerriAI/litellm/blob/main/model_prices_and_context_window.json.. Using fallback context limit: 1000000
+Parser warnings: - Extra text detected before JSON object
+- Extra text detected after JSON object
+Trajectory dumped to /home/saketh/research/cvdp_benchmark/jobs/2026-03-11__19-16-07/cvdp_agentic_aes_encryption_decr__98Lx4zR/agent/trajectory.json
+Failed to retrieve model info for 'openrouter/openai/gpt-4o-mini': This model isn't mapped yet. model=openrouter/openai/gpt-4o-mini, custom_llm_provider=openrouter. Add it here - https://github.com/BerriAI/litellm/blob/main/model_prices_and_context_window.json.. Using fallback context limit: 1000000
+Trajectory dumped to /home/saketh/research/cvdp_benchmark/jobs/2026-03-11__19-16-07/cvdp_agentic_aes_encryption_decr__bXpWUVB/agent/trajectory.json
+Failed to retrieve model info for 'openrouter/openai/gpt-4o-mini': This model isn't mapped yet. model=openrouter/openai/gpt-4o-mini, custom_llm_provider=openrouter. Add it here - https://github.com/BerriAI/litellm/blob/main/model_prices_and_context_window.json.. Using fallback context limit: 1000000
+Parser warnings: - Extra text detected before JSON object
+- Extra text detected after JSON object
+Trajectory dumped to /home/saketh/research/cvdp_benchmark/jobs/2026-03-11__19-16-07/cvdp_agentic_aes_encryption_decr__98Lx4zR/agent/trajectory.json
+Failed to retrieve model info for 'openrouter/openai/gpt-4o-mini': This model isn't mapped yet. model=openrouter/openai/gpt-4o-mini, custom_llm_provider=openrouter. Add it here - https://github.com/BerriAI/litellm/blob/main/model_prices_and_context_window.json.. Using fallback context limit: 1000000
+Sending keys: ['verilator --cc tb_aes128_dec.sv --exe --build -o tb_aes128_dec -I../rtl\n'] min_timeout_sec: 1.0 max_timeout_sec: 180.0
+Sending keys: ['./tb_aes128_dec\n'] min_timeout_sec: 10.0 max_timeout_sec: 180.0
+Parser warnings: - Extra text detected before JSON object
+- Extra text detected after JSON object
+Trajectory dumped to /home/saketh/research/cvdp_benchmark/jobs/2026-03-11__19-16-07/cvdp_agentic_aes_encryption_decr__98Lx4zR/agent/trajectory.json
+Failed to retrieve model info for 'openrouter/openai/gpt-4o-mini': This model isn't mapped yet. model=openrouter/openai/gpt-4o-mini, custom_llm_provider=openrouter. Add it here - https://github.com/BerriAI/litellm/blob/main/model_prices_and_context_window.json.. Using fallback context limit: 1000000
+Parser warnings: - Extra text detected before JSON object
+- Extra text detected after JSON object
+Trajectory dumped to /home/saketh/research/cvdp_benchmark/jobs/2026-03-11__19-16-07/cvdp_agentic_aes_encryption_decr__98Lx4zR/agent/trajectory.json
+Failed to retrieve model info for 'openrouter/openai/gpt-4o-mini': This model isn't mapped yet. model=openrouter/openai/gpt-4o-mini, custom_llm_provider=openrouter. Add it here - https://github.com/BerriAI/litellm/blob/main/model_prices_and_context_window.json.. Using fallback context limit: 1000000
+Trajectory dumped to /home/saketh/research/cvdp_benchmark/jobs/2026-03-11__19-16-07/cvdp_agentic_aes_encryption_decr__bXpWUVB/agent/trajectory.json
+Failed to retrieve model info for 'openrouter/openai/gpt-4o-mini': This model isn't mapped yet. model=openrouter/openai/gpt-4o-mini, custom_llm_provider=openrouter. Add it here - https://github.com/BerriAI/litellm/blob/main/model_prices_and_context_window.json.. Using fallback context limit: 1000000
+Parser warnings: - Extra text detected before JSON object
+- Extra text detected after JSON object
+Trajectory dumped to /home/saketh/research/cvdp_benchmark/jobs/2026-03-11__19-16-07/cvdp_agentic_aes_encryption_decr__98Lx4zR/agent/trajectory.json
+Failed to retrieve model info for 'openrouter/openai/gpt-4o-mini': This model isn't mapped yet. model=openrouter/openai/gpt-4o-mini, custom_llm_provider=openrouter. Add it here - https://github.com/BerriAI/litellm/blob/main/model_prices_and_context_window.json.. Using fallback context limit: 1000000
+Parser warnings: - Extra text detected before JSON object
+- Extra text detected after JSON object
+Trajectory dumped to /home/saketh/research/cvdp_benchmark/jobs/2026-03-11__19-16-07/cvdp_agentic_aes_encryption_decr__98Lx4zR/agent/trajectory.json
+Failed to retrieve model info for 'openrouter/openai/gpt-4o-mini': This model isn't mapped yet. model=openrouter/openai/gpt-4o-mini, custom_llm_provider=openrouter. Add it here - https://github.com/BerriAI/litellm/blob/main/model_prices_and_context_window.json.. Using fallback context limit: 1000000
+Sending keys: ['verilator --cc tb_aes128_dec.sv --exe --build -o tb_aes128_dec -I../rtl --timing\n'] min_timeout_sec: 1.0 max_timeout_sec: 180.0
+Sending keys: ['./tb_aes128_dec\n'] min_timeout_sec: 10.0 max_timeout_sec: 180.0
+Parser warnings: - Extra text detected before JSON object
+- Extra text detected after JSON object
+Trajectory dumped to /home/saketh/research/cvdp_benchmark/jobs/2026-03-11__19-16-07/cvdp_agentic_aes_encryption_decr__98Lx4zR/agent/trajectory.json
+Failed to retrieve model info for 'openrouter/openai/gpt-4o-mini': This model isn't mapped yet. model=openrouter/openai/gpt-4o-mini, custom_llm_provider=openrouter. Add it here - https://github.com/BerriAI/litellm/blob/main/model_prices_and_context_window.json.. Using fallback context limit: 1000000
+Parser warnings: - Extra text detected before JSON object
+- Extra text detected after JSON object
+Trajectory dumped to /home/saketh/research/cvdp_benchmark/jobs/2026-03-11__19-16-07/cvdp_agentic_aes_encryption_decr__98Lx4zR/agent/trajectory.json
+Failed to retrieve model info for 'openrouter/openai/gpt-4o-mini': This model isn't mapped yet. model=openrouter/openai/gpt-4o-mini, custom_llm_provider=openrouter. Add it here - https://github.com/BerriAI/litellm/blob/main/model_prices_and_context_window.json.. Using fallback context limit: 1000000
+Parser warnings: - Extra text detected before JSON object
+- Extra text detected after JSON object
+Trajectory dumped to /home/saketh/research/cvdp_benchmark/jobs/2026-03-11__19-16-07/cvdp_agentic_aes_encryption_decr__98Lx4zR/agent/trajectory.json
+Failed to retrieve model info for 'openrouter/openai/gpt-4o-mini': This model isn't mapped yet. model=openrouter/openai/gpt-4o-mini, custom_llm_provider=openrouter. Add it here - https://github.com/BerriAI/litellm/blob/main/model_prices_and_context_window.json.. Using fallback context limit: 1000000
+Trajectory dumped to /home/saketh/research/cvdp_benchmark/jobs/2026-03-11__19-16-07/cvdp_agentic_aes_encryption_decr__bXpWUVB/agent/trajectory.json
+Failed to retrieve model info for 'openrouter/openai/gpt-4o-mini': This model isn't mapped yet. model=openrouter/openai/gpt-4o-mini, custom_llm_provider=openrouter. Add it here - https://github.com/BerriAI/litellm/blob/main/model_prices_and_context_window.json.. Using fallback context limit: 1000000
+Parser warnings: - Extra text detected before JSON object
+- Extra text detected after JSON object
+Trajectory dumped to /home/saketh/research/cvdp_benchmark/jobs/2026-03-11__19-16-07/cvdp_agentic_aes_encryption_decr__98Lx4zR/agent/trajectory.json
+Failed to retrieve model info for 'openrouter/openai/gpt-4o-mini': This model isn't mapped yet. model=openrouter/openai/gpt-4o-mini, custom_llm_provider=openrouter. Add it here - https://github.com/BerriAI/litellm/blob/main/model_prices_and_context_window.json.. Using fallback context limit: 1000000
+Parser warnings: - Extra text detected before JSON object
+- Extra text detected after JSON object
+Trajectory dumped to /home/saketh/research/cvdp_benchmark/jobs/2026-03-11__19-16-07/cvdp_agentic_aes_encryption_decr__98Lx4zR/agent/trajectory.json
+Failed to retrieve model info for 'openrouter/openai/gpt-4o-mini': This model isn't mapped yet. model=openrouter/openai/gpt-4o-mini, custom_llm_provider=openrouter. Add it here - https://github.com/BerriAI/litellm/blob/main/model_prices_and_context_window.json.. Using fallback context limit: 1000000
+Failed to retrieve model info for 'openrouter/openai/gpt-4o-mini': This model isn't mapped yet. model=openrouter/openai/gpt-4o-mini, custom_llm_provider=openrouter. Add it here - https://github.com/BerriAI/litellm/blob/main/model_prices_and_context_window.json.. Using fallback context limit: 1000000
+Parser warnings: - Extra text detected before JSON object
+- Extra text detected after JSON object
+Trajectory dumped to /home/saketh/research/cvdp_benchmark/jobs/2026-03-11__19-16-07/cvdp_agentic_aes_encryption_decr__98Lx4zR/agent/trajectory.json
+Failed to retrieve model info for 'openrouter/openai/gpt-4o-mini': This model isn't mapped yet. model=openrouter/openai/gpt-4o-mini, custom_llm_provider=openrouter. Add it here - https://github.com/BerriAI/litellm/blob/main/model_prices_and_context_window.json.. Using fallback context limit: 1000000
+Parser warnings: - Extra text detected before JSON object
+- Extra text detected after JSON object
+Trajectory dumped to /home/saketh/research/cvdp_benchmark/jobs/2026-03-11__19-16-07/cvdp_agentic_aes_encryption_decr__98Lx4zR/agent/trajectory.json
+Failed to retrieve model info for 'openrouter/openai/gpt-4o-mini': This model isn't mapped yet. model=openrouter/openai/gpt-4o-mini, custom_llm_provider=openrouter. Add it here - https://github.com/BerriAI/litellm/blob/main/model_prices_and_context_window.json.. Using fallback context limit: 1000000
+Sending keys: ["sed -i 's/key_exp_steps_ff <= {{(STEPS-2){1\\'b0}}, 1\\'b1}/key_exp_steps_ff <= {{(STEPS-1){1\\'b0}}, 2\\'b01}/g' ../rtl/aes128_key_expansion.sv\n"] min_timeout_sec: 0.1 max_timeout_sec: 180.0
+Sending keys: ["sed -i 's/(11-round_ff)/(11-round_ff[3:0])/g' ../rtl/aes128_decrypt.sv\n"] min_timeout_sec: 0.1 max_timeout_sec: 180.0
+Sending keys: ['verilator --cc tb_aes128_dec.sv --exe --build -o tb_aes128_dec -I../rtl --timing\n'] min_timeout_sec: 1.0 max_timeout_sec: 180.0
+Sending keys: ['./tb_aes128_dec\n'] min_timeout_sec: 10.0 max_timeout_sec: 180.0
+Parser warnings: - Extra text detected before JSON object
+- Extra text detected after JSON object
+Trajectory dumped to /home/saketh/research/cvdp_benchmark/jobs/2026-03-11__19-16-07/cvdp_agentic_aes_encryption_decr__98Lx4zR/agent/trajectory.json
+Failed to retrieve model info for 'openrouter/openai/gpt-4o-mini': This model isn't mapped yet. model=openrouter/openai/gpt-4o-mini, custom_llm_provider=openrouter. Add it here - https://github.com/BerriAI/litellm/blob/main/model_prices_and_context_window.json.. Using fallback context limit: 1000000
+Parser warnings: - Extra text detected before JSON object
+- Extra text detected after JSON object
+Trajectory dumped to /home/saketh/research/cvdp_benchmark/jobs/2026-03-11__19-16-07/cvdp_agentic_aes_encryption_decr__98Lx4zR/agent/trajectory.json
+Failed to retrieve model info for 'openrouter/openai/gpt-4o-mini': This model isn't mapped yet. model=openrouter/openai/gpt-4o-mini, custom_llm_provider=openrouter. Add it here - https://github.com/BerriAI/litellm/blob/main/model_prices_and_context_window.json.. Using fallback context limit: 1000000
+Trajectory dumped to /home/saketh/research/cvdp_benchmark/jobs/2026-03-11__19-16-07/cvdp_agentic_aes_encryption_decr__bXpWUVB/agent/trajectory.json
+Failed to retrieve model info for 'openrouter/openai/gpt-4o-mini': This model isn't mapped yet. model=openrouter/openai/gpt-4o-mini, custom_llm_provider=openrouter. Add it here - https://github.com/BerriAI/litellm/blob/main/model_prices_and_context_window.json.. Using fallback context limit: 1000000
+Parser warnings: - Extra text detected before JSON object
+- Extra text detected after JSON object
+Trajectory dumped to /home/saketh/research/cvdp_benchmark/jobs/2026-03-11__19-16-07/cvdp_agentic_aes_encryption_decr__98Lx4zR/agent/trajectory.json
+Failed to retrieve model info for 'openrouter/openai/gpt-4o-mini': This model isn't mapped yet. model=openrouter/openai/gpt-4o-mini, custom_llm_provider=openrouter. Add it here - https://github.com/BerriAI/litellm/blob/main/model_prices_and_context_window.json.. Using fallback context limit: 1000000
+Parser warnings: - Extra text detected before JSON object
+- Extra text detected after JSON object
+Trajectory dumped to /home/saketh/research/cvdp_benchmark/jobs/2026-03-11__19-16-07/cvdp_agentic_aes_encryption_decr__98Lx4zR/agent/trajectory.json
+Failed to retrieve model info for 'openrouter/openai/gpt-4o-mini': This model isn't mapped yet. model=openrouter/openai/gpt-4o-mini, custom_llm_provider=openrouter. Add it here - https://github.com/BerriAI/litellm/blob/main/model_prices_and_context_window.json.. Using fallback context limit: 1000000
+Sending keys: ["sed -i 's/key_exp_steps_ff <= {{(STEPS-2){1\\'b0}}, 1\\'b1}/key_exp_steps_ff <= {{(STEPS-1){1\\'b0}}, 2\\'b01}/g' ../rtl/aes128_key_expansion.sv\n"] min_timeout_sec: 0.1 max_timeout_sec: 180.0
+Sending keys: ["sed -i 's/(11-round_ff)/(11-round_ff[3:0])/g' ../rtl/aes128_decrypt.sv\n"] min_timeout_sec: 0.1 max_timeout_sec: 180.0
+Sending keys: ['verilator --cc tb_aes128_dec.sv --exe --build -o tb_aes128_dec -I../rtl --timing\n'] min_timeout_sec: 1.0 max_timeout_sec: 180.0
+Parser warnings: - Extra text detected before JSON object
+- Extra text detected after JSON object
+Trajectory dumped to /home/saketh/research/cvdp_benchmark/jobs/2026-03-11__19-16-07/cvdp_agentic_aes_encryption_decr__98Lx4zR/agent/trajectory.json
+Failed to retrieve model info for 'openrouter/openai/gpt-4o-mini': This model isn't mapped yet. model=openrouter/openai/gpt-4o-mini, custom_llm_provider=openrouter. Add it here - https://github.com/BerriAI/litellm/blob/main/model_prices_and_context_window.json.. Using fallback context limit: 1000000
+Sending keys: ['./tb_aes128_dec\n'] min_timeout_sec: 10.0 max_timeout_sec: 180.0
+Parser warnings: - Extra text detected before JSON object
+- Extra text detected after JSON object
+Trajectory dumped to /home/saketh/research/cvdp_benchmark/jobs/2026-03-11__19-16-07/cvdp_agentic_aes_encryption_decr__98Lx4zR/agent/trajectory.json
+Failed to retrieve model info for 'openrouter/openai/gpt-4o-mini': This model isn't mapped yet. model=openrouter/openai/gpt-4o-mini, custom_llm_provider=openrouter. Add it here - https://github.com/BerriAI/litellm/blob/main/model_prices_and_context_window.json.. Using fallback context limit: 1000000
+Parser warnings: - Extra text detected before JSON object
+- Extra text detected after JSON object
+Trajectory dumped to /home/saketh/research/cvdp_benchmark/jobs/2026-03-11__19-16-07/cvdp_agentic_aes_encryption_decr__98Lx4zR/agent/trajectory.json
+Failed to retrieve model info for 'openrouter/openai/gpt-4o-mini': This model isn't mapped yet. model=openrouter/openai/gpt-4o-mini, custom_llm_provider=openrouter. Add it here - https://github.com/BerriAI/litellm/blob/main/model_prices_and_context_window.json.. Using fallback context limit: 1000000
+Trajectory dumped to /home/saketh/research/cvdp_benchmark/jobs/2026-03-11__19-16-07/cvdp_agentic_aes_encryption_decr__bXpWUVB/agent/trajectory.json
+Failed to retrieve model info for 'openrouter/openai/gpt-4o-mini': This model isn't mapped yet. model=openrouter/openai/gpt-4o-mini, custom_llm_provider=openrouter. Add it here - https://github.com/BerriAI/litellm/blob/main/model_prices_and_context_window.json.. Using fallback context limit: 1000000
+Parser warnings: - Extra text detected before JSON object
+- Extra text detected after JSON object
+Trajectory dumped to /home/saketh/research/cvdp_benchmark/jobs/2026-03-11__19-16-07/cvdp_agentic_aes_encryption_decr__98Lx4zR/agent/trajectory.json
+Failed to retrieve model info for 'openrouter/openai/gpt-4o-mini': This model isn't mapped yet. model=openrouter/openai/gpt-4o-mini, custom_llm_provider=openrouter. Add it here - https://github.com/BerriAI/litellm/blob/main/model_prices_and_context_window.json.. Using fallback context limit: 1000000
+Parser warnings: - Extra text detected before JSON object
+- Extra text detected after JSON object
+Trajectory dumped to /home/saketh/research/cvdp_benchmark/jobs/2026-03-11__19-16-07/cvdp_agentic_aes_encryption_decr__98Lx4zR/agent/trajectory.json
+Failed to retrieve model info for 'openrouter/openai/gpt-4o-mini': This model isn't mapped yet. model=openrouter/openai/gpt-4o-mini, custom_llm_provider=openrouter. Add it here - https://github.com/BerriAI/litellm/blob/main/model_prices_and_context_window.json.. Using fallback context limit: 1000000
+Sending keys: ["sed -i 's/key_exp_steps_ff <= {{(STEPS-2){1\\\\b0}}, 1\\\\b1}/key_exp_steps_ff <= {{(STEPS-1){1\\\\b0}}, 2\\\\b01}/g' ../rtl/aes128_key_expansion.sv\n"] min_timeout_sec: 0.1 max_timeout_sec: 180.0
+Sending keys: ["sed -i 's/(11-round_ff)/(11-round_ff[3:0])/g' ../rtl/aes128_decrypt.sv\n"] min_timeout_sec: 0.1 max_timeout_sec: 180.0
+Sending keys: ['verilator --cc tb_aes128_dec.sv --exe --build -o tb_aes128_dec -I../rtl --timing\n'] min_timeout_sec: 1.0 max_timeout_sec: 180.0
+Sending keys: ['./tb_aes128_dec\n'] min_timeout_sec: 10.0 max_timeout_sec: 180.0
+Parser warnings: - Extra text detected before JSON object
+- Extra text detected after JSON object
+Trajectory dumped to /home/saketh/research/cvdp_benchmark/jobs/2026-03-11__19-16-07/cvdp_agentic_aes_encryption_decr__98Lx4zR/agent/trajectory.json
+Failed to retrieve model info for 'openrouter/openai/gpt-4o-mini': This model isn't mapped yet. model=openrouter/openai/gpt-4o-mini, custom_llm_provider=openrouter. Add it here - https://github.com/BerriAI/litellm/blob/main/model_prices_and_context_window.json.. Using fallback context limit: 1000000
+Parser warnings: - Extra text detected before JSON object
+- Extra text detected after JSON object
+Trajectory dumped to /home/saketh/research/cvdp_benchmark/jobs/2026-03-11__19-16-07/cvdp_agentic_aes_encryption_decr__98Lx4zR/agent/trajectory.json
+Failed to retrieve model info for 'openrouter/openai/gpt-4o-mini': This model isn't mapped yet. model=openrouter/openai/gpt-4o-mini, custom_llm_provider=openrouter. Add it here - https://github.com/BerriAI/litellm/blob/main/model_prices_and_context_window.json.. Using fallback context limit: 1000000
+Parser warnings: - Extra text detected before JSON object
+- Extra text detected after JSON object
+Trajectory dumped to /home/saketh/research/cvdp_benchmark/jobs/2026-03-11__19-16-07/cvdp_agentic_aes_encryption_decr__98Lx4zR/agent/trajectory.json
+Failed to retrieve model info for 'openrouter/openai/gpt-4o-mini': This model isn't mapped yet. model=openrouter/openai/gpt-4o-mini, custom_llm_provider=openrouter. Add it here - https://github.com/BerriAI/litellm/blob/main/model_prices_and_context_window.json.. Using fallback context limit: 1000000
+Trajectory dumped to /home/saketh/research/cvdp_benchmark/jobs/2026-03-11__19-16-07/cvdp_agentic_aes_encryption_decr__bXpWUVB/agent/trajectory.json
+Failed to retrieve model info for 'openrouter/openai/gpt-4o-mini': This model isn't mapped yet. model=openrouter/openai/gpt-4o-mini, custom_llm_provider=openrouter. Add it here - https://github.com/BerriAI/litellm/blob/main/model_prices_and_context_window.json.. Using fallback context limit: 1000000
+Parser warnings: - Extra text detected before JSON object
+- Extra text detected after JSON object
+Trajectory dumped to /home/saketh/research/cvdp_benchmark/jobs/2026-03-11__19-16-07/cvdp_agentic_aes_encryption_decr__98Lx4zR/agent/trajectory.json
+Failed to retrieve model info for 'openrouter/openai/gpt-4o-mini': This model isn't mapped yet. model=openrouter/openai/gpt-4o-mini, custom_llm_provider=openrouter. Add it here - https://github.com/BerriAI/litellm/blob/main/model_prices_and_context_window.json.. Using fallback context limit: 1000000
+Parser warnings: - Extra text detected before JSON object
+- Extra text detected after JSON object
+Trajectory dumped to /home/saketh/research/cvdp_benchmark/jobs/2026-03-11__19-16-07/cvdp_agentic_aes_encryption_decr__98Lx4zR/agent/trajectory.json
+Failed to retrieve model info for 'openrouter/openai/gpt-4o-mini': This model isn't mapped yet. model=openrouter/openai/gpt-4o-mini, custom_llm_provider=openrouter. Add it here - https://github.com/BerriAI/litellm/blob/main/model_prices_and_context_window.json.. Using fallback context limit: 1000000
+Sending keys: ["sed -i 's/key_exp_steps_ff <= {{(STEPS-2){1\\b0}}, 1\\b1}/key_exp_steps_ff <= {{(STEPS-1){1\\b0}}, 1\\b1}/g' ../rtl/aes128_key_expansion.sv\n"] min_timeout_sec: 0.1 max_timeout_sec: 180.0
+Sending keys: ["sed -i 's/(11-round_ff)/(11-round_ff[3:0])\\&0xF/g' ../rtl/aes128_decrypt.sv\n"] min_timeout_sec: 0.1 max_timeout_sec: 180.0
+Sending keys: ['verilator --cc tb_aes128_dec.sv --exe --build -o tb_aes128_dec -I../rtl --timing\n'] min_timeout_sec: 1.0 max_timeout_sec: 180.0
+Sending keys: ['./tb_aes128_dec\n'] min_timeout_sec: 10.0 max_timeout_sec: 180.0
+Parser warnings: - Extra text detected before JSON object
+- Extra text detected after JSON object
+Trajectory dumped to /home/saketh/research/cvdp_benchmark/jobs/2026-03-11__19-16-07/cvdp_agentic_aes_encryption_decr__98Lx4zR/agent/trajectory.json
+Failed to retrieve model info for 'openrouter/openai/gpt-4o-mini': This model isn't mapped yet. model=openrouter/openai/gpt-4o-mini, custom_llm_provider=openrouter. Add it here - https://github.com/BerriAI/litellm/blob/main/model_prices_and_context_window.json.. Using fallback context limit: 1000000
+Parser warnings: - Extra text detected before JSON object
+- Extra text detected after JSON object
+Trajectory dumped to /home/saketh/research/cvdp_benchmark/jobs/2026-03-11__19-16-07/cvdp_agentic_aes_encryption_decr__98Lx4zR/agent/trajectory.json
+Failed to retrieve model info for 'openrouter/openai/gpt-4o-mini': This model isn't mapped yet. model=openrouter/openai/gpt-4o-mini, custom_llm_provider=openrouter. Add it here - https://github.com/BerriAI/litellm/blob/main/model_prices_and_context_window.json.. Using fallback context limit: 1000000
+Parser warnings: - Extra text detected before JSON object
+- Extra text detected after JSON object
+Trajectory dumped to /home/saketh/research/cvdp_benchmark/jobs/2026-03-11__19-16-07/cvdp_agentic_aes_encryption_decr__98Lx4zR/agent/trajectory.json
+Failed to retrieve model info for 'openrouter/openai/gpt-4o-mini': This model isn't mapped yet. model=openrouter/openai/gpt-4o-mini, custom_llm_provider=openrouter. Add it here - https://github.com/BerriAI/litellm/blob/main/model_prices_and_context_window.json.. Using fallback context limit: 1000000
+Trajectory dumped to /home/saketh/research/cvdp_benchmark/jobs/2026-03-11__19-16-07/cvdp_agentic_aes_encryption_decr__bXpWUVB/agent/trajectory.json
+Failed to retrieve model info for 'openrouter/openai/gpt-4o-mini': This model isn't mapped yet. model=openrouter/openai/gpt-4o-mini, custom_llm_provider=openrouter. Add it here - https://github.com/BerriAI/litellm/blob/main/model_prices_and_context_window.json.. Using fallback context limit: 1000000
+Parser warnings: - Extra text detected before JSON object
+- Extra text detected after JSON object
+Trajectory dumped to /home/saketh/research/cvdp_benchmark/jobs/2026-03-11__19-16-07/cvdp_agentic_aes_encryption_decr__98Lx4zR/agent/trajectory.json
+Failed to retrieve model info for 'openrouter/openai/gpt-4o-mini': This model isn't mapped yet. model=openrouter/openai/gpt-4o-mini, custom_llm_provider=openrouter. Add it here - https://github.com/BerriAI/litellm/blob/main/model_prices_and_context_window.json.. Using fallback context limit: 1000000
+Parser warnings: - Extra text detected before JSON object
+- Extra text detected after JSON object
+Trajectory dumped to /home/saketh/research/cvdp_benchmark/jobs/2026-03-11__19-16-07/cvdp_agentic_aes_encryption_decr__98Lx4zR/agent/trajectory.json
+Failed to retrieve model info for 'openrouter/openai/gpt-4o-mini': This model isn't mapped yet. model=openrouter/openai/gpt-4o-mini, custom_llm_provider=openrouter. Add it here - https://github.com/BerriAI/litellm/blob/main/model_prices_and_context_window.json.. Using fallback context limit: 1000000
+Sending keys: ["sed -i 's/key_exp_steps_ff <= {{(STEPS-2){1\\b0}}, 1\\b1}/key_exp_steps_ff <= {{(STEPS-1){1\\b0}}, 1\\b1}/g' ../rtl/aes128_key_expansion.sv\n"] min_timeout_sec: 0.1 max_timeout_sec: 180.0
+Sending keys: ["sed -i 's/(11-round_ff)/(11-round_ff[3:0]) & 0xF/g' ../rtl/aes128_decrypt.sv\n"] min_timeout_sec: 0.1 max_timeout_sec: 180.0
+Sending keys: ['verilator --cc tb_aes128_dec.sv --exe --build -o tb_aes128_dec -I../rtl --timing\n'] min_timeout_sec: 1.0 max_timeout_sec: 180.0
+Sending keys: ['./tb_aes128_dec\n'] min_timeout_sec: 10.0 max_timeout_sec: 180.0
+Parser warnings: - Extra text detected before JSON object
+- Extra text detected after JSON object
+Trajectory dumped to /home/saketh/research/cvdp_benchmark/jobs/2026-03-11__19-16-07/cvdp_agentic_aes_encryption_decr__98Lx4zR/agent/trajectory.json
+Failed to retrieve model info for 'openrouter/openai/gpt-4o-mini': This model isn't mapped yet. model=openrouter/openai/gpt-4o-mini, custom_llm_provider=openrouter. Add it here - https://github.com/BerriAI/litellm/blob/main/model_prices_and_context_window.json.. Using fallback context limit: 1000000
+Parser warnings: - Extra text detected before JSON object
+- Extra text detected after JSON object
+Trajectory dumped to /home/saketh/research/cvdp_benchmark/jobs/2026-03-11__19-16-07/cvdp_agentic_aes_encryption_decr__98Lx4zR/agent/trajectory.json
+Failed to retrieve model info for 'openrouter/openai/gpt-4o-mini': This model isn't mapped yet. model=openrouter/openai/gpt-4o-mini, custom_llm_provider=openrouter. Add it here - https://github.com/BerriAI/litellm/blob/main/model_prices_and_context_window.json.. Using fallback context limit: 1000000
+Parser warnings: - Extra text detected before JSON object
+- Extra text detected after JSON object
+Trajectory dumped to /home/saketh/research/cvdp_benchmark/jobs/2026-03-11__19-16-07/cvdp_agentic_aes_encryption_decr__98Lx4zR/agent/trajectory.json
+Failed to retrieve model info for 'openrouter/openai/gpt-4o-mini': This model isn't mapped yet. model=openrouter/openai/gpt-4o-mini, custom_llm_provider=openrouter. Add it here - https://github.com/BerriAI/litellm/blob/main/model_prices_and_context_window.json.. Using fallback context limit: 1000000
+Trajectory dumped to /home/saketh/research/cvdp_benchmark/jobs/2026-03-11__19-16-07/cvdp_agentic_aes_encryption_decr__bXpWUVB/agent/trajectory.json
+Failed to retrieve model info for 'openrouter/openai/gpt-4o-mini': This model isn't mapped yet. model=openrouter/openai/gpt-4o-mini, custom_llm_provider=openrouter. Add it here - https://github.com/BerriAI/litellm/blob/main/model_prices_and_context_window.json.. Using fallback context limit: 1000000
+Parser warnings: - Extra text detected before JSON object
+- Extra text detected after JSON object
+Trajectory dumped to /home/saketh/research/cvdp_benchmark/jobs/2026-03-11__19-16-07/cvdp_agentic_aes_encryption_decr__98Lx4zR/agent/trajectory.json
+Failed to retrieve model info for 'openrouter/openai/gpt-4o-mini': This model isn't mapped yet. model=openrouter/openai/gpt-4o-mini, custom_llm_provider=openrouter. Add it here - https://github.com/BerriAI/litellm/blob/main/model_prices_and_context_window.json.. Using fallback context limit: 1000000
+Sending keys: ["sed -i 's/key_exp_steps_ff <= {{(STEPS-2){1\\b0}}, 1\\b1}/key_exp_steps_ff <= {{(STEPS-1){1\\b0}}, 1\\b1}/g' ../rtl/aes128_key_expansion.sv\n"] min_timeout_sec: 0.1 max_timeout_sec: 180.0
+Sending keys: ["sed -i 's/(11-round_ff)/(11-round_ff[3:0]) & 0xF/g' ../rtl/aes128_decrypt.sv\n"] min_timeout_sec: 0.1 max_timeout_sec: 180.0
+Sending keys: ['verilator --cc tb_aes128_dec.sv --exe --build -o tb_aes128_dec -I../rtl --timing\n'] min_timeout_sec: 1.0 max_timeout_sec: 180.0
+Sending keys: ['./tb_aes128_dec\n'] min_timeout_sec: 10.0 max_timeout_sec: 180.0
+Parser warnings: - Extra text detected before JSON object
+- Extra text detected after JSON object
+Trajectory dumped to /home/saketh/research/cvdp_benchmark/jobs/2026-03-11__19-16-07/cvdp_agentic_aes_encryption_decr__98Lx4zR/agent/trajectory.json
+Failed to retrieve model info for 'openrouter/openai/gpt-4o-mini': This model isn't mapped yet. model=openrouter/openai/gpt-4o-mini, custom_llm_provider=openrouter. Add it here - https://github.com/BerriAI/litellm/blob/main/model_prices_and_context_window.json.. Using fallback context limit: 1000000
+Parser warnings: - Extra text detected before JSON object
+- Extra text detected after JSON object
+Trajectory dumped to /home/saketh/research/cvdp_benchmark/jobs/2026-03-11__19-16-07/cvdp_agentic_aes_encryption_decr__98Lx4zR/agent/trajectory.json
+Failed to retrieve model info for 'openrouter/openai/gpt-4o-mini': This model isn't mapped yet. model=openrouter/openai/gpt-4o-mini, custom_llm_provider=openrouter. Add it here - https://github.com/BerriAI/litellm/blob/main/model_prices_and_context_window.json.. Using fallback context limit: 1000000
+Parser warnings: - Extra text detected before JSON object
+- Extra text detected after JSON object
+Trajectory dumped to /home/saketh/research/cvdp_benchmark/jobs/2026-03-11__19-16-07/cvdp_agentic_aes_encryption_decr__98Lx4zR/agent/trajectory.json
+Failed to retrieve model info for 'openrouter/openai/gpt-4o-mini': This model isn't mapped yet. model=openrouter/openai/gpt-4o-mini, custom_llm_provider=openrouter. Add it here - https://github.com/BerriAI/litellm/blob/main/model_prices_and_context_window.json.. Using fallback context limit: 1000000
+Trajectory dumped to /home/saketh/research/cvdp_benchmark/jobs/2026-03-11__19-16-07/cvdp_agentic_aes_encryption_decr__bXpWUVB/agent/trajectory.json
+Failed to retrieve model info for 'openrouter/openai/gpt-4o-mini': This model isn't mapped yet. model=openrouter/openai/gpt-4o-mini, custom_llm_provider=openrouter. Add it here - https://github.com/BerriAI/litellm/blob/main/model_prices_and_context_window.json.. Using fallback context limit: 1000000
+Parser warnings: - Extra text detected before JSON object
+- Extra text detected after JSON object
+Trajectory dumped to /home/saketh/research/cvdp_benchmark/jobs/2026-03-11__19-16-07/cvdp_agentic_aes_encryption_decr__98Lx4zR/agent/trajectory.json
+Failed to retrieve model info for 'openrouter/openai/gpt-4o-mini': This model isn't mapped yet. model=openrouter/openai/gpt-4o-mini, custom_llm_provider=openrouter. Add it here - https://github.com/BerriAI/litellm/blob/main/model_prices_and_context_window.json.. Using fallback context limit: 1000000
+Parser warnings: - Extra text detected before JSON object
+- Extra text detected after JSON object
+Trajectory dumped to /home/saketh/research/cvdp_benchmark/jobs/2026-03-11__19-16-07/cvdp_agentic_aes_encryption_decr__98Lx4zR/agent/trajectory.json
+Failed to retrieve model info for 'openrouter/openai/gpt-4o-mini': This model isn't mapped yet. model=openrouter/openai/gpt-4o-mini, custom_llm_provider=openrouter. Add it here - https://github.com/BerriAI/litellm/blob/main/model_prices_and_context_window.json.. Using fallback context limit: 1000000
+Sending keys: ["sed -i 's/key_exp_steps_ff <= {{(STEPS-2){1\\b0}}, 1\\b1}/key_exp_steps_ff <= {{(STEPS-1){1\\b0}}, 1\\b1}/g' ../rtl/aes128_key_expansion.sv\n"] min_timeout_sec: 0.1 max_timeout_sec: 180.0
+Sending keys: ["sed -i 's/(11-round_ff)/(11-round_ff[3:0]) & 0xF/g' ../rtl/aes128_decrypt.sv\n"] min_timeout_sec: 0.1 max_timeout_sec: 180.0
+Sending keys: ['verilator --cc tb_aes128_dec.sv --exe --build -o tb_aes128_dec -I../rtl --timing\n'] min_timeout_sec: 1.0 max_timeout_sec: 180.0
+Sending keys: ['./tb_aes128_dec\n'] min_timeout_sec: 10.0 max_timeout_sec: 180.0
+Parser warnings: - Extra text detected before JSON object
+- Extra text detected after JSON object
+Trajectory dumped to /home/saketh/research/cvdp_benchmark/jobs/2026-03-11__19-16-07/cvdp_agentic_aes_encryption_decr__98Lx4zR/agent/trajectory.json
+Failed to retrieve model info for 'openrouter/openai/gpt-4o-mini': This model isn't mapped yet. model=openrouter/openai/gpt-4o-mini, custom_llm_provider=openrouter. Add it here - https://github.com/BerriAI/litellm/blob/main/model_prices_and_context_window.json.. Using fallback context limit: 1000000
+Parser warnings: - Extra text detected before JSON object
+- Extra text detected after JSON object
+Trajectory dumped to /home/saketh/research/cvdp_benchmark/jobs/2026-03-11__19-16-07/cvdp_agentic_aes_encryption_decr__98Lx4zR/agent/trajectory.json
+Failed to retrieve model info for 'openrouter/openai/gpt-4o-mini': This model isn't mapped yet. model=openrouter/openai/gpt-4o-mini, custom_llm_provider=openrouter. Add it here - https://github.com/BerriAI/litellm/blob/main/model_prices_and_context_window.json.. Using fallback context limit: 1000000
+Trajectory dumped to /home/saketh/research/cvdp_benchmark/jobs/2026-03-11__19-16-07/cvdp_agentic_aes_encryption_decr__bXpWUVB/agent/trajectory.json
+Failed to retrieve model info for 'openrouter/openai/gpt-4o-mini': This model isn't mapped yet. model=openrouter/openai/gpt-4o-mini, custom_llm_provider=openrouter. Add it here - https://github.com/BerriAI/litellm/blob/main/model_prices_and_context_window.json.. Using fallback context limit: 1000000
+Parser warnings: - Extra text detected before JSON object
+- Extra text detected after JSON object
+Trajectory dumped to /home/saketh/research/cvdp_benchmark/jobs/2026-03-11__19-16-07/cvdp_agentic_aes_encryption_decr__98Lx4zR/agent/trajectory.json
+Failed to retrieve model info for 'openrouter/openai/gpt-4o-mini': This model isn't mapped yet. model=openrouter/openai/gpt-4o-mini, custom_llm_provider=openrouter. Add it here - https://github.com/BerriAI/litellm/blob/main/model_prices_and_context_window.json.. Using fallback context limit: 1000000
+Parser warnings: - Extra text detected before JSON object
+- Extra text detected after JSON object
+Trajectory dumped to /home/saketh/research/cvdp_benchmark/jobs/2026-03-11__19-16-07/cvdp_agentic_aes_encryption_decr__98Lx4zR/agent/trajectory.json
+Failed to retrieve model info for 'openrouter/openai/gpt-4o-mini': This model isn't mapped yet. model=openrouter/openai/gpt-4o-mini, custom_llm_provider=openrouter. Add it here - https://github.com/BerriAI/litellm/blob/main/model_prices_and_context_window.json.. Using fallback context limit: 1000000
+Sending keys: ["sed -i 's/key_exp_steps_ff <= {{(STEPS-2){1\\b0}}, 1\\b1}/key_exp_steps_ff <= {{(STEPS-1){1\\b0}}, 1\\b1}/g' ../rtl/aes128_key_expansion.sv\n"] min_timeout_sec: 0.1 max_timeout_sec: 180.0
+Sending keys: ["sed -i 's/(11-round_ff)/(11-round_ff[3:0]) & 0xF/g' ../rtl/aes128_decrypt.sv\n"] min_timeout_sec: 0.1 max_timeout_sec: 180.0
+Sending keys: ['verilator --cc tb_aes128_dec.sv --exe --build -o tb_aes128_dec -I../rtl --timing\n'] min_timeout_sec: 1.0 max_timeout_sec: 180.0
+Sending keys: ['./tb_aes128_dec\n'] min_timeout_sec: 10.0 max_timeout_sec: 180.0
+Parser warnings: - Extra text detected before JSON object
+- Extra text detected after JSON object
+Trajectory dumped to /home/saketh/research/cvdp_benchmark/jobs/2026-03-11__19-16-07/cvdp_agentic_aes_encryption_decr__98Lx4zR/agent/trajectory.json
+Failed to retrieve model info for 'openrouter/openai/gpt-4o-mini': This model isn't mapped yet. model=openrouter/openai/gpt-4o-mini, custom_llm_provider=openrouter. Add it here - https://github.com/BerriAI/litellm/blob/main/model_prices_and_context_window.json.. Using fallback context limit: 1000000
+Parser warnings: - Extra text detected before JSON object
+- Extra text detected after JSON object
+Trajectory dumped to /home/saketh/research/cvdp_benchmark/jobs/2026-03-11__19-16-07/cvdp_agentic_aes_encryption_decr__98Lx4zR/agent/trajectory.json
+Failed to retrieve model info for 'openrouter/openai/gpt-4o-mini': This model isn't mapped yet. model=openrouter/openai/gpt-4o-mini, custom_llm_provider=openrouter. Add it here - https://github.com/BerriAI/litellm/blob/main/model_prices_and_context_window.json.. Using fallback context limit: 1000000
+Trajectory dumped to /home/saketh/research/cvdp_benchmark/jobs/2026-03-11__19-16-07/cvdp_agentic_aes_encryption_decr__bXpWUVB/agent/trajectory.json
+Parser warnings: - Extra text detected before JSON object
+- Extra text detected after JSON object
+Failed to retrieve model info for 'openrouter/openai/gpt-4o-mini': This model isn't mapped yet. model=openrouter/openai/gpt-4o-mini, custom_llm_provider=openrouter. Add it here - https://github.com/BerriAI/litellm/blob/main/model_prices_and_context_window.json.. Using fallback context limit: 1000000
+Trajectory dumped to /home/saketh/research/cvdp_benchmark/jobs/2026-03-11__19-16-07/cvdp_agentic_aes_encryption_decr__98Lx4zR/agent/trajectory.json
+Failed to retrieve model info for 'openrouter/openai/gpt-4o-mini': This model isn't mapped yet. model=openrouter/openai/gpt-4o-mini, custom_llm_provider=openrouter. Add it here - https://github.com/BerriAI/litellm/blob/main/model_prices_and_context_window.json.. Using fallback context limit: 1000000
+Parser warnings: - Extra text detected before JSON object
+- Extra text detected after JSON object
+Trajectory dumped to /home/saketh/research/cvdp_benchmark/jobs/2026-03-11__19-16-07/cvdp_agentic_aes_encryption_decr__98Lx4zR/agent/trajectory.json
+Failed to retrieve model info for 'openrouter/openai/gpt-4o-mini': This model isn't mapped yet. model=openrouter/openai/gpt-4o-mini, custom_llm_provider=openrouter. Add it here - https://github.com/BerriAI/litellm/blob/main/model_prices_and_context_window.json.. Using fallback context limit: 1000000
+Failed to retrieve model info for 'openrouter/openai/gpt-4o-mini': This model isn't mapped yet. model=openrouter/openai/gpt-4o-mini, custom_llm_provider=openrouter. Add it here - https://github.com/BerriAI/litellm/blob/main/model_prices_and_context_window.json.. Using fallback context limit: 1000000
+Parser warnings: - Extra text detected before JSON object
+- Extra text detected after JSON object
+Trajectory dumped to /home/saketh/research/cvdp_benchmark/jobs/2026-03-11__19-16-07/cvdp_agentic_aes_encryption_decr__98Lx4zR/agent/trajectory.json
+Failed to retrieve model info for 'openrouter/openai/gpt-4o-mini': This model isn't mapped yet. model=openrouter/openai/gpt-4o-mini, custom_llm_provider=openrouter. Add it here - https://github.com/BerriAI/litellm/blob/main/model_prices_and_context_window.json.. Using fallback context limit: 1000000
+Parser warnings: - Extra text detected before JSON object
+- Extra text detected after JSON object
+Trajectory dumped to /home/saketh/research/cvdp_benchmark/jobs/2026-03-11__19-16-07/cvdp_agentic_aes_encryption_decr__98Lx4zR/agent/trajectory.json
+Failed to retrieve model info for 'openrouter/openai/gpt-4o-mini': This model isn't mapped yet. model=openrouter/openai/gpt-4o-mini, custom_llm_provider=openrouter. Add it here - https://github.com/BerriAI/litellm/blob/main/model_prices_and_context_window.json.. Using fallback context limit: 1000000
+Sending keys: ["sed -i 's/key_exp_steps_ff <= {{(STEPS-2){1\\b0}}, 1\\b1}/key_exp_steps_ff <= {{(STEPS-1){1\\b0}}, 2\\'b01}/g' ../rtl/aes128_key_expansion.sv\n"] min_timeout_sec: 0.1 max_timeout_sec: 180.0
+Sending keys: ["sed -i 's/(11-round_ff)/(11-round_ff[3:0]) & 0xF/g' ../rtl/aes128_decrypt.sv\n"] min_timeout_sec: 0.1 max_timeout_sec: 180.0
+Sending keys: ['verilator --cc tb_aes128_dec.sv --exe --build -o tb_aes128_dec -I../rtl --timing\n'] min_timeout_sec: 1.0 max_timeout_sec: 180.0
+Sending keys: ['./tb_aes128_dec\n'] min_timeout_sec: 10.0 max_timeout_sec: 180.0
+Parser warnings: - Extra text detected before JSON object
+- Extra text detected after JSON object
+Trajectory dumped to /home/saketh/research/cvdp_benchmark/jobs/2026-03-11__19-16-07/cvdp_agentic_aes_encryption_decr__98Lx4zR/agent/trajectory.json
+Failed to retrieve model info for 'openrouter/openai/gpt-4o-mini': This model isn't mapped yet. model=openrouter/openai/gpt-4o-mini, custom_llm_provider=openrouter. Add it here - https://github.com/BerriAI/litellm/blob/main/model_prices_and_context_window.json.. Using fallback context limit: 1000000
+Parser warnings: - Extra text detected before JSON object
+- Extra text detected after JSON object
+Trajectory dumped to /home/saketh/research/cvdp_benchmark/jobs/2026-03-11__19-16-07/cvdp_agentic_aes_encryption_decr__98Lx4zR/agent/trajectory.json
+Failed to retrieve model info for 'openrouter/openai/gpt-4o-mini': This model isn't mapped yet. model=openrouter/openai/gpt-4o-mini, custom_llm_provider=openrouter. Add it here - https://github.com/BerriAI/litellm/blob/main/model_prices_and_context_window.json.. Using fallback context limit: 1000000
+Parser warnings: - Extra text detected before JSON object
+- Extra text detected after JSON object
+Trajectory dumped to /home/saketh/research/cvdp_benchmark/jobs/2026-03-11__19-16-07/cvdp_agentic_aes_encryption_decr__98Lx4zR/agent/trajectory.json
+Failed to retrieve model info for 'openrouter/openai/gpt-4o-mini': This model isn't mapped yet. model=openrouter/openai/gpt-4o-mini, custom_llm_provider=openrouter. Add it here - https://github.com/BerriAI/litellm/blob/main/model_prices_and_context_window.json.. Using fallback context limit: 1000000
+Trajectory dumped to /home/saketh/research/cvdp_benchmark/jobs/2026-03-11__19-16-07/cvdp_agentic_aes_encryption_decr__bXpWUVB/agent/trajectory.json
+Failed to retrieve model info for 'openrouter/openai/gpt-4o-mini': This model isn't mapped yet. model=openrouter/openai/gpt-4o-mini, custom_llm_provider=openrouter. Add it here - https://github.com/BerriAI/litellm/blob/main/model_prices_and_context_window.json.. Using fallback context limit: 1000000
+Parser warnings: - Extra text detected before JSON object
+- Extra text detected after JSON object
+Trajectory dumped to /home/saketh/research/cvdp_benchmark/jobs/2026-03-11__19-16-07/cvdp_agentic_aes_encryption_decr__98Lx4zR/agent/trajectory.json
+Failed to retrieve model info for 'openrouter/openai/gpt-4o-mini': This model isn't mapped yet. model=openrouter/openai/gpt-4o-mini, custom_llm_provider=openrouter. Add it here - https://github.com/BerriAI/litellm/blob/main/model_prices_and_context_window.json.. Using fallback context limit: 1000000
+Sending keys: ["sed -i 's/key_exp_steps_ff <= {{(STEPS-2){1\\b0}}, 1\\b1}/key_exp_steps_ff <= {{(STEPS-1){1\\b0}}, 2\\'b01}/g' ../rtl/aes128_key_expansion.sv\n"] min_timeout_sec: 0.1 max_timeout_sec: 180.0
+Sending keys: ["sed -i 's/(11-round_ff)/(11-round_ff[3:0]) & 0xF/g' ../rtl/aes128_decrypt.sv\n"] min_timeout_sec: 0.1 max_timeout_sec: 180.0
+Sending keys: ['verilator --cc tb_aes128_dec.sv --exe --build -o tb_aes128_dec -I../rtl --timing\n'] min_timeout_sec: 1.0 max_timeout_sec: 180.0
+Parser warnings: - Extra text detected before JSON object
+- Extra text detected after JSON object
+Trajectory dumped to /home/saketh/research/cvdp_benchmark/jobs/2026-03-11__19-16-07/cvdp_agentic_aes_encryption_decr__98Lx4zR/agent/trajectory.json
+Failed to retrieve model info for 'openrouter/openai/gpt-4o-mini': This model isn't mapped yet. model=openrouter/openai/gpt-4o-mini, custom_llm_provider=openrouter. Add it here - https://github.com/BerriAI/litellm/blob/main/model_prices_and_context_window.json.. Using fallback context limit: 1000000
+Sending keys: ['./tb_aes128_dec\n'] min_timeout_sec: 10.0 max_timeout_sec: 180.0
+Parser warnings: - Extra text detected before JSON object
+- Extra text detected after JSON object
+Trajectory dumped to /home/saketh/research/cvdp_benchmark/jobs/2026-03-11__19-16-07/cvdp_agentic_aes_encryption_decr__98Lx4zR/agent/trajectory.json
+Failed to retrieve model info for 'openrouter/openai/gpt-4o-mini': This model isn't mapped yet. model=openrouter/openai/gpt-4o-mini, custom_llm_provider=openrouter. Add it here - https://github.com/BerriAI/litellm/blob/main/model_prices_and_context_window.json.. Using fallback context limit: 1000000
+Trajectory dumped to /home/saketh/research/cvdp_benchmark/jobs/2026-03-11__19-16-07/cvdp_agentic_aes_encryption_decr__bXpWUVB/agent/trajectory.json
+Failed to retrieve model info for 'openrouter/openai/gpt-4o-mini': This model isn't mapped yet. model=openrouter/openai/gpt-4o-mini, custom_llm_provider=openrouter. Add it here - https://github.com/BerriAI/litellm/blob/main/model_prices_and_context_window.json.. Using fallback context limit: 1000000
+Parser warnings: - Extra text detected before JSON object
+- Extra text detected after JSON object
+Trajectory dumped to /home/saketh/research/cvdp_benchmark/jobs/2026-03-11__19-16-07/cvdp_agentic_aes_encryption_decr__98Lx4zR/agent/trajectory.json
+Failed to retrieve model info for 'openrouter/openai/gpt-4o-mini': This model isn't mapped yet. model=openrouter/openai/gpt-4o-mini, custom_llm_provider=openrouter. Add it here - https://github.com/BerriAI/litellm/blob/main/model_prices_and_context_window.json.. Using fallback context limit: 1000000
+Parser warnings: - Extra text detected before JSON object
+- Extra text detected after JSON object
+Trajectory dumped to /home/saketh/research/cvdp_benchmark/jobs/2026-03-11__19-16-07/cvdp_agentic_aes_encryption_decr__98Lx4zR/agent/trajectory.json
+Failed to retrieve model info for 'openrouter/openai/gpt-4o-mini': This model isn't mapped yet. model=openrouter/openai/gpt-4o-mini, custom_llm_provider=openrouter. Add it here - https://github.com/BerriAI/litellm/blob/main/model_prices_and_context_window.json.. Using fallback context limit: 1000000
+Sending keys: ["sed -i 's/key_exp_steps_ff <= {{(STEPS-2){1\\b0}}, 1\\b1}/key_exp_steps_ff <= {{(STEPS-1){1\\b0}}, 2\\'b01}/g' ../rtl/aes128_key_expansion.sv\n"] min_timeout_sec: 0.1 max_timeout_sec: 180.0
+Sending keys: ["sed -i 's/(11-round_ff)/(11-round_ff[3:0]) & 0xF/g' ../rtl/aes128_decrypt.sv\n"] min_timeout_sec: 0.1 max_timeout_sec: 180.0
+Sending keys: ['verilator --cc tb_aes128_dec.sv --exe --build -o tb_aes128_dec -I../rtl --timing\n'] min_timeout_sec: 1.0 max_timeout_sec: 180.0
+Sending keys: ['./tb_aes128_dec\n'] min_timeout_sec: 10.0 max_timeout_sec: 180.0
+Parser warnings: - Extra text detected before JSON object
+- Extra text detected after JSON object
+Trajectory dumped to /home/saketh/research/cvdp_benchmark/jobs/2026-03-11__19-16-07/cvdp_agentic_aes_encryption_decr__98Lx4zR/agent/trajectory.json
+Failed to retrieve model info for 'openrouter/openai/gpt-4o-mini': This model isn't mapped yet. model=openrouter/openai/gpt-4o-mini, custom_llm_provider=openrouter. Add it here - https://github.com/BerriAI/litellm/blob/main/model_prices_and_context_window.json.. Using fallback context limit: 1000000
+Parser warnings: - Extra text detected before JSON object
+- Extra text detected after JSON object
+Trajectory dumped to /home/saketh/research/cvdp_benchmark/jobs/2026-03-11__19-16-07/cvdp_agentic_aes_encryption_decr__98Lx4zR/agent/trajectory.json
+Failed to retrieve model info for 'openrouter/openai/gpt-4o-mini': This model isn't mapped yet. model=openrouter/openai/gpt-4o-mini, custom_llm_provider=openrouter. Add it here - https://github.com/BerriAI/litellm/blob/main/model_prices_and_context_window.json.. Using fallback context limit: 1000000
+Parser warnings: - Extra text detected before JSON object
+- Extra text detected after JSON object
+Trajectory dumped to /home/saketh/research/cvdp_benchmark/jobs/2026-03-11__19-16-07/cvdp_agentic_aes_encryption_decr__98Lx4zR/agent/trajectory.json
+Failed to retrieve model info for 'openrouter/openai/gpt-4o-mini': This model isn't mapped yet. model=openrouter/openai/gpt-4o-mini, custom_llm_provider=openrouter. Add it here - https://github.com/BerriAI/litellm/blob/main/model_prices_and_context_window.json.. Using fallback context limit: 1000000
+Trajectory dumped to /home/saketh/research/cvdp_benchmark/jobs/2026-03-11__19-16-07/cvdp_agentic_aes_encryption_decr__bXpWUVB/agent/trajectory.json
+Failed to retrieve model info for 'openrouter/openai/gpt-4o-mini': This model isn't mapped yet. model=openrouter/openai/gpt-4o-mini, custom_llm_provider=openrouter. Add it here - https://github.com/BerriAI/litellm/blob/main/model_prices_and_context_window.json.. Using fallback context limit: 1000000
+Parser warnings: - Extra text detected before JSON object
+- Extra text detected after JSON object
+Trajectory dumped to /home/saketh/research/cvdp_benchmark/jobs/2026-03-11__19-16-07/cvdp_agentic_aes_encryption_decr__98Lx4zR/agent/trajectory.json
+Failed to retrieve model info for 'openrouter/openai/gpt-4o-mini': This model isn't mapped yet. model=openrouter/openai/gpt-4o-mini, custom_llm_provider=openrouter. Add it here - https://github.com/BerriAI/litellm/blob/main/model_prices_and_context_window.json.. Using fallback context limit: 1000000
+Parser warnings: - Extra text detected before JSON object
+- Extra text detected after JSON object
+Trajectory dumped to /home/saketh/research/cvdp_benchmark/jobs/2026-03-11__19-16-07/cvdp_agentic_aes_encryption_decr__98Lx4zR/agent/trajectory.json
+Failed to retrieve model info for 'openrouter/openai/gpt-4o-mini': This model isn't mapped yet. model=openrouter/openai/gpt-4o-mini, custom_llm_provider=openrouter. Add it here - https://github.com/BerriAI/litellm/blob/main/model_prices_and_context_window.json.. Using fallback context limit: 1000000
+Parser warnings: - Extra text detected before JSON object
+- Extra text detected after JSON object
+Trajectory dumped to /home/saketh/research/cvdp_benchmark/jobs/2026-03-11__19-16-07/cvdp_agentic_aes_encryption_decr__98Lx4zR/agent/trajectory.json
+Failed to retrieve model info for 'openrouter/openai/gpt-4o-mini': This model isn't mapped yet. model=openrouter/openai/gpt-4o-mini, custom_llm_provider=openrouter. Add it here - https://github.com/BerriAI/litellm/blob/main/model_prices_and_context_window.json.. Using fallback context limit: 1000000
+Parser warnings: - Extra text detected before JSON object
+- Extra text detected after JSON object
+Trajectory dumped to /home/saketh/research/cvdp_benchmark/jobs/2026-03-11__19-16-07/cvdp_agentic_aes_encryption_decr__98Lx4zR/agent/trajectory.json
+Failed to retrieve model info for 'openrouter/openai/gpt-4o-mini': This model isn't mapped yet. model=openrouter/openai/gpt-4o-mini, custom_llm_provider=openrouter. Add it here - https://github.com/BerriAI/litellm/blob/main/model_prices_and_context_window.json.. Using fallback context limit: 1000000
+Parser warnings: - Extra text detected before JSON object
+- Extra text detected after JSON object
+Trajectory dumped to /home/saketh/research/cvdp_benchmark/jobs/2026-03-11__19-16-07/cvdp_agentic_aes_encryption_decr__98Lx4zR/agent/trajectory.json
+Failed to retrieve model info for 'openrouter/openai/gpt-4o-mini': This model isn't mapped yet. model=openrouter/openai/gpt-4o-mini, custom_llm_provider=openrouter. Add it here - https://github.com/BerriAI/litellm/blob/main/model_prices_and_context_window.json.. Using fallback context limit: 1000000
+Sending keys: ["sed -i 's/key_exp_steps_ff <= {{(STEPS-2){1\\b0}}, 1\\b1}/key_exp_steps_ff <= {{(STEPS-1){1\\b0}}, 2\\'b01}/g' ../rtl/aes128_key_expansion.sv\n"] min_timeout_sec: 0.1 max_timeout_sec: 180.0
+Sending keys: ["sed -i 's/(11-round_ff)/(11-round_ff[3:0]) & 0xF/g' ../rtl/aes128_decrypt.sv\n"] min_timeout_sec: 0.1 max_timeout_sec: 180.0
+Sending keys: ['verilator --cc tb_aes128_dec.sv --exe --build -o tb_aes128_dec -I../rtl --timing\n'] min_timeout_sec: 1.0 max_timeout_sec: 180.0
+Parser warnings: - Extra text detected before JSON object
+- Extra text detected after JSON object
+Trajectory dumped to /home/saketh/research/cvdp_benchmark/jobs/2026-03-11__19-16-07/cvdp_agentic_aes_encryption_decr__98Lx4zR/agent/trajectory.json
+Failed to retrieve model info for 'openrouter/openai/gpt-4o-mini': This model isn't mapped yet. model=openrouter/openai/gpt-4o-mini, custom_llm_provider=openrouter. Add it here - https://github.com/BerriAI/litellm/blob/main/model_prices_and_context_window.json.. Using fallback context limit: 1000000
+Sending keys: ['./tb_aes128_dec\n'] min_timeout_sec: 10.0 max_timeout_sec: 180.0
+Parser warnings: - Extra text detected before JSON object
+- Extra text detected after JSON object
+Trajectory dumped to /home/saketh/research/cvdp_benchmark/jobs/2026-03-11__19-16-07/cvdp_agentic_aes_encryption_decr__98Lx4zR/agent/trajectory.json
+Failed to retrieve model info for 'openrouter/openai/gpt-4o-mini': This model isn't mapped yet. model=openrouter/openai/gpt-4o-mini, custom_llm_provider=openrouter. Add it here - https://github.com/BerriAI/litellm/blob/main/model_prices_and_context_window.json.. Using fallback context limit: 1000000
+Parser warnings: - Extra text detected before JSON object
+- Extra text detected after JSON object
+Trajectory dumped to /home/saketh/research/cvdp_benchmark/jobs/2026-03-11__19-16-07/cvdp_agentic_aes_encryption_decr__98Lx4zR/agent/trajectory.json
+Failed to retrieve model info for 'openrouter/openai/gpt-4o-mini': This model isn't mapped yet. model=openrouter/openai/gpt-4o-mini, custom_llm_provider=openrouter. Add it here - https://github.com/BerriAI/litellm/blob/main/model_prices_and_context_window.json.. Using fallback context limit: 1000000
+Trajectory dumped to /home/saketh/research/cvdp_benchmark/jobs/2026-03-11__19-16-07/cvdp_agentic_aes_encryption_decr__bXpWUVB/agent/trajectory.json
+Failed to retrieve model info for 'openrouter/openai/gpt-4o-mini': This model isn't mapped yet. model=openrouter/openai/gpt-4o-mini, custom_llm_provider=openrouter. Add it here - https://github.com/BerriAI/litellm/blob/main/model_prices_and_context_window.json.. Using fallback context limit: 1000000
+Parser warnings: - Extra text detected before JSON object
+- Extra text detected after JSON object
+Trajectory dumped to /home/saketh/research/cvdp_benchmark/jobs/2026-03-11__19-16-07/cvdp_agentic_aes_encryption_decr__98Lx4zR/agent/trajectory.json
+Failed to retrieve model info for 'openrouter/openai/gpt-4o-mini': This model isn't mapped yet. model=openrouter/openai/gpt-4o-mini, custom_llm_provider=openrouter. Add it here - https://github.com/BerriAI/litellm/blob/main/model_prices_and_context_window.json.. Using fallback context limit: 1000000
+Sending keys: ["sed -i 's/key_exp_steps_ff <= {{(STEPS-2){1\\b0}}, 1\\b1}/key_exp_steps_ff <= {{(STEPS-1){1\\b0}}, 2\\'b01}/g' ../rtl/aes128_key_expansion.sv\n"] min_timeout_sec: 0.1 max_timeout_sec: 180.0
+Sending keys: ["sed -i 's/(11-round_ff)/(11-round_ff[3:0]) & 0xF/g' ../rtl/aes128_decrypt.sv\n"] min_timeout_sec: 0.1 max_timeout_sec: 180.0
+Sending keys: ['verilator --cc tb_aes128_dec.sv --exe --build -o tb_aes128_dec -I../rtl --timing\n'] min_timeout_sec: 1.0 max_timeout_sec: 180.0
+Sending keys: ['./tb_aes128_dec\n'] min_timeout_sec: 10.0 max_timeout_sec: 180.0
+Parser warnings: - Extra text detected before JSON object
+- Extra text detected after JSON object
+Trajectory dumped to /home/saketh/research/cvdp_benchmark/jobs/2026-03-11__19-16-07/cvdp_agentic_aes_encryption_decr__98Lx4zR/agent/trajectory.json
+Failed to retrieve model info for 'openrouter/openai/gpt-4o-mini': This model isn't mapped yet. model=openrouter/openai/gpt-4o-mini, custom_llm_provider=openrouter. Add it here - https://github.com/BerriAI/litellm/blob/main/model_prices_and_context_window.json.. Using fallback context limit: 1000000
+Parser warnings: - Extra text detected before JSON object
+- Extra text detected after JSON object
+Trajectory dumped to /home/saketh/research/cvdp_benchmark/jobs/2026-03-11__19-16-07/cvdp_agentic_aes_encryption_decr__98Lx4zR/agent/trajectory.json
+Failed to retrieve model info for 'openrouter/openai/gpt-4o-mini': This model isn't mapped yet. model=openrouter/openai/gpt-4o-mini, custom_llm_provider=openrouter. Add it here - https://github.com/BerriAI/litellm/blob/main/model_prices_and_context_window.json.. Using fallback context limit: 1000000
+Parser warnings: - Extra text detected before JSON object
+- Extra text detected after JSON object
+Trajectory dumped to /home/saketh/research/cvdp_benchmark/jobs/2026-03-11__19-16-07/cvdp_agentic_aes_encryption_decr__98Lx4zR/agent/trajectory.json
+Failed to retrieve model info for 'openrouter/openai/gpt-4o-mini': This model isn't mapped yet. model=openrouter/openai/gpt-4o-mini, custom_llm_provider=openrouter. Add it here - https://github.com/BerriAI/litellm/blob/main/model_prices_and_context_window.json.. Using fallback context limit: 1000000
+Trajectory dumped to /home/saketh/research/cvdp_benchmark/jobs/2026-03-11__19-16-07/cvdp_agentic_aes_encryption_decr__bXpWUVB/agent/trajectory.json
+Failed to retrieve model info for 'openrouter/openai/gpt-4o-mini': This model isn't mapped yet. model=openrouter/openai/gpt-4o-mini, custom_llm_provider=openrouter. Add it here - https://github.com/BerriAI/litellm/blob/main/model_prices_and_context_window.json.. Using fallback context limit: 1000000
+Parser warnings: - Extra text detected before JSON object
+- Extra text detected after JSON object
+Trajectory dumped to /home/saketh/research/cvdp_benchmark/jobs/2026-03-11__19-16-07/cvdp_agentic_aes_encryption_decr__98Lx4zR/agent/trajectory.json
+Failed to retrieve model info for 'openrouter/openai/gpt-4o-mini': This model isn't mapped yet. model=openrouter/openai/gpt-4o-mini, custom_llm_provider=openrouter. Add it here - https://github.com/BerriAI/litellm/blob/main/model_prices_and_context_window.json.. Using fallback context limit: 1000000
+Parser warnings: - Extra text detected before JSON object
+- Extra text detected after JSON object
+Trajectory dumped to /home/saketh/research/cvdp_benchmark/jobs/2026-03-11__19-16-07/cvdp_agentic_aes_encryption_decr__98Lx4zR/agent/trajectory.json
+Failed to retrieve model info for 'openrouter/openai/gpt-4o-mini': This model isn't mapped yet. model=openrouter/openai/gpt-4o-mini, custom_llm_provider=openrouter. Add it here - https://github.com/BerriAI/litellm/blob/main/model_prices_and_context_window.json.. Using fallback context limit: 1000000
+Sending keys: ['echo "Replacing key_exp_steps_ff assignment to ensure correct width" > ../rtl/aes128_key_expansion.sv\n'] min_timeout_sec: 0.1 max_timeout_sec: 180.0
+Sending keys: ['echo "key_exp_steps_ff <= {{(STEPS-1){1\'b0}}, 1\'b1};" >> ../rtl/aes128_key_expansion.sv\n'] min_timeout_sec: 0.1 max_timeout_sec: 180.0
+Sending keys: ['echo "Replacing round_ff calculation to ensure correct bit width" > ../rtl/aes128_decrypt.sv\n'] min_timeout_sec: 0.1 max_timeout_sec: 180.0
+Sending keys: ['echo "AddRoundKey[i][j] = current_data_ff[i][j] ^ expanded_key[NBW_EX_KEY-(11-round_ff)*NBW_KEY-(4*i+j)*NBW_BYTE-1-:NBW_BYTE];" >> ../rtl/aes128_decrypt.sv\n'] min_timeout_sec: 0.1 max_timeout_sec: 180.0
+Sending keys: ['verilator --cc tb_aes128_dec.sv --exe --build -o tb_aes128_dec -I../rtl --timing\n'] min_timeout_sec: 1.0 max_timeout_sec: 180.0
+Sending keys: ['./tb_aes128_dec\n'] min_timeout_sec: 10.0 max_timeout_sec: 180.0
+Parser warnings: - Extra text detected before JSON object
+- Extra text detected after JSON object
+Trajectory dumped to /home/saketh/research/cvdp_benchmark/jobs/2026-03-11__19-16-07/cvdp_agentic_aes_encryption_decr__98Lx4zR/agent/trajectory.json
+Failed to retrieve model info for 'openrouter/openai/gpt-4o-mini': This model isn't mapped yet. model=openrouter/openai/gpt-4o-mini, custom_llm_provider=openrouter. Add it here - https://github.com/BerriAI/litellm/blob/main/model_prices_and_context_window.json.. Using fallback context limit: 1000000
+Parser warnings: - Extra text detected before JSON object
+- Extra text detected after JSON object
+Trajectory dumped to /home/saketh/research/cvdp_benchmark/jobs/2026-03-11__19-16-07/cvdp_agentic_aes_encryption_decr__98Lx4zR/agent/trajectory.json
+Failed to retrieve model info for 'openrouter/openai/gpt-4o-mini': This model isn't mapped yet. model=openrouter/openai/gpt-4o-mini, custom_llm_provider=openrouter. Add it here - https://github.com/BerriAI/litellm/blob/main/model_prices_and_context_window.json.. Using fallback context limit: 1000000
+Trajectory dumped to /home/saketh/research/cvdp_benchmark/jobs/2026-03-11__19-16-07/cvdp_agentic_aes_encryption_decr__bXpWUVB/agent/trajectory.json
+Parser warnings: - Extra text detected before JSON object
+- Extra text detected after JSON object
+Failed to retrieve model info for 'openrouter/openai/gpt-4o-mini': This model isn't mapped yet. model=openrouter/openai/gpt-4o-mini, custom_llm_provider=openrouter. Add it here - https://github.com/BerriAI/litellm/blob/main/model_prices_and_context_window.json.. Using fallback context limit: 1000000
+Trajectory dumped to /home/saketh/research/cvdp_benchmark/jobs/2026-03-11__19-16-07/cvdp_agentic_aes_encryption_decr__98Lx4zR/agent/trajectory.json
+Failed to retrieve model info for 'openrouter/openai/gpt-4o-mini': This model isn't mapped yet. model=openrouter/openai/gpt-4o-mini, custom_llm_provider=openrouter. Add it here - https://github.com/BerriAI/litellm/blob/main/model_prices_and_context_window.json.. Using fallback context limit: 1000000
+Parser warnings: - Extra text detected before JSON object
+- Extra text detected after JSON object
+Trajectory dumped to /home/saketh/research/cvdp_benchmark/jobs/2026-03-11__19-16-07/cvdp_agentic_aes_encryption_decr__98Lx4zR/agent/trajectory.json
+Failed to retrieve model info for 'openrouter/openai/gpt-4o-mini': This model isn't mapped yet. model=openrouter/openai/gpt-4o-mini, custom_llm_provider=openrouter. Add it here - https://github.com/BerriAI/litellm/blob/main/model_prices_and_context_window.json.. Using fallback context limit: 1000000
+Parser warnings: - Extra text detected before JSON object
+- Extra text detected after JSON object
+Trajectory dumped to /home/saketh/research/cvdp_benchmark/jobs/2026-03-11__19-16-07/cvdp_agentic_aes_encryption_decr__98Lx4zR/agent/trajectory.json
+Failed to retrieve model info for 'openrouter/openai/gpt-4o-mini': This model isn't mapped yet. model=openrouter/openai/gpt-4o-mini, custom_llm_provider=openrouter. Add it here - https://github.com/BerriAI/litellm/blob/main/model_prices_and_context_window.json.. Using fallback context limit: 1000000
+Sending keys: ['echo "// Replacing key_exp_steps_ff assignment to ensure correct width" > ../rtl/aes128_key_expansion.sv\n'] min_timeout_sec: 0.1 max_timeout_sec: 180.0
+Sending keys: ['echo "key_exp_steps_ff <= {{(STEPS-1){1\'b0}}, 1\'b1};" >> ../rtl/aes128_key_expansion.sv\n'] min_timeout_sec: 0.1 max_timeout_sec: 180.0
+Sending keys: ['echo "// Replacing round_ff calculation to ensure correct bit width" > ../rtl/aes128_decrypt.sv\n'] min_timeout_sec: 0.1 max_timeout_sec: 180.0
+Sending keys: ['echo "AddRoundKey[i][j] = current_data_ff[i][j] ^ expanded_key[NBW_EX_KEY-(11-round_ff)*NBW_KEY-(4*i+j)*NBW_BYTE-1-:NBW_BYTE];" >> ../rtl/aes128_decrypt.sv\n'] min_timeout_sec: 0.1 max_timeout_sec: 180.0
+Sending keys: ['verilator --cc tb_aes128_dec.sv --exe --build -o tb_aes128_dec -I../rtl --timing\n'] min_timeout_sec: 1.0 max_timeout_sec: 180.0
+Sending keys: ['./tb_aes128_dec\n'] min_timeout_sec: 10.0 max_timeout_sec: 180.0
+Parser warnings: - Extra text detected before JSON object
+- Extra text detected after JSON object
+Trajectory dumped to /home/saketh/research/cvdp_benchmark/jobs/2026-03-11__19-16-07/cvdp_agentic_aes_encryption_decr__98Lx4zR/agent/trajectory.json
+Failed to retrieve model info for 'openrouter/openai/gpt-4o-mini': This model isn't mapped yet. model=openrouter/openai/gpt-4o-mini, custom_llm_provider=openrouter. Add it here - https://github.com/BerriAI/litellm/blob/main/model_prices_and_context_window.json.. Using fallback context limit: 1000000
+Parser warnings: - Extra text detected before JSON object
+- Extra text detected after JSON object
+Trajectory dumped to /home/saketh/research/cvdp_benchmark/jobs/2026-03-11__19-16-07/cvdp_agentic_aes_encryption_decr__98Lx4zR/agent/trajectory.json
+Failed to retrieve model info for 'openrouter/openai/gpt-4o-mini': This model isn't mapped yet. model=openrouter/openai/gpt-4o-mini, custom_llm_provider=openrouter. Add it here - https://github.com/BerriAI/litellm/blob/main/model_prices_and_context_window.json.. Using fallback context limit: 1000000
+Trajectory dumped to /home/saketh/research/cvdp_benchmark/jobs/2026-03-11__19-16-07/cvdp_agentic_aes_encryption_decr__bXpWUVB/agent/trajectory.json
+Failed to retrieve model info for 'openrouter/openai/gpt-4o-mini': This model isn't mapped yet. model=openrouter/openai/gpt-4o-mini, custom_llm_provider=openrouter. Add it here - https://github.com/BerriAI/litellm/blob/main/model_prices_and_context_window.json.. Using fallback context limit: 1000000
+Parser warnings: - Extra text detected before JSON object
+- Extra text detected after JSON object
+Trajectory dumped to /home/saketh/research/cvdp_benchmark/jobs/2026-03-11__19-16-07/cvdp_agentic_aes_encryption_decr__98Lx4zR/agent/trajectory.json
+Failed to retrieve model info for 'openrouter/openai/gpt-4o-mini': This model isn't mapped yet. model=openrouter/openai/gpt-4o-mini, custom_llm_provider=openrouter. Add it here - https://github.com/BerriAI/litellm/blob/main/model_prices_and_context_window.json.. Using fallback context limit: 1000000
+Sending keys: ['nano ../rtl/aes128_decrypt.sv\n'] min_timeout_sec: 1.0 max_timeout_sec: 180.0
+Trajectory dumped to /home/saketh/research/cvdp_benchmark/jobs/2026-03-11__19-16-07/cvdp_agentic_aes_encryption_decr__bXpWUVB/agent/trajectory.json
+Failed to retrieve model info for 'openrouter/openai/gpt-4o-mini': This model isn't mapped yet. model=openrouter/openai/gpt-4o-mini, custom_llm_provider=openrouter. Add it here - https://github.com/BerriAI/litellm/blob/main/model_prices_and_context_window.json.. Using fallback context limit: 1000000
+Parser warnings: - Extra text detected before JSON object
+- Extra text detected after JSON object
+Trajectory dumped to /home/saketh/research/cvdp_benchmark/jobs/2026-03-11__19-16-07/cvdp_agentic_aes_encryption_decr__98Lx4zR/agent/trajectory.json
+Failed to retrieve model info for 'openrouter/openai/gpt-4o-mini': This model isn't mapped yet. model=openrouter/openai/gpt-4o-mini, custom_llm_provider=openrouter. Add it here - https://github.com/BerriAI/litellm/blob/main/model_prices_and_context_window.json.. Using fallback context limit: 1000000
+Parser warnings: - Extra text detected before JSON object
+- Extra text detected after JSON object
+Trajectory dumped to /home/saketh/research/cvdp_benchmark/jobs/2026-03-11__19-16-07/cvdp_agentic_aes_encryption_decr__98Lx4zR/agent/trajectory.json
+Failed to retrieve model info for 'openrouter/openai/gpt-4o-mini': This model isn't mapped yet. model=openrouter/openai/gpt-4o-mini, custom_llm_provider=openrouter. Add it here - https://github.com/BerriAI/litellm/blob/main/model_prices_and_context_window.json.. Using fallback context limit: 1000000
+Parser warnings: - Extra text detected before JSON object
+- Extra text detected after JSON object
+Trajectory dumped to /home/saketh/research/cvdp_benchmark/jobs/2026-03-11__19-16-07/cvdp_agentic_aes_encryption_decr__98Lx4zR/agent/trajectory.json
+Failed to retrieve model info for 'openrouter/openai/gpt-4o-mini': This model isn't mapped yet. model=openrouter/openai/gpt-4o-mini, custom_llm_provider=openrouter. Add it here - https://github.com/BerriAI/litellm/blob/main/model_prices_and_context_window.json.. Using fallback context limit: 1000000
+Parser warnings: - Extra text detected before JSON object
+- Extra text detected after JSON object
+Trajectory dumped to /home/saketh/research/cvdp_benchmark/jobs/2026-03-11__19-16-07/cvdp_agentic_aes_encryption_decr__98Lx4zR/agent/trajectory.json
+Failed to retrieve model info for 'openrouter/openai/gpt-4o-mini': This model isn't mapped yet. model=openrouter/openai/gpt-4o-mini, custom_llm_provider=openrouter. Add it here - https://github.com/BerriAI/litellm/blob/main/model_prices_and_context_window.json.. Using fallback context limit: 1000000
+Parser warnings: - Extra text detected before JSON object
+- Extra text detected after JSON object
+Trajectory dumped to /home/saketh/research/cvdp_benchmark/jobs/2026-03-11__19-16-07/cvdp_agentic_aes_encryption_decr__98Lx4zR/agent/trajectory.json
+Failed to retrieve model info for 'openrouter/openai/gpt-4o-mini': This model isn't mapped yet. model=openrouter/openai/gpt-4o-mini, custom_llm_provider=openrouter. Add it here - https://github.com/BerriAI/litellm/blob/main/model_prices_and_context_window.json.. Using fallback context limit: 1000000
+Parser warnings: - Extra text detected before JSON object
+- Extra text detected after JSON object
+Trajectory dumped to /home/saketh/research/cvdp_benchmark/jobs/2026-03-11__19-16-07/cvdp_agentic_aes_encryption_decr__98Lx4zR/agent/trajectory.json
+Failed to retrieve model info for 'openrouter/openai/gpt-4o-mini': This model isn't mapped yet. model=openrouter/openai/gpt-4o-mini, custom_llm_provider=openrouter. Add it here - https://github.com/BerriAI/litellm/blob/main/model_prices_and_context_window.json.. Using fallback context limit: 1000000
+Parser warnings: - Extra text detected before JSON object
+- Extra text detected after JSON object
+Trajectory dumped to /home/saketh/research/cvdp_benchmark/jobs/2026-03-11__19-16-07/cvdp_agentic_aes_encryption_decr__98Lx4zR/agent/trajectory.json
+Failed to retrieve model info for 'openrouter/openai/gpt-4o-mini': This model isn't mapped yet. model=openrouter/openai/gpt-4o-mini, custom_llm_provider=openrouter. Add it here - https://github.com/BerriAI/litellm/blob/main/model_prices_and_context_window.json.. Using fallback context limit: 1000000
+Parser warnings: - Extra text detected before JSON object
+- Extra text detected after JSON object
+Trajectory dumped to /home/saketh/research/cvdp_benchmark/jobs/2026-03-11__19-16-07/cvdp_agentic_aes_encryption_decr__98Lx4zR/agent/trajectory.json
+Failed to retrieve model info for 'openrouter/openai/gpt-4o-mini': This model isn't mapped yet. model=openrouter/openai/gpt-4o-mini, custom_llm_provider=openrouter. Add it here - https://github.com/BerriAI/litellm/blob/main/model_prices_and_context_window.json.. Using fallback context limit: 1000000
+Parser warnings: - Extra text detected before JSON object
+- Extra text detected after JSON object
+Trajectory dumped to /home/saketh/research/cvdp_benchmark/jobs/2026-03-11__19-16-07/cvdp_agentic_aes_encryption_decr__98Lx4zR/agent/trajectory.json
+Failed to retrieve model info for 'openrouter/openai/gpt-4o-mini': This model isn't mapped yet. model=openrouter/openai/gpt-4o-mini, custom_llm_provider=openrouter. Add it here - https://github.com/BerriAI/litellm/blob/main/model_prices_and_context_window.json.. Using fallback context limit: 1000000
+Parser warnings: - Extra text detected before JSON object
+- Extra text detected after JSON object
+Trajectory dumped to /home/saketh/research/cvdp_benchmark/jobs/2026-03-11__19-16-07/cvdp_agentic_aes_encryption_decr__98Lx4zR/agent/trajectory.json
+Failed to retrieve model info for 'openrouter/openai/gpt-4o-mini': This model isn't mapped yet. model=openrouter/openai/gpt-4o-mini, custom_llm_provider=openrouter. Add it here - https://github.com/BerriAI/litellm/blob/main/model_prices_and_context_window.json.. Using fallback context limit: 1000000
+Parser warnings: - Extra text detected before JSON object
+- Extra text detected after JSON object
+Trajectory dumped to /home/saketh/research/cvdp_benchmark/jobs/2026-03-11__19-16-07/cvdp_agentic_aes_encryption_decr__98Lx4zR/agent/trajectory.json
+Failed to retrieve model info for 'openrouter/openai/gpt-4o-mini': This model isn't mapped yet. model=openrouter/openai/gpt-4o-mini, custom_llm_provider=openrouter. Add it here - https://github.com/BerriAI/litellm/blob/main/model_prices_and_context_window.json.. Using fallback context limit: 1000000
+Parser warnings: - Extra text detected before JSON object
+- Extra text detected after JSON object
+Trajectory dumped to /home/saketh/research/cvdp_benchmark/jobs/2026-03-11__19-16-07/cvdp_agentic_aes_encryption_decr__98Lx4zR/agent/trajectory.json
+Failed to retrieve model info for 'openrouter/openai/gpt-4o-mini': This model isn't mapped yet. model=openrouter/openai/gpt-4o-mini, custom_llm_provider=openrouter. Add it here - https://github.com/BerriAI/litellm/blob/main/model_prices_and_context_window.json.. Using fallback context limit: 1000000
+Parser warnings: - Extra text detected before JSON object
+- Extra text detected after JSON object
+Trajectory dumped to /home/saketh/research/cvdp_benchmark/jobs/2026-03-11__19-16-07/cvdp_agentic_aes_encryption_decr__98Lx4zR/agent/trajectory.json
+Failed to retrieve model info for 'openrouter/openai/gpt-4o-mini': This model isn't mapped yet. model=openrouter/openai/gpt-4o-mini, custom_llm_provider=openrouter. Add it here - https://github.com/BerriAI/litellm/blob/main/model_prices_and_context_window.json.. Using fallback context limit: 1000000
+Parser warnings: - Extra text detected before JSON object
+- Extra text detected after JSON object
+Trajectory dumped to /home/saketh/research/cvdp_benchmark/jobs/2026-03-11__19-16-07/cvdp_agentic_aes_encryption_decr__98Lx4zR/agent/trajectory.json
+Failed to retrieve model info for 'openrouter/openai/gpt-4o-mini': This model isn't mapped yet. model=openrouter/openai/gpt-4o-mini, custom_llm_provider=openrouter. Add it here - https://github.com/BerriAI/litellm/blob/main/model_prices_and_context_window.json.. Using fallback context limit: 1000000
+Parser warnings: - Extra text detected before JSON object
+- Extra text detected after JSON object
+Trajectory dumped to /home/saketh/research/cvdp_benchmark/jobs/2026-03-11__19-16-07/cvdp_agentic_aes_encryption_decr__98Lx4zR/agent/trajectory.json
+Failed to retrieve model info for 'openrouter/openai/gpt-4o-mini': This model isn't mapped yet. model=openrouter/openai/gpt-4o-mini, custom_llm_provider=openrouter. Add it here - https://github.com/BerriAI/litellm/blob/main/model_prices_and_context_window.json.. Using fallback context limit: 1000000
+Parser warnings: - Extra text detected before JSON object
+- Extra text detected after JSON object
+Trajectory dumped to /home/saketh/research/cvdp_benchmark/jobs/2026-03-11__19-16-07/cvdp_agentic_aes_encryption_decr__98Lx4zR/agent/trajectory.json
+Failed to retrieve model info for 'openrouter/openai/gpt-4o-mini': This model isn't mapped yet. model=openrouter/openai/gpt-4o-mini, custom_llm_provider=openrouter. Add it here - https://github.com/BerriAI/litellm/blob/main/model_prices_and_context_window.json.. Using fallback context limit: 1000000
+Parser warnings: - Extra text detected before JSON object
+- Extra text detected after JSON object
+Trajectory dumped to /home/saketh/research/cvdp_benchmark/jobs/2026-03-11__19-16-07/cvdp_agentic_aes_encryption_decr__98Lx4zR/agent/trajectory.json
+Failed to retrieve model info for 'openrouter/openai/gpt-4o-mini': This model isn't mapped yet. model=openrouter/openai/gpt-4o-mini, custom_llm_provider=openrouter. Add it here - https://github.com/BerriAI/litellm/blob/main/model_prices_and_context_window.json.. Using fallback context limit: 1000000
+Sending keys: ['echo "module aes128_decrypt #(\\"\\"" > ../rtl/aes128_decrypt.sv\n'] min_timeout_sec: 0.1 max_timeout_sec: 180.0
+Sending keys: ['echo "    parameter NBW_KEY  = \'d128,\\" > ../rtl/aes128_decrypt.sv\n'] min_timeout_sec: 0.1 max_timeout_sec: 180.0
+Sending keys: ['echo "    parameter NBW_DATA = \'d128\\" > ../rtl/aes128_decrypt.sv\n'] min_timeout_sec: 0.1 max_timeout_sec: 180.0
+Sending keys: ['echo ") (\\" > ../rtl/aes128_decrypt.sv\n'] min_timeout_sec: 0.1 max_timeout_sec: 180.0
+Sending keys: ['echo "    input  logic                clk,\\" > ../rtl/aes128_decrypt.sv\n'] min_timeout_sec: 0.1 max_timeout_sec: 180.0
+Sending keys: ['echo "    input  logic                rst_async_n,\\" > ../rtl/aes128_decrypt.sv\n'] min_timeout_sec: 0.1 max_timeout_sec: 180.0
+Sending keys: ['echo "    input  logic                i_update_key,\\" > ../rtl/aes128_decrypt.sv\n'] min_timeout_sec: 0.1 max_timeout_sec: 180.0
+Sending keys: ['echo "    input  logic [NBW_KEY-1:0]  i_key,\\" > ../rtl/aes128_decrypt.sv\n'] min_timeout_sec: 0.1 max_timeout_sec: 180.0
+Sending keys: ['echo "    input  logic                i_start,\\" > ../rtl/aes128_decrypt.sv\n'] min_timeout_sec: 0.1 max_timeout_sec: 180.0
+Sending keys: ['echo "    input  logic [NBW_DATA-1:0] i_data,\\" > ../rtl/aes128_decrypt.sv\n'] min_timeout_sec: 0.1 max_timeout_sec: 180.0
+Sending keys: ['echo "    output logic                o_done,\\" > ../rtl/aes128_decrypt.sv\n'] min_timeout_sec: 0.1 max_timeout_sec: 180.0
+Sending keys: ['echo "    output logic [NBW_DATA-1:0] o_data\\" > ../rtl/aes128_decrypt.sv\n'] min_timeout_sec: 0.1 max_timeout_sec: 180.0
+Sending keys: ['echo ");\\" > ../rtl/aes128_decrypt.sv\n'] min_timeout_sec: 0.1 max_timeout_sec: 180.0
+Sending keys: ['echo "// Internal parameters" >> ../rtl/aes128_decrypt.sv\n'] min_timeout_sec: 0.1 max_timeout_sec: 180.0
+Sending keys: ['echo "localparam NBW_BYTE   = \'d8;" >> ../rtl/aes128_decrypt.sv\n'] min_timeout_sec: 0.1 max_timeout_sec: 180.0
+Sending keys: ['echo "localparam NBW_EX_KEY = \'d1408;" >> ../rtl/aes128_decrypt.sv\n'] min_timeout_sec: 0.1 max_timeout_sec: 180.0
+Sending keys: ['echo "// Wires/Registers creation" >> ../rtl/aes128_decrypt.sv\n'] min_timeout_sec: 0.1 max_timeout_sec: 180.0
+Sending keys: ['echo "logic [NBW_BYTE-1:0]   current_data_nx[4][4];" >> ../rtl/aes128_decrypt.sv\n'] min_timeout_sec: 0.1 max_timeout_sec: 180.0
+Sending keys: ['echo "logic [NBW_BYTE-1:0]   current_data_ff[4][4];" >> ../rtl/aes128_decrypt.sv\n'] min_timeout_sec: 0.1 max_timeout_sec: 180.0
+Sending keys: ['echo "logic [NBW_BYTE-1:0]   AddRoundKey[4][4];" >> ../rtl/aes128_decrypt.sv\n'] min_timeout_sec: 0.1 max_timeout_sec: 180.0
+Sending keys: ['echo "logic [NBW_BYTE-1:0]   SubBytes[4][4];" >> ../rtl/aes128_decrypt.sv\n'] min_timeout_sec: 0.1 max_timeout_sec: 180.0
+Sending keys: ['echo "logic [NBW_BYTE-1:0]   ShiftRows[4][4];" >> ../rtl/aes128_decrypt.sv\n'] min_timeout_sec: 0.1 max_timeout_sec: 180.0
+Sending keys: ['echo "logic                  key_done;" >> ../rtl/aes128_decrypt.sv\n'] min_timeout_sec: 0.1 max_timeout_sec: 180.0
+Sending keys: ['echo "logic [3:0]            round_ff;" >> ../rtl/aes128_decrypt.sv\n'] min_timeout_sec: 0.1 max_timeout_sec: 180.0
+Sending keys: ['echo "logic [NBW_EX_KEY-1:0] expanded_key;" >> ../rtl/aes128_decrypt.sv\n'] min_timeout_sec: 0.1 max_timeout_sec: 180.0
+Sending keys: ['echo "// Output assignment" >> ../rtl/aes128_decrypt.sv\n'] min_timeout_sec: 0.1 max_timeout_sec: 180.0
+Sending keys: ['echo "assign o_done = (round_ff == 4\'d0);" >> ../rtl/aes128_decrypt.sv\n'] min_timeout_sec: 0.1 max_timeout_sec: 180.0
+Sending keys: ['echo "generate" >> ../rtl/aes128_decrypt.sv\n'] min_timeout_sec: 0.1 max_timeout_sec: 180.0
+Sending keys: ['echo "    for(genvar i = 0; i < 4; i++) begin : out_row" >> ../rtl/aes128_decrypt.sv\n'] min_timeout_sec: 0.1 max_timeout_sec: 180.0
+Sending keys: ['echo "        for(genvar j = 0; j < 4; j++) begin : out_col" >> ../rtl/aes128_decrypt.sv\n'] min_timeout_sec: 0.1 max_timeout_sec: 180.0
+Sending keys: ['echo "            assign o_data[NBW_DATA-(4*j+i)*NBW_BYTE-1-:NBW_BYTE] = current_data_ff[i][j];" >> ../rtl/aes128_decrypt.sv\n'] min_timeout_sec: 0.1 max_timeout_sec: 180.0
+Sending keys: ['echo "        end" >> ../rtl/aes128_decrypt.sv\n'] min_timeout_sec: 0.1 max_timeout_sec: 180.0
+Sending keys: ['echo "    end" >> ../rtl/aes128_decrypt.sv\n'] min_timeout_sec: 0.1 max_timeout_sec: 180.0
+Sending keys: ['echo "endgenerate" >> ../rtl/aes128_decrypt.sv\n'] min_timeout_sec: 0.1 max_timeout_sec: 180.0
+Sending keys: ['echo "always_ff @(posedge clk or negedge rst_async_n) begin : inv_cypher_regs" >> ../rtl/aes128_decrypt.sv\n'] min_timeout_sec: 0.1 max_timeout_sec: 180.0
+Sending keys: ['echo "    if(!rst_async_n) begin" >> ../rtl/aes128_decrypt.sv\n'] min_timeout_sec: 0.1 max_timeout_sec: 180.0
+Sending keys: ['echo "        round_ff <= 4\'d0;" >> ../rtl/aes128_decrypt.sv\n'] min_timeout_sec: 0.1 max_timeout_sec: 180.0
+Sending keys: ['echo "        for(int i = 0; i < 4; i++) begin" >> ../rtl/aes128_decrypt.sv\n'] min_timeout_sec: 0.1 max_timeout_sec: 180.0
+Sending keys: ['echo "            for(int j = 0; j < 4; j++) begin" >> ../rtl/aes128_decrypt.sv\n'] min_timeout_sec: 0.1 max_timeout_sec: 180.0
+Sending keys: ['echo "                current_data_ff[i][j] <= 8\'d0;" >> ../rtl/aes128_decrypt.sv\n'] min_timeout_sec: 0.1 max_timeout_sec: 180.0
+Sending keys: ['echo "            end" >> ../rtl/aes128_decrypt.sv\n'] min_timeout_sec: 0.1 max_timeout_sec: 180.0
+Sending keys: ['echo "        end else begin" >> ../rtl/aes128_decrypt.sv\n'] min_timeout_sec: 0.1 max_timeout_sec: 180.0
+Sending keys: ['echo "            if(i_start & o_done) begin" >> ../rtl/aes128_decrypt.sv\n'] min_timeout_sec: 0.1 max_timeout_sec: 180.0
+Sending keys: ['echo "                round_ff <= 4\'d1;" >> ../rtl/aes128_decrypt.sv\n'] min_timeout_sec: 0.1 max_timeout_sec: 180.0
+Sending keys: ['echo "            end else if((round_ff > 4\'d1 && round_ff < 4\'d12) || key_done) begin" >> ../rtl/aes128_decrypt.sv\n'] min_timeout_sec: 0.1 max_timeout_sec: 180.0
+Sending keys: ['echo "                round_ff <= round_ff + 1\'b1;" >> ../rtl/aes128_decrypt.sv\n'] min_timeout_sec: 0.1 max_timeout_sec: 180.0
+Sending keys: ['echo "            end else begin" >> ../rtl/aes128_decrypt.sv\n'] min_timeout_sec: 0.1 max_timeout_sec: 180.0
+Parser warnings: - Extra text detected before JSON object
+- Extra text detected after JSON object
+Sending keys: ['echo "                if(round_ff >= 4\'d12) begin" >> ../rtl/aes128_decrypt.sv\n'] min_timeout_sec: 0.1 max_timeout_sec: 180.0
+Trajectory dumped to /home/saketh/research/cvdp_benchmark/jobs/2026-03-11__19-16-07/cvdp_agentic_aes_encryption_decr__98Lx4zR/agent/trajectory.json
+Sending keys: ['echo "                    round_ff <= 4\'d0;" >> ../rtl/aes128_decrypt.sv\n'] min_timeout_sec: 0.1 max_timeout_sec: 180.0
+Failed to retrieve model info for 'openrouter/openai/gpt-4o-mini': This model isn't mapped yet. model=openrouter/openai/gpt-4o-mini, custom_llm_provider=openrouter. Add it here - https://github.com/BerriAI/litellm/blob/main/model_prices_and_context_window.json.. Using fallback context limit: 1000000
+Sending keys: ['echo "                end else begin" >> ../rtl/aes128_decrypt.sv\n'] min_timeout_sec: 0.1 max_timeout_sec: 180.0
+Sending keys: ['echo "                    round_ff <= 4\'d2;" >> ../rtl/aes128_decrypt.sv\n'] min_timeout_sec: 0.1 max_timeout_sec: 180.0
+Sending keys: ['echo "                end" >> ../rtl/aes128_decrypt.sv\n'] min_timeout_sec: 0.1 max_timeout_sec: 180.0
+Sending keys: ['echo "            end" >> ../rtl/aes128_decrypt.sv\n'] min_timeout_sec: 0.1 max_timeout_sec: 180.0
+Sending keys: ['echo "        for(int i = 0; i < 4; i++) begin" >> ../rtl/aes128_decrypt.sv\n'] min_timeout_sec: 0.1 max_timeout_sec: 180.0
+Sending keys: ['echo "            for(int j = 0; j < 4; j++) begin" >> ../rtl/aes128_decrypt.sv\n'] min_timeout_sec: 0.1 max_timeout_sec: 180.0
+Sending keys: ['echo "                current_data_ff[i][j] <= current_data_nx[i][j];" >> ../rtl/aes128_decrypt.sv\n'] min_timeout_sec: 0.1 max_timeout_sec: 180.0
+Sending keys: ['echo "            end" >> ../rtl/aes128_decrypt.sv\n'] min_timeout_sec: 0.1 max_timeout_sec: 180.0
+Sending keys: ['echo "        end" >> ../rtl/aes128_decrypt.sv\n'] min_timeout_sec: 0.1 max_timeout_sec: 180.0
+Sending keys: ['echo "    end" >> ../rtl/aes128_decrypt.sv\n'] min_timeout_sec: 0.1 max_timeout_sec: 180.0
+Sending keys: ['echo "end" >> ../rtl/aes128_decrypt.sv\n'] min_timeout_sec: 0.1 max_timeout_sec: 180.0
+Sending keys: ['echo "generate" >> ../rtl/aes128_decrypt.sv\n'] min_timeout_sec: 0.1 max_timeout_sec: 180.0
+Sending keys: ['echo "    for(genvar i = 0; i < 4; i++) begin : row" >> ../rtl/aes128_decrypt.sv\n'] min_timeout_sec: 0.1 max_timeout_sec: 180.0
+Sending keys: ['echo "        for(genvar j = 0; j < 4; j++) begin : col" >> ../rtl/aes128_decrypt.sv\n'] min_timeout_sec: 0.1 max_timeout_sec: 180.0
+Sending keys: ['echo "            inv_sbox uu_inv_sbox0 (" >> ../rtl/aes128_decrypt.sv\n'] min_timeout_sec: 0.1 max_timeout_sec: 180.0
+Sending keys: ['echo "                .i_data(ShiftRows[i][j])," >> ../rtl/aes128_decrypt.sv\n'] min_timeout_sec: 0.1 max_timeout_sec: 180.0
+Sending keys: ['echo "                .o_data(SubBytes[i][j])" >> ../rtl/aes128_decrypt.sv\n'] min_timeout_sec: 0.1 max_timeout_sec: 180.0
+Sending keys: ['echo "            );" >> ../rtl/aes128_decrypt.sv\n'] min_timeout_sec: 0.1 max_timeout_sec: 180.0
+Sending keys: ['echo "        end" >> ../rtl/aes128_decrypt.sv\n'] min_timeout_sec: 0.1 max_timeout_sec: 180.0
+Sending keys: ['echo "    end" >> ../rtl/aes128_decrypt.sv\n'] min_timeout_sec: 0.1 max_timeout_sec: 180.0
+Sending keys: ['echo "endgenerate" >> ../rtl/aes128_decrypt.sv\n'] min_timeout_sec: 0.1 max_timeout_sec: 180.0
+Sending keys: ['echo "always_comb begin : decypher_logic" >> ../rtl/aes128_decrypt.sv\n'] min_timeout_sec: 0.1 max_timeout_sec: 180.0
+Sending keys: ['echo "    // Add Round Key logic" >> ../rtl/aes128_decrypt.sv\n'] min_timeout_sec: 0.1 max_timeout_sec: 180.0
+Sending keys: ['echo "    for(int i = 0; i < 4; i++) begin : row_key" >> ../rtl/aes128_decrypt.sv\n'] min_timeout_sec: 0.1 max_timeout_sec: 180.0
+Sending keys: ['echo "        for(int j = 0; j < 4; j++) begin : col_key" >> ../rtl/aes128_decrypt.sv\n'] min_timeout_sec: 0.1 max_timeout_sec: 180.0
+Sending keys: ['echo "            if(round_ff > 4\'d0) begin" >> ../rtl/aes128_decrypt.sv\n'] min_timeout_sec: 0.1 max_timeout_sec: 180.0
+Sending keys: ['echo "                AddRoundKey[i][j] = current_data_ff[i][j] ^ expanded_key[NBW_EX_KEY-(11-round_ff)*NBW_KEY-(4*i+j)*NBW_BYTE-1-:NBW_BYTE];" >> ../rtl/aes128_decrypt.sv\n'] min_timeout_sec: 0.1 max_timeout_sec: 180.0
+Sending keys: ['echo "            end else begin" >> ../rtl/aes128_decrypt.sv\n'] min_timeout_sec: 0.1 max_timeout_sec: 180.0
+Sending keys: ['echo "                AddRoundKey[i][j] = 0;" >> ../rtl/aes128_decrypt.sv\n'] min_timeout_sec: 0.1 max_timeout_sec: 180.0
+Sending keys: ['echo "            end" >> ../rtl/aes128_decrypt.sv\n'] min_timeout_sec: 0.1 max_timeout_sec: 180.0
+Sending keys: ['echo "        end" >> ../rtl/aes128_decrypt.sv\n'] min_timeout_sec: 0.1 max_timeout_sec: 180.0
+Sending keys: ['echo "    // Mix Columns logic" >> ../rtl/aes128_decrypt.sv\n'] min_timeout_sec: 0.1 max_timeout_sec: 180.0
+Sending keys: ['echo "    for(int i = 0; i < 4; i++) begin" >> ../rtl/aes128_decrypt.sv\n'] min_timeout_sec: 0.1 max_timeout_sec: 180.0
+Sending keys: ['echo "        for(int j = 0; j < 4; j++) begin" >> ../rtl/aes128_decrypt.sv\n'] min_timeout_sec: 0.1 max_timeout_sec: 180.0
+Sending keys: ['echo "            // Logic for MixColumns" >> ../rtl/aes128_decrypt.sv\n'] min_timeout_sec: 0.1 max_timeout_sec: 180.0
+Sending keys: ['echo "        end" >> ../rtl/aes128_decrypt.sv\n'] min_timeout_sec: 0.1 max_timeout_sec: 180.0
+Sending keys: ['echo "    end" >> ../rtl/aes128_decrypt.sv\n'] min_timeout_sec: 0.1 max_timeout_sec: 180.0
+Sending keys: ['echo "    // Shift Rows logic" >> ../rtl/aes128_decrypt.sv\n'] min_timeout_sec: 0.1 max_timeout_sec: 180.0
+Sending keys: ['echo "    // Finalize AddRoundKey logic" >> ../rtl/aes128_decrypt.sv\n'] min_timeout_sec: 0.1 max_timeout_sec: 180.0
+Sending keys: ['echo "end" >> ../rtl/aes128_decrypt.sv\n'] min_timeout_sec: 0.1 max_timeout_sec: 180.0
+Sending keys: ['echo "endmodule : aes128_decrypt" >> ../rtl/aes128_decrypt.sv\n'] min_timeout_sec: 0.1 max_timeout_sec: 180.0
+Sending keys: ['verilator --cc tb_aes128_dec.sv --exe --build -o tb_aes128_dec -I../rtl --timing\n'] min_timeout_sec: 1.0 max_timeout_sec: 180.0
+Parser warnings: - Extra text detected before JSON object
+- Extra text detected after JSON object
+Trajectory dumped to /home/saketh/research/cvdp_benchmark/jobs/2026-03-11__19-16-07/cvdp_agentic_aes_encryption_decr__98Lx4zR/agent/trajectory.json
+Failed to retrieve model info for 'openrouter/openai/gpt-4o-mini': This model isn't mapped yet. model=openrouter/openai/gpt-4o-mini, custom_llm_provider=openrouter. Add it here - https://github.com/BerriAI/litellm/blob/main/model_prices_and_context_window.json.. Using fallback context limit: 1000000
+Sending keys: ['./tb_aes128_dec\n'] min_timeout_sec: 10.0 max_timeout_sec: 180.0
+Parser warnings: - Extra text detected before JSON object
+- Extra text detected after JSON object
+Trajectory dumped to /home/saketh/research/cvdp_benchmark/jobs/2026-03-11__19-16-07/cvdp_agentic_aes_encryption_decr__98Lx4zR/agent/trajectory.json
+Failed to retrieve model info for 'openrouter/openai/gpt-4o-mini': This model isn't mapped yet. model=openrouter/openai/gpt-4o-mini, custom_llm_provider=openrouter. Add it here - https://github.com/BerriAI/litellm/blob/main/model_prices_and_context_window.json.. Using fallback context limit: 1000000
+Parser warnings: - Extra text detected before JSON object
+- Extra text detected after JSON object
+Trajectory dumped to /home/saketh/research/cvdp_benchmark/jobs/2026-03-11__19-16-07/cvdp_agentic_aes_encryption_decr__98Lx4zR/agent/trajectory.json
+Failed to retrieve model info for 'openrouter/openai/gpt-4o-mini': This model isn't mapped yet. model=openrouter/openai/gpt-4o-mini, custom_llm_provider=openrouter. Add it here - https://github.com/BerriAI/litellm/blob/main/model_prices_and_context_window.json.. Using fallback context limit: 1000000
+Trajectory dumped to /home/saketh/research/cvdp_benchmark/jobs/2026-03-11__19-16-07/cvdp_agentic_aes_encryption_decr__bXpWUVB/agent/trajectory.json
+Failed to retrieve model info for 'openrouter/openai/gpt-4o-mini': This model isn't mapped yet. model=openrouter/openai/gpt-4o-mini, custom_llm_provider=openrouter. Add it here - https://github.com/BerriAI/litellm/blob/main/model_prices_and_context_window.json.. Using fallback context limit: 1000000
+Parser warnings: - Extra text detected before JSON object
+- Extra text detected after JSON object
+Trajectory dumped to /home/saketh/research/cvdp_benchmark/jobs/2026-03-11__19-16-07/cvdp_agentic_aes_encryption_decr__98Lx4zR/agent/trajectory.json
+Failed to retrieve model info for 'openrouter/openai/gpt-4o-mini': This model isn't mapped yet. model=openrouter/openai/gpt-4o-mini, custom_llm_provider=openrouter. Add it here - https://github.com/BerriAI/litellm/blob/main/model_prices_and_context_window.json.. Using fallback context limit: 1000000
+Parser warnings: - Extra text detected before JSON object
+- Extra text detected after JSON object
+Trajectory dumped to /home/saketh/research/cvdp_benchmark/jobs/2026-03-11__19-16-07/cvdp_agentic_aes_encryption_decr__98Lx4zR/agent/trajectory.json
+Failed to retrieve model info for 'openrouter/openai/gpt-4o-mini': This model isn't mapped yet. model=openrouter/openai/gpt-4o-mini, custom_llm_provider=openrouter. Add it here - https://github.com/BerriAI/litellm/blob/main/model_prices_and_context_window.json.. Using fallback context limit: 1000000
+Parser warnings: - Extra text detected before JSON object
+- Extra text detected after JSON object
+Trajectory dumped to /home/saketh/research/cvdp_benchmark/jobs/2026-03-11__19-16-07/cvdp_agentic_aes_encryption_decr__98Lx4zR/agent/trajectory.json
+Failed to retrieve model info for 'openrouter/openai/gpt-4o-mini': This model isn't mapped yet. model=openrouter/openai/gpt-4o-mini, custom_llm_provider=openrouter. Add it here - https://github.com/BerriAI/litellm/blob/main/model_prices_and_context_window.json.. Using fallback context limit: 1000000
+Parser warnings: - Extra text detected before JSON object
+- Extra text detected after JSON object
+Trajectory dumped to /home/saketh/research/cvdp_benchmark/jobs/2026-03-11__19-16-07/cvdp_agentic_aes_encryption_decr__98Lx4zR/agent/trajectory.json
+Failed to retrieve model info for 'openrouter/openai/gpt-4o-mini': This model isn't mapped yet. model=openrouter/openai/gpt-4o-mini, custom_llm_provider=openrouter. Add it here - https://github.com/BerriAI/litellm/blob/main/model_prices_and_context_window.json.. Using fallback context limit: 1000000
+Parser warnings: - Extra text detected before JSON object
+- Extra text detected after JSON object
+Trajectory dumped to /home/saketh/research/cvdp_benchmark/jobs/2026-03-11__19-16-07/cvdp_agentic_aes_encryption_decr__98Lx4zR/agent/trajectory.json
+Failed to retrieve model info for 'openrouter/openai/gpt-4o-mini': This model isn't mapped yet. model=openrouter/openai/gpt-4o-mini, custom_llm_provider=openrouter. Add it here - https://github.com/BerriAI/litellm/blob/main/model_prices_and_context_window.json.. Using fallback context limit: 1000000
+Parser warnings: - Extra text detected before JSON object
+- Extra text detected after JSON object
+Trajectory dumped to /home/saketh/research/cvdp_benchmark/jobs/2026-03-11__19-16-07/cvdp_agentic_aes_encryption_decr__98Lx4zR/agent/trajectory.json
+Failed to retrieve model info for 'openrouter/openai/gpt-4o-mini': This model isn't mapped yet. model=openrouter/openai/gpt-4o-mini, custom_llm_provider=openrouter. Add it here - https://github.com/BerriAI/litellm/blob/main/model_prices_and_context_window.json.. Using fallback context limit: 1000000
+Parser warnings: - Extra text detected before JSON object
+- Extra text detected after JSON object
+Trajectory dumped to /home/saketh/research/cvdp_benchmark/jobs/2026-03-11__19-16-07/cvdp_agentic_aes_encryption_decr__98Lx4zR/agent/trajectory.json
+Failed to retrieve model info for 'openrouter/openai/gpt-4o-mini': This model isn't mapped yet. model=openrouter/openai/gpt-4o-mini, custom_llm_provider=openrouter. Add it here - https://github.com/BerriAI/litellm/blob/main/model_prices_and_context_window.json.. Using fallback context limit: 1000000
+Parser warnings: - Extra text detected before JSON object
+- Extra text detected after JSON object
+Trajectory dumped to /home/saketh/research/cvdp_benchmark/jobs/2026-03-11__19-16-07/cvdp_agentic_aes_encryption_decr__98Lx4zR/agent/trajectory.json
+Failed to retrieve model info for 'openrouter/openai/gpt-4o-mini': This model isn't mapped yet. model=openrouter/openai/gpt-4o-mini, custom_llm_provider=openrouter. Add it here - https://github.com/BerriAI/litellm/blob/main/model_prices_and_context_window.json.. Using fallback context limit: 1000000
+Parser warnings: - Extra text detected before JSON object
+- Extra text detected after JSON object
+Trajectory dumped to /home/saketh/research/cvdp_benchmark/jobs/2026-03-11__19-16-07/cvdp_agentic_aes_encryption_decr__98Lx4zR/agent/trajectory.json
+Failed to retrieve model info for 'openrouter/openai/gpt-4o-mini': This model isn't mapped yet. model=openrouter/openai/gpt-4o-mini, custom_llm_provider=openrouter. Add it here - https://github.com/BerriAI/litellm/blob/main/model_prices_and_context_window.json.. Using fallback context limit: 1000000
+Parser warnings: - Extra text detected before JSON object
+- Extra text detected after JSON object
+Trajectory dumped to /home/saketh/research/cvdp_benchmark/jobs/2026-03-11__19-16-07/cvdp_agentic_aes_encryption_decr__98Lx4zR/agent/trajectory.json
+Failed to retrieve model info for 'openrouter/openai/gpt-4o-mini': This model isn't mapped yet. model=openrouter/openai/gpt-4o-mini, custom_llm_provider=openrouter. Add it here - https://github.com/BerriAI/litellm/blob/main/model_prices_and_context_window.json.. Using fallback context limit: 1000000
+Parser warnings: - Extra text detected before JSON object
+- Extra text detected after JSON object
+Trajectory dumped to /home/saketh/research/cvdp_benchmark/jobs/2026-03-11__19-16-07/cvdp_agentic_aes_encryption_decr__98Lx4zR/agent/trajectory.json
+Failed to retrieve model info for 'openrouter/openai/gpt-4o-mini': This model isn't mapped yet. model=openrouter/openai/gpt-4o-mini, custom_llm_provider=openrouter. Add it here - https://github.com/BerriAI/litellm/blob/main/model_prices_and_context_window.json.. Using fallback context limit: 1000000
+Sending keys: ['echo "module aes128_decrypt #(\\"\\"" > ../rtl/aes128_decrypt.sv\n'] min_timeout_sec: 0.1 max_timeout_sec: 180.0
+Sending keys: ['echo "    parameter NBW_KEY  = \'d128,\\" >> ../rtl/aes128_decrypt.sv\n'] min_timeout_sec: 0.1 max_timeout_sec: 180.0
+Sending keys: ['echo "    parameter NBW_DATA = \'d128\\" >> ../rtl/aes128_decrypt.sv\n'] min_timeout_sec: 0.1 max_timeout_sec: 180.0
+Sending keys: ['echo ") (\\" >> ../rtl/aes128_decrypt.sv\n'] min_timeout_sec: 0.1 max_timeout_sec: 180.0
+Sending keys: ['echo "    input  logic                clk,\\" >> ../rtl/aes128_decrypt.sv\n'] min_timeout_sec: 0.1 max_timeout_sec: 180.0
+Sending keys: ['echo "    input  logic                rst_async_n,\\" >> ../rtl/aes128_decrypt.sv\n'] min_timeout_sec: 0.1 max_timeout_sec: 180.0
+Sending keys: ['echo "    input  logic                i_update_key,\\" >> ../rtl/aes128_decrypt.sv\n'] min_timeout_sec: 0.1 max_timeout_sec: 180.0
+Sending keys: ['echo "    input  logic [NBW_KEY-1:0]  i_key,\\" >> ../rtl/aes128_decrypt.sv\n'] min_timeout_sec: 0.1 max_timeout_sec: 180.0
+Sending keys: ['echo "    input  logic                i_start,\\" >> ../rtl/aes128_decrypt.sv\n'] min_timeout_sec: 0.1 max_timeout_sec: 180.0
+Sending keys: ['echo "    input  logic [NBW_DATA-1:0] i_data,\\" >> ../rtl/aes128_decrypt.sv\n'] min_timeout_sec: 0.1 max_timeout_sec: 180.0
+Sending keys: ['echo "    output logic                o_done,\\" >> ../rtl/aes128_decrypt.sv\n'] min_timeout_sec: 0.1 max_timeout_sec: 180.0
+Sending keys: ['echo "    output logic [NBW_DATA-1:0] o_data\\" >> ../rtl/aes128_decrypt.sv\n'] min_timeout_sec: 0.1 max_timeout_sec: 180.0
+Parser warnings: - Extra text detected before JSON object
+- Extra text detected after JSON object
+Sending keys: ['echo ");\\" >> ../rtl/aes128_decrypt.sv\n'] min_timeout_sec: 0.1 max_timeout_sec: 180.0
+Trajectory dumped to /home/saketh/research/cvdp_benchmark/jobs/2026-03-11__19-16-07/cvdp_agentic_aes_encryption_decr__98Lx4zR/agent/trajectory.json
+Failed to retrieve model info for 'openrouter/openai/gpt-4o-mini': This model isn't mapped yet. model=openrouter/openai/gpt-4o-mini, custom_llm_provider=openrouter. Add it here - https://github.com/BerriAI/litellm/blob/main/model_prices_and_context_window.json.. Using fallback context limit: 1000000
+Sending keys: ['echo "// Internal parameters" >> ../rtl/aes128_decrypt.sv\n'] min_timeout_sec: 0.1 max_timeout_sec: 180.0
+Sending keys: ['echo "localparam NBW_BYTE   = \'d8;" >> ../rtl/aes128_decrypt.sv\n'] min_timeout_sec: 0.1 max_timeout_sec: 180.0
+Sending keys: ['echo "localparam NBW_EX_KEY = \'d1408;" >> ../rtl/aes128_decrypt.sv\n'] min_timeout_sec: 0.1 max_timeout_sec: 180.0
+Sending keys: ['echo "// Wires/Registers creation" >> ../rtl/aes128_decrypt.sv\n'] min_timeout_sec: 0.1 max_timeout_sec: 180.0
+Sending keys: ['echo "logic [NBW_BYTE-1:0]   current_data_nx[4][4];" >> ../rtl/aes128_decrypt.sv\n'] min_timeout_sec: 0.1 max_timeout_sec: 180.0
+Sending keys: ['echo "logic [NBW_BYTE-1:0]   current_data_ff[4][4];" >> ../rtl/aes128_decrypt.sv\n'] min_timeout_sec: 0.1 max_timeout_sec: 180.0
+Sending keys: ['echo "logic [NBW_BYTE-1:0]   AddRoundKey[4][4];" >> ../rtl/aes128_decrypt.sv\n'] min_timeout_sec: 0.1 max_timeout_sec: 180.0
+Sending keys: ['echo "logic [NBW_BYTE-1:0]   SubBytes[4][4];" >> ../rtl/aes128_decrypt.sv\n'] min_timeout_sec: 0.1 max_timeout_sec: 180.0
+Sending keys: ['echo "logic [NBW_BYTE-1:0]   ShiftRows[4][4];" >> ../rtl/aes128_decrypt.sv\n'] min_timeout_sec: 0.1 max_timeout_sec: 180.0
+Sending keys: ['echo "logic                  key_done;" >> ../rtl/aes128_decrypt.sv\n'] min_timeout_sec: 0.1 max_timeout_sec: 180.0
+Sending keys: ['echo "logic [3:0]            round_ff;" >> ../rtl/aes128_decrypt.sv\n'] min_timeout_sec: 0.1 max_timeout_sec: 180.0
+Sending keys: ['echo "logic [NBW_EX_KEY-1:0] expanded_key;" >> ../rtl/aes128_decrypt.sv\n'] min_timeout_sec: 0.1 max_timeout_sec: 180.0
+Sending keys: ['echo "// Output assignment" >> ../rtl/aes128_decrypt.sv\n'] min_timeout_sec: 0.1 max_timeout_sec: 180.0
+Sending keys: ['echo "assign o_done = (round_ff == 4\'d0);" >> ../rtl/aes128_decrypt.sv\n'] min_timeout_sec: 0.1 max_timeout_sec: 180.0
+Sending keys: ['echo "generate" >> ../rtl/aes128_decrypt.sv\n'] min_timeout_sec: 0.1 max_timeout_sec: 180.0
+Sending keys: ['echo "    for(genvar i = 0; i < 4; i++) begin : out_row" >> ../rtl/aes128_decrypt.sv\n'] min_timeout_sec: 0.1 max_timeout_sec: 180.0
+Sending keys: ['echo "        for(genvar j = 0; j < 4; j++) begin : out_col" >> ../rtl/aes128_decrypt.sv\n'] min_timeout_sec: 0.1 max_timeout_sec: 180.0
+Sending keys: ['echo "            assign o_data[NBW_DATA-(4*j+i)*NBW_BYTE-1-:NBW_BYTE] = current_data_ff[i][j];" >> ../rtl/aes128_decrypt.sv\n'] min_timeout_sec: 0.1 max_timeout_sec: 180.0
+Sending keys: ['echo "        end" >> ../rtl/aes128_decrypt.sv\n'] min_timeout_sec: 0.1 max_timeout_sec: 180.0
+Sending keys: ['echo "    end" >> ../rtl/aes128_decrypt.sv\n'] min_timeout_sec: 0.1 max_timeout_sec: 180.0
+Sending keys: ['echo "endgenerate" >> ../rtl/aes128_decrypt.sv\n'] min_timeout_sec: 0.1 max_timeout_sec: 180.0
+Sending keys: ['echo "always_ff @(posedge clk or negedge rst_async_n) begin : inv_cypher_regs" >> ../rtl/aes128_decrypt.sv\n'] min_timeout_sec: 0.1 max_timeout_sec: 180.0
+Sending keys: ['echo "    if(!rst_async_n) begin" >> ../rtl/aes128_decrypt.sv\n'] min_timeout_sec: 0.1 max_timeout_sec: 180.0
+Sending keys: ['echo "        round_ff <= 4\'d0;" >> ../rtl/aes128_decrypt.sv\n'] min_timeout_sec: 0.1 max_timeout_sec: 180.0
+Sending keys: ['echo "        for(int i = 0; i < 4; i++) begin" >> ../rtl/aes128_decrypt.sv\n'] min_timeout_sec: 0.1 max_timeout_sec: 180.0
+Sending keys: ['echo "            for(int j = 0; j < 4; j++) begin" >> ../rtl/aes128_decrypt.sv\n'] min_timeout_sec: 0.1 max_timeout_sec: 180.0
+Sending keys: ['echo "                current_data_ff[i][j] <= 8\'d0;" >> ../rtl/aes128_decrypt.sv\n'] min_timeout_sec: 0.1 max_timeout_sec: 180.0
+Sending keys: ['echo "            end" >> ../rtl/aes128_decrypt.sv\n'] min_timeout_sec: 0.1 max_timeout_sec: 180.0
+Sending keys: ['echo "        end else begin" >> ../rtl/aes128_decrypt.sv\n'] min_timeout_sec: 0.1 max_timeout_sec: 180.0
+Sending keys: ['echo "            if(i_start & o_done) begin" >> ../rtl/aes128_decrypt.sv\n'] min_timeout_sec: 0.1 max_timeout_sec: 180.0
+Sending keys: ['echo "                round_ff <= 4\'d1;" >> ../rtl/aes128_decrypt.sv\n'] min_timeout_sec: 0.1 max_timeout_sec: 180.0
+Sending keys: ['echo "            end else if((round_ff > 4\'d1 && round_ff < 4\'d12) || key_done) begin" >> ../rtl/aes128_decrypt.sv\n'] min_timeout_sec: 0.1 max_timeout_sec: 180.0
+Sending keys: ['echo "                round_ff <= round_ff + 1\'b1;" >> ../rtl/aes128_decrypt.sv\n'] min_timeout_sec: 0.1 max_timeout_sec: 180.0
+Sending keys: ['echo "            end else begin" >> ../rtl/aes128_decrypt.sv\n'] min_timeout_sec: 0.1 max_timeout_sec: 180.0
+Sending keys: ['echo "                if(round_ff >= 4\'d12) begin" >> ../rtl/aes128_decrypt.sv\n'] min_timeout_sec: 0.1 max_timeout_sec: 180.0
+Sending keys: ['echo "                    round_ff <= 4\'d0;" >> ../rtl/aes128_decrypt.sv\n'] min_timeout_sec: 0.1 max_timeout_sec: 180.0
+Sending keys: ['echo "                end else begin" >> ../rtl/aes128_decrypt.sv\n'] min_timeout_sec: 0.1 max_timeout_sec: 180.0
+Sending keys: ['echo "                    round_ff <= 4\'d2;" >> ../rtl/aes128_decrypt.sv\n'] min_timeout_sec: 0.1 max_timeout_sec: 180.0
+Sending keys: ['echo "                end" >> ../rtl/aes128_decrypt.sv\n'] min_timeout_sec: 0.1 max_timeout_sec: 180.0
+Sending keys: ['echo "            end" >> ../rtl/aes128_decrypt.sv\n'] min_timeout_sec: 0.1 max_timeout_sec: 180.0
+Sending keys: ['echo "        for(int i = 0; i < 4; i++) begin" >> ../rtl/aes128_decrypt.sv\n'] min_timeout_sec: 0.1 max_timeout_sec: 180.0
+Sending keys: ['echo "            for(int j = 0; j < 4; j++) begin" >> ../rtl/aes128_decrypt.sv\n'] min_timeout_sec: 0.1 max_timeout_sec: 180.0
+Sending keys: ['echo "                current_data_ff[i][j] <= current_data_nx[i][j];" >> ../rtl/aes128_decrypt.sv\n'] min_timeout_sec: 0.1 max_timeout_sec: 180.0
+Sending keys: ['echo "            end" >> ../rtl/aes128_decrypt.sv\n'] min_timeout_sec: 0.1 max_timeout_sec: 180.0
+Parser warnings: - Extra text detected before JSON object
+- Extra text detected after JSON object
+Sending keys: ['echo "        end" >> ../rtl/aes128_decrypt.sv\n'] min_timeout_sec: 0.1 max_timeout_sec: 180.0
+Trajectory dumped to /home/saketh/research/cvdp_benchmark/jobs/2026-03-11__19-16-07/cvdp_agentic_aes_encryption_decr__98Lx4zR/agent/trajectory.json
+Sending keys: ['echo "    end" >> ../rtl/aes128_decrypt.sv\n'] min_timeout_sec: 0.1 max_timeout_sec: 180.0
+Failed to retrieve model info for 'openrouter/openai/gpt-4o-mini': This model isn't mapped yet. model=openrouter/openai/gpt-4o-mini, custom_llm_provider=openrouter. Add it here - https://github.com/BerriAI/litellm/blob/main/model_prices_and_context_window.json.. Using fallback context limit: 1000000
+Sending keys: ['echo "end" >> ../rtl/aes128_decrypt.sv\n'] min_timeout_sec: 0.1 max_timeout_sec: 180.0
+Sending keys: ['echo "endmodule : aes128_decrypt" >> ../rtl/aes128_decrypt.sv\n'] min_timeout_sec: 0.1 max_timeout_sec: 180.0
+Sending keys: ['verilator --cc tb_aes128_dec.sv --exe --build -o tb_aes128_dec -I../rtl --timing\n'] min_timeout_sec: 1.0 max_timeout_sec: 180.0
+Sending keys: ['./tb_aes128_dec\n'] min_timeout_sec: 10.0 max_timeout_sec: 180.0
+Trajectory dumped to /home/saketh/research/cvdp_benchmark/jobs/2026-03-11__19-16-07/cvdp_agentic_aes_encryption_decr__bXpWUVB/agent/trajectory.json
+Failed to retrieve model info for 'openrouter/openai/gpt-4o-mini': This model isn't mapped yet. model=openrouter/openai/gpt-4o-mini, custom_llm_provider=openrouter. Add it here - https://github.com/BerriAI/litellm/blob/main/model_prices_and_context_window.json.. Using fallback context limit: 1000000
+Parser warnings: - Extra text detected before JSON object
+- Extra text detected after JSON object
+Trajectory dumped to /home/saketh/research/cvdp_benchmark/jobs/2026-03-11__19-16-07/cvdp_agentic_aes_encryption_decr__98Lx4zR/agent/trajectory.json
+Failed to retrieve model info for 'openrouter/openai/gpt-4o-mini': This model isn't mapped yet. model=openrouter/openai/gpt-4o-mini, custom_llm_provider=openrouter. Add it here - https://github.com/BerriAI/litellm/blob/main/model_prices_and_context_window.json.. Using fallback context limit: 1000000
+Parser warnings: - Extra text detected before JSON object
+- Extra text detected after JSON object
+Trajectory dumped to /home/saketh/research/cvdp_benchmark/jobs/2026-03-11__19-16-07/cvdp_agentic_aes_encryption_decr__98Lx4zR/agent/trajectory.json
+Failed to retrieve model info for 'openrouter/openai/gpt-4o-mini': This model isn't mapped yet. model=openrouter/openai/gpt-4o-mini, custom_llm_provider=openrouter. Add it here - https://github.com/BerriAI/litellm/blob/main/model_prices_and_context_window.json.. Using fallback context limit: 1000000
+Parser warnings: - Extra text detected before JSON object
+- Extra text detected after JSON object
+Trajectory dumped to /home/saketh/research/cvdp_benchmark/jobs/2026-03-11__19-16-07/cvdp_agentic_aes_encryption_decr__98Lx4zR/agent/trajectory.json
+Failed to retrieve model info for 'openrouter/openai/gpt-4o-mini': This model isn't mapped yet. model=openrouter/openai/gpt-4o-mini, custom_llm_provider=openrouter. Add it here - https://github.com/BerriAI/litellm/blob/main/model_prices_and_context_window.json.. Using fallback context limit: 1000000
+Parser warnings: - Extra text detected before JSON object
+- Extra text detected after JSON object
+Trajectory dumped to /home/saketh/research/cvdp_benchmark/jobs/2026-03-11__19-16-07/cvdp_agentic_aes_encryption_decr__98Lx4zR/agent/trajectory.json
+Failed to retrieve model info for 'openrouter/openai/gpt-4o-mini': This model isn't mapped yet. model=openrouter/openai/gpt-4o-mini, custom_llm_provider=openrouter. Add it here - https://github.com/BerriAI/litellm/blob/main/model_prices_and_context_window.json.. Using fallback context limit: 1000000
+Parser warnings: - Extra text detected before JSON object
+- Extra text detected after JSON object
+Trajectory dumped to /home/saketh/research/cvdp_benchmark/jobs/2026-03-11__19-16-07/cvdp_agentic_aes_encryption_decr__98Lx4zR/agent/trajectory.json
+Failed to retrieve model info for 'openrouter/openai/gpt-4o-mini': This model isn't mapped yet. model=openrouter/openai/gpt-4o-mini, custom_llm_provider=openrouter. Add it here - https://github.com/BerriAI/litellm/blob/main/model_prices_and_context_window.json.. Using fallback context limit: 1000000
+Parser warnings: - Extra text detected before JSON object
+- Extra text detected after JSON object
+Trajectory dumped to /home/saketh/research/cvdp_benchmark/jobs/2026-03-11__19-16-07/cvdp_agentic_aes_encryption_decr__98Lx4zR/agent/trajectory.json
+Failed to retrieve model info for 'openrouter/openai/gpt-4o-mini': This model isn't mapped yet. model=openrouter/openai/gpt-4o-mini, custom_llm_provider=openrouter. Add it here - https://github.com/BerriAI/litellm/blob/main/model_prices_and_context_window.json.. Using fallback context limit: 1000000
+Parser warnings: - Extra text detected before JSON object
+- Extra text detected after JSON object
+Trajectory dumped to /home/saketh/research/cvdp_benchmark/jobs/2026-03-11__19-16-07/cvdp_agentic_aes_encryption_decr__98Lx4zR/agent/trajectory.json
+Failed to retrieve model info for 'openrouter/openai/gpt-4o-mini': This model isn't mapped yet. model=openrouter/openai/gpt-4o-mini, custom_llm_provider=openrouter. Add it here - https://github.com/BerriAI/litellm/blob/main/model_prices_and_context_window.json.. Using fallback context limit: 1000000
+Parser warnings: - Extra text detected before JSON object
+- Extra text detected after JSON object
+Trajectory dumped to /home/saketh/research/cvdp_benchmark/jobs/2026-03-11__19-16-07/cvdp_agentic_aes_encryption_decr__98Lx4zR/agent/trajectory.json
+Failed to retrieve model info for 'openrouter/openai/gpt-4o-mini': This model isn't mapped yet. model=openrouter/openai/gpt-4o-mini, custom_llm_provider=openrouter. Add it here - https://github.com/BerriAI/litellm/blob/main/model_prices_and_context_window.json.. Using fallback context limit: 1000000
+Parser warnings: - Extra text detected before JSON object
+- Extra text detected after JSON object
+Trajectory dumped to /home/saketh/research/cvdp_benchmark/jobs/2026-03-11__19-16-07/cvdp_agentic_aes_encryption_decr__98Lx4zR/agent/trajectory.json
+Failed to retrieve model info for 'openrouter/openai/gpt-4o-mini': This model isn't mapped yet. model=openrouter/openai/gpt-4o-mini, custom_llm_provider=openrouter. Add it here - https://github.com/BerriAI/litellm/blob/main/model_prices_and_context_window.json.. Using fallback context limit: 1000000
+Parser warnings: - Extra text detected before JSON object
+- Extra text detected after JSON object
+Trajectory dumped to /home/saketh/research/cvdp_benchmark/jobs/2026-03-11__19-16-07/cvdp_agentic_aes_encryption_decr__98Lx4zR/agent/trajectory.json
+Failed to retrieve model info for 'openrouter/openai/gpt-4o-mini': This model isn't mapped yet. model=openrouter/openai/gpt-4o-mini, custom_llm_provider=openrouter. Add it here - https://github.com/BerriAI/litellm/blob/main/model_prices_and_context_window.json.. Using fallback context limit: 1000000
+Sending keys: ['echo "module aes128_decrypt #(\\"\\"" > ../rtl/aes128_decrypt.sv\n'] min_timeout_sec: 0.1 max_timeout_sec: 180.0
+Sending keys: ['echo "    parameter NBW_KEY  = \'d128,\\" >> ../rtl/aes128_decrypt.sv\n'] min_timeout_sec: 0.1 max_timeout_sec: 180.0
+Sending keys: ['echo "    parameter NBW_DATA = \'d128\\" >> ../rtl/aes128_decrypt.sv\n'] min_timeout_sec: 0.1 max_timeout_sec: 180.0
+Sending keys: ['echo ") (\\" >> ../rtl/aes128_decrypt.sv\n'] min_timeout_sec: 0.1 max_timeout_sec: 180.0
+Sending keys: ['echo "    input  logic                clk,\\" >> ../rtl/aes128_decrypt.sv\n'] min_timeout_sec: 0.1 max_timeout_sec: 180.0
+Sending keys: ['echo "    input  logic                rst_async_n,\\" >> ../rtl/aes128_decrypt.sv\n'] min_timeout_sec: 0.1 max_timeout_sec: 180.0
+Sending keys: ['echo "    input  logic                i_update_key,\\" >> ../rtl/aes128_decrypt.sv\n'] min_timeout_sec: 0.1 max_timeout_sec: 180.0
+Sending keys: ['echo "    input  logic [NBW_KEY-1:0]  i_key,\\" >> ../rtl/aes128_decrypt.sv\n'] min_timeout_sec: 0.1 max_timeout_sec: 180.0
+Sending keys: ['echo "    input  logic                i_start,\\" >> ../rtl/aes128_decrypt.sv\n'] min_timeout_sec: 0.1 max_timeout_sec: 180.0
+Sending keys: ['echo "    input  logic [NBW_DATA-1:0] i_data,\\" >> ../rtl/aes128_decrypt.sv\n'] min_timeout_sec: 0.1 max_timeout_sec: 180.0
+Sending keys: ['echo "    output logic                o_done,\\" >> ../rtl/aes128_decrypt.sv\n'] min_timeout_sec: 0.1 max_timeout_sec: 180.0
+Sending keys: ['echo "    output logic [NBW_DATA-1:0] o_data\\" >> ../rtl/aes128_decrypt.sv\n'] min_timeout_sec: 0.1 max_timeout_sec: 180.0
+Sending keys: ['echo ");\\" >> ../rtl/aes128_decrypt.sv\n'] min_timeout_sec: 0.1 max_timeout_sec: 180.0
+Sending keys: ['echo "// Internal parameters" >> ../rtl/aes128_decrypt.sv\n'] min_timeout_sec: 0.1 max_timeout_sec: 180.0
+Sending keys: ['echo "localparam NBW_BYTE   = \'d8;" >> ../rtl/aes128_decrypt.sv\n'] min_timeout_sec: 0.1 max_timeout_sec: 180.0
+Parser warnings: - Extra text detected before JSON object
+- Extra text detected after JSON object
+Sending keys: ['echo "localparam NBW_EX_KEY = \'d1408;" >> ../rtl/aes128_decrypt.sv\n'] min_timeout_sec: 0.1 max_timeout_sec: 180.0
+Trajectory dumped to /home/saketh/research/cvdp_benchmark/jobs/2026-03-11__19-16-07/cvdp_agentic_aes_encryption_decr__98Lx4zR/agent/trajectory.json
+Sending keys: ['echo "// Wires/Registers creation" >> ../rtl/aes128_decrypt.sv\n'] min_timeout_sec: 0.1 max_timeout_sec: 180.0
+Failed to retrieve model info for 'openrouter/openai/gpt-4o-mini': This model isn't mapped yet. model=openrouter/openai/gpt-4o-mini, custom_llm_provider=openrouter. Add it here - https://github.com/BerriAI/litellm/blob/main/model_prices_and_context_window.json.. Using fallback context limit: 1000000
+Sending keys: ['echo "logic [NBW_BYTE-1:0]   current_data_nx[4][4];" >> ../rtl/aes128_decrypt.sv\n'] min_timeout_sec: 0.1 max_timeout_sec: 180.0
+Sending keys: ['echo "logic [NBW_BYTE-1:0]   current_data_ff[4][4];" >> ../rtl/aes128_decrypt.sv\n'] min_timeout_sec: 0.1 max_timeout_sec: 180.0
+Sending keys: ['echo "logic [NBW_BYTE-1:0]   AddRoundKey[4][4];" >> ../rtl/aes128_decrypt.sv\n'] min_timeout_sec: 0.1 max_timeout_sec: 180.0
+Sending keys: ['echo "logic [NBW_BYTE-1:0]   SubBytes[4][4];" >> ../rtl/aes128_decrypt.sv\n'] min_timeout_sec: 0.1 max_timeout_sec: 180.0
+Sending keys: ['echo "logic [NBW_BYTE-1:0]   ShiftRows[4][4];" >> ../rtl/aes128_decrypt.sv\n'] min_timeout_sec: 0.1 max_timeout_sec: 180.0
+Sending keys: ['echo "logic                  key_done;" >> ../rtl/aes128_decrypt.sv\n'] min_timeout_sec: 0.1 max_timeout_sec: 180.0
+Sending keys: ['echo "logic [3:0]            round_ff;" >> ../rtl/aes128_decrypt.sv\n'] min_timeout_sec: 0.1 max_timeout_sec: 180.0
+Sending keys: ['echo "logic [NBW_EX_KEY-1:0] expanded_key;" >> ../rtl/aes128_decrypt.sv\n'] min_timeout_sec: 0.1 max_timeout_sec: 180.0
+Sending keys: ['echo "// Output assignment" >> ../rtl/aes128_decrypt.sv\n'] min_timeout_sec: 0.1 max_timeout_sec: 180.0
+Sending keys: ['echo "assign o_done = (round_ff == 4\'d0);" >> ../rtl/aes128_decrypt.sv\n'] min_timeout_sec: 0.1 max_timeout_sec: 180.0
+Sending keys: ['echo "generate" >> ../rtl/aes128_decrypt.sv\n'] min_timeout_sec: 0.1 max_timeout_sec: 180.0
+Sending keys: ['echo "    for(genvar i = 0; i < 4; i++) begin : out_row" >> ../rtl/aes128_decrypt.sv\n'] min_timeout_sec: 0.1 max_timeout_sec: 180.0
+Sending keys: ['echo "        for(genvar j = 0; j < 4; j++) begin : out_col" >> ../rtl/aes128_decrypt.sv\n'] min_timeout_sec: 0.1 max_timeout_sec: 180.0
+Sending keys: ['echo "            assign o_data[NBW_DATA-(4*j+i)*NBW_BYTE-1-:NBW_BYTE] = current_data_ff[i][j];" >> ../rtl/aes128_decrypt.sv\n'] min_timeout_sec: 0.1 max_timeout_sec: 180.0
+Sending keys: ['echo "        end" >> ../rtl/aes128_decrypt.sv\n'] min_timeout_sec: 0.1 max_timeout_sec: 180.0
+Sending keys: ['echo "    end" >> ../rtl/aes128_decrypt.sv\n'] min_timeout_sec: 0.1 max_timeout_sec: 180.0
+Sending keys: ['echo "endgenerate" >> ../rtl/aes128_decrypt.sv\n'] min_timeout_sec: 0.1 max_timeout_sec: 180.0
+Sending keys: ['echo "always_ff @(posedge clk or negedge rst_async_n) begin : inv_cypher_regs" >> ../rtl/aes128_decrypt.sv\n'] min_timeout_sec: 0.1 max_timeout_sec: 180.0
+Sending keys: ['echo "    if(!rst_async_n) begin" >> ../rtl/aes128_decrypt.sv\n'] min_timeout_sec: 0.1 max_timeout_sec: 180.0
+Sending keys: ['echo "        round_ff <= 4\'d0;" >> ../rtl/aes128_decrypt.sv\n'] min_timeout_sec: 0.1 max_timeout_sec: 180.0
+Sending keys: ['echo "        for(int i = 0; i < 4; i++) begin" >> ../rtl/aes128_decrypt.sv\n'] min_timeout_sec: 0.1 max_timeout_sec: 180.0
+Sending keys: ['echo "            for(int j = 0; j < 4; j++) begin" >> ../rtl/aes128_decrypt.sv\n'] min_timeout_sec: 0.1 max_timeout_sec: 180.0
+Sending keys: ['echo "                current_data_ff[i][j] <= 8\'d0;" >> ../rtl/aes128_decrypt.sv\n'] min_timeout_sec: 0.1 max_timeout_sec: 180.0
+Sending keys: ['echo "            end" >> ../rtl/aes128_decrypt.sv\n'] min_timeout_sec: 0.1 max_timeout_sec: 180.0
+Sending keys: ['echo "        end else begin" >> ../rtl/aes128_decrypt.sv\n'] min_timeout_sec: 0.1 max_timeout_sec: 180.0
+Sending keys: ['echo "            if(i_start & o_done) begin" >> ../rtl/aes128_decrypt.sv\n'] min_timeout_sec: 0.1 max_timeout_sec: 180.0
+Sending keys: ['echo "                round_ff <= 4\'d1;" >> ../rtl/aes128_decrypt.sv\n'] min_timeout_sec: 0.1 max_timeout_sec: 180.0
+Sending keys: ['echo "            end else if((round_ff > 4\'d1 && round_ff < 4\'d12) || key_done) begin" >> ../rtl/aes128_decrypt.sv\n'] min_timeout_sec: 0.1 max_timeout_sec: 180.0
+Sending keys: ['echo "                round_ff <= round_ff + 1\'b1;" >> ../rtl/aes128_decrypt.sv\n'] min_timeout_sec: 0.1 max_timeout_sec: 180.0
+Sending keys: ['echo "            end else begin" >> ../rtl/aes128_decrypt.sv\n'] min_timeout_sec: 0.1 max_timeout_sec: 180.0
+Sending keys: ['echo "                if(round_ff >= 4\'d12) begin" >> ../rtl/aes128_decrypt.sv\n'] min_timeout_sec: 0.1 max_timeout_sec: 180.0
+Sending keys: ['echo "                    round_ff <= 4\'d0;" >> ../rtl/aes128_decrypt.sv\n'] min_timeout_sec: 0.1 max_timeout_sec: 180.0
+Sending keys: ['echo "                end else begin" >> ../rtl/aes128_decrypt.sv\n'] min_timeout_sec: 0.1 max_timeout_sec: 180.0
+Sending keys: ['echo "                    round_ff <= 4\'d2;" >> ../rtl/aes128_decrypt.sv\n'] min_timeout_sec: 0.1 max_timeout_sec: 180.0
+Sending keys: ['echo "                end" >> ../rtl/aes128_decrypt.sv\n'] min_timeout_sec: 0.1 max_timeout_sec: 180.0
+Sending keys: ['echo "            end" >> ../rtl/aes128_decrypt.sv\n'] min_timeout_sec: 0.1 max_timeout_sec: 180.0
+Sending keys: ['echo "        for(int i = 0; i < 4; i++) begin" >> ../rtl/aes128_decrypt.sv\n'] min_timeout_sec: 0.1 max_timeout_sec: 180.0
+Sending keys: ['echo "            for(int j = 0; j < 4; j++) begin" >> ../rtl/aes128_decrypt.sv\n'] min_timeout_sec: 0.1 max_timeout_sec: 180.0
+Sending keys: ['echo "                current_data_ff[i][j] <= current_data_nx[i][j];" >> ../rtl/aes128_decrypt.sv\n'] min_timeout_sec: 0.1 max_timeout_sec: 180.0
+Sending keys: ['echo "            end" >> ../rtl/aes128_decrypt.sv\n'] min_timeout_sec: 0.1 max_timeout_sec: 180.0
+Parser warnings: - Extra text detected before JSON object
+- Extra text detected after JSON object
+Sending keys: ['echo "        end" >> ../rtl/aes128_decrypt.sv\n'] min_timeout_sec: 0.1 max_timeout_sec: 180.0
+Trajectory dumped to /home/saketh/research/cvdp_benchmark/jobs/2026-03-11__19-16-07/cvdp_agentic_aes_encryption_decr__98Lx4zR/agent/trajectory.json
+Sending keys: ['echo "    end" >> ../rtl/aes128_decrypt.sv\n'] min_timeout_sec: 0.1 max_timeout_sec: 180.0
+Failed to retrieve model info for 'openrouter/openai/gpt-4o-mini': This model isn't mapped yet. model=openrouter/openai/gpt-4o-mini, custom_llm_provider=openrouter. Add it here - https://github.com/BerriAI/litellm/blob/main/model_prices_and_context_window.json.. Using fallback context limit: 1000000
+Sending keys: ['echo "end" >> ../rtl/aes128_decrypt.sv\n'] min_timeout_sec: 0.1 max_timeout_sec: 180.0
+Sending keys: ['echo "endmodule : aes128_decrypt" >> ../rtl/aes128_decrypt.sv\n'] min_timeout_sec: 0.1 max_timeout_sec: 180.0
+Sending keys: ['verilator --cc tb_aes128_dec.sv --exe --build -o tb_aes128_dec -I../rtl --timing\n'] min_timeout_sec: 1.0 max_timeout_sec: 180.0
+Sending keys: ['./tb_aes128_dec\n'] min_timeout_sec: 10.0 max_timeout_sec: 180.0
+Parser warnings: - Extra text detected before JSON object
+- Extra text detected after JSON object
+Trajectory dumped to /home/saketh/research/cvdp_benchmark/jobs/2026-03-11__19-16-07/cvdp_agentic_aes_encryption_decr__98Lx4zR/agent/trajectory.json
+Failed to retrieve model info for 'openrouter/openai/gpt-4o-mini': This model isn't mapped yet. model=openrouter/openai/gpt-4o-mini, custom_llm_provider=openrouter. Add it here - https://github.com/BerriAI/litellm/blob/main/model_prices_and_context_window.json.. Using fallback context limit: 1000000
+Parser warnings: - Extra text detected before JSON object
+- Extra text detected after JSON object
+Trajectory dumped to /home/saketh/research/cvdp_benchmark/jobs/2026-03-11__19-16-07/cvdp_agentic_aes_encryption_decr__98Lx4zR/agent/trajectory.json
+Failed to retrieve model info for 'openrouter/openai/gpt-4o-mini': This model isn't mapped yet. model=openrouter/openai/gpt-4o-mini, custom_llm_provider=openrouter. Add it here - https://github.com/BerriAI/litellm/blob/main/model_prices_and_context_window.json.. Using fallback context limit: 1000000
+Trajectory dumped to /home/saketh/research/cvdp_benchmark/jobs/2026-03-11__19-16-07/cvdp_agentic_aes_encryption_decr__bXpWUVB/agent/trajectory.json
+Failed to retrieve model info for 'openrouter/openai/gpt-4o-mini': This model isn't mapped yet. model=openrouter/openai/gpt-4o-mini, custom_llm_provider=openrouter. Add it here - https://github.com/BerriAI/litellm/blob/main/model_prices_and_context_window.json.. Using fallback context limit: 1000000
+Parser warnings: - Extra text detected before JSON object
+- Extra text detected after JSON object
+Trajectory dumped to /home/saketh/research/cvdp_benchmark/jobs/2026-03-11__19-16-07/cvdp_agentic_aes_encryption_decr__98Lx4zR/agent/trajectory.json
+Failed to retrieve model info for 'openrouter/openai/gpt-4o-mini': This model isn't mapped yet. model=openrouter/openai/gpt-4o-mini, custom_llm_provider=openrouter. Add it here - https://github.com/BerriAI/litellm/blob/main/model_prices_and_context_window.json.. Using fallback context limit: 1000000
+Parser warnings: - Extra text detected before JSON object
+- Extra text detected after JSON object
+Trajectory dumped to /home/saketh/research/cvdp_benchmark/jobs/2026-03-11__19-16-07/cvdp_agentic_aes_encryption_decr__98Lx4zR/agent/trajectory.json
+Failed to retrieve model info for 'openrouter/openai/gpt-4o-mini': This model isn't mapped yet. model=openrouter/openai/gpt-4o-mini, custom_llm_provider=openrouter. Add it here - https://github.com/BerriAI/litellm/blob/main/model_prices_and_context_window.json.. Using fallback context limit: 1000000
+Parser warnings: - Extra text detected before JSON object
+- Extra text detected after JSON object
+Trajectory dumped to /home/saketh/research/cvdp_benchmark/jobs/2026-03-11__19-16-07/cvdp_agentic_aes_encryption_decr__98Lx4zR/agent/trajectory.json
+Failed to retrieve model info for 'openrouter/openai/gpt-4o-mini': This model isn't mapped yet. model=openrouter/openai/gpt-4o-mini, custom_llm_provider=openrouter. Add it here - https://github.com/BerriAI/litellm/blob/main/model_prices_and_context_window.json.. Using fallback context limit: 1000000
+Trajectory dumped to /home/saketh/research/cvdp_benchmark/jobs/2026-03-11__19-16-07/cvdp_agentic_aes_encryption_decr__bXpWUVB/agent/trajectory.json
+Trial cvdp_agentic_aes_encryption_decr__bXpWUVB cancelled
+Trajectory dumped to /home/saketh/research/cvdp_benchmark/jobs/2026-03-11__19-16-07/cvdp_agentic_aes_encryption_decr__98Lx4zR/agent/trajectory.json
+Trial cvdp_agentic_aes_encryption_decr__98Lx4zR cancelled

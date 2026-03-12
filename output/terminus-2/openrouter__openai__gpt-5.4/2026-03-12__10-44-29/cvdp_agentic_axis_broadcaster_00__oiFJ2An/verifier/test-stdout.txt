@@ -1,0 +1,36 @@
+Running service: direct
+============================= test session starts ==============================
+platform linux -- Python 3.9.2, pytest-8.3.2, pluggy-1.5.0 -- /usr/bin/python3
+cachedir: /rundir/harness/.cache
+rootdir: /src
+collecting ... collected 1 item
+
+../src/test_runner.py::test_axis_broadcast[0] 
+-------------------------------- live log call ---------------------------------
+INFO     Icarus:runner.py:480 Removing: /code/sim_build
+INFO     Icarus:runner.py:468 Running command iverilog -o /code/sim_build/sim.vvp -s axis_broadcast -g2012 -f /code/sim_build/cmds.f /code/rtl/axis_broadcast.sv in directory /code/sim_build
+INFO     Icarus:runner.py:468 Running command vvp -M /usr/local/lib/python3.9/dist-packages/cocotb/libs -m libcocotbvpi_icarus /code/sim_build/sim.vvp in directory /code/sim_build
+     -.--ns INFO     gpi                                ..mbed/gpi_embed.cpp:79   in set_program_name_in_venv        Did not detect Python virtual environment. Using system-wide Python interpreter
+     -.--ns INFO     gpi                                ../gpi/GpiCommon.cpp:101  in gpi_print_registered_impl       VPI registered
+     0.00ns INFO     cocotb                             Running on Icarus Verilog version 13.0 (devel)
+     0.00ns INFO     cocotb                             Running tests with cocotb v2.0.0.dev0+8d6c1a63 from /usr/local/lib/python3.9/dist-packages/cocotb
+     0.00ns INFO     cocotb                             Seeding Python random module with 1773327162
+     0.00ns INFO     cocotb.regression                  running test_axis_broadcast.test_axis_broadcast (1/1)
+reset successful 
+ previous data should be sent as one master is not ready
+ previous data received successfully
+ received data should be from the cycle where master is not ready
+ tested successfully
+    37.00ns INFO     cocotb.regression                  test_axis_broadcast.test_axis_broadcast passed
+    37.00ns INFO     cocotb.regression                  *************************************************************************************************
+                                                        ** TEST                                     STATUS  SIM TIME (ns)  REAL TIME (s)  RATIO (ns/s) **
+                                                        *************************************************************************************************
+                                                        ** test_axis_broadcast.test_axis_broadcast   PASS          37.00           0.00      22781.75  **
+                                                        *************************************************************************************************
+                                                        ** TESTS=1 PASS=1 FAIL=0 SKIP=0                            37.00           0.01       5562.14  **
+                                                        *************************************************************************************************
+                                                        
+INFO     Icarus:runner.py:438 Results file: /code/sim_build/test_axis_broadcast[0].None
+PASSED
+
+============================== 1 passed in 0.18s ===============================

@@ -1,0 +1,934 @@
+Running service: 01-new-tb
+============================= test session starts ==============================
+platform linux -- Python 3.9.2, pytest-8.3.2, pluggy-1.5.0 -- /usr/bin/python3
+cachedir: /rundir/harness/.cache
+rootdir: /src
+collecting ... collected 5 items
+
+../../src/test_runner.py::test_runner      -.--ns INFO     gpi                                ..mbed/gpi_embed.cpp:79   in set_program_name_in_venv        Did not detect Python virtual environment. Using system-wide Python interpreter
+     -.--ns INFO     gpi                                ../gpi/GpiCommon.cpp:101  in gpi_print_registered_impl       VPI registered
+     0.00ns INFO     cocotb                             Running on Icarus Verilog version 13.0 (devel)
+     0.00ns INFO     cocotb                             Running tests with cocotb v2.0.0.dev0+8d6c1a63 from /usr/local/lib/python3.9/dist-packages/cocotb
+     0.00ns INFO     cocotb                             Seeding Python random module with 1773327860
+     0.00ns INFO     cocotb.regression                  running test_crypto_accelerator.test_key_validation_and_encryption (1/1)
+                                                            Production-level testbench for the crypto accelerator:
+     0.00ns INFO     cocotb.crypto_accelerator          Testbench started with WIDTH=5 (max value = 31)
+    20.00ns INFO     cocotb.crypto_accelerator          Test Case 1: Valid Key Scenario
+    20.00ns INFO     cocotb.crypto_accelerator          Stimulus: candidate_e = 3, totient = 10, plaintext = 7, modulus = 11
+    20.00ns INFO     cocotb.crypto_accelerator          Expected: key_valid = 1 and ciphertext = 2
+   560.00ns INFO     cocotb.crypto_accelerator          Actual: key_valid = 1, ciphertext = 2
+   580.00ns INFO     cocotb.crypto_accelerator          Test Case 2: Invalid Key Scenario
+   580.00ns INFO     cocotb.crypto_accelerator          Stimulus: candidate_e = 4, totient = 10, plaintext = 7, modulus = 11
+   580.00ns INFO     cocotb.crypto_accelerator          Expected: key_valid = 0 and ciphertext = 0
+   690.00ns INFO     cocotb.crypto_accelerator          Actual: key_valid = 0, ciphertext = 0
+   710.00ns INFO     cocotb.crypto_accelerator          Test Case 3: Randomized Stress Test
+  1390.00ns INFO     cocotb.crypto_accelerator          Iteration 0: Stimulus - candidate_e = 5, totient = 26, plaintext = 11, modulus = 25
+  1390.00ns INFO     cocotb.crypto_accelerator          Iteration 0: Expected - key_valid = 1, ciphertext = 1
+  1390.00ns INFO     cocotb.crypto_accelerator          Iteration 0: Actual - key_valid = 1, ciphertext = 1
+  2270.00ns INFO     cocotb.crypto_accelerator          Iteration 1: Stimulus - candidate_e = 13, totient = 27, plaintext = 20, modulus = 30
+  2270.00ns INFO     cocotb.crypto_accelerator          Iteration 1: Expected - key_valid = 1, ciphertext = 20
+  2270.00ns INFO     cocotb.crypto_accelerator          Iteration 1: Actual - key_valid = 1, ciphertext = 20
+  3260.00ns INFO     cocotb.crypto_accelerator          Iteration 2: Stimulus - candidate_e = 19, totient = 21, plaintext = 26, modulus = 7
+  3260.00ns INFO     cocotb.crypto_accelerator          Iteration 2: Expected - key_valid = 1, ciphertext = 5
+  3260.00ns INFO     cocotb.crypto_accelerator          Iteration 2: Actual - key_valid = 1, ciphertext = 5
+  3410.00ns INFO     cocotb.crypto_accelerator          Iteration 3: Stimulus - candidate_e = 28, totient = 26, plaintext = 13, modulus = 24
+  3410.00ns INFO     cocotb.crypto_accelerator          Iteration 3: Expected - key_valid = 0, ciphertext = 0
+  3410.00ns INFO     cocotb.crypto_accelerator          Iteration 3: Actual - key_valid = 0, ciphertext = 0
+  4300.00ns INFO     cocotb.crypto_accelerator          Iteration 4: Stimulus - candidate_e = 13, totient = 24, plaintext = 19, modulus = 31
+  4300.00ns INFO     cocotb.crypto_accelerator          Iteration 4: Expected - key_valid = 1, ciphertext = 14
+  4300.00ns INFO     cocotb.crypto_accelerator          Iteration 4: Actual - key_valid = 1, ciphertext = 14
+  4430.00ns INFO     cocotb.crypto_accelerator          Iteration 5: Stimulus - candidate_e = 6, totient = 20, plaintext = 12, modulus = 15
+  4430.00ns INFO     cocotb.crypto_accelerator          Iteration 5: Expected - key_valid = 0, ciphertext = 0
+  4430.00ns INFO     cocotb.crypto_accelerator          Iteration 5: Actual - key_valid = 0, ciphertext = 0
+  5510.00ns INFO     cocotb.crypto_accelerator          Iteration 6: Stimulus - candidate_e = 30, totient = 19, plaintext = 22, modulus = 23
+  5510.00ns INFO     cocotb.crypto_accelerator          Iteration 6: Expected - key_valid = 1, ciphertext = 1
+  5510.00ns INFO     cocotb.crypto_accelerator          Iteration 6: Actual - key_valid = 1, ciphertext = 1
+  6300.00ns INFO     cocotb.crypto_accelerator          Iteration 7: Stimulus - candidate_e = 9, totient = 23, plaintext = 23, modulus = 30
+  6300.00ns INFO     cocotb.crypto_accelerator          Iteration 7: Expected - key_valid = 1, ciphertext = 23
+  6300.00ns INFO     cocotb.crypto_accelerator          Iteration 7: Actual - key_valid = 1, ciphertext = 23
+  7310.00ns INFO     cocotb.crypto_accelerator          Iteration 8: Stimulus - candidate_e = 22, totient = 23, plaintext = 25, modulus = 10
+  7310.00ns INFO     cocotb.crypto_accelerator          Iteration 8: Expected - key_valid = 1, ciphertext = 5
+  7310.00ns INFO     cocotb.crypto_accelerator          Iteration 8: Actual - key_valid = 1, ciphertext = 5
+  8120.00ns INFO     cocotb.crypto_accelerator          Iteration 9: Stimulus - candidate_e = 9, totient = 20, plaintext = 17, modulus = 24
+  8120.00ns INFO     cocotb.crypto_accelerator          Iteration 9: Expected - key_valid = 1, ciphertext = 17
+  8120.00ns INFO     cocotb.crypto_accelerator          Iteration 9: Actual - key_valid = 1, ciphertext = 17
+  8880.00ns INFO     cocotb.crypto_accelerator          Iteration 10: Stimulus - candidate_e = 7, totient = 4, plaintext = 16, modulus = 27
+  8880.00ns INFO     cocotb.crypto_accelerator          Iteration 10: Expected - key_valid = 1, ciphertext = 25
+  8880.00ns INFO     cocotb.crypto_accelerator          Iteration 10: Actual - key_valid = 1, ciphertext = 25
+  9870.00ns INFO     cocotb.crypto_accelerator          Iteration 11: Stimulus - candidate_e = 21, totient = 19, plaintext = 29, modulus = 12
+  9870.00ns INFO     cocotb.crypto_accelerator          Iteration 11: Expected - key_valid = 1, ciphertext = 5
+  9870.00ns INFO     cocotb.crypto_accelerator          Iteration 11: Actual - key_valid = 1, ciphertext = 5
+ 10680.00ns INFO     cocotb.crypto_accelerator          Iteration 12: Stimulus - candidate_e = 12, totient = 17, plaintext = 4, modulus = 29
+ 10680.00ns INFO     cocotb.crypto_accelerator          Iteration 12: Expected - key_valid = 1, ciphertext = 20
+ 10680.00ns INFO     cocotb.crypto_accelerator          Iteration 12: Actual - key_valid = 1, ciphertext = 20
+ 10780.00ns INFO     cocotb.crypto_accelerator          Iteration 13: Stimulus - candidate_e = 7, totient = 14, plaintext = 14, modulus = 21
+ 10780.00ns INFO     cocotb.crypto_accelerator          Iteration 13: Expected - key_valid = 0, ciphertext = 0
+ 10780.00ns INFO     cocotb.crypto_accelerator          Iteration 13: Actual - key_valid = 0, ciphertext = 0
+ 11850.00ns INFO     cocotb.crypto_accelerator          Iteration 14: Stimulus - candidate_e = 27, totient = 25, plaintext = 22, modulus = 13
+ 11850.00ns INFO     cocotb.crypto_accelerator          Iteration 14: Expected - key_valid = 1, ciphertext = 1
+ 11850.00ns INFO     cocotb.crypto_accelerator          Iteration 14: Actual - key_valid = 1, ciphertext = 1
+ 11990.00ns INFO     cocotb.crypto_accelerator          Iteration 15: Stimulus - candidate_e = 10, totient = 8, plaintext = 22, modulus = 22
+ 11990.00ns INFO     cocotb.crypto_accelerator          Iteration 15: Expected - key_valid = 0, ciphertext = 0
+ 11990.00ns INFO     cocotb.crypto_accelerator          Iteration 15: Actual - key_valid = 0, ciphertext = 0
+ 12110.00ns INFO     cocotb.crypto_accelerator          Iteration 16: Stimulus - candidate_e = 6, totient = 21, plaintext = 20, modulus = 11
+ 12110.00ns INFO     cocotb.crypto_accelerator          Iteration 16: Expected - key_valid = 0, ciphertext = 0
+ 12110.00ns INFO     cocotb.crypto_accelerator          Iteration 16: Actual - key_valid = 0, ciphertext = 0
+ 12210.00ns INFO     cocotb.crypto_accelerator          Iteration 17: Stimulus - candidate_e = 9, totient = 27, plaintext = 21, modulus = 17
+ 12210.00ns INFO     cocotb.crypto_accelerator          Iteration 17: Expected - key_valid = 0, ciphertext = 0
+ 12210.00ns INFO     cocotb.crypto_accelerator          Iteration 17: Actual - key_valid = 0, ciphertext = 0
+ 13010.00ns INFO     cocotb.crypto_accelerator          Iteration 18: Stimulus - candidate_e = 10, totient = 17, plaintext = 5, modulus = 14
+ 13010.00ns INFO     cocotb.crypto_accelerator          Iteration 18: Expected - key_valid = 1, ciphertext = 9
+ 13010.00ns INFO     cocotb.crypto_accelerator          Iteration 18: Actual - key_valid = 1, ciphertext = 9
+ 13890.00ns INFO     cocotb.crypto_accelerator          Iteration 19: Stimulus - candidate_e = 11, totient = 20, plaintext = 2, modulus = 8
+ 13890.00ns INFO     cocotb.crypto_accelerator          Iteration 19: Expected - key_valid = 1, ciphertext = 0
+ 13890.00ns INFO     cocotb.crypto_accelerator          Iteration 19: Actual - key_valid = 1, ciphertext = 0
+ 15040.00ns INFO     cocotb.crypto_accelerator          Iteration 20: Stimulus - candidate_e = 31, totient = 3, plaintext = 2, modulus = 10
+ 15040.00ns INFO     cocotb.crypto_accelerator          Iteration 20: Expected - key_valid = 1, ciphertext = 8
+ 15040.00ns INFO     cocotb.crypto_accelerator          Iteration 20: Actual - key_valid = 1, ciphertext = 8
+ 16040.00ns INFO     cocotb.crypto_accelerator          Iteration 21: Stimulus - candidate_e = 25, totient = 4, plaintext = 14, modulus = 20
+ 16040.00ns INFO     cocotb.crypto_accelerator          Iteration 21: Expected - key_valid = 1, ciphertext = 4
+ 16040.00ns INFO     cocotb.crypto_accelerator          Iteration 21: Actual - key_valid = 1, ciphertext = 4
+ 17020.00ns INFO     cocotb.crypto_accelerator          Iteration 22: Stimulus - candidate_e = 25, totient = 7, plaintext = 0, modulus = 5
+ 17020.00ns INFO     cocotb.crypto_accelerator          Iteration 22: Expected - key_valid = 1, ciphertext = 0
+ 17020.00ns INFO     cocotb.crypto_accelerator          Iteration 22: Actual - key_valid = 1, ciphertext = 0
+ 17160.00ns INFO     cocotb.crypto_accelerator          Iteration 23: Stimulus - candidate_e = 18, totient = 22, plaintext = 18, modulus = 24
+ 17160.00ns INFO     cocotb.crypto_accelerator          Iteration 23: Expected - key_valid = 0, ciphertext = 0
+ 17160.00ns INFO     cocotb.crypto_accelerator          Iteration 23: Actual - key_valid = 0, ciphertext = 0
+ 17980.00ns INFO     cocotb.crypto_accelerator          Iteration 24: Stimulus - candidate_e = 10, totient = 21, plaintext = 15, modulus = 30
+ 17980.00ns INFO     cocotb.crypto_accelerator          Iteration 24: Expected - key_valid = 1, ciphertext = 15
+ 17980.00ns INFO     cocotb.crypto_accelerator          Iteration 24: Actual - key_valid = 1, ciphertext = 15
+ 18070.00ns INFO     cocotb.crypto_accelerator          Iteration 25: Stimulus - candidate_e = 26, totient = 26, plaintext = 28, modulus = 4
+ 18070.00ns INFO     cocotb.crypto_accelerator          Iteration 25: Expected - key_valid = 0, ciphertext = 0
+ 18070.00ns INFO     cocotb.crypto_accelerator          Iteration 25: Actual - key_valid = 0, ciphertext = 0
+ 18980.00ns INFO     cocotb.crypto_accelerator          Iteration 26: Stimulus - candidate_e = 17, totient = 30, plaintext = 17, modulus = 30
+ 18980.00ns INFO     cocotb.crypto_accelerator          Iteration 26: Expected - key_valid = 1, ciphertext = 17
+ 18980.00ns INFO     cocotb.crypto_accelerator          Iteration 26: Actual - key_valid = 1, ciphertext = 17
+ 19070.00ns INFO     cocotb.crypto_accelerator          Iteration 27: Stimulus - candidate_e = 29, totient = 29, plaintext = 29, modulus = 2
+ 19070.00ns INFO     cocotb.crypto_accelerator          Iteration 27: Expected - key_valid = 0, ciphertext = 0
+ 19070.00ns INFO     cocotb.crypto_accelerator          Iteration 27: Actual - key_valid = 0, ciphertext = 0
+ 20060.00ns INFO     cocotb.crypto_accelerator          Iteration 28: Stimulus - candidate_e = 21, totient = 23, plaintext = 25, modulus = 14
+ 20060.00ns INFO     cocotb.crypto_accelerator          Iteration 28: Expected - key_valid = 1, ciphertext = 1
+ 20060.00ns INFO     cocotb.crypto_accelerator          Iteration 28: Actual - key_valid = 1, ciphertext = 1
+ 20150.00ns INFO     cocotb.crypto_accelerator          Iteration 29: Stimulus - candidate_e = 10, totient = 10, plaintext = 14, modulus = 24
+ 20150.00ns INFO     cocotb.crypto_accelerator          Iteration 29: Expected - key_valid = 0, ciphertext = 0
+ 20150.00ns INFO     cocotb.crypto_accelerator          Iteration 29: Actual - key_valid = 0, ciphertext = 0
+ 21030.00ns INFO     cocotb.crypto_accelerator          Iteration 30: Stimulus - candidate_e = 11, totient = 20, plaintext = 16, modulus = 9
+ 21030.00ns INFO     cocotb.crypto_accelerator          Iteration 30: Expected - key_valid = 1, ciphertext = 4
+ 21030.00ns INFO     cocotb.crypto_accelerator          Iteration 30: Actual - key_valid = 1, ciphertext = 4
+ 22100.00ns INFO     cocotb.crypto_accelerator          Iteration 31: Stimulus - candidate_e = 29, totient = 6, plaintext = 13, modulus = 31
+ 22100.00ns INFO     cocotb.crypto_accelerator          Iteration 31: Expected - key_valid = 1, ciphertext = 12
+ 22100.00ns INFO     cocotb.crypto_accelerator          Iteration 31: Actual - key_valid = 1, ciphertext = 12
+ 23120.00ns INFO     cocotb.crypto_accelerator          Iteration 32: Stimulus - candidate_e = 25, totient = 24, plaintext = 29, modulus = 15
+ 23120.00ns INFO     cocotb.crypto_accelerator          Iteration 32: Expected - key_valid = 1, ciphertext = 14
+ 23120.00ns INFO     cocotb.crypto_accelerator          Iteration 32: Actual - key_valid = 1, ciphertext = 14
+ 24130.00ns INFO     cocotb.crypto_accelerator          Iteration 33: Stimulus - candidate_e = 25, totient = 17, plaintext = 20, modulus = 10
+ 24130.00ns INFO     cocotb.crypto_accelerator          Iteration 33: Expected - key_valid = 1, ciphertext = 0
+ 24130.00ns INFO     cocotb.crypto_accelerator          Iteration 33: Actual - key_valid = 1, ciphertext = 0
+ 24260.00ns INFO     cocotb.crypto_accelerator          Iteration 34: Stimulus - candidate_e = 15, totient = 27, plaintext = 21, modulus = 4
+ 24260.00ns INFO     cocotb.crypto_accelerator          Iteration 34: Expected - key_valid = 0, ciphertext = 0
+ 24260.00ns INFO     cocotb.crypto_accelerator          Iteration 34: Actual - key_valid = 0, ciphertext = 0
+ 24370.00ns INFO     cocotb.crypto_accelerator          Iteration 35: Stimulus - candidate_e = 2, totient = 6, plaintext = 21, modulus = 24
+ 24370.00ns INFO     cocotb.crypto_accelerator          Iteration 35: Expected - key_valid = 0, ciphertext = 0
+ 24370.00ns INFO     cocotb.crypto_accelerator          Iteration 35: Actual - key_valid = 0, ciphertext = 0
+ 25440.00ns INFO     cocotb.crypto_accelerator          Iteration 36: Stimulus - candidate_e = 29, totient = 2, plaintext = 26, modulus = 9
+ 25440.00ns INFO     cocotb.crypto_accelerator          Iteration 36: Expected - key_valid = 1, ciphertext = 8
+ 25440.00ns INFO     cocotb.crypto_accelerator          Iteration 36: Actual - key_valid = 1, ciphertext = 8
+ 26340.00ns INFO     cocotb.crypto_accelerator          Iteration 37: Stimulus - candidate_e = 18, totient = 1, plaintext = 16, modulus = 5
+ 26340.00ns INFO     cocotb.crypto_accelerator          Iteration 37: Expected - key_valid = 1, ciphertext = 1
+ 26340.00ns INFO     cocotb.crypto_accelerator          Iteration 37: Actual - key_valid = 1, ciphertext = 1
+ 27260.00ns INFO     cocotb.crypto_accelerator          Iteration 38: Stimulus - candidate_e = 20, totient = 9, plaintext = 12, modulus = 24
+ 27260.00ns INFO     cocotb.crypto_accelerator          Iteration 38: Expected - key_valid = 1, ciphertext = 0
+ 27260.00ns INFO     cocotb.crypto_accelerator          Iteration 38: Actual - key_valid = 1, ciphertext = 0
+ 28420.00ns INFO     cocotb.crypto_accelerator          Iteration 39: Stimulus - candidate_e = 31, totient = 22, plaintext = 12, modulus = 30
+ 28420.00ns INFO     cocotb.crypto_accelerator          Iteration 39: Expected - key_valid = 1, ciphertext = 18
+ 28420.00ns INFO     cocotb.crypto_accelerator          Iteration 39: Actual - key_valid = 1, ciphertext = 18
+ 29250.00ns INFO     cocotb.crypto_accelerator          Iteration 40: Stimulus - candidate_e = 16, totient = 3, plaintext = 30, modulus = 29
+ 29250.00ns INFO     cocotb.crypto_accelerator          Iteration 40: Expected - key_valid = 1, ciphertext = 1
+ 29250.00ns INFO     cocotb.crypto_accelerator          Iteration 40: Actual - key_valid = 1, ciphertext = 1
+ 30060.00ns INFO     cocotb.crypto_accelerator          Iteration 41: Stimulus - candidate_e = 12, totient = 29, plaintext = 26, modulus = 21
+ 30060.00ns INFO     cocotb.crypto_accelerator          Iteration 41: Expected - key_valid = 1, ciphertext = 1
+ 30060.00ns INFO     cocotb.crypto_accelerator          Iteration 41: Actual - key_valid = 1, ciphertext = 1
+ 30180.00ns INFO     cocotb.crypto_accelerator          Iteration 42: Stimulus - candidate_e = 2, totient = 10, plaintext = 2, modulus = 23
+ 30180.00ns INFO     cocotb.crypto_accelerator          Iteration 42: Expected - key_valid = 0, ciphertext = 0
+ 30180.00ns INFO     cocotb.crypto_accelerator          Iteration 42: Actual - key_valid = 0, ciphertext = 0
+ 30300.00ns INFO     cocotb.crypto_accelerator          Iteration 43: Stimulus - candidate_e = 10, totient = 2, plaintext = 11, modulus = 7
+ 30300.00ns INFO     cocotb.crypto_accelerator          Iteration 43: Expected - key_valid = 0, ciphertext = 0
+ 30300.00ns INFO     cocotb.crypto_accelerator          Iteration 43: Actual - key_valid = 0, ciphertext = 0
+ 31380.00ns INFO     cocotb.crypto_accelerator          Iteration 44: Stimulus - candidate_e = 30, totient = 19, plaintext = 19, modulus = 30
+ 31380.00ns INFO     cocotb.crypto_accelerator          Iteration 44: Expected - key_valid = 1, ciphertext = 1
+ 31380.00ns INFO     cocotb.crypto_accelerator          Iteration 44: Actual - key_valid = 1, ciphertext = 1
+ 31520.00ns INFO     cocotb.crypto_accelerator          Iteration 45: Stimulus - candidate_e = 28, totient = 18, plaintext = 23, modulus = 27
+ 31520.00ns INFO     cocotb.crypto_accelerator          Iteration 45: Expected - key_valid = 0, ciphertext = 0
+ 31520.00ns INFO     cocotb.crypto_accelerator          Iteration 45: Actual - key_valid = 0, ciphertext = 0
+ 32700.00ns INFO     cocotb.crypto_accelerator          Iteration 46: Stimulus - candidate_e = 31, totient = 20, plaintext = 21, modulus = 18
+ 32700.00ns INFO     cocotb.crypto_accelerator          Iteration 46: Expected - key_valid = 1, ciphertext = 9
+ 32700.00ns INFO     cocotb.crypto_accelerator          Iteration 46: Actual - key_valid = 1, ciphertext = 9
+ 33290.00ns INFO     cocotb.crypto_accelerator          Iteration 47: Stimulus - candidate_e = 4, totient = 3, plaintext = 19, modulus = 20
+ 33290.00ns INFO     cocotb.crypto_accelerator          Iteration 47: Expected - key_valid = 1, ciphertext = 1
+ 33290.00ns INFO     cocotb.crypto_accelerator          Iteration 47: Actual - key_valid = 1, ciphertext = 1
+ 33440.00ns INFO     cocotb.crypto_accelerator          Iteration 48: Stimulus - candidate_e = 10, totient = 26, plaintext = 5, modulus = 24
+ 33440.00ns INFO     cocotb.crypto_accelerator          Iteration 48: Expected - key_valid = 0, ciphertext = 0
+ 33440.00ns INFO     cocotb.crypto_accelerator          Iteration 48: Actual - key_valid = 0, ciphertext = 0
+ 33570.00ns INFO     cocotb.crypto_accelerator          Iteration 49: Stimulus - candidate_e = 20, totient = 2, plaintext = 28, modulus = 15
+ 33570.00ns INFO     cocotb.crypto_accelerator          Iteration 49: Expected - key_valid = 0, ciphertext = 0
+ 33570.00ns INFO     cocotb.crypto_accelerator          Iteration 49: Actual - key_valid = 0, ciphertext = 0
+ 33590.00ns INFO     cocotb.crypto_accelerator          Test Case 4: Boundary Conditions
+ 33590.00ns INFO     cocotb.crypto_accelerator          Stimulus: candidate_e, totient, plaintext, modulus = 31 (maximum value)
+ 33590.00ns INFO     cocotb.crypto_accelerator          Expected: key_valid = 0 and ciphertext = 0
+ 33660.00ns INFO     cocotb.crypto_accelerator          Actual: key_valid = 0, ciphertext = 0
+ 33660.00ns INFO     cocotb.crypto_accelerator          All tests passed successfully for the crypto accelerator.
+ 33660.00ns INFO     cocotb.regression                  test_crypto_accelerator.test_key_validation_and_encryption passed
+ 33660.00ns INFO     cocotb.regression                  ********************************************************************************************************************
+                                                        ** TEST                                                        STATUS  SIM TIME (ns)  REAL TIME (s)  RATIO (ns/s) **
+                                                        ********************************************************************************************************************
+                                                        ** test_crypto_accelerator.test_key_validation_and_encryption   PASS       33660.00           0.46      72945.92  **
+                                                        ********************************************************************************************************************
+                                                        ** TESTS=1 PASS=1 FAIL=0 SKIP=0                                            33660.00           0.47      71429.87  **
+                                                        ********************************************************************************************************************
+                                                        
+FST info: dumpfile /code/rundir/sim_build/crypto_accelerator.fst opened for output.
+[DEBUG] Running simulation with WIDTH=5
+[DEBUG] Parameters: {'WIDTH': 5}
+PASSED
+../../src/test_runner.py::test_crypto_accelerator[4]      -.--ns INFO     gpi                                ..mbed/gpi_embed.cpp:79   in set_program_name_in_venv        Did not detect Python virtual environment. Using system-wide Python interpreter
+     -.--ns INFO     gpi                                ../gpi/GpiCommon.cpp:101  in gpi_print_registered_impl       VPI registered
+     0.00ns INFO     cocotb                             Running on Icarus Verilog version 13.0 (devel)
+     0.00ns INFO     cocotb                             Running tests with cocotb v2.0.0.dev0+8d6c1a63 from /usr/local/lib/python3.9/dist-packages/cocotb
+     0.00ns INFO     cocotb                             Seeding Python random module with 1773327861
+     0.00ns INFO     cocotb.regression                  running test_crypto_accelerator.test_key_validation_and_encryption (1/1)
+                                                            Production-level testbench for the crypto accelerator:
+     0.00ns INFO     cocotb.crypto_accelerator          Testbench started with WIDTH=4 (max value = 15)
+    20.00ns INFO     cocotb.crypto_accelerator          Test Case 1: Valid Key Scenario
+    20.00ns INFO     cocotb.crypto_accelerator          Stimulus: candidate_e = 3, totient = 10, plaintext = 7, modulus = 11
+    20.00ns INFO     cocotb.crypto_accelerator          Expected: key_valid = 1 and ciphertext = 2
+   520.00ns INFO     cocotb.crypto_accelerator          Actual: key_valid = 1, ciphertext = 2
+   540.00ns INFO     cocotb.crypto_accelerator          Test Case 2: Invalid Key Scenario
+   540.00ns INFO     cocotb.crypto_accelerator          Stimulus: candidate_e = 4, totient = 10, plaintext = 7, modulus = 11
+   540.00ns INFO     cocotb.crypto_accelerator          Expected: key_valid = 0 and ciphertext = 0
+   650.00ns INFO     cocotb.crypto_accelerator          Actual: key_valid = 0, ciphertext = 0
+   670.00ns INFO     cocotb.crypto_accelerator          Test Case 3: Randomized Stress Test
+  1380.00ns INFO     cocotb.crypto_accelerator          Iteration 0: Stimulus - candidate_e = 9, totient = 14, plaintext = 11, modulus = 14
+  1380.00ns INFO     cocotb.crypto_accelerator          Iteration 0: Expected - key_valid = 1, ciphertext = 1
+  1380.00ns INFO     cocotb.crypto_accelerator          Iteration 0: Actual - key_valid = 1, ciphertext = 1
+  1520.00ns INFO     cocotb.crypto_accelerator          Iteration 1: Stimulus - candidate_e = 12, totient = 14, plaintext = 4, modulus = 9
+  1520.00ns INFO     cocotb.crypto_accelerator          Iteration 1: Expected - key_valid = 0, ciphertext = 0
+  1520.00ns INFO     cocotb.crypto_accelerator          Iteration 1: Actual - key_valid = 0, ciphertext = 0
+  1630.00ns INFO     cocotb.crypto_accelerator          Iteration 2: Stimulus - candidate_e = 9, totient = 6, plaintext = 8, modulus = 7
+  1630.00ns INFO     cocotb.crypto_accelerator          Iteration 2: Expected - key_valid = 0, ciphertext = 0
+  1630.00ns INFO     cocotb.crypto_accelerator          Iteration 2: Actual - key_valid = 0, ciphertext = 0
+  2330.00ns INFO     cocotb.crypto_accelerator          Iteration 3: Stimulus - candidate_e = 7, totient = 6, plaintext = 12, modulus = 4
+  2330.00ns INFO     cocotb.crypto_accelerator          Iteration 3: Expected - key_valid = 1, ciphertext = 0
+  2330.00ns INFO     cocotb.crypto_accelerator          Iteration 3: Actual - key_valid = 1, ciphertext = 0
+  2960.00ns INFO     cocotb.crypto_accelerator          Iteration 4: Stimulus - candidate_e = 5, totient = 4, plaintext = 2, modulus = 1
+  2960.00ns INFO     cocotb.crypto_accelerator          Iteration 4: Expected - key_valid = 1, ciphertext = 0
+  2960.00ns INFO     cocotb.crypto_accelerator          Iteration 4: Actual - key_valid = 1, ciphertext = 0
+  3410.00ns INFO     cocotb.crypto_accelerator          Iteration 5: Stimulus - candidate_e = 2, totient = 5, plaintext = 6, modulus = 13
+  3410.00ns INFO     cocotb.crypto_accelerator          Iteration 5: Expected - key_valid = 1, ciphertext = 10
+  3410.00ns INFO     cocotb.crypto_accelerator          Iteration 5: Actual - key_valid = 1, ciphertext = 10
+  4040.00ns INFO     cocotb.crypto_accelerator          Iteration 6: Stimulus - candidate_e = 5, totient = 14, plaintext = 8, modulus = 13
+  4040.00ns INFO     cocotb.crypto_accelerator          Iteration 6: Expected - key_valid = 1, ciphertext = 8
+  4040.00ns INFO     cocotb.crypto_accelerator          Iteration 6: Actual - key_valid = 1, ciphertext = 8
+  4860.00ns INFO     cocotb.crypto_accelerator          Iteration 7: Stimulus - candidate_e = 13, totient = 10, plaintext = 5, modulus = 14
+  4860.00ns INFO     cocotb.crypto_accelerator          Iteration 7: Expected - key_valid = 1, ciphertext = 5
+  4860.00ns INFO     cocotb.crypto_accelerator          Iteration 7: Actual - key_valid = 1, ciphertext = 5
+  4950.00ns INFO     cocotb.crypto_accelerator          Iteration 8: Stimulus - candidate_e = 11, totient = 11, plaintext = 14, modulus = 4
+  4950.00ns INFO     cocotb.crypto_accelerator          Iteration 8: Expected - key_valid = 0, ciphertext = 0
+  4950.00ns INFO     cocotb.crypto_accelerator          Iteration 8: Actual - key_valid = 0, ciphertext = 0
+  5680.00ns INFO     cocotb.crypto_accelerator          Iteration 9: Stimulus - candidate_e = 9, totient = 5, plaintext = 10, modulus = 9
+  5680.00ns INFO     cocotb.crypto_accelerator          Iteration 9: Expected - key_valid = 1, ciphertext = 1
+  5680.00ns INFO     cocotb.crypto_accelerator          Iteration 9: Actual - key_valid = 1, ciphertext = 1
+  6500.00ns INFO     cocotb.crypto_accelerator          Iteration 10: Stimulus - candidate_e = 11, totient = 8, plaintext = 15, modulus = 6
+  6500.00ns INFO     cocotb.crypto_accelerator          Iteration 10: Expected - key_valid = 1, ciphertext = 3
+  6500.00ns INFO     cocotb.crypto_accelerator          Iteration 10: Actual - key_valid = 1, ciphertext = 3
+  6590.00ns INFO     cocotb.crypto_accelerator          Iteration 11: Stimulus - candidate_e = 5, totient = 5, plaintext = 0, modulus = 2
+  6590.00ns INFO     cocotb.crypto_accelerator          Iteration 11: Expected - key_valid = 0, ciphertext = 0
+  6590.00ns INFO     cocotb.crypto_accelerator          Iteration 11: Actual - key_valid = 0, ciphertext = 0
+  7400.00ns INFO     cocotb.crypto_accelerator          Iteration 12: Stimulus - candidate_e = 14, totient = 11, plaintext = 2, modulus = 15
+  7400.00ns INFO     cocotb.crypto_accelerator          Iteration 12: Expected - key_valid = 1, ciphertext = 4
+  7400.00ns INFO     cocotb.crypto_accelerator          Iteration 12: Actual - key_valid = 1, ciphertext = 4
+  8130.00ns INFO     cocotb.crypto_accelerator          Iteration 13: Stimulus - candidate_e = 10, totient = 7, plaintext = 8, modulus = 13
+  8130.00ns INFO     cocotb.crypto_accelerator          Iteration 13: Expected - key_valid = 1, ciphertext = 12
+  8130.00ns INFO     cocotb.crypto_accelerator          Iteration 13: Actual - key_valid = 1, ciphertext = 12
+  8930.00ns INFO     cocotb.crypto_accelerator          Iteration 14: Stimulus - candidate_e = 11, totient = 2, plaintext = 0, modulus = 2
+  8930.00ns INFO     cocotb.crypto_accelerator          Iteration 14: Expected - key_valid = 1, ciphertext = 0
+  8930.00ns INFO     cocotb.crypto_accelerator          Iteration 14: Actual - key_valid = 1, ciphertext = 0
+  9030.00ns INFO     cocotb.crypto_accelerator          Iteration 15: Stimulus - candidate_e = 5, totient = 10, plaintext = 1, modulus = 11
+  9030.00ns INFO     cocotb.crypto_accelerator          Iteration 15: Expected - key_valid = 0, ciphertext = 0
+  9030.00ns INFO     cocotb.crypto_accelerator          Iteration 15: Actual - key_valid = 0, ciphertext = 0
+  9380.00ns INFO     cocotb.crypto_accelerator          Iteration 16: Stimulus - candidate_e = 1, totient = 8, plaintext = 4, modulus = 12
+  9380.00ns INFO     cocotb.crypto_accelerator          Iteration 16: Expected - key_valid = 1, ciphertext = 4
+  9380.00ns INFO     cocotb.crypto_accelerator          Iteration 16: Actual - key_valid = 1, ciphertext = 4
+  9720.00ns INFO     cocotb.crypto_accelerator          Iteration 17: Stimulus - candidate_e = 1, totient = 6, plaintext = 8, modulus = 1
+  9720.00ns INFO     cocotb.crypto_accelerator          Iteration 17: Expected - key_valid = 1, ciphertext = 0
+  9720.00ns INFO     cocotb.crypto_accelerator          Iteration 17: Actual - key_valid = 1, ciphertext = 0
+  9840.00ns INFO     cocotb.crypto_accelerator          Iteration 18: Stimulus - candidate_e = 2, totient = 12, plaintext = 0, modulus = 9
+  9840.00ns INFO     cocotb.crypto_accelerator          Iteration 18: Expected - key_valid = 0, ciphertext = 0
+  9840.00ns INFO     cocotb.crypto_accelerator          Iteration 18: Actual - key_valid = 0, ciphertext = 0
+ 10350.00ns INFO     cocotb.crypto_accelerator          Iteration 19: Stimulus - candidate_e = 3, totient = 2, plaintext = 2, modulus = 12
+ 10350.00ns INFO     cocotb.crypto_accelerator          Iteration 19: Expected - key_valid = 1, ciphertext = 8
+ 10350.00ns INFO     cocotb.crypto_accelerator          Iteration 19: Actual - key_valid = 1, ciphertext = 8
+ 11070.00ns INFO     cocotb.crypto_accelerator          Iteration 20: Stimulus - candidate_e = 9, totient = 7, plaintext = 6, modulus = 14
+ 11070.00ns INFO     cocotb.crypto_accelerator          Iteration 20: Expected - key_valid = 1, ciphertext = 6
+ 11070.00ns INFO     cocotb.crypto_accelerator          Iteration 20: Actual - key_valid = 1, ciphertext = 6
+ 11780.00ns INFO     cocotb.crypto_accelerator          Iteration 21: Stimulus - candidate_e = 7, totient = 15, plaintext = 9, modulus = 4
+ 11780.00ns INFO     cocotb.crypto_accelerator          Iteration 21: Expected - key_valid = 1, ciphertext = 1
+ 11780.00ns INFO     cocotb.crypto_accelerator          Iteration 21: Actual - key_valid = 1, ciphertext = 1
+ 12470.00ns INFO     cocotb.crypto_accelerator          Iteration 22: Stimulus - candidate_e = 7, totient = 5, plaintext = 7, modulus = 15
+ 12470.00ns INFO     cocotb.crypto_accelerator          Iteration 22: Expected - key_valid = 1, ciphertext = 13
+ 12470.00ns INFO     cocotb.crypto_accelerator          Iteration 22: Actual - key_valid = 1, ciphertext = 13
+ 13260.00ns INFO     cocotb.crypto_accelerator          Iteration 23: Stimulus - candidate_e = 13, totient = 1, plaintext = 9, modulus = 8
+ 13260.00ns INFO     cocotb.crypto_accelerator          Iteration 23: Expected - key_valid = 1, ciphertext = 1
+ 13260.00ns INFO     cocotb.crypto_accelerator          Iteration 23: Actual - key_valid = 1, ciphertext = 1
+ 13790.00ns INFO     cocotb.crypto_accelerator          Iteration 24: Stimulus - candidate_e = 3, totient = 11, plaintext = 2, modulus = 11
+ 13790.00ns INFO     cocotb.crypto_accelerator          Iteration 24: Expected - key_valid = 1, ciphertext = 8
+ 13790.00ns INFO     cocotb.crypto_accelerator          Iteration 24: Actual - key_valid = 1, ciphertext = 8
+ 14590.00ns INFO     cocotb.crypto_accelerator          Iteration 25: Stimulus - candidate_e = 11, totient = 9, plaintext = 8, modulus = 14
+ 14590.00ns INFO     cocotb.crypto_accelerator          Iteration 25: Expected - key_valid = 1, ciphertext = 8
+ 14590.00ns INFO     cocotb.crypto_accelerator          Iteration 25: Actual - key_valid = 1, ciphertext = 8
+ 14940.00ns INFO     cocotb.crypto_accelerator          Iteration 26: Stimulus - candidate_e = 1, totient = 15, plaintext = 13, modulus = 11
+ 14940.00ns INFO     cocotb.crypto_accelerator          Iteration 26: Expected - key_valid = 1, ciphertext = 2
+ 14940.00ns INFO     cocotb.crypto_accelerator          Iteration 26: Actual - key_valid = 1, ciphertext = 2
+ 15080.00ns INFO     cocotb.crypto_accelerator          Iteration 27: Stimulus - candidate_e = 8, totient = 10, plaintext = 1, modulus = 8
+ 15080.00ns INFO     cocotb.crypto_accelerator          Iteration 27: Expected - key_valid = 0, ciphertext = 0
+ 15080.00ns INFO     cocotb.crypto_accelerator          Iteration 27: Actual - key_valid = 0, ciphertext = 0
+ 15180.00ns INFO     cocotb.crypto_accelerator          Iteration 28: Stimulus - candidate_e = 6, totient = 3, plaintext = 13, modulus = 4
+ 15180.00ns INFO     cocotb.crypto_accelerator          Iteration 28: Expected - key_valid = 0, ciphertext = 0
+ 15180.00ns INFO     cocotb.crypto_accelerator          Iteration 28: Actual - key_valid = 0, ciphertext = 0
+ 15710.00ns INFO     cocotb.crypto_accelerator          Iteration 29: Stimulus - candidate_e = 3, totient = 11, plaintext = 11, modulus = 3
+ 15710.00ns INFO     cocotb.crypto_accelerator          Iteration 29: Expected - key_valid = 1, ciphertext = 2
+ 15710.00ns INFO     cocotb.crypto_accelerator          Iteration 29: Actual - key_valid = 1, ciphertext = 2
+ 16420.00ns INFO     cocotb.crypto_accelerator          Iteration 30: Stimulus - candidate_e = 7, totient = 12, plaintext = 12, modulus = 15
+ 16420.00ns INFO     cocotb.crypto_accelerator          Iteration 30: Expected - key_valid = 1, ciphertext = 3
+ 16420.00ns INFO     cocotb.crypto_accelerator          Iteration 30: Actual - key_valid = 1, ciphertext = 3
+ 16510.00ns INFO     cocotb.crypto_accelerator          Iteration 31: Stimulus - candidate_e = 8, totient = 8, plaintext = 7, modulus = 6
+ 16510.00ns INFO     cocotb.crypto_accelerator          Iteration 31: Expected - key_valid = 0, ciphertext = 0
+ 16510.00ns INFO     cocotb.crypto_accelerator          Iteration 31: Actual - key_valid = 0, ciphertext = 0
+ 17330.00ns INFO     cocotb.crypto_accelerator          Iteration 32: Stimulus - candidate_e = 14, totient = 15, plaintext = 13, modulus = 8
+ 17330.00ns INFO     cocotb.crypto_accelerator          Iteration 32: Expected - key_valid = 1, ciphertext = 1
+ 17330.00ns INFO     cocotb.crypto_accelerator          Iteration 32: Actual - key_valid = 1, ciphertext = 1
+ 17760.00ns INFO     cocotb.crypto_accelerator          Iteration 33: Stimulus - candidate_e = 2, totient = 1, plaintext = 0, modulus = 3
+ 17760.00ns INFO     cocotb.crypto_accelerator          Iteration 33: Expected - key_valid = 1, ciphertext = 0
+ 17760.00ns INFO     cocotb.crypto_accelerator          Iteration 33: Actual - key_valid = 1, ciphertext = 0
+ 17850.00ns INFO     cocotb.crypto_accelerator          Iteration 34: Stimulus - candidate_e = 7, totient = 7, plaintext = 9, modulus = 9
+ 17850.00ns INFO     cocotb.crypto_accelerator          Iteration 34: Expected - key_valid = 0, ciphertext = 0
+ 17850.00ns INFO     cocotb.crypto_accelerator          Iteration 34: Actual - key_valid = 0, ciphertext = 0
+ 18410.00ns INFO     cocotb.crypto_accelerator          Iteration 35: Stimulus - candidate_e = 4, totient = 5, plaintext = 1, modulus = 9
+ 18410.00ns INFO     cocotb.crypto_accelerator          Iteration 35: Expected - key_valid = 1, ciphertext = 1
+ 18410.00ns INFO     cocotb.crypto_accelerator          Iteration 35: Actual - key_valid = 1, ciphertext = 1
+ 18510.00ns INFO     cocotb.crypto_accelerator          Iteration 36: Stimulus - candidate_e = 14, totient = 7, plaintext = 12, modulus = 12
+ 18510.00ns INFO     cocotb.crypto_accelerator          Iteration 36: Expected - key_valid = 0, ciphertext = 0
+ 18510.00ns INFO     cocotb.crypto_accelerator          Iteration 36: Actual - key_valid = 0, ciphertext = 0
+ 19220.00ns INFO     cocotb.crypto_accelerator          Iteration 37: Stimulus - candidate_e = 7, totient = 12, plaintext = 6, modulus = 3
+ 19220.00ns INFO     cocotb.crypto_accelerator          Iteration 37: Expected - key_valid = 1, ciphertext = 0
+ 19220.00ns INFO     cocotb.crypto_accelerator          Iteration 37: Actual - key_valid = 1, ciphertext = 0
+ 19850.00ns INFO     cocotb.crypto_accelerator          Iteration 38: Stimulus - candidate_e = 6, totient = 7, plaintext = 6, modulus = 6
+ 19850.00ns INFO     cocotb.crypto_accelerator          Iteration 38: Expected - key_valid = 1, ciphertext = 0
+ 19850.00ns INFO     cocotb.crypto_accelerator          Iteration 38: Actual - key_valid = 1, ciphertext = 0
+ 19950.00ns INFO     cocotb.crypto_accelerator          Iteration 39: Stimulus - candidate_e = 7, totient = 14, plaintext = 4, modulus = 1
+ 19950.00ns INFO     cocotb.crypto_accelerator          Iteration 39: Expected - key_valid = 0, ciphertext = 0
+ 19950.00ns INFO     cocotb.crypto_accelerator          Iteration 39: Actual - key_valid = 0, ciphertext = 0
+ 20280.00ns INFO     cocotb.crypto_accelerator          Iteration 40: Stimulus - candidate_e = 1, totient = 2, plaintext = 11, modulus = 5
+ 20280.00ns INFO     cocotb.crypto_accelerator          Iteration 40: Expected - key_valid = 1, ciphertext = 1
+ 20280.00ns INFO     cocotb.crypto_accelerator          Iteration 40: Actual - key_valid = 1, ciphertext = 1
+ 20410.00ns INFO     cocotb.crypto_accelerator          Iteration 41: Stimulus - candidate_e = 10, totient = 4, plaintext = 1, modulus = 1
+ 20410.00ns INFO     cocotb.crypto_accelerator          Iteration 41: Expected - key_valid = 0, ciphertext = 0
+ 20410.00ns INFO     cocotb.crypto_accelerator          Iteration 41: Actual - key_valid = 0, ciphertext = 0
+ 21140.00ns INFO     cocotb.crypto_accelerator          Iteration 42: Stimulus - candidate_e = 9, totient = 11, plaintext = 9, modulus = 4
+ 21140.00ns INFO     cocotb.crypto_accelerator          Iteration 42: Expected - key_valid = 1, ciphertext = 1
+ 21140.00ns INFO     cocotb.crypto_accelerator          Iteration 42: Actual - key_valid = 1, ciphertext = 1
+ 21950.00ns INFO     cocotb.crypto_accelerator          Iteration 43: Stimulus - candidate_e = 11, totient = 15, plaintext = 1, modulus = 5
+ 21950.00ns INFO     cocotb.crypto_accelerator          Iteration 43: Expected - key_valid = 1, ciphertext = 1
+ 21950.00ns INFO     cocotb.crypto_accelerator          Iteration 43: Actual - key_valid = 1, ciphertext = 1
+ 22080.00ns INFO     cocotb.crypto_accelerator          Iteration 44: Stimulus - candidate_e = 12, totient = 15, plaintext = 15, modulus = 12
+ 22080.00ns INFO     cocotb.crypto_accelerator          Iteration 44: Expected - key_valid = 0, ciphertext = 0
+ 22080.00ns INFO     cocotb.crypto_accelerator          Iteration 44: Actual - key_valid = 0, ciphertext = 0
+ 22190.00ns INFO     cocotb.crypto_accelerator          Iteration 45: Stimulus - candidate_e = 6, totient = 2, plaintext = 10, modulus = 15
+ 22190.00ns INFO     cocotb.crypto_accelerator          Iteration 45: Expected - key_valid = 0, ciphertext = 0
+ 22190.00ns INFO     cocotb.crypto_accelerator          Iteration 45: Actual - key_valid = 0, ciphertext = 0
+ 22850.00ns INFO     cocotb.crypto_accelerator          Iteration 46: Stimulus - candidate_e = 8, totient = 3, plaintext = 0, modulus = 15
+ 22850.00ns INFO     cocotb.crypto_accelerator          Iteration 46: Expected - key_valid = 1, ciphertext = 0
+ 22850.00ns INFO     cocotb.crypto_accelerator          Iteration 46: Actual - key_valid = 1, ciphertext = 0
+ 22990.00ns INFO     cocotb.crypto_accelerator          Iteration 47: Stimulus - candidate_e = 8, totient = 10, plaintext = 5, modulus = 12
+ 22990.00ns INFO     cocotb.crypto_accelerator          Iteration 47: Expected - key_valid = 0, ciphertext = 0
+ 22990.00ns INFO     cocotb.crypto_accelerator          Iteration 47: Actual - key_valid = 0, ciphertext = 0
+ 23720.00ns INFO     cocotb.crypto_accelerator          Iteration 48: Stimulus - candidate_e = 9, totient = 14, plaintext = 9, modulus = 9
+ 23720.00ns INFO     cocotb.crypto_accelerator          Iteration 48: Expected - key_valid = 1, ciphertext = 0
+ 23720.00ns INFO     cocotb.crypto_accelerator          Iteration 48: Actual - key_valid = 1, ciphertext = 0
+ 24070.00ns INFO     cocotb.crypto_accelerator          Iteration 49: Stimulus - candidate_e = 1, totient = 14, plaintext = 9, modulus = 15
+ 24070.00ns INFO     cocotb.crypto_accelerator          Iteration 49: Expected - key_valid = 1, ciphertext = 9
+ 24070.00ns INFO     cocotb.crypto_accelerator          Iteration 49: Actual - key_valid = 1, ciphertext = 9
+ 24090.00ns INFO     cocotb.crypto_accelerator          Test Case 4: Boundary Conditions
+ 24090.00ns INFO     cocotb.crypto_accelerator          Stimulus: candidate_e, totient, plaintext, modulus = 15 (maximum value)
+ 24090.00ns INFO     cocotb.crypto_accelerator          Expected: key_valid = 0 and ciphertext = 0
+ 24160.00ns INFO     cocotb.crypto_accelerator          Actual: key_valid = 0, ciphertext = 0
+ 24160.00ns INFO     cocotb.crypto_accelerator          All tests passed successfully for the crypto accelerator.
+ 24160.00ns INFO     cocotb.regression                  test_crypto_accelerator.test_key_validation_and_encryption passed
+ 24160.00ns INFO     cocotb.regression                  ********************************************************************************************************************
+                                                        ** TEST                                                        STATUS  SIM TIME (ns)  REAL TIME (s)  RATIO (ns/s) **
+                                                        ********************************************************************************************************************
+                                                        ** test_crypto_accelerator.test_key_validation_and_encryption   PASS       24160.00           0.32      74454.57  **
+                                                        ********************************************************************************************************************
+                                                        ** TESTS=1 PASS=1 FAIL=0 SKIP=0                                            24160.00           0.33      72951.24  **
+                                                        ********************************************************************************************************************
+                                                        
+FST info: dumpfile /code/rundir/sim_build/crypto_accelerator.fst opened for output.
+[DEBUG] Running simulation with WIDTH=4
+[DEBUG] Parameters: {'WIDTH': 4}
+PASSED
+../../src/test_runner.py::test_crypto_accelerator[6]      -.--ns INFO     gpi                                ..mbed/gpi_embed.cpp:79   in set_program_name_in_venv        Did not detect Python virtual environment. Using system-wide Python interpreter
+     -.--ns INFO     gpi                                ../gpi/GpiCommon.cpp:101  in gpi_print_registered_impl       VPI registered
+     0.00ns INFO     cocotb                             Running on Icarus Verilog version 13.0 (devel)
+     0.00ns INFO     cocotb                             Running tests with cocotb v2.0.0.dev0+8d6c1a63 from /usr/local/lib/python3.9/dist-packages/cocotb
+     0.00ns INFO     cocotb                             Seeding Python random module with 1773327861
+     0.00ns INFO     cocotb.regression                  running test_crypto_accelerator.test_key_validation_and_encryption (1/1)
+                                                            Production-level testbench for the crypto accelerator:
+     0.00ns INFO     cocotb.crypto_accelerator          Testbench started with WIDTH=6 (max value = 63)
+    20.00ns INFO     cocotb.crypto_accelerator          Test Case 1: Valid Key Scenario
+    20.00ns INFO     cocotb.crypto_accelerator          Stimulus: candidate_e = 3, totient = 10, plaintext = 7, modulus = 11
+    20.00ns INFO     cocotb.crypto_accelerator          Expected: key_valid = 1 and ciphertext = 2
+   600.00ns INFO     cocotb.crypto_accelerator          Actual: key_valid = 1, ciphertext = 2
+   620.00ns INFO     cocotb.crypto_accelerator          Test Case 2: Invalid Key Scenario
+   620.00ns INFO     cocotb.crypto_accelerator          Stimulus: candidate_e = 4, totient = 10, plaintext = 7, modulus = 11
+   620.00ns INFO     cocotb.crypto_accelerator          Expected: key_valid = 0 and ciphertext = 0
+   730.00ns INFO     cocotb.crypto_accelerator          Actual: key_valid = 0, ciphertext = 0
+   750.00ns INFO     cocotb.crypto_accelerator          Test Case 3: Randomized Stress Test
+   870.00ns INFO     cocotb.crypto_accelerator          Iteration 0: Stimulus - candidate_e = 33, totient = 54, plaintext = 46, modulus = 55
+   870.00ns INFO     cocotb.crypto_accelerator          Iteration 0: Expected - key_valid = 0, ciphertext = 0
+   870.00ns INFO     cocotb.crypto_accelerator          Iteration 0: Actual - key_valid = 0, ciphertext = 0
+  1000.00ns INFO     cocotb.crypto_accelerator          Iteration 1: Stimulus - candidate_e = 45, totient = 55, plaintext = 18, modulus = 63
+  1000.00ns INFO     cocotb.crypto_accelerator          Iteration 1: Expected - key_valid = 0, ciphertext = 0
+  1000.00ns INFO     cocotb.crypto_accelerator          Iteration 1: Actual - key_valid = 0, ciphertext = 0
+  2140.00ns INFO     cocotb.crypto_accelerator          Iteration 2: Stimulus - candidate_e = 34, totient = 33, plaintext = 42, modulus = 18
+  2140.00ns INFO     cocotb.crypto_accelerator          Iteration 2: Expected - key_valid = 1, ciphertext = 0
+  2140.00ns INFO     cocotb.crypto_accelerator          Iteration 2: Actual - key_valid = 1, ciphertext = 0
+  3220.00ns INFO     cocotb.crypto_accelerator          Iteration 3: Stimulus - candidate_e = 26, totient = 27, plaintext = 43, modulus = 26
+  3220.00ns INFO     cocotb.crypto_accelerator          Iteration 3: Expected - key_valid = 1, ciphertext = 3
+  3220.00ns INFO     cocotb.crypto_accelerator          Iteration 3: Actual - key_valid = 1, ciphertext = 3
+  4190.00ns INFO     cocotb.crypto_accelerator          Iteration 4: Stimulus - candidate_e = 13, totient = 20, plaintext = 27, modulus = 46
+  4190.00ns INFO     cocotb.crypto_accelerator          Iteration 4: Expected - key_valid = 1, ciphertext = 39
+  4190.00ns INFO     cocotb.crypto_accelerator          Iteration 4: Actual - key_valid = 1, ciphertext = 39
+  5400.00ns INFO     cocotb.crypto_accelerator          Iteration 5: Stimulus - candidate_e = 49, totient = 45, plaintext = 8, modulus = 2
+  5400.00ns INFO     cocotb.crypto_accelerator          Iteration 5: Expected - key_valid = 1, ciphertext = 0
+  5400.00ns INFO     cocotb.crypto_accelerator          Iteration 5: Actual - key_valid = 1, ciphertext = 0
+  5510.00ns INFO     cocotb.crypto_accelerator          Iteration 6: Stimulus - candidate_e = 6, totient = 18, plaintext = 25, modulus = 50
+  5510.00ns INFO     cocotb.crypto_accelerator          Iteration 6: Expected - key_valid = 0, ciphertext = 0
+  5510.00ns INFO     cocotb.crypto_accelerator          Iteration 6: Actual - key_valid = 0, ciphertext = 0
+  6910.00ns INFO     cocotb.crypto_accelerator          Iteration 7: Stimulus - candidate_e = 61, totient = 18, plaintext = 33, modulus = 61
+  6910.00ns INFO     cocotb.crypto_accelerator          Iteration 7: Expected - key_valid = 1, ciphertext = 33
+  6910.00ns INFO     cocotb.crypto_accelerator          Iteration 7: Actual - key_valid = 1, ciphertext = 33
+  8140.00ns INFO     cocotb.crypto_accelerator          Iteration 8: Stimulus - candidate_e = 52, totient = 49, plaintext = 22, modulus = 56
+  8140.00ns INFO     cocotb.crypto_accelerator          Iteration 8: Expected - key_valid = 1, ciphertext = 8
+  8140.00ns INFO     cocotb.crypto_accelerator          Iteration 8: Actual - key_valid = 1, ciphertext = 8
+  9430.00ns INFO     cocotb.crypto_accelerator          Iteration 9: Stimulus - candidate_e = 43, totient = 42, plaintext = 58, modulus = 16
+  9430.00ns INFO     cocotb.crypto_accelerator          Iteration 9: Expected - key_valid = 1, ciphertext = 0
+  9430.00ns INFO     cocotb.crypto_accelerator          Iteration 9: Actual - key_valid = 1, ciphertext = 0
+ 10540.00ns INFO     cocotb.crypto_accelerator          Iteration 10: Stimulus - candidate_e = 33, totient = 19, plaintext = 42, modulus = 33
+ 10540.00ns INFO     cocotb.crypto_accelerator          Iteration 10: Expected - key_valid = 1, ciphertext = 3
+ 10540.00ns INFO     cocotb.crypto_accelerator          Iteration 10: Actual - key_valid = 1, ciphertext = 3
+ 11750.00ns INFO     cocotb.crypto_accelerator          Iteration 11: Stimulus - candidate_e = 41, totient = 31, plaintext = 60, modulus = 21
+ 11750.00ns INFO     cocotb.crypto_accelerator          Iteration 11: Expected - key_valid = 1, ciphertext = 9
+ 11750.00ns INFO     cocotb.crypto_accelerator          Iteration 11: Actual - key_valid = 1, ciphertext = 9
+ 12750.00ns INFO     cocotb.crypto_accelerator          Iteration 12: Stimulus - candidate_e = 18, totient = 17, plaintext = 3, modulus = 5
+ 12750.00ns INFO     cocotb.crypto_accelerator          Iteration 12: Expected - key_valid = 1, ciphertext = 4
+ 12750.00ns INFO     cocotb.crypto_accelerator          Iteration 12: Actual - key_valid = 1, ciphertext = 4
+ 14130.00ns INFO     cocotb.crypto_accelerator          Iteration 13: Stimulus - candidate_e = 55, totient = 41, plaintext = 8, modulus = 59
+ 14130.00ns INFO     cocotb.crypto_accelerator          Iteration 13: Expected - key_valid = 1, ciphertext = 31
+ 14130.00ns INFO     cocotb.crypto_accelerator          Iteration 13: Actual - key_valid = 1, ciphertext = 31
+ 14300.00ns INFO     cocotb.crypto_accelerator          Iteration 14: Stimulus - candidate_e = 40, totient = 26, plaintext = 33, modulus = 49
+ 14300.00ns INFO     cocotb.crypto_accelerator          Iteration 14: Expected - key_valid = 0, ciphertext = 0
+ 14300.00ns INFO     cocotb.crypto_accelerator          Iteration 14: Actual - key_valid = 0, ciphertext = 0
+ 15590.00ns INFO     cocotb.crypto_accelerator          Iteration 15: Stimulus - candidate_e = 43, totient = 6, plaintext = 3, modulus = 8
+ 15590.00ns INFO     cocotb.crypto_accelerator          Iteration 15: Expected - key_valid = 1, ciphertext = 3
+ 15590.00ns INFO     cocotb.crypto_accelerator          Iteration 15: Actual - key_valid = 1, ciphertext = 3
+ 16680.00ns INFO     cocotb.crypto_accelerator          Iteration 16: Stimulus - candidate_e = 19, totient = 40, plaintext = 7, modulus = 41
+ 16680.00ns INFO     cocotb.crypto_accelerator          Iteration 16: Expected - key_valid = 1, ciphertext = 35
+ 16680.00ns INFO     cocotb.crypto_accelerator          Iteration 16: Actual - key_valid = 1, ciphertext = 35
+ 17090.00ns INFO     cocotb.crypto_accelerator          Iteration 17: Stimulus - candidate_e = 1, totient = 32, plaintext = 19, modulus = 47
+ 17090.00ns INFO     cocotb.crypto_accelerator          Iteration 17: Expected - key_valid = 1, ciphertext = 19
+ 17090.00ns INFO     cocotb.crypto_accelerator          Iteration 17: Actual - key_valid = 1, ciphertext = 19
+ 17220.00ns INFO     cocotb.crypto_accelerator          Iteration 18: Stimulus - candidate_e = 2, totient = 24, plaintext = 33, modulus = 4
+ 17220.00ns INFO     cocotb.crypto_accelerator          Iteration 18: Expected - key_valid = 0, ciphertext = 0
+ 17220.00ns INFO     cocotb.crypto_accelerator          Iteration 18: Actual - key_valid = 0, ciphertext = 0
+ 17970.00ns INFO     cocotb.crypto_accelerator          Iteration 19: Stimulus - candidate_e = 5, totient = 48, plaintext = 3, modulus = 62
+ 17970.00ns INFO     cocotb.crypto_accelerator          Iteration 19: Expected - key_valid = 1, ciphertext = 57
+ 17970.00ns INFO     cocotb.crypto_accelerator          Iteration 19: Actual - key_valid = 1, ciphertext = 57
+ 19170.00ns INFO     cocotb.crypto_accelerator          Iteration 20: Stimulus - candidate_e = 35, totient = 9, plaintext = 8, modulus = 6
+ 19170.00ns INFO     cocotb.crypto_accelerator          Iteration 20: Expected - key_valid = 1, ciphertext = 2
+ 19170.00ns INFO     cocotb.crypto_accelerator          Iteration 20: Actual - key_valid = 1, ciphertext = 2
+ 20550.00ns INFO     cocotb.crypto_accelerator          Iteration 21: Stimulus - candidate_e = 47, totient = 33, plaintext = 50, modulus = 46
+ 20550.00ns INFO     cocotb.crypto_accelerator          Iteration 21: Expected - key_valid = 1, ciphertext = 18
+ 20550.00ns INFO     cocotb.crypto_accelerator          Iteration 21: Actual - key_valid = 1, ciphertext = 18
+ 22040.00ns INFO     cocotb.crypto_accelerator          Iteration 22: Stimulus - candidate_e = 63, totient = 50, plaintext = 24, modulus = 62
+ 22040.00ns INFO     cocotb.crypto_accelerator          Iteration 22: Expected - key_valid = 1, ciphertext = 60
+ 22040.00ns INFO     cocotb.crypto_accelerator          Iteration 22: Actual - key_valid = 1, ciphertext = 60
+ 22140.00ns INFO     cocotb.crypto_accelerator          Iteration 23: Stimulus - candidate_e = 54, totient = 27, plaintext = 38, modulus = 13
+ 22140.00ns INFO     cocotb.crypto_accelerator          Iteration 23: Expected - key_valid = 0, ciphertext = 0
+ 22140.00ns INFO     cocotb.crypto_accelerator          Iteration 23: Actual - key_valid = 0, ciphertext = 0
+ 22250.00ns INFO     cocotb.crypto_accelerator          Iteration 24: Stimulus - candidate_e = 27, totient = 18, plaintext = 30, modulus = 58
+ 22250.00ns INFO     cocotb.crypto_accelerator          Iteration 24: Expected - key_valid = 0, ciphertext = 0
+ 22250.00ns INFO     cocotb.crypto_accelerator          Iteration 24: Actual - key_valid = 0, ciphertext = 0
+ 23440.00ns INFO     cocotb.crypto_accelerator          Iteration 25: Stimulus - candidate_e = 52, totient = 1, plaintext = 36, modulus = 30
+ 23440.00ns INFO     cocotb.crypto_accelerator          Iteration 25: Expected - key_valid = 1, ciphertext = 6
+ 23440.00ns INFO     cocotb.crypto_accelerator          Iteration 25: Actual - key_valid = 1, ciphertext = 6
+ 23570.00ns INFO     cocotb.crypto_accelerator          Iteration 26: Stimulus - candidate_e = 12, totient = 42, plaintext = 11, modulus = 43
+ 23570.00ns INFO     cocotb.crypto_accelerator          Iteration 26: Expected - key_valid = 0, ciphertext = 0
+ 23570.00ns INFO     cocotb.crypto_accelerator          Iteration 26: Actual - key_valid = 0, ciphertext = 0
+ 24880.00ns INFO     cocotb.crypto_accelerator          Iteration 27: Stimulus - candidate_e = 43, totient = 35, plaintext = 35, modulus = 53
+ 24880.00ns INFO     cocotb.crypto_accelerator          Iteration 27: Expected - key_valid = 1, ciphertext = 33
+ 24880.00ns INFO     cocotb.crypto_accelerator          Iteration 27: Actual - key_valid = 1, ciphertext = 33
+ 25550.00ns INFO     cocotb.crypto_accelerator          Iteration 28: Stimulus - candidate_e = 4, totient = 57, plaintext = 55, modulus = 42
+ 25550.00ns INFO     cocotb.crypto_accelerator          Iteration 28: Expected - key_valid = 1, ciphertext = 1
+ 25550.00ns INFO     cocotb.crypto_accelerator          Iteration 28: Actual - key_valid = 1, ciphertext = 1
+ 26720.00ns INFO     cocotb.crypto_accelerator          Iteration 29: Stimulus - candidate_e = 29, totient = 39, plaintext = 7, modulus = 63
+ 26720.00ns INFO     cocotb.crypto_accelerator          Iteration 29: Expected - key_valid = 1, ciphertext = 49
+ 26720.00ns INFO     cocotb.crypto_accelerator          Iteration 29: Actual - key_valid = 1, ciphertext = 49
+ 27900.00ns INFO     cocotb.crypto_accelerator          Iteration 30: Stimulus - candidate_e = 30, totient = 23, plaintext = 23, modulus = 27
+ 27900.00ns INFO     cocotb.crypto_accelerator          Iteration 30: Expected - key_valid = 1, ciphertext = 10
+ 27900.00ns INFO     cocotb.crypto_accelerator          Iteration 30: Actual - key_valid = 1, ciphertext = 10
+ 28050.00ns INFO     cocotb.crypto_accelerator          Iteration 31: Stimulus - candidate_e = 16, totient = 10, plaintext = 46, modulus = 11
+ 28050.00ns INFO     cocotb.crypto_accelerator          Iteration 31: Expected - key_valid = 0, ciphertext = 0
+ 28050.00ns INFO     cocotb.crypto_accelerator          Iteration 31: Actual - key_valid = 0, ciphertext = 0
+ 28210.00ns INFO     cocotb.crypto_accelerator          Iteration 32: Stimulus - candidate_e = 27, totient = 48, plaintext = 51, modulus = 59
+ 28210.00ns INFO     cocotb.crypto_accelerator          Iteration 32: Expected - key_valid = 0, ciphertext = 0
+ 28210.00ns INFO     cocotb.crypto_accelerator          Iteration 32: Actual - key_valid = 0, ciphertext = 0
+ 29460.00ns INFO     cocotb.crypto_accelerator          Iteration 33: Stimulus - candidate_e = 31, totient = 29, plaintext = 28, modulus = 24
+ 29460.00ns INFO     cocotb.crypto_accelerator          Iteration 33: Expected - key_valid = 1, ciphertext = 16
+ 29460.00ns INFO     cocotb.crypto_accelerator          Iteration 33: Actual - key_valid = 1, ciphertext = 16
+ 30680.00ns INFO     cocotb.crypto_accelerator          Iteration 34: Stimulus - candidate_e = 56, totient = 57, plaintext = 55, modulus = 31
+ 30680.00ns INFO     cocotb.crypto_accelerator          Iteration 34: Expected - key_valid = 1, ciphertext = 20
+ 30680.00ns INFO     cocotb.crypto_accelerator          Iteration 34: Actual - key_valid = 1, ciphertext = 20
+ 31390.00ns INFO     cocotb.crypto_accelerator          Iteration 35: Stimulus - candidate_e = 6, totient = 1, plaintext = 1, modulus = 10
+ 31390.00ns INFO     cocotb.crypto_accelerator          Iteration 35: Expected - key_valid = 1, ciphertext = 1
+ 31390.00ns INFO     cocotb.crypto_accelerator          Iteration 35: Actual - key_valid = 1, ciphertext = 1
+ 32550.00ns INFO     cocotb.crypto_accelerator          Iteration 36: Stimulus - candidate_e = 27, totient = 25, plaintext = 36, modulus = 36
+ 32550.00ns INFO     cocotb.crypto_accelerator          Iteration 36: Expected - key_valid = 1, ciphertext = 0
+ 32550.00ns INFO     cocotb.crypto_accelerator          Iteration 36: Actual - key_valid = 1, ciphertext = 0
+ 33590.00ns INFO     cocotb.crypto_accelerator          Iteration 37: Stimulus - candidate_e = 15, totient = 19, plaintext = 4, modulus = 34
+ 33590.00ns INFO     cocotb.crypto_accelerator          Iteration 37: Expected - key_valid = 1, ciphertext = 30
+ 33590.00ns INFO     cocotb.crypto_accelerator          Iteration 37: Actual - key_valid = 1, ciphertext = 30
+ 33710.00ns INFO     cocotb.crypto_accelerator          Iteration 38: Stimulus - candidate_e = 56, totient = 28, plaintext = 51, modulus = 45
+ 33710.00ns INFO     cocotb.crypto_accelerator          Iteration 38: Expected - key_valid = 0, ciphertext = 0
+ 33710.00ns INFO     cocotb.crypto_accelerator          Iteration 38: Actual - key_valid = 0, ciphertext = 0
+ 33870.00ns INFO     cocotb.crypto_accelerator          Iteration 39: Stimulus - candidate_e = 26, totient = 46, plaintext = 24, modulus = 10
+ 33870.00ns INFO     cocotb.crypto_accelerator          Iteration 39: Expected - key_valid = 0, ciphertext = 0
+ 33870.00ns INFO     cocotb.crypto_accelerator          Iteration 39: Actual - key_valid = 0, ciphertext = 0
+ 34020.00ns INFO     cocotb.crypto_accelerator          Iteration 40: Stimulus - candidate_e = 24, totient = 27, plaintext = 24, modulus = 22
+ 34020.00ns INFO     cocotb.crypto_accelerator          Iteration 40: Expected - key_valid = 0, ciphertext = 0
+ 34020.00ns INFO     cocotb.crypto_accelerator          Iteration 40: Actual - key_valid = 0, ciphertext = 0
+ 34120.00ns INFO     cocotb.crypto_accelerator          Iteration 41: Stimulus - candidate_e = 27, totient = 54, plaintext = 19, modulus = 2
+ 34120.00ns INFO     cocotb.crypto_accelerator          Iteration 41: Expected - key_valid = 0, ciphertext = 0
+ 34120.00ns INFO     cocotb.crypto_accelerator          Iteration 41: Actual - key_valid = 0, ciphertext = 0
+ 34730.00ns INFO     cocotb.crypto_accelerator          Iteration 42: Stimulus - candidate_e = 3, totient = 8, plaintext = 44, modulus = 17
+ 34730.00ns INFO     cocotb.crypto_accelerator          Iteration 42: Expected - key_valid = 1, ciphertext = 14
+ 34730.00ns INFO     cocotb.crypto_accelerator          Iteration 42: Actual - key_valid = 1, ciphertext = 14
+ 35920.00ns INFO     cocotb.crypto_accelerator          Iteration 43: Stimulus - candidate_e = 38, totient = 13, plaintext = 5, modulus = 4
+ 35920.00ns INFO     cocotb.crypto_accelerator          Iteration 43: Expected - key_valid = 1, ciphertext = 1
+ 35920.00ns INFO     cocotb.crypto_accelerator          Iteration 43: Actual - key_valid = 1, ciphertext = 1
+ 36060.00ns INFO     cocotb.crypto_accelerator          Iteration 44: Stimulus - candidate_e = 36, totient = 42, plaintext = 36, modulus = 14
+ 36060.00ns INFO     cocotb.crypto_accelerator          Iteration 44: Expected - key_valid = 0, ciphertext = 0
+ 36060.00ns INFO     cocotb.crypto_accelerator          Iteration 44: Actual - key_valid = 0, ciphertext = 0
+ 37360.00ns INFO     cocotb.crypto_accelerator          Iteration 45: Stimulus - candidate_e = 43, totient = 58, plaintext = 4, modulus = 19
+ 37360.00ns INFO     cocotb.crypto_accelerator          Iteration 45: Expected - key_valid = 1, ciphertext = 6
+ 37360.00ns INFO     cocotb.crypto_accelerator          Iteration 45: Actual - key_valid = 1, ciphertext = 6
+ 37510.00ns INFO     cocotb.crypto_accelerator          Iteration 46: Stimulus - candidate_e = 46, totient = 58, plaintext = 60, modulus = 45
+ 37510.00ns INFO     cocotb.crypto_accelerator          Iteration 46: Expected - key_valid = 0, ciphertext = 0
+ 37510.00ns INFO     cocotb.crypto_accelerator          Iteration 46: Actual - key_valid = 0, ciphertext = 0
+ 38590.00ns INFO     cocotb.crypto_accelerator          Iteration 47: Stimulus - candidate_e = 21, totient = 5, plaintext = 40, modulus = 60
+ 38590.00ns INFO     cocotb.crypto_accelerator          Iteration 47: Expected - key_valid = 1, ciphertext = 40
+ 38590.00ns INFO     cocotb.crypto_accelerator          Iteration 47: Actual - key_valid = 1, ciphertext = 40
+ 39760.00ns INFO     cocotb.crypto_accelerator          Iteration 48: Stimulus - candidate_e = 29, totient = 62, plaintext = 19, modulus = 2
+ 39760.00ns INFO     cocotb.crypto_accelerator          Iteration 48: Expected - key_valid = 1, ciphertext = 1
+ 39760.00ns INFO     cocotb.crypto_accelerator          Iteration 48: Actual - key_valid = 1, ciphertext = 1
+ 39860.00ns INFO     cocotb.crypto_accelerator          Iteration 49: Stimulus - candidate_e = 58, totient = 29, plaintext = 21, modulus = 46
+ 39860.00ns INFO     cocotb.crypto_accelerator          Iteration 49: Expected - key_valid = 0, ciphertext = 0
+ 39860.00ns INFO     cocotb.crypto_accelerator          Iteration 49: Actual - key_valid = 0, ciphertext = 0
+ 39880.00ns INFO     cocotb.crypto_accelerator          Test Case 4: Boundary Conditions
+ 39880.00ns INFO     cocotb.crypto_accelerator          Stimulus: candidate_e, totient, plaintext, modulus = 63 (maximum value)
+ 39880.00ns INFO     cocotb.crypto_accelerator          Expected: key_valid = 0 and ciphertext = 0
+ 39950.00ns INFO     cocotb.crypto_accelerator          Actual: key_valid = 0, ciphertext = 0
+ 39950.00ns INFO     cocotb.crypto_accelerator          All tests passed successfully for the crypto accelerator.
+ 39950.00ns INFO     cocotb.regression                  test_crypto_accelerator.test_key_validation_and_encryption passed
+ 39950.00ns INFO     cocotb.regression                  ********************************************************************************************************************
+                                                        ** TEST                                                        STATUS  SIM TIME (ns)  REAL TIME (s)  RATIO (ns/s) **
+                                                        ********************************************************************************************************************
+                                                        ** test_crypto_accelerator.test_key_validation_and_encryption   PASS       39950.00           0.61      65388.64  **
+                                                        ********************************************************************************************************************
+                                                        ** TESTS=1 PASS=1 FAIL=0 SKIP=0                                            39950.00           0.63      63882.96  **
+                                                        ********************************************************************************************************************
+                                                        
+FST info: dumpfile /code/rundir/sim_build/crypto_accelerator.fst opened for output.
+[DEBUG] Running simulation with WIDTH=6
+[DEBUG] Parameters: {'WIDTH': 6}
+PASSED
+../../src/test_runner.py::test_crypto_accelerator[8]      -.--ns INFO     gpi                                ..mbed/gpi_embed.cpp:79   in set_program_name_in_venv        Did not detect Python virtual environment. Using system-wide Python interpreter
+     -.--ns INFO     gpi                                ../gpi/GpiCommon.cpp:101  in gpi_print_registered_impl       VPI registered
+     0.00ns INFO     cocotb                             Running on Icarus Verilog version 13.0 (devel)
+     0.00ns INFO     cocotb                             Running tests with cocotb v2.0.0.dev0+8d6c1a63 from /usr/local/lib/python3.9/dist-packages/cocotb
+     0.00ns INFO     cocotb                             Seeding Python random module with 1773327862
+     0.00ns INFO     cocotb.regression                  running test_crypto_accelerator.test_key_validation_and_encryption (1/1)
+                                                            Production-level testbench for the crypto accelerator:
+     0.00ns INFO     cocotb.crypto_accelerator          Testbench started with WIDTH=8 (max value = 255)
+    20.00ns INFO     cocotb.crypto_accelerator          Test Case 1: Valid Key Scenario
+    20.00ns INFO     cocotb.crypto_accelerator          Stimulus: candidate_e = 3, totient = 10, plaintext = 7, modulus = 11
+    20.00ns INFO     cocotb.crypto_accelerator          Expected: key_valid = 1 and ciphertext = 2
+   680.00ns INFO     cocotb.crypto_accelerator          Actual: key_valid = 1, ciphertext = 2
+   700.00ns INFO     cocotb.crypto_accelerator          Test Case 2: Invalid Key Scenario
+   700.00ns INFO     cocotb.crypto_accelerator          Stimulus: candidate_e = 4, totient = 10, plaintext = 7, modulus = 11
+   700.00ns INFO     cocotb.crypto_accelerator          Expected: key_valid = 0 and ciphertext = 0
+   810.00ns INFO     cocotb.crypto_accelerator          Actual: key_valid = 0, ciphertext = 0
+   830.00ns INFO     cocotb.crypto_accelerator          Test Case 3: Randomized Stress Test
+  2710.00ns INFO     cocotb.crypto_accelerator          Iteration 0: Stimulus - candidate_e = 123, totient = 232, plaintext = 63, modulus = 227
+  2710.00ns INFO     cocotb.crypto_accelerator          Iteration 0: Expected - key_valid = 1, ciphertext = 21
+  2710.00ns INFO     cocotb.crypto_accelerator          Iteration 0: Actual - key_valid = 1, ciphertext = 21
+  2870.00ns INFO     cocotb.crypto_accelerator          Iteration 1: Stimulus - candidate_e = 102, totient = 165, plaintext = 25, modulus = 89
+  2870.00ns INFO     cocotb.crypto_accelerator          Iteration 1: Expected - key_valid = 0, ciphertext = 0
+  2870.00ns INFO     cocotb.crypto_accelerator          Iteration 1: Actual - key_valid = 0, ciphertext = 0
+  4380.00ns INFO     cocotb.crypto_accelerator          Iteration 2: Stimulus - candidate_e = 58, totient = 195, plaintext = 197, modulus = 24
+  4380.00ns INFO     cocotb.crypto_accelerator          Iteration 2: Expected - key_valid = 1, ciphertext = 1
+  4380.00ns INFO     cocotb.crypto_accelerator          Iteration 2: Actual - key_valid = 1, ciphertext = 1
+  4520.00ns INFO     cocotb.crypto_accelerator          Iteration 3: Stimulus - candidate_e = 75, totient = 205, plaintext = 99, modulus = 118
+  4520.00ns INFO     cocotb.crypto_accelerator          Iteration 3: Expected - key_valid = 0, ciphertext = 0
+  4520.00ns INFO     cocotb.crypto_accelerator          Iteration 3: Actual - key_valid = 0, ciphertext = 0
+  6240.00ns INFO     cocotb.crypto_accelerator          Iteration 4: Stimulus - candidate_e = 131, totient = 201, plaintext = 221, modulus = 83
+  6240.00ns INFO     cocotb.crypto_accelerator          Iteration 4: Expected - key_valid = 1, ciphertext = 62
+  6240.00ns INFO     cocotb.crypto_accelerator          Iteration 4: Actual - key_valid = 1, ciphertext = 62
+  7670.00ns INFO     cocotb.crypto_accelerator          Iteration 5: Stimulus - candidate_e = 65, totient = 158, plaintext = 183, modulus = 180
+  7670.00ns INFO     cocotb.crypto_accelerator          Iteration 5: Expected - key_valid = 1, ciphertext = 63
+  7670.00ns INFO     cocotb.crypto_accelerator          Iteration 5: Actual - key_valid = 1, ciphertext = 63
+  7810.00ns INFO     cocotb.crypto_accelerator          Iteration 6: Stimulus - candidate_e = 35, totient = 205, plaintext = 199, modulus = 233
+  7810.00ns INFO     cocotb.crypto_accelerator          Iteration 6: Expected - key_valid = 0, ciphertext = 0
+  7810.00ns INFO     cocotb.crypto_accelerator          Iteration 6: Actual - key_valid = 0, ciphertext = 0
+  9850.00ns INFO     cocotb.crypto_accelerator          Iteration 7: Stimulus - candidate_e = 189, totient = 148, plaintext = 155, modulus = 225
+  9850.00ns INFO     cocotb.crypto_accelerator          Iteration 7: Expected - key_valid = 1, ciphertext = 125
+  9850.00ns INFO     cocotb.crypto_accelerator          Iteration 7: Actual - key_valid = 1, ciphertext = 125
+ 11560.00ns INFO     cocotb.crypto_accelerator          Iteration 8: Stimulus - candidate_e = 208, totient = 165, plaintext = 169, modulus = 96
+ 11560.00ns INFO     cocotb.crypto_accelerator          Iteration 8: Expected - key_valid = 1, ciphertext = 1
+ 11560.00ns INFO     cocotb.crypto_accelerator          Iteration 8: Actual - key_valid = 1, ciphertext = 1
+ 13250.00ns INFO     cocotb.crypto_accelerator          Iteration 9: Stimulus - candidate_e = 200, totient = 31, plaintext = 224, modulus = 234
+ 13250.00ns INFO     cocotb.crypto_accelerator          Iteration 9: Expected - key_valid = 1, ciphertext = 100
+ 13250.00ns INFO     cocotb.crypto_accelerator          Iteration 9: Actual - key_valid = 1, ciphertext = 100
+ 13380.00ns INFO     cocotb.crypto_accelerator          Iteration 10: Stimulus - candidate_e = 132, totient = 220, plaintext = 138, modulus = 64
+ 13380.00ns INFO     cocotb.crypto_accelerator          Iteration 10: Expected - key_valid = 0, ciphertext = 0
+ 13380.00ns INFO     cocotb.crypto_accelerator          Iteration 10: Actual - key_valid = 0, ciphertext = 0
+ 13520.00ns INFO     cocotb.crypto_accelerator          Iteration 11: Stimulus - candidate_e = 117, totient = 225, plaintext = 77, modulus = 74
+ 13520.00ns INFO     cocotb.crypto_accelerator          Iteration 11: Expected - key_valid = 0, ciphertext = 0
+ 13520.00ns INFO     cocotb.crypto_accelerator          Iteration 11: Actual - key_valid = 0, ciphertext = 0
+ 15650.00ns INFO     cocotb.crypto_accelerator          Iteration 12: Stimulus - candidate_e = 239, totient = 4, plaintext = 121, modulus = 125
+ 15650.00ns INFO     cocotb.crypto_accelerator          Iteration 12: Expected - key_valid = 1, ciphertext = 81
+ 15650.00ns INFO     cocotb.crypto_accelerator          Iteration 12: Actual - key_valid = 1, ciphertext = 81
+ 17150.00ns INFO     cocotb.crypto_accelerator          Iteration 13: Stimulus - candidate_e = 46, totient = 33, plaintext = 76, modulus = 235
+ 17150.00ns INFO     cocotb.crypto_accelerator          Iteration 13: Expected - key_valid = 1, ciphertext = 1
+ 17150.00ns INFO     cocotb.crypto_accelerator          Iteration 13: Actual - key_valid = 1, ciphertext = 1
+ 17260.00ns INFO     cocotb.crypto_accelerator          Iteration 14: Stimulus - candidate_e = 26, totient = 39, plaintext = 193, modulus = 211
+ 17260.00ns INFO     cocotb.crypto_accelerator          Iteration 14: Expected - key_valid = 0, ciphertext = 0
+ 17260.00ns INFO     cocotb.crypto_accelerator          Iteration 14: Actual - key_valid = 0, ciphertext = 0
+ 17430.00ns INFO     cocotb.crypto_accelerator          Iteration 15: Stimulus - candidate_e = 100, totient = 102, plaintext = 3, modulus = 26
+ 17430.00ns INFO     cocotb.crypto_accelerator          Iteration 15: Expected - key_valid = 0, ciphertext = 0
+ 17430.00ns INFO     cocotb.crypto_accelerator          Iteration 15: Actual - key_valid = 0, ciphertext = 0
+ 19080.00ns INFO     cocotb.crypto_accelerator          Iteration 16: Stimulus - candidate_e = 75, totient = 122, plaintext = 170, modulus = 241
+ 19080.00ns INFO     cocotb.crypto_accelerator          Iteration 16: Expected - key_valid = 1, ciphertext = 197
+ 19080.00ns INFO     cocotb.crypto_accelerator          Iteration 16: Actual - key_valid = 1, ciphertext = 197
+ 19220.00ns INFO     cocotb.crypto_accelerator          Iteration 17: Stimulus - candidate_e = 26, totient = 38, plaintext = 41, modulus = 83
+ 19220.00ns INFO     cocotb.crypto_accelerator          Iteration 17: Expected - key_valid = 0, ciphertext = 0
+ 19220.00ns INFO     cocotb.crypto_accelerator          Iteration 17: Actual - key_valid = 0, ciphertext = 0
+ 19400.00ns INFO     cocotb.crypto_accelerator          Iteration 18: Stimulus - candidate_e = 120, totient = 159, plaintext = 182, modulus = 151
+ 19400.00ns INFO     cocotb.crypto_accelerator          Iteration 18: Expected - key_valid = 0, ciphertext = 0
+ 19400.00ns INFO     cocotb.crypto_accelerator          Iteration 18: Actual - key_valid = 0, ciphertext = 0
+ 19570.00ns INFO     cocotb.crypto_accelerator          Iteration 19: Stimulus - candidate_e = 225, totient = 220, plaintext = 118, modulus = 38
+ 19570.00ns INFO     cocotb.crypto_accelerator          Iteration 19: Expected - key_valid = 0, ciphertext = 0
+ 19570.00ns INFO     cocotb.crypto_accelerator          Iteration 19: Actual - key_valid = 0, ciphertext = 0
+ 21500.00ns INFO     cocotb.crypto_accelerator          Iteration 20: Stimulus - candidate_e = 217, totient = 74, plaintext = 239, modulus = 20
+ 21500.00ns INFO     cocotb.crypto_accelerator          Iteration 20: Expected - key_valid = 1, ciphertext = 19
+ 21500.00ns INFO     cocotb.crypto_accelerator          Iteration 20: Actual - key_valid = 1, ciphertext = 19
+ 21700.00ns INFO     cocotb.crypto_accelerator          Iteration 21: Stimulus - candidate_e = 154, totient = 228, plaintext = 180, modulus = 64
+ 21700.00ns INFO     cocotb.crypto_accelerator          Iteration 21: Expected - key_valid = 0, ciphertext = 0
+ 21700.00ns INFO     cocotb.crypto_accelerator          Iteration 21: Actual - key_valid = 0, ciphertext = 0
+ 21880.00ns INFO     cocotb.crypto_accelerator          Iteration 22: Stimulus - candidate_e = 84, totient = 159, plaintext = 4, modulus = 120
+ 21880.00ns INFO     cocotb.crypto_accelerator          Iteration 22: Expected - key_valid = 0, ciphertext = 0
+ 21880.00ns INFO     cocotb.crypto_accelerator          Iteration 22: Actual - key_valid = 0, ciphertext = 0
+ 23570.00ns INFO     cocotb.crypto_accelerator          Iteration 23: Stimulus - candidate_e = 114, totient = 235, plaintext = 137, modulus = 248
+ 23570.00ns INFO     cocotb.crypto_accelerator          Iteration 23: Expected - key_valid = 1, ciphertext = 33
+ 23570.00ns INFO     cocotb.crypto_accelerator          Iteration 23: Actual - key_valid = 1, ciphertext = 33
+ 23690.00ns INFO     cocotb.crypto_accelerator          Iteration 24: Stimulus - candidate_e = 65, totient = 5, plaintext = 156, modulus = 99
+ 23690.00ns INFO     cocotb.crypto_accelerator          Iteration 24: Expected - key_valid = 0, ciphertext = 0
+ 23690.00ns INFO     cocotb.crypto_accelerator          Iteration 24: Actual - key_valid = 0, ciphertext = 0
+ 25610.00ns INFO     cocotb.crypto_accelerator          Iteration 25: Stimulus - candidate_e = 211, totient = 219, plaintext = 9, modulus = 123
+ 25610.00ns INFO     cocotb.crypto_accelerator          Iteration 25: Expected - key_valid = 1, ciphertext = 114
+ 25610.00ns INFO     cocotb.crypto_accelerator          Iteration 25: Actual - key_valid = 1, ciphertext = 114
+ 25750.00ns INFO     cocotb.crypto_accelerator          Iteration 26: Stimulus - candidate_e = 70, totient = 119, plaintext = 196, modulus = 144
+ 25750.00ns INFO     cocotb.crypto_accelerator          Iteration 26: Expected - key_valid = 0, ciphertext = 0
+ 25750.00ns INFO     cocotb.crypto_accelerator          Iteration 26: Actual - key_valid = 0, ciphertext = 0
+ 25950.00ns INFO     cocotb.crypto_accelerator          Iteration 27: Stimulus - candidate_e = 74, totient = 138, plaintext = 214, modulus = 55
+ 25950.00ns INFO     cocotb.crypto_accelerator          Iteration 27: Expected - key_valid = 0, ciphertext = 0
+ 25950.00ns INFO     cocotb.crypto_accelerator          Iteration 27: Actual - key_valid = 0, ciphertext = 0
+ 26120.00ns INFO     cocotb.crypto_accelerator          Iteration 28: Stimulus - candidate_e = 201, totient = 171, plaintext = 12, modulus = 230
+ 26120.00ns INFO     cocotb.crypto_accelerator          Iteration 28: Expected - key_valid = 0, ciphertext = 0
+ 26120.00ns INFO     cocotb.crypto_accelerator          Iteration 28: Actual - key_valid = 0, ciphertext = 0
+ 27460.00ns INFO     cocotb.crypto_accelerator          Iteration 29: Stimulus - candidate_e = 29, totient = 11, plaintext = 223, modulus = 136
+ 27460.00ns INFO     cocotb.crypto_accelerator          Iteration 29: Expected - key_valid = 1, ciphertext = 15
+ 27460.00ns INFO     cocotb.crypto_accelerator          Iteration 29: Actual - key_valid = 1, ciphertext = 15
+ 27620.00ns INFO     cocotb.crypto_accelerator          Iteration 30: Stimulus - candidate_e = 30, totient = 159, plaintext = 241, modulus = 108
+ 27620.00ns INFO     cocotb.crypto_accelerator          Iteration 30: Expected - key_valid = 0, ciphertext = 0
+ 27620.00ns INFO     cocotb.crypto_accelerator          Iteration 30: Actual - key_valid = 0, ciphertext = 0
+ 27740.00ns INFO     cocotb.crypto_accelerator          Iteration 31: Stimulus - candidate_e = 34, totient = 85, plaintext = 0, modulus = 80
+ 27740.00ns INFO     cocotb.crypto_accelerator          Iteration 31: Expected - key_valid = 0, ciphertext = 0
+ 27740.00ns INFO     cocotb.crypto_accelerator          Iteration 31: Actual - key_valid = 0, ciphertext = 0
+ 27930.00ns INFO     cocotb.crypto_accelerator          Iteration 32: Stimulus - candidate_e = 154, totient = 138, plaintext = 181, modulus = 16
+ 27930.00ns INFO     cocotb.crypto_accelerator          Iteration 32: Expected - key_valid = 0, ciphertext = 0
+ 27930.00ns INFO     cocotb.crypto_accelerator          Iteration 32: Actual - key_valid = 0, ciphertext = 0
+ 28120.00ns INFO     cocotb.crypto_accelerator          Iteration 33: Stimulus - candidate_e = 234, totient = 236, plaintext = 222, modulus = 203
+ 28120.00ns INFO     cocotb.crypto_accelerator          Iteration 33: Expected - key_valid = 0, ciphertext = 0
+ 28120.00ns INFO     cocotb.crypto_accelerator          Iteration 33: Actual - key_valid = 0, ciphertext = 0
+ 30040.00ns INFO     cocotb.crypto_accelerator          Iteration 34: Stimulus - candidate_e = 203, totient = 170, plaintext = 227, modulus = 44
+ 30040.00ns INFO     cocotb.crypto_accelerator          Iteration 34: Expected - key_valid = 1, ciphertext = 35
+ 30040.00ns INFO     cocotb.crypto_accelerator          Iteration 34: Actual - key_valid = 1, ciphertext = 35
+ 30160.00ns INFO     cocotb.crypto_accelerator          Iteration 35: Stimulus - candidate_e = 55, totient = 66, plaintext = 152, modulus = 30
+ 30160.00ns INFO     cocotb.crypto_accelerator          Iteration 35: Expected - key_valid = 0, ciphertext = 0
+ 30160.00ns INFO     cocotb.crypto_accelerator          Iteration 35: Actual - key_valid = 0, ciphertext = 0
+ 30330.00ns INFO     cocotb.crypto_accelerator          Iteration 36: Stimulus - candidate_e = 255, totient = 183, plaintext = 77, modulus = 3
+ 30330.00ns INFO     cocotb.crypto_accelerator          Iteration 36: Expected - key_valid = 0, ciphertext = 0
+ 30330.00ns INFO     cocotb.crypto_accelerator          Iteration 36: Actual - key_valid = 0, ciphertext = 0
+ 31830.00ns INFO     cocotb.crypto_accelerator          Iteration 37: Stimulus - candidate_e = 58, totient = 43, plaintext = 222, modulus = 201
+ 31830.00ns INFO     cocotb.crypto_accelerator          Iteration 37: Expected - key_valid = 1, ciphertext = 33
+ 31830.00ns INFO     cocotb.crypto_accelerator          Iteration 37: Actual - key_valid = 1, ciphertext = 33
+ 33500.00ns INFO     cocotb.crypto_accelerator          Iteration 38: Stimulus - candidate_e = 92, totient = 117, plaintext = 240, modulus = 216
+ 33500.00ns INFO     cocotb.crypto_accelerator          Iteration 38: Expected - key_valid = 1, ciphertext = 0
+ 33500.00ns INFO     cocotb.crypto_accelerator          Iteration 38: Actual - key_valid = 1, ciphertext = 0
+ 35070.00ns INFO     cocotb.crypto_accelerator          Iteration 39: Stimulus - candidate_e = 129, totient = 239, plaintext = 166, modulus = 193
+ 35070.00ns INFO     cocotb.crypto_accelerator          Iteration 39: Expected - key_valid = 1, ciphertext = 166
+ 35070.00ns INFO     cocotb.crypto_accelerator          Iteration 39: Actual - key_valid = 1, ciphertext = 166
+ 36990.00ns INFO     cocotb.crypto_accelerator          Iteration 40: Stimulus - candidate_e = 217, totient = 225, plaintext = 41, modulus = 55
+ 36990.00ns INFO     cocotb.crypto_accelerator          Iteration 40: Expected - key_valid = 1, ciphertext = 46
+ 36990.00ns INFO     cocotb.crypto_accelerator          Iteration 40: Actual - key_valid = 1, ciphertext = 46
+ 38910.00ns INFO     cocotb.crypto_accelerator          Iteration 41: Stimulus - candidate_e = 217, totient = 190, plaintext = 149, modulus = 158
+ 38910.00ns INFO     cocotb.crypto_accelerator          Iteration 41: Expected - key_valid = 1, ciphertext = 85
+ 38910.00ns INFO     cocotb.crypto_accelerator          Iteration 41: Actual - key_valid = 1, ciphertext = 85
+ 40560.00ns INFO     cocotb.crypto_accelerator          Iteration 42: Stimulus - candidate_e = 78, totient = 73, plaintext = 174, modulus = 43
+ 40560.00ns INFO     cocotb.crypto_accelerator          Iteration 42: Expected - key_valid = 1, ciphertext = 41
+ 40560.00ns INFO     cocotb.crypto_accelerator          Iteration 42: Actual - key_valid = 1, ciphertext = 41
+ 42380.00ns INFO     cocotb.crypto_accelerator          Iteration 43: Stimulus - candidate_e = 240, totient = 181, plaintext = 112, modulus = 27
+ 42380.00ns INFO     cocotb.crypto_accelerator          Iteration 43: Expected - key_valid = 1, ciphertext = 19
+ 42380.00ns INFO     cocotb.crypto_accelerator          Iteration 43: Actual - key_valid = 1, ciphertext = 19
+ 44520.00ns INFO     cocotb.crypto_accelerator          Iteration 44: Stimulus - candidate_e = 253, totient = 86, plaintext = 168, modulus = 36
+ 44520.00ns INFO     cocotb.crypto_accelerator          Iteration 44: Expected - key_valid = 1, ciphertext = 0
+ 44520.00ns INFO     cocotb.crypto_accelerator          Iteration 44: Actual - key_valid = 1, ciphertext = 0
+ 46230.00ns INFO     cocotb.crypto_accelerator          Iteration 45: Stimulus - candidate_e = 145, totient = 242, plaintext = 155, modulus = 161
+ 46230.00ns INFO     cocotb.crypto_accelerator          Iteration 45: Expected - key_valid = 1, ciphertext = 148
+ 46230.00ns INFO     cocotb.crypto_accelerator          Iteration 45: Actual - key_valid = 1, ciphertext = 148
+ 48000.00ns INFO     cocotb.crypto_accelerator          Iteration 46: Stimulus - candidate_e = 121, totient = 85, plaintext = 120, modulus = 47
+ 48000.00ns INFO     cocotb.crypto_accelerator          Iteration 46: Expected - key_valid = 1, ciphertext = 43
+ 48000.00ns INFO     cocotb.crypto_accelerator          Iteration 46: Actual - key_valid = 1, ciphertext = 43
+ 49810.00ns INFO     cocotb.crypto_accelerator          Iteration 47: Stimulus - candidate_e = 212, totient = 73, plaintext = 13, modulus = 50
+ 49810.00ns INFO     cocotb.crypto_accelerator          Iteration 47: Expected - key_valid = 1, ciphertext = 31
+ 49810.00ns INFO     cocotb.crypto_accelerator          Iteration 47: Actual - key_valid = 1, ciphertext = 31
+ 51480.00ns INFO     cocotb.crypto_accelerator          Iteration 48: Stimulus - candidate_e = 116, totient = 123, plaintext = 166, modulus = 239
+ 51480.00ns INFO     cocotb.crypto_accelerator          Iteration 48: Expected - key_valid = 1, ciphertext = 51
+ 51480.00ns INFO     cocotb.crypto_accelerator          Iteration 48: Actual - key_valid = 1, ciphertext = 51
+ 51680.00ns INFO     cocotb.crypto_accelerator          Iteration 49: Stimulus - candidate_e = 222, totient = 112, plaintext = 32, modulus = 131
+ 51680.00ns INFO     cocotb.crypto_accelerator          Iteration 49: Expected - key_valid = 0, ciphertext = 0
+ 51680.00ns INFO     cocotb.crypto_accelerator          Iteration 49: Actual - key_valid = 0, ciphertext = 0
+ 51700.00ns INFO     cocotb.crypto_accelerator          Test Case 4: Boundary Conditions
+ 51700.00ns INFO     cocotb.crypto_accelerator          Stimulus: candidate_e, totient, plaintext, modulus = 255 (maximum value)
+ 51700.00ns INFO     cocotb.crypto_accelerator          Expected: key_valid = 0 and ciphertext = 0
+ 51770.00ns INFO     cocotb.crypto_accelerator          Actual: key_valid = 0, ciphertext = 0
+ 51770.00ns INFO     cocotb.crypto_accelerator          All tests passed successfully for the crypto accelerator.
+ 51770.00ns INFO     cocotb.regression                  test_crypto_accelerator.test_key_validation_and_encryption passed
+ 51770.00ns INFO     cocotb.regression                  ********************************************************************************************************************
+                                                        ** TEST                                                        STATUS  SIM TIME (ns)  REAL TIME (s)  RATIO (ns/s) **
+                                                        ********************************************************************************************************************
+                                                        ** test_crypto_accelerator.test_key_validation_and_encryption   PASS       51770.00           0.78      66354.11  **
+                                                        ********************************************************************************************************************
+                                                        ** TESTS=1 PASS=1 FAIL=0 SKIP=0                                            51770.00           0.79      65698.76  **
+                                                        ********************************************************************************************************************
+                                                        
+FST info: dumpfile /code/rundir/sim_build/crypto_accelerator.fst opened for output.
+[DEBUG] Running simulation with WIDTH=8
+[DEBUG] Parameters: {'WIDTH': 8}
+PASSED
+../../src/test_runner.py::test_crypto_accelerator[16]      -.--ns INFO     gpi                                ..mbed/gpi_embed.cpp:79   in set_program_name_in_venv        Did not detect Python virtual environment. Using system-wide Python interpreter
+     -.--ns INFO     gpi                                ../gpi/GpiCommon.cpp:101  in gpi_print_registered_impl       VPI registered
+     0.00ns INFO     cocotb                             Running on Icarus Verilog version 13.0 (devel)
+     0.00ns INFO     cocotb                             Running tests with cocotb v2.0.0.dev0+8d6c1a63 from /usr/local/lib/python3.9/dist-packages/cocotb
+     0.00ns INFO     cocotb                             Seeding Python random module with 1773327863
+     0.00ns INFO     cocotb.regression                  running test_crypto_accelerator.test_key_validation_and_encryption (1/1)
+                                                            Production-level testbench for the crypto accelerator:
+     0.00ns INFO     cocotb.crypto_accelerator          Testbench started with WIDTH=16 (max value = 65535)
+    20.00ns INFO     cocotb.crypto_accelerator          Test Case 1: Valid Key Scenario
+    20.00ns INFO     cocotb.crypto_accelerator          Stimulus: candidate_e = 3, totient = 10, plaintext = 7, modulus = 11
+    20.00ns INFO     cocotb.crypto_accelerator          Expected: key_valid = 1 and ciphertext = 2
+  1000.00ns INFO     cocotb.crypto_accelerator          Actual: key_valid = 1, ciphertext = 2
+  1020.00ns INFO     cocotb.crypto_accelerator          Test Case 2: Invalid Key Scenario
+  1020.00ns INFO     cocotb.crypto_accelerator          Stimulus: candidate_e = 4, totient = 10, plaintext = 7, modulus = 11
+  1020.00ns INFO     cocotb.crypto_accelerator          Expected: key_valid = 0 and ciphertext = 0
+  1130.00ns INFO     cocotb.crypto_accelerator          Actual: key_valid = 0, ciphertext = 0
+  1150.00ns INFO     cocotb.crypto_accelerator          Test Case 3: Randomized Stress Test
+  1400.00ns INFO     cocotb.crypto_accelerator          Iteration 0: Stimulus - candidate_e = 30381, totient = 37063, plaintext = 14328, modulus = 20104
+  1400.00ns INFO     cocotb.crypto_accelerator          Iteration 0: Expected - key_valid = 0, ciphertext = 0
+  1400.00ns INFO     cocotb.crypto_accelerator          Iteration 0: Actual - key_valid = 0, ciphertext = 0
+  6340.00ns INFO     cocotb.crypto_accelerator          Iteration 1: Stimulus - candidate_e = 15476, totient = 2997, plaintext = 63799, modulus = 65364
+  6340.00ns INFO     cocotb.crypto_accelerator          Iteration 1: Expected - key_valid = 1, ciphertext = 31045
+  6340.00ns INFO     cocotb.crypto_accelerator          Iteration 1: Actual - key_valid = 1, ciphertext = 31045
+ 12130.00ns INFO     cocotb.crypto_accelerator          Iteration 2: Stimulus - candidate_e = 59854, totient = 4655, plaintext = 3475, modulus = 62303
+ 12130.00ns INFO     cocotb.crypto_accelerator          Iteration 2: Expected - key_valid = 1, ciphertext = 33280
+ 12130.00ns INFO     cocotb.crypto_accelerator          Iteration 2: Actual - key_valid = 1, ciphertext = 33280
+ 12380.00ns INFO     cocotb.crypto_accelerator          Iteration 3: Stimulus - candidate_e = 4602, totient = 27666, plaintext = 17425, modulus = 17138
+ 12380.00ns INFO     cocotb.crypto_accelerator          Iteration 3: Expected - key_valid = 0, ciphertext = 0
+ 12380.00ns INFO     cocotb.crypto_accelerator          Iteration 3: Actual - key_valid = 0, ciphertext = 0
+ 17950.00ns INFO     cocotb.crypto_accelerator          Iteration 4: Stimulus - candidate_e = 26523, totient = 45260, plaintext = 19296, modulus = 63919
+ 17950.00ns INFO     cocotb.crypto_accelerator          Iteration 4: Expected - key_valid = 1, ciphertext = 40823
+ 17950.00ns INFO     cocotb.crypto_accelerator          Iteration 4: Actual - key_valid = 1, ciphertext = 40823
+ 23140.00ns INFO     cocotb.crypto_accelerator          Iteration 5: Stimulus - candidate_e = 25332, totient = 42941, plaintext = 5379, modulus = 37042
+ 23140.00ns INFO     cocotb.crypto_accelerator          Iteration 5: Expected - key_valid = 1, ciphertext = 5767
+ 23140.00ns INFO     cocotb.crypto_accelerator          Iteration 5: Actual - key_valid = 1, ciphertext = 5767
+ 23430.00ns INFO     cocotb.crypto_accelerator          Iteration 6: Stimulus - candidate_e = 59594, totient = 35472, plaintext = 5280, modulus = 2231
+ 23430.00ns INFO     cocotb.crypto_accelerator          Iteration 6: Expected - key_valid = 0, ciphertext = 0
+ 23430.00ns INFO     cocotb.crypto_accelerator          Iteration 6: Actual - key_valid = 0, ciphertext = 0
+ 23700.00ns INFO     cocotb.crypto_accelerator          Iteration 7: Stimulus - candidate_e = 20692, totient = 21792, plaintext = 52154, modulus = 59136
+ 23700.00ns INFO     cocotb.crypto_accelerator          Iteration 7: Expected - key_valid = 0, ciphertext = 0
+ 23700.00ns INFO     cocotb.crypto_accelerator          Iteration 7: Actual - key_valid = 0, ciphertext = 0
+ 27850.00ns INFO     cocotb.crypto_accelerator          Iteration 8: Stimulus - candidate_e = 4359, totient = 58138, plaintext = 290, modulus = 47948
+ 27850.00ns INFO     cocotb.crypto_accelerator          Iteration 8: Expected - key_valid = 1, ciphertext = 11924
+ 27850.00ns INFO     cocotb.crypto_accelerator          Iteration 8: Actual - key_valid = 1, ciphertext = 11924
+ 33260.00ns INFO     cocotb.crypto_accelerator          Iteration 9: Stimulus - candidate_e = 29587, totient = 43302, plaintext = 20247, modulus = 27916
+ 33260.00ns INFO     cocotb.crypto_accelerator          Iteration 9: Expected - key_valid = 1, ciphertext = 22235
+ 33260.00ns INFO     cocotb.crypto_accelerator          Iteration 9: Actual - key_valid = 1, ciphertext = 22235
+ 33530.00ns INFO     cocotb.crypto_accelerator          Iteration 10: Stimulus - candidate_e = 7773, totient = 20205, plaintext = 24525, modulus = 38474
+ 33530.00ns INFO     cocotb.crypto_accelerator          Iteration 10: Expected - key_valid = 0, ciphertext = 0
+ 33530.00ns INFO     cocotb.crypto_accelerator          Iteration 10: Actual - key_valid = 0, ciphertext = 0
+ 33770.00ns INFO     cocotb.crypto_accelerator          Iteration 11: Stimulus - candidate_e = 58170, totient = 48750, plaintext = 44338, modulus = 20041
+ 33770.00ns INFO     cocotb.crypto_accelerator          Iteration 11: Expected - key_valid = 0, ciphertext = 0
+ 33770.00ns INFO     cocotb.crypto_accelerator          Iteration 11: Actual - key_valid = 0, ciphertext = 0
+ 38560.00ns INFO     cocotb.crypto_accelerator          Iteration 12: Stimulus - candidate_e = 12709, totient = 48778, plaintext = 22135, modulus = 8289
+ 38560.00ns INFO     cocotb.crypto_accelerator          Iteration 12: Expected - key_valid = 1, ciphertext = 157
+ 38560.00ns INFO     cocotb.crypto_accelerator          Iteration 12: Actual - key_valid = 1, ciphertext = 157
+ 44300.00ns INFO     cocotb.crypto_accelerator          Iteration 13: Stimulus - candidate_e = 62759, totient = 26867, plaintext = 13578, modulus = 53678
+ 44300.00ns INFO     cocotb.crypto_accelerator          Iteration 13: Expected - key_valid = 1, ciphertext = 30410
+ 44300.00ns INFO     cocotb.crypto_accelerator          Iteration 13: Actual - key_valid = 1, ciphertext = 30410
+ 49120.00ns INFO     cocotb.crypto_accelerator          Iteration 14: Stimulus - candidate_e = 49328, totient = 20293, plaintext = 4048, modulus = 37802
+ 49120.00ns INFO     cocotb.crypto_accelerator          Iteration 14: Expected - key_valid = 1, ciphertext = 2968
+ 49120.00ns INFO     cocotb.crypto_accelerator          Iteration 14: Actual - key_valid = 1, ciphertext = 2968
+ 49400.00ns INFO     cocotb.crypto_accelerator          Iteration 15: Stimulus - candidate_e = 22058, totient = 12472, plaintext = 58378, modulus = 49816
+ 49400.00ns INFO     cocotb.crypto_accelerator          Iteration 15: Expected - key_valid = 0, ciphertext = 0
+ 49400.00ns INFO     cocotb.crypto_accelerator          Iteration 15: Actual - key_valid = 0, ciphertext = 0
+ 49660.00ns INFO     cocotb.crypto_accelerator          Iteration 16: Stimulus - candidate_e = 43440, totient = 12945, plaintext = 28386, modulus = 39480
+ 49660.00ns INFO     cocotb.crypto_accelerator          Iteration 16: Expected - key_valid = 0, ciphertext = 0
+ 49660.00ns INFO     cocotb.crypto_accelerator          Iteration 16: Actual - key_valid = 0, ciphertext = 0
+ 49920.00ns INFO     cocotb.crypto_accelerator          Iteration 17: Stimulus - candidate_e = 53501, totient = 8624, plaintext = 54717, modulus = 44102
+ 49920.00ns INFO     cocotb.crypto_accelerator          Iteration 17: Expected - key_valid = 0, ciphertext = 0
+ 49920.00ns INFO     cocotb.crypto_accelerator          Iteration 17: Actual - key_valid = 0, ciphertext = 0
+ 50180.00ns INFO     cocotb.crypto_accelerator          Iteration 18: Stimulus - candidate_e = 29070, totient = 45210, plaintext = 58302, modulus = 10686
+ 50180.00ns INFO     cocotb.crypto_accelerator          Iteration 18: Expected - key_valid = 0, ciphertext = 0
+ 50180.00ns INFO     cocotb.crypto_accelerator          Iteration 18: Actual - key_valid = 0, ciphertext = 0
+ 50480.00ns INFO     cocotb.crypto_accelerator          Iteration 19: Stimulus - candidate_e = 23848, totient = 22334, plaintext = 22656, modulus = 17149
+ 50480.00ns INFO     cocotb.crypto_accelerator          Iteration 19: Expected - key_valid = 0, ciphertext = 0
+ 50480.00ns INFO     cocotb.crypto_accelerator          Iteration 19: Actual - key_valid = 0, ciphertext = 0
+ 55490.00ns INFO     cocotb.crypto_accelerator          Iteration 20: Stimulus - candidate_e = 16503, totient = 15502, plaintext = 28077, modulus = 34493
+ 55490.00ns INFO     cocotb.crypto_accelerator          Iteration 20: Expected - key_valid = 1, ciphertext = 9780
+ 55490.00ns INFO     cocotb.crypto_accelerator          Iteration 20: Actual - key_valid = 1, ciphertext = 9780
+ 55760.00ns INFO     cocotb.crypto_accelerator          Iteration 21: Stimulus - candidate_e = 37975, totient = 3190, plaintext = 3220, modulus = 3030
+ 55760.00ns INFO     cocotb.crypto_accelerator          Iteration 21: Expected - key_valid = 0, ciphertext = 0
+ 55760.00ns INFO     cocotb.crypto_accelerator          Iteration 21: Actual - key_valid = 0, ciphertext = 0
+ 61520.00ns INFO     cocotb.crypto_accelerator          Iteration 22: Stimulus - candidate_e = 54685, totient = 32187, plaintext = 24079, modulus = 11149
+ 61520.00ns INFO     cocotb.crypto_accelerator          Iteration 22: Expected - key_valid = 1, ciphertext = 4563
+ 61520.00ns INFO     cocotb.crypto_accelerator          Iteration 22: Actual - key_valid = 1, ciphertext = 4563
+ 61760.00ns INFO     cocotb.crypto_accelerator          Iteration 23: Stimulus - candidate_e = 22967, totient = 57540, plaintext = 10842, modulus = 2905
+ 61760.00ns INFO     cocotb.crypto_accelerator          Iteration 23: Expected - key_valid = 0, ciphertext = 0
+ 61760.00ns INFO     cocotb.crypto_accelerator          Iteration 23: Actual - key_valid = 0, ciphertext = 0
+ 62020.00ns INFO     cocotb.crypto_accelerator          Iteration 24: Stimulus - candidate_e = 58956, totient = 52332, plaintext = 17357, modulus = 21838
+ 62020.00ns INFO     cocotb.crypto_accelerator          Iteration 24: Expected - key_valid = 0, ciphertext = 0
+ 62020.00ns INFO     cocotb.crypto_accelerator          Iteration 24: Actual - key_valid = 0, ciphertext = 0
+ 68020.00ns INFO     cocotb.crypto_accelerator          Iteration 25: Stimulus - candidate_e = 43515, totient = 22783, plaintext = 43298, modulus = 61537
+ 68020.00ns INFO     cocotb.crypto_accelerator          Iteration 25: Expected - key_valid = 1, ciphertext = 59695
+ 68020.00ns INFO     cocotb.crypto_accelerator          Iteration 25: Actual - key_valid = 1, ciphertext = 59695
+ 68280.00ns INFO     cocotb.crypto_accelerator          Iteration 26: Stimulus - candidate_e = 60125, totient = 47535, plaintext = 14886, modulus = 55787
+ 68280.00ns INFO     cocotb.crypto_accelerator          Iteration 26: Expected - key_valid = 0, ciphertext = 0
+ 68280.00ns INFO     cocotb.crypto_accelerator          Iteration 26: Actual - key_valid = 0, ciphertext = 0
+ 68560.00ns INFO     cocotb.crypto_accelerator          Iteration 27: Stimulus - candidate_e = 18394, totient = 4914, plaintext = 24398, modulus = 28020
+ 68560.00ns INFO     cocotb.crypto_accelerator          Iteration 27: Expected - key_valid = 0, ciphertext = 0
+ 68560.00ns INFO     cocotb.crypto_accelerator          Iteration 27: Actual - key_valid = 0, ciphertext = 0
+ 74150.00ns INFO     cocotb.crypto_accelerator          Iteration 28: Stimulus - candidate_e = 61657, totient = 7691, plaintext = 19457, modulus = 56321
+ 74150.00ns INFO     cocotb.crypto_accelerator          Iteration 28: Expected - key_valid = 1, ciphertext = 14204
+ 74150.00ns INFO     cocotb.crypto_accelerator          Iteration 28: Actual - key_valid = 1, ciphertext = 14204
+ 74470.00ns INFO     cocotb.crypto_accelerator          Iteration 29: Stimulus - candidate_e = 6160, totient = 57658, plaintext = 47387, modulus = 28278
+ 74470.00ns INFO     cocotb.crypto_accelerator          Iteration 29: Expected - key_valid = 0, ciphertext = 0
+ 74470.00ns INFO     cocotb.crypto_accelerator          Iteration 29: Actual - key_valid = 0, ciphertext = 0
+ 79670.00ns INFO     cocotb.crypto_accelerator          Iteration 30: Stimulus - candidate_e = 27915, totient = 50828, plaintext = 26958, modulus = 15669
+ 79670.00ns INFO     cocotb.crypto_accelerator          Iteration 30: Expected - key_valid = 1, ciphertext = 10215
+ 79670.00ns INFO     cocotb.crypto_accelerator          Iteration 30: Actual - key_valid = 1, ciphertext = 10215
+ 79960.00ns INFO     cocotb.crypto_accelerator          Iteration 31: Stimulus - candidate_e = 42934, totient = 35996, plaintext = 48216, modulus = 36498
+ 79960.00ns INFO     cocotb.crypto_accelerator          Iteration 31: Expected - key_valid = 0, ciphertext = 0
+ 79960.00ns INFO     cocotb.crypto_accelerator          Iteration 31: Actual - key_valid = 0, ciphertext = 0
+ 80260.00ns INFO     cocotb.crypto_accelerator          Iteration 32: Stimulus - candidate_e = 27208, totient = 50474, plaintext = 49946, modulus = 1541
+ 80260.00ns INFO     cocotb.crypto_accelerator          Iteration 32: Expected - key_valid = 0, ciphertext = 0
+ 80260.00ns INFO     cocotb.crypto_accelerator          Iteration 32: Actual - key_valid = 0, ciphertext = 0
+ 80510.00ns INFO     cocotb.crypto_accelerator          Iteration 33: Stimulus - candidate_e = 50076, totient = 3341, plaintext = 27805, modulus = 36097
+ 80510.00ns INFO     cocotb.crypto_accelerator          Iteration 33: Expected - key_valid = 0, ciphertext = 0
+ 80510.00ns INFO     cocotb.crypto_accelerator          Iteration 33: Actual - key_valid = 0, ciphertext = 0
+ 85890.00ns INFO     cocotb.crypto_accelerator          Iteration 34: Stimulus - candidate_e = 27947, totient = 40128, plaintext = 18083, modulus = 56815
+ 85890.00ns INFO     cocotb.crypto_accelerator          Iteration 34: Expected - key_valid = 1, ciphertext = 17522
+ 85890.00ns INFO     cocotb.crypto_accelerator          Iteration 34: Actual - key_valid = 1, ciphertext = 17522
+ 91120.00ns INFO     cocotb.crypto_accelerator          Iteration 35: Stimulus - candidate_e = 57746, totient = 33541, plaintext = 33311, modulus = 26931
+ 91120.00ns INFO     cocotb.crypto_accelerator          Iteration 35: Expected - key_valid = 1, ciphertext = 9052
+ 91120.00ns INFO     cocotb.crypto_accelerator          Iteration 35: Actual - key_valid = 1, ciphertext = 9052
+ 96680.00ns INFO     cocotb.crypto_accelerator          Iteration 36: Stimulus - candidate_e = 30449, totient = 28930, plaintext = 55107, modulus = 49786
+ 96680.00ns INFO     cocotb.crypto_accelerator          Iteration 36: Expected - key_valid = 1, ciphertext = 8477
+ 96680.00ns INFO     cocotb.crypto_accelerator          Iteration 36: Actual - key_valid = 1, ciphertext = 8477
+102470.00ns INFO     cocotb.crypto_accelerator          Iteration 37: Stimulus - candidate_e = 30650, totient = 39831, plaintext = 32693, modulus = 44882
+102470.00ns INFO     cocotb.crypto_accelerator          Iteration 37: Expected - key_valid = 1, ciphertext = 3977
+102470.00ns INFO     cocotb.crypto_accelerator          Iteration 37: Actual - key_valid = 1, ciphertext = 3977
+108040.00ns INFO     cocotb.crypto_accelerator          Iteration 38: Stimulus - candidate_e = 44756, totient = 44963, plaintext = 384, modulus = 19578
+108040.00ns INFO     cocotb.crypto_accelerator          Iteration 38: Expected - key_valid = 1, ciphertext = 11742
+108040.00ns INFO     cocotb.crypto_accelerator          Iteration 38: Actual - key_valid = 1, ciphertext = 11742
+113050.00ns INFO     cocotb.crypto_accelerator          Iteration 39: Stimulus - candidate_e = 57417, totient = 31982, plaintext = 54802, modulus = 24676
+113050.00ns INFO     cocotb.crypto_accelerator          Iteration 39: Expected - key_valid = 1, ciphertext = 15780
+113050.00ns INFO     cocotb.crypto_accelerator          Iteration 39: Actual - key_valid = 1, ciphertext = 15780
+118640.00ns INFO     cocotb.crypto_accelerator          Iteration 40: Stimulus - candidate_e = 27605, totient = 33052, plaintext = 32986, modulus = 10411
+118640.00ns INFO     cocotb.crypto_accelerator          Iteration 40: Expected - key_valid = 1, ciphertext = 7979
+118640.00ns INFO     cocotb.crypto_accelerator          Iteration 40: Actual - key_valid = 1, ciphertext = 7979
+122820.00ns INFO     cocotb.crypto_accelerator          Iteration 41: Stimulus - candidate_e = 4201, totient = 5881, plaintext = 2937, modulus = 21789
+122820.00ns INFO     cocotb.crypto_accelerator          Iteration 41: Expected - key_valid = 1, ciphertext = 5103
+122820.00ns INFO     cocotb.crypto_accelerator          Iteration 41: Actual - key_valid = 1, ciphertext = 5103
+127180.00ns INFO     cocotb.crypto_accelerator          Iteration 42: Stimulus - candidate_e = 5352, totient = 6167, plaintext = 53885, modulus = 36936
+127180.00ns INFO     cocotb.crypto_accelerator          Iteration 42: Expected - key_valid = 1, ciphertext = 31465
+127180.00ns INFO     cocotb.crypto_accelerator          Iteration 42: Actual - key_valid = 1, ciphertext = 31465
+132030.00ns INFO     cocotb.crypto_accelerator          Iteration 43: Stimulus - candidate_e = 38018, totient = 39557, plaintext = 62352, modulus = 7377
+132030.00ns INFO     cocotb.crypto_accelerator          Iteration 43: Expected - key_valid = 1, ciphertext = 4413
+132030.00ns INFO     cocotb.crypto_accelerator          Iteration 43: Actual - key_valid = 1, ciphertext = 4413
+137060.00ns INFO     cocotb.crypto_accelerator          Iteration 44: Stimulus - candidate_e = 41640, totient = 7957, plaintext = 65082, modulus = 50438
+137060.00ns INFO     cocotb.crypto_accelerator          Iteration 44: Expected - key_valid = 1, ciphertext = 1654
+137060.00ns INFO     cocotb.crypto_accelerator          Iteration 44: Actual - key_valid = 1, ciphertext = 1654
+137380.00ns INFO     cocotb.crypto_accelerator          Iteration 45: Stimulus - candidate_e = 64916, totient = 36098, plaintext = 61117, modulus = 63244
+137380.00ns INFO     cocotb.crypto_accelerator          Iteration 45: Expected - key_valid = 0, ciphertext = 0
+137380.00ns INFO     cocotb.crypto_accelerator          Iteration 45: Actual - key_valid = 0, ciphertext = 0
+143740.00ns INFO     cocotb.crypto_accelerator          Iteration 46: Stimulus - candidate_e = 55293, totient = 36434, plaintext = 27731, modulus = 41568
+143740.00ns INFO     cocotb.crypto_accelerator          Iteration 46: Expected - key_valid = 1, ciphertext = 31427
+143740.00ns INFO     cocotb.crypto_accelerator          Iteration 46: Actual - key_valid = 1, ciphertext = 31427
+144030.00ns INFO     cocotb.crypto_accelerator          Iteration 47: Stimulus - candidate_e = 45320, totient = 18848, plaintext = 19665, modulus = 53264
+144030.00ns INFO     cocotb.crypto_accelerator          Iteration 47: Expected - key_valid = 0, ciphertext = 0
+144030.00ns INFO     cocotb.crypto_accelerator          Iteration 47: Actual - key_valid = 0, ciphertext = 0
+144270.00ns INFO     cocotb.crypto_accelerator          Iteration 48: Stimulus - candidate_e = 32834, totient = 398, plaintext = 23406, modulus = 62461
+144270.00ns INFO     cocotb.crypto_accelerator          Iteration 48: Expected - key_valid = 0, ciphertext = 0
+144270.00ns INFO     cocotb.crypto_accelerator          Iteration 48: Actual - key_valid = 0, ciphertext = 0
+149130.00ns INFO     cocotb.crypto_accelerator          Iteration 49: Stimulus - candidate_e = 37984, totient = 45789, plaintext = 24955, modulus = 23096
+149130.00ns INFO     cocotb.crypto_accelerator          Iteration 49: Expected - key_valid = 1, ciphertext = 23073
+149130.00ns INFO     cocotb.crypto_accelerator          Iteration 49: Actual - key_valid = 1, ciphertext = 23073
+149150.00ns INFO     cocotb.crypto_accelerator          Test Case 4: Boundary Conditions
+149150.00ns INFO     cocotb.crypto_accelerator          Stimulus: candidate_e, totient, plaintext, modulus = 65535 (maximum value)
+149150.00ns INFO     cocotb.crypto_accelerator          Expected: key_valid = 0 and ciphertext = 0
+149220.00ns INFO     cocotb.crypto_accelerator          Actual: key_valid = 0, ciphertext = 0
+149220.00ns INFO     cocotb.crypto_accelerator          All tests passed successfully for the crypto accelerator.
+149220.00ns INFO     cocotb.regression                  test_crypto_accelerator.test_key_validation_and_encryption passed
+149220.00ns INFO     cocotb.regression                  ********************************************************************************************************************
+                                                        ** TEST                                                        STATUS  SIM TIME (ns)  REAL TIME (s)  RATIO (ns/s) **
+                                                        ********************************************************************************************************************
+                                                        ** test_crypto_accelerator.test_key_validation_and_encryption   PASS      149220.00           2.02      73809.34  **
+                                                        ********************************************************************************************************************
+                                                        ** TESTS=1 PASS=1 FAIL=0 SKIP=0                                           149220.00           2.03      73452.02  **
+                                                        ********************************************************************************************************************
+                                                        
+FST info: dumpfile /code/rundir/sim_build/crypto_accelerator.fst opened for output.
+[DEBUG] Running simulation with WIDTH=16
+[DEBUG] Parameters: {'WIDTH': 16}
+PASSED
+
+============================== 5 passed in 5.37s ===============================

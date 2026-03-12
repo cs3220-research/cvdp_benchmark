@@ -1,0 +1,437 @@
+Running service: 01-new-tb
+============================= test session starts ==============================
+platform linux -- Python 3.9.2, pytest-8.3.2, pluggy-1.5.0 -- /usr/bin/python3
+cachedir: /code/rundir/.cache
+rootdir: /src
+collecting ... collected 4 items
+
+../src/test_runner.py::test_dig_stop[3-0]      -.--ns INFO     gpi                                ..mbed/gpi_embed.cpp:79   in set_program_name_in_venv        Did not detect Python virtual environment. Using system-wide Python interpreter
+     -.--ns INFO     gpi                                ../gpi/GpiCommon.cpp:101  in gpi_print_registered_impl       VPI registered
+     0.00ns INFO     cocotb                             Running on Icarus Verilog version 13.0 (devel)
+     0.00ns INFO     cocotb                             Running tests with cocotb v1.9.2 from /usr/local/lib/python3.9/dist-packages/cocotb
+     0.00ns INFO     cocotb                             Seeding Python random module with 1773329740
+     0.00ns INFO     cocotb.regression                  Found test test_dig_stopwatch.test_dig_stopwatch
+     0.00ns INFO     cocotb.regression                  running test_dig_stopwatch (1/1)
+Current Time - Hours: 0, Minutes: 0, Seconds: 1
+Current Time - Hours: 0, Minutes: 0, Seconds: 2
+Current Time - Hours: 0, Minutes: 0, Seconds: 3
+Current Time - Hours: 0, Minutes: 0, Seconds: 4
+Current Time - Hours: 0, Minutes: 0, Seconds: 5
+Current Time - Hours: 0, Minutes: 0, Seconds: 6
+Current Time - Hours: 0, Minutes: 0, Seconds: 7
+Current Time - Hours: 0, Minutes: 0, Seconds: 8
+Current Time - Hours: 0, Minutes: 0, Seconds: 9
+Current Time - Hours: 0, Minutes: 0, Seconds: 10
+Current Time - Hours: 0, Minutes: 0, Seconds: 11
+Current Time - Hours: 0, Minutes: 0, Seconds: 12
+Current Time - Hours: 0, Minutes: 0, Seconds: 13
+Current Time - Hours: 0, Minutes: 0, Seconds: 14
+Current Time - Hours: 0, Minutes: 0, Seconds: 15
+Current Time - Hours: 0, Minutes: 0, Seconds: 16
+Current Time - Hours: 0, Minutes: 0, Seconds: 17
+Current Time - Hours: 0, Minutes: 0, Seconds: 18
+Current Time - Hours: 0, Minutes: 0, Seconds: 19
+Current Time - Hours: 0, Minutes: 0, Seconds: 20
+Current Time - Hours: 0, Minutes: 0, Seconds: 21
+Current Time - Hours: 0, Minutes: 0, Seconds: 22
+Current Time - Hours: 0, Minutes: 0, Seconds: 23
+Current Time - Hours: 0, Minutes: 0, Seconds: 24
+Current Time - Hours: 0, Minutes: 0, Seconds: 25
+Current Time - Hours: 0, Minutes: 0, Seconds: 26
+Current Time - Hours: 0, Minutes: 0, Seconds: 27
+Current Time - Hours: 0, Minutes: 0, Seconds: 28
+Current Time - Hours: 0, Minutes: 0, Seconds: 29
+Current Time - Hours: 0, Minutes: 0, Seconds: 30
+Current Time - Hours: 0, Minutes: 0, Seconds: 31
+Current Time - Hours: 0, Minutes: 0, Seconds: 32
+Current Time - Hours: 0, Minutes: 0, Seconds: 33
+Current Time - Hours: 0, Minutes: 0, Seconds: 34
+Current Time - Hours: 0, Minutes: 0, Seconds: 35
+Current Time - Hours: 0, Minutes: 0, Seconds: 36
+Current Time - Hours: 0, Minutes: 0, Seconds: 37
+Current Time - Hours: 0, Minutes: 0, Seconds: 38
+Current Time - Hours: 0, Minutes: 0, Seconds: 39
+Current Time - Hours: 0, Minutes: 0, Seconds: 40
+Rollover Current Time - Hour: 0, Minutes: 0, Seconds: 41
+25666666565.00ns INFO     cocotb.regression                  test_dig_stopwatch failed
+                                                             Traceback (most recent call last):
+                                                               File "/code/src/test_dig_stopwatch.py", line 204, in test_dig_stopwatch
+                                                                 await check_rollover_conditions(dut, 3600)  # Testing rollovers for 1 hour.
+                                                               File "/code/src/test_dig_stopwatch.py", line 83, in check_rollover_conditions
+                                                                 assert curr_s_pulse == 1 or prev_s_pulse == 1, "Error: second_pulse not asserted when seconds incremented."
+                                                             AssertionError: Error: second_pulse not asserted when seconds incremented.
+                                                             assert (0 == 1 or 0 == 1)
+25666666565.00ns INFO     cocotb.regression                  ***********************************************************************************************
+                                                             ** TEST                                   STATUS  SIM TIME (ns)  REAL TIME (s)  RATIO (ns/s) **
+                                                             ***********************************************************************************************
+                                                             ** test_dig_stopwatch.test_dig_stopwatch   FAIL   25666666565.00           0.02   1382516595266.94  **
+                                                             ***********************************************************************************************
+                                                             ** TESTS=1 PASS=0 FAIL=1 SKIP=0                   25666666565.00           0.05   519016108650.83  **
+                                                             ***********************************************************************************************
+                                                             
+FST info: dumpfile /code/sim_build/dig_stopwatch_top.fst opened for output.
+[DEBUG] Parameters: {'CLK_FREQ': 3}
+Removing: /code/sim_build
+INFO: Running command iverilog -o /code/sim_build/sim.vvp -D COCOTB_SIM=1 -s dig_stopwatch_top -g2012 -Pdig_stopwatch_top.CLK_FREQ=3 -s cocotb_iverilog_dump -f /code/sim_build/cmds.f /code/rtl/dig_stopwatch.sv /code/rtl/dig_stopwatch_top.sv /code/sim_build/cocotb_iverilog_dump.v in directory /code/sim_build
+INFO: Running command vvp -M /usr/local/lib/python3.9/dist-packages/cocotb/libs -m libcocotbvpi_icarus /code/sim_build/sim.vvp -fst in directory /code/sim_build
+FAILED
+../src/test_runner.py::test_dig_stop[50-0]      -.--ns INFO     gpi                                ..mbed/gpi_embed.cpp:79   in set_program_name_in_venv        Did not detect Python virtual environment. Using system-wide Python interpreter
+     -.--ns INFO     gpi                                ../gpi/GpiCommon.cpp:101  in gpi_print_registered_impl       VPI registered
+     0.00ns INFO     cocotb                             Running on Icarus Verilog version 13.0 (devel)
+     0.00ns INFO     cocotb                             Running tests with cocotb v1.9.2 from /usr/local/lib/python3.9/dist-packages/cocotb
+     0.00ns INFO     cocotb                             Seeding Python random module with 1773329740
+     0.00ns INFO     cocotb.regression                  Found test test_dig_stopwatch.test_dig_stopwatch
+     0.00ns INFO     cocotb.regression                  running test_dig_stopwatch (1/1)
+Current Time - Hours: 0, Minutes: 0, Seconds: 1
+Current Time - Hours: 0, Minutes: 0, Seconds: 2
+Current Time - Hours: 0, Minutes: 0, Seconds: 3
+Current Time - Hours: 0, Minutes: 0, Seconds: 4
+Current Time - Hours: 0, Minutes: 0, Seconds: 5
+Current Time - Hours: 0, Minutes: 0, Seconds: 6
+Current Time - Hours: 0, Minutes: 0, Seconds: 7
+Current Time - Hours: 0, Minutes: 0, Seconds: 8
+Current Time - Hours: 0, Minutes: 0, Seconds: 9
+Current Time - Hours: 0, Minutes: 0, Seconds: 10
+Current Time - Hours: 0, Minutes: 0, Seconds: 11
+Current Time - Hours: 0, Minutes: 0, Seconds: 12
+Current Time - Hours: 0, Minutes: 0, Seconds: 13
+Current Time - Hours: 0, Minutes: 0, Seconds: 14
+Current Time - Hours: 0, Minutes: 0, Seconds: 15
+Current Time - Hours: 0, Minutes: 0, Seconds: 16
+Current Time - Hours: 0, Minutes: 0, Seconds: 17
+Current Time - Hours: 0, Minutes: 0, Seconds: 18
+Current Time - Hours: 0, Minutes: 0, Seconds: 19
+Current Time - Hours: 0, Minutes: 0, Seconds: 20
+Current Time - Hours: 0, Minutes: 0, Seconds: 21
+Current Time - Hours: 0, Minutes: 0, Seconds: 22
+Current Time - Hours: 0, Minutes: 0, Seconds: 23
+Current Time - Hours: 0, Minutes: 0, Seconds: 24
+Current Time - Hours: 0, Minutes: 0, Seconds: 25
+Current Time - Hours: 0, Minutes: 0, Seconds: 26
+Current Time - Hours: 0, Minutes: 0, Seconds: 27
+Current Time - Hours: 0, Minutes: 0, Seconds: 28
+Current Time - Hours: 0, Minutes: 0, Seconds: 29
+Current Time - Hours: 0, Minutes: 0, Seconds: 30
+Current Time - Hours: 0, Minutes: 0, Seconds: 31
+Current Time - Hours: 0, Minutes: 0, Seconds: 32
+Current Time - Hours: 0, Minutes: 0, Seconds: 33
+Current Time - Hours: 0, Minutes: 0, Seconds: 34
+Current Time - Hours: 0, Minutes: 0, Seconds: 35
+Current Time - Hours: 0, Minutes: 0, Seconds: 36
+Current Time - Hours: 0, Minutes: 0, Seconds: 37
+Current Time - Hours: 0, Minutes: 0, Seconds: 38
+Current Time - Hours: 0, Minutes: 0, Seconds: 39
+Current Time - Hours: 0, Minutes: 0, Seconds: 40
+Rollover Current Time - Hour: 0, Minutes: 0, Seconds: 41
+20800000001.00ns INFO     cocotb.regression                  test_dig_stopwatch failed
+                                                             Traceback (most recent call last):
+                                                               File "/code/src/test_dig_stopwatch.py", line 204, in test_dig_stopwatch
+                                                                 await check_rollover_conditions(dut, 3600)  # Testing rollovers for 1 hour.
+                                                               File "/code/src/test_dig_stopwatch.py", line 83, in check_rollover_conditions
+                                                                 assert curr_s_pulse == 1 or prev_s_pulse == 1, "Error: second_pulse not asserted when seconds incremented."
+                                                             AssertionError: Error: second_pulse not asserted when seconds incremented.
+                                                             assert (0 == 1 or 0 == 1)
+20800000001.00ns INFO     cocotb.regression                  ***********************************************************************************************
+                                                             ** TEST                                   STATUS  SIM TIME (ns)  REAL TIME (s)  RATIO (ns/s) **
+                                                             ***********************************************************************************************
+                                                             ** test_dig_stopwatch.test_dig_stopwatch   FAIL   20800000001.00           0.20   104173709618.10  **
+                                                             ***********************************************************************************************
+                                                             ** TESTS=1 PASS=0 FAIL=1 SKIP=0                   20800000001.00           0.23   90717830467.72  **
+                                                             ***********************************************************************************************
+                                                             
+FST info: dumpfile /code/sim_build/dig_stopwatch_top.fst opened for output.
+[DEBUG] Parameters: {'CLK_FREQ': 50}
+Removing: /code/sim_build
+INFO: Running command iverilog -o /code/sim_build/sim.vvp -D COCOTB_SIM=1 -s dig_stopwatch_top -g2012 -Pdig_stopwatch_top.CLK_FREQ=50 -s cocotb_iverilog_dump -f /code/sim_build/cmds.f /code/rtl/dig_stopwatch.sv /code/rtl/dig_stopwatch_top.sv /code/sim_build/cocotb_iverilog_dump.v in directory /code/sim_build
+INFO: Running command vvp -M /usr/local/lib/python3.9/dist-packages/cocotb/libs -m libcocotbvpi_icarus /code/sim_build/sim.vvp -fst in directory /code/sim_build
+FAILED
+../src/test_runner.py::test_dig_stop[100-0]      -.--ns INFO     gpi                                ..mbed/gpi_embed.cpp:79   in set_program_name_in_venv        Did not detect Python virtual environment. Using system-wide Python interpreter
+     -.--ns INFO     gpi                                ../gpi/GpiCommon.cpp:101  in gpi_print_registered_impl       VPI registered
+     0.00ns INFO     cocotb                             Running on Icarus Verilog version 13.0 (devel)
+     0.00ns INFO     cocotb                             Running tests with cocotb v1.9.2 from /usr/local/lib/python3.9/dist-packages/cocotb
+     0.00ns INFO     cocotb                             Seeding Python random module with 1773329740
+     0.00ns INFO     cocotb.regression                  Found test test_dig_stopwatch.test_dig_stopwatch
+     0.00ns INFO     cocotb.regression                  running test_dig_stopwatch (1/1)
+Current Time - Hours: 0, Minutes: 0, Seconds: 1
+Current Time - Hours: 0, Minutes: 0, Seconds: 2
+Current Time - Hours: 0, Minutes: 0, Seconds: 3
+Current Time - Hours: 0, Minutes: 0, Seconds: 4
+Current Time - Hours: 0, Minutes: 0, Seconds: 5
+Current Time - Hours: 0, Minutes: 0, Seconds: 6
+Current Time - Hours: 0, Minutes: 0, Seconds: 7
+Current Time - Hours: 0, Minutes: 0, Seconds: 8
+Current Time - Hours: 0, Minutes: 0, Seconds: 9
+Current Time - Hours: 0, Minutes: 0, Seconds: 10
+Current Time - Hours: 0, Minutes: 0, Seconds: 11
+Current Time - Hours: 0, Minutes: 0, Seconds: 12
+Current Time - Hours: 0, Minutes: 0, Seconds: 13
+Current Time - Hours: 0, Minutes: 0, Seconds: 14
+Current Time - Hours: 0, Minutes: 0, Seconds: 15
+Current Time - Hours: 0, Minutes: 0, Seconds: 16
+Current Time - Hours: 0, Minutes: 0, Seconds: 17
+Current Time - Hours: 0, Minutes: 0, Seconds: 18
+Current Time - Hours: 0, Minutes: 0, Seconds: 19
+Current Time - Hours: 0, Minutes: 0, Seconds: 20
+Current Time - Hours: 0, Minutes: 0, Seconds: 21
+Current Time - Hours: 0, Minutes: 0, Seconds: 22
+Current Time - Hours: 0, Minutes: 0, Seconds: 23
+Current Time - Hours: 0, Minutes: 0, Seconds: 24
+Current Time - Hours: 0, Minutes: 0, Seconds: 25
+Current Time - Hours: 0, Minutes: 0, Seconds: 26
+Current Time - Hours: 0, Minutes: 0, Seconds: 27
+Current Time - Hours: 0, Minutes: 0, Seconds: 28
+Current Time - Hours: 0, Minutes: 0, Seconds: 29
+Current Time - Hours: 0, Minutes: 0, Seconds: 30
+Current Time - Hours: 0, Minutes: 0, Seconds: 31
+Current Time - Hours: 0, Minutes: 0, Seconds: 32
+Current Time - Hours: 0, Minutes: 0, Seconds: 33
+Current Time - Hours: 0, Minutes: 0, Seconds: 34
+Current Time - Hours: 0, Minutes: 0, Seconds: 35
+Current Time - Hours: 0, Minutes: 0, Seconds: 36
+Current Time - Hours: 0, Minutes: 0, Seconds: 37
+Current Time - Hours: 0, Minutes: 0, Seconds: 38
+Current Time - Hours: 0, Minutes: 0, Seconds: 39
+Current Time - Hours: 0, Minutes: 0, Seconds: 40
+Rollover Current Time - Hour: 0, Minutes: 0, Seconds: 41
+20650000001.00ns INFO     cocotb.regression                  test_dig_stopwatch failed
+                                                             Traceback (most recent call last):
+                                                               File "/code/src/test_dig_stopwatch.py", line 204, in test_dig_stopwatch
+                                                                 await check_rollover_conditions(dut, 3600)  # Testing rollovers for 1 hour.
+                                                               File "/code/src/test_dig_stopwatch.py", line 83, in check_rollover_conditions
+                                                                 assert curr_s_pulse == 1 or prev_s_pulse == 1, "Error: second_pulse not asserted when seconds incremented."
+                                                             AssertionError: Error: second_pulse not asserted when seconds incremented.
+                                                             assert (0 == 1 or 0 == 1)
+20650000001.00ns INFO     cocotb.regression                  ***********************************************************************************************
+                                                             ** TEST                                   STATUS  SIM TIME (ns)  REAL TIME (s)  RATIO (ns/s) **
+                                                             ***********************************************************************************************
+                                                             ** test_dig_stopwatch.test_dig_stopwatch   FAIL   20650000001.00           0.44   46597811616.90  **
+                                                             ***********************************************************************************************
+                                                             ** TESTS=1 PASS=0 FAIL=1 SKIP=0                   20650000001.00           0.47   43755912066.31  **
+                                                             ***********************************************************************************************
+                                                             
+FST info: dumpfile /code/sim_build/dig_stopwatch_top.fst opened for output.
+[DEBUG] Parameters: {'CLK_FREQ': 100}
+Removing: /code/sim_build
+INFO: Running command iverilog -o /code/sim_build/sim.vvp -D COCOTB_SIM=1 -s dig_stopwatch_top -g2012 -Pdig_stopwatch_top.CLK_FREQ=100 -s cocotb_iverilog_dump -f /code/sim_build/cmds.f /code/rtl/dig_stopwatch.sv /code/rtl/dig_stopwatch_top.sv /code/sim_build/cocotb_iverilog_dump.v in directory /code/sim_build
+INFO: Running command vvp -M /usr/local/lib/python3.9/dist-packages/cocotb/libs -m libcocotbvpi_icarus /code/sim_build/sim.vvp -fst in directory /code/sim_build
+FAILED
+../src/test_runner.py::test_dig_stop[200-0]      -.--ns INFO     gpi                                ..mbed/gpi_embed.cpp:79   in set_program_name_in_venv        Did not detect Python virtual environment. Using system-wide Python interpreter
+     -.--ns INFO     gpi                                ../gpi/GpiCommon.cpp:101  in gpi_print_registered_impl       VPI registered
+     0.00ns INFO     cocotb                             Running on Icarus Verilog version 13.0 (devel)
+     0.00ns INFO     cocotb                             Running tests with cocotb v1.9.2 from /usr/local/lib/python3.9/dist-packages/cocotb
+     0.00ns INFO     cocotb                             Seeding Python random module with 1773329741
+     0.00ns INFO     cocotb.regression                  Found test test_dig_stopwatch.test_dig_stopwatch
+     0.00ns INFO     cocotb.regression                  running test_dig_stopwatch (1/1)
+Current Time - Hours: 0, Minutes: 0, Seconds: 1
+Current Time - Hours: 0, Minutes: 0, Seconds: 2
+Current Time - Hours: 0, Minutes: 0, Seconds: 3
+Current Time - Hours: 0, Minutes: 0, Seconds: 4
+Current Time - Hours: 0, Minutes: 0, Seconds: 5
+Current Time - Hours: 0, Minutes: 0, Seconds: 6
+Current Time - Hours: 0, Minutes: 0, Seconds: 7
+Current Time - Hours: 0, Minutes: 0, Seconds: 8
+Current Time - Hours: 0, Minutes: 0, Seconds: 9
+Current Time - Hours: 0, Minutes: 0, Seconds: 10
+Current Time - Hours: 0, Minutes: 0, Seconds: 11
+Current Time - Hours: 0, Minutes: 0, Seconds: 12
+Current Time - Hours: 0, Minutes: 0, Seconds: 13
+Current Time - Hours: 0, Minutes: 0, Seconds: 14
+Current Time - Hours: 0, Minutes: 0, Seconds: 15
+Current Time - Hours: 0, Minutes: 0, Seconds: 16
+Current Time - Hours: 0, Minutes: 0, Seconds: 17
+Current Time - Hours: 0, Minutes: 0, Seconds: 18
+Current Time - Hours: 0, Minutes: 0, Seconds: 19
+Current Time - Hours: 0, Minutes: 0, Seconds: 20
+Current Time - Hours: 0, Minutes: 0, Seconds: 21
+Current Time - Hours: 0, Minutes: 0, Seconds: 22
+Current Time - Hours: 0, Minutes: 0, Seconds: 23
+Current Time - Hours: 0, Minutes: 0, Seconds: 24
+Current Time - Hours: 0, Minutes: 0, Seconds: 25
+Current Time - Hours: 0, Minutes: 0, Seconds: 26
+Current Time - Hours: 0, Minutes: 0, Seconds: 27
+Current Time - Hours: 0, Minutes: 0, Seconds: 28
+Current Time - Hours: 0, Minutes: 0, Seconds: 29
+Current Time - Hours: 0, Minutes: 0, Seconds: 30
+Current Time - Hours: 0, Minutes: 0, Seconds: 31
+Current Time - Hours: 0, Minutes: 0, Seconds: 32
+Current Time - Hours: 0, Minutes: 0, Seconds: 33
+Current Time - Hours: 0, Minutes: 0, Seconds: 34
+Current Time - Hours: 0, Minutes: 0, Seconds: 35
+Current Time - Hours: 0, Minutes: 0, Seconds: 36
+Current Time - Hours: 0, Minutes: 0, Seconds: 37
+Current Time - Hours: 0, Minutes: 0, Seconds: 38
+Current Time - Hours: 0, Minutes: 0, Seconds: 39
+Current Time - Hours: 0, Minutes: 0, Seconds: 40
+Rollover Current Time - Hour: 0, Minutes: 0, Seconds: 41
+20575000001.00ns INFO     cocotb.regression                  test_dig_stopwatch failed
+                                                             Traceback (most recent call last):
+                                                               File "/code/src/test_dig_stopwatch.py", line 204, in test_dig_stopwatch
+                                                                 await check_rollover_conditions(dut, 3600)  # Testing rollovers for 1 hour.
+                                                               File "/code/src/test_dig_stopwatch.py", line 83, in check_rollover_conditions
+                                                                 assert curr_s_pulse == 1 or prev_s_pulse == 1, "Error: second_pulse not asserted when seconds incremented."
+                                                             AssertionError: Error: second_pulse not asserted when seconds incremented.
+                                                             assert (0 == 1 or 0 == 1)
+20575000001.00ns INFO     cocotb.regression                  ***********************************************************************************************
+                                                             ** TEST                                   STATUS  SIM TIME (ns)  REAL TIME (s)  RATIO (ns/s) **
+                                                             ***********************************************************************************************
+                                                             ** test_dig_stopwatch.test_dig_stopwatch   FAIL   20575000001.00           0.81   25430518932.57  **
+                                                             ***********************************************************************************************
+                                                             ** TESTS=1 PASS=0 FAIL=1 SKIP=0                   20575000001.00           0.84   24578937509.01  **
+                                                             ***********************************************************************************************
+                                                             
+FST info: dumpfile /code/sim_build/dig_stopwatch_top.fst opened for output.
+[DEBUG] Parameters: {'CLK_FREQ': 200}
+Removing: /code/sim_build
+INFO: Running command iverilog -o /code/sim_build/sim.vvp -D COCOTB_SIM=1 -s dig_stopwatch_top -g2012 -Pdig_stopwatch_top.CLK_FREQ=200 -s cocotb_iverilog_dump -f /code/sim_build/cmds.f /code/rtl/dig_stopwatch.sv /code/rtl/dig_stopwatch_top.sv /code/sim_build/cocotb_iverilog_dump.v in directory /code/sim_build
+INFO: Running command vvp -M /usr/local/lib/python3.9/dist-packages/cocotb/libs -m libcocotbvpi_icarus /code/sim_build/sim.vvp -fst in directory /code/sim_build
+FAILED
+
+=================================== FAILURES ===================================
+______________________________ test_dig_stop[3-0] ______________________________
+
+CLK_FREQ = 3, test = 0
+
+    @pytest.mark.parametrize("test", range(1))
+    @pytest.mark.parametrize("CLK_FREQ", [3,50,100,200])
+    def test_dig_stop(CLK_FREQ, test):
+>       runner(CLK_FREQ=CLK_FREQ)
+
+src/test_runner.py:33: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+CLK_FREQ = 3
+
+    def runner(CLK_FREQ: int = 200):
+        parameter = {"CLK_FREQ": CLK_FREQ}
+        print(f"[DEBUG] Parameters: {parameter}")
+    
+        runner = get_runner(sim)
+        runner.build(
+            sources=verilog_sources,
+            hdl_toplevel=toplevel,
+            # Arguments
+            parameters=parameter,
+            always=True,
+            clean=True,
+            waves=wave,
+            verbose=True,
+            timescale=("1ns", "1ns"),
+            log_file="sim.log")
+>       runner.test(hdl_toplevel=toplevel, test_module=module, waves=wave)
+E       SystemExit: ERROR: Failed 1 of 1 tests.
+
+src/test_runner.py:27: SystemExit
+_____________________________ test_dig_stop[50-0] ______________________________
+
+CLK_FREQ = 50, test = 0
+
+    @pytest.mark.parametrize("test", range(1))
+    @pytest.mark.parametrize("CLK_FREQ", [3,50,100,200])
+    def test_dig_stop(CLK_FREQ, test):
+>       runner(CLK_FREQ=CLK_FREQ)
+
+src/test_runner.py:33: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+CLK_FREQ = 50
+
+    def runner(CLK_FREQ: int = 200):
+        parameter = {"CLK_FREQ": CLK_FREQ}
+        print(f"[DEBUG] Parameters: {parameter}")
+    
+        runner = get_runner(sim)
+        runner.build(
+            sources=verilog_sources,
+            hdl_toplevel=toplevel,
+            # Arguments
+            parameters=parameter,
+            always=True,
+            clean=True,
+            waves=wave,
+            verbose=True,
+            timescale=("1ns", "1ns"),
+            log_file="sim.log")
+>       runner.test(hdl_toplevel=toplevel, test_module=module, waves=wave)
+E       SystemExit: ERROR: Failed 1 of 1 tests.
+
+src/test_runner.py:27: SystemExit
+_____________________________ test_dig_stop[100-0] _____________________________
+
+CLK_FREQ = 100, test = 0
+
+    @pytest.mark.parametrize("test", range(1))
+    @pytest.mark.parametrize("CLK_FREQ", [3,50,100,200])
+    def test_dig_stop(CLK_FREQ, test):
+>       runner(CLK_FREQ=CLK_FREQ)
+
+src/test_runner.py:33: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+CLK_FREQ = 100
+
+    def runner(CLK_FREQ: int = 200):
+        parameter = {"CLK_FREQ": CLK_FREQ}
+        print(f"[DEBUG] Parameters: {parameter}")
+    
+        runner = get_runner(sim)
+        runner.build(
+            sources=verilog_sources,
+            hdl_toplevel=toplevel,
+            # Arguments
+            parameters=parameter,
+            always=True,
+            clean=True,
+            waves=wave,
+            verbose=True,
+            timescale=("1ns", "1ns"),
+            log_file="sim.log")
+>       runner.test(hdl_toplevel=toplevel, test_module=module, waves=wave)
+E       SystemExit: ERROR: Failed 1 of 1 tests.
+
+src/test_runner.py:27: SystemExit
+_____________________________ test_dig_stop[200-0] _____________________________
+
+CLK_FREQ = 200, test = 0
+
+    @pytest.mark.parametrize("test", range(1))
+    @pytest.mark.parametrize("CLK_FREQ", [3,50,100,200])
+    def test_dig_stop(CLK_FREQ, test):
+>       runner(CLK_FREQ=CLK_FREQ)
+
+src/test_runner.py:33: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+CLK_FREQ = 200
+
+    def runner(CLK_FREQ: int = 200):
+        parameter = {"CLK_FREQ": CLK_FREQ}
+        print(f"[DEBUG] Parameters: {parameter}")
+    
+        runner = get_runner(sim)
+        runner.build(
+            sources=verilog_sources,
+            hdl_toplevel=toplevel,
+            # Arguments
+            parameters=parameter,
+            always=True,
+            clean=True,
+            waves=wave,
+            verbose=True,
+            timescale=("1ns", "1ns"),
+            log_file="sim.log")
+>       runner.test(hdl_toplevel=toplevel, test_module=module, waves=wave)
+E       SystemExit: ERROR: Failed 1 of 1 tests.
+
+src/test_runner.py:27: SystemExit
+=============================== warnings summary ===============================
+src/test_runner.py:2
+  /code/src/test_runner.py:2: UserWarning: Python runners and associated APIs are an experimental feature and subject to change.
+    from cocotb.runner import get_runner
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+=========================== short test summary info ============================
+FAILED ../src/test_runner.py::test_dig_stop[3-0] - SystemExit: ERROR: Failed ...
+FAILED ../src/test_runner.py::test_dig_stop[50-0] - SystemExit: ERROR: Failed...
+FAILED ../src/test_runner.py::test_dig_stop[100-0] - SystemExit: ERROR: Faile...
+FAILED ../src/test_runner.py::test_dig_stop[200-0] - SystemExit: ERROR: Faile...
+========================= 4 failed, 1 warning in 2.22s =========================

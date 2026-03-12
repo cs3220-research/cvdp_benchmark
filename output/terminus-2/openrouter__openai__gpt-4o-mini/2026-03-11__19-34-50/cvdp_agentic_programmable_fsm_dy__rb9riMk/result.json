@@ -1,0 +1,142 @@
+{
+    "id": "cd9c1a04-2375-4cd9-99e6-467123e27880",
+    "task_name": "cvdp_agentic_programmable_fsm_dynamic_state_encoding_0001",
+    "trial_name": "cvdp_agentic_programmable_fsm_dy__rb9riMk",
+    "trial_uri": "file:///home/saketh/research/cvdp_benchmark/jobs/2026-03-11__19-34-50/cvdp_agentic_programmable_fsm_dy__rb9riMk",
+    "task_id": {
+        "path": "/home/saketh/research/cvdp_benchmark/harbor_output/cvdp_agentic_programmable_fsm_dynamic_state_encoding_0001"
+    },
+    "source": "cvdp_v1.0.4_agentic_code_generation_no_commercial",
+    "task_checksum": "b7e332dcb334c949baed051c00bfdd0dd3f0b47d73fa789401eb23dd8e7456db",
+    "config": {
+        "task": {
+            "path": "/home/saketh/research/cvdp_benchmark/harbor_output/cvdp_agentic_programmable_fsm_dynamic_state_encoding_0001",
+            "git_url": null,
+            "git_commit_id": null,
+            "overwrite": false,
+            "download_dir": null,
+            "source": "cvdp_v1.0.4_agentic_code_generation_no_commercial"
+        },
+        "trial_name": "cvdp_agentic_programmable_fsm_dy__rb9riMk",
+        "trials_dir": "/home/saketh/research/cvdp_benchmark/jobs/2026-03-11__19-34-50",
+        "timeout_multiplier": 1.0,
+        "agent_timeout_multiplier": null,
+        "verifier_timeout_multiplier": null,
+        "agent_setup_timeout_multiplier": null,
+        "environment_build_timeout_multiplier": null,
+        "agent": {
+            "name": "terminus-2",
+            "import_path": null,
+            "model_name": "openrouter/openai/gpt-4o-mini",
+            "override_timeout_sec": null,
+            "override_setup_timeout_sec": null,
+            "max_timeout_sec": null,
+            "kwargs": {},
+            "env": {}
+        },
+        "environment": {
+            "type": "docker",
+            "import_path": null,
+            "force_build": false,
+            "delete": true,
+            "override_cpus": null,
+            "override_memory_mb": null,
+            "override_storage_mb": null,
+            "override_gpus": null,
+            "suppress_override_warnings": false,
+            "kwargs": {}
+        },
+        "verifier": {
+            "override_timeout_sec": null,
+            "max_timeout_sec": null,
+            "disable": false
+        },
+        "artifacts": [],
+        "job_id": "162fbf46-8549-4789-9f0f-8ce418b47fe3"
+    },
+    "agent_info": {
+        "name": "terminus-2",
+        "version": "2.0.0",
+        "model_info": {
+            "name": "openai/gpt-4o-mini",
+            "provider": "openrouter"
+        }
+    },
+    "agent_result": {
+        "n_input_tokens": 566630,
+        "n_cache_tokens": 462848,
+        "n_output_tokens": 11872,
+        "cost_usd": null,
+        "rollout_details": [],
+        "metadata": {
+            "n_episodes": 40,
+            "api_request_times_msec": [
+                4668.517827987671,
+                2975.229024887085,
+                3559.3111515045166,
+                12942.219734191895,
+                4375.056743621826,
+                4016.5865421295166,
+                2796.696424484253,
+                2797.154188156128,
+                2667.3898696899414,
+                3380.582571029663,
+                3409.0449810028076,
+                5989.676952362061,
+                3276.5753269195557,
+                4554.988384246826,
+                3602.984666824341,
+                3697.1352100372314,
+                10664.69144821167,
+                4010.1521015167236,
+                11631.051301956177,
+                10937.530279159546,
+                3272.0189094543457,
+                9201.988935470581,
+                3363.246440887451,
+                20455.341815948486,
+                9317.018985748291,
+                7011.990070343018,
+                4469.479084014893,
+                4429.415464401245,
+                3650.7458686828613,
+                3452.906370162964,
+                4510.14256477356,
+                4243.973731994629,
+                4858.331680297852,
+                3581.5327167510986,
+                5434.458017349243,
+                12268.444776535034,
+                4219.160079956055,
+                2779.860258102417,
+                2578.6406993865967,
+                2000.8139610290527
+            ],
+            "summarization_count": 0
+        }
+    },
+    "verifier_result": {
+        "rewards": {
+            "reward": 1.0
+        }
+    },
+    "exception_info": null,
+    "started_at": "2026-03-12T00:43:10.440184Z",
+    "finished_at": "2026-03-12T00:47:48.907234Z",
+    "environment_setup": {
+        "started_at": "2026-03-12T00:43:10.441639Z",
+        "finished_at": "2026-03-12T00:43:12.589076Z"
+    },
+    "agent_setup": {
+        "started_at": "2026-03-12T00:43:12.589083Z",
+        "finished_at": "2026-03-12T00:43:17.619425Z"
+    },
+    "agent_execution": {
+        "started_at": "2026-03-12T00:43:17.619456Z",
+        "finished_at": "2026-03-12T00:47:38.013726Z"
+    },
+    "verifier": {
+        "started_at": "2026-03-12T00:47:38.013779Z",
+        "finished_at": "2026-03-12T00:47:38.481269Z"
+    }
+}

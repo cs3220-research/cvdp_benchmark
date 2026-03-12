@@ -1,0 +1,858 @@
+Running service: 03-new-tb
+============================= test session starts ==============================
+platform linux -- Python 3.9.2, pytest-8.3.2, pluggy-1.5.0 -- /usr/bin/python3
+cachedir: /code/rundir/.cache
+rootdir: /src
+collecting ... collected 4 items
+
+../src/test_runner.py::test_dig_stop[4-0]      -.--ns INFO     gpi                                ..mbed/gpi_embed.cpp:79   in set_program_name_in_venv        Did not detect Python virtual environment. Using system-wide Python interpreter
+     -.--ns INFO     gpi                                ../gpi/GpiCommon.cpp:101  in gpi_print_registered_impl       VPI registered
+     0.00ns INFO     cocotb                             Running on Icarus Verilog version 13.0 (devel)
+     0.00ns INFO     cocotb                             Running tests with cocotb v1.9.2 from /usr/local/lib/python3.9/dist-packages/cocotb
+     0.00ns INFO     cocotb                             Seeding Python random module with 1773332273
+     0.00ns INFO     cocotb.regression                  Found test test_universal_shift_register.test_universal_shift_register
+     0.00ns INFO     cocotb.regression                  running test_universal_shift_register (1/1)
+                                                          Cocotb-based test replicating the functionality of the original SV testbench.
+    20.00ns INFO     cocotb.universal_shift_register    [RESET] DUT has been reset.
+    20.00ns INFO     cocotb.universal_shift_register    =========== Starting Expanded USR Cocotb Tests ===========
+    20.00ns INFO     cocotb.universal_shift_register    --- TEST: HOLD (op_sel=000) ---
+    40.00ns INFO     cocotb.universal_shift_register    HOLD(Load) PASS: q=00000100
+    40.00ns INFO     cocotb.universal_shift_register    HOLD(Load) PASS: overflow=0
+    40.00ns INFO     cocotb.universal_shift_register    HOLD(Load) PASS: serial_out=0
+    40.00ns INFO     cocotb.universal_shift_register    HOLD(Load) PASS: msb_out=0
+    40.00ns INFO     cocotb.universal_shift_register    HOLD(Load) PASS: lsb_out=0
+    40.00ns INFO     cocotb.universal_shift_register    HOLD(Load) PASS: parity_out=1
+    40.00ns INFO     cocotb.universal_shift_register    HOLD(Load) PASS: zero_flag=0
+    60.00ns INFO     cocotb.universal_shift_register    HOLD(NoChange) PASS: q=00000100
+    60.00ns INFO     cocotb.universal_shift_register    HOLD(NoChange) PASS: overflow=0
+    60.00ns INFO     cocotb.universal_shift_register    HOLD(NoChange) PASS: serial_out=0
+    60.00ns INFO     cocotb.universal_shift_register    HOLD(NoChange) PASS: msb_out=0
+    60.00ns INFO     cocotb.universal_shift_register    HOLD(NoChange) PASS: lsb_out=0
+    60.00ns INFO     cocotb.universal_shift_register    HOLD(NoChange) PASS: parity_out=1
+    60.00ns INFO     cocotb.universal_shift_register    HOLD(NoChange) PASS: zero_flag=0
+    70.00ns INFO     cocotb.universal_shift_register    HOLD(NoChange) PASS: q=00000100
+    70.00ns INFO     cocotb.universal_shift_register    HOLD(NoChange) PASS: overflow=0
+    70.00ns INFO     cocotb.universal_shift_register    HOLD(NoChange) PASS: serial_out=0
+    70.00ns INFO     cocotb.universal_shift_register    HOLD(NoChange) PASS: msb_out=0
+    70.00ns INFO     cocotb.universal_shift_register    HOLD(NoChange) PASS: lsb_out=0
+    70.00ns INFO     cocotb.universal_shift_register    HOLD(NoChange) PASS: parity_out=1
+    70.00ns INFO     cocotb.universal_shift_register    HOLD(NoChange) PASS: zero_flag=0
+    80.00ns INFO     cocotb.universal_shift_register    HOLD(NoChange) PASS: q=00000100
+    80.00ns INFO     cocotb.universal_shift_register    HOLD(NoChange) PASS: overflow=0
+    80.00ns INFO     cocotb.universal_shift_register    HOLD(NoChange) PASS: serial_out=0
+    80.00ns INFO     cocotb.universal_shift_register    HOLD(NoChange) PASS: msb_out=0
+    80.00ns INFO     cocotb.universal_shift_register    HOLD(NoChange) PASS: lsb_out=0
+    80.00ns INFO     cocotb.universal_shift_register    HOLD(NoChange) PASS: parity_out=1
+    80.00ns INFO     cocotb.universal_shift_register    HOLD(NoChange) PASS: zero_flag=0
+    80.00ns INFO     cocotb.universal_shift_register    --- TEST: SHIFT (Logical) (op_sel=001) ---
+   110.00ns INFO     cocotb.universal_shift_register    [RESET] DUT has been reset.
+   140.00ns INFO     cocotb.universal_shift_register    SHIFT_RIGHT PASS: q=00000101
+   140.00ns INFO     cocotb.universal_shift_register    SHIFT_RIGHT PASS: overflow=0
+   140.00ns INFO     cocotb.universal_shift_register    SHIFT_RIGHT PASS: serial_out=1
+   140.00ns INFO     cocotb.universal_shift_register    SHIFT_RIGHT PASS: msb_out=0
+   140.00ns INFO     cocotb.universal_shift_register    SHIFT_RIGHT PASS: lsb_out=1
+   140.00ns INFO     cocotb.universal_shift_register    SHIFT_RIGHT PASS: parity_out=0
+   140.00ns INFO     cocotb.universal_shift_register    SHIFT_RIGHT PASS: zero_flag=0
+   160.00ns INFO     cocotb.universal_shift_register    [RESET] DUT has been reset.
+   200.00ns INFO     cocotb.universal_shift_register    SHIFT_LEFT PASS: q=00001010
+   200.00ns INFO     cocotb.universal_shift_register    SHIFT_LEFT PASS: overflow=0
+   200.00ns INFO     cocotb.universal_shift_register    SHIFT_LEFT PASS: serial_out=1
+   200.00ns INFO     cocotb.universal_shift_register    SHIFT_LEFT PASS: msb_out=1
+   200.00ns INFO     cocotb.universal_shift_register    SHIFT_LEFT PASS: lsb_out=0
+   200.00ns INFO     cocotb.universal_shift_register    SHIFT_LEFT PASS: parity_out=0
+   200.00ns INFO     cocotb.universal_shift_register    SHIFT_LEFT PASS: zero_flag=0
+   200.00ns INFO     cocotb.universal_shift_register    --- TEST: ROTATE (op_sel=010) ---
+   220.00ns INFO     cocotb.universal_shift_register    [RESET] DUT has been reset.
+   260.00ns INFO     cocotb.universal_shift_register    ROTATE_RIGHT PASS: q=00001100
+   260.00ns INFO     cocotb.universal_shift_register    ROTATE_RIGHT PASS: overflow=1
+   260.00ns INFO     cocotb.universal_shift_register    ROTATE_RIGHT PASS: serial_out=0
+   260.00ns INFO     cocotb.universal_shift_register    ROTATE_RIGHT PASS: msb_out=1
+   260.00ns INFO     cocotb.universal_shift_register    ROTATE_RIGHT PASS: lsb_out=0
+   260.00ns INFO     cocotb.universal_shift_register    ROTATE_RIGHT PASS: parity_out=0
+   260.00ns INFO     cocotb.universal_shift_register    ROTATE_RIGHT PASS: zero_flag=0
+   280.00ns INFO     cocotb.universal_shift_register    [RESET] DUT has been reset.
+   320.00ns INFO     cocotb.universal_shift_register    ROTATE_LEFT PASS: q=00000111
+   320.00ns INFO     cocotb.universal_shift_register    ROTATE_LEFT PASS: overflow=1
+   320.00ns INFO     cocotb.universal_shift_register    ROTATE_LEFT PASS: serial_out=0
+   320.00ns INFO     cocotb.universal_shift_register    ROTATE_LEFT PASS: msb_out=0
+   320.00ns INFO     cocotb.universal_shift_register    ROTATE_LEFT PASS: lsb_out=1
+   320.00ns INFO     cocotb.universal_shift_register    ROTATE_LEFT PASS: parity_out=1
+   320.00ns INFO     cocotb.universal_shift_register    ROTATE_LEFT PASS: zero_flag=0
+   320.00ns INFO     cocotb.universal_shift_register    --- TEST: PARALLEL LOAD (op_sel=011) ---
+   340.00ns INFO     cocotb.universal_shift_register    [RESET] DUT has been reset.
+   360.00ns INFO     cocotb.universal_shift_register    PARALLEL_LOAD_1 PASS: q=00001000
+   360.00ns INFO     cocotb.universal_shift_register    PARALLEL_LOAD_1 PASS: overflow=0
+   360.00ns INFO     cocotb.universal_shift_register    PARALLEL_LOAD_1 PASS: serial_out=0
+   360.00ns INFO     cocotb.universal_shift_register    PARALLEL_LOAD_1 PASS: msb_out=1
+   360.00ns INFO     cocotb.universal_shift_register    PARALLEL_LOAD_1 PASS: lsb_out=0
+   360.00ns INFO     cocotb.universal_shift_register    PARALLEL_LOAD_1 PASS: parity_out=1
+   360.00ns INFO     cocotb.universal_shift_register    PARALLEL_LOAD_1 PASS: zero_flag=0
+   380.00ns INFO     cocotb.universal_shift_register    PARALLEL_LOAD_2 PASS: q=00000011
+   380.00ns INFO     cocotb.universal_shift_register    PARALLEL_LOAD_2 PASS: overflow=0
+   380.00ns INFO     cocotb.universal_shift_register    PARALLEL_LOAD_2 PASS: serial_out=1
+   380.00ns INFO     cocotb.universal_shift_register    PARALLEL_LOAD_2 PASS: msb_out=0
+   380.00ns INFO     cocotb.universal_shift_register    PARALLEL_LOAD_2 PASS: lsb_out=1
+   380.00ns INFO     cocotb.universal_shift_register    PARALLEL_LOAD_2 PASS: parity_out=0
+   380.00ns INFO     cocotb.universal_shift_register    PARALLEL_LOAD_2 PASS: zero_flag=0
+   380.00ns INFO     cocotb.universal_shift_register    --- TEST: ARITHMETIC SHIFT (op_sel=100) ---
+   400.00ns INFO     cocotb.universal_shift_register    [RESET] DUT has been reset.
+   440.00ns INFO     cocotb.universal_shift_register    ARITH_SHIFT_RIGHT PASS: q=00001100
+   440.00ns INFO     cocotb.universal_shift_register    ARITH_SHIFT_RIGHT PASS: overflow=1
+   440.00ns INFO     cocotb.universal_shift_register    ARITH_SHIFT_RIGHT PASS: serial_out=0
+   440.00ns INFO     cocotb.universal_shift_register    ARITH_SHIFT_RIGHT PASS: msb_out=1
+   440.00ns INFO     cocotb.universal_shift_register    ARITH_SHIFT_RIGHT PASS: lsb_out=0
+   440.00ns INFO     cocotb.universal_shift_register    ARITH_SHIFT_RIGHT PASS: parity_out=0
+   440.00ns INFO     cocotb.universal_shift_register    ARITH_SHIFT_RIGHT PASS: zero_flag=0
+   460.00ns INFO     cocotb.universal_shift_register    [RESET] DUT has been reset.
+   500.00ns INFO     cocotb.universal_shift_register    ARITH_SHIFT_LEFT PASS: q=00001110
+   500.00ns INFO     cocotb.universal_shift_register    ARITH_SHIFT_LEFT PASS: overflow=0
+   500.00ns INFO     cocotb.universal_shift_register    ARITH_SHIFT_LEFT PASS: serial_out=1
+   500.00ns INFO     cocotb.universal_shift_register    ARITH_SHIFT_LEFT PASS: msb_out=1
+   500.00ns INFO     cocotb.universal_shift_register    ARITH_SHIFT_LEFT PASS: lsb_out=0
+   500.00ns INFO     cocotb.universal_shift_register    ARITH_SHIFT_LEFT PASS: parity_out=1
+   500.00ns INFO     cocotb.universal_shift_register    ARITH_SHIFT_LEFT PASS: zero_flag=0
+   500.00ns INFO     cocotb.universal_shift_register    --- TEST: BITWISE OPS (op_sel=101) ---
+   520.00ns INFO     cocotb.universal_shift_register    [RESET] DUT has been reset.
+   550.00ns INFO     cocotb.universal_shift_register    BITWISE_AND PASS: q=00001111
+   550.00ns INFO     cocotb.universal_shift_register    BITWISE_AND PASS: overflow=0
+   550.00ns INFO     cocotb.universal_shift_register    BITWISE_AND PASS: serial_out=1
+   550.00ns INFO     cocotb.universal_shift_register    BITWISE_AND PASS: msb_out=1
+   550.00ns INFO     cocotb.universal_shift_register    BITWISE_AND PASS: lsb_out=1
+   550.00ns INFO     cocotb.universal_shift_register    BITWISE_AND PASS: parity_out=0
+   550.00ns INFO     cocotb.universal_shift_register    BITWISE_AND PASS: zero_flag=0
+   570.00ns INFO     cocotb.universal_shift_register    [RESET] DUT has been reset.
+   600.00ns INFO     cocotb.universal_shift_register    BITWISE_OR PASS: q=00000101
+   600.00ns INFO     cocotb.universal_shift_register    BITWISE_OR PASS: overflow=0
+   600.00ns INFO     cocotb.universal_shift_register    BITWISE_OR PASS: serial_out=1
+   600.00ns INFO     cocotb.universal_shift_register    BITWISE_OR PASS: msb_out=0
+   600.00ns INFO     cocotb.universal_shift_register    BITWISE_OR PASS: lsb_out=1
+   600.00ns INFO     cocotb.universal_shift_register    BITWISE_OR PASS: parity_out=0
+   600.00ns INFO     cocotb.universal_shift_register    BITWISE_OR PASS: zero_flag=0
+   620.00ns INFO     cocotb.universal_shift_register    [RESET] DUT has been reset.
+   650.00ns INFO     cocotb.universal_shift_register    BITWISE_XOR PASS: q=00000000
+   650.00ns INFO     cocotb.universal_shift_register    BITWISE_XOR PASS: overflow=0
+   650.00ns INFO     cocotb.universal_shift_register    BITWISE_XOR PASS: serial_out=0
+   650.00ns INFO     cocotb.universal_shift_register    BITWISE_XOR PASS: msb_out=0
+   650.00ns INFO     cocotb.universal_shift_register    BITWISE_XOR PASS: lsb_out=0
+   650.00ns INFO     cocotb.universal_shift_register    BITWISE_XOR PASS: parity_out=0
+   650.00ns INFO     cocotb.universal_shift_register    BITWISE_XOR PASS: zero_flag=1
+   670.00ns INFO     cocotb.universal_shift_register    [RESET] DUT has been reset.
+   700.00ns INFO     cocotb.universal_shift_register    BITWISE_XNOR PASS: q=00001111
+   700.00ns INFO     cocotb.universal_shift_register    BITWISE_XNOR PASS: overflow=0
+   700.00ns INFO     cocotb.universal_shift_register    BITWISE_XNOR PASS: serial_out=1
+   700.00ns INFO     cocotb.universal_shift_register    BITWISE_XNOR PASS: msb_out=1
+   700.00ns INFO     cocotb.universal_shift_register    BITWISE_XNOR PASS: lsb_out=1
+   700.00ns INFO     cocotb.universal_shift_register    BITWISE_XNOR PASS: parity_out=0
+   700.00ns INFO     cocotb.universal_shift_register    BITWISE_XNOR PASS: zero_flag=0
+   700.00ns INFO     cocotb.universal_shift_register    --- TEST: REVERSE BITS (op_sel=110) ---
+   720.00ns INFO     cocotb.universal_shift_register    [RESET] DUT has been reset.
+   750.00ns INFO     cocotb.universal_shift_register    BEFORE_REVERSE PASS: q=00001000
+   750.00ns INFO     cocotb.universal_shift_register    BEFORE_REVERSE PASS: overflow=0
+   750.00ns INFO     cocotb.universal_shift_register    BEFORE_REVERSE PASS: serial_out=0
+   750.00ns INFO     cocotb.universal_shift_register    BEFORE_REVERSE PASS: msb_out=1
+   750.00ns INFO     cocotb.universal_shift_register    BEFORE_REVERSE PASS: lsb_out=0
+   750.00ns INFO     cocotb.universal_shift_register    BEFORE_REVERSE PASS: parity_out=1
+   750.00ns INFO     cocotb.universal_shift_register    BEFORE_REVERSE PASS: zero_flag=0
+   780.00ns INFO     cocotb.universal_shift_register    AFTER_REVERSE PASS: q=00000001
+   780.00ns INFO     cocotb.universal_shift_register    AFTER_REVERSE PASS: overflow=0
+   780.00ns INFO     cocotb.universal_shift_register    AFTER_REVERSE PASS: serial_out=1
+   780.00ns INFO     cocotb.universal_shift_register    AFTER_REVERSE PASS: msb_out=0
+   780.00ns INFO     cocotb.universal_shift_register    AFTER_REVERSE PASS: lsb_out=1
+   780.00ns INFO     cocotb.universal_shift_register    AFTER_REVERSE PASS: parity_out=1
+   780.00ns INFO     cocotb.universal_shift_register    AFTER_REVERSE PASS: zero_flag=0
+   780.00ns INFO     cocotb.universal_shift_register    --- TEST: COMPLEMENT (op_sel=111) ---
+   800.00ns INFO     cocotb.universal_shift_register    [RESET] DUT has been reset.
+   840.00ns INFO     cocotb.universal_shift_register    COMPLEMENT PASS: q=00000000
+   840.00ns INFO     cocotb.universal_shift_register    COMPLEMENT PASS: overflow=0
+   840.00ns INFO     cocotb.universal_shift_register    COMPLEMENT PASS: serial_out=0
+   840.00ns INFO     cocotb.universal_shift_register    COMPLEMENT PASS: msb_out=0
+   840.00ns INFO     cocotb.universal_shift_register    COMPLEMENT PASS: lsb_out=0
+   840.00ns INFO     cocotb.universal_shift_register    COMPLEMENT PASS: parity_out=0
+   840.00ns INFO     cocotb.universal_shift_register    COMPLEMENT PASS: zero_flag=1
+   840.00ns INFO     cocotb.universal_shift_register    --- TEST: ENABLE (en=0) ---
+   860.00ns INFO     cocotb.universal_shift_register    [RESET] DUT has been reset.
+   880.00ns INFO     cocotb.universal_shift_register    ENABLE_BEFORE PASS: q=00000110
+   880.00ns INFO     cocotb.universal_shift_register    ENABLE_BEFORE PASS: overflow=0
+   880.00ns INFO     cocotb.universal_shift_register    ENABLE_BEFORE PASS: serial_out=0
+   880.00ns INFO     cocotb.universal_shift_register    ENABLE_BEFORE PASS: msb_out=0
+   880.00ns INFO     cocotb.universal_shift_register    ENABLE_BEFORE PASS: lsb_out=0
+   880.00ns INFO     cocotb.universal_shift_register    ENABLE_BEFORE PASS: parity_out=0
+   880.00ns INFO     cocotb.universal_shift_register    ENABLE_BEFORE PASS: zero_flag=0
+   900.00ns INFO     cocotb.universal_shift_register    ENABLE_DISABLED_0 PASS: q=00000110
+   900.00ns INFO     cocotb.universal_shift_register    ENABLE_DISABLED_0 PASS: overflow=0
+   900.00ns INFO     cocotb.universal_shift_register    ENABLE_DISABLED_0 PASS: serial_out=0
+   900.00ns INFO     cocotb.universal_shift_register    ENABLE_DISABLED_0 PASS: msb_out=0
+   900.00ns INFO     cocotb.universal_shift_register    ENABLE_DISABLED_0 PASS: lsb_out=0
+   900.00ns INFO     cocotb.universal_shift_register    ENABLE_DISABLED_0 PASS: parity_out=0
+   900.00ns INFO     cocotb.universal_shift_register    ENABLE_DISABLED_0 PASS: zero_flag=0
+   920.00ns INFO     cocotb.universal_shift_register    ENABLE_DISABLED_1 PASS: q=00000110
+   920.00ns INFO     cocotb.universal_shift_register    ENABLE_DISABLED_1 PASS: overflow=0
+   920.00ns INFO     cocotb.universal_shift_register    ENABLE_DISABLED_1 PASS: serial_out=0
+   920.00ns INFO     cocotb.universal_shift_register    ENABLE_DISABLED_1 PASS: msb_out=0
+   920.00ns INFO     cocotb.universal_shift_register    ENABLE_DISABLED_1 PASS: lsb_out=0
+   920.00ns INFO     cocotb.universal_shift_register    ENABLE_DISABLED_1 PASS: parity_out=0
+   920.00ns INFO     cocotb.universal_shift_register    ENABLE_DISABLED_1 PASS: zero_flag=0
+   940.00ns INFO     cocotb.universal_shift_register    ENABLE_DISABLED_2 PASS: q=00000110
+   940.00ns INFO     cocotb.universal_shift_register    ENABLE_DISABLED_2 PASS: overflow=0
+   940.00ns INFO     cocotb.universal_shift_register    ENABLE_DISABLED_2 PASS: serial_out=0
+   940.00ns INFO     cocotb.universal_shift_register    ENABLE_DISABLED_2 PASS: msb_out=0
+   940.00ns INFO     cocotb.universal_shift_register    ENABLE_DISABLED_2 PASS: lsb_out=0
+   940.00ns INFO     cocotb.universal_shift_register    ENABLE_DISABLED_2 PASS: parity_out=0
+   940.00ns INFO     cocotb.universal_shift_register    ENABLE_DISABLED_2 PASS: zero_flag=0
+   940.00ns INFO     cocotb.universal_shift_register    =========== ALL TESTS COMPLETED ===========
+   941.00ns INFO     cocotb.regression                  test_universal_shift_register passed
+   941.00ns INFO     cocotb.regression                  *********************************************************************************************************************
+                                                        ** TEST                                                         STATUS  SIM TIME (ns)  REAL TIME (s)  RATIO (ns/s) **
+                                                        *********************************************************************************************************************
+                                                        ** test_universal_shift_register.test_universal_shift_register   PASS         941.00           0.02      51090.46  **
+                                                        *********************************************************************************************************************
+                                                        ** TESTS=1 PASS=1 FAIL=0 SKIP=0                                               941.00           0.05      17568.76  **
+                                                        *********************************************************************************************************************
+                                                        
+FST info: dumpfile /code/sim_build/universal_shift_register.fst opened for output.
+[DEBUG] Parameters: {'N': 4}
+INFO: Running command iverilog -o /code/sim_build/sim.vvp -D COCOTB_SIM=1 -s universal_shift_register -g2012 -Puniversal_shift_register.N=4 -s cocotb_iverilog_dump -f /code/sim_build/cmds.f /code/rtl/universal_shift_register.sv /code/sim_build/cocotb_iverilog_dump.v in directory /code/sim_build
+INFO: Running command vvp -M /usr/local/lib/python3.9/dist-packages/cocotb/libs -m libcocotbvpi_icarus /code/sim_build/sim.vvp -fst in directory /code/sim_build
+INFO: Results file: /code/sim_build/test_dig_stop[4-0].None
+PASSED
+../src/test_runner.py::test_dig_stop[8-0]      -.--ns INFO     gpi                                ..mbed/gpi_embed.cpp:79   in set_program_name_in_venv        Did not detect Python virtual environment. Using system-wide Python interpreter
+     -.--ns INFO     gpi                                ../gpi/GpiCommon.cpp:101  in gpi_print_registered_impl       VPI registered
+     0.00ns INFO     cocotb                             Running on Icarus Verilog version 13.0 (devel)
+     0.00ns INFO     cocotb                             Running tests with cocotb v1.9.2 from /usr/local/lib/python3.9/dist-packages/cocotb
+     0.00ns INFO     cocotb                             Seeding Python random module with 1773332273
+     0.00ns INFO     cocotb.regression                  Found test test_universal_shift_register.test_universal_shift_register
+     0.00ns INFO     cocotb.regression                  running test_universal_shift_register (1/1)
+                                                          Cocotb-based test replicating the functionality of the original SV testbench.
+    20.00ns INFO     cocotb.universal_shift_register    [RESET] DUT has been reset.
+    20.00ns INFO     cocotb.universal_shift_register    =========== Starting Expanded USR Cocotb Tests ===========
+    20.00ns INFO     cocotb.universal_shift_register    --- TEST: HOLD (op_sel=000) ---
+    40.00ns INFO     cocotb.universal_shift_register    HOLD(Load) PASS: q=01001010
+    40.00ns INFO     cocotb.universal_shift_register    HOLD(Load) PASS: overflow=0
+    40.00ns INFO     cocotb.universal_shift_register    HOLD(Load) PASS: serial_out=0
+    40.00ns INFO     cocotb.universal_shift_register    HOLD(Load) PASS: msb_out=0
+    40.00ns INFO     cocotb.universal_shift_register    HOLD(Load) PASS: lsb_out=0
+    40.00ns INFO     cocotb.universal_shift_register    HOLD(Load) PASS: parity_out=1
+    40.00ns INFO     cocotb.universal_shift_register    HOLD(Load) PASS: zero_flag=0
+    60.00ns INFO     cocotb.universal_shift_register    HOLD(NoChange) PASS: q=01001010
+    60.00ns INFO     cocotb.universal_shift_register    HOLD(NoChange) PASS: overflow=0
+    60.00ns INFO     cocotb.universal_shift_register    HOLD(NoChange) PASS: serial_out=0
+    60.00ns INFO     cocotb.universal_shift_register    HOLD(NoChange) PASS: msb_out=0
+    60.00ns INFO     cocotb.universal_shift_register    HOLD(NoChange) PASS: lsb_out=0
+    60.00ns INFO     cocotb.universal_shift_register    HOLD(NoChange) PASS: parity_out=1
+    60.00ns INFO     cocotb.universal_shift_register    HOLD(NoChange) PASS: zero_flag=0
+    70.00ns INFO     cocotb.universal_shift_register    HOLD(NoChange) PASS: q=01001010
+    70.00ns INFO     cocotb.universal_shift_register    HOLD(NoChange) PASS: overflow=0
+    70.00ns INFO     cocotb.universal_shift_register    HOLD(NoChange) PASS: serial_out=0
+    70.00ns INFO     cocotb.universal_shift_register    HOLD(NoChange) PASS: msb_out=0
+    70.00ns INFO     cocotb.universal_shift_register    HOLD(NoChange) PASS: lsb_out=0
+    70.00ns INFO     cocotb.universal_shift_register    HOLD(NoChange) PASS: parity_out=1
+    70.00ns INFO     cocotb.universal_shift_register    HOLD(NoChange) PASS: zero_flag=0
+    80.00ns INFO     cocotb.universal_shift_register    HOLD(NoChange) PASS: q=01001010
+    80.00ns INFO     cocotb.universal_shift_register    HOLD(NoChange) PASS: overflow=0
+    80.00ns INFO     cocotb.universal_shift_register    HOLD(NoChange) PASS: serial_out=0
+    80.00ns INFO     cocotb.universal_shift_register    HOLD(NoChange) PASS: msb_out=0
+    80.00ns INFO     cocotb.universal_shift_register    HOLD(NoChange) PASS: lsb_out=0
+    80.00ns INFO     cocotb.universal_shift_register    HOLD(NoChange) PASS: parity_out=1
+    80.00ns INFO     cocotb.universal_shift_register    HOLD(NoChange) PASS: zero_flag=0
+    80.00ns INFO     cocotb.universal_shift_register    --- TEST: SHIFT (Logical) (op_sel=001) ---
+   110.00ns INFO     cocotb.universal_shift_register    [RESET] DUT has been reset.
+   140.00ns INFO     cocotb.universal_shift_register    SHIFT_RIGHT PASS: q=01010100
+   140.00ns INFO     cocotb.universal_shift_register    SHIFT_RIGHT PASS: overflow=0
+   140.00ns INFO     cocotb.universal_shift_register    SHIFT_RIGHT PASS: serial_out=0
+   140.00ns INFO     cocotb.universal_shift_register    SHIFT_RIGHT PASS: msb_out=0
+   140.00ns INFO     cocotb.universal_shift_register    SHIFT_RIGHT PASS: lsb_out=0
+   140.00ns INFO     cocotb.universal_shift_register    SHIFT_RIGHT PASS: parity_out=1
+   140.00ns INFO     cocotb.universal_shift_register    SHIFT_RIGHT PASS: zero_flag=0
+   160.00ns INFO     cocotb.universal_shift_register    [RESET] DUT has been reset.
+   200.00ns INFO     cocotb.universal_shift_register    SHIFT_LEFT PASS: q=10100010
+   200.00ns INFO     cocotb.universal_shift_register    SHIFT_LEFT PASS: overflow=0
+   200.00ns INFO     cocotb.universal_shift_register    SHIFT_LEFT PASS: serial_out=1
+   200.00ns INFO     cocotb.universal_shift_register    SHIFT_LEFT PASS: msb_out=1
+   200.00ns INFO     cocotb.universal_shift_register    SHIFT_LEFT PASS: lsb_out=0
+   200.00ns INFO     cocotb.universal_shift_register    SHIFT_LEFT PASS: parity_out=1
+   200.00ns INFO     cocotb.universal_shift_register    SHIFT_LEFT PASS: zero_flag=0
+   200.00ns INFO     cocotb.universal_shift_register    --- TEST: ROTATE (op_sel=010) ---
+   220.00ns INFO     cocotb.universal_shift_register    [RESET] DUT has been reset.
+   260.00ns INFO     cocotb.universal_shift_register    ROTATE_RIGHT PASS: q=01001000
+   260.00ns INFO     cocotb.universal_shift_register    ROTATE_RIGHT PASS: overflow=0
+   260.00ns INFO     cocotb.universal_shift_register    ROTATE_RIGHT PASS: serial_out=0
+   260.00ns INFO     cocotb.universal_shift_register    ROTATE_RIGHT PASS: msb_out=0
+   260.00ns INFO     cocotb.universal_shift_register    ROTATE_RIGHT PASS: lsb_out=0
+   260.00ns INFO     cocotb.universal_shift_register    ROTATE_RIGHT PASS: parity_out=0
+   260.00ns INFO     cocotb.universal_shift_register    ROTATE_RIGHT PASS: zero_flag=0
+   280.00ns INFO     cocotb.universal_shift_register    [RESET] DUT has been reset.
+   320.00ns INFO     cocotb.universal_shift_register    ROTATE_LEFT PASS: q=01111011
+   320.00ns INFO     cocotb.universal_shift_register    ROTATE_LEFT PASS: overflow=1
+   320.00ns INFO     cocotb.universal_shift_register    ROTATE_LEFT PASS: serial_out=0
+   320.00ns INFO     cocotb.universal_shift_register    ROTATE_LEFT PASS: msb_out=0
+   320.00ns INFO     cocotb.universal_shift_register    ROTATE_LEFT PASS: lsb_out=1
+   320.00ns INFO     cocotb.universal_shift_register    ROTATE_LEFT PASS: parity_out=0
+   320.00ns INFO     cocotb.universal_shift_register    ROTATE_LEFT PASS: zero_flag=0
+   320.00ns INFO     cocotb.universal_shift_register    --- TEST: PARALLEL LOAD (op_sel=011) ---
+   340.00ns INFO     cocotb.universal_shift_register    [RESET] DUT has been reset.
+   360.00ns INFO     cocotb.universal_shift_register    PARALLEL_LOAD_1 PASS: q=10001000
+   360.00ns INFO     cocotb.universal_shift_register    PARALLEL_LOAD_1 PASS: overflow=0
+   360.00ns INFO     cocotb.universal_shift_register    PARALLEL_LOAD_1 PASS: serial_out=0
+   360.00ns INFO     cocotb.universal_shift_register    PARALLEL_LOAD_1 PASS: msb_out=1
+   360.00ns INFO     cocotb.universal_shift_register    PARALLEL_LOAD_1 PASS: lsb_out=0
+   360.00ns INFO     cocotb.universal_shift_register    PARALLEL_LOAD_1 PASS: parity_out=0
+   360.00ns INFO     cocotb.universal_shift_register    PARALLEL_LOAD_1 PASS: zero_flag=0
+   380.00ns INFO     cocotb.universal_shift_register    PARALLEL_LOAD_2 PASS: q=00110001
+   380.00ns INFO     cocotb.universal_shift_register    PARALLEL_LOAD_2 PASS: overflow=0
+   380.00ns INFO     cocotb.universal_shift_register    PARALLEL_LOAD_2 PASS: serial_out=1
+   380.00ns INFO     cocotb.universal_shift_register    PARALLEL_LOAD_2 PASS: msb_out=0
+   380.00ns INFO     cocotb.universal_shift_register    PARALLEL_LOAD_2 PASS: lsb_out=1
+   380.00ns INFO     cocotb.universal_shift_register    PARALLEL_LOAD_2 PASS: parity_out=1
+   380.00ns INFO     cocotb.universal_shift_register    PARALLEL_LOAD_2 PASS: zero_flag=0
+   380.00ns INFO     cocotb.universal_shift_register    --- TEST: ARITHMETIC SHIFT (op_sel=100) ---
+   400.00ns INFO     cocotb.universal_shift_register    [RESET] DUT has been reset.
+   440.00ns INFO     cocotb.universal_shift_register    ARITH_SHIFT_RIGHT PASS: q=11001001
+   440.00ns INFO     cocotb.universal_shift_register    ARITH_SHIFT_RIGHT PASS: overflow=1
+   440.00ns INFO     cocotb.universal_shift_register    ARITH_SHIFT_RIGHT PASS: serial_out=1
+   440.00ns INFO     cocotb.universal_shift_register    ARITH_SHIFT_RIGHT PASS: msb_out=1
+   440.00ns INFO     cocotb.universal_shift_register    ARITH_SHIFT_RIGHT PASS: lsb_out=1
+   440.00ns INFO     cocotb.universal_shift_register    ARITH_SHIFT_RIGHT PASS: parity_out=0
+   440.00ns INFO     cocotb.universal_shift_register    ARITH_SHIFT_RIGHT PASS: zero_flag=0
+   460.00ns INFO     cocotb.universal_shift_register    [RESET] DUT has been reset.
+   500.00ns INFO     cocotb.universal_shift_register    ARITH_SHIFT_LEFT PASS: q=11110110
+   500.00ns INFO     cocotb.universal_shift_register    ARITH_SHIFT_LEFT PASS: overflow=0
+   500.00ns INFO     cocotb.universal_shift_register    ARITH_SHIFT_LEFT PASS: serial_out=1
+   500.00ns INFO     cocotb.universal_shift_register    ARITH_SHIFT_LEFT PASS: msb_out=1
+   500.00ns INFO     cocotb.universal_shift_register    ARITH_SHIFT_LEFT PASS: lsb_out=0
+   500.00ns INFO     cocotb.universal_shift_register    ARITH_SHIFT_LEFT PASS: parity_out=0
+   500.00ns INFO     cocotb.universal_shift_register    ARITH_SHIFT_LEFT PASS: zero_flag=0
+   500.00ns INFO     cocotb.universal_shift_register    --- TEST: BITWISE OPS (op_sel=101) ---
+   520.00ns INFO     cocotb.universal_shift_register    [RESET] DUT has been reset.
+   550.00ns INFO     cocotb.universal_shift_register    BITWISE_AND PASS: q=00001111
+   550.00ns INFO     cocotb.universal_shift_register    BITWISE_AND PASS: overflow=0
+   550.00ns INFO     cocotb.universal_shift_register    BITWISE_AND PASS: serial_out=1
+   550.00ns INFO     cocotb.universal_shift_register    BITWISE_AND PASS: msb_out=0
+   550.00ns INFO     cocotb.universal_shift_register    BITWISE_AND PASS: lsb_out=1
+   550.00ns INFO     cocotb.universal_shift_register    BITWISE_AND PASS: parity_out=0
+   550.00ns INFO     cocotb.universal_shift_register    BITWISE_AND PASS: zero_flag=0
+   570.00ns INFO     cocotb.universal_shift_register    [RESET] DUT has been reset.
+   600.00ns INFO     cocotb.universal_shift_register    BITWISE_OR PASS: q=00000101
+   600.00ns INFO     cocotb.universal_shift_register    BITWISE_OR PASS: overflow=0
+   600.00ns INFO     cocotb.universal_shift_register    BITWISE_OR PASS: serial_out=1
+   600.00ns INFO     cocotb.universal_shift_register    BITWISE_OR PASS: msb_out=0
+   600.00ns INFO     cocotb.universal_shift_register    BITWISE_OR PASS: lsb_out=1
+   600.00ns INFO     cocotb.universal_shift_register    BITWISE_OR PASS: parity_out=0
+   600.00ns INFO     cocotb.universal_shift_register    BITWISE_OR PASS: zero_flag=0
+   620.00ns INFO     cocotb.universal_shift_register    [RESET] DUT has been reset.
+   650.00ns INFO     cocotb.universal_shift_register    BITWISE_XOR PASS: q=00000000
+   650.00ns INFO     cocotb.universal_shift_register    BITWISE_XOR PASS: overflow=0
+   650.00ns INFO     cocotb.universal_shift_register    BITWISE_XOR PASS: serial_out=0
+   650.00ns INFO     cocotb.universal_shift_register    BITWISE_XOR PASS: msb_out=0
+   650.00ns INFO     cocotb.universal_shift_register    BITWISE_XOR PASS: lsb_out=0
+   650.00ns INFO     cocotb.universal_shift_register    BITWISE_XOR PASS: parity_out=0
+   650.00ns INFO     cocotb.universal_shift_register    BITWISE_XOR PASS: zero_flag=1
+   670.00ns INFO     cocotb.universal_shift_register    [RESET] DUT has been reset.
+   700.00ns INFO     cocotb.universal_shift_register    BITWISE_XNOR PASS: q=11111111
+   700.00ns INFO     cocotb.universal_shift_register    BITWISE_XNOR PASS: overflow=0
+   700.00ns INFO     cocotb.universal_shift_register    BITWISE_XNOR PASS: serial_out=1
+   700.00ns INFO     cocotb.universal_shift_register    BITWISE_XNOR PASS: msb_out=1
+   700.00ns INFO     cocotb.universal_shift_register    BITWISE_XNOR PASS: lsb_out=1
+   700.00ns INFO     cocotb.universal_shift_register    BITWISE_XNOR PASS: parity_out=0
+   700.00ns INFO     cocotb.universal_shift_register    BITWISE_XNOR PASS: zero_flag=0
+   700.00ns INFO     cocotb.universal_shift_register    --- TEST: REVERSE BITS (op_sel=110) ---
+   720.00ns INFO     cocotb.universal_shift_register    [RESET] DUT has been reset.
+   750.00ns INFO     cocotb.universal_shift_register    BEFORE_REVERSE PASS: q=10001011
+   750.00ns INFO     cocotb.universal_shift_register    BEFORE_REVERSE PASS: overflow=0
+   750.00ns INFO     cocotb.universal_shift_register    BEFORE_REVERSE PASS: serial_out=1
+   750.00ns INFO     cocotb.universal_shift_register    BEFORE_REVERSE PASS: msb_out=1
+   750.00ns INFO     cocotb.universal_shift_register    BEFORE_REVERSE PASS: lsb_out=1
+   750.00ns INFO     cocotb.universal_shift_register    BEFORE_REVERSE PASS: parity_out=0
+   750.00ns INFO     cocotb.universal_shift_register    BEFORE_REVERSE PASS: zero_flag=0
+   780.00ns INFO     cocotb.universal_shift_register    AFTER_REVERSE PASS: q=11010001
+   780.00ns INFO     cocotb.universal_shift_register    AFTER_REVERSE PASS: overflow=0
+   780.00ns INFO     cocotb.universal_shift_register    AFTER_REVERSE PASS: serial_out=1
+   780.00ns INFO     cocotb.universal_shift_register    AFTER_REVERSE PASS: msb_out=1
+   780.00ns INFO     cocotb.universal_shift_register    AFTER_REVERSE PASS: lsb_out=1
+   780.00ns INFO     cocotb.universal_shift_register    AFTER_REVERSE PASS: parity_out=0
+   780.00ns INFO     cocotb.universal_shift_register    AFTER_REVERSE PASS: zero_flag=0
+   780.00ns INFO     cocotb.universal_shift_register    --- TEST: COMPLEMENT (op_sel=111) ---
+   800.00ns INFO     cocotb.universal_shift_register    [RESET] DUT has been reset.
+   840.00ns INFO     cocotb.universal_shift_register    COMPLEMENT PASS: q=00001010
+   840.00ns INFO     cocotb.universal_shift_register    COMPLEMENT PASS: overflow=0
+   840.00ns INFO     cocotb.universal_shift_register    COMPLEMENT PASS: serial_out=0
+   840.00ns INFO     cocotb.universal_shift_register    COMPLEMENT PASS: msb_out=0
+   840.00ns INFO     cocotb.universal_shift_register    COMPLEMENT PASS: lsb_out=0
+   840.00ns INFO     cocotb.universal_shift_register    COMPLEMENT PASS: parity_out=0
+   840.00ns INFO     cocotb.universal_shift_register    COMPLEMENT PASS: zero_flag=0
+   840.00ns INFO     cocotb.universal_shift_register    --- TEST: ENABLE (en=0) ---
+   860.00ns INFO     cocotb.universal_shift_register    [RESET] DUT has been reset.
+   880.00ns INFO     cocotb.universal_shift_register    ENABLE_BEFORE PASS: q=01101011
+   880.00ns INFO     cocotb.universal_shift_register    ENABLE_BEFORE PASS: overflow=0
+   880.00ns INFO     cocotb.universal_shift_register    ENABLE_BEFORE PASS: serial_out=1
+   880.00ns INFO     cocotb.universal_shift_register    ENABLE_BEFORE PASS: msb_out=0
+   880.00ns INFO     cocotb.universal_shift_register    ENABLE_BEFORE PASS: lsb_out=1
+   880.00ns INFO     cocotb.universal_shift_register    ENABLE_BEFORE PASS: parity_out=1
+   880.00ns INFO     cocotb.universal_shift_register    ENABLE_BEFORE PASS: zero_flag=0
+   900.00ns INFO     cocotb.universal_shift_register    ENABLE_DISABLED_0 PASS: q=01101011
+   900.00ns INFO     cocotb.universal_shift_register    ENABLE_DISABLED_0 PASS: overflow=0
+   900.00ns INFO     cocotb.universal_shift_register    ENABLE_DISABLED_0 PASS: serial_out=1
+   900.00ns INFO     cocotb.universal_shift_register    ENABLE_DISABLED_0 PASS: msb_out=0
+   900.00ns INFO     cocotb.universal_shift_register    ENABLE_DISABLED_0 PASS: lsb_out=1
+   900.00ns INFO     cocotb.universal_shift_register    ENABLE_DISABLED_0 PASS: parity_out=1
+   900.00ns INFO     cocotb.universal_shift_register    ENABLE_DISABLED_0 PASS: zero_flag=0
+   920.00ns INFO     cocotb.universal_shift_register    ENABLE_DISABLED_1 PASS: q=01101011
+   920.00ns INFO     cocotb.universal_shift_register    ENABLE_DISABLED_1 PASS: overflow=0
+   920.00ns INFO     cocotb.universal_shift_register    ENABLE_DISABLED_1 PASS: serial_out=1
+   920.00ns INFO     cocotb.universal_shift_register    ENABLE_DISABLED_1 PASS: msb_out=0
+   920.00ns INFO     cocotb.universal_shift_register    ENABLE_DISABLED_1 PASS: lsb_out=1
+   920.00ns INFO     cocotb.universal_shift_register    ENABLE_DISABLED_1 PASS: parity_out=1
+   920.00ns INFO     cocotb.universal_shift_register    ENABLE_DISABLED_1 PASS: zero_flag=0
+   940.00ns INFO     cocotb.universal_shift_register    ENABLE_DISABLED_2 PASS: q=01101011
+   940.00ns INFO     cocotb.universal_shift_register    ENABLE_DISABLED_2 PASS: overflow=0
+   940.00ns INFO     cocotb.universal_shift_register    ENABLE_DISABLED_2 PASS: serial_out=1
+   940.00ns INFO     cocotb.universal_shift_register    ENABLE_DISABLED_2 PASS: msb_out=0
+   940.00ns INFO     cocotb.universal_shift_register    ENABLE_DISABLED_2 PASS: lsb_out=1
+   940.00ns INFO     cocotb.universal_shift_register    ENABLE_DISABLED_2 PASS: parity_out=1
+   940.00ns INFO     cocotb.universal_shift_register    ENABLE_DISABLED_2 PASS: zero_flag=0
+   940.00ns INFO     cocotb.universal_shift_register    =========== ALL TESTS COMPLETED ===========
+   941.00ns INFO     cocotb.regression                  test_universal_shift_register passed
+   941.00ns INFO     cocotb.regression                  *********************************************************************************************************************
+                                                        ** TEST                                                         STATUS  SIM TIME (ns)  REAL TIME (s)  RATIO (ns/s) **
+                                                        *********************************************************************************************************************
+                                                        ** test_universal_shift_register.test_universal_shift_register   PASS         941.00           0.02      52309.98  **
+                                                        *********************************************************************************************************************
+                                                        ** TESTS=1 PASS=1 FAIL=0 SKIP=0                                               941.00           0.05      17932.85  **
+                                                        *********************************************************************************************************************
+                                                        
+FST info: dumpfile /code/sim_build/universal_shift_register.fst opened for output.
+[DEBUG] Parameters: {'N': 8}
+Removing: /code/sim_build
+INFO: Running command iverilog -o /code/sim_build/sim.vvp -D COCOTB_SIM=1 -s universal_shift_register -g2012 -Puniversal_shift_register.N=8 -s cocotb_iverilog_dump -f /code/sim_build/cmds.f /code/rtl/universal_shift_register.sv /code/sim_build/cocotb_iverilog_dump.v in directory /code/sim_build
+INFO: Running command vvp -M /usr/local/lib/python3.9/dist-packages/cocotb/libs -m libcocotbvpi_icarus /code/sim_build/sim.vvp -fst in directory /code/sim_build
+INFO: Results file: /code/sim_build/test_dig_stop[8-0].None
+PASSED
+../src/test_runner.py::test_dig_stop[16-0]      -.--ns INFO     gpi                                ..mbed/gpi_embed.cpp:79   in set_program_name_in_venv        Did not detect Python virtual environment. Using system-wide Python interpreter
+     -.--ns INFO     gpi                                ../gpi/GpiCommon.cpp:101  in gpi_print_registered_impl       VPI registered
+     0.00ns INFO     cocotb                             Running on Icarus Verilog version 13.0 (devel)
+     0.00ns INFO     cocotb                             Running tests with cocotb v1.9.2 from /usr/local/lib/python3.9/dist-packages/cocotb
+     0.00ns INFO     cocotb                             Seeding Python random module with 1773332274
+     0.00ns INFO     cocotb.regression                  Found test test_universal_shift_register.test_universal_shift_register
+     0.00ns INFO     cocotb.regression                  running test_universal_shift_register (1/1)
+                                                          Cocotb-based test replicating the functionality of the original SV testbench.
+    20.00ns INFO     cocotb.universal_shift_register    [RESET] DUT has been reset.
+    20.00ns INFO     cocotb.universal_shift_register    =========== Starting Expanded USR Cocotb Tests ===========
+    20.00ns INFO     cocotb.universal_shift_register    --- TEST: HOLD (op_sel=000) ---
+    40.00ns INFO     cocotb.universal_shift_register    HOLD(Load) PASS: q=1011101101000001
+    40.00ns INFO     cocotb.universal_shift_register    HOLD(Load) PASS: overflow=0
+    40.00ns INFO     cocotb.universal_shift_register    HOLD(Load) PASS: serial_out=1
+    40.00ns INFO     cocotb.universal_shift_register    HOLD(Load) PASS: msb_out=1
+    40.00ns INFO     cocotb.universal_shift_register    HOLD(Load) PASS: lsb_out=1
+    40.00ns INFO     cocotb.universal_shift_register    HOLD(Load) PASS: parity_out=0
+    40.00ns INFO     cocotb.universal_shift_register    HOLD(Load) PASS: zero_flag=0
+    60.00ns INFO     cocotb.universal_shift_register    HOLD(NoChange) PASS: q=1011101101000001
+    60.00ns INFO     cocotb.universal_shift_register    HOLD(NoChange) PASS: overflow=0
+    60.00ns INFO     cocotb.universal_shift_register    HOLD(NoChange) PASS: serial_out=1
+    60.00ns INFO     cocotb.universal_shift_register    HOLD(NoChange) PASS: msb_out=1
+    60.00ns INFO     cocotb.universal_shift_register    HOLD(NoChange) PASS: lsb_out=1
+    60.00ns INFO     cocotb.universal_shift_register    HOLD(NoChange) PASS: parity_out=0
+    60.00ns INFO     cocotb.universal_shift_register    HOLD(NoChange) PASS: zero_flag=0
+    70.00ns INFO     cocotb.universal_shift_register    HOLD(NoChange) PASS: q=1011101101000001
+    70.00ns INFO     cocotb.universal_shift_register    HOLD(NoChange) PASS: overflow=0
+    70.00ns INFO     cocotb.universal_shift_register    HOLD(NoChange) PASS: serial_out=1
+    70.00ns INFO     cocotb.universal_shift_register    HOLD(NoChange) PASS: msb_out=1
+    70.00ns INFO     cocotb.universal_shift_register    HOLD(NoChange) PASS: lsb_out=1
+    70.00ns INFO     cocotb.universal_shift_register    HOLD(NoChange) PASS: parity_out=0
+    70.00ns INFO     cocotb.universal_shift_register    HOLD(NoChange) PASS: zero_flag=0
+    80.00ns INFO     cocotb.universal_shift_register    HOLD(NoChange) PASS: q=1011101101000001
+    80.00ns INFO     cocotb.universal_shift_register    HOLD(NoChange) PASS: overflow=0
+    80.00ns INFO     cocotb.universal_shift_register    HOLD(NoChange) PASS: serial_out=1
+    80.00ns INFO     cocotb.universal_shift_register    HOLD(NoChange) PASS: msb_out=1
+    80.00ns INFO     cocotb.universal_shift_register    HOLD(NoChange) PASS: lsb_out=1
+    80.00ns INFO     cocotb.universal_shift_register    HOLD(NoChange) PASS: parity_out=0
+    80.00ns INFO     cocotb.universal_shift_register    HOLD(NoChange) PASS: zero_flag=0
+    80.00ns INFO     cocotb.universal_shift_register    --- TEST: SHIFT (Logical) (op_sel=001) ---
+   110.00ns INFO     cocotb.universal_shift_register    [RESET] DUT has been reset.
+   140.00ns INFO     cocotb.universal_shift_register    SHIFT_RIGHT PASS: q=1011110110101011
+   140.00ns INFO     cocotb.universal_shift_register    SHIFT_RIGHT PASS: overflow=0
+   140.00ns INFO     cocotb.universal_shift_register    SHIFT_RIGHT PASS: serial_out=1
+   140.00ns INFO     cocotb.universal_shift_register    SHIFT_RIGHT PASS: msb_out=1
+   140.00ns INFO     cocotb.universal_shift_register    SHIFT_RIGHT PASS: lsb_out=1
+   140.00ns INFO     cocotb.universal_shift_register    SHIFT_RIGHT PASS: parity_out=1
+   140.00ns INFO     cocotb.universal_shift_register    SHIFT_RIGHT PASS: zero_flag=0
+   160.00ns INFO     cocotb.universal_shift_register    [RESET] DUT has been reset.
+   200.00ns INFO     cocotb.universal_shift_register    SHIFT_LEFT PASS: q=1101000011101101
+   200.00ns INFO     cocotb.universal_shift_register    SHIFT_LEFT PASS: overflow=1
+   200.00ns INFO     cocotb.universal_shift_register    SHIFT_LEFT PASS: serial_out=1
+   200.00ns INFO     cocotb.universal_shift_register    SHIFT_LEFT PASS: msb_out=1
+   200.00ns INFO     cocotb.universal_shift_register    SHIFT_LEFT PASS: lsb_out=1
+   200.00ns INFO     cocotb.universal_shift_register    SHIFT_LEFT PASS: parity_out=1
+   200.00ns INFO     cocotb.universal_shift_register    SHIFT_LEFT PASS: zero_flag=0
+   200.00ns INFO     cocotb.universal_shift_register    --- TEST: ROTATE (op_sel=010) ---
+   220.00ns INFO     cocotb.universal_shift_register    [RESET] DUT has been reset.
+   260.00ns INFO     cocotb.universal_shift_register    ROTATE_RIGHT PASS: q=110000111110110
+   260.00ns INFO     cocotb.universal_shift_register    ROTATE_RIGHT PASS: overflow=0
+   260.00ns INFO     cocotb.universal_shift_register    ROTATE_RIGHT PASS: serial_out=0
+   260.00ns INFO     cocotb.universal_shift_register    ROTATE_RIGHT PASS: msb_out=0
+   260.00ns INFO     cocotb.universal_shift_register    ROTATE_RIGHT PASS: lsb_out=0
+   260.00ns INFO     cocotb.universal_shift_register    ROTATE_RIGHT PASS: parity_out=1
+   260.00ns INFO     cocotb.universal_shift_register    ROTATE_RIGHT PASS: zero_flag=0
+   280.00ns INFO     cocotb.universal_shift_register    [RESET] DUT has been reset.
+   320.00ns INFO     cocotb.universal_shift_register    ROTATE_LEFT PASS: q=10000111110100
+   320.00ns INFO     cocotb.universal_shift_register    ROTATE_LEFT PASS: overflow=0
+   320.00ns INFO     cocotb.universal_shift_register    ROTATE_LEFT PASS: serial_out=0
+   320.00ns INFO     cocotb.universal_shift_register    ROTATE_LEFT PASS: msb_out=0
+   320.00ns INFO     cocotb.universal_shift_register    ROTATE_LEFT PASS: lsb_out=0
+   320.00ns INFO     cocotb.universal_shift_register    ROTATE_LEFT PASS: parity_out=1
+   320.00ns INFO     cocotb.universal_shift_register    ROTATE_LEFT PASS: zero_flag=0
+   320.00ns INFO     cocotb.universal_shift_register    --- TEST: PARALLEL LOAD (op_sel=011) ---
+   340.00ns INFO     cocotb.universal_shift_register    [RESET] DUT has been reset.
+   360.00ns INFO     cocotb.universal_shift_register    PARALLEL_LOAD_1 PASS: q=100001101101010
+   360.00ns INFO     cocotb.universal_shift_register    PARALLEL_LOAD_1 PASS: overflow=0
+   360.00ns INFO     cocotb.universal_shift_register    PARALLEL_LOAD_1 PASS: serial_out=0
+   360.00ns INFO     cocotb.universal_shift_register    PARALLEL_LOAD_1 PASS: msb_out=0
+   360.00ns INFO     cocotb.universal_shift_register    PARALLEL_LOAD_1 PASS: lsb_out=0
+   360.00ns INFO     cocotb.universal_shift_register    PARALLEL_LOAD_1 PASS: parity_out=1
+   360.00ns INFO     cocotb.universal_shift_register    PARALLEL_LOAD_1 PASS: zero_flag=0
+   380.00ns INFO     cocotb.universal_shift_register    PARALLEL_LOAD_2 PASS: q=101110011100001
+   380.00ns INFO     cocotb.universal_shift_register    PARALLEL_LOAD_2 PASS: overflow=0
+   380.00ns INFO     cocotb.universal_shift_register    PARALLEL_LOAD_2 PASS: serial_out=1
+   380.00ns INFO     cocotb.universal_shift_register    PARALLEL_LOAD_2 PASS: msb_out=0
+   380.00ns INFO     cocotb.universal_shift_register    PARALLEL_LOAD_2 PASS: lsb_out=1
+   380.00ns INFO     cocotb.universal_shift_register    PARALLEL_LOAD_2 PASS: parity_out=0
+   380.00ns INFO     cocotb.universal_shift_register    PARALLEL_LOAD_2 PASS: zero_flag=0
+   380.00ns INFO     cocotb.universal_shift_register    --- TEST: ARITHMETIC SHIFT (op_sel=100) ---
+   400.00ns INFO     cocotb.universal_shift_register    [RESET] DUT has been reset.
+   440.00ns INFO     cocotb.universal_shift_register    ARITH_SHIFT_RIGHT PASS: q=1100010111001101
+   440.00ns INFO     cocotb.universal_shift_register    ARITH_SHIFT_RIGHT PASS: overflow=0
+   440.00ns INFO     cocotb.universal_shift_register    ARITH_SHIFT_RIGHT PASS: serial_out=1
+   440.00ns INFO     cocotb.universal_shift_register    ARITH_SHIFT_RIGHT PASS: msb_out=1
+   440.00ns INFO     cocotb.universal_shift_register    ARITH_SHIFT_RIGHT PASS: lsb_out=1
+   440.00ns INFO     cocotb.universal_shift_register    ARITH_SHIFT_RIGHT PASS: parity_out=1
+   440.00ns INFO     cocotb.universal_shift_register    ARITH_SHIFT_RIGHT PASS: zero_flag=0
+   460.00ns INFO     cocotb.universal_shift_register    [RESET] DUT has been reset.
+   500.00ns INFO     cocotb.universal_shift_register    ARITH_SHIFT_LEFT PASS: q=1101101101100010
+   500.00ns INFO     cocotb.universal_shift_register    ARITH_SHIFT_LEFT PASS: overflow=0
+   500.00ns INFO     cocotb.universal_shift_register    ARITH_SHIFT_LEFT PASS: serial_out=1
+   500.00ns INFO     cocotb.universal_shift_register    ARITH_SHIFT_LEFT PASS: msb_out=1
+   500.00ns INFO     cocotb.universal_shift_register    ARITH_SHIFT_LEFT PASS: lsb_out=0
+   500.00ns INFO     cocotb.universal_shift_register    ARITH_SHIFT_LEFT PASS: parity_out=1
+   500.00ns INFO     cocotb.universal_shift_register    ARITH_SHIFT_LEFT PASS: zero_flag=0
+   500.00ns INFO     cocotb.universal_shift_register    --- TEST: BITWISE OPS (op_sel=101) ---
+   520.00ns INFO     cocotb.universal_shift_register    [RESET] DUT has been reset.
+   550.00ns INFO     cocotb.universal_shift_register    BITWISE_AND PASS: q=00001111
+   550.00ns INFO     cocotb.universal_shift_register    BITWISE_AND PASS: overflow=0
+   550.00ns INFO     cocotb.universal_shift_register    BITWISE_AND PASS: serial_out=1
+   550.00ns INFO     cocotb.universal_shift_register    BITWISE_AND PASS: msb_out=0
+   550.00ns INFO     cocotb.universal_shift_register    BITWISE_AND PASS: lsb_out=1
+   550.00ns INFO     cocotb.universal_shift_register    BITWISE_AND PASS: parity_out=0
+   550.00ns INFO     cocotb.universal_shift_register    BITWISE_AND PASS: zero_flag=0
+   570.00ns INFO     cocotb.universal_shift_register    [RESET] DUT has been reset.
+   600.00ns INFO     cocotb.universal_shift_register    BITWISE_OR PASS: q=00000101
+   600.00ns INFO     cocotb.universal_shift_register    BITWISE_OR PASS: overflow=0
+   600.00ns INFO     cocotb.universal_shift_register    BITWISE_OR PASS: serial_out=1
+   600.00ns INFO     cocotb.universal_shift_register    BITWISE_OR PASS: msb_out=0
+   600.00ns INFO     cocotb.universal_shift_register    BITWISE_OR PASS: lsb_out=1
+   600.00ns INFO     cocotb.universal_shift_register    BITWISE_OR PASS: parity_out=0
+   600.00ns INFO     cocotb.universal_shift_register    BITWISE_OR PASS: zero_flag=0
+   620.00ns INFO     cocotb.universal_shift_register    [RESET] DUT has been reset.
+   650.00ns INFO     cocotb.universal_shift_register    BITWISE_XOR PASS: q=00000000
+   650.00ns INFO     cocotb.universal_shift_register    BITWISE_XOR PASS: overflow=0
+   650.00ns INFO     cocotb.universal_shift_register    BITWISE_XOR PASS: serial_out=0
+   650.00ns INFO     cocotb.universal_shift_register    BITWISE_XOR PASS: msb_out=0
+   650.00ns INFO     cocotb.universal_shift_register    BITWISE_XOR PASS: lsb_out=0
+   650.00ns INFO     cocotb.universal_shift_register    BITWISE_XOR PASS: parity_out=0
+   650.00ns INFO     cocotb.universal_shift_register    BITWISE_XOR PASS: zero_flag=1
+   670.00ns INFO     cocotb.universal_shift_register    [RESET] DUT has been reset.
+   700.00ns INFO     cocotb.universal_shift_register    BITWISE_XNOR PASS: q=1111111111111111
+   700.00ns INFO     cocotb.universal_shift_register    BITWISE_XNOR PASS: overflow=0
+   700.00ns INFO     cocotb.universal_shift_register    BITWISE_XNOR PASS: serial_out=1
+   700.00ns INFO     cocotb.universal_shift_register    BITWISE_XNOR PASS: msb_out=1
+   700.00ns INFO     cocotb.universal_shift_register    BITWISE_XNOR PASS: lsb_out=1
+   700.00ns INFO     cocotb.universal_shift_register    BITWISE_XNOR PASS: parity_out=0
+   700.00ns INFO     cocotb.universal_shift_register    BITWISE_XNOR PASS: zero_flag=0
+   700.00ns INFO     cocotb.universal_shift_register    --- TEST: REVERSE BITS (op_sel=110) ---
+   720.00ns INFO     cocotb.universal_shift_register    [RESET] DUT has been reset.
+   750.00ns INFO     cocotb.universal_shift_register    BEFORE_REVERSE PASS: q=1110100111011110
+   750.00ns INFO     cocotb.universal_shift_register    BEFORE_REVERSE PASS: overflow=0
+   750.00ns INFO     cocotb.universal_shift_register    BEFORE_REVERSE PASS: serial_out=0
+   750.00ns INFO     cocotb.universal_shift_register    BEFORE_REVERSE PASS: msb_out=1
+   750.00ns INFO     cocotb.universal_shift_register    BEFORE_REVERSE PASS: lsb_out=0
+   750.00ns INFO     cocotb.universal_shift_register    BEFORE_REVERSE PASS: parity_out=1
+   750.00ns INFO     cocotb.universal_shift_register    BEFORE_REVERSE PASS: zero_flag=0
+   780.00ns INFO     cocotb.universal_shift_register    AFTER_REVERSE PASS: q=111101110010111
+   780.00ns INFO     cocotb.universal_shift_register    AFTER_REVERSE PASS: overflow=0
+   780.00ns INFO     cocotb.universal_shift_register    AFTER_REVERSE PASS: serial_out=1
+   780.00ns INFO     cocotb.universal_shift_register    AFTER_REVERSE PASS: msb_out=0
+   780.00ns INFO     cocotb.universal_shift_register    AFTER_REVERSE PASS: lsb_out=1
+   780.00ns INFO     cocotb.universal_shift_register    AFTER_REVERSE PASS: parity_out=1
+   780.00ns INFO     cocotb.universal_shift_register    AFTER_REVERSE PASS: zero_flag=0
+   780.00ns INFO     cocotb.universal_shift_register    --- TEST: COMPLEMENT (op_sel=111) ---
+   800.00ns INFO     cocotb.universal_shift_register    [RESET] DUT has been reset.
+   840.00ns INFO     cocotb.universal_shift_register    COMPLEMENT PASS: q=1100000101110000
+   840.00ns INFO     cocotb.universal_shift_register    COMPLEMENT PASS: overflow=0
+   840.00ns INFO     cocotb.universal_shift_register    COMPLEMENT PASS: serial_out=0
+   840.00ns INFO     cocotb.universal_shift_register    COMPLEMENT PASS: msb_out=1
+   840.00ns INFO     cocotb.universal_shift_register    COMPLEMENT PASS: lsb_out=0
+   840.00ns INFO     cocotb.universal_shift_register    COMPLEMENT PASS: parity_out=0
+   840.00ns INFO     cocotb.universal_shift_register    COMPLEMENT PASS: zero_flag=0
+   840.00ns INFO     cocotb.universal_shift_register    --- TEST: ENABLE (en=0) ---
+   860.00ns INFO     cocotb.universal_shift_register    [RESET] DUT has been reset.
+   880.00ns INFO     cocotb.universal_shift_register    ENABLE_BEFORE PASS: q=11010000011111
+   880.00ns INFO     cocotb.universal_shift_register    ENABLE_BEFORE PASS: overflow=0
+   880.00ns INFO     cocotb.universal_shift_register    ENABLE_BEFORE PASS: serial_out=1
+   880.00ns INFO     cocotb.universal_shift_register    ENABLE_BEFORE PASS: msb_out=0
+   880.00ns INFO     cocotb.universal_shift_register    ENABLE_BEFORE PASS: lsb_out=1
+   880.00ns INFO     cocotb.universal_shift_register    ENABLE_BEFORE PASS: parity_out=0
+   880.00ns INFO     cocotb.universal_shift_register    ENABLE_BEFORE PASS: zero_flag=0
+   900.00ns INFO     cocotb.universal_shift_register    ENABLE_DISABLED_0 PASS: q=11010000011111
+   900.00ns INFO     cocotb.universal_shift_register    ENABLE_DISABLED_0 PASS: overflow=0
+   900.00ns INFO     cocotb.universal_shift_register    ENABLE_DISABLED_0 PASS: serial_out=1
+   900.00ns INFO     cocotb.universal_shift_register    ENABLE_DISABLED_0 PASS: msb_out=0
+   900.00ns INFO     cocotb.universal_shift_register    ENABLE_DISABLED_0 PASS: lsb_out=1
+   900.00ns INFO     cocotb.universal_shift_register    ENABLE_DISABLED_0 PASS: parity_out=0
+   900.00ns INFO     cocotb.universal_shift_register    ENABLE_DISABLED_0 PASS: zero_flag=0
+   920.00ns INFO     cocotb.universal_shift_register    ENABLE_DISABLED_1 PASS: q=11010000011111
+   920.00ns INFO     cocotb.universal_shift_register    ENABLE_DISABLED_1 PASS: overflow=0
+   920.00ns INFO     cocotb.universal_shift_register    ENABLE_DISABLED_1 PASS: serial_out=1
+   920.00ns INFO     cocotb.universal_shift_register    ENABLE_DISABLED_1 PASS: msb_out=0
+   920.00ns INFO     cocotb.universal_shift_register    ENABLE_DISABLED_1 PASS: lsb_out=1
+   920.00ns INFO     cocotb.universal_shift_register    ENABLE_DISABLED_1 PASS: parity_out=0
+   920.00ns INFO     cocotb.universal_shift_register    ENABLE_DISABLED_1 PASS: zero_flag=0
+   940.00ns INFO     cocotb.universal_shift_register    ENABLE_DISABLED_2 PASS: q=11010000011111
+   940.00ns INFO     cocotb.universal_shift_register    ENABLE_DISABLED_2 PASS: overflow=0
+   940.00ns INFO     cocotb.universal_shift_register    ENABLE_DISABLED_2 PASS: serial_out=1
+   940.00ns INFO     cocotb.universal_shift_register    ENABLE_DISABLED_2 PASS: msb_out=0
+   940.00ns INFO     cocotb.universal_shift_register    ENABLE_DISABLED_2 PASS: lsb_out=1
+   940.00ns INFO     cocotb.universal_shift_register    ENABLE_DISABLED_2 PASS: parity_out=0
+   940.00ns INFO     cocotb.universal_shift_register    ENABLE_DISABLED_2 PASS: zero_flag=0
+   940.00ns INFO     cocotb.universal_shift_register    =========== ALL TESTS COMPLETED ===========
+   941.00ns INFO     cocotb.regression                  test_universal_shift_register passed
+   941.00ns INFO     cocotb.regression                  *********************************************************************************************************************
+                                                        ** TEST                                                         STATUS  SIM TIME (ns)  REAL TIME (s)  RATIO (ns/s) **
+                                                        *********************************************************************************************************************
+                                                        ** test_universal_shift_register.test_universal_shift_register   PASS         941.00           0.02      51880.23  **
+                                                        *********************************************************************************************************************
+                                                        ** TESTS=1 PASS=1 FAIL=0 SKIP=0                                               941.00           0.05      17744.03  **
+                                                        *********************************************************************************************************************
+                                                        
+FST info: dumpfile /code/sim_build/universal_shift_register.fst opened for output.
+[DEBUG] Parameters: {'N': 16}
+Removing: /code/sim_build
+INFO: Running command iverilog -o /code/sim_build/sim.vvp -D COCOTB_SIM=1 -s universal_shift_register -g2012 -Puniversal_shift_register.N=16 -s cocotb_iverilog_dump -f /code/sim_build/cmds.f /code/rtl/universal_shift_register.sv /code/sim_build/cocotb_iverilog_dump.v in directory /code/sim_build
+INFO: Running command vvp -M /usr/local/lib/python3.9/dist-packages/cocotb/libs -m libcocotbvpi_icarus /code/sim_build/sim.vvp -fst in directory /code/sim_build
+INFO: Results file: /code/sim_build/test_dig_stop[16-0].None
+PASSED
+../src/test_runner.py::test_dig_stop[32-0]      -.--ns INFO     gpi                                ..mbed/gpi_embed.cpp:79   in set_program_name_in_venv        Did not detect Python virtual environment. Using system-wide Python interpreter
+     -.--ns INFO     gpi                                ../gpi/GpiCommon.cpp:101  in gpi_print_registered_impl       VPI registered
+     0.00ns INFO     cocotb                             Running on Icarus Verilog version 13.0 (devel)
+     0.00ns INFO     cocotb                             Running tests with cocotb v1.9.2 from /usr/local/lib/python3.9/dist-packages/cocotb
+     0.00ns INFO     cocotb                             Seeding Python random module with 1773332274
+     0.00ns INFO     cocotb.regression                  Found test test_universal_shift_register.test_universal_shift_register
+     0.00ns INFO     cocotb.regression                  running test_universal_shift_register (1/1)
+                                                          Cocotb-based test replicating the functionality of the original SV testbench.
+    20.00ns INFO     cocotb.universal_shift_register    [RESET] DUT has been reset.
+    20.00ns INFO     cocotb.universal_shift_register    =========== Starting Expanded USR Cocotb Tests ===========
+    20.00ns INFO     cocotb.universal_shift_register    --- TEST: HOLD (op_sel=000) ---
+    40.00ns INFO     cocotb.universal_shift_register    HOLD(Load) PASS: q=1011101101000001101000101010111
+    40.00ns INFO     cocotb.universal_shift_register    HOLD(Load) PASS: overflow=0
+    40.00ns INFO     cocotb.universal_shift_register    HOLD(Load) PASS: serial_out=1
+    40.00ns INFO     cocotb.universal_shift_register    HOLD(Load) PASS: msb_out=0
+    40.00ns INFO     cocotb.universal_shift_register    HOLD(Load) PASS: lsb_out=1
+    40.00ns INFO     cocotb.universal_shift_register    HOLD(Load) PASS: parity_out=0
+    40.00ns INFO     cocotb.universal_shift_register    HOLD(Load) PASS: zero_flag=0
+    60.00ns INFO     cocotb.universal_shift_register    HOLD(NoChange) PASS: q=1011101101000001101000101010111
+    60.00ns INFO     cocotb.universal_shift_register    HOLD(NoChange) PASS: overflow=0
+    60.00ns INFO     cocotb.universal_shift_register    HOLD(NoChange) PASS: serial_out=1
+    60.00ns INFO     cocotb.universal_shift_register    HOLD(NoChange) PASS: msb_out=0
+    60.00ns INFO     cocotb.universal_shift_register    HOLD(NoChange) PASS: lsb_out=1
+    60.00ns INFO     cocotb.universal_shift_register    HOLD(NoChange) PASS: parity_out=0
+    60.00ns INFO     cocotb.universal_shift_register    HOLD(NoChange) PASS: zero_flag=0
+    70.00ns INFO     cocotb.universal_shift_register    HOLD(NoChange) PASS: q=1011101101000001101000101010111
+    70.00ns INFO     cocotb.universal_shift_register    HOLD(NoChange) PASS: overflow=0
+    70.00ns INFO     cocotb.universal_shift_register    HOLD(NoChange) PASS: serial_out=1
+    70.00ns INFO     cocotb.universal_shift_register    HOLD(NoChange) PASS: msb_out=0
+    70.00ns INFO     cocotb.universal_shift_register    HOLD(NoChange) PASS: lsb_out=1
+    70.00ns INFO     cocotb.universal_shift_register    HOLD(NoChange) PASS: parity_out=0
+    70.00ns INFO     cocotb.universal_shift_register    HOLD(NoChange) PASS: zero_flag=0
+    80.00ns INFO     cocotb.universal_shift_register    HOLD(NoChange) PASS: q=1011101101000001101000101010111
+    80.00ns INFO     cocotb.universal_shift_register    HOLD(NoChange) PASS: overflow=0
+    80.00ns INFO     cocotb.universal_shift_register    HOLD(NoChange) PASS: serial_out=1
+    80.00ns INFO     cocotb.universal_shift_register    HOLD(NoChange) PASS: msb_out=0
+    80.00ns INFO     cocotb.universal_shift_register    HOLD(NoChange) PASS: lsb_out=1
+    80.00ns INFO     cocotb.universal_shift_register    HOLD(NoChange) PASS: parity_out=0
+    80.00ns INFO     cocotb.universal_shift_register    HOLD(NoChange) PASS: zero_flag=0
+    80.00ns INFO     cocotb.universal_shift_register    --- TEST: SHIFT (Logical) (op_sel=001) ---
+   110.00ns INFO     cocotb.universal_shift_register    [RESET] DUT has been reset.
+   140.00ns INFO     cocotb.universal_shift_register    SHIFT_RIGHT PASS: q=11100001111110011010101110010001
+   140.00ns INFO     cocotb.universal_shift_register    SHIFT_RIGHT PASS: overflow=0
+   140.00ns INFO     cocotb.universal_shift_register    SHIFT_RIGHT PASS: serial_out=1
+   140.00ns INFO     cocotb.universal_shift_register    SHIFT_RIGHT PASS: msb_out=1
+   140.00ns INFO     cocotb.universal_shift_register    SHIFT_RIGHT PASS: lsb_out=1
+   140.00ns INFO     cocotb.universal_shift_register    SHIFT_RIGHT PASS: parity_out=0
+   140.00ns INFO     cocotb.universal_shift_register    SHIFT_RIGHT PASS: zero_flag=0
+   160.00ns INFO     cocotb.universal_shift_register    [RESET] DUT has been reset.
+   200.00ns INFO     cocotb.universal_shift_register    SHIFT_LEFT PASS: q=11010000111011001000001010010011
+   200.00ns INFO     cocotb.universal_shift_register    SHIFT_LEFT PASS: overflow=1
+   200.00ns INFO     cocotb.universal_shift_register    SHIFT_LEFT PASS: serial_out=1
+   200.00ns INFO     cocotb.universal_shift_register    SHIFT_LEFT PASS: msb_out=1
+   200.00ns INFO     cocotb.universal_shift_register    SHIFT_LEFT PASS: lsb_out=1
+   200.00ns INFO     cocotb.universal_shift_register    SHIFT_LEFT PASS: parity_out=0
+   200.00ns INFO     cocotb.universal_shift_register    SHIFT_LEFT PASS: zero_flag=0
+   200.00ns INFO     cocotb.universal_shift_register    --- TEST: ROTATE (op_sel=010) ---
+   220.00ns INFO     cocotb.universal_shift_register    [RESET] DUT has been reset.
+   260.00ns INFO     cocotb.universal_shift_register    ROTATE_RIGHT PASS: q=1001100100101110110110000111100
+   260.00ns INFO     cocotb.universal_shift_register    ROTATE_RIGHT PASS: overflow=0
+   260.00ns INFO     cocotb.universal_shift_register    ROTATE_RIGHT PASS: serial_out=0
+   260.00ns INFO     cocotb.universal_shift_register    ROTATE_RIGHT PASS: msb_out=0
+   260.00ns INFO     cocotb.universal_shift_register    ROTATE_RIGHT PASS: lsb_out=0
+   260.00ns INFO     cocotb.universal_shift_register    ROTATE_RIGHT PASS: parity_out=0
+   260.00ns INFO     cocotb.universal_shift_register    ROTATE_RIGHT PASS: zero_flag=0
+   280.00ns INFO     cocotb.universal_shift_register    [RESET] DUT has been reset.
+   320.00ns INFO     cocotb.universal_shift_register    ROTATE_LEFT PASS: q=111011111111100110110010001011
+   320.00ns INFO     cocotb.universal_shift_register    ROTATE_LEFT PASS: overflow=1
+   320.00ns INFO     cocotb.universal_shift_register    ROTATE_LEFT PASS: serial_out=0
+   320.00ns INFO     cocotb.universal_shift_register    ROTATE_LEFT PASS: msb_out=0
+   320.00ns INFO     cocotb.universal_shift_register    ROTATE_LEFT PASS: lsb_out=1
+   320.00ns INFO     cocotb.universal_shift_register    ROTATE_LEFT PASS: parity_out=0
+   320.00ns INFO     cocotb.universal_shift_register    ROTATE_LEFT PASS: zero_flag=0
+   320.00ns INFO     cocotb.universal_shift_register    --- TEST: PARALLEL LOAD (op_sel=011) ---
+   340.00ns INFO     cocotb.universal_shift_register    [RESET] DUT has been reset.
+   360.00ns INFO     cocotb.universal_shift_register    PARALLEL_LOAD_1 PASS: q=10011001011100100011101111100111
+   360.00ns INFO     cocotb.universal_shift_register    PARALLEL_LOAD_1 PASS: overflow=0
+   360.00ns INFO     cocotb.universal_shift_register    PARALLEL_LOAD_1 PASS: serial_out=1
+   360.00ns INFO     cocotb.universal_shift_register    PARALLEL_LOAD_1 PASS: msb_out=1
+   360.00ns INFO     cocotb.universal_shift_register    PARALLEL_LOAD_1 PASS: lsb_out=1
+   360.00ns INFO     cocotb.universal_shift_register    PARALLEL_LOAD_1 PASS: parity_out=1
+   360.00ns INFO     cocotb.universal_shift_register    PARALLEL_LOAD_1 PASS: zero_flag=0
+   380.00ns INFO     cocotb.universal_shift_register    PARALLEL_LOAD_2 PASS: q=10111011110100011111110111001101
+   380.00ns INFO     cocotb.universal_shift_register    PARALLEL_LOAD_2 PASS: overflow=0
+   380.00ns INFO     cocotb.universal_shift_register    PARALLEL_LOAD_2 PASS: serial_out=1
+   380.00ns INFO     cocotb.universal_shift_register    PARALLEL_LOAD_2 PASS: msb_out=1
+   380.00ns INFO     cocotb.universal_shift_register    PARALLEL_LOAD_2 PASS: lsb_out=1
+   380.00ns INFO     cocotb.universal_shift_register    PARALLEL_LOAD_2 PASS: parity_out=0
+   380.00ns INFO     cocotb.universal_shift_register    PARALLEL_LOAD_2 PASS: zero_flag=0
+   380.00ns INFO     cocotb.universal_shift_register    --- TEST: ARITHMETIC SHIFT (op_sel=100) ---
+   400.00ns INFO     cocotb.universal_shift_register    [RESET] DUT has been reset.
+   440.00ns INFO     cocotb.universal_shift_register    ARITH_SHIFT_RIGHT PASS: q=11110101110011111010101000010001
+   440.00ns INFO     cocotb.universal_shift_register    ARITH_SHIFT_RIGHT PASS: overflow=1
+   440.00ns INFO     cocotb.universal_shift_register    ARITH_SHIFT_RIGHT PASS: serial_out=1
+   440.00ns INFO     cocotb.universal_shift_register    ARITH_SHIFT_RIGHT PASS: msb_out=1
+   440.00ns INFO     cocotb.universal_shift_register    ARITH_SHIFT_RIGHT PASS: lsb_out=1
+   440.00ns INFO     cocotb.universal_shift_register    ARITH_SHIFT_RIGHT PASS: parity_out=0
+   440.00ns INFO     cocotb.universal_shift_register    ARITH_SHIFT_RIGHT PASS: zero_flag=0
+   460.00ns INFO     cocotb.universal_shift_register    [RESET] DUT has been reset.
+   500.00ns INFO     cocotb.universal_shift_register    ARITH_SHIFT_LEFT PASS: q=111010000001111100010110100000
+   500.00ns INFO     cocotb.universal_shift_register    ARITH_SHIFT_LEFT PASS: overflow=0
+   500.00ns INFO     cocotb.universal_shift_register    ARITH_SHIFT_LEFT PASS: serial_out=0
+   500.00ns INFO     cocotb.universal_shift_register    ARITH_SHIFT_LEFT PASS: msb_out=0
+   500.00ns INFO     cocotb.universal_shift_register    ARITH_SHIFT_LEFT PASS: lsb_out=0
+   500.00ns INFO     cocotb.universal_shift_register    ARITH_SHIFT_LEFT PASS: parity_out=1
+   500.00ns INFO     cocotb.universal_shift_register    ARITH_SHIFT_LEFT PASS: zero_flag=0
+   500.00ns INFO     cocotb.universal_shift_register    --- TEST: BITWISE OPS (op_sel=101) ---
+   520.00ns INFO     cocotb.universal_shift_register    [RESET] DUT has been reset.
+   550.00ns INFO     cocotb.universal_shift_register    BITWISE_AND PASS: q=00001111
+   550.00ns INFO     cocotb.universal_shift_register    BITWISE_AND PASS: overflow=0
+   550.00ns INFO     cocotb.universal_shift_register    BITWISE_AND PASS: serial_out=1
+   550.00ns INFO     cocotb.universal_shift_register    BITWISE_AND PASS: msb_out=0
+   550.00ns INFO     cocotb.universal_shift_register    BITWISE_AND PASS: lsb_out=1
+   550.00ns INFO     cocotb.universal_shift_register    BITWISE_AND PASS: parity_out=0
+   550.00ns INFO     cocotb.universal_shift_register    BITWISE_AND PASS: zero_flag=0
+   570.00ns INFO     cocotb.universal_shift_register    [RESET] DUT has been reset.
+   600.00ns INFO     cocotb.universal_shift_register    BITWISE_OR PASS: q=00000101
+   600.00ns INFO     cocotb.universal_shift_register    BITWISE_OR PASS: overflow=0
+   600.00ns INFO     cocotb.universal_shift_register    BITWISE_OR PASS: serial_out=1
+   600.00ns INFO     cocotb.universal_shift_register    BITWISE_OR PASS: msb_out=0
+   600.00ns INFO     cocotb.universal_shift_register    BITWISE_OR PASS: lsb_out=1
+   600.00ns INFO     cocotb.universal_shift_register    BITWISE_OR PASS: parity_out=0
+   600.00ns INFO     cocotb.universal_shift_register    BITWISE_OR PASS: zero_flag=0
+   620.00ns INFO     cocotb.universal_shift_register    [RESET] DUT has been reset.
+   650.00ns INFO     cocotb.universal_shift_register    BITWISE_XOR PASS: q=00000000
+   650.00ns INFO     cocotb.universal_shift_register    BITWISE_XOR PASS: overflow=0
+   650.00ns INFO     cocotb.universal_shift_register    BITWISE_XOR PASS: serial_out=0
+   650.00ns INFO     cocotb.universal_shift_register    BITWISE_XOR PASS: msb_out=0
+   650.00ns INFO     cocotb.universal_shift_register    BITWISE_XOR PASS: lsb_out=0
+   650.00ns INFO     cocotb.universal_shift_register    BITWISE_XOR PASS: parity_out=0
+   650.00ns INFO     cocotb.universal_shift_register    BITWISE_XOR PASS: zero_flag=1
+   670.00ns INFO     cocotb.universal_shift_register    [RESET] DUT has been reset.
+   700.00ns INFO     cocotb.universal_shift_register    BITWISE_XNOR PASS: q=11111111111111111111111111111111
+   700.00ns INFO     cocotb.universal_shift_register    BITWISE_XNOR PASS: overflow=0
+   700.00ns INFO     cocotb.universal_shift_register    BITWISE_XNOR PASS: serial_out=1
+   700.00ns INFO     cocotb.universal_shift_register    BITWISE_XNOR PASS: msb_out=1
+   700.00ns INFO     cocotb.universal_shift_register    BITWISE_XNOR PASS: lsb_out=1
+   700.00ns INFO     cocotb.universal_shift_register    BITWISE_XNOR PASS: parity_out=0
+   700.00ns INFO     cocotb.universal_shift_register    BITWISE_XNOR PASS: zero_flag=0
+   700.00ns INFO     cocotb.universal_shift_register    --- TEST: REVERSE BITS (op_sel=110) ---
+   720.00ns INFO     cocotb.universal_shift_register    [RESET] DUT has been reset.
+   750.00ns INFO     cocotb.universal_shift_register    BEFORE_REVERSE PASS: q=11110001110001100100111011
+   750.00ns INFO     cocotb.universal_shift_register    BEFORE_REVERSE PASS: overflow=0
+   750.00ns INFO     cocotb.universal_shift_register    BEFORE_REVERSE PASS: serial_out=1
+   750.00ns INFO     cocotb.universal_shift_register    BEFORE_REVERSE PASS: msb_out=0
+   750.00ns INFO     cocotb.universal_shift_register    BEFORE_REVERSE PASS: lsb_out=1
+   750.00ns INFO     cocotb.universal_shift_register    BEFORE_REVERSE PASS: parity_out=1
+   750.00ns INFO     cocotb.universal_shift_register    BEFORE_REVERSE PASS: zero_flag=0
+   780.00ns INFO     cocotb.universal_shift_register    AFTER_REVERSE PASS: q=11011100100110001110001111000000
+   780.00ns INFO     cocotb.universal_shift_register    AFTER_REVERSE PASS: overflow=0
+   780.00ns INFO     cocotb.universal_shift_register    AFTER_REVERSE PASS: serial_out=0
+   780.00ns INFO     cocotb.universal_shift_register    AFTER_REVERSE PASS: msb_out=1
+   780.00ns INFO     cocotb.universal_shift_register    AFTER_REVERSE PASS: lsb_out=0
+   780.00ns INFO     cocotb.universal_shift_register    AFTER_REVERSE PASS: parity_out=1
+   780.00ns INFO     cocotb.universal_shift_register    AFTER_REVERSE PASS: zero_flag=0
+   780.00ns INFO     cocotb.universal_shift_register    --- TEST: COMPLEMENT (op_sel=111) ---
+   800.00ns INFO     cocotb.universal_shift_register    [RESET] DUT has been reset.
+   840.00ns INFO     cocotb.universal_shift_register    COMPLEMENT PASS: q=11011110111010000100011101100101
+   840.00ns INFO     cocotb.universal_shift_register    COMPLEMENT PASS: overflow=0
+   840.00ns INFO     cocotb.universal_shift_register    COMPLEMENT PASS: serial_out=1
+   840.00ns INFO     cocotb.universal_shift_register    COMPLEMENT PASS: msb_out=1
+   840.00ns INFO     cocotb.universal_shift_register    COMPLEMENT PASS: lsb_out=1
+   840.00ns INFO     cocotb.universal_shift_register    COMPLEMENT PASS: parity_out=0
+   840.00ns INFO     cocotb.universal_shift_register    COMPLEMENT PASS: zero_flag=0
+   840.00ns INFO     cocotb.universal_shift_register    --- TEST: ENABLE (en=0) ---
+   860.00ns INFO     cocotb.universal_shift_register    [RESET] DUT has been reset.
+   880.00ns INFO     cocotb.universal_shift_register    ENABLE_BEFORE PASS: q=10101110111101001111011011010011
+   880.00ns INFO     cocotb.universal_shift_register    ENABLE_BEFORE PASS: overflow=0
+   880.00ns INFO     cocotb.universal_shift_register    ENABLE_BEFORE PASS: serial_out=1
+   880.00ns INFO     cocotb.universal_shift_register    ENABLE_BEFORE PASS: msb_out=1
+   880.00ns INFO     cocotb.universal_shift_register    ENABLE_BEFORE PASS: lsb_out=1
+   880.00ns INFO     cocotb.universal_shift_register    ENABLE_BEFORE PASS: parity_out=1
+   880.00ns INFO     cocotb.universal_shift_register    ENABLE_BEFORE PASS: zero_flag=0
+   900.00ns INFO     cocotb.universal_shift_register    ENABLE_DISABLED_0 PASS: q=10101110111101001111011011010011
+   900.00ns INFO     cocotb.universal_shift_register    ENABLE_DISABLED_0 PASS: overflow=0
+   900.00ns INFO     cocotb.universal_shift_register    ENABLE_DISABLED_0 PASS: serial_out=1
+   900.00ns INFO     cocotb.universal_shift_register    ENABLE_DISABLED_0 PASS: msb_out=1
+   900.00ns INFO     cocotb.universal_shift_register    ENABLE_DISABLED_0 PASS: lsb_out=1
+   900.00ns INFO     cocotb.universal_shift_register    ENABLE_DISABLED_0 PASS: parity_out=1
+   900.00ns INFO     cocotb.universal_shift_register    ENABLE_DISABLED_0 PASS: zero_flag=0
+   920.00ns INFO     cocotb.universal_shift_register    ENABLE_DISABLED_1 PASS: q=10101110111101001111011011010011
+   920.00ns INFO     cocotb.universal_shift_register    ENABLE_DISABLED_1 PASS: overflow=0
+   920.00ns INFO     cocotb.universal_shift_register    ENABLE_DISABLED_1 PASS: serial_out=1
+   920.00ns INFO     cocotb.universal_shift_register    ENABLE_DISABLED_1 PASS: msb_out=1
+   920.00ns INFO     cocotb.universal_shift_register    ENABLE_DISABLED_1 PASS: lsb_out=1
+   920.00ns INFO     cocotb.universal_shift_register    ENABLE_DISABLED_1 PASS: parity_out=1
+   920.00ns INFO     cocotb.universal_shift_register    ENABLE_DISABLED_1 PASS: zero_flag=0
+   940.00ns INFO     cocotb.universal_shift_register    ENABLE_DISABLED_2 PASS: q=10101110111101001111011011010011
+   940.00ns INFO     cocotb.universal_shift_register    ENABLE_DISABLED_2 PASS: overflow=0
+   940.00ns INFO     cocotb.universal_shift_register    ENABLE_DISABLED_2 PASS: serial_out=1
+   940.00ns INFO     cocotb.universal_shift_register    ENABLE_DISABLED_2 PASS: msb_out=1
+   940.00ns INFO     cocotb.universal_shift_register    ENABLE_DISABLED_2 PASS: lsb_out=1
+   940.00ns INFO     cocotb.universal_shift_register    ENABLE_DISABLED_2 PASS: parity_out=1
+   940.00ns INFO     cocotb.universal_shift_register    ENABLE_DISABLED_2 PASS: zero_flag=0
+   940.00ns INFO     cocotb.universal_shift_register    =========== ALL TESTS COMPLETED ===========
+   941.00ns INFO     cocotb.regression                  test_universal_shift_register passed
+   941.00ns INFO     cocotb.regression                  *********************************************************************************************************************
+                                                        ** TEST                                                         STATUS  SIM TIME (ns)  REAL TIME (s)  RATIO (ns/s) **
+                                                        *********************************************************************************************************************
+                                                        ** test_universal_shift_register.test_universal_shift_register   PASS         941.00           0.02      48237.49  **
+                                                        *********************************************************************************************************************
+                                                        ** TESTS=1 PASS=1 FAIL=0 SKIP=0                                               941.00           0.05      17829.56  **
+                                                        *********************************************************************************************************************
+                                                        
+FST info: dumpfile /code/sim_build/universal_shift_register.fst opened for output.
+[DEBUG] Parameters: {'N': 32}
+Removing: /code/sim_build
+INFO: Running command iverilog -o /code/sim_build/sim.vvp -D COCOTB_SIM=1 -s universal_shift_register -g2012 -Puniversal_shift_register.N=32 -s cocotb_iverilog_dump -f /code/sim_build/cmds.f /code/rtl/universal_shift_register.sv /code/sim_build/cocotb_iverilog_dump.v in directory /code/sim_build
+INFO: Running command vvp -M /usr/local/lib/python3.9/dist-packages/cocotb/libs -m libcocotbvpi_icarus /code/sim_build/sim.vvp -fst in directory /code/sim_build
+INFO: Results file: /code/sim_build/test_dig_stop[32-0].None
+PASSED
+
+=============================== warnings summary ===============================
+src/test_runner.py:2
+  /code/src/test_runner.py:2: UserWarning: Python runners and associated APIs are an experimental feature and subject to change.
+    from cocotb.runner import get_runner
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+========================= 4 passed, 1 warning in 0.80s =========================

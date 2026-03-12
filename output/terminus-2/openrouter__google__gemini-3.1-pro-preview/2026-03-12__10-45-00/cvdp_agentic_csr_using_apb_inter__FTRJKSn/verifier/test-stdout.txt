@@ -1,0 +1,79 @@
+Running service: direct
+============================= test session starts ==============================
+platform linux -- Python 3.9.2, pytest-8.3.2, pluggy-1.5.0 -- /usr/bin/python3
+cachedir: /rundir/harness/.cache
+rootdir: /src
+collecting ... collected 2 items
+
+../src/test_runner.py::test_areg_param[0] 
+-------------------------------- live log call ---------------------------------
+INFO     Icarus:runner.py:480 Removing: /code/sim_build
+INFO     Icarus:runner.py:468 Running command iverilog -o /code/sim_build/sim.vvp -s csr_apb_interface -g2012 -s cocotb_iverilog_dump -f /code/sim_build/cmds.f /code/rtl/csr_apb_interface.sv /code/sim_build/cocotb_iverilog_dump.v in directory /code/sim_build
+INFO     Icarus:runner.py:468 Running command vvp -M /usr/local/lib/python3.9/dist-packages/cocotb/libs -m libcocotbvpi_icarus /code/sim_build/sim.vvp -fst in directory /code/sim_build
+     -.--ns INFO     gpi                                ..mbed/gpi_embed.cpp:79   in set_program_name_in_venv        Did not detect Python virtual environment. Using system-wide Python interpreter
+     -.--ns INFO     gpi                                ../gpi/GpiCommon.cpp:101  in gpi_print_registered_impl       VPI registered
+     0.00ns INFO     cocotb                             Running on Icarus Verilog version 13.0 (devel)
+     0.00ns INFO     cocotb                             Running tests with cocotb v2.0.0.dev0+8d6c1a63 from /usr/local/lib/python3.9/dist-packages/cocotb
+     0.00ns INFO     cocotb                             Seeding Python random module with 1773329451
+     0.00ns INFO     cocotb.regression                  running test_csr_apb_interface.test_csr_apb_interface (1/1)
+/code/src/test_csr_apb_interface.py:38: DeprecationWarning: `.integer` property is deprecated. Use `value.to_unsigned()` instead.
+  return dut.prdata.value.integer
+   110.00ns INFO     cocotb.csr_apb_interface           Writing and Reading from DATA_REG : data_read_back = 1484761727, data_to_write = 1484761727
+   190.00ns INFO     cocotb.csr_apb_interface           Writing and Reading from CONTROL_REG : data_read_back = 1479145392, data_to_write = 1479145392
+   270.00ns INFO     cocotb.csr_apb_interface           Writing and Reading from INTERRUPT_REG : data_read_back = 2152661487, data_to_write = 2152661487
+   270.00ns INFO     cocotb.csr_apb_interface           Test Case 5: Write-protected ISR_REG
+   310.00ns INFO     cocotb.csr_apb_interface           Write to ISR_REG correctly caused error (Write-Protected Register)
+   310.00ns INFO     cocotb.csr_apb_interface           Test Case 6: Read ISR_REG
+/code/src/test_csr_apb_interface.py:106: DeprecationWarning: `.integer` property is deprecated. Use `value.to_unsigned()` instead.
+  isr_read_value = dut.prdata.value.integer
+   350.00ns INFO     cocotb.csr_apb_interface           ISR_REG read successful: 0
+   450.00ns INFO     cocotb.csr_apb_interface           All test cases passed!
+   450.00ns INFO     cocotb.regression                  test_csr_apb_interface.test_csr_apb_interface passed
+   450.00ns INFO     cocotb.regression                  *******************************************************************************************************
+                                                        ** TEST                                           STATUS  SIM TIME (ns)  REAL TIME (s)  RATIO (ns/s) **
+                                                        *******************************************************************************************************
+                                                        ** test_csr_apb_interface.test_csr_apb_interface   PASS         450.00           0.01      78002.93  **
+                                                        *******************************************************************************************************
+                                                        ** TESTS=1 PASS=1 FAIL=0 SKIP=0                                 450.00           0.01      44576.00  **
+                                                        *******************************************************************************************************
+                                                        
+FST info: dumpfile /code/sim_build/csr_apb_interface.fst opened for output.
+INFO     Icarus:runner.py:438 Results file: /code/sim_build/test_areg_param[0].None
+PASSED
+../src/test_runner.py::test_areg_param[1] 
+-------------------------------- live log call ---------------------------------
+INFO     Icarus:runner.py:480 Removing: /code/sim_build
+INFO     Icarus:runner.py:468 Running command iverilog -o /code/sim_build/sim.vvp -s csr_apb_interface -g2012 -s cocotb_iverilog_dump -f /code/sim_build/cmds.f /code/rtl/csr_apb_interface.sv /code/sim_build/cocotb_iverilog_dump.v in directory /code/sim_build
+INFO     Icarus:runner.py:468 Running command vvp -M /usr/local/lib/python3.9/dist-packages/cocotb/libs -m libcocotbvpi_icarus /code/sim_build/sim.vvp -fst in directory /code/sim_build
+     -.--ns INFO     gpi                                ..mbed/gpi_embed.cpp:79   in set_program_name_in_venv        Did not detect Python virtual environment. Using system-wide Python interpreter
+     -.--ns INFO     gpi                                ../gpi/GpiCommon.cpp:101  in gpi_print_registered_impl       VPI registered
+     0.00ns INFO     cocotb                             Running on Icarus Verilog version 13.0 (devel)
+     0.00ns INFO     cocotb                             Running tests with cocotb v2.0.0.dev0+8d6c1a63 from /usr/local/lib/python3.9/dist-packages/cocotb
+     0.00ns INFO     cocotb                             Seeding Python random module with 1773329451
+     0.00ns INFO     cocotb.regression                  running test_csr_apb_interface.test_csr_apb_interface (1/1)
+/code/src/test_csr_apb_interface.py:38: DeprecationWarning: `.integer` property is deprecated. Use `value.to_unsigned()` instead.
+  return dut.prdata.value.integer
+   110.00ns INFO     cocotb.csr_apb_interface           Writing and Reading from DATA_REG : data_read_back = 1484761727, data_to_write = 1484761727
+   190.00ns INFO     cocotb.csr_apb_interface           Writing and Reading from CONTROL_REG : data_read_back = 1479145392, data_to_write = 1479145392
+   270.00ns INFO     cocotb.csr_apb_interface           Writing and Reading from INTERRUPT_REG : data_read_back = 2152661487, data_to_write = 2152661487
+   270.00ns INFO     cocotb.csr_apb_interface           Test Case 5: Write-protected ISR_REG
+   310.00ns INFO     cocotb.csr_apb_interface           Write to ISR_REG correctly caused error (Write-Protected Register)
+   310.00ns INFO     cocotb.csr_apb_interface           Test Case 6: Read ISR_REG
+/code/src/test_csr_apb_interface.py:106: DeprecationWarning: `.integer` property is deprecated. Use `value.to_unsigned()` instead.
+  isr_read_value = dut.prdata.value.integer
+   350.00ns INFO     cocotb.csr_apb_interface           ISR_REG read successful: 0
+   450.00ns INFO     cocotb.csr_apb_interface           All test cases passed!
+   450.00ns INFO     cocotb.regression                  test_csr_apb_interface.test_csr_apb_interface passed
+   450.00ns INFO     cocotb.regression                  *******************************************************************************************************
+                                                        ** TEST                                           STATUS  SIM TIME (ns)  REAL TIME (s)  RATIO (ns/s) **
+                                                        *******************************************************************************************************
+                                                        ** test_csr_apb_interface.test_csr_apb_interface   PASS         450.00           0.01      75627.55  **
+                                                        *******************************************************************************************************
+                                                        ** TESTS=1 PASS=1 FAIL=0 SKIP=0                                 450.00           0.01      43635.11  **
+                                                        *******************************************************************************************************
+                                                        
+FST info: dumpfile /code/sim_build/csr_apb_interface.fst opened for output.
+INFO     Icarus:runner.py:438 Results file: /code/sim_build/test_areg_param[1].None
+PASSED
+
+============================== 2 passed in 0.39s ===============================

@@ -1,0 +1,75 @@
+Running service: sanity
+============================= test session starts ==============================
+platform linux -- Python 3.9.2, pytest-8.3.2, pluggy-1.5.0 -- /usr/bin/python3
+cachedir: /rundir/harness/.cache
+rootdir: /src
+collecting ... collected 1 item
+
+../../src/test_runner.py::test_data      -.--ns INFO     gpi                                ..mbed/gpi_embed.cpp:79   in set_program_name_in_venv        Did not detect Python virtual environment. Using system-wide Python interpreter
+     -.--ns INFO     gpi                                ../gpi/GpiCommon.cpp:101  in gpi_print_registered_impl       VPI registered
+     0.00ns INFO     cocotb                             Running on Icarus Verilog version 13.0 (devel)
+     0.00ns INFO     cocotb                             Running tests with cocotb v2.0.0.dev0+8d6c1a63 from /usr/local/lib/python3.9/dist-packages/cocotb
+     0.00ns INFO     cocotb                             Seeding Python random module with 1773327916
+     0.00ns INFO     cocotb.regression                  running test_aes128_decrypt.test_aes128_decrypt (1/1)
+                                                            Test the aes128_decrypt module with edge cases and random data.
+     0.00ns WARNING  gpi                                VPI: Not able to map type vpiNamedBegin(33) to object.
+     0.00ns WARNING  gpi                                Unable to create decypher_logic via any registered implementation
+     0.00ns WARNING  gpi                                VPI: Not able to map type vpiNamedBegin(33) to object.
+     0.00ns WARNING  gpi                                Unable to create inv_cypher_regs via any registered implementation
+     0.00ns WARNING  gpi                                VPI: Not able to map type vpiNamedBegin(33) to object.
+     0.00ns WARNING  gpi                                Unable to create next_data via any registered implementation
+     0.00ns WARNING  gpi                                VPI: Not able to map type vpiNamedBegin(33) to object.
+     0.00ns WARNING  gpi                                Unable to create shift_rows_logic via any registered implementation
+Reset 0, Run 0
+Reset 0, Run 100
+Reset 0, Run 200
+Reset 0, Run 300
+Reset 0, Run 400
+Reset 0, Run 500
+Reset 0, Run 600
+Reset 0, Run 700
+Reset 0, Run 800
+Reset 0, Run 900
+Reset 1, Run 0
+Reset 1, Run 100
+Reset 1, Run 200
+Reset 1, Run 300
+Reset 1, Run 400
+Reset 1, Run 500
+Reset 1, Run 600
+Reset 1, Run 700
+Reset 1, Run 800
+Reset 1, Run 900
+Reset 2, Run 0
+Reset 2, Run 100
+Reset 2, Run 200
+Reset 2, Run 300
+Reset 2, Run 400
+Reset 2, Run 500
+Reset 2, Run 600
+Reset 2, Run 700
+Reset 2, Run 800
+Reset 2, Run 900
+Reset 3, Run 0
+Reset 3, Run 100
+Reset 3, Run 200
+Reset 3, Run 300
+Reset 3, Run 400
+Reset 3, Run 500
+Reset 3, Run 600
+Reset 3, Run 700
+Reset 3, Run 800
+Reset 3, Run 900
+741390.00ns INFO     cocotb.regression                  test_aes128_decrypt.test_aes128_decrypt passed
+741390.00ns INFO     cocotb.regression                  *************************************************************************************************
+                                                        ** TEST                                     STATUS  SIM TIME (ns)  REAL TIME (s)  RATIO (ns/s) **
+                                                        *************************************************************************************************
+                                                        ** test_aes128_decrypt.test_aes128_decrypt   PASS      741390.00          80.57       9202.11  **
+                                                        *************************************************************************************************
+                                                        ** TESTS=1 PASS=1 FAIL=0 SKIP=0                        741390.00          80.57       9201.38  **
+                                                        *************************************************************************************************
+                                                        
+FST info: dumpfile /code/rundir/sim_build/aes128_decrypt.fst opened for output.
+PASSED
+
+========================= 1 passed in 81.25s (0:01:21) =========================

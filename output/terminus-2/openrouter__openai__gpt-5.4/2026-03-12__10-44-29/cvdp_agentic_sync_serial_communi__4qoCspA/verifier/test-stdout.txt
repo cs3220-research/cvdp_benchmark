@@ -1,0 +1,629 @@
+Running service: 1-new-tb
+============================= test session starts ==============================
+platform linux -- Python 3.9.2, pytest-8.3.2, pluggy-1.5.0 -- /usr/bin/python3
+cachedir: /code/rundir/.cache
+rootdir: /src
+collecting ... collected 20 items
+
+../src/test_runner.py::test_sync_serial_communication[0]      -.--ns INFO     gpi                                ..mbed/gpi_embed.cpp:79   in set_program_name_in_venv        Did not detect Python virtual environment. Using system-wide Python interpreter
+     -.--ns INFO     gpi                                ../gpi/GpiCommon.cpp:101  in gpi_print_registered_impl       VPI registered
+     0.00ns INFO     cocotb                             Running on Icarus Verilog version 13.0 (devel)
+     0.00ns INFO     cocotb                             Running tests with cocotb v2.0.0.dev0+8d6c1a63 from /usr/local/lib/python3.9/dist-packages/cocotb
+     0.00ns INFO     cocotb                             Seeding Python random module with 1773329217
+     0.00ns INFO     cocotb.regression                  running test_sync_serial_communication.test_sync_communication (1/1)
+    50.00ns INFO     ...sync_serial_communication_tx_rx  data_in = 0, sel = 000
+   710.00ns INFO     ...sync_serial_communication_tx_rx  data_in = 123150, sel = 100, data_out = 123150, done = 1
+   710.00ns INFO     ...sync_serial_communication_tx_rx  data_in = 123150, expected_data_out = 123150, data_out = 123150
+   710.00ns INFO     ...sync_serial_communication_tx_rx  got_gray_out = 70025, expected_gray_out = 70025
+   760.00ns INFO     ...sync_serial_communication_tx_rx  data_in = 123150, sel = 100
+  2040.00ns INFO     ...sync_serial_communication_tx_rx  data_in = 123150, sel = 100, data_out = 123150, done = 1
+  2040.00ns INFO     ...sync_serial_communication_tx_rx  data_in = 123150, expected_data_out = 123150, data_out = 123150
+  2040.00ns INFO     ...sync_serial_communication_tx_rx  got_gray_out = 70025, expected_gray_out = 70025
+  2090.00ns INFO     ...sync_serial_communication_tx_rx  data_in = 123150, sel = 100
+  3370.00ns INFO     ...sync_serial_communication_tx_rx  data_in = 123150, sel = 100, data_out = 123150, done = 1
+  3370.00ns INFO     ...sync_serial_communication_tx_rx  data_in = 123150, expected_data_out = 123150, data_out = 123150
+  3370.00ns INFO     ...sync_serial_communication_tx_rx  got_gray_out = 70025, expected_gray_out = 70025
+  3420.00ns INFO     ...sync_serial_communication_tx_rx  data_in = 123150, sel = 100
+  4700.00ns INFO     ...sync_serial_communication_tx_rx  data_in = 123150, sel = 100, data_out = 123150, done = 1
+  4700.00ns INFO     ...sync_serial_communication_tx_rx  data_in = 123150, expected_data_out = 123150, data_out = 123150
+  4700.00ns INFO     ...sync_serial_communication_tx_rx  got_gray_out = 70025, expected_gray_out = 70025
+  4750.00ns INFO     cocotb.regression                  test_sync_serial_communication.test_sync_communication passed
+  4750.00ns INFO     cocotb.regression                  ****************************************************************************************************************
+                                                        ** TEST                                                    STATUS  SIM TIME (ns)  REAL TIME (s)  RATIO (ns/s) **
+                                                        ****************************************************************************************************************
+                                                        ** test_sync_serial_communication.test_sync_communication   PASS        4750.00           0.05      98166.28  **
+                                                        ****************************************************************************************************************
+                                                        ** TESTS=1 PASS=1 FAIL=0 SKIP=0                                         4750.00           0.05      87318.91  **
+                                                        ****************************************************************************************************************
+                                                        
+FST info: dumpfile /code/sim_build/sync_serial_communication_tx_rx.fst opened for output.
+PASSED
+../src/test_runner.py::test_sync_serial_communication[1]      -.--ns INFO     gpi                                ..mbed/gpi_embed.cpp:79   in set_program_name_in_venv        Did not detect Python virtual environment. Using system-wide Python interpreter
+     -.--ns INFO     gpi                                ../gpi/GpiCommon.cpp:101  in gpi_print_registered_impl       VPI registered
+     0.00ns INFO     cocotb                             Running on Icarus Verilog version 13.0 (devel)
+     0.00ns INFO     cocotb                             Running tests with cocotb v2.0.0.dev0+8d6c1a63 from /usr/local/lib/python3.9/dist-packages/cocotb
+     0.00ns INFO     cocotb                             Seeding Python random module with 1773329217
+     0.00ns INFO     cocotb.regression                  running test_sync_serial_communication.test_sync_communication (1/1)
+    50.00ns INFO     ...sync_serial_communication_tx_rx  data_in = 0, sel = 000
+   710.00ns INFO     ...sync_serial_communication_tx_rx  data_in = 123150, sel = 100, data_out = 123150, done = 1
+   710.00ns INFO     ...sync_serial_communication_tx_rx  data_in = 123150, expected_data_out = 123150, data_out = 123150
+   710.00ns INFO     ...sync_serial_communication_tx_rx  got_gray_out = 70025, expected_gray_out = 70025
+   760.00ns INFO     ...sync_serial_communication_tx_rx  data_in = 123150, sel = 100
+  2040.00ns INFO     ...sync_serial_communication_tx_rx  data_in = 123150, sel = 100, data_out = 123150, done = 1
+  2040.00ns INFO     ...sync_serial_communication_tx_rx  data_in = 123150, expected_data_out = 123150, data_out = 123150
+  2040.00ns INFO     ...sync_serial_communication_tx_rx  got_gray_out = 70025, expected_gray_out = 70025
+  2090.00ns INFO     ...sync_serial_communication_tx_rx  data_in = 123150, sel = 100
+  3370.00ns INFO     ...sync_serial_communication_tx_rx  data_in = 123150, sel = 100, data_out = 123150, done = 1
+  3370.00ns INFO     ...sync_serial_communication_tx_rx  data_in = 123150, expected_data_out = 123150, data_out = 123150
+  3370.00ns INFO     ...sync_serial_communication_tx_rx  got_gray_out = 70025, expected_gray_out = 70025
+  3420.00ns INFO     ...sync_serial_communication_tx_rx  data_in = 123150, sel = 100
+  4700.00ns INFO     ...sync_serial_communication_tx_rx  data_in = 123150, sel = 100, data_out = 123150, done = 1
+  4700.00ns INFO     ...sync_serial_communication_tx_rx  data_in = 123150, expected_data_out = 123150, data_out = 123150
+  4700.00ns INFO     ...sync_serial_communication_tx_rx  got_gray_out = 70025, expected_gray_out = 70025
+  4750.00ns INFO     cocotb.regression                  test_sync_serial_communication.test_sync_communication passed
+  4750.00ns INFO     cocotb.regression                  ****************************************************************************************************************
+                                                        ** TEST                                                    STATUS  SIM TIME (ns)  REAL TIME (s)  RATIO (ns/s) **
+                                                        ****************************************************************************************************************
+                                                        ** test_sync_serial_communication.test_sync_communication   PASS        4750.00           0.05      97189.36  **
+                                                        ****************************************************************************************************************
+                                                        ** TESTS=1 PASS=1 FAIL=0 SKIP=0                                         4750.00           0.05      90560.48  **
+                                                        ****************************************************************************************************************
+                                                        
+FST info: dumpfile /code/sim_build/sync_serial_communication_tx_rx.fst opened for output.
+PASSED
+../src/test_runner.py::test_sync_serial_communication[2]      -.--ns INFO     gpi                                ..mbed/gpi_embed.cpp:79   in set_program_name_in_venv        Did not detect Python virtual environment. Using system-wide Python interpreter
+     -.--ns INFO     gpi                                ../gpi/GpiCommon.cpp:101  in gpi_print_registered_impl       VPI registered
+     0.00ns INFO     cocotb                             Running on Icarus Verilog version 13.0 (devel)
+     0.00ns INFO     cocotb                             Running tests with cocotb v2.0.0.dev0+8d6c1a63 from /usr/local/lib/python3.9/dist-packages/cocotb
+     0.00ns INFO     cocotb                             Seeding Python random module with 1773329218
+     0.00ns INFO     cocotb.regression                  running test_sync_serial_communication.test_sync_communication (1/1)
+    50.00ns INFO     ...sync_serial_communication_tx_rx  data_in = 0, sel = 000
+   230.00ns INFO     ...sync_serial_communication_tx_rx  data_in = 561, sel = 010, data_out = 561, done = 1
+   230.00ns INFO     ...sync_serial_communication_tx_rx  data_in = 561, expected_data_out = 561, data_out = 561
+   230.00ns INFO     ...sync_serial_communication_tx_rx  got_gray_out = 809, expected_gray_out = 809
+   280.00ns INFO     ...sync_serial_communication_tx_rx  data_in = 561, sel = 010
+   600.00ns INFO     ...sync_serial_communication_tx_rx  data_in = 561, sel = 010, data_out = 561, done = 1
+   600.00ns INFO     ...sync_serial_communication_tx_rx  data_in = 561, expected_data_out = 561, data_out = 561
+   600.00ns INFO     ...sync_serial_communication_tx_rx  got_gray_out = 809, expected_gray_out = 809
+   650.00ns INFO     cocotb.regression                  test_sync_serial_communication.test_sync_communication passed
+   650.00ns INFO     cocotb.regression                  ****************************************************************************************************************
+                                                        ** TEST                                                    STATUS  SIM TIME (ns)  REAL TIME (s)  RATIO (ns/s) **
+                                                        ****************************************************************************************************************
+                                                        ** test_sync_serial_communication.test_sync_communication   PASS         650.00           0.01      81340.74  **
+                                                        ****************************************************************************************************************
+                                                        ** TESTS=1 PASS=1 FAIL=0 SKIP=0                                          650.00           0.01      56323.81  **
+                                                        ****************************************************************************************************************
+                                                        
+FST info: dumpfile /code/sim_build/sync_serial_communication_tx_rx.fst opened for output.
+PASSED
+../src/test_runner.py::test_sync_serial_communication[3]      -.--ns INFO     gpi                                ..mbed/gpi_embed.cpp:79   in set_program_name_in_venv        Did not detect Python virtual environment. Using system-wide Python interpreter
+     -.--ns INFO     gpi                                ../gpi/GpiCommon.cpp:101  in gpi_print_registered_impl       VPI registered
+     0.00ns INFO     cocotb                             Running on Icarus Verilog version 13.0 (devel)
+     0.00ns INFO     cocotb                             Running tests with cocotb v2.0.0.dev0+8d6c1a63 from /usr/local/lib/python3.9/dist-packages/cocotb
+     0.00ns INFO     cocotb                             Seeding Python random module with 1773329218
+     0.00ns INFO     cocotb.regression                  running test_sync_serial_communication.test_sync_communication (1/1)
+    50.00ns INFO     ...sync_serial_communication_tx_rx  data_in = 0, sel = 000
+   230.00ns INFO     ...sync_serial_communication_tx_rx  data_in = 561, sel = 010, data_out = 561, done = 1
+   230.00ns INFO     ...sync_serial_communication_tx_rx  data_in = 561, expected_data_out = 561, data_out = 561
+   230.00ns INFO     ...sync_serial_communication_tx_rx  got_gray_out = 809, expected_gray_out = 809
+   280.00ns INFO     ...sync_serial_communication_tx_rx  data_in = 561, sel = 010
+   600.00ns INFO     ...sync_serial_communication_tx_rx  data_in = 561, sel = 010, data_out = 561, done = 1
+   600.00ns INFO     ...sync_serial_communication_tx_rx  data_in = 561, expected_data_out = 561, data_out = 561
+   600.00ns INFO     ...sync_serial_communication_tx_rx  got_gray_out = 809, expected_gray_out = 809
+   650.00ns INFO     cocotb.regression                  test_sync_serial_communication.test_sync_communication passed
+   650.00ns INFO     cocotb.regression                  ****************************************************************************************************************
+                                                        ** TEST                                                    STATUS  SIM TIME (ns)  REAL TIME (s)  RATIO (ns/s) **
+                                                        ****************************************************************************************************************
+                                                        ** test_sync_serial_communication.test_sync_communication   PASS         650.00           0.01      58795.70  **
+                                                        ****************************************************************************************************************
+                                                        ** TESTS=1 PASS=1 FAIL=0 SKIP=0                                          650.00           0.01      44195.66  **
+                                                        ****************************************************************************************************************
+                                                        
+FST info: dumpfile /code/sim_build/sync_serial_communication_tx_rx.fst opened for output.
+PASSED
+../src/test_runner.py::test_sync_serial_communication[4]      -.--ns INFO     gpi                                ..mbed/gpi_embed.cpp:79   in set_program_name_in_venv        Did not detect Python virtual environment. Using system-wide Python interpreter
+     -.--ns INFO     gpi                                ../gpi/GpiCommon.cpp:101  in gpi_print_registered_impl       VPI registered
+     0.00ns INFO     cocotb                             Running on Icarus Verilog version 13.0 (devel)
+     0.00ns INFO     cocotb                             Running tests with cocotb v2.0.0.dev0+8d6c1a63 from /usr/local/lib/python3.9/dist-packages/cocotb
+     0.00ns INFO     cocotb                             Seeding Python random module with 1773329218
+     0.00ns INFO     cocotb.regression                  running test_sync_serial_communication.test_sync_communication (1/1)
+    50.00ns INFO     ...sync_serial_communication_tx_rx  data_in = 0, sel = 000
+   230.00ns INFO     ...sync_serial_communication_tx_rx  data_in = 561, sel = 010, data_out = 561, done = 1
+   230.00ns INFO     ...sync_serial_communication_tx_rx  data_in = 561, expected_data_out = 561, data_out = 561
+   230.00ns INFO     ...sync_serial_communication_tx_rx  got_gray_out = 809, expected_gray_out = 809
+   280.00ns INFO     ...sync_serial_communication_tx_rx  data_in = 561, sel = 010
+   600.00ns INFO     ...sync_serial_communication_tx_rx  data_in = 561, sel = 010, data_out = 561, done = 1
+   600.00ns INFO     ...sync_serial_communication_tx_rx  data_in = 561, expected_data_out = 561, data_out = 561
+   600.00ns INFO     ...sync_serial_communication_tx_rx  got_gray_out = 809, expected_gray_out = 809
+   650.00ns INFO     cocotb.regression                  test_sync_serial_communication.test_sync_communication passed
+   650.00ns INFO     cocotb.regression                  ****************************************************************************************************************
+                                                        ** TEST                                                    STATUS  SIM TIME (ns)  REAL TIME (s)  RATIO (ns/s) **
+                                                        ****************************************************************************************************************
+                                                        ** test_sync_serial_communication.test_sync_communication   PASS         650.00           0.01      66146.58  **
+                                                        ****************************************************************************************************************
+                                                        ** TESTS=1 PASS=1 FAIL=0 SKIP=0                                          650.00           0.02      41212.00  **
+                                                        ****************************************************************************************************************
+                                                        
+FST info: dumpfile /code/sim_build/sync_serial_communication_tx_rx.fst opened for output.
+PASSED
+../src/test_runner.py::test_sync_serial_communication[5]      -.--ns INFO     gpi                                ..mbed/gpi_embed.cpp:79   in set_program_name_in_venv        Did not detect Python virtual environment. Using system-wide Python interpreter
+     -.--ns INFO     gpi                                ../gpi/GpiCommon.cpp:101  in gpi_print_registered_impl       VPI registered
+     0.00ns INFO     cocotb                             Running on Icarus Verilog version 13.0 (devel)
+     0.00ns INFO     cocotb                             Running tests with cocotb v2.0.0.dev0+8d6c1a63 from /usr/local/lib/python3.9/dist-packages/cocotb
+     0.00ns INFO     cocotb                             Seeding Python random module with 1773329218
+     0.00ns INFO     cocotb.regression                  running test_sync_serial_communication.test_sync_communication (1/1)
+    50.00ns INFO     ...sync_serial_communication_tx_rx  data_in = 0, sel = 000
+   230.00ns INFO     ...sync_serial_communication_tx_rx  data_in = 561, sel = 010, data_out = 561, done = 1
+   230.00ns INFO     ...sync_serial_communication_tx_rx  data_in = 561, expected_data_out = 561, data_out = 561
+   230.00ns INFO     ...sync_serial_communication_tx_rx  got_gray_out = 809, expected_gray_out = 809
+   280.00ns INFO     ...sync_serial_communication_tx_rx  data_in = 561, sel = 010
+   600.00ns INFO     ...sync_serial_communication_tx_rx  data_in = 561, sel = 010, data_out = 561, done = 1
+   600.00ns INFO     ...sync_serial_communication_tx_rx  data_in = 561, expected_data_out = 561, data_out = 561
+   600.00ns INFO     ...sync_serial_communication_tx_rx  got_gray_out = 809, expected_gray_out = 809
+   650.00ns INFO     cocotb.regression                  test_sync_serial_communication.test_sync_communication passed
+   650.00ns INFO     cocotb.regression                  ****************************************************************************************************************
+                                                        ** TEST                                                    STATUS  SIM TIME (ns)  REAL TIME (s)  RATIO (ns/s) **
+                                                        ****************************************************************************************************************
+                                                        ** test_sync_serial_communication.test_sync_communication   PASS         650.00           0.01      57762.99  **
+                                                        ****************************************************************************************************************
+                                                        ** TESTS=1 PASS=1 FAIL=0 SKIP=0                                          650.00           0.02      40167.04  **
+                                                        ****************************************************************************************************************
+                                                        
+FST info: dumpfile /code/sim_build/sync_serial_communication_tx_rx.fst opened for output.
+PASSED
+../src/test_runner.py::test_sync_serial_communication[6]      -.--ns INFO     gpi                                ..mbed/gpi_embed.cpp:79   in set_program_name_in_venv        Did not detect Python virtual environment. Using system-wide Python interpreter
+     -.--ns INFO     gpi                                ../gpi/GpiCommon.cpp:101  in gpi_print_registered_impl       VPI registered
+     0.00ns INFO     cocotb                             Running on Icarus Verilog version 13.0 (devel)
+     0.00ns INFO     cocotb                             Running tests with cocotb v2.0.0.dev0+8d6c1a63 from /usr/local/lib/python3.9/dist-packages/cocotb
+     0.00ns INFO     cocotb                             Seeding Python random module with 1773329218
+     0.00ns INFO     cocotb.regression                  running test_sync_serial_communication.test_sync_communication (1/1)
+    50.00ns INFO     ...sync_serial_communication_tx_rx  data_in = 0, sel = 000
+   230.00ns INFO     ...sync_serial_communication_tx_rx  data_in = 561, sel = 010, data_out = 561, done = 1
+   230.00ns INFO     ...sync_serial_communication_tx_rx  data_in = 561, expected_data_out = 561, data_out = 561
+   230.00ns INFO     ...sync_serial_communication_tx_rx  got_gray_out = 809, expected_gray_out = 809
+   280.00ns INFO     ...sync_serial_communication_tx_rx  data_in = 561, sel = 010
+   600.00ns INFO     ...sync_serial_communication_tx_rx  data_in = 561, sel = 010, data_out = 561, done = 1
+   600.00ns INFO     ...sync_serial_communication_tx_rx  data_in = 561, expected_data_out = 561, data_out = 561
+   600.00ns INFO     ...sync_serial_communication_tx_rx  got_gray_out = 809, expected_gray_out = 809
+   650.00ns INFO     cocotb.regression                  test_sync_serial_communication.test_sync_communication passed
+   650.00ns INFO     cocotb.regression                  ****************************************************************************************************************
+                                                        ** TEST                                                    STATUS  SIM TIME (ns)  REAL TIME (s)  RATIO (ns/s) **
+                                                        ****************************************************************************************************************
+                                                        ** test_sync_serial_communication.test_sync_communication   PASS         650.00           0.01      82288.42  **
+                                                        ****************************************************************************************************************
+                                                        ** TESTS=1 PASS=1 FAIL=0 SKIP=0                                          650.00           0.01      56898.62  **
+                                                        ****************************************************************************************************************
+                                                        
+FST info: dumpfile /code/sim_build/sync_serial_communication_tx_rx.fst opened for output.
+PASSED
+../src/test_runner.py::test_sync_serial_communication[7]      -.--ns INFO     gpi                                ..mbed/gpi_embed.cpp:79   in set_program_name_in_venv        Did not detect Python virtual environment. Using system-wide Python interpreter
+     -.--ns INFO     gpi                                ../gpi/GpiCommon.cpp:101  in gpi_print_registered_impl       VPI registered
+     0.00ns INFO     cocotb                             Running on Icarus Verilog version 13.0 (devel)
+     0.00ns INFO     cocotb                             Running tests with cocotb v2.0.0.dev0+8d6c1a63 from /usr/local/lib/python3.9/dist-packages/cocotb
+     0.00ns INFO     cocotb                             Seeding Python random module with 1773329219
+     0.00ns INFO     cocotb.regression                  running test_sync_serial_communication.test_sync_communication (1/1)
+    50.00ns INFO     ...sync_serial_communication_tx_rx  data_in = 0, sel = 000
+   710.00ns INFO     ...sync_serial_communication_tx_rx  data_in = 58575, sel = 100, data_out = 58575, done = 1
+   710.00ns INFO     ...sync_serial_communication_tx_rx  data_in = 58575, expected_data_out = 58575, data_out = 58575
+   710.00ns INFO     ...sync_serial_communication_tx_rx  got_gray_out = 38568, expected_gray_out = 38568
+   760.00ns INFO     ...sync_serial_communication_tx_rx  data_in = 58575, sel = 100
+  2040.00ns INFO     ...sync_serial_communication_tx_rx  data_in = 58575, sel = 100, data_out = 58575, done = 1
+  2040.00ns INFO     ...sync_serial_communication_tx_rx  data_in = 58575, expected_data_out = 58575, data_out = 58575
+  2040.00ns INFO     ...sync_serial_communication_tx_rx  got_gray_out = 38568, expected_gray_out = 38568
+  2090.00ns INFO     ...sync_serial_communication_tx_rx  data_in = 58575, sel = 100
+  3370.00ns INFO     ...sync_serial_communication_tx_rx  data_in = 58575, sel = 100, data_out = 58575, done = 1
+  3370.00ns INFO     ...sync_serial_communication_tx_rx  data_in = 58575, expected_data_out = 58575, data_out = 58575
+  3370.00ns INFO     ...sync_serial_communication_tx_rx  got_gray_out = 38568, expected_gray_out = 38568
+  3420.00ns INFO     ...sync_serial_communication_tx_rx  data_in = 58575, sel = 100
+  4700.00ns INFO     ...sync_serial_communication_tx_rx  data_in = 58575, sel = 100, data_out = 58575, done = 1
+  4700.00ns INFO     ...sync_serial_communication_tx_rx  data_in = 58575, expected_data_out = 58575, data_out = 58575
+  4700.00ns INFO     ...sync_serial_communication_tx_rx  got_gray_out = 38568, expected_gray_out = 38568
+  4750.00ns INFO     cocotb.regression                  test_sync_serial_communication.test_sync_communication passed
+  4750.00ns INFO     cocotb.regression                  ****************************************************************************************************************
+                                                        ** TEST                                                    STATUS  SIM TIME (ns)  REAL TIME (s)  RATIO (ns/s) **
+                                                        ****************************************************************************************************************
+                                                        ** test_sync_serial_communication.test_sync_communication   PASS        4750.00           0.04     110684.87  **
+                                                        ****************************************************************************************************************
+                                                        ** TESTS=1 PASS=1 FAIL=0 SKIP=0                                         4750.00           0.05     102160.56  **
+                                                        ****************************************************************************************************************
+                                                        
+FST info: dumpfile /code/sim_build/sync_serial_communication_tx_rx.fst opened for output.
+PASSED
+../src/test_runner.py::test_sync_serial_communication[8]      -.--ns INFO     gpi                                ..mbed/gpi_embed.cpp:79   in set_program_name_in_venv        Did not detect Python virtual environment. Using system-wide Python interpreter
+     -.--ns INFO     gpi                                ../gpi/GpiCommon.cpp:101  in gpi_print_registered_impl       VPI registered
+     0.00ns INFO     cocotb                             Running on Icarus Verilog version 13.0 (devel)
+     0.00ns INFO     cocotb                             Running tests with cocotb v2.0.0.dev0+8d6c1a63 from /usr/local/lib/python3.9/dist-packages/cocotb
+     0.00ns INFO     cocotb                             Seeding Python random module with 1773329219
+     0.00ns INFO     cocotb.regression                  running test_sync_serial_communication.test_sync_communication (1/1)
+    50.00ns INFO     ...sync_serial_communication_tx_rx  data_in = 0, sel = 000
+   710.00ns INFO     ...sync_serial_communication_tx_rx  data_in = 58575, sel = 100, data_out = 58575, done = 1
+   710.00ns INFO     ...sync_serial_communication_tx_rx  data_in = 58575, expected_data_out = 58575, data_out = 58575
+   710.00ns INFO     ...sync_serial_communication_tx_rx  got_gray_out = 38568, expected_gray_out = 38568
+   760.00ns INFO     ...sync_serial_communication_tx_rx  data_in = 58575, sel = 100
+  2040.00ns INFO     ...sync_serial_communication_tx_rx  data_in = 58575, sel = 100, data_out = 58575, done = 1
+  2040.00ns INFO     ...sync_serial_communication_tx_rx  data_in = 58575, expected_data_out = 58575, data_out = 58575
+  2040.00ns INFO     ...sync_serial_communication_tx_rx  got_gray_out = 38568, expected_gray_out = 38568
+  2090.00ns INFO     ...sync_serial_communication_tx_rx  data_in = 58575, sel = 100
+  3370.00ns INFO     ...sync_serial_communication_tx_rx  data_in = 58575, sel = 100, data_out = 58575, done = 1
+  3370.00ns INFO     ...sync_serial_communication_tx_rx  data_in = 58575, expected_data_out = 58575, data_out = 58575
+  3370.00ns INFO     ...sync_serial_communication_tx_rx  got_gray_out = 38568, expected_gray_out = 38568
+  3420.00ns INFO     ...sync_serial_communication_tx_rx  data_in = 58575, sel = 100
+  4700.00ns INFO     ...sync_serial_communication_tx_rx  data_in = 58575, sel = 100, data_out = 58575, done = 1
+  4700.00ns INFO     ...sync_serial_communication_tx_rx  data_in = 58575, expected_data_out = 58575, data_out = 58575
+  4700.00ns INFO     ...sync_serial_communication_tx_rx  got_gray_out = 38568, expected_gray_out = 38568
+  4750.00ns INFO     cocotb.regression                  test_sync_serial_communication.test_sync_communication passed
+  4750.00ns INFO     cocotb.regression                  ****************************************************************************************************************
+                                                        ** TEST                                                    STATUS  SIM TIME (ns)  REAL TIME (s)  RATIO (ns/s) **
+                                                        ****************************************************************************************************************
+                                                        ** test_sync_serial_communication.test_sync_communication   PASS        4750.00           0.04     108412.97  **
+                                                        ****************************************************************************************************************
+                                                        ** TESTS=1 PASS=1 FAIL=0 SKIP=0                                         4750.00           0.05      99809.35  **
+                                                        ****************************************************************************************************************
+                                                        
+FST info: dumpfile /code/sim_build/sync_serial_communication_tx_rx.fst opened for output.
+PASSED
+../src/test_runner.py::test_sync_serial_communication[9]      -.--ns INFO     gpi                                ..mbed/gpi_embed.cpp:79   in set_program_name_in_venv        Did not detect Python virtual environment. Using system-wide Python interpreter
+     -.--ns INFO     gpi                                ../gpi/GpiCommon.cpp:101  in gpi_print_registered_impl       VPI registered
+     0.00ns INFO     cocotb                             Running on Icarus Verilog version 13.0 (devel)
+     0.00ns INFO     cocotb                             Running tests with cocotb v2.0.0.dev0+8d6c1a63 from /usr/local/lib/python3.9/dist-packages/cocotb
+     0.00ns INFO     cocotb                             Seeding Python random module with 1773329219
+     0.00ns INFO     cocotb.regression                  running test_sync_serial_communication.test_sync_communication (1/1)
+    50.00ns INFO     ...sync_serial_communication_tx_rx  data_in = 0, sel = 000
+   710.00ns INFO     ...sync_serial_communication_tx_rx  data_in = 58575, sel = 100, data_out = 58575, done = 1
+   710.00ns INFO     ...sync_serial_communication_tx_rx  data_in = 58575, expected_data_out = 58575, data_out = 58575
+   710.00ns INFO     ...sync_serial_communication_tx_rx  got_gray_out = 38568, expected_gray_out = 38568
+   760.00ns INFO     ...sync_serial_communication_tx_rx  data_in = 58575, sel = 100
+  2040.00ns INFO     ...sync_serial_communication_tx_rx  data_in = 58575, sel = 100, data_out = 58575, done = 1
+  2040.00ns INFO     ...sync_serial_communication_tx_rx  data_in = 58575, expected_data_out = 58575, data_out = 58575
+  2040.00ns INFO     ...sync_serial_communication_tx_rx  got_gray_out = 38568, expected_gray_out = 38568
+  2090.00ns INFO     ...sync_serial_communication_tx_rx  data_in = 58575, sel = 100
+  3370.00ns INFO     ...sync_serial_communication_tx_rx  data_in = 58575, sel = 100, data_out = 58575, done = 1
+  3370.00ns INFO     ...sync_serial_communication_tx_rx  data_in = 58575, expected_data_out = 58575, data_out = 58575
+  3370.00ns INFO     ...sync_serial_communication_tx_rx  got_gray_out = 38568, expected_gray_out = 38568
+  3420.00ns INFO     ...sync_serial_communication_tx_rx  data_in = 58575, sel = 100
+  4700.00ns INFO     ...sync_serial_communication_tx_rx  data_in = 58575, sel = 100, data_out = 58575, done = 1
+  4700.00ns INFO     ...sync_serial_communication_tx_rx  data_in = 58575, expected_data_out = 58575, data_out = 58575
+  4700.00ns INFO     ...sync_serial_communication_tx_rx  got_gray_out = 38568, expected_gray_out = 38568
+  4750.00ns INFO     cocotb.regression                  test_sync_serial_communication.test_sync_communication passed
+  4750.00ns INFO     cocotb.regression                  ****************************************************************************************************************
+                                                        ** TEST                                                    STATUS  SIM TIME (ns)  REAL TIME (s)  RATIO (ns/s) **
+                                                        ****************************************************************************************************************
+                                                        ** test_sync_serial_communication.test_sync_communication   PASS        4750.00           0.04     110471.29  **
+                                                        ****************************************************************************************************************
+                                                        ** TESTS=1 PASS=1 FAIL=0 SKIP=0                                         4750.00           0.05     101766.05  **
+                                                        ****************************************************************************************************************
+                                                        
+FST info: dumpfile /code/sim_build/sync_serial_communication_tx_rx.fst opened for output.
+PASSED
+../src/test_runner.py::test_sync_serial_communication[10]      -.--ns INFO     gpi                                ..mbed/gpi_embed.cpp:79   in set_program_name_in_venv        Did not detect Python virtual environment. Using system-wide Python interpreter
+     -.--ns INFO     gpi                                ../gpi/GpiCommon.cpp:101  in gpi_print_registered_impl       VPI registered
+     0.00ns INFO     cocotb                             Running on Icarus Verilog version 13.0 (devel)
+     0.00ns INFO     cocotb                             Running tests with cocotb v2.0.0.dev0+8d6c1a63 from /usr/local/lib/python3.9/dist-packages/cocotb
+     0.00ns INFO     cocotb                             Seeding Python random module with 1773329219
+     0.00ns INFO     cocotb.regression                  running test_sync_serial_communication.test_sync_communication (1/1)
+    50.00ns INFO     ...sync_serial_communication_tx_rx  data_in = 0, sel = 000
+   710.00ns INFO     ...sync_serial_communication_tx_rx  data_in = 58575, sel = 100, data_out = 58575, done = 1
+   710.00ns INFO     ...sync_serial_communication_tx_rx  data_in = 58575, expected_data_out = 58575, data_out = 58575
+   710.00ns INFO     ...sync_serial_communication_tx_rx  got_gray_out = 38568, expected_gray_out = 38568
+   760.00ns INFO     ...sync_serial_communication_tx_rx  data_in = 58575, sel = 100
+  2040.00ns INFO     ...sync_serial_communication_tx_rx  data_in = 58575, sel = 100, data_out = 58575, done = 1
+  2040.00ns INFO     ...sync_serial_communication_tx_rx  data_in = 58575, expected_data_out = 58575, data_out = 58575
+  2040.00ns INFO     ...sync_serial_communication_tx_rx  got_gray_out = 38568, expected_gray_out = 38568
+  2090.00ns INFO     ...sync_serial_communication_tx_rx  data_in = 58575, sel = 100
+  3370.00ns INFO     ...sync_serial_communication_tx_rx  data_in = 58575, sel = 100, data_out = 58575, done = 1
+  3370.00ns INFO     ...sync_serial_communication_tx_rx  data_in = 58575, expected_data_out = 58575, data_out = 58575
+  3370.00ns INFO     ...sync_serial_communication_tx_rx  got_gray_out = 38568, expected_gray_out = 38568
+  3420.00ns INFO     ...sync_serial_communication_tx_rx  data_in = 58575, sel = 100
+  4700.00ns INFO     ...sync_serial_communication_tx_rx  data_in = 58575, sel = 100, data_out = 58575, done = 1
+  4700.00ns INFO     ...sync_serial_communication_tx_rx  data_in = 58575, expected_data_out = 58575, data_out = 58575
+  4700.00ns INFO     ...sync_serial_communication_tx_rx  got_gray_out = 38568, expected_gray_out = 38568
+  4750.00ns INFO     cocotb.regression                  test_sync_serial_communication.test_sync_communication passed
+  4750.00ns INFO     cocotb.regression                  ****************************************************************************************************************
+                                                        ** TEST                                                    STATUS  SIM TIME (ns)  REAL TIME (s)  RATIO (ns/s) **
+                                                        ****************************************************************************************************************
+                                                        ** test_sync_serial_communication.test_sync_communication   PASS        4750.00           0.05     100326.54  **
+                                                        ****************************************************************************************************************
+                                                        ** TESTS=1 PASS=1 FAIL=0 SKIP=0                                         4750.00           0.05      92586.48  **
+                                                        ****************************************************************************************************************
+                                                        
+FST info: dumpfile /code/sim_build/sync_serial_communication_tx_rx.fst opened for output.
+PASSED
+../src/test_runner.py::test_sync_serial_communication[11]      -.--ns INFO     gpi                                ..mbed/gpi_embed.cpp:79   in set_program_name_in_venv        Did not detect Python virtual environment. Using system-wide Python interpreter
+     -.--ns INFO     gpi                                ../gpi/GpiCommon.cpp:101  in gpi_print_registered_impl       VPI registered
+     0.00ns INFO     cocotb                             Running on Icarus Verilog version 13.0 (devel)
+     0.00ns INFO     cocotb                             Running tests with cocotb v2.0.0.dev0+8d6c1a63 from /usr/local/lib/python3.9/dist-packages/cocotb
+     0.00ns INFO     cocotb                             Seeding Python random module with 1773329219
+     0.00ns INFO     cocotb.regression                  running test_sync_serial_communication.test_sync_communication (1/1)
+    50.00ns INFO     ...sync_serial_communication_tx_rx  data_in = 0, sel = 000
+   710.00ns INFO     ...sync_serial_communication_tx_rx  data_in = 58575, sel = 100, data_out = 58575, done = 1
+   710.00ns INFO     ...sync_serial_communication_tx_rx  data_in = 58575, expected_data_out = 58575, data_out = 58575
+   710.00ns INFO     ...sync_serial_communication_tx_rx  got_gray_out = 38568, expected_gray_out = 38568
+   760.00ns INFO     ...sync_serial_communication_tx_rx  data_in = 58575, sel = 100
+  2040.00ns INFO     ...sync_serial_communication_tx_rx  data_in = 58575, sel = 100, data_out = 58575, done = 1
+  2040.00ns INFO     ...sync_serial_communication_tx_rx  data_in = 58575, expected_data_out = 58575, data_out = 58575
+  2040.00ns INFO     ...sync_serial_communication_tx_rx  got_gray_out = 38568, expected_gray_out = 38568
+  2090.00ns INFO     ...sync_serial_communication_tx_rx  data_in = 58575, sel = 100
+  3370.00ns INFO     ...sync_serial_communication_tx_rx  data_in = 58575, sel = 100, data_out = 58575, done = 1
+  3370.00ns INFO     ...sync_serial_communication_tx_rx  data_in = 58575, expected_data_out = 58575, data_out = 58575
+  3370.00ns INFO     ...sync_serial_communication_tx_rx  got_gray_out = 38568, expected_gray_out = 38568
+  3420.00ns INFO     ...sync_serial_communication_tx_rx  data_in = 58575, sel = 100
+  4700.00ns INFO     ...sync_serial_communication_tx_rx  data_in = 58575, sel = 100, data_out = 58575, done = 1
+  4700.00ns INFO     ...sync_serial_communication_tx_rx  data_in = 58575, expected_data_out = 58575, data_out = 58575
+  4700.00ns INFO     ...sync_serial_communication_tx_rx  got_gray_out = 38568, expected_gray_out = 38568
+  4750.00ns INFO     cocotb.regression                  test_sync_serial_communication.test_sync_communication passed
+  4750.00ns INFO     cocotb.regression                  ****************************************************************************************************************
+                                                        ** TEST                                                    STATUS  SIM TIME (ns)  REAL TIME (s)  RATIO (ns/s) **
+                                                        ****************************************************************************************************************
+                                                        ** test_sync_serial_communication.test_sync_communication   PASS        4750.00           0.05     101433.42  **
+                                                        ****************************************************************************************************************
+                                                        ** TESTS=1 PASS=1 FAIL=0 SKIP=0                                         4750.00           0.05      94149.80  **
+                                                        ****************************************************************************************************************
+                                                        
+FST info: dumpfile /code/sim_build/sync_serial_communication_tx_rx.fst opened for output.
+PASSED
+../src/test_runner.py::test_sync_serial_communication[12]      -.--ns INFO     gpi                                ..mbed/gpi_embed.cpp:79   in set_program_name_in_venv        Did not detect Python virtual environment. Using system-wide Python interpreter
+     -.--ns INFO     gpi                                ../gpi/GpiCommon.cpp:101  in gpi_print_registered_impl       VPI registered
+     0.00ns INFO     cocotb                             Running on Icarus Verilog version 13.0 (devel)
+     0.00ns INFO     cocotb                             Running tests with cocotb v2.0.0.dev0+8d6c1a63 from /usr/local/lib/python3.9/dist-packages/cocotb
+     0.00ns INFO     cocotb                             Seeding Python random module with 1773329220
+     0.00ns INFO     cocotb.regression                  running test_sync_serial_communication.test_sync_communication (1/1)
+    50.00ns INFO     ...sync_serial_communication_tx_rx  data_in = 0, sel = 000
+   710.00ns INFO     ...sync_serial_communication_tx_rx  data_in = 89680, sel = 100, data_out = 89680, done = 1
+   710.00ns INFO     ...sync_serial_communication_tx_rx  data_in = 89680, expected_data_out = 89680, data_out = 89680
+   710.00ns INFO     ...sync_serial_communication_tx_rx  got_gray_out = 127352, expected_gray_out = 127352
+   760.00ns INFO     ...sync_serial_communication_tx_rx  data_in = 89680, sel = 100
+  2040.00ns INFO     ...sync_serial_communication_tx_rx  data_in = 89680, sel = 100, data_out = 89680, done = 1
+  2040.00ns INFO     ...sync_serial_communication_tx_rx  data_in = 89680, expected_data_out = 89680, data_out = 89680
+  2040.00ns INFO     ...sync_serial_communication_tx_rx  got_gray_out = 127352, expected_gray_out = 127352
+  2090.00ns INFO     ...sync_serial_communication_tx_rx  data_in = 89680, sel = 100
+  3370.00ns INFO     ...sync_serial_communication_tx_rx  data_in = 89680, sel = 100, data_out = 89680, done = 1
+  3370.00ns INFO     ...sync_serial_communication_tx_rx  data_in = 89680, expected_data_out = 89680, data_out = 89680
+  3370.00ns INFO     ...sync_serial_communication_tx_rx  got_gray_out = 127352, expected_gray_out = 127352
+  3420.00ns INFO     ...sync_serial_communication_tx_rx  data_in = 89680, sel = 100
+  4700.00ns INFO     ...sync_serial_communication_tx_rx  data_in = 89680, sel = 100, data_out = 89680, done = 1
+  4700.00ns INFO     ...sync_serial_communication_tx_rx  data_in = 89680, expected_data_out = 89680, data_out = 89680
+  4700.00ns INFO     ...sync_serial_communication_tx_rx  got_gray_out = 127352, expected_gray_out = 127352
+  4750.00ns INFO     cocotb.regression                  test_sync_serial_communication.test_sync_communication passed
+  4750.00ns INFO     cocotb.regression                  ****************************************************************************************************************
+                                                        ** TEST                                                    STATUS  SIM TIME (ns)  REAL TIME (s)  RATIO (ns/s) **
+                                                        ****************************************************************************************************************
+                                                        ** test_sync_serial_communication.test_sync_communication   PASS        4750.00           0.04     109455.30  **
+                                                        ****************************************************************************************************************
+                                                        ** TESTS=1 PASS=1 FAIL=0 SKIP=0                                         4750.00           0.05     100961.55  **
+                                                        ****************************************************************************************************************
+                                                        
+FST info: dumpfile /code/sim_build/sync_serial_communication_tx_rx.fst opened for output.
+PASSED
+../src/test_runner.py::test_sync_serial_communication[13]      -.--ns INFO     gpi                                ..mbed/gpi_embed.cpp:79   in set_program_name_in_venv        Did not detect Python virtual environment. Using system-wide Python interpreter
+     -.--ns INFO     gpi                                ../gpi/GpiCommon.cpp:101  in gpi_print_registered_impl       VPI registered
+     0.00ns INFO     cocotb                             Running on Icarus Verilog version 13.0 (devel)
+     0.00ns INFO     cocotb                             Running tests with cocotb v2.0.0.dev0+8d6c1a63 from /usr/local/lib/python3.9/dist-packages/cocotb
+     0.00ns INFO     cocotb                             Seeding Python random module with 1773329220
+     0.00ns INFO     cocotb.regression                  running test_sync_serial_communication.test_sync_communication (1/1)
+    50.00ns INFO     ...sync_serial_communication_tx_rx  data_in = 0, sel = 000
+   710.00ns INFO     ...sync_serial_communication_tx_rx  data_in = 89680, sel = 100, data_out = 89680, done = 1
+   710.00ns INFO     ...sync_serial_communication_tx_rx  data_in = 89680, expected_data_out = 89680, data_out = 89680
+   710.00ns INFO     ...sync_serial_communication_tx_rx  got_gray_out = 127352, expected_gray_out = 127352
+   760.00ns INFO     ...sync_serial_communication_tx_rx  data_in = 89680, sel = 100
+  2040.00ns INFO     ...sync_serial_communication_tx_rx  data_in = 89680, sel = 100, data_out = 89680, done = 1
+  2040.00ns INFO     ...sync_serial_communication_tx_rx  data_in = 89680, expected_data_out = 89680, data_out = 89680
+  2040.00ns INFO     ...sync_serial_communication_tx_rx  got_gray_out = 127352, expected_gray_out = 127352
+  2090.00ns INFO     ...sync_serial_communication_tx_rx  data_in = 89680, sel = 100
+  3370.00ns INFO     ...sync_serial_communication_tx_rx  data_in = 89680, sel = 100, data_out = 89680, done = 1
+  3370.00ns INFO     ...sync_serial_communication_tx_rx  data_in = 89680, expected_data_out = 89680, data_out = 89680
+  3370.00ns INFO     ...sync_serial_communication_tx_rx  got_gray_out = 127352, expected_gray_out = 127352
+  3420.00ns INFO     ...sync_serial_communication_tx_rx  data_in = 89680, sel = 100
+  4700.00ns INFO     ...sync_serial_communication_tx_rx  data_in = 89680, sel = 100, data_out = 89680, done = 1
+  4700.00ns INFO     ...sync_serial_communication_tx_rx  data_in = 89680, expected_data_out = 89680, data_out = 89680
+  4700.00ns INFO     ...sync_serial_communication_tx_rx  got_gray_out = 127352, expected_gray_out = 127352
+  4750.00ns INFO     cocotb.regression                  test_sync_serial_communication.test_sync_communication passed
+  4750.00ns INFO     cocotb.regression                  ****************************************************************************************************************
+                                                        ** TEST                                                    STATUS  SIM TIME (ns)  REAL TIME (s)  RATIO (ns/s) **
+                                                        ****************************************************************************************************************
+                                                        ** test_sync_serial_communication.test_sync_communication   PASS        4750.00           0.04     107459.82  **
+                                                        ****************************************************************************************************************
+                                                        ** TESTS=1 PASS=1 FAIL=0 SKIP=0                                         4750.00           0.05      99416.38  **
+                                                        ****************************************************************************************************************
+                                                        
+FST info: dumpfile /code/sim_build/sync_serial_communication_tx_rx.fst opened for output.
+PASSED
+../src/test_runner.py::test_sync_serial_communication[14]      -.--ns INFO     gpi                                ..mbed/gpi_embed.cpp:79   in set_program_name_in_venv        Did not detect Python virtual environment. Using system-wide Python interpreter
+     -.--ns INFO     gpi                                ../gpi/GpiCommon.cpp:101  in gpi_print_registered_impl       VPI registered
+     0.00ns INFO     cocotb                             Running on Icarus Verilog version 13.0 (devel)
+     0.00ns INFO     cocotb                             Running tests with cocotb v2.0.0.dev0+8d6c1a63 from /usr/local/lib/python3.9/dist-packages/cocotb
+     0.00ns INFO     cocotb                             Seeding Python random module with 1773329220
+     0.00ns INFO     cocotb.regression                  running test_sync_serial_communication.test_sync_communication (1/1)
+    50.00ns INFO     ...sync_serial_communication_tx_rx  data_in = 0, sel = 000
+   710.00ns INFO     ...sync_serial_communication_tx_rx  data_in = 89680, sel = 100, data_out = 89680, done = 1
+   710.00ns INFO     ...sync_serial_communication_tx_rx  data_in = 89680, expected_data_out = 89680, data_out = 89680
+   710.00ns INFO     ...sync_serial_communication_tx_rx  got_gray_out = 127352, expected_gray_out = 127352
+   760.00ns INFO     ...sync_serial_communication_tx_rx  data_in = 89680, sel = 100
+  2040.00ns INFO     ...sync_serial_communication_tx_rx  data_in = 89680, sel = 100, data_out = 89680, done = 1
+  2040.00ns INFO     ...sync_serial_communication_tx_rx  data_in = 89680, expected_data_out = 89680, data_out = 89680
+  2040.00ns INFO     ...sync_serial_communication_tx_rx  got_gray_out = 127352, expected_gray_out = 127352
+  2090.00ns INFO     ...sync_serial_communication_tx_rx  data_in = 89680, sel = 100
+  3370.00ns INFO     ...sync_serial_communication_tx_rx  data_in = 89680, sel = 100, data_out = 89680, done = 1
+  3370.00ns INFO     ...sync_serial_communication_tx_rx  data_in = 89680, expected_data_out = 89680, data_out = 89680
+  3370.00ns INFO     ...sync_serial_communication_tx_rx  got_gray_out = 127352, expected_gray_out = 127352
+  3420.00ns INFO     ...sync_serial_communication_tx_rx  data_in = 89680, sel = 100
+  4700.00ns INFO     ...sync_serial_communication_tx_rx  data_in = 89680, sel = 100, data_out = 89680, done = 1
+  4700.00ns INFO     ...sync_serial_communication_tx_rx  data_in = 89680, expected_data_out = 89680, data_out = 89680
+  4700.00ns INFO     ...sync_serial_communication_tx_rx  got_gray_out = 127352, expected_gray_out = 127352
+  4750.00ns INFO     cocotb.regression                  test_sync_serial_communication.test_sync_communication passed
+  4750.00ns INFO     cocotb.regression                  ****************************************************************************************************************
+                                                        ** TEST                                                    STATUS  SIM TIME (ns)  REAL TIME (s)  RATIO (ns/s) **
+                                                        ****************************************************************************************************************
+                                                        ** test_sync_serial_communication.test_sync_communication   PASS        4750.00           0.05      92844.93  **
+                                                        ****************************************************************************************************************
+                                                        ** TESTS=1 PASS=1 FAIL=0 SKIP=0                                         4750.00           0.06      84960.34  **
+                                                        ****************************************************************************************************************
+                                                        
+FST info: dumpfile /code/sim_build/sync_serial_communication_tx_rx.fst opened for output.
+PASSED
+../src/test_runner.py::test_sync_serial_communication[15]      -.--ns INFO     gpi                                ..mbed/gpi_embed.cpp:79   in set_program_name_in_venv        Did not detect Python virtual environment. Using system-wide Python interpreter
+     -.--ns INFO     gpi                                ../gpi/GpiCommon.cpp:101  in gpi_print_registered_impl       VPI registered
+     0.00ns INFO     cocotb                             Running on Icarus Verilog version 13.0 (devel)
+     0.00ns INFO     cocotb                             Running tests with cocotb v2.0.0.dev0+8d6c1a63 from /usr/local/lib/python3.9/dist-packages/cocotb
+     0.00ns INFO     cocotb                             Seeding Python random module with 1773329220
+     0.00ns INFO     cocotb.regression                  running test_sync_serial_communication.test_sync_communication (1/1)
+    50.00ns INFO     ...sync_serial_communication_tx_rx  data_in = 0, sel = 000
+   710.00ns INFO     ...sync_serial_communication_tx_rx  data_in = 89680, sel = 100, data_out = 89680, done = 1
+   710.00ns INFO     ...sync_serial_communication_tx_rx  data_in = 89680, expected_data_out = 89680, data_out = 89680
+   710.00ns INFO     ...sync_serial_communication_tx_rx  got_gray_out = 127352, expected_gray_out = 127352
+   760.00ns INFO     ...sync_serial_communication_tx_rx  data_in = 89680, sel = 100
+  2040.00ns INFO     ...sync_serial_communication_tx_rx  data_in = 89680, sel = 100, data_out = 89680, done = 1
+  2040.00ns INFO     ...sync_serial_communication_tx_rx  data_in = 89680, expected_data_out = 89680, data_out = 89680
+  2040.00ns INFO     ...sync_serial_communication_tx_rx  got_gray_out = 127352, expected_gray_out = 127352
+  2090.00ns INFO     ...sync_serial_communication_tx_rx  data_in = 89680, sel = 100
+  3370.00ns INFO     ...sync_serial_communication_tx_rx  data_in = 89680, sel = 100, data_out = 89680, done = 1
+  3370.00ns INFO     ...sync_serial_communication_tx_rx  data_in = 89680, expected_data_out = 89680, data_out = 89680
+  3370.00ns INFO     ...sync_serial_communication_tx_rx  got_gray_out = 127352, expected_gray_out = 127352
+  3420.00ns INFO     ...sync_serial_communication_tx_rx  data_in = 89680, sel = 100
+  4700.00ns INFO     ...sync_serial_communication_tx_rx  data_in = 89680, sel = 100, data_out = 89680, done = 1
+  4700.00ns INFO     ...sync_serial_communication_tx_rx  data_in = 89680, expected_data_out = 89680, data_out = 89680
+  4700.00ns INFO     ...sync_serial_communication_tx_rx  got_gray_out = 127352, expected_gray_out = 127352
+  4750.00ns INFO     cocotb.regression                  test_sync_serial_communication.test_sync_communication passed
+  4750.00ns INFO     cocotb.regression                  ****************************************************************************************************************
+                                                        ** TEST                                                    STATUS  SIM TIME (ns)  REAL TIME (s)  RATIO (ns/s) **
+                                                        ****************************************************************************************************************
+                                                        ** test_sync_serial_communication.test_sync_communication   PASS        4750.00           0.04     107225.02  **
+                                                        ****************************************************************************************************************
+                                                        ** TESTS=1 PASS=1 FAIL=0 SKIP=0                                         4750.00           0.05      98978.29  **
+                                                        ****************************************************************************************************************
+                                                        
+FST info: dumpfile /code/sim_build/sync_serial_communication_tx_rx.fst opened for output.
+PASSED
+../src/test_runner.py::test_sync_serial_communication[16]      -.--ns INFO     gpi                                ..mbed/gpi_embed.cpp:79   in set_program_name_in_venv        Did not detect Python virtual environment. Using system-wide Python interpreter
+     -.--ns INFO     gpi                                ../gpi/GpiCommon.cpp:101  in gpi_print_registered_impl       VPI registered
+     0.00ns INFO     cocotb                             Running on Icarus Verilog version 13.0 (devel)
+     0.00ns INFO     cocotb                             Running tests with cocotb v2.0.0.dev0+8d6c1a63 from /usr/local/lib/python3.9/dist-packages/cocotb
+     0.00ns INFO     cocotb                             Seeding Python random module with 1773329221
+     0.00ns INFO     cocotb.regression                  running test_sync_serial_communication.test_sync_communication (1/1)
+    50.00ns INFO     ...sync_serial_communication_tx_rx  data_in = 0, sel = 000
+   710.00ns INFO     ...sync_serial_communication_tx_rx  data_in = 104619, sel = 100, data_out = 104619, done = 1
+   710.00ns INFO     ...sync_serial_communication_tx_rx  data_in = 104619, expected_data_out = 104619, data_out = 104619
+   710.00ns INFO     ...sync_serial_communication_tx_rx  got_gray_out = 87294, expected_gray_out = 87294
+   760.00ns INFO     ...sync_serial_communication_tx_rx  data_in = 104619, sel = 100
+  2040.00ns INFO     ...sync_serial_communication_tx_rx  data_in = 104619, sel = 100, data_out = 104619, done = 1
+  2040.00ns INFO     ...sync_serial_communication_tx_rx  data_in = 104619, expected_data_out = 104619, data_out = 104619
+  2040.00ns INFO     ...sync_serial_communication_tx_rx  got_gray_out = 87294, expected_gray_out = 87294
+  2090.00ns INFO     ...sync_serial_communication_tx_rx  data_in = 104619, sel = 100
+  3370.00ns INFO     ...sync_serial_communication_tx_rx  data_in = 104619, sel = 100, data_out = 104619, done = 1
+  3370.00ns INFO     ...sync_serial_communication_tx_rx  data_in = 104619, expected_data_out = 104619, data_out = 104619
+  3370.00ns INFO     ...sync_serial_communication_tx_rx  got_gray_out = 87294, expected_gray_out = 87294
+  3420.00ns INFO     ...sync_serial_communication_tx_rx  data_in = 104619, sel = 100
+  4700.00ns INFO     ...sync_serial_communication_tx_rx  data_in = 104619, sel = 100, data_out = 104619, done = 1
+  4700.00ns INFO     ...sync_serial_communication_tx_rx  data_in = 104619, expected_data_out = 104619, data_out = 104619
+  4700.00ns INFO     ...sync_serial_communication_tx_rx  got_gray_out = 87294, expected_gray_out = 87294
+  4750.00ns INFO     cocotb.regression                  test_sync_serial_communication.test_sync_communication passed
+  4750.00ns INFO     cocotb.regression                  ****************************************************************************************************************
+                                                        ** TEST                                                    STATUS  SIM TIME (ns)  REAL TIME (s)  RATIO (ns/s) **
+                                                        ****************************************************************************************************************
+                                                        ** test_sync_serial_communication.test_sync_communication   PASS        4750.00           0.05      98034.89  **
+                                                        ****************************************************************************************************************
+                                                        ** TESTS=1 PASS=1 FAIL=0 SKIP=0                                         4750.00           0.05      90180.90  **
+                                                        ****************************************************************************************************************
+                                                        
+FST info: dumpfile /code/sim_build/sync_serial_communication_tx_rx.fst opened for output.
+PASSED
+../src/test_runner.py::test_sync_serial_communication[17]      -.--ns INFO     gpi                                ..mbed/gpi_embed.cpp:79   in set_program_name_in_venv        Did not detect Python virtual environment. Using system-wide Python interpreter
+     -.--ns INFO     gpi                                ../gpi/GpiCommon.cpp:101  in gpi_print_registered_impl       VPI registered
+     0.00ns INFO     cocotb                             Running on Icarus Verilog version 13.0 (devel)
+     0.00ns INFO     cocotb                             Running tests with cocotb v2.0.0.dev0+8d6c1a63 from /usr/local/lib/python3.9/dist-packages/cocotb
+     0.00ns INFO     cocotb                             Seeding Python random module with 1773329221
+     0.00ns INFO     cocotb.regression                  running test_sync_serial_communication.test_sync_communication (1/1)
+    50.00ns INFO     ...sync_serial_communication_tx_rx  data_in = 0, sel = 000
+   710.00ns INFO     ...sync_serial_communication_tx_rx  data_in = 104619, sel = 100, data_out = 104619, done = 1
+   710.00ns INFO     ...sync_serial_communication_tx_rx  data_in = 104619, expected_data_out = 104619, data_out = 104619
+   710.00ns INFO     ...sync_serial_communication_tx_rx  got_gray_out = 87294, expected_gray_out = 87294
+   760.00ns INFO     ...sync_serial_communication_tx_rx  data_in = 104619, sel = 100
+  2040.00ns INFO     ...sync_serial_communication_tx_rx  data_in = 104619, sel = 100, data_out = 104619, done = 1
+  2040.00ns INFO     ...sync_serial_communication_tx_rx  data_in = 104619, expected_data_out = 104619, data_out = 104619
+  2040.00ns INFO     ...sync_serial_communication_tx_rx  got_gray_out = 87294, expected_gray_out = 87294
+  2090.00ns INFO     ...sync_serial_communication_tx_rx  data_in = 104619, sel = 100
+  3370.00ns INFO     ...sync_serial_communication_tx_rx  data_in = 104619, sel = 100, data_out = 104619, done = 1
+  3370.00ns INFO     ...sync_serial_communication_tx_rx  data_in = 104619, expected_data_out = 104619, data_out = 104619
+  3370.00ns INFO     ...sync_serial_communication_tx_rx  got_gray_out = 87294, expected_gray_out = 87294
+  3420.00ns INFO     ...sync_serial_communication_tx_rx  data_in = 104619, sel = 100
+  4700.00ns INFO     ...sync_serial_communication_tx_rx  data_in = 104619, sel = 100, data_out = 104619, done = 1
+  4700.00ns INFO     ...sync_serial_communication_tx_rx  data_in = 104619, expected_data_out = 104619, data_out = 104619
+  4700.00ns INFO     ...sync_serial_communication_tx_rx  got_gray_out = 87294, expected_gray_out = 87294
+  4750.00ns INFO     cocotb.regression                  test_sync_serial_communication.test_sync_communication passed
+  4750.00ns INFO     cocotb.regression                  ****************************************************************************************************************
+                                                        ** TEST                                                    STATUS  SIM TIME (ns)  REAL TIME (s)  RATIO (ns/s) **
+                                                        ****************************************************************************************************************
+                                                        ** test_sync_serial_communication.test_sync_communication   PASS        4750.00           0.05     103764.79  **
+                                                        ****************************************************************************************************************
+                                                        ** TESTS=1 PASS=1 FAIL=0 SKIP=0                                         4750.00           0.05      96189.41  **
+                                                        ****************************************************************************************************************
+                                                        
+FST info: dumpfile /code/sim_build/sync_serial_communication_tx_rx.fst opened for output.
+PASSED
+../src/test_runner.py::test_sync_serial_communication[18]      -.--ns INFO     gpi                                ..mbed/gpi_embed.cpp:79   in set_program_name_in_venv        Did not detect Python virtual environment. Using system-wide Python interpreter
+     -.--ns INFO     gpi                                ../gpi/GpiCommon.cpp:101  in gpi_print_registered_impl       VPI registered
+     0.00ns INFO     cocotb                             Running on Icarus Verilog version 13.0 (devel)
+     0.00ns INFO     cocotb                             Running tests with cocotb v2.0.0.dev0+8d6c1a63 from /usr/local/lib/python3.9/dist-packages/cocotb
+     0.00ns INFO     cocotb                             Seeding Python random module with 1773329221
+     0.00ns INFO     cocotb.regression                  running test_sync_serial_communication.test_sync_communication (1/1)
+    50.00ns INFO     ...sync_serial_communication_tx_rx  data_in = 0, sel = 000
+   710.00ns INFO     ...sync_serial_communication_tx_rx  data_in = 104619, sel = 100, data_out = 104619, done = 1
+   710.00ns INFO     ...sync_serial_communication_tx_rx  data_in = 104619, expected_data_out = 104619, data_out = 104619
+   710.00ns INFO     ...sync_serial_communication_tx_rx  got_gray_out = 87294, expected_gray_out = 87294
+   760.00ns INFO     ...sync_serial_communication_tx_rx  data_in = 104619, sel = 100
+  2040.00ns INFO     ...sync_serial_communication_tx_rx  data_in = 104619, sel = 100, data_out = 104619, done = 1
+  2040.00ns INFO     ...sync_serial_communication_tx_rx  data_in = 104619, expected_data_out = 104619, data_out = 104619
+  2040.00ns INFO     ...sync_serial_communication_tx_rx  got_gray_out = 87294, expected_gray_out = 87294
+  2090.00ns INFO     ...sync_serial_communication_tx_rx  data_in = 104619, sel = 100
+  3370.00ns INFO     ...sync_serial_communication_tx_rx  data_in = 104619, sel = 100, data_out = 104619, done = 1
+  3370.00ns INFO     ...sync_serial_communication_tx_rx  data_in = 104619, expected_data_out = 104619, data_out = 104619
+  3370.00ns INFO     ...sync_serial_communication_tx_rx  got_gray_out = 87294, expected_gray_out = 87294
+  3420.00ns INFO     ...sync_serial_communication_tx_rx  data_in = 104619, sel = 100
+  4700.00ns INFO     ...sync_serial_communication_tx_rx  data_in = 104619, sel = 100, data_out = 104619, done = 1
+  4700.00ns INFO     ...sync_serial_communication_tx_rx  data_in = 104619, expected_data_out = 104619, data_out = 104619
+  4700.00ns INFO     ...sync_serial_communication_tx_rx  got_gray_out = 87294, expected_gray_out = 87294
+  4750.00ns INFO     cocotb.regression                  test_sync_serial_communication.test_sync_communication passed
+  4750.00ns INFO     cocotb.regression                  ****************************************************************************************************************
+                                                        ** TEST                                                    STATUS  SIM TIME (ns)  REAL TIME (s)  RATIO (ns/s) **
+                                                        ****************************************************************************************************************
+                                                        ** test_sync_serial_communication.test_sync_communication   PASS        4750.00           0.05      95794.44  **
+                                                        ****************************************************************************************************************
+                                                        ** TESTS=1 PASS=1 FAIL=0 SKIP=0                                         4750.00           0.05      89149.86  **
+                                                        ****************************************************************************************************************
+                                                        
+FST info: dumpfile /code/sim_build/sync_serial_communication_tx_rx.fst opened for output.
+PASSED
+../src/test_runner.py::test_sync_serial_communication[19]      -.--ns INFO     gpi                                ..mbed/gpi_embed.cpp:79   in set_program_name_in_venv        Did not detect Python virtual environment. Using system-wide Python interpreter
+     -.--ns INFO     gpi                                ../gpi/GpiCommon.cpp:101  in gpi_print_registered_impl       VPI registered
+     0.00ns INFO     cocotb                             Running on Icarus Verilog version 13.0 (devel)
+     0.00ns INFO     cocotb                             Running tests with cocotb v2.0.0.dev0+8d6c1a63 from /usr/local/lib/python3.9/dist-packages/cocotb
+     0.00ns INFO     cocotb                             Seeding Python random module with 1773329221
+     0.00ns INFO     cocotb.regression                  running test_sync_serial_communication.test_sync_communication (1/1)
+    50.00ns INFO     ...sync_serial_communication_tx_rx  data_in = 0, sel = 000
+   710.00ns INFO     ...sync_serial_communication_tx_rx  data_in = 104619, sel = 100, data_out = 104619, done = 1
+   710.00ns INFO     ...sync_serial_communication_tx_rx  data_in = 104619, expected_data_out = 104619, data_out = 104619
+   710.00ns INFO     ...sync_serial_communication_tx_rx  got_gray_out = 87294, expected_gray_out = 87294
+   760.00ns INFO     ...sync_serial_communication_tx_rx  data_in = 104619, sel = 100
+  2040.00ns INFO     ...sync_serial_communication_tx_rx  data_in = 104619, sel = 100, data_out = 104619, done = 1
+  2040.00ns INFO     ...sync_serial_communication_tx_rx  data_in = 104619, expected_data_out = 104619, data_out = 104619
+  2040.00ns INFO     ...sync_serial_communication_tx_rx  got_gray_out = 87294, expected_gray_out = 87294
+  2090.00ns INFO     ...sync_serial_communication_tx_rx  data_in = 104619, sel = 100
+  3370.00ns INFO     ...sync_serial_communication_tx_rx  data_in = 104619, sel = 100, data_out = 104619, done = 1
+  3370.00ns INFO     ...sync_serial_communication_tx_rx  data_in = 104619, expected_data_out = 104619, data_out = 104619
+  3370.00ns INFO     ...sync_serial_communication_tx_rx  got_gray_out = 87294, expected_gray_out = 87294
+  3420.00ns INFO     ...sync_serial_communication_tx_rx  data_in = 104619, sel = 100
+  4700.00ns INFO     ...sync_serial_communication_tx_rx  data_in = 104619, sel = 100, data_out = 104619, done = 1
+  4700.00ns INFO     ...sync_serial_communication_tx_rx  data_in = 104619, expected_data_out = 104619, data_out = 104619
+  4700.00ns INFO     ...sync_serial_communication_tx_rx  got_gray_out = 87294, expected_gray_out = 87294
+  4750.00ns INFO     cocotb.regression                  test_sync_serial_communication.test_sync_communication passed
+  4750.00ns INFO     cocotb.regression                  ****************************************************************************************************************
+                                                        ** TEST                                                    STATUS  SIM TIME (ns)  REAL TIME (s)  RATIO (ns/s) **
+                                                        ****************************************************************************************************************
+                                                        ** test_sync_serial_communication.test_sync_communication   PASS        4750.00           0.07      72496.10  **
+                                                        ****************************************************************************************************************
+                                                        ** TESTS=1 PASS=1 FAIL=0 SKIP=0                                         4750.00           0.07      65704.58  **
+                                                        ****************************************************************************************************************
+                                                        
+FST info: dumpfile /code/sim_build/sync_serial_communication_tx_rx.fst opened for output.
+PASSED
+
+============================== 20 passed in 4.51s ==============================

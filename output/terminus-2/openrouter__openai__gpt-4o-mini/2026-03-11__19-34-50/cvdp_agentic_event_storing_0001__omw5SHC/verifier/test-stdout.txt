@@ -1,0 +1,1890 @@
+Running service: sanity
+============================= test session starts ==============================
+platform linux -- Python 3.9.2, pytest-8.3.2, pluggy-1.5.0 -- /usr/bin/python3
+cachedir: /rundir/harness/.cache
+rootdir: /src
+collecting ... collected 16 items
+
+../../src/test_runner_event_array.py::test_data[2-4-2-2] [DEBUG] Parameters: {'NS_ROWS': 4, 'NS_COLS': 4, 'NBW_COL': 2, 'NBW_STR': 4, 'NS_EVT': 4, 'NBW_EVT': 2}
+FAILED
+../../src/test_runner_event_array.py::test_data[2-4-2-4] [DEBUG] Parameters: {'NS_ROWS': 16, 'NS_COLS': 4, 'NBW_COL': 2, 'NBW_STR': 4, 'NS_EVT': 4, 'NBW_EVT': 2}
+FAILED
+../../src/test_runner_event_array.py::test_data[2-4-3-2] [DEBUG] Parameters: {'NS_ROWS': 4, 'NS_COLS': 8, 'NBW_COL': 3, 'NBW_STR': 4, 'NS_EVT': 4, 'NBW_EVT': 2}
+FAILED
+../../src/test_runner_event_array.py::test_data[2-4-3-4] [DEBUG] Parameters: {'NS_ROWS': 16, 'NS_COLS': 8, 'NBW_COL': 3, 'NBW_STR': 4, 'NS_EVT': 4, 'NBW_EVT': 2}
+FAILED
+../../src/test_runner_event_array.py::test_data[2-5-2-2] [DEBUG] Parameters: {'NS_ROWS': 4, 'NS_COLS': 4, 'NBW_COL': 2, 'NBW_STR': 5, 'NS_EVT': 4, 'NBW_EVT': 2}
+FAILED
+../../src/test_runner_event_array.py::test_data[2-5-2-4] [DEBUG] Parameters: {'NS_ROWS': 16, 'NS_COLS': 4, 'NBW_COL': 2, 'NBW_STR': 5, 'NS_EVT': 4, 'NBW_EVT': 2}
+FAILED
+../../src/test_runner_event_array.py::test_data[2-5-3-2] [DEBUG] Parameters: {'NS_ROWS': 4, 'NS_COLS': 8, 'NBW_COL': 3, 'NBW_STR': 5, 'NS_EVT': 4, 'NBW_EVT': 2}
+FAILED
+../../src/test_runner_event_array.py::test_data[2-5-3-4] [DEBUG] Parameters: {'NS_ROWS': 16, 'NS_COLS': 8, 'NBW_COL': 3, 'NBW_STR': 5, 'NS_EVT': 4, 'NBW_EVT': 2}
+FAILED
+../../src/test_runner_event_array.py::test_data[4-4-2-2] [DEBUG] Parameters: {'NS_ROWS': 4, 'NS_COLS': 4, 'NBW_COL': 2, 'NBW_STR': 4, 'NS_EVT': 16, 'NBW_EVT': 4}
+FAILED
+../../src/test_runner_event_array.py::test_data[4-4-2-4] [DEBUG] Parameters: {'NS_ROWS': 16, 'NS_COLS': 4, 'NBW_COL': 2, 'NBW_STR': 4, 'NS_EVT': 16, 'NBW_EVT': 4}
+FAILED
+../../src/test_runner_event_array.py::test_data[4-4-3-2] [DEBUG] Parameters: {'NS_ROWS': 4, 'NS_COLS': 8, 'NBW_COL': 3, 'NBW_STR': 4, 'NS_EVT': 16, 'NBW_EVT': 4}
+FAILED
+../../src/test_runner_event_array.py::test_data[4-4-3-4] [DEBUG] Parameters: {'NS_ROWS': 16, 'NS_COLS': 8, 'NBW_COL': 3, 'NBW_STR': 4, 'NS_EVT': 16, 'NBW_EVT': 4}
+FAILED
+../../src/test_runner_event_array.py::test_data[4-5-2-2] [DEBUG] Parameters: {'NS_ROWS': 4, 'NS_COLS': 4, 'NBW_COL': 2, 'NBW_STR': 5, 'NS_EVT': 16, 'NBW_EVT': 4}
+FAILED
+../../src/test_runner_event_array.py::test_data[4-5-2-4] [DEBUG] Parameters: {'NS_ROWS': 16, 'NS_COLS': 4, 'NBW_COL': 2, 'NBW_STR': 5, 'NS_EVT': 16, 'NBW_EVT': 4}
+FAILED
+../../src/test_runner_event_array.py::test_data[4-5-3-2] [DEBUG] Parameters: {'NS_ROWS': 4, 'NS_COLS': 8, 'NBW_COL': 3, 'NBW_STR': 5, 'NS_EVT': 16, 'NBW_EVT': 4}
+FAILED
+../../src/test_runner_event_array.py::test_data[4-5-3-4] [DEBUG] Parameters: {'NS_ROWS': 16, 'NS_COLS': 8, 'NBW_COL': 3, 'NBW_STR': 5, 'NS_EVT': 16, 'NBW_EVT': 4}
+FAILED
+
+=================================== FAILURES ===================================
+______________________________ test_data[2-4-2-2] ______________________________
+
+NBW_ROWS = 2, NBW_COLS = 2, NBW_STR = 4, NBW_EVT = 2
+
+    @pytest.mark.parametrize("NBW_ROWS", random_nbw_rows)
+    @pytest.mark.parametrize("NBW_COLS", random_nbw_cols)
+    @pytest.mark.parametrize("NBW_STR", random_nbw_str)
+    @pytest.mark.parametrize("NBW_EVT", random_nbw_evt)
+    def test_data(NBW_ROWS, NBW_COLS, NBW_STR, NBW_EVT):
+        NS_COLS = 2**NBW_COLS
+        NS_ROWS = 2**NBW_ROWS
+        NS_EVT  = 2**NBW_EVT
+        # Run the simulation with specified parameters
+>       runner(NS_ROWS=NS_ROWS, NS_COLS=NS_COLS, NBW_COL=NBW_COLS, NBW_STR=NBW_STR, NS_EVT=NS_EVT, NBW_EVT=NBW_EVT)
+
+/src/test_runner_event_array.py:60: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+/src/test_runner_event_array.py:30: in runner
+    sim_runner.build(
+/usr/local/lib/python3.9/dist-packages/cocotb_tools/runner.py:281: in build
+    self._execute(cmds, cwd=self.build_dir)
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+input = None, capture_output = False, timeout = None, check = True
+popenargs = (['iverilog', '-o', '/code/rundir/sim_build/sim.vvp', '-s', 'event_array', '-g2012', ...],)
+kwargs = {'cwd': PosixPath('/code/rundir/sim_build'), 'env': {'HASH': '1-modify-event-storage-and-create-event-array', 'HOME': ...f2', 'LC_CTYPE': 'C.UTF-8', ...}, 'stderr': -2, 'stdout': <_io.TextIOWrapper name='sim.log' mode='w' encoding='UTF-8'>}
+process = <Popen: returncode: 2 args: ['iverilog', '-o', '/code/rundir/sim_build/sim.v...>
+stdout = None, stderr = None, retcode = 2
+
+    def run(*popenargs,
+            input=None, capture_output=False, timeout=None, check=False, **kwargs):
+        """Run command with arguments and return a CompletedProcess instance.
+    
+        The returned instance will have attributes args, returncode, stdout and
+        stderr. By default, stdout and stderr are not captured, and those attributes
+        will be None. Pass stdout=PIPE and/or stderr=PIPE in order to capture them.
+    
+        If check is True and the exit code was non-zero, it raises a
+        CalledProcessError. The CalledProcessError object will have the return code
+        in the returncode attribute, and output & stderr attributes if those streams
+        were captured.
+    
+        If timeout is given, and the process takes too long, a TimeoutExpired
+        exception will be raised.
+    
+        There is an optional argument "input", allowing you to
+        pass bytes or a string to the subprocess's stdin.  If you use this argument
+        you may not also use the Popen constructor's "stdin" argument, as
+        it will be used internally.
+    
+        By default, all communication is in bytes, and therefore any "input" should
+        be bytes, and the stdout and stderr will be bytes. If in text mode, any
+        "input" should be a string, and stdout and stderr will be strings decoded
+        according to locale encoding, or by "encoding" if set. Text mode is
+        triggered by setting any of text, encoding, errors or universal_newlines.
+    
+        The other arguments are the same as for the Popen constructor.
+        """
+        if input is not None:
+            if kwargs.get('stdin') is not None:
+                raise ValueError('stdin and input arguments may not both be used.')
+            kwargs['stdin'] = PIPE
+    
+        if capture_output:
+            if kwargs.get('stdout') is not None or kwargs.get('stderr') is not None:
+                raise ValueError('stdout and stderr arguments may not be used '
+                                 'with capture_output.')
+            kwargs['stdout'] = PIPE
+            kwargs['stderr'] = PIPE
+    
+        with Popen(*popenargs, **kwargs) as process:
+            try:
+                stdout, stderr = process.communicate(input, timeout=timeout)
+            except TimeoutExpired as exc:
+                process.kill()
+                if _mswindows:
+                    # Windows accumulates the output in a single blocking
+                    # read() call run on child threads, with the timeout
+                    # being done in a join() on those threads.  communicate()
+                    # _after_ kill() is required to collect that and add it
+                    # to the exception.
+                    exc.stdout, exc.stderr = process.communicate()
+                else:
+                    # POSIX _communicate already populated the output so
+                    # far into the TimeoutExpired exception.
+                    process.wait()
+                raise
+            except:  # Including KeyboardInterrupt, communicate handled that.
+                process.kill()
+                # We don't call process.wait() as .__exit__ does that for us.
+                raise
+            retcode = process.poll()
+            if check and retcode:
+>               raise CalledProcessError(retcode, process.args,
+                                         output=stdout, stderr=stderr)
+E               subprocess.CalledProcessError: Command '['iverilog', '-o', '/code/rundir/sim_build/sim.vvp', '-s', 'event_array', '-g2012', '-Pevent_array.NS_ROWS=4', '-Pevent_array.NS_COLS=4', '-Pevent_array.NBW_COL=2', '-Pevent_array.NBW_STR=4', '-Pevent_array.NS_EVT=4', '-Pevent_array.NBW_EVT=2', '-s', 'cocotb_iverilog_dump', '-f', '/code/rundir/sim_build/cmds.f', '/code/rtl/event_array.sv', '/code/rtl/column_selector.sv', '/code/rtl/event_storage.sv', '/code/rundir/sim_build/cocotb_iverilog_dump.v']' returned non-zero exit status 2.
+
+/usr/lib/python3.9/subprocess.py:528: CalledProcessError
+______________________________ test_data[2-4-2-4] ______________________________
+
+NBW_ROWS = 4, NBW_COLS = 2, NBW_STR = 4, NBW_EVT = 2
+
+    @pytest.mark.parametrize("NBW_ROWS", random_nbw_rows)
+    @pytest.mark.parametrize("NBW_COLS", random_nbw_cols)
+    @pytest.mark.parametrize("NBW_STR", random_nbw_str)
+    @pytest.mark.parametrize("NBW_EVT", random_nbw_evt)
+    def test_data(NBW_ROWS, NBW_COLS, NBW_STR, NBW_EVT):
+        NS_COLS = 2**NBW_COLS
+        NS_ROWS = 2**NBW_ROWS
+        NS_EVT  = 2**NBW_EVT
+        # Run the simulation with specified parameters
+>       runner(NS_ROWS=NS_ROWS, NS_COLS=NS_COLS, NBW_COL=NBW_COLS, NBW_STR=NBW_STR, NS_EVT=NS_EVT, NBW_EVT=NBW_EVT)
+
+/src/test_runner_event_array.py:60: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+/src/test_runner_event_array.py:30: in runner
+    sim_runner.build(
+/usr/local/lib/python3.9/dist-packages/cocotb_tools/runner.py:281: in build
+    self._execute(cmds, cwd=self.build_dir)
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+input = None, capture_output = False, timeout = None, check = True
+popenargs = (['iverilog', '-o', '/code/rundir/sim_build/sim.vvp', '-s', 'event_array', '-g2012', ...],)
+kwargs = {'cwd': PosixPath('/code/rundir/sim_build'), 'env': {'HASH': '1-modify-event-storage-and-create-event-array', 'HOME': ...f2', 'LC_CTYPE': 'C.UTF-8', ...}, 'stderr': -2, 'stdout': <_io.TextIOWrapper name='sim.log' mode='w' encoding='UTF-8'>}
+process = <Popen: returncode: 2 args: ['iverilog', '-o', '/code/rundir/sim_build/sim.v...>
+stdout = None, stderr = None, retcode = 2
+
+    def run(*popenargs,
+            input=None, capture_output=False, timeout=None, check=False, **kwargs):
+        """Run command with arguments and return a CompletedProcess instance.
+    
+        The returned instance will have attributes args, returncode, stdout and
+        stderr. By default, stdout and stderr are not captured, and those attributes
+        will be None. Pass stdout=PIPE and/or stderr=PIPE in order to capture them.
+    
+        If check is True and the exit code was non-zero, it raises a
+        CalledProcessError. The CalledProcessError object will have the return code
+        in the returncode attribute, and output & stderr attributes if those streams
+        were captured.
+    
+        If timeout is given, and the process takes too long, a TimeoutExpired
+        exception will be raised.
+    
+        There is an optional argument "input", allowing you to
+        pass bytes or a string to the subprocess's stdin.  If you use this argument
+        you may not also use the Popen constructor's "stdin" argument, as
+        it will be used internally.
+    
+        By default, all communication is in bytes, and therefore any "input" should
+        be bytes, and the stdout and stderr will be bytes. If in text mode, any
+        "input" should be a string, and stdout and stderr will be strings decoded
+        according to locale encoding, or by "encoding" if set. Text mode is
+        triggered by setting any of text, encoding, errors or universal_newlines.
+    
+        The other arguments are the same as for the Popen constructor.
+        """
+        if input is not None:
+            if kwargs.get('stdin') is not None:
+                raise ValueError('stdin and input arguments may not both be used.')
+            kwargs['stdin'] = PIPE
+    
+        if capture_output:
+            if kwargs.get('stdout') is not None or kwargs.get('stderr') is not None:
+                raise ValueError('stdout and stderr arguments may not be used '
+                                 'with capture_output.')
+            kwargs['stdout'] = PIPE
+            kwargs['stderr'] = PIPE
+    
+        with Popen(*popenargs, **kwargs) as process:
+            try:
+                stdout, stderr = process.communicate(input, timeout=timeout)
+            except TimeoutExpired as exc:
+                process.kill()
+                if _mswindows:
+                    # Windows accumulates the output in a single blocking
+                    # read() call run on child threads, with the timeout
+                    # being done in a join() on those threads.  communicate()
+                    # _after_ kill() is required to collect that and add it
+                    # to the exception.
+                    exc.stdout, exc.stderr = process.communicate()
+                else:
+                    # POSIX _communicate already populated the output so
+                    # far into the TimeoutExpired exception.
+                    process.wait()
+                raise
+            except:  # Including KeyboardInterrupt, communicate handled that.
+                process.kill()
+                # We don't call process.wait() as .__exit__ does that for us.
+                raise
+            retcode = process.poll()
+            if check and retcode:
+>               raise CalledProcessError(retcode, process.args,
+                                         output=stdout, stderr=stderr)
+E               subprocess.CalledProcessError: Command '['iverilog', '-o', '/code/rundir/sim_build/sim.vvp', '-s', 'event_array', '-g2012', '-Pevent_array.NS_ROWS=16', '-Pevent_array.NS_COLS=4', '-Pevent_array.NBW_COL=2', '-Pevent_array.NBW_STR=4', '-Pevent_array.NS_EVT=4', '-Pevent_array.NBW_EVT=2', '-s', 'cocotb_iverilog_dump', '-f', '/code/rundir/sim_build/cmds.f', '/code/rtl/event_array.sv', '/code/rtl/column_selector.sv', '/code/rtl/event_storage.sv', '/code/rundir/sim_build/cocotb_iverilog_dump.v']' returned non-zero exit status 2.
+
+/usr/lib/python3.9/subprocess.py:528: CalledProcessError
+______________________________ test_data[2-4-3-2] ______________________________
+
+NBW_ROWS = 2, NBW_COLS = 3, NBW_STR = 4, NBW_EVT = 2
+
+    @pytest.mark.parametrize("NBW_ROWS", random_nbw_rows)
+    @pytest.mark.parametrize("NBW_COLS", random_nbw_cols)
+    @pytest.mark.parametrize("NBW_STR", random_nbw_str)
+    @pytest.mark.parametrize("NBW_EVT", random_nbw_evt)
+    def test_data(NBW_ROWS, NBW_COLS, NBW_STR, NBW_EVT):
+        NS_COLS = 2**NBW_COLS
+        NS_ROWS = 2**NBW_ROWS
+        NS_EVT  = 2**NBW_EVT
+        # Run the simulation with specified parameters
+>       runner(NS_ROWS=NS_ROWS, NS_COLS=NS_COLS, NBW_COL=NBW_COLS, NBW_STR=NBW_STR, NS_EVT=NS_EVT, NBW_EVT=NBW_EVT)
+
+/src/test_runner_event_array.py:60: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+/src/test_runner_event_array.py:30: in runner
+    sim_runner.build(
+/usr/local/lib/python3.9/dist-packages/cocotb_tools/runner.py:281: in build
+    self._execute(cmds, cwd=self.build_dir)
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+input = None, capture_output = False, timeout = None, check = True
+popenargs = (['iverilog', '-o', '/code/rundir/sim_build/sim.vvp', '-s', 'event_array', '-g2012', ...],)
+kwargs = {'cwd': PosixPath('/code/rundir/sim_build'), 'env': {'HASH': '1-modify-event-storage-and-create-event-array', 'HOME': ...f2', 'LC_CTYPE': 'C.UTF-8', ...}, 'stderr': -2, 'stdout': <_io.TextIOWrapper name='sim.log' mode='w' encoding='UTF-8'>}
+process = <Popen: returncode: 2 args: ['iverilog', '-o', '/code/rundir/sim_build/sim.v...>
+stdout = None, stderr = None, retcode = 2
+
+    def run(*popenargs,
+            input=None, capture_output=False, timeout=None, check=False, **kwargs):
+        """Run command with arguments and return a CompletedProcess instance.
+    
+        The returned instance will have attributes args, returncode, stdout and
+        stderr. By default, stdout and stderr are not captured, and those attributes
+        will be None. Pass stdout=PIPE and/or stderr=PIPE in order to capture them.
+    
+        If check is True and the exit code was non-zero, it raises a
+        CalledProcessError. The CalledProcessError object will have the return code
+        in the returncode attribute, and output & stderr attributes if those streams
+        were captured.
+    
+        If timeout is given, and the process takes too long, a TimeoutExpired
+        exception will be raised.
+    
+        There is an optional argument "input", allowing you to
+        pass bytes or a string to the subprocess's stdin.  If you use this argument
+        you may not also use the Popen constructor's "stdin" argument, as
+        it will be used internally.
+    
+        By default, all communication is in bytes, and therefore any "input" should
+        be bytes, and the stdout and stderr will be bytes. If in text mode, any
+        "input" should be a string, and stdout and stderr will be strings decoded
+        according to locale encoding, or by "encoding" if set. Text mode is
+        triggered by setting any of text, encoding, errors or universal_newlines.
+    
+        The other arguments are the same as for the Popen constructor.
+        """
+        if input is not None:
+            if kwargs.get('stdin') is not None:
+                raise ValueError('stdin and input arguments may not both be used.')
+            kwargs['stdin'] = PIPE
+    
+        if capture_output:
+            if kwargs.get('stdout') is not None or kwargs.get('stderr') is not None:
+                raise ValueError('stdout and stderr arguments may not be used '
+                                 'with capture_output.')
+            kwargs['stdout'] = PIPE
+            kwargs['stderr'] = PIPE
+    
+        with Popen(*popenargs, **kwargs) as process:
+            try:
+                stdout, stderr = process.communicate(input, timeout=timeout)
+            except TimeoutExpired as exc:
+                process.kill()
+                if _mswindows:
+                    # Windows accumulates the output in a single blocking
+                    # read() call run on child threads, with the timeout
+                    # being done in a join() on those threads.  communicate()
+                    # _after_ kill() is required to collect that and add it
+                    # to the exception.
+                    exc.stdout, exc.stderr = process.communicate()
+                else:
+                    # POSIX _communicate already populated the output so
+                    # far into the TimeoutExpired exception.
+                    process.wait()
+                raise
+            except:  # Including KeyboardInterrupt, communicate handled that.
+                process.kill()
+                # We don't call process.wait() as .__exit__ does that for us.
+                raise
+            retcode = process.poll()
+            if check and retcode:
+>               raise CalledProcessError(retcode, process.args,
+                                         output=stdout, stderr=stderr)
+E               subprocess.CalledProcessError: Command '['iverilog', '-o', '/code/rundir/sim_build/sim.vvp', '-s', 'event_array', '-g2012', '-Pevent_array.NS_ROWS=4', '-Pevent_array.NS_COLS=8', '-Pevent_array.NBW_COL=3', '-Pevent_array.NBW_STR=4', '-Pevent_array.NS_EVT=4', '-Pevent_array.NBW_EVT=2', '-s', 'cocotb_iverilog_dump', '-f', '/code/rundir/sim_build/cmds.f', '/code/rtl/event_array.sv', '/code/rtl/column_selector.sv', '/code/rtl/event_storage.sv', '/code/rundir/sim_build/cocotb_iverilog_dump.v']' returned non-zero exit status 2.
+
+/usr/lib/python3.9/subprocess.py:528: CalledProcessError
+______________________________ test_data[2-4-3-4] ______________________________
+
+NBW_ROWS = 4, NBW_COLS = 3, NBW_STR = 4, NBW_EVT = 2
+
+    @pytest.mark.parametrize("NBW_ROWS", random_nbw_rows)
+    @pytest.mark.parametrize("NBW_COLS", random_nbw_cols)
+    @pytest.mark.parametrize("NBW_STR", random_nbw_str)
+    @pytest.mark.parametrize("NBW_EVT", random_nbw_evt)
+    def test_data(NBW_ROWS, NBW_COLS, NBW_STR, NBW_EVT):
+        NS_COLS = 2**NBW_COLS
+        NS_ROWS = 2**NBW_ROWS
+        NS_EVT  = 2**NBW_EVT
+        # Run the simulation with specified parameters
+>       runner(NS_ROWS=NS_ROWS, NS_COLS=NS_COLS, NBW_COL=NBW_COLS, NBW_STR=NBW_STR, NS_EVT=NS_EVT, NBW_EVT=NBW_EVT)
+
+/src/test_runner_event_array.py:60: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+/src/test_runner_event_array.py:30: in runner
+    sim_runner.build(
+/usr/local/lib/python3.9/dist-packages/cocotb_tools/runner.py:281: in build
+    self._execute(cmds, cwd=self.build_dir)
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+input = None, capture_output = False, timeout = None, check = True
+popenargs = (['iverilog', '-o', '/code/rundir/sim_build/sim.vvp', '-s', 'event_array', '-g2012', ...],)
+kwargs = {'cwd': PosixPath('/code/rundir/sim_build'), 'env': {'HASH': '1-modify-event-storage-and-create-event-array', 'HOME': ...f2', 'LC_CTYPE': 'C.UTF-8', ...}, 'stderr': -2, 'stdout': <_io.TextIOWrapper name='sim.log' mode='w' encoding='UTF-8'>}
+process = <Popen: returncode: 2 args: ['iverilog', '-o', '/code/rundir/sim_build/sim.v...>
+stdout = None, stderr = None, retcode = 2
+
+    def run(*popenargs,
+            input=None, capture_output=False, timeout=None, check=False, **kwargs):
+        """Run command with arguments and return a CompletedProcess instance.
+    
+        The returned instance will have attributes args, returncode, stdout and
+        stderr. By default, stdout and stderr are not captured, and those attributes
+        will be None. Pass stdout=PIPE and/or stderr=PIPE in order to capture them.
+    
+        If check is True and the exit code was non-zero, it raises a
+        CalledProcessError. The CalledProcessError object will have the return code
+        in the returncode attribute, and output & stderr attributes if those streams
+        were captured.
+    
+        If timeout is given, and the process takes too long, a TimeoutExpired
+        exception will be raised.
+    
+        There is an optional argument "input", allowing you to
+        pass bytes or a string to the subprocess's stdin.  If you use this argument
+        you may not also use the Popen constructor's "stdin" argument, as
+        it will be used internally.
+    
+        By default, all communication is in bytes, and therefore any "input" should
+        be bytes, and the stdout and stderr will be bytes. If in text mode, any
+        "input" should be a string, and stdout and stderr will be strings decoded
+        according to locale encoding, or by "encoding" if set. Text mode is
+        triggered by setting any of text, encoding, errors or universal_newlines.
+    
+        The other arguments are the same as for the Popen constructor.
+        """
+        if input is not None:
+            if kwargs.get('stdin') is not None:
+                raise ValueError('stdin and input arguments may not both be used.')
+            kwargs['stdin'] = PIPE
+    
+        if capture_output:
+            if kwargs.get('stdout') is not None or kwargs.get('stderr') is not None:
+                raise ValueError('stdout and stderr arguments may not be used '
+                                 'with capture_output.')
+            kwargs['stdout'] = PIPE
+            kwargs['stderr'] = PIPE
+    
+        with Popen(*popenargs, **kwargs) as process:
+            try:
+                stdout, stderr = process.communicate(input, timeout=timeout)
+            except TimeoutExpired as exc:
+                process.kill()
+                if _mswindows:
+                    # Windows accumulates the output in a single blocking
+                    # read() call run on child threads, with the timeout
+                    # being done in a join() on those threads.  communicate()
+                    # _after_ kill() is required to collect that and add it
+                    # to the exception.
+                    exc.stdout, exc.stderr = process.communicate()
+                else:
+                    # POSIX _communicate already populated the output so
+                    # far into the TimeoutExpired exception.
+                    process.wait()
+                raise
+            except:  # Including KeyboardInterrupt, communicate handled that.
+                process.kill()
+                # We don't call process.wait() as .__exit__ does that for us.
+                raise
+            retcode = process.poll()
+            if check and retcode:
+>               raise CalledProcessError(retcode, process.args,
+                                         output=stdout, stderr=stderr)
+E               subprocess.CalledProcessError: Command '['iverilog', '-o', '/code/rundir/sim_build/sim.vvp', '-s', 'event_array', '-g2012', '-Pevent_array.NS_ROWS=16', '-Pevent_array.NS_COLS=8', '-Pevent_array.NBW_COL=3', '-Pevent_array.NBW_STR=4', '-Pevent_array.NS_EVT=4', '-Pevent_array.NBW_EVT=2', '-s', 'cocotb_iverilog_dump', '-f', '/code/rundir/sim_build/cmds.f', '/code/rtl/event_array.sv', '/code/rtl/column_selector.sv', '/code/rtl/event_storage.sv', '/code/rundir/sim_build/cocotb_iverilog_dump.v']' returned non-zero exit status 2.
+
+/usr/lib/python3.9/subprocess.py:528: CalledProcessError
+______________________________ test_data[2-5-2-2] ______________________________
+
+NBW_ROWS = 2, NBW_COLS = 2, NBW_STR = 5, NBW_EVT = 2
+
+    @pytest.mark.parametrize("NBW_ROWS", random_nbw_rows)
+    @pytest.mark.parametrize("NBW_COLS", random_nbw_cols)
+    @pytest.mark.parametrize("NBW_STR", random_nbw_str)
+    @pytest.mark.parametrize("NBW_EVT", random_nbw_evt)
+    def test_data(NBW_ROWS, NBW_COLS, NBW_STR, NBW_EVT):
+        NS_COLS = 2**NBW_COLS
+        NS_ROWS = 2**NBW_ROWS
+        NS_EVT  = 2**NBW_EVT
+        # Run the simulation with specified parameters
+>       runner(NS_ROWS=NS_ROWS, NS_COLS=NS_COLS, NBW_COL=NBW_COLS, NBW_STR=NBW_STR, NS_EVT=NS_EVT, NBW_EVT=NBW_EVT)
+
+/src/test_runner_event_array.py:60: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+/src/test_runner_event_array.py:30: in runner
+    sim_runner.build(
+/usr/local/lib/python3.9/dist-packages/cocotb_tools/runner.py:281: in build
+    self._execute(cmds, cwd=self.build_dir)
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+input = None, capture_output = False, timeout = None, check = True
+popenargs = (['iverilog', '-o', '/code/rundir/sim_build/sim.vvp', '-s', 'event_array', '-g2012', ...],)
+kwargs = {'cwd': PosixPath('/code/rundir/sim_build'), 'env': {'HASH': '1-modify-event-storage-and-create-event-array', 'HOME': ...f2', 'LC_CTYPE': 'C.UTF-8', ...}, 'stderr': -2, 'stdout': <_io.TextIOWrapper name='sim.log' mode='w' encoding='UTF-8'>}
+process = <Popen: returncode: 2 args: ['iverilog', '-o', '/code/rundir/sim_build/sim.v...>
+stdout = None, stderr = None, retcode = 2
+
+    def run(*popenargs,
+            input=None, capture_output=False, timeout=None, check=False, **kwargs):
+        """Run command with arguments and return a CompletedProcess instance.
+    
+        The returned instance will have attributes args, returncode, stdout and
+        stderr. By default, stdout and stderr are not captured, and those attributes
+        will be None. Pass stdout=PIPE and/or stderr=PIPE in order to capture them.
+    
+        If check is True and the exit code was non-zero, it raises a
+        CalledProcessError. The CalledProcessError object will have the return code
+        in the returncode attribute, and output & stderr attributes if those streams
+        were captured.
+    
+        If timeout is given, and the process takes too long, a TimeoutExpired
+        exception will be raised.
+    
+        There is an optional argument "input", allowing you to
+        pass bytes or a string to the subprocess's stdin.  If you use this argument
+        you may not also use the Popen constructor's "stdin" argument, as
+        it will be used internally.
+    
+        By default, all communication is in bytes, and therefore any "input" should
+        be bytes, and the stdout and stderr will be bytes. If in text mode, any
+        "input" should be a string, and stdout and stderr will be strings decoded
+        according to locale encoding, or by "encoding" if set. Text mode is
+        triggered by setting any of text, encoding, errors or universal_newlines.
+    
+        The other arguments are the same as for the Popen constructor.
+        """
+        if input is not None:
+            if kwargs.get('stdin') is not None:
+                raise ValueError('stdin and input arguments may not both be used.')
+            kwargs['stdin'] = PIPE
+    
+        if capture_output:
+            if kwargs.get('stdout') is not None or kwargs.get('stderr') is not None:
+                raise ValueError('stdout and stderr arguments may not be used '
+                                 'with capture_output.')
+            kwargs['stdout'] = PIPE
+            kwargs['stderr'] = PIPE
+    
+        with Popen(*popenargs, **kwargs) as process:
+            try:
+                stdout, stderr = process.communicate(input, timeout=timeout)
+            except TimeoutExpired as exc:
+                process.kill()
+                if _mswindows:
+                    # Windows accumulates the output in a single blocking
+                    # read() call run on child threads, with the timeout
+                    # being done in a join() on those threads.  communicate()
+                    # _after_ kill() is required to collect that and add it
+                    # to the exception.
+                    exc.stdout, exc.stderr = process.communicate()
+                else:
+                    # POSIX _communicate already populated the output so
+                    # far into the TimeoutExpired exception.
+                    process.wait()
+                raise
+            except:  # Including KeyboardInterrupt, communicate handled that.
+                process.kill()
+                # We don't call process.wait() as .__exit__ does that for us.
+                raise
+            retcode = process.poll()
+            if check and retcode:
+>               raise CalledProcessError(retcode, process.args,
+                                         output=stdout, stderr=stderr)
+E               subprocess.CalledProcessError: Command '['iverilog', '-o', '/code/rundir/sim_build/sim.vvp', '-s', 'event_array', '-g2012', '-Pevent_array.NS_ROWS=4', '-Pevent_array.NS_COLS=4', '-Pevent_array.NBW_COL=2', '-Pevent_array.NBW_STR=5', '-Pevent_array.NS_EVT=4', '-Pevent_array.NBW_EVT=2', '-s', 'cocotb_iverilog_dump', '-f', '/code/rundir/sim_build/cmds.f', '/code/rtl/event_array.sv', '/code/rtl/column_selector.sv', '/code/rtl/event_storage.sv', '/code/rundir/sim_build/cocotb_iverilog_dump.v']' returned non-zero exit status 2.
+
+/usr/lib/python3.9/subprocess.py:528: CalledProcessError
+______________________________ test_data[2-5-2-4] ______________________________
+
+NBW_ROWS = 4, NBW_COLS = 2, NBW_STR = 5, NBW_EVT = 2
+
+    @pytest.mark.parametrize("NBW_ROWS", random_nbw_rows)
+    @pytest.mark.parametrize("NBW_COLS", random_nbw_cols)
+    @pytest.mark.parametrize("NBW_STR", random_nbw_str)
+    @pytest.mark.parametrize("NBW_EVT", random_nbw_evt)
+    def test_data(NBW_ROWS, NBW_COLS, NBW_STR, NBW_EVT):
+        NS_COLS = 2**NBW_COLS
+        NS_ROWS = 2**NBW_ROWS
+        NS_EVT  = 2**NBW_EVT
+        # Run the simulation with specified parameters
+>       runner(NS_ROWS=NS_ROWS, NS_COLS=NS_COLS, NBW_COL=NBW_COLS, NBW_STR=NBW_STR, NS_EVT=NS_EVT, NBW_EVT=NBW_EVT)
+
+/src/test_runner_event_array.py:60: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+/src/test_runner_event_array.py:30: in runner
+    sim_runner.build(
+/usr/local/lib/python3.9/dist-packages/cocotb_tools/runner.py:281: in build
+    self._execute(cmds, cwd=self.build_dir)
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+input = None, capture_output = False, timeout = None, check = True
+popenargs = (['iverilog', '-o', '/code/rundir/sim_build/sim.vvp', '-s', 'event_array', '-g2012', ...],)
+kwargs = {'cwd': PosixPath('/code/rundir/sim_build'), 'env': {'HASH': '1-modify-event-storage-and-create-event-array', 'HOME': ...f2', 'LC_CTYPE': 'C.UTF-8', ...}, 'stderr': -2, 'stdout': <_io.TextIOWrapper name='sim.log' mode='w' encoding='UTF-8'>}
+process = <Popen: returncode: 2 args: ['iverilog', '-o', '/code/rundir/sim_build/sim.v...>
+stdout = None, stderr = None, retcode = 2
+
+    def run(*popenargs,
+            input=None, capture_output=False, timeout=None, check=False, **kwargs):
+        """Run command with arguments and return a CompletedProcess instance.
+    
+        The returned instance will have attributes args, returncode, stdout and
+        stderr. By default, stdout and stderr are not captured, and those attributes
+        will be None. Pass stdout=PIPE and/or stderr=PIPE in order to capture them.
+    
+        If check is True and the exit code was non-zero, it raises a
+        CalledProcessError. The CalledProcessError object will have the return code
+        in the returncode attribute, and output & stderr attributes if those streams
+        were captured.
+    
+        If timeout is given, and the process takes too long, a TimeoutExpired
+        exception will be raised.
+    
+        There is an optional argument "input", allowing you to
+        pass bytes or a string to the subprocess's stdin.  If you use this argument
+        you may not also use the Popen constructor's "stdin" argument, as
+        it will be used internally.
+    
+        By default, all communication is in bytes, and therefore any "input" should
+        be bytes, and the stdout and stderr will be bytes. If in text mode, any
+        "input" should be a string, and stdout and stderr will be strings decoded
+        according to locale encoding, or by "encoding" if set. Text mode is
+        triggered by setting any of text, encoding, errors or universal_newlines.
+    
+        The other arguments are the same as for the Popen constructor.
+        """
+        if input is not None:
+            if kwargs.get('stdin') is not None:
+                raise ValueError('stdin and input arguments may not both be used.')
+            kwargs['stdin'] = PIPE
+    
+        if capture_output:
+            if kwargs.get('stdout') is not None or kwargs.get('stderr') is not None:
+                raise ValueError('stdout and stderr arguments may not be used '
+                                 'with capture_output.')
+            kwargs['stdout'] = PIPE
+            kwargs['stderr'] = PIPE
+    
+        with Popen(*popenargs, **kwargs) as process:
+            try:
+                stdout, stderr = process.communicate(input, timeout=timeout)
+            except TimeoutExpired as exc:
+                process.kill()
+                if _mswindows:
+                    # Windows accumulates the output in a single blocking
+                    # read() call run on child threads, with the timeout
+                    # being done in a join() on those threads.  communicate()
+                    # _after_ kill() is required to collect that and add it
+                    # to the exception.
+                    exc.stdout, exc.stderr = process.communicate()
+                else:
+                    # POSIX _communicate already populated the output so
+                    # far into the TimeoutExpired exception.
+                    process.wait()
+                raise
+            except:  # Including KeyboardInterrupt, communicate handled that.
+                process.kill()
+                # We don't call process.wait() as .__exit__ does that for us.
+                raise
+            retcode = process.poll()
+            if check and retcode:
+>               raise CalledProcessError(retcode, process.args,
+                                         output=stdout, stderr=stderr)
+E               subprocess.CalledProcessError: Command '['iverilog', '-o', '/code/rundir/sim_build/sim.vvp', '-s', 'event_array', '-g2012', '-Pevent_array.NS_ROWS=16', '-Pevent_array.NS_COLS=4', '-Pevent_array.NBW_COL=2', '-Pevent_array.NBW_STR=5', '-Pevent_array.NS_EVT=4', '-Pevent_array.NBW_EVT=2', '-s', 'cocotb_iverilog_dump', '-f', '/code/rundir/sim_build/cmds.f', '/code/rtl/event_array.sv', '/code/rtl/column_selector.sv', '/code/rtl/event_storage.sv', '/code/rundir/sim_build/cocotb_iverilog_dump.v']' returned non-zero exit status 2.
+
+/usr/lib/python3.9/subprocess.py:528: CalledProcessError
+______________________________ test_data[2-5-3-2] ______________________________
+
+NBW_ROWS = 2, NBW_COLS = 3, NBW_STR = 5, NBW_EVT = 2
+
+    @pytest.mark.parametrize("NBW_ROWS", random_nbw_rows)
+    @pytest.mark.parametrize("NBW_COLS", random_nbw_cols)
+    @pytest.mark.parametrize("NBW_STR", random_nbw_str)
+    @pytest.mark.parametrize("NBW_EVT", random_nbw_evt)
+    def test_data(NBW_ROWS, NBW_COLS, NBW_STR, NBW_EVT):
+        NS_COLS = 2**NBW_COLS
+        NS_ROWS = 2**NBW_ROWS
+        NS_EVT  = 2**NBW_EVT
+        # Run the simulation with specified parameters
+>       runner(NS_ROWS=NS_ROWS, NS_COLS=NS_COLS, NBW_COL=NBW_COLS, NBW_STR=NBW_STR, NS_EVT=NS_EVT, NBW_EVT=NBW_EVT)
+
+/src/test_runner_event_array.py:60: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+/src/test_runner_event_array.py:30: in runner
+    sim_runner.build(
+/usr/local/lib/python3.9/dist-packages/cocotb_tools/runner.py:281: in build
+    self._execute(cmds, cwd=self.build_dir)
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+input = None, capture_output = False, timeout = None, check = True
+popenargs = (['iverilog', '-o', '/code/rundir/sim_build/sim.vvp', '-s', 'event_array', '-g2012', ...],)
+kwargs = {'cwd': PosixPath('/code/rundir/sim_build'), 'env': {'HASH': '1-modify-event-storage-and-create-event-array', 'HOME': ...f2', 'LC_CTYPE': 'C.UTF-8', ...}, 'stderr': -2, 'stdout': <_io.TextIOWrapper name='sim.log' mode='w' encoding='UTF-8'>}
+process = <Popen: returncode: 2 args: ['iverilog', '-o', '/code/rundir/sim_build/sim.v...>
+stdout = None, stderr = None, retcode = 2
+
+    def run(*popenargs,
+            input=None, capture_output=False, timeout=None, check=False, **kwargs):
+        """Run command with arguments and return a CompletedProcess instance.
+    
+        The returned instance will have attributes args, returncode, stdout and
+        stderr. By default, stdout and stderr are not captured, and those attributes
+        will be None. Pass stdout=PIPE and/or stderr=PIPE in order to capture them.
+    
+        If check is True and the exit code was non-zero, it raises a
+        CalledProcessError. The CalledProcessError object will have the return code
+        in the returncode attribute, and output & stderr attributes if those streams
+        were captured.
+    
+        If timeout is given, and the process takes too long, a TimeoutExpired
+        exception will be raised.
+    
+        There is an optional argument "input", allowing you to
+        pass bytes or a string to the subprocess's stdin.  If you use this argument
+        you may not also use the Popen constructor's "stdin" argument, as
+        it will be used internally.
+    
+        By default, all communication is in bytes, and therefore any "input" should
+        be bytes, and the stdout and stderr will be bytes. If in text mode, any
+        "input" should be a string, and stdout and stderr will be strings decoded
+        according to locale encoding, or by "encoding" if set. Text mode is
+        triggered by setting any of text, encoding, errors or universal_newlines.
+    
+        The other arguments are the same as for the Popen constructor.
+        """
+        if input is not None:
+            if kwargs.get('stdin') is not None:
+                raise ValueError('stdin and input arguments may not both be used.')
+            kwargs['stdin'] = PIPE
+    
+        if capture_output:
+            if kwargs.get('stdout') is not None or kwargs.get('stderr') is not None:
+                raise ValueError('stdout and stderr arguments may not be used '
+                                 'with capture_output.')
+            kwargs['stdout'] = PIPE
+            kwargs['stderr'] = PIPE
+    
+        with Popen(*popenargs, **kwargs) as process:
+            try:
+                stdout, stderr = process.communicate(input, timeout=timeout)
+            except TimeoutExpired as exc:
+                process.kill()
+                if _mswindows:
+                    # Windows accumulates the output in a single blocking
+                    # read() call run on child threads, with the timeout
+                    # being done in a join() on those threads.  communicate()
+                    # _after_ kill() is required to collect that and add it
+                    # to the exception.
+                    exc.stdout, exc.stderr = process.communicate()
+                else:
+                    # POSIX _communicate already populated the output so
+                    # far into the TimeoutExpired exception.
+                    process.wait()
+                raise
+            except:  # Including KeyboardInterrupt, communicate handled that.
+                process.kill()
+                # We don't call process.wait() as .__exit__ does that for us.
+                raise
+            retcode = process.poll()
+            if check and retcode:
+>               raise CalledProcessError(retcode, process.args,
+                                         output=stdout, stderr=stderr)
+E               subprocess.CalledProcessError: Command '['iverilog', '-o', '/code/rundir/sim_build/sim.vvp', '-s', 'event_array', '-g2012', '-Pevent_array.NS_ROWS=4', '-Pevent_array.NS_COLS=8', '-Pevent_array.NBW_COL=3', '-Pevent_array.NBW_STR=5', '-Pevent_array.NS_EVT=4', '-Pevent_array.NBW_EVT=2', '-s', 'cocotb_iverilog_dump', '-f', '/code/rundir/sim_build/cmds.f', '/code/rtl/event_array.sv', '/code/rtl/column_selector.sv', '/code/rtl/event_storage.sv', '/code/rundir/sim_build/cocotb_iverilog_dump.v']' returned non-zero exit status 2.
+
+/usr/lib/python3.9/subprocess.py:528: CalledProcessError
+______________________________ test_data[2-5-3-4] ______________________________
+
+NBW_ROWS = 4, NBW_COLS = 3, NBW_STR = 5, NBW_EVT = 2
+
+    @pytest.mark.parametrize("NBW_ROWS", random_nbw_rows)
+    @pytest.mark.parametrize("NBW_COLS", random_nbw_cols)
+    @pytest.mark.parametrize("NBW_STR", random_nbw_str)
+    @pytest.mark.parametrize("NBW_EVT", random_nbw_evt)
+    def test_data(NBW_ROWS, NBW_COLS, NBW_STR, NBW_EVT):
+        NS_COLS = 2**NBW_COLS
+        NS_ROWS = 2**NBW_ROWS
+        NS_EVT  = 2**NBW_EVT
+        # Run the simulation with specified parameters
+>       runner(NS_ROWS=NS_ROWS, NS_COLS=NS_COLS, NBW_COL=NBW_COLS, NBW_STR=NBW_STR, NS_EVT=NS_EVT, NBW_EVT=NBW_EVT)
+
+/src/test_runner_event_array.py:60: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+/src/test_runner_event_array.py:30: in runner
+    sim_runner.build(
+/usr/local/lib/python3.9/dist-packages/cocotb_tools/runner.py:281: in build
+    self._execute(cmds, cwd=self.build_dir)
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+input = None, capture_output = False, timeout = None, check = True
+popenargs = (['iverilog', '-o', '/code/rundir/sim_build/sim.vvp', '-s', 'event_array', '-g2012', ...],)
+kwargs = {'cwd': PosixPath('/code/rundir/sim_build'), 'env': {'HASH': '1-modify-event-storage-and-create-event-array', 'HOME': ...f2', 'LC_CTYPE': 'C.UTF-8', ...}, 'stderr': -2, 'stdout': <_io.TextIOWrapper name='sim.log' mode='w' encoding='UTF-8'>}
+process = <Popen: returncode: 2 args: ['iverilog', '-o', '/code/rundir/sim_build/sim.v...>
+stdout = None, stderr = None, retcode = 2
+
+    def run(*popenargs,
+            input=None, capture_output=False, timeout=None, check=False, **kwargs):
+        """Run command with arguments and return a CompletedProcess instance.
+    
+        The returned instance will have attributes args, returncode, stdout and
+        stderr. By default, stdout and stderr are not captured, and those attributes
+        will be None. Pass stdout=PIPE and/or stderr=PIPE in order to capture them.
+    
+        If check is True and the exit code was non-zero, it raises a
+        CalledProcessError. The CalledProcessError object will have the return code
+        in the returncode attribute, and output & stderr attributes if those streams
+        were captured.
+    
+        If timeout is given, and the process takes too long, a TimeoutExpired
+        exception will be raised.
+    
+        There is an optional argument "input", allowing you to
+        pass bytes or a string to the subprocess's stdin.  If you use this argument
+        you may not also use the Popen constructor's "stdin" argument, as
+        it will be used internally.
+    
+        By default, all communication is in bytes, and therefore any "input" should
+        be bytes, and the stdout and stderr will be bytes. If in text mode, any
+        "input" should be a string, and stdout and stderr will be strings decoded
+        according to locale encoding, or by "encoding" if set. Text mode is
+        triggered by setting any of text, encoding, errors or universal_newlines.
+    
+        The other arguments are the same as for the Popen constructor.
+        """
+        if input is not None:
+            if kwargs.get('stdin') is not None:
+                raise ValueError('stdin and input arguments may not both be used.')
+            kwargs['stdin'] = PIPE
+    
+        if capture_output:
+            if kwargs.get('stdout') is not None or kwargs.get('stderr') is not None:
+                raise ValueError('stdout and stderr arguments may not be used '
+                                 'with capture_output.')
+            kwargs['stdout'] = PIPE
+            kwargs['stderr'] = PIPE
+    
+        with Popen(*popenargs, **kwargs) as process:
+            try:
+                stdout, stderr = process.communicate(input, timeout=timeout)
+            except TimeoutExpired as exc:
+                process.kill()
+                if _mswindows:
+                    # Windows accumulates the output in a single blocking
+                    # read() call run on child threads, with the timeout
+                    # being done in a join() on those threads.  communicate()
+                    # _after_ kill() is required to collect that and add it
+                    # to the exception.
+                    exc.stdout, exc.stderr = process.communicate()
+                else:
+                    # POSIX _communicate already populated the output so
+                    # far into the TimeoutExpired exception.
+                    process.wait()
+                raise
+            except:  # Including KeyboardInterrupt, communicate handled that.
+                process.kill()
+                # We don't call process.wait() as .__exit__ does that for us.
+                raise
+            retcode = process.poll()
+            if check and retcode:
+>               raise CalledProcessError(retcode, process.args,
+                                         output=stdout, stderr=stderr)
+E               subprocess.CalledProcessError: Command '['iverilog', '-o', '/code/rundir/sim_build/sim.vvp', '-s', 'event_array', '-g2012', '-Pevent_array.NS_ROWS=16', '-Pevent_array.NS_COLS=8', '-Pevent_array.NBW_COL=3', '-Pevent_array.NBW_STR=5', '-Pevent_array.NS_EVT=4', '-Pevent_array.NBW_EVT=2', '-s', 'cocotb_iverilog_dump', '-f', '/code/rundir/sim_build/cmds.f', '/code/rtl/event_array.sv', '/code/rtl/column_selector.sv', '/code/rtl/event_storage.sv', '/code/rundir/sim_build/cocotb_iverilog_dump.v']' returned non-zero exit status 2.
+
+/usr/lib/python3.9/subprocess.py:528: CalledProcessError
+______________________________ test_data[4-4-2-2] ______________________________
+
+NBW_ROWS = 2, NBW_COLS = 2, NBW_STR = 4, NBW_EVT = 4
+
+    @pytest.mark.parametrize("NBW_ROWS", random_nbw_rows)
+    @pytest.mark.parametrize("NBW_COLS", random_nbw_cols)
+    @pytest.mark.parametrize("NBW_STR", random_nbw_str)
+    @pytest.mark.parametrize("NBW_EVT", random_nbw_evt)
+    def test_data(NBW_ROWS, NBW_COLS, NBW_STR, NBW_EVT):
+        NS_COLS = 2**NBW_COLS
+        NS_ROWS = 2**NBW_ROWS
+        NS_EVT  = 2**NBW_EVT
+        # Run the simulation with specified parameters
+>       runner(NS_ROWS=NS_ROWS, NS_COLS=NS_COLS, NBW_COL=NBW_COLS, NBW_STR=NBW_STR, NS_EVT=NS_EVT, NBW_EVT=NBW_EVT)
+
+/src/test_runner_event_array.py:60: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+/src/test_runner_event_array.py:30: in runner
+    sim_runner.build(
+/usr/local/lib/python3.9/dist-packages/cocotb_tools/runner.py:281: in build
+    self._execute(cmds, cwd=self.build_dir)
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+input = None, capture_output = False, timeout = None, check = True
+popenargs = (['iverilog', '-o', '/code/rundir/sim_build/sim.vvp', '-s', 'event_array', '-g2012', ...],)
+kwargs = {'cwd': PosixPath('/code/rundir/sim_build'), 'env': {'HASH': '1-modify-event-storage-and-create-event-array', 'HOME': ...f2', 'LC_CTYPE': 'C.UTF-8', ...}, 'stderr': -2, 'stdout': <_io.TextIOWrapper name='sim.log' mode='w' encoding='UTF-8'>}
+process = <Popen: returncode: 2 args: ['iverilog', '-o', '/code/rundir/sim_build/sim.v...>
+stdout = None, stderr = None, retcode = 2
+
+    def run(*popenargs,
+            input=None, capture_output=False, timeout=None, check=False, **kwargs):
+        """Run command with arguments and return a CompletedProcess instance.
+    
+        The returned instance will have attributes args, returncode, stdout and
+        stderr. By default, stdout and stderr are not captured, and those attributes
+        will be None. Pass stdout=PIPE and/or stderr=PIPE in order to capture them.
+    
+        If check is True and the exit code was non-zero, it raises a
+        CalledProcessError. The CalledProcessError object will have the return code
+        in the returncode attribute, and output & stderr attributes if those streams
+        were captured.
+    
+        If timeout is given, and the process takes too long, a TimeoutExpired
+        exception will be raised.
+    
+        There is an optional argument "input", allowing you to
+        pass bytes or a string to the subprocess's stdin.  If you use this argument
+        you may not also use the Popen constructor's "stdin" argument, as
+        it will be used internally.
+    
+        By default, all communication is in bytes, and therefore any "input" should
+        be bytes, and the stdout and stderr will be bytes. If in text mode, any
+        "input" should be a string, and stdout and stderr will be strings decoded
+        according to locale encoding, or by "encoding" if set. Text mode is
+        triggered by setting any of text, encoding, errors or universal_newlines.
+    
+        The other arguments are the same as for the Popen constructor.
+        """
+        if input is not None:
+            if kwargs.get('stdin') is not None:
+                raise ValueError('stdin and input arguments may not both be used.')
+            kwargs['stdin'] = PIPE
+    
+        if capture_output:
+            if kwargs.get('stdout') is not None or kwargs.get('stderr') is not None:
+                raise ValueError('stdout and stderr arguments may not be used '
+                                 'with capture_output.')
+            kwargs['stdout'] = PIPE
+            kwargs['stderr'] = PIPE
+    
+        with Popen(*popenargs, **kwargs) as process:
+            try:
+                stdout, stderr = process.communicate(input, timeout=timeout)
+            except TimeoutExpired as exc:
+                process.kill()
+                if _mswindows:
+                    # Windows accumulates the output in a single blocking
+                    # read() call run on child threads, with the timeout
+                    # being done in a join() on those threads.  communicate()
+                    # _after_ kill() is required to collect that and add it
+                    # to the exception.
+                    exc.stdout, exc.stderr = process.communicate()
+                else:
+                    # POSIX _communicate already populated the output so
+                    # far into the TimeoutExpired exception.
+                    process.wait()
+                raise
+            except:  # Including KeyboardInterrupt, communicate handled that.
+                process.kill()
+                # We don't call process.wait() as .__exit__ does that for us.
+                raise
+            retcode = process.poll()
+            if check and retcode:
+>               raise CalledProcessError(retcode, process.args,
+                                         output=stdout, stderr=stderr)
+E               subprocess.CalledProcessError: Command '['iverilog', '-o', '/code/rundir/sim_build/sim.vvp', '-s', 'event_array', '-g2012', '-Pevent_array.NS_ROWS=4', '-Pevent_array.NS_COLS=4', '-Pevent_array.NBW_COL=2', '-Pevent_array.NBW_STR=4', '-Pevent_array.NS_EVT=16', '-Pevent_array.NBW_EVT=4', '-s', 'cocotb_iverilog_dump', '-f', '/code/rundir/sim_build/cmds.f', '/code/rtl/event_array.sv', '/code/rtl/column_selector.sv', '/code/rtl/event_storage.sv', '/code/rundir/sim_build/cocotb_iverilog_dump.v']' returned non-zero exit status 2.
+
+/usr/lib/python3.9/subprocess.py:528: CalledProcessError
+______________________________ test_data[4-4-2-4] ______________________________
+
+NBW_ROWS = 4, NBW_COLS = 2, NBW_STR = 4, NBW_EVT = 4
+
+    @pytest.mark.parametrize("NBW_ROWS", random_nbw_rows)
+    @pytest.mark.parametrize("NBW_COLS", random_nbw_cols)
+    @pytest.mark.parametrize("NBW_STR", random_nbw_str)
+    @pytest.mark.parametrize("NBW_EVT", random_nbw_evt)
+    def test_data(NBW_ROWS, NBW_COLS, NBW_STR, NBW_EVT):
+        NS_COLS = 2**NBW_COLS
+        NS_ROWS = 2**NBW_ROWS
+        NS_EVT  = 2**NBW_EVT
+        # Run the simulation with specified parameters
+>       runner(NS_ROWS=NS_ROWS, NS_COLS=NS_COLS, NBW_COL=NBW_COLS, NBW_STR=NBW_STR, NS_EVT=NS_EVT, NBW_EVT=NBW_EVT)
+
+/src/test_runner_event_array.py:60: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+/src/test_runner_event_array.py:30: in runner
+    sim_runner.build(
+/usr/local/lib/python3.9/dist-packages/cocotb_tools/runner.py:281: in build
+    self._execute(cmds, cwd=self.build_dir)
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+input = None, capture_output = False, timeout = None, check = True
+popenargs = (['iverilog', '-o', '/code/rundir/sim_build/sim.vvp', '-s', 'event_array', '-g2012', ...],)
+kwargs = {'cwd': PosixPath('/code/rundir/sim_build'), 'env': {'HASH': '1-modify-event-storage-and-create-event-array', 'HOME': ...f2', 'LC_CTYPE': 'C.UTF-8', ...}, 'stderr': -2, 'stdout': <_io.TextIOWrapper name='sim.log' mode='w' encoding='UTF-8'>}
+process = <Popen: returncode: 2 args: ['iverilog', '-o', '/code/rundir/sim_build/sim.v...>
+stdout = None, stderr = None, retcode = 2
+
+    def run(*popenargs,
+            input=None, capture_output=False, timeout=None, check=False, **kwargs):
+        """Run command with arguments and return a CompletedProcess instance.
+    
+        The returned instance will have attributes args, returncode, stdout and
+        stderr. By default, stdout and stderr are not captured, and those attributes
+        will be None. Pass stdout=PIPE and/or stderr=PIPE in order to capture them.
+    
+        If check is True and the exit code was non-zero, it raises a
+        CalledProcessError. The CalledProcessError object will have the return code
+        in the returncode attribute, and output & stderr attributes if those streams
+        were captured.
+    
+        If timeout is given, and the process takes too long, a TimeoutExpired
+        exception will be raised.
+    
+        There is an optional argument "input", allowing you to
+        pass bytes or a string to the subprocess's stdin.  If you use this argument
+        you may not also use the Popen constructor's "stdin" argument, as
+        it will be used internally.
+    
+        By default, all communication is in bytes, and therefore any "input" should
+        be bytes, and the stdout and stderr will be bytes. If in text mode, any
+        "input" should be a string, and stdout and stderr will be strings decoded
+        according to locale encoding, or by "encoding" if set. Text mode is
+        triggered by setting any of text, encoding, errors or universal_newlines.
+    
+        The other arguments are the same as for the Popen constructor.
+        """
+        if input is not None:
+            if kwargs.get('stdin') is not None:
+                raise ValueError('stdin and input arguments may not both be used.')
+            kwargs['stdin'] = PIPE
+    
+        if capture_output:
+            if kwargs.get('stdout') is not None or kwargs.get('stderr') is not None:
+                raise ValueError('stdout and stderr arguments may not be used '
+                                 'with capture_output.')
+            kwargs['stdout'] = PIPE
+            kwargs['stderr'] = PIPE
+    
+        with Popen(*popenargs, **kwargs) as process:
+            try:
+                stdout, stderr = process.communicate(input, timeout=timeout)
+            except TimeoutExpired as exc:
+                process.kill()
+                if _mswindows:
+                    # Windows accumulates the output in a single blocking
+                    # read() call run on child threads, with the timeout
+                    # being done in a join() on those threads.  communicate()
+                    # _after_ kill() is required to collect that and add it
+                    # to the exception.
+                    exc.stdout, exc.stderr = process.communicate()
+                else:
+                    # POSIX _communicate already populated the output so
+                    # far into the TimeoutExpired exception.
+                    process.wait()
+                raise
+            except:  # Including KeyboardInterrupt, communicate handled that.
+                process.kill()
+                # We don't call process.wait() as .__exit__ does that for us.
+                raise
+            retcode = process.poll()
+            if check and retcode:
+>               raise CalledProcessError(retcode, process.args,
+                                         output=stdout, stderr=stderr)
+E               subprocess.CalledProcessError: Command '['iverilog', '-o', '/code/rundir/sim_build/sim.vvp', '-s', 'event_array', '-g2012', '-Pevent_array.NS_ROWS=16', '-Pevent_array.NS_COLS=4', '-Pevent_array.NBW_COL=2', '-Pevent_array.NBW_STR=4', '-Pevent_array.NS_EVT=16', '-Pevent_array.NBW_EVT=4', '-s', 'cocotb_iverilog_dump', '-f', '/code/rundir/sim_build/cmds.f', '/code/rtl/event_array.sv', '/code/rtl/column_selector.sv', '/code/rtl/event_storage.sv', '/code/rundir/sim_build/cocotb_iverilog_dump.v']' returned non-zero exit status 2.
+
+/usr/lib/python3.9/subprocess.py:528: CalledProcessError
+______________________________ test_data[4-4-3-2] ______________________________
+
+NBW_ROWS = 2, NBW_COLS = 3, NBW_STR = 4, NBW_EVT = 4
+
+    @pytest.mark.parametrize("NBW_ROWS", random_nbw_rows)
+    @pytest.mark.parametrize("NBW_COLS", random_nbw_cols)
+    @pytest.mark.parametrize("NBW_STR", random_nbw_str)
+    @pytest.mark.parametrize("NBW_EVT", random_nbw_evt)
+    def test_data(NBW_ROWS, NBW_COLS, NBW_STR, NBW_EVT):
+        NS_COLS = 2**NBW_COLS
+        NS_ROWS = 2**NBW_ROWS
+        NS_EVT  = 2**NBW_EVT
+        # Run the simulation with specified parameters
+>       runner(NS_ROWS=NS_ROWS, NS_COLS=NS_COLS, NBW_COL=NBW_COLS, NBW_STR=NBW_STR, NS_EVT=NS_EVT, NBW_EVT=NBW_EVT)
+
+/src/test_runner_event_array.py:60: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+/src/test_runner_event_array.py:30: in runner
+    sim_runner.build(
+/usr/local/lib/python3.9/dist-packages/cocotb_tools/runner.py:281: in build
+    self._execute(cmds, cwd=self.build_dir)
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+input = None, capture_output = False, timeout = None, check = True
+popenargs = (['iverilog', '-o', '/code/rundir/sim_build/sim.vvp', '-s', 'event_array', '-g2012', ...],)
+kwargs = {'cwd': PosixPath('/code/rundir/sim_build'), 'env': {'HASH': '1-modify-event-storage-and-create-event-array', 'HOME': ...f2', 'LC_CTYPE': 'C.UTF-8', ...}, 'stderr': -2, 'stdout': <_io.TextIOWrapper name='sim.log' mode='w' encoding='UTF-8'>}
+process = <Popen: returncode: 2 args: ['iverilog', '-o', '/code/rundir/sim_build/sim.v...>
+stdout = None, stderr = None, retcode = 2
+
+    def run(*popenargs,
+            input=None, capture_output=False, timeout=None, check=False, **kwargs):
+        """Run command with arguments and return a CompletedProcess instance.
+    
+        The returned instance will have attributes args, returncode, stdout and
+        stderr. By default, stdout and stderr are not captured, and those attributes
+        will be None. Pass stdout=PIPE and/or stderr=PIPE in order to capture them.
+    
+        If check is True and the exit code was non-zero, it raises a
+        CalledProcessError. The CalledProcessError object will have the return code
+        in the returncode attribute, and output & stderr attributes if those streams
+        were captured.
+    
+        If timeout is given, and the process takes too long, a TimeoutExpired
+        exception will be raised.
+    
+        There is an optional argument "input", allowing you to
+        pass bytes or a string to the subprocess's stdin.  If you use this argument
+        you may not also use the Popen constructor's "stdin" argument, as
+        it will be used internally.
+    
+        By default, all communication is in bytes, and therefore any "input" should
+        be bytes, and the stdout and stderr will be bytes. If in text mode, any
+        "input" should be a string, and stdout and stderr will be strings decoded
+        according to locale encoding, or by "encoding" if set. Text mode is
+        triggered by setting any of text, encoding, errors or universal_newlines.
+    
+        The other arguments are the same as for the Popen constructor.
+        """
+        if input is not None:
+            if kwargs.get('stdin') is not None:
+                raise ValueError('stdin and input arguments may not both be used.')
+            kwargs['stdin'] = PIPE
+    
+        if capture_output:
+            if kwargs.get('stdout') is not None or kwargs.get('stderr') is not None:
+                raise ValueError('stdout and stderr arguments may not be used '
+                                 'with capture_output.')
+            kwargs['stdout'] = PIPE
+            kwargs['stderr'] = PIPE
+    
+        with Popen(*popenargs, **kwargs) as process:
+            try:
+                stdout, stderr = process.communicate(input, timeout=timeout)
+            except TimeoutExpired as exc:
+                process.kill()
+                if _mswindows:
+                    # Windows accumulates the output in a single blocking
+                    # read() call run on child threads, with the timeout
+                    # being done in a join() on those threads.  communicate()
+                    # _after_ kill() is required to collect that and add it
+                    # to the exception.
+                    exc.stdout, exc.stderr = process.communicate()
+                else:
+                    # POSIX _communicate already populated the output so
+                    # far into the TimeoutExpired exception.
+                    process.wait()
+                raise
+            except:  # Including KeyboardInterrupt, communicate handled that.
+                process.kill()
+                # We don't call process.wait() as .__exit__ does that for us.
+                raise
+            retcode = process.poll()
+            if check and retcode:
+>               raise CalledProcessError(retcode, process.args,
+                                         output=stdout, stderr=stderr)
+E               subprocess.CalledProcessError: Command '['iverilog', '-o', '/code/rundir/sim_build/sim.vvp', '-s', 'event_array', '-g2012', '-Pevent_array.NS_ROWS=4', '-Pevent_array.NS_COLS=8', '-Pevent_array.NBW_COL=3', '-Pevent_array.NBW_STR=4', '-Pevent_array.NS_EVT=16', '-Pevent_array.NBW_EVT=4', '-s', 'cocotb_iverilog_dump', '-f', '/code/rundir/sim_build/cmds.f', '/code/rtl/event_array.sv', '/code/rtl/column_selector.sv', '/code/rtl/event_storage.sv', '/code/rundir/sim_build/cocotb_iverilog_dump.v']' returned non-zero exit status 2.
+
+/usr/lib/python3.9/subprocess.py:528: CalledProcessError
+______________________________ test_data[4-4-3-4] ______________________________
+
+NBW_ROWS = 4, NBW_COLS = 3, NBW_STR = 4, NBW_EVT = 4
+
+    @pytest.mark.parametrize("NBW_ROWS", random_nbw_rows)
+    @pytest.mark.parametrize("NBW_COLS", random_nbw_cols)
+    @pytest.mark.parametrize("NBW_STR", random_nbw_str)
+    @pytest.mark.parametrize("NBW_EVT", random_nbw_evt)
+    def test_data(NBW_ROWS, NBW_COLS, NBW_STR, NBW_EVT):
+        NS_COLS = 2**NBW_COLS
+        NS_ROWS = 2**NBW_ROWS
+        NS_EVT  = 2**NBW_EVT
+        # Run the simulation with specified parameters
+>       runner(NS_ROWS=NS_ROWS, NS_COLS=NS_COLS, NBW_COL=NBW_COLS, NBW_STR=NBW_STR, NS_EVT=NS_EVT, NBW_EVT=NBW_EVT)
+
+/src/test_runner_event_array.py:60: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+/src/test_runner_event_array.py:30: in runner
+    sim_runner.build(
+/usr/local/lib/python3.9/dist-packages/cocotb_tools/runner.py:281: in build
+    self._execute(cmds, cwd=self.build_dir)
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+input = None, capture_output = False, timeout = None, check = True
+popenargs = (['iverilog', '-o', '/code/rundir/sim_build/sim.vvp', '-s', 'event_array', '-g2012', ...],)
+kwargs = {'cwd': PosixPath('/code/rundir/sim_build'), 'env': {'HASH': '1-modify-event-storage-and-create-event-array', 'HOME': ...f2', 'LC_CTYPE': 'C.UTF-8', ...}, 'stderr': -2, 'stdout': <_io.TextIOWrapper name='sim.log' mode='w' encoding='UTF-8'>}
+process = <Popen: returncode: 2 args: ['iverilog', '-o', '/code/rundir/sim_build/sim.v...>
+stdout = None, stderr = None, retcode = 2
+
+    def run(*popenargs,
+            input=None, capture_output=False, timeout=None, check=False, **kwargs):
+        """Run command with arguments and return a CompletedProcess instance.
+    
+        The returned instance will have attributes args, returncode, stdout and
+        stderr. By default, stdout and stderr are not captured, and those attributes
+        will be None. Pass stdout=PIPE and/or stderr=PIPE in order to capture them.
+    
+        If check is True and the exit code was non-zero, it raises a
+        CalledProcessError. The CalledProcessError object will have the return code
+        in the returncode attribute, and output & stderr attributes if those streams
+        were captured.
+    
+        If timeout is given, and the process takes too long, a TimeoutExpired
+        exception will be raised.
+    
+        There is an optional argument "input", allowing you to
+        pass bytes or a string to the subprocess's stdin.  If you use this argument
+        you may not also use the Popen constructor's "stdin" argument, as
+        it will be used internally.
+    
+        By default, all communication is in bytes, and therefore any "input" should
+        be bytes, and the stdout and stderr will be bytes. If in text mode, any
+        "input" should be a string, and stdout and stderr will be strings decoded
+        according to locale encoding, or by "encoding" if set. Text mode is
+        triggered by setting any of text, encoding, errors or universal_newlines.
+    
+        The other arguments are the same as for the Popen constructor.
+        """
+        if input is not None:
+            if kwargs.get('stdin') is not None:
+                raise ValueError('stdin and input arguments may not both be used.')
+            kwargs['stdin'] = PIPE
+    
+        if capture_output:
+            if kwargs.get('stdout') is not None or kwargs.get('stderr') is not None:
+                raise ValueError('stdout and stderr arguments may not be used '
+                                 'with capture_output.')
+            kwargs['stdout'] = PIPE
+            kwargs['stderr'] = PIPE
+    
+        with Popen(*popenargs, **kwargs) as process:
+            try:
+                stdout, stderr = process.communicate(input, timeout=timeout)
+            except TimeoutExpired as exc:
+                process.kill()
+                if _mswindows:
+                    # Windows accumulates the output in a single blocking
+                    # read() call run on child threads, with the timeout
+                    # being done in a join() on those threads.  communicate()
+                    # _after_ kill() is required to collect that and add it
+                    # to the exception.
+                    exc.stdout, exc.stderr = process.communicate()
+                else:
+                    # POSIX _communicate already populated the output so
+                    # far into the TimeoutExpired exception.
+                    process.wait()
+                raise
+            except:  # Including KeyboardInterrupt, communicate handled that.
+                process.kill()
+                # We don't call process.wait() as .__exit__ does that for us.
+                raise
+            retcode = process.poll()
+            if check and retcode:
+>               raise CalledProcessError(retcode, process.args,
+                                         output=stdout, stderr=stderr)
+E               subprocess.CalledProcessError: Command '['iverilog', '-o', '/code/rundir/sim_build/sim.vvp', '-s', 'event_array', '-g2012', '-Pevent_array.NS_ROWS=16', '-Pevent_array.NS_COLS=8', '-Pevent_array.NBW_COL=3', '-Pevent_array.NBW_STR=4', '-Pevent_array.NS_EVT=16', '-Pevent_array.NBW_EVT=4', '-s', 'cocotb_iverilog_dump', '-f', '/code/rundir/sim_build/cmds.f', '/code/rtl/event_array.sv', '/code/rtl/column_selector.sv', '/code/rtl/event_storage.sv', '/code/rundir/sim_build/cocotb_iverilog_dump.v']' returned non-zero exit status 2.
+
+/usr/lib/python3.9/subprocess.py:528: CalledProcessError
+______________________________ test_data[4-5-2-2] ______________________________
+
+NBW_ROWS = 2, NBW_COLS = 2, NBW_STR = 5, NBW_EVT = 4
+
+    @pytest.mark.parametrize("NBW_ROWS", random_nbw_rows)
+    @pytest.mark.parametrize("NBW_COLS", random_nbw_cols)
+    @pytest.mark.parametrize("NBW_STR", random_nbw_str)
+    @pytest.mark.parametrize("NBW_EVT", random_nbw_evt)
+    def test_data(NBW_ROWS, NBW_COLS, NBW_STR, NBW_EVT):
+        NS_COLS = 2**NBW_COLS
+        NS_ROWS = 2**NBW_ROWS
+        NS_EVT  = 2**NBW_EVT
+        # Run the simulation with specified parameters
+>       runner(NS_ROWS=NS_ROWS, NS_COLS=NS_COLS, NBW_COL=NBW_COLS, NBW_STR=NBW_STR, NS_EVT=NS_EVT, NBW_EVT=NBW_EVT)
+
+/src/test_runner_event_array.py:60: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+/src/test_runner_event_array.py:30: in runner
+    sim_runner.build(
+/usr/local/lib/python3.9/dist-packages/cocotb_tools/runner.py:281: in build
+    self._execute(cmds, cwd=self.build_dir)
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+input = None, capture_output = False, timeout = None, check = True
+popenargs = (['iverilog', '-o', '/code/rundir/sim_build/sim.vvp', '-s', 'event_array', '-g2012', ...],)
+kwargs = {'cwd': PosixPath('/code/rundir/sim_build'), 'env': {'HASH': '1-modify-event-storage-and-create-event-array', 'HOME': ...f2', 'LC_CTYPE': 'C.UTF-8', ...}, 'stderr': -2, 'stdout': <_io.TextIOWrapper name='sim.log' mode='w' encoding='UTF-8'>}
+process = <Popen: returncode: 2 args: ['iverilog', '-o', '/code/rundir/sim_build/sim.v...>
+stdout = None, stderr = None, retcode = 2
+
+    def run(*popenargs,
+            input=None, capture_output=False, timeout=None, check=False, **kwargs):
+        """Run command with arguments and return a CompletedProcess instance.
+    
+        The returned instance will have attributes args, returncode, stdout and
+        stderr. By default, stdout and stderr are not captured, and those attributes
+        will be None. Pass stdout=PIPE and/or stderr=PIPE in order to capture them.
+    
+        If check is True and the exit code was non-zero, it raises a
+        CalledProcessError. The CalledProcessError object will have the return code
+        in the returncode attribute, and output & stderr attributes if those streams
+        were captured.
+    
+        If timeout is given, and the process takes too long, a TimeoutExpired
+        exception will be raised.
+    
+        There is an optional argument "input", allowing you to
+        pass bytes or a string to the subprocess's stdin.  If you use this argument
+        you may not also use the Popen constructor's "stdin" argument, as
+        it will be used internally.
+    
+        By default, all communication is in bytes, and therefore any "input" should
+        be bytes, and the stdout and stderr will be bytes. If in text mode, any
+        "input" should be a string, and stdout and stderr will be strings decoded
+        according to locale encoding, or by "encoding" if set. Text mode is
+        triggered by setting any of text, encoding, errors or universal_newlines.
+    
+        The other arguments are the same as for the Popen constructor.
+        """
+        if input is not None:
+            if kwargs.get('stdin') is not None:
+                raise ValueError('stdin and input arguments may not both be used.')
+            kwargs['stdin'] = PIPE
+    
+        if capture_output:
+            if kwargs.get('stdout') is not None or kwargs.get('stderr') is not None:
+                raise ValueError('stdout and stderr arguments may not be used '
+                                 'with capture_output.')
+            kwargs['stdout'] = PIPE
+            kwargs['stderr'] = PIPE
+    
+        with Popen(*popenargs, **kwargs) as process:
+            try:
+                stdout, stderr = process.communicate(input, timeout=timeout)
+            except TimeoutExpired as exc:
+                process.kill()
+                if _mswindows:
+                    # Windows accumulates the output in a single blocking
+                    # read() call run on child threads, with the timeout
+                    # being done in a join() on those threads.  communicate()
+                    # _after_ kill() is required to collect that and add it
+                    # to the exception.
+                    exc.stdout, exc.stderr = process.communicate()
+                else:
+                    # POSIX _communicate already populated the output so
+                    # far into the TimeoutExpired exception.
+                    process.wait()
+                raise
+            except:  # Including KeyboardInterrupt, communicate handled that.
+                process.kill()
+                # We don't call process.wait() as .__exit__ does that for us.
+                raise
+            retcode = process.poll()
+            if check and retcode:
+>               raise CalledProcessError(retcode, process.args,
+                                         output=stdout, stderr=stderr)
+E               subprocess.CalledProcessError: Command '['iverilog', '-o', '/code/rundir/sim_build/sim.vvp', '-s', 'event_array', '-g2012', '-Pevent_array.NS_ROWS=4', '-Pevent_array.NS_COLS=4', '-Pevent_array.NBW_COL=2', '-Pevent_array.NBW_STR=5', '-Pevent_array.NS_EVT=16', '-Pevent_array.NBW_EVT=4', '-s', 'cocotb_iverilog_dump', '-f', '/code/rundir/sim_build/cmds.f', '/code/rtl/event_array.sv', '/code/rtl/column_selector.sv', '/code/rtl/event_storage.sv', '/code/rundir/sim_build/cocotb_iverilog_dump.v']' returned non-zero exit status 2.
+
+/usr/lib/python3.9/subprocess.py:528: CalledProcessError
+______________________________ test_data[4-5-2-4] ______________________________
+
+NBW_ROWS = 4, NBW_COLS = 2, NBW_STR = 5, NBW_EVT = 4
+
+    @pytest.mark.parametrize("NBW_ROWS", random_nbw_rows)
+    @pytest.mark.parametrize("NBW_COLS", random_nbw_cols)
+    @pytest.mark.parametrize("NBW_STR", random_nbw_str)
+    @pytest.mark.parametrize("NBW_EVT", random_nbw_evt)
+    def test_data(NBW_ROWS, NBW_COLS, NBW_STR, NBW_EVT):
+        NS_COLS = 2**NBW_COLS
+        NS_ROWS = 2**NBW_ROWS
+        NS_EVT  = 2**NBW_EVT
+        # Run the simulation with specified parameters
+>       runner(NS_ROWS=NS_ROWS, NS_COLS=NS_COLS, NBW_COL=NBW_COLS, NBW_STR=NBW_STR, NS_EVT=NS_EVT, NBW_EVT=NBW_EVT)
+
+/src/test_runner_event_array.py:60: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+/src/test_runner_event_array.py:30: in runner
+    sim_runner.build(
+/usr/local/lib/python3.9/dist-packages/cocotb_tools/runner.py:281: in build
+    self._execute(cmds, cwd=self.build_dir)
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+input = None, capture_output = False, timeout = None, check = True
+popenargs = (['iverilog', '-o', '/code/rundir/sim_build/sim.vvp', '-s', 'event_array', '-g2012', ...],)
+kwargs = {'cwd': PosixPath('/code/rundir/sim_build'), 'env': {'HASH': '1-modify-event-storage-and-create-event-array', 'HOME': ...f2', 'LC_CTYPE': 'C.UTF-8', ...}, 'stderr': -2, 'stdout': <_io.TextIOWrapper name='sim.log' mode='w' encoding='UTF-8'>}
+process = <Popen: returncode: 2 args: ['iverilog', '-o', '/code/rundir/sim_build/sim.v...>
+stdout = None, stderr = None, retcode = 2
+
+    def run(*popenargs,
+            input=None, capture_output=False, timeout=None, check=False, **kwargs):
+        """Run command with arguments and return a CompletedProcess instance.
+    
+        The returned instance will have attributes args, returncode, stdout and
+        stderr. By default, stdout and stderr are not captured, and those attributes
+        will be None. Pass stdout=PIPE and/or stderr=PIPE in order to capture them.
+    
+        If check is True and the exit code was non-zero, it raises a
+        CalledProcessError. The CalledProcessError object will have the return code
+        in the returncode attribute, and output & stderr attributes if those streams
+        were captured.
+    
+        If timeout is given, and the process takes too long, a TimeoutExpired
+        exception will be raised.
+    
+        There is an optional argument "input", allowing you to
+        pass bytes or a string to the subprocess's stdin.  If you use this argument
+        you may not also use the Popen constructor's "stdin" argument, as
+        it will be used internally.
+    
+        By default, all communication is in bytes, and therefore any "input" should
+        be bytes, and the stdout and stderr will be bytes. If in text mode, any
+        "input" should be a string, and stdout and stderr will be strings decoded
+        according to locale encoding, or by "encoding" if set. Text mode is
+        triggered by setting any of text, encoding, errors or universal_newlines.
+    
+        The other arguments are the same as for the Popen constructor.
+        """
+        if input is not None:
+            if kwargs.get('stdin') is not None:
+                raise ValueError('stdin and input arguments may not both be used.')
+            kwargs['stdin'] = PIPE
+    
+        if capture_output:
+            if kwargs.get('stdout') is not None or kwargs.get('stderr') is not None:
+                raise ValueError('stdout and stderr arguments may not be used '
+                                 'with capture_output.')
+            kwargs['stdout'] = PIPE
+            kwargs['stderr'] = PIPE
+    
+        with Popen(*popenargs, **kwargs) as process:
+            try:
+                stdout, stderr = process.communicate(input, timeout=timeout)
+            except TimeoutExpired as exc:
+                process.kill()
+                if _mswindows:
+                    # Windows accumulates the output in a single blocking
+                    # read() call run on child threads, with the timeout
+                    # being done in a join() on those threads.  communicate()
+                    # _after_ kill() is required to collect that and add it
+                    # to the exception.
+                    exc.stdout, exc.stderr = process.communicate()
+                else:
+                    # POSIX _communicate already populated the output so
+                    # far into the TimeoutExpired exception.
+                    process.wait()
+                raise
+            except:  # Including KeyboardInterrupt, communicate handled that.
+                process.kill()
+                # We don't call process.wait() as .__exit__ does that for us.
+                raise
+            retcode = process.poll()
+            if check and retcode:
+>               raise CalledProcessError(retcode, process.args,
+                                         output=stdout, stderr=stderr)
+E               subprocess.CalledProcessError: Command '['iverilog', '-o', '/code/rundir/sim_build/sim.vvp', '-s', 'event_array', '-g2012', '-Pevent_array.NS_ROWS=16', '-Pevent_array.NS_COLS=4', '-Pevent_array.NBW_COL=2', '-Pevent_array.NBW_STR=5', '-Pevent_array.NS_EVT=16', '-Pevent_array.NBW_EVT=4', '-s', 'cocotb_iverilog_dump', '-f', '/code/rundir/sim_build/cmds.f', '/code/rtl/event_array.sv', '/code/rtl/column_selector.sv', '/code/rtl/event_storage.sv', '/code/rundir/sim_build/cocotb_iverilog_dump.v']' returned non-zero exit status 2.
+
+/usr/lib/python3.9/subprocess.py:528: CalledProcessError
+______________________________ test_data[4-5-3-2] ______________________________
+
+NBW_ROWS = 2, NBW_COLS = 3, NBW_STR = 5, NBW_EVT = 4
+
+    @pytest.mark.parametrize("NBW_ROWS", random_nbw_rows)
+    @pytest.mark.parametrize("NBW_COLS", random_nbw_cols)
+    @pytest.mark.parametrize("NBW_STR", random_nbw_str)
+    @pytest.mark.parametrize("NBW_EVT", random_nbw_evt)
+    def test_data(NBW_ROWS, NBW_COLS, NBW_STR, NBW_EVT):
+        NS_COLS = 2**NBW_COLS
+        NS_ROWS = 2**NBW_ROWS
+        NS_EVT  = 2**NBW_EVT
+        # Run the simulation with specified parameters
+>       runner(NS_ROWS=NS_ROWS, NS_COLS=NS_COLS, NBW_COL=NBW_COLS, NBW_STR=NBW_STR, NS_EVT=NS_EVT, NBW_EVT=NBW_EVT)
+
+/src/test_runner_event_array.py:60: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+/src/test_runner_event_array.py:30: in runner
+    sim_runner.build(
+/usr/local/lib/python3.9/dist-packages/cocotb_tools/runner.py:281: in build
+    self._execute(cmds, cwd=self.build_dir)
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+input = None, capture_output = False, timeout = None, check = True
+popenargs = (['iverilog', '-o', '/code/rundir/sim_build/sim.vvp', '-s', 'event_array', '-g2012', ...],)
+kwargs = {'cwd': PosixPath('/code/rundir/sim_build'), 'env': {'HASH': '1-modify-event-storage-and-create-event-array', 'HOME': ...f2', 'LC_CTYPE': 'C.UTF-8', ...}, 'stderr': -2, 'stdout': <_io.TextIOWrapper name='sim.log' mode='w' encoding='UTF-8'>}
+process = <Popen: returncode: 2 args: ['iverilog', '-o', '/code/rundir/sim_build/sim.v...>
+stdout = None, stderr = None, retcode = 2
+
+    def run(*popenargs,
+            input=None, capture_output=False, timeout=None, check=False, **kwargs):
+        """Run command with arguments and return a CompletedProcess instance.
+    
+        The returned instance will have attributes args, returncode, stdout and
+        stderr. By default, stdout and stderr are not captured, and those attributes
+        will be None. Pass stdout=PIPE and/or stderr=PIPE in order to capture them.
+    
+        If check is True and the exit code was non-zero, it raises a
+        CalledProcessError. The CalledProcessError object will have the return code
+        in the returncode attribute, and output & stderr attributes if those streams
+        were captured.
+    
+        If timeout is given, and the process takes too long, a TimeoutExpired
+        exception will be raised.
+    
+        There is an optional argument "input", allowing you to
+        pass bytes or a string to the subprocess's stdin.  If you use this argument
+        you may not also use the Popen constructor's "stdin" argument, as
+        it will be used internally.
+    
+        By default, all communication is in bytes, and therefore any "input" should
+        be bytes, and the stdout and stderr will be bytes. If in text mode, any
+        "input" should be a string, and stdout and stderr will be strings decoded
+        according to locale encoding, or by "encoding" if set. Text mode is
+        triggered by setting any of text, encoding, errors or universal_newlines.
+    
+        The other arguments are the same as for the Popen constructor.
+        """
+        if input is not None:
+            if kwargs.get('stdin') is not None:
+                raise ValueError('stdin and input arguments may not both be used.')
+            kwargs['stdin'] = PIPE
+    
+        if capture_output:
+            if kwargs.get('stdout') is not None or kwargs.get('stderr') is not None:
+                raise ValueError('stdout and stderr arguments may not be used '
+                                 'with capture_output.')
+            kwargs['stdout'] = PIPE
+            kwargs['stderr'] = PIPE
+    
+        with Popen(*popenargs, **kwargs) as process:
+            try:
+                stdout, stderr = process.communicate(input, timeout=timeout)
+            except TimeoutExpired as exc:
+                process.kill()
+                if _mswindows:
+                    # Windows accumulates the output in a single blocking
+                    # read() call run on child threads, with the timeout
+                    # being done in a join() on those threads.  communicate()
+                    # _after_ kill() is required to collect that and add it
+                    # to the exception.
+                    exc.stdout, exc.stderr = process.communicate()
+                else:
+                    # POSIX _communicate already populated the output so
+                    # far into the TimeoutExpired exception.
+                    process.wait()
+                raise
+            except:  # Including KeyboardInterrupt, communicate handled that.
+                process.kill()
+                # We don't call process.wait() as .__exit__ does that for us.
+                raise
+            retcode = process.poll()
+            if check and retcode:
+>               raise CalledProcessError(retcode, process.args,
+                                         output=stdout, stderr=stderr)
+E               subprocess.CalledProcessError: Command '['iverilog', '-o', '/code/rundir/sim_build/sim.vvp', '-s', 'event_array', '-g2012', '-Pevent_array.NS_ROWS=4', '-Pevent_array.NS_COLS=8', '-Pevent_array.NBW_COL=3', '-Pevent_array.NBW_STR=5', '-Pevent_array.NS_EVT=16', '-Pevent_array.NBW_EVT=4', '-s', 'cocotb_iverilog_dump', '-f', '/code/rundir/sim_build/cmds.f', '/code/rtl/event_array.sv', '/code/rtl/column_selector.sv', '/code/rtl/event_storage.sv', '/code/rundir/sim_build/cocotb_iverilog_dump.v']' returned non-zero exit status 2.
+
+/usr/lib/python3.9/subprocess.py:528: CalledProcessError
+______________________________ test_data[4-5-3-4] ______________________________
+
+NBW_ROWS = 4, NBW_COLS = 3, NBW_STR = 5, NBW_EVT = 4
+
+    @pytest.mark.parametrize("NBW_ROWS", random_nbw_rows)
+    @pytest.mark.parametrize("NBW_COLS", random_nbw_cols)
+    @pytest.mark.parametrize("NBW_STR", random_nbw_str)
+    @pytest.mark.parametrize("NBW_EVT", random_nbw_evt)
+    def test_data(NBW_ROWS, NBW_COLS, NBW_STR, NBW_EVT):
+        NS_COLS = 2**NBW_COLS
+        NS_ROWS = 2**NBW_ROWS
+        NS_EVT  = 2**NBW_EVT
+        # Run the simulation with specified parameters
+>       runner(NS_ROWS=NS_ROWS, NS_COLS=NS_COLS, NBW_COL=NBW_COLS, NBW_STR=NBW_STR, NS_EVT=NS_EVT, NBW_EVT=NBW_EVT)
+
+/src/test_runner_event_array.py:60: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+/src/test_runner_event_array.py:30: in runner
+    sim_runner.build(
+/usr/local/lib/python3.9/dist-packages/cocotb_tools/runner.py:281: in build
+    self._execute(cmds, cwd=self.build_dir)
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+input = None, capture_output = False, timeout = None, check = True
+popenargs = (['iverilog', '-o', '/code/rundir/sim_build/sim.vvp', '-s', 'event_array', '-g2012', ...],)
+kwargs = {'cwd': PosixPath('/code/rundir/sim_build'), 'env': {'HASH': '1-modify-event-storage-and-create-event-array', 'HOME': ...f2', 'LC_CTYPE': 'C.UTF-8', ...}, 'stderr': -2, 'stdout': <_io.TextIOWrapper name='sim.log' mode='w' encoding='UTF-8'>}
+process = <Popen: returncode: 2 args: ['iverilog', '-o', '/code/rundir/sim_build/sim.v...>
+stdout = None, stderr = None, retcode = 2
+
+    def run(*popenargs,
+            input=None, capture_output=False, timeout=None, check=False, **kwargs):
+        """Run command with arguments and return a CompletedProcess instance.
+    
+        The returned instance will have attributes args, returncode, stdout and
+        stderr. By default, stdout and stderr are not captured, and those attributes
+        will be None. Pass stdout=PIPE and/or stderr=PIPE in order to capture them.
+    
+        If check is True and the exit code was non-zero, it raises a
+        CalledProcessError. The CalledProcessError object will have the return code
+        in the returncode attribute, and output & stderr attributes if those streams
+        were captured.
+    
+        If timeout is given, and the process takes too long, a TimeoutExpired
+        exception will be raised.
+    
+        There is an optional argument "input", allowing you to
+        pass bytes or a string to the subprocess's stdin.  If you use this argument
+        you may not also use the Popen constructor's "stdin" argument, as
+        it will be used internally.
+    
+        By default, all communication is in bytes, and therefore any "input" should
+        be bytes, and the stdout and stderr will be bytes. If in text mode, any
+        "input" should be a string, and stdout and stderr will be strings decoded
+        according to locale encoding, or by "encoding" if set. Text mode is
+        triggered by setting any of text, encoding, errors or universal_newlines.
+    
+        The other arguments are the same as for the Popen constructor.
+        """
+        if input is not None:
+            if kwargs.get('stdin') is not None:
+                raise ValueError('stdin and input arguments may not both be used.')
+            kwargs['stdin'] = PIPE
+    
+        if capture_output:
+            if kwargs.get('stdout') is not None or kwargs.get('stderr') is not None:
+                raise ValueError('stdout and stderr arguments may not be used '
+                                 'with capture_output.')
+            kwargs['stdout'] = PIPE
+            kwargs['stderr'] = PIPE
+    
+        with Popen(*popenargs, **kwargs) as process:
+            try:
+                stdout, stderr = process.communicate(input, timeout=timeout)
+            except TimeoutExpired as exc:
+                process.kill()
+                if _mswindows:
+                    # Windows accumulates the output in a single blocking
+                    # read() call run on child threads, with the timeout
+                    # being done in a join() on those threads.  communicate()
+                    # _after_ kill() is required to collect that and add it
+                    # to the exception.
+                    exc.stdout, exc.stderr = process.communicate()
+                else:
+                    # POSIX _communicate already populated the output so
+                    # far into the TimeoutExpired exception.
+                    process.wait()
+                raise
+            except:  # Including KeyboardInterrupt, communicate handled that.
+                process.kill()
+                # We don't call process.wait() as .__exit__ does that for us.
+                raise
+            retcode = process.poll()
+            if check and retcode:
+>               raise CalledProcessError(retcode, process.args,
+                                         output=stdout, stderr=stderr)
+E               subprocess.CalledProcessError: Command '['iverilog', '-o', '/code/rundir/sim_build/sim.vvp', '-s', 'event_array', '-g2012', '-Pevent_array.NS_ROWS=16', '-Pevent_array.NS_COLS=8', '-Pevent_array.NBW_COL=3', '-Pevent_array.NBW_STR=5', '-Pevent_array.NS_EVT=16', '-Pevent_array.NBW_EVT=4', '-s', 'cocotb_iverilog_dump', '-f', '/code/rundir/sim_build/cmds.f', '/code/rtl/event_array.sv', '/code/rtl/column_selector.sv', '/code/rtl/event_storage.sv', '/code/rundir/sim_build/cocotb_iverilog_dump.v']' returned non-zero exit status 2.
+
+/usr/lib/python3.9/subprocess.py:528: CalledProcessError
+=========================== short test summary info ============================
+FAILED ../../src/test_runner_event_array.py::test_data[2-4-2-2] - subprocess....
+FAILED ../../src/test_runner_event_array.py::test_data[2-4-2-4] - subprocess....
+FAILED ../../src/test_runner_event_array.py::test_data[2-4-3-2] - subprocess....
+FAILED ../../src/test_runner_event_array.py::test_data[2-4-3-4] - subprocess....
+FAILED ../../src/test_runner_event_array.py::test_data[2-5-2-2] - subprocess....
+FAILED ../../src/test_runner_event_array.py::test_data[2-5-2-4] - subprocess....
+FAILED ../../src/test_runner_event_array.py::test_data[2-5-3-2] - subprocess....
+FAILED ../../src/test_runner_event_array.py::test_data[2-5-3-4] - subprocess....
+FAILED ../../src/test_runner_event_array.py::test_data[4-4-2-2] - subprocess....
+FAILED ../../src/test_runner_event_array.py::test_data[4-4-2-4] - subprocess....
+FAILED ../../src/test_runner_event_array.py::test_data[4-4-3-2] - subprocess....
+FAILED ../../src/test_runner_event_array.py::test_data[4-4-3-4] - subprocess....
+FAILED ../../src/test_runner_event_array.py::test_data[4-5-2-2] - subprocess....
+FAILED ../../src/test_runner_event_array.py::test_data[4-5-2-4] - subprocess....
+FAILED ../../src/test_runner_event_array.py::test_data[4-5-3-2] - subprocess....
+FAILED ../../src/test_runner_event_array.py::test_data[4-5-3-4] - subprocess....
+============================== 16 failed in 0.65s ==============================
+Running service: storage_sanity
+============================= test session starts ==============================
+platform linux -- Python 3.9.2, pytest-8.3.2, pluggy-1.5.0 -- /usr/bin/python3
+cachedir: /rundir/harness/.cache
+rootdir: /src
+collecting ... collected 4 items
+
+../../src/test_runner_event_storage.py::test_data[2-4]      -.--ns INFO     gpi                                ..mbed/gpi_embed.cpp:79   in set_program_name_in_venv        Did not detect Python virtual environment. Using system-wide Python interpreter
+     -.--ns INFO     gpi                                ../gpi/GpiCommon.cpp:101  in gpi_print_registered_impl       VPI registered
+     0.00ns INFO     cocotb                             Running on Icarus Verilog version 13.0 (devel)
+     0.00ns INFO     cocotb                             Running tests with cocotb v2.0.0.dev0+8d6c1a63 from /usr/local/lib/python3.9/dist-packages/cocotb
+     0.00ns INFO     cocotb                             Seeding Python random module with 1773275891
+     0.00ns INFO     cocotb.regression                  running test_event_storage.test_event_storage (1/1)
+                                                            Test the event_storage module with edge cases and random data.
+     0.00ns WARNING  gpi                                VPI: Not able to map type vpiNamedBegin(33) to object.
+     0.00ns WARNING  gpi                                Unable to create output_assignment via any registered implementation
+  1670.00ns INFO     cocotb.regression                  test_event_storage.test_event_storage passed
+  1670.00ns INFO     cocotb.regression                  ***********************************************************************************************
+                                                        ** TEST                                   STATUS  SIM TIME (ns)  REAL TIME (s)  RATIO (ns/s) **
+                                                        ***********************************************************************************************
+                                                        ** test_event_storage.test_event_storage   PASS        1670.00           0.02      75249.91  **
+                                                        ***********************************************************************************************
+                                                        ** TESTS=1 PASS=1 FAIL=0 SKIP=0                        1670.00           0.03      62173.14  **
+                                                        ***********************************************************************************************
+                                                        
+FST info: dumpfile /code/rundir/sim_build/event_storage.fst opened for output.
+[DEBUG] Parameters: {'NBW_STR': 4, 'NS_EVT': 4, 'NBW_EVT': 2}
+PASSED
+../../src/test_runner_event_storage.py::test_data[2-8]      -.--ns INFO     gpi                                ..mbed/gpi_embed.cpp:79   in set_program_name_in_venv        Did not detect Python virtual environment. Using system-wide Python interpreter
+     -.--ns INFO     gpi                                ../gpi/GpiCommon.cpp:101  in gpi_print_registered_impl       VPI registered
+     0.00ns INFO     cocotb                             Running on Icarus Verilog version 13.0 (devel)
+     0.00ns INFO     cocotb                             Running tests with cocotb v2.0.0.dev0+8d6c1a63 from /usr/local/lib/python3.9/dist-packages/cocotb
+     0.00ns INFO     cocotb                             Seeding Python random module with 1773275891
+     0.00ns INFO     cocotb.regression                  running test_event_storage.test_event_storage (1/1)
+                                                            Test the event_storage module with edge cases and random data.
+     0.00ns WARNING  gpi                                VPI: Not able to map type vpiNamedBegin(33) to object.
+     0.00ns WARNING  gpi                                Unable to create output_assignment via any registered implementation
+  5130.00ns INFO     cocotb.regression                  test_event_storage.test_event_storage failed
+                                                        Traceback (most recent call last):
+                                                          File "/src/test_event_storage.py", line 88, in test_event_storage
+                                                            dut.i_data.value        = data
+                                                          File "/usr/local/lib/python3.9/dist-packages/cocotb/handle.py", line 986, in value
+                                                            self.set(value)
+                                                          File "/usr/local/lib/python3.9/dist-packages/cocotb/handle.py", line 700, in set
+                                                            self._set_value(value_, action, _inertial_write)
+                                                          File "/usr/local/lib/python3.9/dist-packages/cocotb/handle.py", line 923, in _set_value
+                                                            raise OverflowError(
+                                                        OverflowError: Int value (30) out of range for assignment of 4-bit signal ('i_data')
+  5130.00ns INFO     cocotb.regression                  ***********************************************************************************************
+                                                        ** TEST                                   STATUS  SIM TIME (ns)  REAL TIME (s)  RATIO (ns/s) **
+                                                        ***********************************************************************************************
+                                                        ** test_event_storage.test_event_storage   FAIL        5130.00           0.06      86393.34  **
+                                                        ***********************************************************************************************
+                                                        ** TESTS=1 PASS=0 FAIL=1 SKIP=0                        5130.00           0.07      78059.47  **
+                                                        ***********************************************************************************************
+                                                        
+FST info: dumpfile /code/rundir/sim_build/event_storage.fst opened for output.
+[DEBUG] Parameters: {'NBW_STR': 8, 'NS_EVT': 4, 'NBW_EVT': 2}
+FAILED
+../../src/test_runner_event_storage.py::test_data[5-4]      -.--ns INFO     gpi                                ..mbed/gpi_embed.cpp:79   in set_program_name_in_venv        Did not detect Python virtual environment. Using system-wide Python interpreter
+     -.--ns INFO     gpi                                ../gpi/GpiCommon.cpp:101  in gpi_print_registered_impl       VPI registered
+     0.00ns INFO     cocotb                             Running on Icarus Verilog version 13.0 (devel)
+     0.00ns INFO     cocotb                             Running tests with cocotb v2.0.0.dev0+8d6c1a63 from /usr/local/lib/python3.9/dist-packages/cocotb
+     0.00ns INFO     cocotb                             Seeding Python random module with 1773275891
+     0.00ns INFO     cocotb.regression                  running test_event_storage.test_event_storage (1/1)
+                                                            Test the event_storage module with edge cases and random data.
+     0.00ns WARNING  gpi                                VPI: Not able to map type vpiNamedBegin(33) to object.
+     0.00ns WARNING  gpi                                Unable to create output_assignment via any registered implementation
+    10.00ns INFO     cocotb.regression                  test_event_storage.test_event_storage failed
+                                                        Traceback (most recent call last):
+                                                          File "/src/test_event_storage.py", line 75, in test_event_storage
+                                                            dut.i_event.value       = event
+                                                          File "/usr/local/lib/python3.9/dist-packages/cocotb/handle.py", line 986, in value
+                                                            self.set(value)
+                                                          File "/usr/local/lib/python3.9/dist-packages/cocotb/handle.py", line 700, in set
+                                                            self._set_value(value_, action, _inertial_write)
+                                                          File "/usr/local/lib/python3.9/dist-packages/cocotb/handle.py", line 923, in _set_value
+                                                            raise OverflowError(
+                                                        OverflowError: Int value (4033214126) out of range for assignment of 4-bit signal ('i_event')
+    10.00ns INFO     cocotb.regression                  ***********************************************************************************************
+                                                        ** TEST                                   STATUS  SIM TIME (ns)  REAL TIME (s)  RATIO (ns/s) **
+                                                        ***********************************************************************************************
+                                                        ** test_event_storage.test_event_storage   FAIL          10.00           0.00       8927.85  **
+                                                        ***********************************************************************************************
+                                                        ** TESTS=1 PASS=0 FAIL=1 SKIP=0                          10.00           0.01       1680.28  **
+                                                        ***********************************************************************************************
+                                                        
+FST info: dumpfile /code/rundir/sim_build/event_storage.fst opened for output.
+[DEBUG] Parameters: {'NBW_STR': 4, 'NS_EVT': 32, 'NBW_EVT': 5}
+FAILED
+../../src/test_runner_event_storage.py::test_data[5-8]      -.--ns INFO     gpi                                ..mbed/gpi_embed.cpp:79   in set_program_name_in_venv        Did not detect Python virtual environment. Using system-wide Python interpreter
+     -.--ns INFO     gpi                                ../gpi/GpiCommon.cpp:101  in gpi_print_registered_impl       VPI registered
+     0.00ns INFO     cocotb                             Running on Icarus Verilog version 13.0 (devel)
+     0.00ns INFO     cocotb                             Running tests with cocotb v2.0.0.dev0+8d6c1a63 from /usr/local/lib/python3.9/dist-packages/cocotb
+     0.00ns INFO     cocotb                             Seeding Python random module with 1773275891
+     0.00ns INFO     cocotb.regression                  running test_event_storage.test_event_storage (1/1)
+                                                            Test the event_storage module with edge cases and random data.
+     0.00ns WARNING  gpi                                VPI: Not able to map type vpiNamedBegin(33) to object.
+     0.00ns WARNING  gpi                                Unable to create output_assignment via any registered implementation
+    10.00ns INFO     cocotb.regression                  test_event_storage.test_event_storage failed
+                                                        Traceback (most recent call last):
+                                                          File "/src/test_event_storage.py", line 75, in test_event_storage
+                                                            dut.i_event.value       = event
+                                                          File "/usr/local/lib/python3.9/dist-packages/cocotb/handle.py", line 986, in value
+                                                            self.set(value)
+                                                          File "/usr/local/lib/python3.9/dist-packages/cocotb/handle.py", line 700, in set
+                                                            self._set_value(value_, action, _inertial_write)
+                                                          File "/usr/local/lib/python3.9/dist-packages/cocotb/handle.py", line 923, in _set_value
+                                                            raise OverflowError(
+                                                        OverflowError: Int value (4033214126) out of range for assignment of 4-bit signal ('i_event')
+    10.00ns INFO     cocotb.regression                  ***********************************************************************************************
+                                                        ** TEST                                   STATUS  SIM TIME (ns)  REAL TIME (s)  RATIO (ns/s) **
+                                                        ***********************************************************************************************
+                                                        ** test_event_storage.test_event_storage   FAIL          10.00           0.00       9131.95  **
+                                                        ***********************************************************************************************
+                                                        ** TESTS=1 PASS=0 FAIL=1 SKIP=0                          10.00           0.01       1710.36  **
+                                                        ***********************************************************************************************
+                                                        
+FST info: dumpfile /code/rundir/sim_build/event_storage.fst opened for output.
+[DEBUG] Parameters: {'NBW_STR': 8, 'NS_EVT': 32, 'NBW_EVT': 5}
+FAILED
+
+=================================== FAILURES ===================================
+________________________________ test_data[2-8] ________________________________
+
+NBW_STR = 8, NBW_EVT = 2
+
+    @pytest.mark.parametrize("NBW_STR", random_nbw_str)
+    @pytest.mark.parametrize("NBW_EVT", random_nbw_evt)
+    def test_data(NBW_STR, NBW_EVT):
+        NS_EVT  = 2**NBW_EVT
+        # Run the simulation with specified parameters
+>       runner(NBW_STR=NBW_STR, NS_EVT=NS_EVT, NBW_EVT=NBW_EVT)
+
+/src/test_runner_event_storage.py:51: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+NBW_STR = 8, NS_EVT = 4, NBW_EVT = 2
+
+    def runner(NBW_STR: int = 8, NS_EVT: int = 8, NBW_EVT: int = 3):
+    
+        parameter = {
+            "NBW_STR": NBW_STR,
+            "NS_EVT": NS_EVT,
+            "NBW_EVT": NBW_EVT
+        }
+    
+        print(f"[DEBUG] Parameters: {parameter}")
+    
+        # Configure and run the simulation
+        sim_runner = get_runner(sim)
+        sim_runner.build(
+            sources=verilog_sources,
+            hdl_toplevel=toplevel,
+            parameters=parameter,
+            always=True,
+            clean=True,
+            waves=wave,
+            verbose=True,
+            timescale=("1ns", "1ns"),
+            log_file="sim.log"
+        )
+    
+        # Run the test
+>       sim_runner.test(hdl_toplevel=toplevel, test_module=module, waves=True)
+E       SystemExit: ERROR: Failed 1 of 1 tests.
+
+/src/test_runner_event_storage.py:40: SystemExit
+________________________________ test_data[5-4] ________________________________
+
+NBW_STR = 4, NBW_EVT = 5
+
+    @pytest.mark.parametrize("NBW_STR", random_nbw_str)
+    @pytest.mark.parametrize("NBW_EVT", random_nbw_evt)
+    def test_data(NBW_STR, NBW_EVT):
+        NS_EVT  = 2**NBW_EVT
+        # Run the simulation with specified parameters
+>       runner(NBW_STR=NBW_STR, NS_EVT=NS_EVT, NBW_EVT=NBW_EVT)
+
+/src/test_runner_event_storage.py:51: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+NBW_STR = 4, NS_EVT = 32, NBW_EVT = 5
+
+    def runner(NBW_STR: int = 8, NS_EVT: int = 8, NBW_EVT: int = 3):
+    
+        parameter = {
+            "NBW_STR": NBW_STR,
+            "NS_EVT": NS_EVT,
+            "NBW_EVT": NBW_EVT
+        }
+    
+        print(f"[DEBUG] Parameters: {parameter}")
+    
+        # Configure and run the simulation
+        sim_runner = get_runner(sim)
+        sim_runner.build(
+            sources=verilog_sources,
+            hdl_toplevel=toplevel,
+            parameters=parameter,
+            always=True,
+            clean=True,
+            waves=wave,
+            verbose=True,
+            timescale=("1ns", "1ns"),
+            log_file="sim.log"
+        )
+    
+        # Run the test
+>       sim_runner.test(hdl_toplevel=toplevel, test_module=module, waves=True)
+E       SystemExit: ERROR: Failed 1 of 1 tests.
+
+/src/test_runner_event_storage.py:40: SystemExit
+________________________________ test_data[5-8] ________________________________
+
+NBW_STR = 8, NBW_EVT = 5
+
+    @pytest.mark.parametrize("NBW_STR", random_nbw_str)
+    @pytest.mark.parametrize("NBW_EVT", random_nbw_evt)
+    def test_data(NBW_STR, NBW_EVT):
+        NS_EVT  = 2**NBW_EVT
+        # Run the simulation with specified parameters
+>       runner(NBW_STR=NBW_STR, NS_EVT=NS_EVT, NBW_EVT=NBW_EVT)
+
+/src/test_runner_event_storage.py:51: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+NBW_STR = 8, NS_EVT = 32, NBW_EVT = 5
+
+    def runner(NBW_STR: int = 8, NS_EVT: int = 8, NBW_EVT: int = 3):
+    
+        parameter = {
+            "NBW_STR": NBW_STR,
+            "NS_EVT": NS_EVT,
+            "NBW_EVT": NBW_EVT
+        }
+    
+        print(f"[DEBUG] Parameters: {parameter}")
+    
+        # Configure and run the simulation
+        sim_runner = get_runner(sim)
+        sim_runner.build(
+            sources=verilog_sources,
+            hdl_toplevel=toplevel,
+            parameters=parameter,
+            always=True,
+            clean=True,
+            waves=wave,
+            verbose=True,
+            timescale=("1ns", "1ns"),
+            log_file="sim.log"
+        )
+    
+        # Run the test
+>       sim_runner.test(hdl_toplevel=toplevel, test_module=module, waves=True)
+E       SystemExit: ERROR: Failed 1 of 1 tests.
+
+/src/test_runner_event_storage.py:40: SystemExit
+=========================== short test summary info ============================
+FAILED ../../src/test_runner_event_storage.py::test_data[2-8] - SystemExit: E...
+FAILED ../../src/test_runner_event_storage.py::test_data[5-4] - SystemExit: E...
+FAILED ../../src/test_runner_event_storage.py::test_data[5-8] - SystemExit: E...
+========================= 3 failed, 1 passed in 0.78s ==========================

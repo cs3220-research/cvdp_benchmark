@@ -1,0 +1,40 @@
+Running service: 04-new-tb
+============================= test session starts ==============================
+platform linux -- Python 3.9.2, pytest-8.3.2, pluggy-1.5.0 -- /usr/bin/python3
+cachedir: /rundir/harness/.cache
+rootdir: /src
+collecting ... collected 1 item
+
+../../src/test_runner.py::test_runner      -.--ns INFO     gpi                                ..mbed/gpi_embed.cpp:79   in set_program_name_in_venv        Did not detect Python virtual environment. Using system-wide Python interpreter
+     -.--ns INFO     gpi                                ../gpi/GpiCommon.cpp:101  in gpi_print_registered_impl       VPI registered
+     0.00ns INFO     cocotb                             Running on Icarus Verilog version 13.0 (devel)
+     0.00ns INFO     cocotb                             Running tests with cocotb v2.0.0.dev0+8d6c1a63 from /usr/local/lib/python3.9/dist-packages/cocotb
+     0.00ns INFO     cocotb                             Seeding Python random module with 1773328722
+     0.00ns INFO     cocotb.regression                  running test_dual_port_memory.test_dual_port_ecc_ram (1/1)
+                                                            ECC-enabled Dual-Port RAM test including error injection 
+    20.00ns INFO     cocotb.dual_port_memory            Wrote 6 at address 4
+    40.00ns INFO     cocotb.dual_port_memory            Read from 4: got 6, expected 6, ECC error = 0
+    60.00ns INFO     cocotb.dual_port_memory            Wrote 4 at address 0
+    80.00ns INFO     cocotb.dual_port_memory            Read from 0: got 4, expected 4, ECC error = 0
+   100.00ns INFO     cocotb.dual_port_memory            Wrote 5 at address 26
+   120.00ns INFO     cocotb.dual_port_memory            Read from 26: got 5, expected 5, ECC error = 0
+   140.00ns INFO     cocotb.dual_port_memory            Wrote 1 at address 12
+   160.00ns INFO     cocotb.dual_port_memory            Read from 12: got 1, expected 1, ECC error = 0
+   180.00ns INFO     cocotb.dual_port_memory            Wrote 1 at address 15
+   200.00ns INFO     cocotb.dual_port_memory            Read from 15: got 1, expected 1, ECC error = 0
+   220.00ns INFO     cocotb.dual_port_memory            Wrote 10 at address 3
+   240.00ns INFO     cocotb.dual_port_memory            [ECC Check] Read 11 from addr 3, ECC error = 1
+   240.00ns INFO     cocotb.dual_port_memory            ECC error expected. Data read = 11, original = 10
+   240.00ns INFO     cocotb.regression                  test_dual_port_memory.test_dual_port_ecc_ram passed
+   240.00ns INFO     cocotb.regression                  ******************************************************************************************************
+                                                        ** TEST                                          STATUS  SIM TIME (ns)  REAL TIME (s)  RATIO (ns/s) **
+                                                        ******************************************************************************************************
+                                                        ** test_dual_port_memory.test_dual_port_ecc_ram   PASS         240.00           0.00      59092.04  **
+                                                        ******************************************************************************************************
+                                                        ** TESTS=1 PASS=1 FAIL=0 SKIP=0                                240.00           0.01      21930.05  **
+                                                        ******************************************************************************************************
+                                                        
+FST info: dumpfile /code/rundir/sim_build/dual_port_memory.fst opened for output.
+PASSED
+
+============================== 1 passed in 0.21s ===============================

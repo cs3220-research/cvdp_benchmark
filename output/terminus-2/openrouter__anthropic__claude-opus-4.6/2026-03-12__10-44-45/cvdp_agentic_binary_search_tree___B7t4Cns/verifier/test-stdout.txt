@@ -1,0 +1,349 @@
+Running service: tb
+============================= test session starts ==============================
+platform linux -- Python 3.9.2, pytest-8.3.2, pluggy-1.5.0 -- /usr/bin/python3
+cachedir: /rundir/harness/.cache
+rootdir: /src
+collecting ... collected 9 items
+
+../../src/test_runner.py::test_bst[5-6]      -.--ns INFO     gpi                                ..mbed/gpi_embed.cpp:79   in set_program_name_in_venv        Did not detect Python virtual environment. Using system-wide Python interpreter
+     -.--ns INFO     gpi                                ../gpi/GpiCommon.cpp:101  in gpi_print_registered_impl       VPI registered
+     0.00ns INFO     cocotb                             Running on Icarus Verilog version 13.0 (devel)
+     0.00ns INFO     cocotb                             Running tests with cocotb v2.0.0.dev0+8d6c1a63 from /usr/local/lib/python3.9/dist-packages/cocotb
+     0.00ns INFO     cocotb                             Seeding Python random module with 1773328843
+     0.00ns INFO     cocotb.regression                  running test_delete_node_binary_search_tree.test_search_bst (1/1)
+                                                            Cocotb testbench for the search_binary_search_tree module.
+delete_invalid 1
+keys [1, 20, 0, 61, 5]
+left_child [2, 4, 15, 15, 15]
+right_child [1, 3, 15, 15, 15]
+----------------------------Test case 2: Random key-----------------------------------
+key_value  1
+delete_invalid  0
+expected keys [5, 20, 0, 61, 63]
+expected left [2, 15, 15, 15, 15]
+expected right [1, 3, 15, 15, 15]
+actual keys [5, 20, 0, 61, 63]
+actual left [2, 15, 15, 15, 15]
+actual right [1, 3, 15, 15, 15]
+---------------------------Test case 3: not in key-----------------------------------------
+key_value  63
+delete_invalid  1
+expected keys [5, 20, 0, 61, 63]
+expected left [2, 15, 15, 15, 15]
+expected right [1, 3, 15, 15, 15]
+actual keys [63, 63, 63, 63, 63]
+actual left [15, 15, 15, 15, 15]
+actual right [15, 15, 15, 15, 15]
+-------------------------------Test case 4: Smallest key-----------------------------
+key_value  0
+delete_invalid  0
+expected keys [1, 20, 63, 61, 5]
+expected left [15, 4, 15, 15, 15]
+expected right [1, 3, 15, 15, 15]
+actual keys [1, 20, 63, 61, 5]
+actual left [15, 4, 15, 15, 15]
+actual right [1, 3, 15, 15, 15]
+---------------------------Test case 5: Largest key-----------------------------------------
+key_value  61
+delete_invalid  0
+expected keys [1, 20, 0, 63, 5]
+expected left [2, 4, 15, 15, 15]
+expected right [1, 15, 15, 15, 15]
+actual keys [1, 20, 0, 63, 5]
+actual left [2, 4, 15, 15, 15]
+actual right [1, 15, 15, 15, 15]
+   570.00ns INFO     cocotb                             ---------------------------------All test cases passed!-------------------------------------
+   570.00ns INFO     cocotb.regression                  test_delete_node_binary_search_tree.test_search_bst passed
+   570.00ns INFO     cocotb.regression                  *************************************************************************************************************
+                                                        ** TEST                                                 STATUS  SIM TIME (ns)  REAL TIME (s)  RATIO (ns/s) **
+                                                        *************************************************************************************************************
+                                                        ** test_delete_node_binary_search_tree.test_search_bst   PASS         570.00           0.01      82707.86  **
+                                                        *************************************************************************************************************
+                                                        ** TESTS=1 PASS=1 FAIL=0 SKIP=0                                       570.00           0.02      27757.50  **
+                                                        *************************************************************************************************************
+                                                        
+VCD info: dumpfile /code/rundir/sim_build/delete_node_binary_search_tree.fst opened for output.
+Running with: DATA_WIDTH = 6, ARRAY_SIZE = 5
+PASSED
+../../src/test_runner.py::test_bst[5-16]      -.--ns INFO     gpi                                ..mbed/gpi_embed.cpp:79   in set_program_name_in_venv        Did not detect Python virtual environment. Using system-wide Python interpreter
+     -.--ns INFO     gpi                                ../gpi/GpiCommon.cpp:101  in gpi_print_registered_impl       VPI registered
+     0.00ns INFO     cocotb                             Running on Icarus Verilog version 13.0 (devel)
+     0.00ns INFO     cocotb                             Running tests with cocotb v2.0.0.dev0+8d6c1a63 from /usr/local/lib/python3.9/dist-packages/cocotb
+     0.00ns INFO     cocotb                             Seeding Python random module with 1773328843
+     0.00ns INFO     cocotb.regression                  running test_delete_node_binary_search_tree.test_search_bst (1/1)
+                                                            Cocotb testbench for the search_binary_search_tree module.
+delete_invalid 1
+   100.00ns INFO     cocotb.regression                  test_delete_node_binary_search_tree.test_search_bst passed
+   100.00ns INFO     cocotb.regression                  *************************************************************************************************************
+                                                        ** TEST                                                 STATUS  SIM TIME (ns)  REAL TIME (s)  RATIO (ns/s) **
+                                                        *************************************************************************************************************
+                                                        ** test_delete_node_binary_search_tree.test_search_bst   PASS         100.00           0.00      55760.49  **
+                                                        *************************************************************************************************************
+                                                        ** TESTS=1 PASS=1 FAIL=0 SKIP=0                                       100.00           0.01       6954.46  **
+                                                        *************************************************************************************************************
+                                                        
+VCD info: dumpfile /code/rundir/sim_build/delete_node_binary_search_tree.fst opened for output.
+Running with: DATA_WIDTH = 16, ARRAY_SIZE = 5
+PASSED
+../../src/test_runner.py::test_bst[5-32]      -.--ns INFO     gpi                                ..mbed/gpi_embed.cpp:79   in set_program_name_in_venv        Did not detect Python virtual environment. Using system-wide Python interpreter
+     -.--ns INFO     gpi                                ../gpi/GpiCommon.cpp:101  in gpi_print_registered_impl       VPI registered
+     0.00ns INFO     cocotb                             Running on Icarus Verilog version 13.0 (devel)
+     0.00ns INFO     cocotb                             Running tests with cocotb v2.0.0.dev0+8d6c1a63 from /usr/local/lib/python3.9/dist-packages/cocotb
+     0.00ns INFO     cocotb                             Seeding Python random module with 1773328844
+     0.00ns INFO     cocotb.regression                  running test_delete_node_binary_search_tree.test_search_bst (1/1)
+                                                            Cocotb testbench for the search_binary_search_tree module.
+delete_invalid 1
+   100.00ns INFO     cocotb.regression                  test_delete_node_binary_search_tree.test_search_bst passed
+   100.00ns INFO     cocotb.regression                  *************************************************************************************************************
+                                                        ** TEST                                                 STATUS  SIM TIME (ns)  REAL TIME (s)  RATIO (ns/s) **
+                                                        *************************************************************************************************************
+                                                        ** test_delete_node_binary_search_tree.test_search_bst   PASS         100.00           0.00      44257.72  **
+                                                        *************************************************************************************************************
+                                                        ** TESTS=1 PASS=1 FAIL=0 SKIP=0                                       100.00           0.02       6218.39  **
+                                                        *************************************************************************************************************
+                                                        
+VCD info: dumpfile /code/rundir/sim_build/delete_node_binary_search_tree.fst opened for output.
+Running with: DATA_WIDTH = 32, ARRAY_SIZE = 5
+PASSED
+../../src/test_runner.py::test_bst[10-6]      -.--ns INFO     gpi                                ..mbed/gpi_embed.cpp:79   in set_program_name_in_venv        Did not detect Python virtual environment. Using system-wide Python interpreter
+     -.--ns INFO     gpi                                ../gpi/GpiCommon.cpp:101  in gpi_print_registered_impl       VPI registered
+     0.00ns INFO     cocotb                             Running on Icarus Verilog version 13.0 (devel)
+     0.00ns INFO     cocotb                             Running tests with cocotb v2.0.0.dev0+8d6c1a63 from /usr/local/lib/python3.9/dist-packages/cocotb
+     0.00ns INFO     cocotb                             Seeding Python random module with 1773328844
+     0.00ns INFO     cocotb.regression                  running test_delete_node_binary_search_tree.test_search_bst (1/1)
+                                                            Cocotb testbench for the search_binary_search_tree module.
+delete_invalid 1
+   100.00ns INFO     cocotb.regression                  test_delete_node_binary_search_tree.test_search_bst passed
+   100.00ns INFO     cocotb.regression                  *************************************************************************************************************
+                                                        ** TEST                                                 STATUS  SIM TIME (ns)  REAL TIME (s)  RATIO (ns/s) **
+                                                        *************************************************************************************************************
+                                                        ** test_delete_node_binary_search_tree.test_search_bst   PASS         100.00           0.00      50369.93  **
+                                                        *************************************************************************************************************
+                                                        ** TESTS=1 PASS=1 FAIL=0 SKIP=0                                       100.00           0.02       4565.53  **
+                                                        *************************************************************************************************************
+                                                        
+VCD info: dumpfile /code/rundir/sim_build/delete_node_binary_search_tree.fst opened for output.
+Running with: DATA_WIDTH = 6, ARRAY_SIZE = 10
+PASSED
+../../src/test_runner.py::test_bst[10-16]      -.--ns INFO     gpi                                ..mbed/gpi_embed.cpp:79   in set_program_name_in_venv        Did not detect Python virtual environment. Using system-wide Python interpreter
+     -.--ns INFO     gpi                                ../gpi/GpiCommon.cpp:101  in gpi_print_registered_impl       VPI registered
+     0.00ns INFO     cocotb                             Running on Icarus Verilog version 13.0 (devel)
+     0.00ns INFO     cocotb                             Running tests with cocotb v2.0.0.dev0+8d6c1a63 from /usr/local/lib/python3.9/dist-packages/cocotb
+     0.00ns INFO     cocotb                             Seeding Python random module with 1773328844
+     0.00ns INFO     cocotb.regression                  running test_delete_node_binary_search_tree.test_search_bst (1/1)
+                                                            Cocotb testbench for the search_binary_search_tree module.
+delete_invalid 1
+keys [58514, 50092, 48887, 48080, 5485, 5967, 19599, 23938, 34328, 42874]
+left_child [1, 2, 3, 4, 31, 31, 31, 31, 31, 31]
+right_child [31, 31, 31, 31, 5, 6, 7, 8, 9, 31]
+----------------------------Test case 2: Random key-----------------------------------
+key_value  34328
+delete_invalid  0
+expected keys [58514, 50092, 48887, 48080, 5485, 5967, 19599, 23938, 42874, 65535]
+expected left [1, 2, 3, 4, 31, 31, 31, 31, 31, 31]
+expected right [31, 31, 31, 31, 5, 6, 7, 8, 31, 31]
+actual keys [58514, 50092, 48887, 48080, 5485, 5967, 19599, 23938, 42874, 65535]
+actual left [1, 2, 3, 4, 31, 31, 31, 31, 31, 31]
+actual right [31, 31, 31, 31, 5, 6, 7, 8, 31, 31]
+---------------------------Test case 3: not in key-----------------------------------------
+key_value  54049
+delete_invalid  1
+expected keys [58514, 50092, 48887, 48080, 5485, 5967, 19599, 23938, 42874, 65535]
+expected left [1, 2, 3, 4, 31, 31, 31, 31, 31, 31]
+expected right [31, 31, 31, 31, 5, 6, 7, 8, 31, 31]
+actual keys [65535, 65535, 65535, 65535, 65535, 65535, 65535, 65535, 65535, 65535]
+actual left [31, 31, 31, 31, 31, 31, 31, 31, 31, 31]
+actual right [31, 31, 31, 31, 31, 31, 31, 31, 31, 31]
+-------------------------------Test case 4: Smallest key-----------------------------
+key_value  5485
+delete_invalid  0
+expected keys [58514, 50092, 48887, 48080, 5967, 65535, 19599, 23938, 34328, 42874]
+expected left [1, 2, 3, 4, 31, 31, 31, 31, 31, 31]
+expected right [31, 31, 31, 31, 6, 31, 7, 8, 9, 31]
+actual keys [58514, 50092, 48887, 48080, 5967, 65535, 19599, 23938, 34328, 42874]
+actual left [1, 2, 3, 4, 31, 31, 31, 31, 31, 31]
+actual right [31, 31, 31, 31, 6, 31, 7, 8, 9, 31]
+---------------------------Test case 5: Largest key-----------------------------------------
+key_value  58514
+delete_invalid  0
+expected keys [50092, 65535, 48887, 48080, 5485, 5967, 19599, 23938, 34328, 42874]
+expected left [2, 31, 3, 4, 31, 31, 31, 31, 31, 31]
+expected right [31, 31, 31, 31, 5, 6, 7, 8, 9, 31]
+actual keys [50092, 65535, 48887, 48080, 5485, 5967, 19599, 23938, 34328, 42874]
+actual left [2, 31, 3, 4, 31, 31, 31, 31, 31, 31]
+actual right [31, 31, 31, 31, 5, 6, 7, 8, 9, 31]
+   910.00ns INFO     cocotb                             ---------------------------------All test cases passed!-------------------------------------
+   910.00ns INFO     cocotb.regression                  test_delete_node_binary_search_tree.test_search_bst passed
+   910.00ns INFO     cocotb.regression                  *************************************************************************************************************
+                                                        ** TEST                                                 STATUS  SIM TIME (ns)  REAL TIME (s)  RATIO (ns/s) **
+                                                        *************************************************************************************************************
+                                                        ** test_delete_node_binary_search_tree.test_search_bst   PASS         910.00           0.01      79707.98  **
+                                                        *************************************************************************************************************
+                                                        ** TESTS=1 PASS=1 FAIL=0 SKIP=0                                       910.00           0.03      32372.52  **
+                                                        *************************************************************************************************************
+                                                        
+VCD info: dumpfile /code/rundir/sim_build/delete_node_binary_search_tree.fst opened for output.
+Running with: DATA_WIDTH = 16, ARRAY_SIZE = 10
+PASSED
+../../src/test_runner.py::test_bst[10-32]      -.--ns INFO     gpi                                ..mbed/gpi_embed.cpp:79   in set_program_name_in_venv        Did not detect Python virtual environment. Using system-wide Python interpreter
+     -.--ns INFO     gpi                                ../gpi/GpiCommon.cpp:101  in gpi_print_registered_impl       VPI registered
+     0.00ns INFO     cocotb                             Running on Icarus Verilog version 13.0 (devel)
+     0.00ns INFO     cocotb                             Running tests with cocotb v2.0.0.dev0+8d6c1a63 from /usr/local/lib/python3.9/dist-packages/cocotb
+     0.00ns INFO     cocotb                             Seeding Python random module with 1773328844
+     0.00ns INFO     cocotb.regression                  running test_delete_node_binary_search_tree.test_search_bst (1/1)
+                                                            Cocotb testbench for the search_binary_search_tree module.
+delete_invalid 1
+   100.00ns INFO     cocotb.regression                  test_delete_node_binary_search_tree.test_search_bst passed
+   100.00ns INFO     cocotb.regression                  *************************************************************************************************************
+                                                        ** TEST                                                 STATUS  SIM TIME (ns)  REAL TIME (s)  RATIO (ns/s) **
+                                                        *************************************************************************************************************
+                                                        ** test_delete_node_binary_search_tree.test_search_bst   PASS         100.00           0.00      45629.94  **
+                                                        *************************************************************************************************************
+                                                        ** TESTS=1 PASS=1 FAIL=0 SKIP=0                                       100.00           0.01       6727.25  **
+                                                        *************************************************************************************************************
+                                                        
+VCD info: dumpfile /code/rundir/sim_build/delete_node_binary_search_tree.fst opened for output.
+Running with: DATA_WIDTH = 32, ARRAY_SIZE = 10
+PASSED
+../../src/test_runner.py::test_bst[15-6]      -.--ns INFO     gpi                                ..mbed/gpi_embed.cpp:79   in set_program_name_in_venv        Did not detect Python virtual environment. Using system-wide Python interpreter
+     -.--ns INFO     gpi                                ../gpi/GpiCommon.cpp:101  in gpi_print_registered_impl       VPI registered
+     0.00ns INFO     cocotb                             Running on Icarus Verilog version 13.0 (devel)
+     0.00ns INFO     cocotb                             Running tests with cocotb v2.0.0.dev0+8d6c1a63 from /usr/local/lib/python3.9/dist-packages/cocotb
+     0.00ns INFO     cocotb                             Seeding Python random module with 1773328844
+     0.00ns INFO     cocotb.regression                  running test_delete_node_binary_search_tree.test_search_bst (1/1)
+                                                            Cocotb testbench for the search_binary_search_tree module.
+delete_invalid 1
+keys [9, 14, 15, 17, 19, 21, 30, 32, 35, 40, 46, 47, 48, 49, 50]
+left_child [31, 31, 31, 31, 31, 31, 31, 31, 31, 31, 31, 31, 31, 31, 31]
+right_child [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 31]
+----------------------------Test case 2: Random key-----------------------------------
+key_value  48
+delete_invalid  0
+expected keys [9, 14, 15, 17, 19, 21, 30, 32, 35, 40, 46, 47, 49, 63, 50]
+expected left [31, 31, 31, 31, 31, 31, 31, 31, 31, 31, 31, 31, 31, 31, 31]
+expected right [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 14, 31, 31]
+actual keys [9, 14, 15, 17, 19, 21, 30, 32, 35, 40, 46, 47, 49, 63, 50]
+actual left [31, 31, 31, 31, 31, 31, 31, 31, 31, 31, 31, 31, 31, 31, 31]
+actual right [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 14, 31, 31]
+---------------------------Test case 3: not in key-----------------------------------------
+key_value  52
+delete_invalid  1
+expected keys [9, 14, 15, 17, 19, 21, 30, 32, 35, 40, 46, 47, 49, 63, 50]
+expected left [31, 31, 31, 31, 31, 31, 31, 31, 31, 31, 31, 31, 31, 31, 31]
+expected right [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 14, 31, 31]
+actual keys [63, 63, 63, 63, 63, 63, 63, 63, 63, 63, 63, 63, 63, 63, 63]
+actual left [31, 31, 31, 31, 31, 31, 31, 31, 31, 31, 31, 31, 31, 31, 31]
+actual right [31, 31, 31, 31, 31, 31, 31, 31, 31, 31, 31, 31, 31, 31, 31]
+-------------------------------Test case 4: Smallest key-----------------------------
+key_value  9
+delete_invalid  0
+expected keys [14, 63, 15, 17, 19, 21, 30, 32, 35, 40, 46, 47, 48, 49, 50]
+expected left [31, 31, 31, 31, 31, 31, 31, 31, 31, 31, 31, 31, 31, 31, 31]
+expected right [2, 31, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 31]
+actual keys [14, 63, 15, 17, 19, 21, 30, 32, 35, 40, 46, 47, 48, 49, 50]
+actual left [31, 31, 31, 31, 31, 31, 31, 31, 31, 31, 31, 31, 31, 31, 31]
+actual right [2, 31, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 31]
+---------------------------Test case 5: Largest key-----------------------------------------
+key_value  50
+delete_invalid  0
+expected keys [9, 14, 15, 17, 19, 21, 30, 32, 35, 40, 46, 47, 48, 49, 63]
+expected left [31, 31, 31, 31, 31, 31, 31, 31, 31, 31, 31, 31, 31, 31, 31]
+expected right [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 31, 31]
+actual keys [9, 14, 15, 17, 19, 21, 30, 32, 35, 40, 46, 47, 48, 49, 63]
+actual left [31, 31, 31, 31, 31, 31, 31, 31, 31, 31, 31, 31, 31, 31, 31]
+actual right [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 31, 31]
+  1190.00ns INFO     cocotb                             ---------------------------------All test cases passed!-------------------------------------
+  1190.00ns INFO     cocotb.regression                  test_delete_node_binary_search_tree.test_search_bst passed
+  1190.00ns INFO     cocotb.regression                  *************************************************************************************************************
+                                                        ** TEST                                                 STATUS  SIM TIME (ns)  REAL TIME (s)  RATIO (ns/s) **
+                                                        *************************************************************************************************************
+                                                        ** test_delete_node_binary_search_tree.test_search_bst   PASS        1190.00           0.02      49637.23  **
+                                                        *************************************************************************************************************
+                                                        ** TESTS=1 PASS=1 FAIL=0 SKIP=0                                      1190.00           0.04      30959.07  **
+                                                        *************************************************************************************************************
+                                                        
+VCD info: dumpfile /code/rundir/sim_build/delete_node_binary_search_tree.fst opened for output.
+Running with: DATA_WIDTH = 6, ARRAY_SIZE = 15
+PASSED
+../../src/test_runner.py::test_bst[15-16]      -.--ns INFO     gpi                                ..mbed/gpi_embed.cpp:79   in set_program_name_in_venv        Did not detect Python virtual environment. Using system-wide Python interpreter
+     -.--ns INFO     gpi                                ../gpi/GpiCommon.cpp:101  in gpi_print_registered_impl       VPI registered
+     0.00ns INFO     cocotb                             Running on Icarus Verilog version 13.0 (devel)
+     0.00ns INFO     cocotb                             Running tests with cocotb v2.0.0.dev0+8d6c1a63 from /usr/local/lib/python3.9/dist-packages/cocotb
+     0.00ns INFO     cocotb                             Seeding Python random module with 1773328845
+     0.00ns INFO     cocotb.regression                  running test_delete_node_binary_search_tree.test_search_bst (1/1)
+                                                            Cocotb testbench for the search_binary_search_tree module.
+delete_invalid 1
+   100.00ns INFO     cocotb.regression                  test_delete_node_binary_search_tree.test_search_bst passed
+   100.00ns INFO     cocotb.regression                  *************************************************************************************************************
+                                                        ** TEST                                                 STATUS  SIM TIME (ns)  REAL TIME (s)  RATIO (ns/s) **
+                                                        *************************************************************************************************************
+                                                        ** test_delete_node_binary_search_tree.test_search_bst   PASS         100.00           0.00      44729.70  **
+                                                        *************************************************************************************************************
+                                                        ** TESTS=1 PASS=1 FAIL=0 SKIP=0                                       100.00           0.01       6759.88  **
+                                                        *************************************************************************************************************
+                                                        
+VCD info: dumpfile /code/rundir/sim_build/delete_node_binary_search_tree.fst opened for output.
+Running with: DATA_WIDTH = 16, ARRAY_SIZE = 15
+PASSED
+../../src/test_runner.py::test_bst[15-32]      -.--ns INFO     gpi                                ..mbed/gpi_embed.cpp:79   in set_program_name_in_venv        Did not detect Python virtual environment. Using system-wide Python interpreter
+     -.--ns INFO     gpi                                ../gpi/GpiCommon.cpp:101  in gpi_print_registered_impl       VPI registered
+     0.00ns INFO     cocotb                             Running on Icarus Verilog version 13.0 (devel)
+     0.00ns INFO     cocotb                             Running tests with cocotb v2.0.0.dev0+8d6c1a63 from /usr/local/lib/python3.9/dist-packages/cocotb
+     0.00ns INFO     cocotb                             Seeding Python random module with 1773328845
+     0.00ns INFO     cocotb.regression                  running test_delete_node_binary_search_tree.test_search_bst (1/1)
+                                                            Cocotb testbench for the search_binary_search_tree module.
+delete_invalid 1
+keys [3599316877, 3530595430, 2982472603, 2918411874, 2683058769, 2322902151, 2157180141, 1512400858, 1425113391, 1057458493, 987713153, 956305578, 811616460, 259064287, 200706183]
+left_child [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 31]
+right_child [31, 31, 31, 31, 31, 31, 31, 31, 31, 31, 31, 31, 31, 31, 31]
+----------------------------Test case 2: Random key-----------------------------------
+key_value  987713153
+delete_invalid  0
+expected keys [3599316877, 3530595430, 2982472603, 2918411874, 2683058769, 2322902151, 2157180141, 1512400858, 1425113391, 1057458493, 956305578, 4294967295, 811616460, 259064287, 200706183]
+expected left [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 12, 31, 13, 14, 31]
+expected right [31, 31, 31, 31, 31, 31, 31, 31, 31, 31, 31, 31, 31, 31, 31]
+actual keys [3599316877, 3530595430, 2982472603, 2918411874, 2683058769, 2322902151, 2157180141, 1512400858, 1425113391, 1057458493, 956305578, 4294967295, 811616460, 259064287, 200706183]
+actual left [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 12, 31, 13, 14, 31]
+actual right [31, 31, 31, 31, 31, 31, 31, 31, 31, 31, 31, 31, 31, 31, 31]
+---------------------------Test case 3: not in key-----------------------------------------
+key_value  794001524
+delete_invalid  1
+expected keys [3599316877, 3530595430, 2982472603, 2918411874, 2683058769, 2322902151, 2157180141, 1512400858, 1425113391, 1057458493, 956305578, 4294967295, 811616460, 259064287, 200706183]
+expected left [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 12, 31, 13, 14, 31]
+expected right [31, 31, 31, 31, 31, 31, 31, 31, 31, 31, 31, 31, 31, 31, 31]
+actual keys [4294967295, 4294967295, 4294967295, 4294967295, 4294967295, 4294967295, 4294967295, 4294967295, 4294967295, 4294967295, 4294967295, 4294967295, 4294967295, 4294967295, 4294967295]
+actual left [31, 31, 31, 31, 31, 31, 31, 31, 31, 31, 31, 31, 31, 31, 31]
+actual right [31, 31, 31, 31, 31, 31, 31, 31, 31, 31, 31, 31, 31, 31, 31]
+-------------------------------Test case 4: Smallest key-----------------------------
+key_value  200706183
+delete_invalid  0
+expected keys [3599316877, 3530595430, 2982472603, 2918411874, 2683058769, 2322902151, 2157180141, 1512400858, 1425113391, 1057458493, 987713153, 956305578, 811616460, 259064287, 4294967295]
+expected left [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 31, 31]
+expected right [31, 31, 31, 31, 31, 31, 31, 31, 31, 31, 31, 31, 31, 31, 31]
+actual keys [3599316877, 3530595430, 2982472603, 2918411874, 2683058769, 2322902151, 2157180141, 1512400858, 1425113391, 1057458493, 987713153, 956305578, 811616460, 259064287, 4294967295]
+actual left [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 31, 31]
+actual right [31, 31, 31, 31, 31, 31, 31, 31, 31, 31, 31, 31, 31, 31, 31]
+---------------------------Test case 5: Largest key-----------------------------------------
+key_value  3599316877
+delete_invalid  0
+expected keys [3530595430, 4294967295, 2982472603, 2918411874, 2683058769, 2322902151, 2157180141, 1512400858, 1425113391, 1057458493, 987713153, 956305578, 811616460, 259064287, 200706183]
+expected left [2, 31, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 31]
+expected right [31, 31, 31, 31, 31, 31, 31, 31, 31, 31, 31, 31, 31, 31, 31]
+actual keys [3530595430, 4294967295, 2982472603, 2918411874, 2683058769, 2322902151, 2157180141, 1512400858, 1425113391, 1057458493, 987713153, 956305578, 811616460, 259064287, 200706183]
+actual left [2, 31, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 31]
+actual right [31, 31, 31, 31, 31, 31, 31, 31, 31, 31, 31, 31, 31, 31, 31]
+  1270.00ns INFO     cocotb                             ---------------------------------All test cases passed!-------------------------------------
+  1270.00ns INFO     cocotb.regression                  test_delete_node_binary_search_tree.test_search_bst passed
+  1270.00ns INFO     cocotb.regression                  *************************************************************************************************************
+                                                        ** TEST                                                 STATUS  SIM TIME (ns)  REAL TIME (s)  RATIO (ns/s) **
+                                                        *************************************************************************************************************
+                                                        ** test_delete_node_binary_search_tree.test_search_bst   PASS        1270.00           0.02      72685.63  **
+                                                        *************************************************************************************************************
+                                                        ** TESTS=1 PASS=1 FAIL=0 SKIP=0                                      1270.00           0.03      40945.20  **
+                                                        *************************************************************************************************************
+                                                        
+VCD info: dumpfile /code/rundir/sim_build/delete_node_binary_search_tree.fst opened for output.
+Running with: DATA_WIDTH = 32, ARRAY_SIZE = 15
+PASSED
+
+============================== 9 passed in 1.73s ===============================

@@ -1,0 +1,1130 @@
+Running service: direct
+============================= test session starts ==============================
+platform linux -- Python 3.9.2, pytest-8.3.2, pluggy-1.5.0
+cachedir: /rundir/harness/.cache
+rootdir: /src
+collected 56 items
+
+../../src/test_runner.py      -.--ns INFO     gpi                                ..mbed/gpi_embed.cpp:79   in set_program_name_in_venv        Did not detect Python virtual environment. Using system-wide Python interpreter
+     -.--ns INFO     gpi                                ../gpi/GpiCommon.cpp:101  in gpi_print_registered_impl       VPI registered
+     0.00ns INFO     cocotb                             Running on Icarus Verilog version 13.0 (devel)
+     0.00ns INFO     cocotb                             Running tests with cocotb v2.0.0.dev0+8d6c1a63 from /usr/local/lib/python3.9/dist-packages/cocotb
+     0.00ns INFO     cocotb                             Seeding Python random module with 1773330297
+     0.00ns INFO     cocotb.regression                  running test_slicer_top.test_low_pass_filter (1/1)
+                                                            Test the Slicer Top module with edge cases and random data.
+   120.00ns INFO     cocotb                             All tests passed successfully.
+   120.00ns INFO     cocotb.regression                  test_slicer_top.test_low_pass_filter passed
+   120.00ns INFO     cocotb.regression                  **********************************************************************************************
+                                                        ** TEST                                  STATUS  SIM TIME (ns)  REAL TIME (s)  RATIO (ns/s) **
+                                                        **********************************************************************************************
+                                                        ** test_slicer_top.test_low_pass_filter   PASS         120.00           0.01      22556.08  **
+                                                        **********************************************************************************************
+                                                        ** TESTS=1 PASS=1 FAIL=0 SKIP=0                        120.00           0.01       8662.34  **
+                                                        **********************************************************************************************
+                                                        
+[DEBUG] Running simulation with NBW_REF=7, NBW_TH=7
+[DEBUG] Running simulation with NBW_IN=7, NBW_OUT=8
+[DEBUG] Parameters: {'NBW_REF': 7, 'NBW_TH': 7, 'NBW_IN': 7, 'NBW_OUT': 8}
+.     -.--ns INFO     gpi                                ..mbed/gpi_embed.cpp:79   in set_program_name_in_venv        Did not detect Python virtual environment. Using system-wide Python interpreter
+     -.--ns INFO     gpi                                ../gpi/GpiCommon.cpp:101  in gpi_print_registered_impl       VPI registered
+     0.00ns INFO     cocotb                             Running on Icarus Verilog version 13.0 (devel)
+     0.00ns INFO     cocotb                             Running tests with cocotb v2.0.0.dev0+8d6c1a63 from /usr/local/lib/python3.9/dist-packages/cocotb
+     0.00ns INFO     cocotb                             Seeding Python random module with 1773330297
+     0.00ns INFO     cocotb.regression                  running test_slicer_top.test_low_pass_filter (1/1)
+                                                            Test the Slicer Top module with edge cases and random data.
+   120.00ns INFO     cocotb                             All tests passed successfully.
+   120.00ns INFO     cocotb.regression                  test_slicer_top.test_low_pass_filter passed
+   120.00ns INFO     cocotb.regression                  **********************************************************************************************
+                                                        ** TEST                                  STATUS  SIM TIME (ns)  REAL TIME (s)  RATIO (ns/s) **
+                                                        **********************************************************************************************
+                                                        ** test_slicer_top.test_low_pass_filter   PASS         120.00           0.00      31168.97  **
+                                                        **********************************************************************************************
+                                                        ** TESTS=1 PASS=1 FAIL=0 SKIP=0                        120.00           0.01      11856.97  **
+                                                        **********************************************************************************************
+                                                        
+[DEBUG] Running simulation with NBW_REF=14, NBW_TH=9
+[DEBUG] Running simulation with NBW_IN=16, NBW_OUT=15
+[DEBUG] Parameters: {'NBW_REF': 14, 'NBW_TH': 9, 'NBW_IN': 16, 'NBW_OUT': 15}
+.     -.--ns INFO     gpi                                ..mbed/gpi_embed.cpp:79   in set_program_name_in_venv        Did not detect Python virtual environment. Using system-wide Python interpreter
+     -.--ns INFO     gpi                                ../gpi/GpiCommon.cpp:101  in gpi_print_registered_impl       VPI registered
+     0.00ns INFO     cocotb                             Running on Icarus Verilog version 13.0 (devel)
+     0.00ns INFO     cocotb                             Running tests with cocotb v2.0.0.dev0+8d6c1a63 from /usr/local/lib/python3.9/dist-packages/cocotb
+     0.00ns INFO     cocotb                             Seeding Python random module with 1773330297
+     0.00ns INFO     cocotb.regression                  running test_slicer_top.test_low_pass_filter (1/1)
+                                                            Test the Slicer Top module with edge cases and random data.
+   120.00ns INFO     cocotb                             All tests passed successfully.
+   120.00ns INFO     cocotb.regression                  test_slicer_top.test_low_pass_filter passed
+   120.00ns INFO     cocotb.regression                  **********************************************************************************************
+                                                        ** TEST                                  STATUS  SIM TIME (ns)  REAL TIME (s)  RATIO (ns/s) **
+                                                        **********************************************************************************************
+                                                        ** test_slicer_top.test_low_pass_filter   PASS         120.00           0.01      23498.60  **
+                                                        **********************************************************************************************
+                                                        ** TESTS=1 PASS=1 FAIL=0 SKIP=0                        120.00           0.01      11319.39  **
+                                                        **********************************************************************************************
+                                                        
+[DEBUG] Running simulation with NBW_REF=8, NBW_TH=14
+[DEBUG] Running simulation with NBW_IN=8, NBW_OUT=15
+[DEBUG] Parameters: {'NBW_REF': 8, 'NBW_TH': 14, 'NBW_IN': 8, 'NBW_OUT': 15}
+.     -.--ns INFO     gpi                                ..mbed/gpi_embed.cpp:79   in set_program_name_in_venv        Did not detect Python virtual environment. Using system-wide Python interpreter
+     -.--ns INFO     gpi                                ../gpi/GpiCommon.cpp:101  in gpi_print_registered_impl       VPI registered
+     0.00ns INFO     cocotb                             Running on Icarus Verilog version 13.0 (devel)
+     0.00ns INFO     cocotb                             Running tests with cocotb v2.0.0.dev0+8d6c1a63 from /usr/local/lib/python3.9/dist-packages/cocotb
+     0.00ns INFO     cocotb                             Seeding Python random module with 1773330297
+     0.00ns INFO     cocotb.regression                  running test_slicer_top.test_low_pass_filter (1/1)
+                                                            Test the Slicer Top module with edge cases and random data.
+   120.00ns INFO     cocotb                             All tests passed successfully.
+   120.00ns INFO     cocotb.regression                  test_slicer_top.test_low_pass_filter passed
+   120.00ns INFO     cocotb.regression                  **********************************************************************************************
+                                                        ** TEST                                  STATUS  SIM TIME (ns)  REAL TIME (s)  RATIO (ns/s) **
+                                                        **********************************************************************************************
+                                                        ** test_slicer_top.test_low_pass_filter   PASS         120.00           0.00      31736.96  **
+                                                        **********************************************************************************************
+                                                        ** TESTS=1 PASS=1 FAIL=0 SKIP=0                        120.00           0.01      12681.51  **
+                                                        **********************************************************************************************
+                                                        
+[DEBUG] Running simulation with NBW_REF=14, NBW_TH=15
+[DEBUG] Running simulation with NBW_IN=9, NBW_OUT=16
+[DEBUG] Parameters: {'NBW_REF': 14, 'NBW_TH': 15, 'NBW_IN': 9, 'NBW_OUT': 16}
+.     -.--ns INFO     gpi                                ..mbed/gpi_embed.cpp:79   in set_program_name_in_venv        Did not detect Python virtual environment. Using system-wide Python interpreter
+     -.--ns INFO     gpi                                ../gpi/GpiCommon.cpp:101  in gpi_print_registered_impl       VPI registered
+     0.00ns INFO     cocotb                             Running on Icarus Verilog version 13.0 (devel)
+     0.00ns INFO     cocotb                             Running tests with cocotb v2.0.0.dev0+8d6c1a63 from /usr/local/lib/python3.9/dist-packages/cocotb
+     0.00ns INFO     cocotb                             Seeding Python random module with 1773330298
+     0.00ns INFO     cocotb.regression                  running test_slicer_top.test_low_pass_filter (1/1)
+                                                            Test the Slicer Top module with edge cases and random data.
+   120.00ns INFO     cocotb                             All tests passed successfully.
+   120.00ns INFO     cocotb.regression                  test_slicer_top.test_low_pass_filter passed
+   120.00ns INFO     cocotb.regression                  **********************************************************************************************
+                                                        ** TEST                                  STATUS  SIM TIME (ns)  REAL TIME (s)  RATIO (ns/s) **
+                                                        **********************************************************************************************
+                                                        ** test_slicer_top.test_low_pass_filter   PASS         120.00           0.01      18016.12  **
+                                                        **********************************************************************************************
+                                                        ** TESTS=1 PASS=1 FAIL=0 SKIP=0                        120.00           0.01       8166.08  **
+                                                        **********************************************************************************************
+                                                        
+[DEBUG] Running simulation with NBW_REF=16, NBW_TH=10
+[DEBUG] Running simulation with NBW_IN=9, NBW_OUT=17
+[DEBUG] Parameters: {'NBW_REF': 16, 'NBW_TH': 10, 'NBW_IN': 9, 'NBW_OUT': 17}
+.     -.--ns INFO     gpi                                ..mbed/gpi_embed.cpp:79   in set_program_name_in_venv        Did not detect Python virtual environment. Using system-wide Python interpreter
+     -.--ns INFO     gpi                                ../gpi/GpiCommon.cpp:101  in gpi_print_registered_impl       VPI registered
+     0.00ns INFO     cocotb                             Running on Icarus Verilog version 13.0 (devel)
+     0.00ns INFO     cocotb                             Running tests with cocotb v2.0.0.dev0+8d6c1a63 from /usr/local/lib/python3.9/dist-packages/cocotb
+     0.00ns INFO     cocotb                             Seeding Python random module with 1773330298
+     0.00ns INFO     cocotb.regression                  running test_slicer_top.test_low_pass_filter (1/1)
+                                                            Test the Slicer Top module with edge cases and random data.
+   120.00ns INFO     cocotb                             All tests passed successfully.
+   120.00ns INFO     cocotb.regression                  test_slicer_top.test_low_pass_filter passed
+   120.00ns INFO     cocotb.regression                  **********************************************************************************************
+                                                        ** TEST                                  STATUS  SIM TIME (ns)  REAL TIME (s)  RATIO (ns/s) **
+                                                        **********************************************************************************************
+                                                        ** test_slicer_top.test_low_pass_filter   PASS         120.00           0.00      26017.91  **
+                                                        **********************************************************************************************
+                                                        ** TESTS=1 PASS=1 FAIL=0 SKIP=0                        120.00           0.01       9328.10  **
+                                                        **********************************************************************************************
+                                                        
+[DEBUG] Running simulation with NBW_REF=15, NBW_TH=16
+[DEBUG] Running simulation with NBW_IN=15, NBW_OUT=17
+[DEBUG] Parameters: {'NBW_REF': 15, 'NBW_TH': 16, 'NBW_IN': 15, 'NBW_OUT': 17}
+.     -.--ns INFO     gpi                                ..mbed/gpi_embed.cpp:79   in set_program_name_in_venv        Did not detect Python virtual environment. Using system-wide Python interpreter
+     -.--ns INFO     gpi                                ../gpi/GpiCommon.cpp:101  in gpi_print_registered_impl       VPI registered
+     0.00ns INFO     cocotb                             Running on Icarus Verilog version 13.0 (devel)
+     0.00ns INFO     cocotb                             Running tests with cocotb v2.0.0.dev0+8d6c1a63 from /usr/local/lib/python3.9/dist-packages/cocotb
+     0.00ns INFO     cocotb                             Seeding Python random module with 1773330298
+     0.00ns INFO     cocotb.regression                  running test_slicer_top.test_low_pass_filter (1/1)
+                                                            Test the Slicer Top module with edge cases and random data.
+   120.00ns INFO     cocotb                             All tests passed successfully.
+   120.00ns INFO     cocotb.regression                  test_slicer_top.test_low_pass_filter passed
+   120.00ns INFO     cocotb.regression                  **********************************************************************************************
+                                                        ** TEST                                  STATUS  SIM TIME (ns)  REAL TIME (s)  RATIO (ns/s) **
+                                                        **********************************************************************************************
+                                                        ** test_slicer_top.test_low_pass_filter   PASS         120.00           0.00      29959.31  **
+                                                        **********************************************************************************************
+                                                        ** TESTS=1 PASS=1 FAIL=0 SKIP=0                        120.00           0.01      12612.24  **
+                                                        **********************************************************************************************
+                                                        
+[DEBUG] Running simulation with NBW_REF=13, NBW_TH=15
+[DEBUG] Running simulation with NBW_IN=12, NBW_OUT=16
+[DEBUG] Parameters: {'NBW_REF': 13, 'NBW_TH': 15, 'NBW_IN': 12, 'NBW_OUT': 16}
+.     -.--ns INFO     gpi                                ..mbed/gpi_embed.cpp:79   in set_program_name_in_venv        Did not detect Python virtual environment. Using system-wide Python interpreter
+     -.--ns INFO     gpi                                ../gpi/GpiCommon.cpp:101  in gpi_print_registered_impl       VPI registered
+     0.00ns INFO     cocotb                             Running on Icarus Verilog version 13.0 (devel)
+     0.00ns INFO     cocotb                             Running tests with cocotb v2.0.0.dev0+8d6c1a63 from /usr/local/lib/python3.9/dist-packages/cocotb
+     0.00ns INFO     cocotb                             Seeding Python random module with 1773330298
+     0.00ns INFO     cocotb.regression                  running test_slicer_top.test_low_pass_filter (1/1)
+                                                            Test the Slicer Top module with edge cases and random data.
+   120.00ns INFO     cocotb                             All tests passed successfully.
+   120.00ns INFO     cocotb.regression                  test_slicer_top.test_low_pass_filter passed
+   120.00ns INFO     cocotb.regression                  **********************************************************************************************
+                                                        ** TEST                                  STATUS  SIM TIME (ns)  REAL TIME (s)  RATIO (ns/s) **
+                                                        **********************************************************************************************
+                                                        ** test_slicer_top.test_low_pass_filter   PASS         120.00           0.00      27116.88  **
+                                                        **********************************************************************************************
+                                                        ** TESTS=1 PASS=1 FAIL=0 SKIP=0                        120.00           0.01      12109.72  **
+                                                        **********************************************************************************************
+                                                        
+[DEBUG] Running simulation with NBW_REF=14, NBW_TH=12
+[DEBUG] Running simulation with NBW_IN=14, NBW_OUT=15
+[DEBUG] Parameters: {'NBW_REF': 14, 'NBW_TH': 12, 'NBW_IN': 14, 'NBW_OUT': 15}
+.     -.--ns INFO     gpi                                ..mbed/gpi_embed.cpp:79   in set_program_name_in_venv        Did not detect Python virtual environment. Using system-wide Python interpreter
+     -.--ns INFO     gpi                                ../gpi/GpiCommon.cpp:101  in gpi_print_registered_impl       VPI registered
+     0.00ns INFO     cocotb                             Running on Icarus Verilog version 13.0 (devel)
+     0.00ns INFO     cocotb                             Running tests with cocotb v2.0.0.dev0+8d6c1a63 from /usr/local/lib/python3.9/dist-packages/cocotb
+     0.00ns INFO     cocotb                             Seeding Python random module with 1773330298
+     0.00ns INFO     cocotb.regression                  running test_slicer_top.test_low_pass_filter (1/1)
+                                                            Test the Slicer Top module with edge cases and random data.
+   120.00ns INFO     cocotb                             All tests passed successfully.
+   120.00ns INFO     cocotb.regression                  test_slicer_top.test_low_pass_filter passed
+   120.00ns INFO     cocotb.regression                  **********************************************************************************************
+                                                        ** TEST                                  STATUS  SIM TIME (ns)  REAL TIME (s)  RATIO (ns/s) **
+                                                        **********************************************************************************************
+                                                        ** test_slicer_top.test_low_pass_filter   PASS         120.00           0.00      35529.89  **
+                                                        **********************************************************************************************
+                                                        ** TESTS=1 PASS=1 FAIL=0 SKIP=0                        120.00           0.01      12769.34  **
+                                                        **********************************************************************************************
+                                                        
+[DEBUG] Running simulation with NBW_REF=7, NBW_TH=7
+[DEBUG] Running simulation with NBW_IN=7, NBW_OUT=8
+[DEBUG] Parameters: {'NBW_REF': 7, 'NBW_TH': 7, 'NBW_IN': 7, 'NBW_OUT': 8}
+.     -.--ns INFO     gpi                                ..mbed/gpi_embed.cpp:79   in set_program_name_in_venv        Did not detect Python virtual environment. Using system-wide Python interpreter
+     -.--ns INFO     gpi                                ../gpi/GpiCommon.cpp:101  in gpi_print_registered_impl       VPI registered
+     0.00ns INFO     cocotb                             Running on Icarus Verilog version 13.0 (devel)
+     0.00ns INFO     cocotb                             Running tests with cocotb v2.0.0.dev0+8d6c1a63 from /usr/local/lib/python3.9/dist-packages/cocotb
+     0.00ns INFO     cocotb                             Seeding Python random module with 1773330299
+     0.00ns INFO     cocotb.regression                  running test_slicer_top.test_low_pass_filter (1/1)
+                                                            Test the Slicer Top module with edge cases and random data.
+   120.00ns INFO     cocotb                             All tests passed successfully.
+   120.00ns INFO     cocotb.regression                  test_slicer_top.test_low_pass_filter passed
+   120.00ns INFO     cocotb.regression                  **********************************************************************************************
+                                                        ** TEST                                  STATUS  SIM TIME (ns)  REAL TIME (s)  RATIO (ns/s) **
+                                                        **********************************************************************************************
+                                                        ** test_slicer_top.test_low_pass_filter   PASS         120.00           0.00      30889.68  **
+                                                        **********************************************************************************************
+                                                        ** TESTS=1 PASS=1 FAIL=0 SKIP=0                        120.00           0.01      12057.51  **
+                                                        **********************************************************************************************
+                                                        
+[DEBUG] Running simulation with NBW_REF=14, NBW_TH=9
+[DEBUG] Running simulation with NBW_IN=16, NBW_OUT=15
+[DEBUG] Parameters: {'NBW_REF': 14, 'NBW_TH': 9, 'NBW_IN': 16, 'NBW_OUT': 15}
+.     -.--ns INFO     gpi                                ..mbed/gpi_embed.cpp:79   in set_program_name_in_venv        Did not detect Python virtual environment. Using system-wide Python interpreter
+     -.--ns INFO     gpi                                ../gpi/GpiCommon.cpp:101  in gpi_print_registered_impl       VPI registered
+     0.00ns INFO     cocotb                             Running on Icarus Verilog version 13.0 (devel)
+     0.00ns INFO     cocotb                             Running tests with cocotb v2.0.0.dev0+8d6c1a63 from /usr/local/lib/python3.9/dist-packages/cocotb
+     0.00ns INFO     cocotb                             Seeding Python random module with 1773330299
+     0.00ns INFO     cocotb.regression                  running test_slicer_top.test_low_pass_filter (1/1)
+                                                            Test the Slicer Top module with edge cases and random data.
+   120.00ns INFO     cocotb                             All tests passed successfully.
+   120.00ns INFO     cocotb.regression                  test_slicer_top.test_low_pass_filter passed
+   120.00ns INFO     cocotb.regression                  **********************************************************************************************
+                                                        ** TEST                                  STATUS  SIM TIME (ns)  REAL TIME (s)  RATIO (ns/s) **
+                                                        **********************************************************************************************
+                                                        ** test_slicer_top.test_low_pass_filter   PASS         120.00           0.00      32879.31  **
+                                                        **********************************************************************************************
+                                                        ** TESTS=1 PASS=1 FAIL=0 SKIP=0                        120.00           0.01      12951.38  **
+                                                        **********************************************************************************************
+                                                        
+[DEBUG] Running simulation with NBW_REF=8, NBW_TH=14
+[DEBUG] Running simulation with NBW_IN=8, NBW_OUT=15
+[DEBUG] Parameters: {'NBW_REF': 8, 'NBW_TH': 14, 'NBW_IN': 8, 'NBW_OUT': 15}
+.     -.--ns INFO     gpi                                ..mbed/gpi_embed.cpp:79   in set_program_name_in_venv        Did not detect Python virtual environment. Using system-wide Python interpreter
+     -.--ns INFO     gpi                                ../gpi/GpiCommon.cpp:101  in gpi_print_registered_impl       VPI registered
+     0.00ns INFO     cocotb                             Running on Icarus Verilog version 13.0 (devel)
+     0.00ns INFO     cocotb                             Running tests with cocotb v2.0.0.dev0+8d6c1a63 from /usr/local/lib/python3.9/dist-packages/cocotb
+     0.00ns INFO     cocotb                             Seeding Python random module with 1773330299
+     0.00ns INFO     cocotb.regression                  running test_slicer_top.test_low_pass_filter (1/1)
+                                                            Test the Slicer Top module with edge cases and random data.
+   120.00ns INFO     cocotb                             All tests passed successfully.
+   120.00ns INFO     cocotb.regression                  test_slicer_top.test_low_pass_filter passed
+   120.00ns INFO     cocotb.regression                  **********************************************************************************************
+                                                        ** TEST                                  STATUS  SIM TIME (ns)  REAL TIME (s)  RATIO (ns/s) **
+                                                        **********************************************************************************************
+                                                        ** test_slicer_top.test_low_pass_filter   PASS         120.00           0.00      32463.65  **
+                                                        **********************************************************************************************
+                                                        ** TESTS=1 PASS=1 FAIL=0 SKIP=0                        120.00           0.01      13262.62  **
+                                                        **********************************************************************************************
+                                                        
+[DEBUG] Running simulation with NBW_REF=14, NBW_TH=15
+[DEBUG] Running simulation with NBW_IN=9, NBW_OUT=16
+[DEBUG] Parameters: {'NBW_REF': 14, 'NBW_TH': 15, 'NBW_IN': 9, 'NBW_OUT': 16}
+.     -.--ns INFO     gpi                                ..mbed/gpi_embed.cpp:79   in set_program_name_in_venv        Did not detect Python virtual environment. Using system-wide Python interpreter
+     -.--ns INFO     gpi                                ../gpi/GpiCommon.cpp:101  in gpi_print_registered_impl       VPI registered
+     0.00ns INFO     cocotb                             Running on Icarus Verilog version 13.0 (devel)
+     0.00ns INFO     cocotb                             Running tests with cocotb v2.0.0.dev0+8d6c1a63 from /usr/local/lib/python3.9/dist-packages/cocotb
+     0.00ns INFO     cocotb                             Seeding Python random module with 1773330299
+     0.00ns INFO     cocotb.regression                  running test_slicer_top.test_low_pass_filter (1/1)
+                                                            Test the Slicer Top module with edge cases and random data.
+   120.00ns INFO     cocotb                             All tests passed successfully.
+   120.00ns INFO     cocotb.regression                  test_slicer_top.test_low_pass_filter passed
+   120.00ns INFO     cocotb.regression                  **********************************************************************************************
+                                                        ** TEST                                  STATUS  SIM TIME (ns)  REAL TIME (s)  RATIO (ns/s) **
+                                                        **********************************************************************************************
+                                                        ** test_slicer_top.test_low_pass_filter   PASS         120.00           0.00      25141.94  **
+                                                        **********************************************************************************************
+                                                        ** TESTS=1 PASS=1 FAIL=0 SKIP=0                        120.00           0.01      11648.69  **
+                                                        **********************************************************************************************
+                                                        
+[DEBUG] Running simulation with NBW_REF=16, NBW_TH=10
+[DEBUG] Running simulation with NBW_IN=9, NBW_OUT=17
+[DEBUG] Parameters: {'NBW_REF': 16, 'NBW_TH': 10, 'NBW_IN': 9, 'NBW_OUT': 17}
+.     -.--ns INFO     gpi                                ..mbed/gpi_embed.cpp:79   in set_program_name_in_venv        Did not detect Python virtual environment. Using system-wide Python interpreter
+     -.--ns INFO     gpi                                ../gpi/GpiCommon.cpp:101  in gpi_print_registered_impl       VPI registered
+     0.00ns INFO     cocotb                             Running on Icarus Verilog version 13.0 (devel)
+     0.00ns INFO     cocotb                             Running tests with cocotb v2.0.0.dev0+8d6c1a63 from /usr/local/lib/python3.9/dist-packages/cocotb
+     0.00ns INFO     cocotb                             Seeding Python random module with 1773330299
+     0.00ns INFO     cocotb.regression                  running test_slicer_top.test_low_pass_filter (1/1)
+                                                            Test the Slicer Top module with edge cases and random data.
+   120.00ns INFO     cocotb                             All tests passed successfully.
+   120.00ns INFO     cocotb.regression                  test_slicer_top.test_low_pass_filter passed
+   120.00ns INFO     cocotb.regression                  **********************************************************************************************
+                                                        ** TEST                                  STATUS  SIM TIME (ns)  REAL TIME (s)  RATIO (ns/s) **
+                                                        **********************************************************************************************
+                                                        ** test_slicer_top.test_low_pass_filter   PASS         120.00           0.00      24642.18  **
+                                                        **********************************************************************************************
+                                                        ** TESTS=1 PASS=1 FAIL=0 SKIP=0                        120.00           0.01      11470.03  **
+                                                        **********************************************************************************************
+                                                        
+[DEBUG] Running simulation with NBW_REF=15, NBW_TH=16
+[DEBUG] Running simulation with NBW_IN=15, NBW_OUT=17
+[DEBUG] Parameters: {'NBW_REF': 15, 'NBW_TH': 16, 'NBW_IN': 15, 'NBW_OUT': 17}
+.     -.--ns INFO     gpi                                ..mbed/gpi_embed.cpp:79   in set_program_name_in_venv        Did not detect Python virtual environment. Using system-wide Python interpreter
+     -.--ns INFO     gpi                                ../gpi/GpiCommon.cpp:101  in gpi_print_registered_impl       VPI registered
+     0.00ns INFO     cocotb                             Running on Icarus Verilog version 13.0 (devel)
+     0.00ns INFO     cocotb                             Running tests with cocotb v2.0.0.dev0+8d6c1a63 from /usr/local/lib/python3.9/dist-packages/cocotb
+     0.00ns INFO     cocotb                             Seeding Python random module with 1773330299
+     0.00ns INFO     cocotb.regression                  running test_slicer_top.test_low_pass_filter (1/1)
+                                                            Test the Slicer Top module with edge cases and random data.
+   120.00ns INFO     cocotb                             All tests passed successfully.
+   120.00ns INFO     cocotb.regression                  test_slicer_top.test_low_pass_filter passed
+   120.00ns INFO     cocotb.regression                  **********************************************************************************************
+                                                        ** TEST                                  STATUS  SIM TIME (ns)  REAL TIME (s)  RATIO (ns/s) **
+                                                        **********************************************************************************************
+                                                        ** test_slicer_top.test_low_pass_filter   PASS         120.00           0.00      31901.91  **
+                                                        **********************************************************************************************
+                                                        ** TESTS=1 PASS=1 FAIL=0 SKIP=0                        120.00           0.01      13053.15  **
+                                                        **********************************************************************************************
+                                                        
+[DEBUG] Running simulation with NBW_REF=13, NBW_TH=15
+[DEBUG] Running simulation with NBW_IN=12, NBW_OUT=16
+[DEBUG] Parameters: {'NBW_REF': 13, 'NBW_TH': 15, 'NBW_IN': 12, 'NBW_OUT': 16}
+.     -.--ns INFO     gpi                                ..mbed/gpi_embed.cpp:79   in set_program_name_in_venv        Did not detect Python virtual environment. Using system-wide Python interpreter
+     -.--ns INFO     gpi                                ../gpi/GpiCommon.cpp:101  in gpi_print_registered_impl       VPI registered
+     0.00ns INFO     cocotb                             Running on Icarus Verilog version 13.0 (devel)
+     0.00ns INFO     cocotb                             Running tests with cocotb v2.0.0.dev0+8d6c1a63 from /usr/local/lib/python3.9/dist-packages/cocotb
+     0.00ns INFO     cocotb                             Seeding Python random module with 1773330300
+     0.00ns INFO     cocotb.regression                  running test_slicer_top.test_low_pass_filter (1/1)
+                                                            Test the Slicer Top module with edge cases and random data.
+   120.00ns INFO     cocotb                             All tests passed successfully.
+   120.00ns INFO     cocotb.regression                  test_slicer_top.test_low_pass_filter passed
+   120.00ns INFO     cocotb.regression                  **********************************************************************************************
+                                                        ** TEST                                  STATUS  SIM TIME (ns)  REAL TIME (s)  RATIO (ns/s) **
+                                                        **********************************************************************************************
+                                                        ** test_slicer_top.test_low_pass_filter   PASS         120.00           0.00      33147.82  **
+                                                        **********************************************************************************************
+                                                        ** TESTS=1 PASS=1 FAIL=0 SKIP=0                        120.00           0.01      12603.08  **
+                                                        **********************************************************************************************
+                                                        
+[DEBUG] Running simulation with NBW_REF=14, NBW_TH=12
+[DEBUG] Running simulation with NBW_IN=14, NBW_OUT=15
+[DEBUG] Parameters: {'NBW_REF': 14, 'NBW_TH': 12, 'NBW_IN': 14, 'NBW_OUT': 15}
+.     -.--ns INFO     gpi                                ..mbed/gpi_embed.cpp:79   in set_program_name_in_venv        Did not detect Python virtual environment. Using system-wide Python interpreter
+     -.--ns INFO     gpi                                ../gpi/GpiCommon.cpp:101  in gpi_print_registered_impl       VPI registered
+     0.00ns INFO     cocotb                             Running on Icarus Verilog version 13.0 (devel)
+     0.00ns INFO     cocotb                             Running tests with cocotb v2.0.0.dev0+8d6c1a63 from /usr/local/lib/python3.9/dist-packages/cocotb
+     0.00ns INFO     cocotb                             Seeding Python random module with 1773330300
+     0.00ns INFO     cocotb.regression                  running test_slicer_top.test_low_pass_filter (1/1)
+                                                            Test the Slicer Top module with edge cases and random data.
+   120.00ns INFO     cocotb                             All tests passed successfully.
+   120.00ns INFO     cocotb.regression                  test_slicer_top.test_low_pass_filter passed
+   120.00ns INFO     cocotb.regression                  **********************************************************************************************
+                                                        ** TEST                                  STATUS  SIM TIME (ns)  REAL TIME (s)  RATIO (ns/s) **
+                                                        **********************************************************************************************
+                                                        ** test_slicer_top.test_low_pass_filter   PASS         120.00           0.00      35797.76  **
+                                                        **********************************************************************************************
+                                                        ** TESTS=1 PASS=1 FAIL=0 SKIP=0                        120.00           0.01      13299.07  **
+                                                        **********************************************************************************************
+                                                        
+[DEBUG] Running simulation with NBW_REF=7, NBW_TH=7
+[DEBUG] Running simulation with NBW_IN=7, NBW_OUT=8
+[DEBUG] Parameters: {'NBW_REF': 7, 'NBW_TH': 7, 'NBW_IN': 7, 'NBW_OUT': 8}
+.     -.--ns INFO     gpi                                ..mbed/gpi_embed.cpp:79   in set_program_name_in_venv        Did not detect Python virtual environment. Using system-wide Python interpreter
+     -.--ns INFO     gpi                                ../gpi/GpiCommon.cpp:101  in gpi_print_registered_impl       VPI registered
+     0.00ns INFO     cocotb                             Running on Icarus Verilog version 13.0 (devel)
+     0.00ns INFO     cocotb                             Running tests with cocotb v2.0.0.dev0+8d6c1a63 from /usr/local/lib/python3.9/dist-packages/cocotb
+     0.00ns INFO     cocotb                             Seeding Python random module with 1773330300
+     0.00ns INFO     cocotb.regression                  running test_slicer_top.test_low_pass_filter (1/1)
+                                                            Test the Slicer Top module with edge cases and random data.
+   120.00ns INFO     cocotb                             All tests passed successfully.
+   120.00ns INFO     cocotb.regression                  test_slicer_top.test_low_pass_filter passed
+   120.00ns INFO     cocotb.regression                  **********************************************************************************************
+                                                        ** TEST                                  STATUS  SIM TIME (ns)  REAL TIME (s)  RATIO (ns/s) **
+                                                        **********************************************************************************************
+                                                        ** test_slicer_top.test_low_pass_filter   PASS         120.00           0.00      29308.59  **
+                                                        **********************************************************************************************
+                                                        ** TESTS=1 PASS=1 FAIL=0 SKIP=0                        120.00           0.01      12340.42  **
+                                                        **********************************************************************************************
+                                                        
+[DEBUG] Running simulation with NBW_REF=14, NBW_TH=9
+[DEBUG] Running simulation with NBW_IN=16, NBW_OUT=15
+[DEBUG] Parameters: {'NBW_REF': 14, 'NBW_TH': 9, 'NBW_IN': 16, 'NBW_OUT': 15}
+.     -.--ns INFO     gpi                                ..mbed/gpi_embed.cpp:79   in set_program_name_in_venv        Did not detect Python virtual environment. Using system-wide Python interpreter
+     -.--ns INFO     gpi                                ../gpi/GpiCommon.cpp:101  in gpi_print_registered_impl       VPI registered
+     0.00ns INFO     cocotb                             Running on Icarus Verilog version 13.0 (devel)
+     0.00ns INFO     cocotb                             Running tests with cocotb v2.0.0.dev0+8d6c1a63 from /usr/local/lib/python3.9/dist-packages/cocotb
+     0.00ns INFO     cocotb                             Seeding Python random module with 1773330300
+     0.00ns INFO     cocotb.regression                  running test_slicer_top.test_low_pass_filter (1/1)
+                                                            Test the Slicer Top module with edge cases and random data.
+   120.00ns INFO     cocotb                             All tests passed successfully.
+   120.00ns INFO     cocotb.regression                  test_slicer_top.test_low_pass_filter passed
+   120.00ns INFO     cocotb.regression                  **********************************************************************************************
+                                                        ** TEST                                  STATUS  SIM TIME (ns)  REAL TIME (s)  RATIO (ns/s) **
+                                                        **********************************************************************************************
+                                                        ** test_slicer_top.test_low_pass_filter   PASS         120.00           0.00      33763.77  **
+                                                        **********************************************************************************************
+                                                        ** TESTS=1 PASS=1 FAIL=0 SKIP=0                        120.00           0.01      11800.26  **
+                                                        **********************************************************************************************
+                                                        
+[DEBUG] Running simulation with NBW_REF=8, NBW_TH=14
+[DEBUG] Running simulation with NBW_IN=8, NBW_OUT=15
+[DEBUG] Parameters: {'NBW_REF': 8, 'NBW_TH': 14, 'NBW_IN': 8, 'NBW_OUT': 15}
+.     -.--ns INFO     gpi                                ..mbed/gpi_embed.cpp:79   in set_program_name_in_venv        Did not detect Python virtual environment. Using system-wide Python interpreter
+     -.--ns INFO     gpi                                ../gpi/GpiCommon.cpp:101  in gpi_print_registered_impl       VPI registered
+     0.00ns INFO     cocotb                             Running on Icarus Verilog version 13.0 (devel)
+     0.00ns INFO     cocotb                             Running tests with cocotb v2.0.0.dev0+8d6c1a63 from /usr/local/lib/python3.9/dist-packages/cocotb
+     0.00ns INFO     cocotb                             Seeding Python random module with 1773330300
+     0.00ns INFO     cocotb.regression                  running test_slicer_top.test_low_pass_filter (1/1)
+                                                            Test the Slicer Top module with edge cases and random data.
+   120.00ns INFO     cocotb                             All tests passed successfully.
+   120.00ns INFO     cocotb.regression                  test_slicer_top.test_low_pass_filter passed
+   120.00ns INFO     cocotb.regression                  **********************************************************************************************
+                                                        ** TEST                                  STATUS  SIM TIME (ns)  REAL TIME (s)  RATIO (ns/s) **
+                                                        **********************************************************************************************
+                                                        ** test_slicer_top.test_low_pass_filter   PASS         120.00           0.00      31453.35  **
+                                                        **********************************************************************************************
+                                                        ** TESTS=1 PASS=1 FAIL=0 SKIP=0                        120.00           0.01      12711.30  **
+                                                        **********************************************************************************************
+                                                        
+[DEBUG] Running simulation with NBW_REF=14, NBW_TH=15
+[DEBUG] Running simulation with NBW_IN=9, NBW_OUT=16
+[DEBUG] Parameters: {'NBW_REF': 14, 'NBW_TH': 15, 'NBW_IN': 9, 'NBW_OUT': 16}
+.     -.--ns INFO     gpi                                ..mbed/gpi_embed.cpp:79   in set_program_name_in_venv        Did not detect Python virtual environment. Using system-wide Python interpreter
+     -.--ns INFO     gpi                                ../gpi/GpiCommon.cpp:101  in gpi_print_registered_impl       VPI registered
+     0.00ns INFO     cocotb                             Running on Icarus Verilog version 13.0 (devel)
+     0.00ns INFO     cocotb                             Running tests with cocotb v2.0.0.dev0+8d6c1a63 from /usr/local/lib/python3.9/dist-packages/cocotb
+     0.00ns INFO     cocotb                             Seeding Python random module with 1773330301
+     0.00ns INFO     cocotb.regression                  running test_slicer_top.test_low_pass_filter (1/1)
+                                                            Test the Slicer Top module with edge cases and random data.
+   120.00ns INFO     cocotb                             All tests passed successfully.
+   120.00ns INFO     cocotb.regression                  test_slicer_top.test_low_pass_filter passed
+   120.00ns INFO     cocotb.regression                  **********************************************************************************************
+                                                        ** TEST                                  STATUS  SIM TIME (ns)  REAL TIME (s)  RATIO (ns/s) **
+                                                        **********************************************************************************************
+                                                        ** test_slicer_top.test_low_pass_filter   PASS         120.00           0.00      24601.23  **
+                                                        **********************************************************************************************
+                                                        ** TESTS=1 PASS=1 FAIL=0 SKIP=0                        120.00           0.01      11058.26  **
+                                                        **********************************************************************************************
+                                                        
+[DEBUG] Running simulation with NBW_REF=16, NBW_TH=10
+[DEBUG] Running simulation with NBW_IN=9, NBW_OUT=17
+[DEBUG] Parameters: {'NBW_REF': 16, 'NBW_TH': 10, 'NBW_IN': 9, 'NBW_OUT': 17}
+.     -.--ns INFO     gpi                                ..mbed/gpi_embed.cpp:79   in set_program_name_in_venv        Did not detect Python virtual environment. Using system-wide Python interpreter
+     -.--ns INFO     gpi                                ../gpi/GpiCommon.cpp:101  in gpi_print_registered_impl       VPI registered
+     0.00ns INFO     cocotb                             Running on Icarus Verilog version 13.0 (devel)
+     0.00ns INFO     cocotb                             Running tests with cocotb v2.0.0.dev0+8d6c1a63 from /usr/local/lib/python3.9/dist-packages/cocotb
+     0.00ns INFO     cocotb                             Seeding Python random module with 1773330301
+     0.00ns INFO     cocotb.regression                  running test_slicer_top.test_low_pass_filter (1/1)
+                                                            Test the Slicer Top module with edge cases and random data.
+   120.00ns INFO     cocotb                             All tests passed successfully.
+   120.00ns INFO     cocotb.regression                  test_slicer_top.test_low_pass_filter passed
+   120.00ns INFO     cocotb.regression                  **********************************************************************************************
+                                                        ** TEST                                  STATUS  SIM TIME (ns)  REAL TIME (s)  RATIO (ns/s) **
+                                                        **********************************************************************************************
+                                                        ** test_slicer_top.test_low_pass_filter   PASS         120.00           0.00      30351.35  **
+                                                        **********************************************************************************************
+                                                        ** TESTS=1 PASS=1 FAIL=0 SKIP=0                        120.00           0.01      11750.12  **
+                                                        **********************************************************************************************
+                                                        
+[DEBUG] Running simulation with NBW_REF=15, NBW_TH=16
+[DEBUG] Running simulation with NBW_IN=15, NBW_OUT=17
+[DEBUG] Parameters: {'NBW_REF': 15, 'NBW_TH': 16, 'NBW_IN': 15, 'NBW_OUT': 17}
+.     -.--ns INFO     gpi                                ..mbed/gpi_embed.cpp:79   in set_program_name_in_venv        Did not detect Python virtual environment. Using system-wide Python interpreter
+     -.--ns INFO     gpi                                ../gpi/GpiCommon.cpp:101  in gpi_print_registered_impl       VPI registered
+     0.00ns INFO     cocotb                             Running on Icarus Verilog version 13.0 (devel)
+     0.00ns INFO     cocotb                             Running tests with cocotb v2.0.0.dev0+8d6c1a63 from /usr/local/lib/python3.9/dist-packages/cocotb
+     0.00ns INFO     cocotb                             Seeding Python random module with 1773330301
+     0.00ns INFO     cocotb.regression                  running test_slicer_top.test_low_pass_filter (1/1)
+                                                            Test the Slicer Top module with edge cases and random data.
+   120.00ns INFO     cocotb                             All tests passed successfully.
+   120.00ns INFO     cocotb.regression                  test_slicer_top.test_low_pass_filter passed
+   120.00ns INFO     cocotb.regression                  **********************************************************************************************
+                                                        ** TEST                                  STATUS  SIM TIME (ns)  REAL TIME (s)  RATIO (ns/s) **
+                                                        **********************************************************************************************
+                                                        ** test_slicer_top.test_low_pass_filter   PASS         120.00           0.00      27485.61  **
+                                                        **********************************************************************************************
+                                                        ** TESTS=1 PASS=1 FAIL=0 SKIP=0                        120.00           0.01       9500.30  **
+                                                        **********************************************************************************************
+                                                        
+[DEBUG] Running simulation with NBW_REF=13, NBW_TH=15
+[DEBUG] Running simulation with NBW_IN=12, NBW_OUT=16
+[DEBUG] Parameters: {'NBW_REF': 13, 'NBW_TH': 15, 'NBW_IN': 12, 'NBW_OUT': 16}
+.     -.--ns INFO     gpi                                ..mbed/gpi_embed.cpp:79   in set_program_name_in_venv        Did not detect Python virtual environment. Using system-wide Python interpreter
+     -.--ns INFO     gpi                                ../gpi/GpiCommon.cpp:101  in gpi_print_registered_impl       VPI registered
+     0.00ns INFO     cocotb                             Running on Icarus Verilog version 13.0 (devel)
+     0.00ns INFO     cocotb                             Running tests with cocotb v2.0.0.dev0+8d6c1a63 from /usr/local/lib/python3.9/dist-packages/cocotb
+     0.00ns INFO     cocotb                             Seeding Python random module with 1773330301
+     0.00ns INFO     cocotb.regression                  running test_slicer_top.test_low_pass_filter (1/1)
+                                                            Test the Slicer Top module with edge cases and random data.
+   120.00ns INFO     cocotb                             All tests passed successfully.
+   120.00ns INFO     cocotb.regression                  test_slicer_top.test_low_pass_filter passed
+   120.00ns INFO     cocotb.regression                  **********************************************************************************************
+                                                        ** TEST                                  STATUS  SIM TIME (ns)  REAL TIME (s)  RATIO (ns/s) **
+                                                        **********************************************************************************************
+                                                        ** test_slicer_top.test_low_pass_filter   PASS         120.00           0.00      31907.98  **
+                                                        **********************************************************************************************
+                                                        ** TESTS=1 PASS=1 FAIL=0 SKIP=0                        120.00           0.01      12957.71  **
+                                                        **********************************************************************************************
+                                                        
+[DEBUG] Running simulation with NBW_REF=14, NBW_TH=12
+[DEBUG] Running simulation with NBW_IN=14, NBW_OUT=15
+[DEBUG] Parameters: {'NBW_REF': 14, 'NBW_TH': 12, 'NBW_IN': 14, 'NBW_OUT': 15}
+.     -.--ns INFO     gpi                                ..mbed/gpi_embed.cpp:79   in set_program_name_in_venv        Did not detect Python virtual environment. Using system-wide Python interpreter
+     -.--ns INFO     gpi                                ../gpi/GpiCommon.cpp:101  in gpi_print_registered_impl       VPI registered
+     0.00ns INFO     cocotb                             Running on Icarus Verilog version 13.0 (devel)
+     0.00ns INFO     cocotb                             Running tests with cocotb v2.0.0.dev0+8d6c1a63 from /usr/local/lib/python3.9/dist-packages/cocotb
+     0.00ns INFO     cocotb                             Seeding Python random module with 1773330301
+     0.00ns INFO     cocotb.regression                  running test_slicer_top.test_low_pass_filter (1/1)
+                                                            Test the Slicer Top module with edge cases and random data.
+   120.00ns INFO     cocotb                             All tests passed successfully.
+   120.00ns INFO     cocotb.regression                  test_slicer_top.test_low_pass_filter passed
+   120.00ns INFO     cocotb.regression                  **********************************************************************************************
+                                                        ** TEST                                  STATUS  SIM TIME (ns)  REAL TIME (s)  RATIO (ns/s) **
+                                                        **********************************************************************************************
+                                                        ** test_slicer_top.test_low_pass_filter   PASS         120.00           0.00      36243.72  **
+                                                        **********************************************************************************************
+                                                        ** TESTS=1 PASS=1 FAIL=0 SKIP=0                        120.00           0.01      13847.92  **
+                                                        **********************************************************************************************
+                                                        
+[DEBUG] Running simulation with NBW_REF=7, NBW_TH=7
+[DEBUG] Running simulation with NBW_IN=7, NBW_OUT=8
+[DEBUG] Parameters: {'NBW_REF': 7, 'NBW_TH': 7, 'NBW_IN': 7, 'NBW_OUT': 8}
+.     -.--ns INFO     gpi                                ..mbed/gpi_embed.cpp:79   in set_program_name_in_venv        Did not detect Python virtual environment. Using system-wide Python interpreter
+     -.--ns INFO     gpi                                ../gpi/GpiCommon.cpp:101  in gpi_print_registered_impl       VPI registered
+     0.00ns INFO     cocotb                             Running on Icarus Verilog version 13.0 (devel)
+     0.00ns INFO     cocotb                             Running tests with cocotb v2.0.0.dev0+8d6c1a63 from /usr/local/lib/python3.9/dist-packages/cocotb
+     0.00ns INFO     cocotb                             Seeding Python random module with 1773330301
+     0.00ns INFO     cocotb.regression                  running test_slicer_top.test_low_pass_filter (1/1)
+                                                            Test the Slicer Top module with edge cases and random data.
+   120.00ns INFO     cocotb                             All tests passed successfully.
+   120.00ns INFO     cocotb.regression                  test_slicer_top.test_low_pass_filter passed
+   120.00ns INFO     cocotb.regression                  **********************************************************************************************
+                                                        ** TEST                                  STATUS  SIM TIME (ns)  REAL TIME (s)  RATIO (ns/s) **
+                                                        **********************************************************************************************
+                                                        ** test_slicer_top.test_low_pass_filter   PASS         120.00           0.00      29879.28  **
+                                                        **********************************************************************************************
+                                                        ** TESTS=1 PASS=1 FAIL=0 SKIP=0                        120.00           0.01      11310.74  **
+                                                        **********************************************************************************************
+                                                        
+[DEBUG] Running simulation with NBW_REF=14, NBW_TH=9
+[DEBUG] Running simulation with NBW_IN=16, NBW_OUT=15
+[DEBUG] Parameters: {'NBW_REF': 14, 'NBW_TH': 9, 'NBW_IN': 16, 'NBW_OUT': 15}
+.     -.--ns INFO     gpi                                ..mbed/gpi_embed.cpp:79   in set_program_name_in_venv        Did not detect Python virtual environment. Using system-wide Python interpreter
+     -.--ns INFO     gpi                                ../gpi/GpiCommon.cpp:101  in gpi_print_registered_impl       VPI registered
+     0.00ns INFO     cocotb                             Running on Icarus Verilog version 13.0 (devel)
+     0.00ns INFO     cocotb                             Running tests with cocotb v2.0.0.dev0+8d6c1a63 from /usr/local/lib/python3.9/dist-packages/cocotb
+     0.00ns INFO     cocotb                             Seeding Python random module with 1773330302
+     0.00ns INFO     cocotb.regression                  running test_slicer_top.test_low_pass_filter (1/1)
+                                                            Test the Slicer Top module with edge cases and random data.
+   120.00ns INFO     cocotb                             All tests passed successfully.
+   120.00ns INFO     cocotb.regression                  test_slicer_top.test_low_pass_filter passed
+   120.00ns INFO     cocotb.regression                  **********************************************************************************************
+                                                        ** TEST                                  STATUS  SIM TIME (ns)  REAL TIME (s)  RATIO (ns/s) **
+                                                        **********************************************************************************************
+                                                        ** test_slicer_top.test_low_pass_filter   PASS         120.00           0.00      33576.82  **
+                                                        **********************************************************************************************
+                                                        ** TESTS=1 PASS=1 FAIL=0 SKIP=0                        120.00           0.01      11203.48  **
+                                                        **********************************************************************************************
+                                                        
+[DEBUG] Running simulation with NBW_REF=8, NBW_TH=14
+[DEBUG] Running simulation with NBW_IN=8, NBW_OUT=15
+[DEBUG] Parameters: {'NBW_REF': 8, 'NBW_TH': 14, 'NBW_IN': 8, 'NBW_OUT': 15}
+.     -.--ns INFO     gpi                                ..mbed/gpi_embed.cpp:79   in set_program_name_in_venv        Did not detect Python virtual environment. Using system-wide Python interpreter
+     -.--ns INFO     gpi                                ../gpi/GpiCommon.cpp:101  in gpi_print_registered_impl       VPI registered
+     0.00ns INFO     cocotb                             Running on Icarus Verilog version 13.0 (devel)
+     0.00ns INFO     cocotb                             Running tests with cocotb v2.0.0.dev0+8d6c1a63 from /usr/local/lib/python3.9/dist-packages/cocotb
+     0.00ns INFO     cocotb                             Seeding Python random module with 1773330302
+     0.00ns INFO     cocotb.regression                  running test_slicer_top.test_low_pass_filter (1/1)
+                                                            Test the Slicer Top module with edge cases and random data.
+   120.00ns INFO     cocotb                             All tests passed successfully.
+   120.00ns INFO     cocotb.regression                  test_slicer_top.test_low_pass_filter passed
+   120.00ns INFO     cocotb.regression                  **********************************************************************************************
+                                                        ** TEST                                  STATUS  SIM TIME (ns)  REAL TIME (s)  RATIO (ns/s) **
+                                                        **********************************************************************************************
+                                                        ** test_slicer_top.test_low_pass_filter   PASS         120.00           0.00      32035.93  **
+                                                        **********************************************************************************************
+                                                        ** TESTS=1 PASS=1 FAIL=0 SKIP=0                        120.00           0.01      13118.82  **
+                                                        **********************************************************************************************
+                                                        
+[DEBUG] Running simulation with NBW_REF=14, NBW_TH=15
+[DEBUG] Running simulation with NBW_IN=9, NBW_OUT=16
+[DEBUG] Parameters: {'NBW_REF': 14, 'NBW_TH': 15, 'NBW_IN': 9, 'NBW_OUT': 16}
+.     -.--ns INFO     gpi                                ..mbed/gpi_embed.cpp:79   in set_program_name_in_venv        Did not detect Python virtual environment. Using system-wide Python interpreter
+     -.--ns INFO     gpi                                ../gpi/GpiCommon.cpp:101  in gpi_print_registered_impl       VPI registered
+     0.00ns INFO     cocotb                             Running on Icarus Verilog version 13.0 (devel)
+     0.00ns INFO     cocotb                             Running tests with cocotb v2.0.0.dev0+8d6c1a63 from /usr/local/lib/python3.9/dist-packages/cocotb
+     0.00ns INFO     cocotb                             Seeding Python random module with 1773330302
+     0.00ns INFO     cocotb.regression                  running test_slicer_top.test_low_pass_filter (1/1)
+                                                            Test the Slicer Top module with edge cases and random data.
+   120.00ns INFO     cocotb                             All tests passed successfully.
+   120.00ns INFO     cocotb.regression                  test_slicer_top.test_low_pass_filter passed
+   120.00ns INFO     cocotb.regression                  **********************************************************************************************
+                                                        ** TEST                                  STATUS  SIM TIME (ns)  REAL TIME (s)  RATIO (ns/s) **
+                                                        **********************************************************************************************
+                                                        ** test_slicer_top.test_low_pass_filter   PASS         120.00           0.01      22379.57  **
+                                                        **********************************************************************************************
+                                                        ** TESTS=1 PASS=1 FAIL=0 SKIP=0                        120.00           0.02       7808.93  **
+                                                        **********************************************************************************************
+                                                        
+[DEBUG] Running simulation with NBW_REF=16, NBW_TH=10
+[DEBUG] Running simulation with NBW_IN=9, NBW_OUT=17
+[DEBUG] Parameters: {'NBW_REF': 16, 'NBW_TH': 10, 'NBW_IN': 9, 'NBW_OUT': 17}
+.     -.--ns INFO     gpi                                ..mbed/gpi_embed.cpp:79   in set_program_name_in_venv        Did not detect Python virtual environment. Using system-wide Python interpreter
+     -.--ns INFO     gpi                                ../gpi/GpiCommon.cpp:101  in gpi_print_registered_impl       VPI registered
+     0.00ns INFO     cocotb                             Running on Icarus Verilog version 13.0 (devel)
+     0.00ns INFO     cocotb                             Running tests with cocotb v2.0.0.dev0+8d6c1a63 from /usr/local/lib/python3.9/dist-packages/cocotb
+     0.00ns INFO     cocotb                             Seeding Python random module with 1773330302
+     0.00ns INFO     cocotb.regression                  running test_slicer_top.test_low_pass_filter (1/1)
+                                                            Test the Slicer Top module with edge cases and random data.
+   120.00ns INFO     cocotb                             All tests passed successfully.
+   120.00ns INFO     cocotb.regression                  test_slicer_top.test_low_pass_filter passed
+   120.00ns INFO     cocotb.regression                  **********************************************************************************************
+                                                        ** TEST                                  STATUS  SIM TIME (ns)  REAL TIME (s)  RATIO (ns/s) **
+                                                        **********************************************************************************************
+                                                        ** test_slicer_top.test_low_pass_filter   PASS         120.00           0.00      29653.95  **
+                                                        **********************************************************************************************
+                                                        ** TESTS=1 PASS=1 FAIL=0 SKIP=0                        120.00           0.01      12590.15  **
+                                                        **********************************************************************************************
+                                                        
+[DEBUG] Running simulation with NBW_REF=15, NBW_TH=16
+[DEBUG] Running simulation with NBW_IN=15, NBW_OUT=17
+[DEBUG] Parameters: {'NBW_REF': 15, 'NBW_TH': 16, 'NBW_IN': 15, 'NBW_OUT': 17}
+.     -.--ns INFO     gpi                                ..mbed/gpi_embed.cpp:79   in set_program_name_in_venv        Did not detect Python virtual environment. Using system-wide Python interpreter
+     -.--ns INFO     gpi                                ../gpi/GpiCommon.cpp:101  in gpi_print_registered_impl       VPI registered
+     0.00ns INFO     cocotb                             Running on Icarus Verilog version 13.0 (devel)
+     0.00ns INFO     cocotb                             Running tests with cocotb v2.0.0.dev0+8d6c1a63 from /usr/local/lib/python3.9/dist-packages/cocotb
+     0.00ns INFO     cocotb                             Seeding Python random module with 1773330302
+     0.00ns INFO     cocotb.regression                  running test_slicer_top.test_low_pass_filter (1/1)
+                                                            Test the Slicer Top module with edge cases and random data.
+   120.00ns INFO     cocotb                             All tests passed successfully.
+   120.00ns INFO     cocotb.regression                  test_slicer_top.test_low_pass_filter passed
+   120.00ns INFO     cocotb.regression                  **********************************************************************************************
+                                                        ** TEST                                  STATUS  SIM TIME (ns)  REAL TIME (s)  RATIO (ns/s) **
+                                                        **********************************************************************************************
+                                                        ** test_slicer_top.test_low_pass_filter   PASS         120.00           0.00      28392.65  **
+                                                        **********************************************************************************************
+                                                        ** TESTS=1 PASS=1 FAIL=0 SKIP=0                        120.00           0.01      12354.05  **
+                                                        **********************************************************************************************
+                                                        
+[DEBUG] Running simulation with NBW_REF=13, NBW_TH=15
+[DEBUG] Running simulation with NBW_IN=12, NBW_OUT=16
+[DEBUG] Parameters: {'NBW_REF': 13, 'NBW_TH': 15, 'NBW_IN': 12, 'NBW_OUT': 16}
+.     -.--ns INFO     gpi                                ..mbed/gpi_embed.cpp:79   in set_program_name_in_venv        Did not detect Python virtual environment. Using system-wide Python interpreter
+     -.--ns INFO     gpi                                ../gpi/GpiCommon.cpp:101  in gpi_print_registered_impl       VPI registered
+     0.00ns INFO     cocotb                             Running on Icarus Verilog version 13.0 (devel)
+     0.00ns INFO     cocotb                             Running tests with cocotb v2.0.0.dev0+8d6c1a63 from /usr/local/lib/python3.9/dist-packages/cocotb
+     0.00ns INFO     cocotb                             Seeding Python random module with 1773330303
+     0.00ns INFO     cocotb.regression                  running test_slicer_top.test_low_pass_filter (1/1)
+                                                            Test the Slicer Top module with edge cases and random data.
+   120.00ns INFO     cocotb                             All tests passed successfully.
+   120.00ns INFO     cocotb.regression                  test_slicer_top.test_low_pass_filter passed
+   120.00ns INFO     cocotb.regression                  **********************************************************************************************
+                                                        ** TEST                                  STATUS  SIM TIME (ns)  REAL TIME (s)  RATIO (ns/s) **
+                                                        **********************************************************************************************
+                                                        ** test_slicer_top.test_low_pass_filter   PASS         120.00           0.00      32636.27  **
+                                                        **********************************************************************************************
+                                                        ** TESTS=1 PASS=1 FAIL=0 SKIP=0                        120.00           0.01      13078.59  **
+                                                        **********************************************************************************************
+                                                        
+[DEBUG] Running simulation with NBW_REF=14, NBW_TH=12
+[DEBUG] Running simulation with NBW_IN=14, NBW_OUT=15
+[DEBUG] Parameters: {'NBW_REF': 14, 'NBW_TH': 12, 'NBW_IN': 14, 'NBW_OUT': 15}
+.     -.--ns INFO     gpi                                ..mbed/gpi_embed.cpp:79   in set_program_name_in_venv        Did not detect Python virtual environment. Using system-wide Python interpreter
+     -.--ns INFO     gpi                                ../gpi/GpiCommon.cpp:101  in gpi_print_registered_impl       VPI registered
+     0.00ns INFO     cocotb                             Running on Icarus Verilog version 13.0 (devel)
+     0.00ns INFO     cocotb                             Running tests with cocotb v2.0.0.dev0+8d6c1a63 from /usr/local/lib/python3.9/dist-packages/cocotb
+     0.00ns INFO     cocotb                             Seeding Python random module with 1773330303
+     0.00ns INFO     cocotb.regression                  running test_slicer_top.test_low_pass_filter (1/1)
+                                                            Test the Slicer Top module with edge cases and random data.
+   120.00ns INFO     cocotb                             All tests passed successfully.
+   120.00ns INFO     cocotb.regression                  test_slicer_top.test_low_pass_filter passed
+   120.00ns INFO     cocotb.regression                  **********************************************************************************************
+                                                        ** TEST                                  STATUS  SIM TIME (ns)  REAL TIME (s)  RATIO (ns/s) **
+                                                        **********************************************************************************************
+                                                        ** test_slicer_top.test_low_pass_filter   PASS         120.00           0.00      35675.96  **
+                                                        **********************************************************************************************
+                                                        ** TESTS=1 PASS=1 FAIL=0 SKIP=0                        120.00           0.01      13578.93  **
+                                                        **********************************************************************************************
+                                                        
+[DEBUG] Running simulation with NBW_REF=7, NBW_TH=7
+[DEBUG] Running simulation with NBW_IN=7, NBW_OUT=8
+[DEBUG] Parameters: {'NBW_REF': 7, 'NBW_TH': 7, 'NBW_IN': 7, 'NBW_OUT': 8}
+.     -.--ns INFO     gpi                                ..mbed/gpi_embed.cpp:79   in set_program_name_in_venv        Did not detect Python virtual environment. Using system-wide Python interpreter
+     -.--ns INFO     gpi                                ../gpi/GpiCommon.cpp:101  in gpi_print_registered_impl       VPI registered
+     0.00ns INFO     cocotb                             Running on Icarus Verilog version 13.0 (devel)
+     0.00ns INFO     cocotb                             Running tests with cocotb v2.0.0.dev0+8d6c1a63 from /usr/local/lib/python3.9/dist-packages/cocotb
+     0.00ns INFO     cocotb                             Seeding Python random module with 1773330303
+     0.00ns INFO     cocotb.regression                  running test_slicer_top.test_low_pass_filter (1/1)
+                                                            Test the Slicer Top module with edge cases and random data.
+   120.00ns INFO     cocotb                             All tests passed successfully.
+   120.00ns INFO     cocotb.regression                  test_slicer_top.test_low_pass_filter passed
+   120.00ns INFO     cocotb.regression                  **********************************************************************************************
+                                                        ** TEST                                  STATUS  SIM TIME (ns)  REAL TIME (s)  RATIO (ns/s) **
+                                                        **********************************************************************************************
+                                                        ** test_slicer_top.test_low_pass_filter   PASS         120.00           0.00      32978.41  **
+                                                        **********************************************************************************************
+                                                        ** TESTS=1 PASS=1 FAIL=0 SKIP=0                        120.00           0.01      13482.53  **
+                                                        **********************************************************************************************
+                                                        
+[DEBUG] Running simulation with NBW_REF=14, NBW_TH=9
+[DEBUG] Running simulation with NBW_IN=16, NBW_OUT=15
+[DEBUG] Parameters: {'NBW_REF': 14, 'NBW_TH': 9, 'NBW_IN': 16, 'NBW_OUT': 15}
+.     -.--ns INFO     gpi                                ..mbed/gpi_embed.cpp:79   in set_program_name_in_venv        Did not detect Python virtual environment. Using system-wide Python interpreter
+     -.--ns INFO     gpi                                ../gpi/GpiCommon.cpp:101  in gpi_print_registered_impl       VPI registered
+     0.00ns INFO     cocotb                             Running on Icarus Verilog version 13.0 (devel)
+     0.00ns INFO     cocotb                             Running tests with cocotb v2.0.0.dev0+8d6c1a63 from /usr/local/lib/python3.9/dist-packages/cocotb
+     0.00ns INFO     cocotb                             Seeding Python random module with 1773330303
+     0.00ns INFO     cocotb.regression                  running test_slicer_top.test_low_pass_filter (1/1)
+                                                            Test the Slicer Top module with edge cases and random data.
+   120.00ns INFO     cocotb                             All tests passed successfully.
+   120.00ns INFO     cocotb.regression                  test_slicer_top.test_low_pass_filter passed
+   120.00ns INFO     cocotb.regression                  **********************************************************************************************
+                                                        ** TEST                                  STATUS  SIM TIME (ns)  REAL TIME (s)  RATIO (ns/s) **
+                                                        **********************************************************************************************
+                                                        ** test_slicer_top.test_low_pass_filter   PASS         120.00           0.00      33398.57  **
+                                                        **********************************************************************************************
+                                                        ** TESTS=1 PASS=1 FAIL=0 SKIP=0                        120.00           0.01      13400.69  **
+                                                        **********************************************************************************************
+                                                        
+[DEBUG] Running simulation with NBW_REF=8, NBW_TH=14
+[DEBUG] Running simulation with NBW_IN=8, NBW_OUT=15
+[DEBUG] Parameters: {'NBW_REF': 8, 'NBW_TH': 14, 'NBW_IN': 8, 'NBW_OUT': 15}
+.     -.--ns INFO     gpi                                ..mbed/gpi_embed.cpp:79   in set_program_name_in_venv        Did not detect Python virtual environment. Using system-wide Python interpreter
+     -.--ns INFO     gpi                                ../gpi/GpiCommon.cpp:101  in gpi_print_registered_impl       VPI registered
+     0.00ns INFO     cocotb                             Running on Icarus Verilog version 13.0 (devel)
+     0.00ns INFO     cocotb                             Running tests with cocotb v2.0.0.dev0+8d6c1a63 from /usr/local/lib/python3.9/dist-packages/cocotb
+     0.00ns INFO     cocotb                             Seeding Python random module with 1773330303
+     0.00ns INFO     cocotb.regression                  running test_slicer_top.test_low_pass_filter (1/1)
+                                                            Test the Slicer Top module with edge cases and random data.
+   120.00ns INFO     cocotb                             All tests passed successfully.
+   120.00ns INFO     cocotb.regression                  test_slicer_top.test_low_pass_filter passed
+   120.00ns INFO     cocotb.regression                  **********************************************************************************************
+                                                        ** TEST                                  STATUS  SIM TIME (ns)  REAL TIME (s)  RATIO (ns/s) **
+                                                        **********************************************************************************************
+                                                        ** test_slicer_top.test_low_pass_filter   PASS         120.00           0.00      32299.07  **
+                                                        **********************************************************************************************
+                                                        ** TESTS=1 PASS=1 FAIL=0 SKIP=0                        120.00           0.01      13308.91  **
+                                                        **********************************************************************************************
+                                                        
+[DEBUG] Running simulation with NBW_REF=14, NBW_TH=15
+[DEBUG] Running simulation with NBW_IN=9, NBW_OUT=16
+[DEBUG] Parameters: {'NBW_REF': 14, 'NBW_TH': 15, 'NBW_IN': 9, 'NBW_OUT': 16}
+.     -.--ns INFO     gpi                                ..mbed/gpi_embed.cpp:79   in set_program_name_in_venv        Did not detect Python virtual environment. Using system-wide Python interpreter
+     -.--ns INFO     gpi                                ../gpi/GpiCommon.cpp:101  in gpi_print_registered_impl       VPI registered
+     0.00ns INFO     cocotb                             Running on Icarus Verilog version 13.0 (devel)
+     0.00ns INFO     cocotb                             Running tests with cocotb v2.0.0.dev0+8d6c1a63 from /usr/local/lib/python3.9/dist-packages/cocotb
+     0.00ns INFO     cocotb                             Seeding Python random module with 1773330304
+     0.00ns INFO     cocotb.regression                  running test_slicer_top.test_low_pass_filter (1/1)
+                                                            Test the Slicer Top module with edge cases and random data.
+   120.00ns INFO     cocotb                             All tests passed successfully.
+   120.00ns INFO     cocotb.regression                  test_slicer_top.test_low_pass_filter passed
+   120.00ns INFO     cocotb.regression                  **********************************************************************************************
+                                                        ** TEST                                  STATUS  SIM TIME (ns)  REAL TIME (s)  RATIO (ns/s) **
+                                                        **********************************************************************************************
+                                                        ** test_slicer_top.test_low_pass_filter   PASS         120.00           0.00      32035.93  **
+                                                        **********************************************************************************************
+                                                        ** TESTS=1 PASS=1 FAIL=0 SKIP=0                        120.00           0.01      12931.08  **
+                                                        **********************************************************************************************
+                                                        
+[DEBUG] Running simulation with NBW_REF=16, NBW_TH=10
+[DEBUG] Running simulation with NBW_IN=9, NBW_OUT=17
+[DEBUG] Parameters: {'NBW_REF': 16, 'NBW_TH': 10, 'NBW_IN': 9, 'NBW_OUT': 17}
+.     -.--ns INFO     gpi                                ..mbed/gpi_embed.cpp:79   in set_program_name_in_venv        Did not detect Python virtual environment. Using system-wide Python interpreter
+     -.--ns INFO     gpi                                ../gpi/GpiCommon.cpp:101  in gpi_print_registered_impl       VPI registered
+     0.00ns INFO     cocotb                             Running on Icarus Verilog version 13.0 (devel)
+     0.00ns INFO     cocotb                             Running tests with cocotb v2.0.0.dev0+8d6c1a63 from /usr/local/lib/python3.9/dist-packages/cocotb
+     0.00ns INFO     cocotb                             Seeding Python random module with 1773330304
+     0.00ns INFO     cocotb.regression                  running test_slicer_top.test_low_pass_filter (1/1)
+                                                            Test the Slicer Top module with edge cases and random data.
+   120.00ns INFO     cocotb                             All tests passed successfully.
+   120.00ns INFO     cocotb.regression                  test_slicer_top.test_low_pass_filter passed
+   120.00ns INFO     cocotb.regression                  **********************************************************************************************
+                                                        ** TEST                                  STATUS  SIM TIME (ns)  REAL TIME (s)  RATIO (ns/s) **
+                                                        **********************************************************************************************
+                                                        ** test_slicer_top.test_low_pass_filter   PASS         120.00           0.00      31583.61  **
+                                                        **********************************************************************************************
+                                                        ** TESTS=1 PASS=1 FAIL=0 SKIP=0                        120.00           0.01      12878.80  **
+                                                        **********************************************************************************************
+                                                        
+[DEBUG] Running simulation with NBW_REF=15, NBW_TH=16
+[DEBUG] Running simulation with NBW_IN=15, NBW_OUT=17
+[DEBUG] Parameters: {'NBW_REF': 15, 'NBW_TH': 16, 'NBW_IN': 15, 'NBW_OUT': 17}
+.     -.--ns INFO     gpi                                ..mbed/gpi_embed.cpp:79   in set_program_name_in_venv        Did not detect Python virtual environment. Using system-wide Python interpreter
+     -.--ns INFO     gpi                                ../gpi/GpiCommon.cpp:101  in gpi_print_registered_impl       VPI registered
+     0.00ns INFO     cocotb                             Running on Icarus Verilog version 13.0 (devel)
+     0.00ns INFO     cocotb                             Running tests with cocotb v2.0.0.dev0+8d6c1a63 from /usr/local/lib/python3.9/dist-packages/cocotb
+     0.00ns INFO     cocotb                             Seeding Python random module with 1773330304
+     0.00ns INFO     cocotb.regression                  running test_slicer_top.test_low_pass_filter (1/1)
+                                                            Test the Slicer Top module with edge cases and random data.
+   120.00ns INFO     cocotb                             All tests passed successfully.
+   120.00ns INFO     cocotb.regression                  test_slicer_top.test_low_pass_filter passed
+   120.00ns INFO     cocotb.regression                  **********************************************************************************************
+                                                        ** TEST                                  STATUS  SIM TIME (ns)  REAL TIME (s)  RATIO (ns/s) **
+                                                        **********************************************************************************************
+                                                        ** test_slicer_top.test_low_pass_filter   PASS         120.00           0.00      30318.44  **
+                                                        **********************************************************************************************
+                                                        ** TESTS=1 PASS=1 FAIL=0 SKIP=0                        120.00           0.01      12475.62  **
+                                                        **********************************************************************************************
+                                                        
+[DEBUG] Running simulation with NBW_REF=13, NBW_TH=15
+[DEBUG] Running simulation with NBW_IN=12, NBW_OUT=16
+[DEBUG] Parameters: {'NBW_REF': 13, 'NBW_TH': 15, 'NBW_IN': 12, 'NBW_OUT': 16}
+.     -.--ns INFO     gpi                                ..mbed/gpi_embed.cpp:79   in set_program_name_in_venv        Did not detect Python virtual environment. Using system-wide Python interpreter
+     -.--ns INFO     gpi                                ../gpi/GpiCommon.cpp:101  in gpi_print_registered_impl       VPI registered
+     0.00ns INFO     cocotb                             Running on Icarus Verilog version 13.0 (devel)
+     0.00ns INFO     cocotb                             Running tests with cocotb v2.0.0.dev0+8d6c1a63 from /usr/local/lib/python3.9/dist-packages/cocotb
+     0.00ns INFO     cocotb                             Seeding Python random module with 1773330304
+     0.00ns INFO     cocotb.regression                  running test_slicer_top.test_low_pass_filter (1/1)
+                                                            Test the Slicer Top module with edge cases and random data.
+   120.00ns INFO     cocotb                             All tests passed successfully.
+   120.00ns INFO     cocotb.regression                  test_slicer_top.test_low_pass_filter passed
+   120.00ns INFO     cocotb.regression                  **********************************************************************************************
+                                                        ** TEST                                  STATUS  SIM TIME (ns)  REAL TIME (s)  RATIO (ns/s) **
+                                                        **********************************************************************************************
+                                                        ** test_slicer_top.test_low_pass_filter   PASS         120.00           0.00      32270.08  **
+                                                        **********************************************************************************************
+                                                        ** TESTS=1 PASS=1 FAIL=0 SKIP=0                        120.00           0.01      13090.16  **
+                                                        **********************************************************************************************
+                                                        
+[DEBUG] Running simulation with NBW_REF=14, NBW_TH=12
+[DEBUG] Running simulation with NBW_IN=14, NBW_OUT=15
+[DEBUG] Parameters: {'NBW_REF': 14, 'NBW_TH': 12, 'NBW_IN': 14, 'NBW_OUT': 15}
+.     -.--ns INFO     gpi                                ..mbed/gpi_embed.cpp:79   in set_program_name_in_venv        Did not detect Python virtual environment. Using system-wide Python interpreter
+     -.--ns INFO     gpi                                ../gpi/GpiCommon.cpp:101  in gpi_print_registered_impl       VPI registered
+     0.00ns INFO     cocotb                             Running on Icarus Verilog version 13.0 (devel)
+     0.00ns INFO     cocotb                             Running tests with cocotb v2.0.0.dev0+8d6c1a63 from /usr/local/lib/python3.9/dist-packages/cocotb
+     0.00ns INFO     cocotb                             Seeding Python random module with 1773330304
+     0.00ns INFO     cocotb.regression                  running test_slicer_top.test_low_pass_filter (1/1)
+                                                            Test the Slicer Top module with edge cases and random data.
+   120.00ns INFO     cocotb                             All tests passed successfully.
+   120.00ns INFO     cocotb.regression                  test_slicer_top.test_low_pass_filter passed
+   120.00ns INFO     cocotb.regression                  **********************************************************************************************
+                                                        ** TEST                                  STATUS  SIM TIME (ns)  REAL TIME (s)  RATIO (ns/s) **
+                                                        **********************************************************************************************
+                                                        ** test_slicer_top.test_low_pass_filter   PASS         120.00           0.00      36090.38  **
+                                                        **********************************************************************************************
+                                                        ** TESTS=1 PASS=1 FAIL=0 SKIP=0                        120.00           0.01      13478.20  **
+                                                        **********************************************************************************************
+                                                        
+[DEBUG] Running simulation with NBW_REF=7, NBW_TH=7
+[DEBUG] Running simulation with NBW_IN=7, NBW_OUT=8
+[DEBUG] Parameters: {'NBW_REF': 7, 'NBW_TH': 7, 'NBW_IN': 7, 'NBW_OUT': 8}
+.     -.--ns INFO     gpi                                ..mbed/gpi_embed.cpp:79   in set_program_name_in_venv        Did not detect Python virtual environment. Using system-wide Python interpreter
+     -.--ns INFO     gpi                                ../gpi/GpiCommon.cpp:101  in gpi_print_registered_impl       VPI registered
+     0.00ns INFO     cocotb                             Running on Icarus Verilog version 13.0 (devel)
+     0.00ns INFO     cocotb                             Running tests with cocotb v2.0.0.dev0+8d6c1a63 from /usr/local/lib/python3.9/dist-packages/cocotb
+     0.00ns INFO     cocotb                             Seeding Python random module with 1773330304
+     0.00ns INFO     cocotb.regression                  running test_slicer_top.test_low_pass_filter (1/1)
+                                                            Test the Slicer Top module with edge cases and random data.
+   120.00ns INFO     cocotb                             All tests passed successfully.
+   120.00ns INFO     cocotb.regression                  test_slicer_top.test_low_pass_filter passed
+   120.00ns INFO     cocotb.regression                  **********************************************************************************************
+                                                        ** TEST                                  STATUS  SIM TIME (ns)  REAL TIME (s)  RATIO (ns/s) **
+                                                        **********************************************************************************************
+                                                        ** test_slicer_top.test_low_pass_filter   PASS         120.00           0.00      32297.00  **
+                                                        **********************************************************************************************
+                                                        ** TESTS=1 PASS=1 FAIL=0 SKIP=0                        120.00           0.01      13110.96  **
+                                                        **********************************************************************************************
+                                                        
+[DEBUG] Running simulation with NBW_REF=14, NBW_TH=9
+[DEBUG] Running simulation with NBW_IN=16, NBW_OUT=15
+[DEBUG] Parameters: {'NBW_REF': 14, 'NBW_TH': 9, 'NBW_IN': 16, 'NBW_OUT': 15}
+.     -.--ns INFO     gpi                                ..mbed/gpi_embed.cpp:79   in set_program_name_in_venv        Did not detect Python virtual environment. Using system-wide Python interpreter
+     -.--ns INFO     gpi                                ../gpi/GpiCommon.cpp:101  in gpi_print_registered_impl       VPI registered
+     0.00ns INFO     cocotb                             Running on Icarus Verilog version 13.0 (devel)
+     0.00ns INFO     cocotb                             Running tests with cocotb v2.0.0.dev0+8d6c1a63 from /usr/local/lib/python3.9/dist-packages/cocotb
+     0.00ns INFO     cocotb                             Seeding Python random module with 1773330305
+     0.00ns INFO     cocotb.regression                  running test_slicer_top.test_low_pass_filter (1/1)
+                                                            Test the Slicer Top module with edge cases and random data.
+   120.00ns INFO     cocotb                             All tests passed successfully.
+   120.00ns INFO     cocotb.regression                  test_slicer_top.test_low_pass_filter passed
+   120.00ns INFO     cocotb.regression                  **********************************************************************************************
+                                                        ** TEST                                  STATUS  SIM TIME (ns)  REAL TIME (s)  RATIO (ns/s) **
+                                                        **********************************************************************************************
+                                                        ** test_slicer_top.test_low_pass_filter   PASS         120.00           0.00      33431.85  **
+                                                        **********************************************************************************************
+                                                        ** TESTS=1 PASS=1 FAIL=0 SKIP=0                        120.00           0.01      11583.28  **
+                                                        **********************************************************************************************
+                                                        
+[DEBUG] Running simulation with NBW_REF=8, NBW_TH=14
+[DEBUG] Running simulation with NBW_IN=8, NBW_OUT=15
+[DEBUG] Parameters: {'NBW_REF': 8, 'NBW_TH': 14, 'NBW_IN': 8, 'NBW_OUT': 15}
+.     -.--ns INFO     gpi                                ..mbed/gpi_embed.cpp:79   in set_program_name_in_venv        Did not detect Python virtual environment. Using system-wide Python interpreter
+     -.--ns INFO     gpi                                ../gpi/GpiCommon.cpp:101  in gpi_print_registered_impl       VPI registered
+     0.00ns INFO     cocotb                             Running on Icarus Verilog version 13.0 (devel)
+     0.00ns INFO     cocotb                             Running tests with cocotb v2.0.0.dev0+8d6c1a63 from /usr/local/lib/python3.9/dist-packages/cocotb
+     0.00ns INFO     cocotb                             Seeding Python random module with 1773330305
+     0.00ns INFO     cocotb.regression                  running test_slicer_top.test_low_pass_filter (1/1)
+                                                            Test the Slicer Top module with edge cases and random data.
+   120.00ns INFO     cocotb                             All tests passed successfully.
+   120.00ns INFO     cocotb.regression                  test_slicer_top.test_low_pass_filter passed
+   120.00ns INFO     cocotb.regression                  **********************************************************************************************
+                                                        ** TEST                                  STATUS  SIM TIME (ns)  REAL TIME (s)  RATIO (ns/s) **
+                                                        **********************************************************************************************
+                                                        ** test_slicer_top.test_low_pass_filter   PASS         120.00           0.00      32676.52  **
+                                                        **********************************************************************************************
+                                                        ** TESTS=1 PASS=1 FAIL=0 SKIP=0                        120.00           0.01      13359.78  **
+                                                        **********************************************************************************************
+                                                        
+[DEBUG] Running simulation with NBW_REF=14, NBW_TH=15
+[DEBUG] Running simulation with NBW_IN=9, NBW_OUT=16
+[DEBUG] Parameters: {'NBW_REF': 14, 'NBW_TH': 15, 'NBW_IN': 9, 'NBW_OUT': 16}
+.     -.--ns INFO     gpi                                ..mbed/gpi_embed.cpp:79   in set_program_name_in_venv        Did not detect Python virtual environment. Using system-wide Python interpreter
+     -.--ns INFO     gpi                                ../gpi/GpiCommon.cpp:101  in gpi_print_registered_impl       VPI registered
+     0.00ns INFO     cocotb                             Running on Icarus Verilog version 13.0 (devel)
+     0.00ns INFO     cocotb                             Running tests with cocotb v2.0.0.dev0+8d6c1a63 from /usr/local/lib/python3.9/dist-packages/cocotb
+     0.00ns INFO     cocotb                             Seeding Python random module with 1773330305
+     0.00ns INFO     cocotb.regression                  running test_slicer_top.test_low_pass_filter (1/1)
+                                                            Test the Slicer Top module with edge cases and random data.
+   120.00ns INFO     cocotb                             All tests passed successfully.
+   120.00ns INFO     cocotb.regression                  test_slicer_top.test_low_pass_filter passed
+   120.00ns INFO     cocotb.regression                  **********************************************************************************************
+                                                        ** TEST                                  STATUS  SIM TIME (ns)  REAL TIME (s)  RATIO (ns/s) **
+                                                        **********************************************************************************************
+                                                        ** test_slicer_top.test_low_pass_filter   PASS         120.00           0.00      32954.66  **
+                                                        **********************************************************************************************
+                                                        ** TESTS=1 PASS=1 FAIL=0 SKIP=0                        120.00           0.01      13375.40  **
+                                                        **********************************************************************************************
+                                                        
+[DEBUG] Running simulation with NBW_REF=16, NBW_TH=10
+[DEBUG] Running simulation with NBW_IN=9, NBW_OUT=17
+[DEBUG] Parameters: {'NBW_REF': 16, 'NBW_TH': 10, 'NBW_IN': 9, 'NBW_OUT': 17}
+.     -.--ns INFO     gpi                                ..mbed/gpi_embed.cpp:79   in set_program_name_in_venv        Did not detect Python virtual environment. Using system-wide Python interpreter
+     -.--ns INFO     gpi                                ../gpi/GpiCommon.cpp:101  in gpi_print_registered_impl       VPI registered
+     0.00ns INFO     cocotb                             Running on Icarus Verilog version 13.0 (devel)
+     0.00ns INFO     cocotb                             Running tests with cocotb v2.0.0.dev0+8d6c1a63 from /usr/local/lib/python3.9/dist-packages/cocotb
+     0.00ns INFO     cocotb                             Seeding Python random module with 1773330305
+     0.00ns INFO     cocotb.regression                  running test_slicer_top.test_low_pass_filter (1/1)
+                                                            Test the Slicer Top module with edge cases and random data.
+   120.00ns INFO     cocotb                             All tests passed successfully.
+   120.00ns INFO     cocotb.regression                  test_slicer_top.test_low_pass_filter passed
+   120.00ns INFO     cocotb.regression                  **********************************************************************************************
+                                                        ** TEST                                  STATUS  SIM TIME (ns)  REAL TIME (s)  RATIO (ns/s) **
+                                                        **********************************************************************************************
+                                                        ** test_slicer_top.test_low_pass_filter   PASS         120.00           0.00      29585.97  **
+                                                        **********************************************************************************************
+                                                        ** TESTS=1 PASS=1 FAIL=0 SKIP=0                        120.00           0.01      12670.66  **
+                                                        **********************************************************************************************
+                                                        
+[DEBUG] Running simulation with NBW_REF=15, NBW_TH=16
+[DEBUG] Running simulation with NBW_IN=15, NBW_OUT=17
+[DEBUG] Parameters: {'NBW_REF': 15, 'NBW_TH': 16, 'NBW_IN': 15, 'NBW_OUT': 17}
+.     -.--ns INFO     gpi                                ..mbed/gpi_embed.cpp:79   in set_program_name_in_venv        Did not detect Python virtual environment. Using system-wide Python interpreter
+     -.--ns INFO     gpi                                ../gpi/GpiCommon.cpp:101  in gpi_print_registered_impl       VPI registered
+     0.00ns INFO     cocotb                             Running on Icarus Verilog version 13.0 (devel)
+     0.00ns INFO     cocotb                             Running tests with cocotb v2.0.0.dev0+8d6c1a63 from /usr/local/lib/python3.9/dist-packages/cocotb
+     0.00ns INFO     cocotb                             Seeding Python random module with 1773330305
+     0.00ns INFO     cocotb.regression                  running test_slicer_top.test_low_pass_filter (1/1)
+                                                            Test the Slicer Top module with edge cases and random data.
+   120.00ns INFO     cocotb                             All tests passed successfully.
+   120.00ns INFO     cocotb.regression                  test_slicer_top.test_low_pass_filter passed
+   120.00ns INFO     cocotb.regression                  **********************************************************************************************
+                                                        ** TEST                                  STATUS  SIM TIME (ns)  REAL TIME (s)  RATIO (ns/s) **
+                                                        **********************************************************************************************
+                                                        ** test_slicer_top.test_low_pass_filter   PASS         120.00           0.00      32449.00  **
+                                                        **********************************************************************************************
+                                                        ** TESTS=1 PASS=1 FAIL=0 SKIP=0                        120.00           0.01      13263.67  **
+                                                        **********************************************************************************************
+                                                        
+[DEBUG] Running simulation with NBW_REF=13, NBW_TH=15
+[DEBUG] Running simulation with NBW_IN=12, NBW_OUT=16
+[DEBUG] Parameters: {'NBW_REF': 13, 'NBW_TH': 15, 'NBW_IN': 12, 'NBW_OUT': 16}
+.     -.--ns INFO     gpi                                ..mbed/gpi_embed.cpp:79   in set_program_name_in_venv        Did not detect Python virtual environment. Using system-wide Python interpreter
+     -.--ns INFO     gpi                                ../gpi/GpiCommon.cpp:101  in gpi_print_registered_impl       VPI registered
+     0.00ns INFO     cocotb                             Running on Icarus Verilog version 13.0 (devel)
+     0.00ns INFO     cocotb                             Running tests with cocotb v2.0.0.dev0+8d6c1a63 from /usr/local/lib/python3.9/dist-packages/cocotb
+     0.00ns INFO     cocotb                             Seeding Python random module with 1773330306
+     0.00ns INFO     cocotb.regression                  running test_slicer_top.test_low_pass_filter (1/1)
+                                                            Test the Slicer Top module with edge cases and random data.
+   120.00ns INFO     cocotb                             All tests passed successfully.
+   120.00ns INFO     cocotb.regression                  test_slicer_top.test_low_pass_filter passed
+   120.00ns INFO     cocotb.regression                  **********************************************************************************************
+                                                        ** TEST                                  STATUS  SIM TIME (ns)  REAL TIME (s)  RATIO (ns/s) **
+                                                        **********************************************************************************************
+                                                        ** test_slicer_top.test_low_pass_filter   PASS         120.00           0.00      33023.85  **
+                                                        **********************************************************************************************
+                                                        ** TESTS=1 PASS=1 FAIL=0 SKIP=0                        120.00           0.01      13240.64  **
+                                                        **********************************************************************************************
+                                                        
+[DEBUG] Running simulation with NBW_REF=14, NBW_TH=12
+[DEBUG] Running simulation with NBW_IN=14, NBW_OUT=15
+[DEBUG] Parameters: {'NBW_REF': 14, 'NBW_TH': 12, 'NBW_IN': 14, 'NBW_OUT': 15}
+.     -.--ns INFO     gpi                                ..mbed/gpi_embed.cpp:79   in set_program_name_in_venv        Did not detect Python virtual environment. Using system-wide Python interpreter
+     -.--ns INFO     gpi                                ../gpi/GpiCommon.cpp:101  in gpi_print_registered_impl       VPI registered
+     0.00ns INFO     cocotb                             Running on Icarus Verilog version 13.0 (devel)
+     0.00ns INFO     cocotb                             Running tests with cocotb v2.0.0.dev0+8d6c1a63 from /usr/local/lib/python3.9/dist-packages/cocotb
+     0.00ns INFO     cocotb                             Seeding Python random module with 1773330306
+     0.00ns INFO     cocotb.regression                  running test_slicer_top.test_low_pass_filter (1/1)
+                                                            Test the Slicer Top module with edge cases and random data.
+   120.00ns INFO     cocotb                             All tests passed successfully.
+   120.00ns INFO     cocotb.regression                  test_slicer_top.test_low_pass_filter passed
+   120.00ns INFO     cocotb.regression                  **********************************************************************************************
+                                                        ** TEST                                  STATUS  SIM TIME (ns)  REAL TIME (s)  RATIO (ns/s) **
+                                                        **********************************************************************************************
+                                                        ** test_slicer_top.test_low_pass_filter   PASS         120.00           0.00      36207.21  **
+                                                        **********************************************************************************************
+                                                        ** TESTS=1 PASS=1 FAIL=0 SKIP=0                        120.00           0.01      13873.49  **
+                                                        **********************************************************************************************
+                                                        
+[DEBUG] Running simulation with NBW_REF=7, NBW_TH=7
+[DEBUG] Running simulation with NBW_IN=7, NBW_OUT=8
+[DEBUG] Parameters: {'NBW_REF': 7, 'NBW_TH': 7, 'NBW_IN': 7, 'NBW_OUT': 8}
+.     -.--ns INFO     gpi                                ..mbed/gpi_embed.cpp:79   in set_program_name_in_venv        Did not detect Python virtual environment. Using system-wide Python interpreter
+     -.--ns INFO     gpi                                ../gpi/GpiCommon.cpp:101  in gpi_print_registered_impl       VPI registered
+     0.00ns INFO     cocotb                             Running on Icarus Verilog version 13.0 (devel)
+     0.00ns INFO     cocotb                             Running tests with cocotb v2.0.0.dev0+8d6c1a63 from /usr/local/lib/python3.9/dist-packages/cocotb
+     0.00ns INFO     cocotb                             Seeding Python random module with 1773330306
+     0.00ns INFO     cocotb.regression                  running test_slicer_top.test_low_pass_filter (1/1)
+                                                            Test the Slicer Top module with edge cases and random data.
+   120.00ns INFO     cocotb                             All tests passed successfully.
+   120.00ns INFO     cocotb.regression                  test_slicer_top.test_low_pass_filter passed
+   120.00ns INFO     cocotb.regression                  **********************************************************************************************
+                                                        ** TEST                                  STATUS  SIM TIME (ns)  REAL TIME (s)  RATIO (ns/s) **
+                                                        **********************************************************************************************
+                                                        ** test_slicer_top.test_low_pass_filter   PASS         120.00           0.00      33261.73  **
+                                                        **********************************************************************************************
+                                                        ** TESTS=1 PASS=1 FAIL=0 SKIP=0                        120.00           0.01      12803.13  **
+                                                        **********************************************************************************************
+                                                        
+[DEBUG] Running simulation with NBW_REF=14, NBW_TH=9
+[DEBUG] Running simulation with NBW_IN=16, NBW_OUT=15
+[DEBUG] Parameters: {'NBW_REF': 14, 'NBW_TH': 9, 'NBW_IN': 16, 'NBW_OUT': 15}
+.     -.--ns INFO     gpi                                ..mbed/gpi_embed.cpp:79   in set_program_name_in_venv        Did not detect Python virtual environment. Using system-wide Python interpreter
+     -.--ns INFO     gpi                                ../gpi/GpiCommon.cpp:101  in gpi_print_registered_impl       VPI registered
+     0.00ns INFO     cocotb                             Running on Icarus Verilog version 13.0 (devel)
+     0.00ns INFO     cocotb                             Running tests with cocotb v2.0.0.dev0+8d6c1a63 from /usr/local/lib/python3.9/dist-packages/cocotb
+     0.00ns INFO     cocotb                             Seeding Python random module with 1773330306
+     0.00ns INFO     cocotb.regression                  running test_slicer_top.test_low_pass_filter (1/1)
+                                                            Test the Slicer Top module with edge cases and random data.
+   120.00ns INFO     cocotb                             All tests passed successfully.
+   120.00ns INFO     cocotb.regression                  test_slicer_top.test_low_pass_filter passed
+   120.00ns INFO     cocotb.regression                  **********************************************************************************************
+                                                        ** TEST                                  STATUS  SIM TIME (ns)  REAL TIME (s)  RATIO (ns/s) **
+                                                        **********************************************************************************************
+                                                        ** test_slicer_top.test_low_pass_filter   PASS         120.00           0.00      33648.65  **
+                                                        **********************************************************************************************
+                                                        ** TESTS=1 PASS=1 FAIL=0 SKIP=0                        120.00           0.01      13426.43  **
+                                                        **********************************************************************************************
+                                                        
+[DEBUG] Running simulation with NBW_REF=8, NBW_TH=14
+[DEBUG] Running simulation with NBW_IN=8, NBW_OUT=15
+[DEBUG] Parameters: {'NBW_REF': 8, 'NBW_TH': 14, 'NBW_IN': 8, 'NBW_OUT': 15}
+.     -.--ns INFO     gpi                                ..mbed/gpi_embed.cpp:79   in set_program_name_in_venv        Did not detect Python virtual environment. Using system-wide Python interpreter
+     -.--ns INFO     gpi                                ../gpi/GpiCommon.cpp:101  in gpi_print_registered_impl       VPI registered
+     0.00ns INFO     cocotb                             Running on Icarus Verilog version 13.0 (devel)
+     0.00ns INFO     cocotb                             Running tests with cocotb v2.0.0.dev0+8d6c1a63 from /usr/local/lib/python3.9/dist-packages/cocotb
+     0.00ns INFO     cocotb                             Seeding Python random module with 1773330306
+     0.00ns INFO     cocotb.regression                  running test_slicer_top.test_low_pass_filter (1/1)
+                                                            Test the Slicer Top module with edge cases and random data.
+   120.00ns INFO     cocotb                             All tests passed successfully.
+   120.00ns INFO     cocotb.regression                  test_slicer_top.test_low_pass_filter passed
+   120.00ns INFO     cocotb.regression                  **********************************************************************************************
+                                                        ** TEST                                  STATUS  SIM TIME (ns)  REAL TIME (s)  RATIO (ns/s) **
+                                                        **********************************************************************************************
+                                                        ** test_slicer_top.test_low_pass_filter   PASS         120.00           0.00      32017.59  **
+                                                        **********************************************************************************************
+                                                        ** TESTS=1 PASS=1 FAIL=0 SKIP=0                        120.00           0.01      13229.50  **
+                                                        **********************************************************************************************
+                                                        
+[DEBUG] Running simulation with NBW_REF=14, NBW_TH=15
+[DEBUG] Running simulation with NBW_IN=9, NBW_OUT=16
+[DEBUG] Parameters: {'NBW_REF': 14, 'NBW_TH': 15, 'NBW_IN': 9, 'NBW_OUT': 16}
+.     -.--ns INFO     gpi                                ..mbed/gpi_embed.cpp:79   in set_program_name_in_venv        Did not detect Python virtual environment. Using system-wide Python interpreter
+     -.--ns INFO     gpi                                ../gpi/GpiCommon.cpp:101  in gpi_print_registered_impl       VPI registered
+     0.00ns INFO     cocotb                             Running on Icarus Verilog version 13.0 (devel)
+     0.00ns INFO     cocotb                             Running tests with cocotb v2.0.0.dev0+8d6c1a63 from /usr/local/lib/python3.9/dist-packages/cocotb
+     0.00ns INFO     cocotb                             Seeding Python random module with 1773330306
+     0.00ns INFO     cocotb.regression                  running test_slicer_top.test_low_pass_filter (1/1)
+                                                            Test the Slicer Top module with edge cases and random data.
+   120.00ns INFO     cocotb                             All tests passed successfully.
+   120.00ns INFO     cocotb.regression                  test_slicer_top.test_low_pass_filter passed
+   120.00ns INFO     cocotb.regression                  **********************************************************************************************
+                                                        ** TEST                                  STATUS  SIM TIME (ns)  REAL TIME (s)  RATIO (ns/s) **
+                                                        **********************************************************************************************
+                                                        ** test_slicer_top.test_low_pass_filter   PASS         120.00           0.00      32617.23  **
+                                                        **********************************************************************************************
+                                                        ** TESTS=1 PASS=1 FAIL=0 SKIP=0                        120.00           0.01      13267.17  **
+                                                        **********************************************************************************************
+                                                        
+[DEBUG] Running simulation with NBW_REF=16, NBW_TH=10
+[DEBUG] Running simulation with NBW_IN=9, NBW_OUT=17
+[DEBUG] Parameters: {'NBW_REF': 16, 'NBW_TH': 10, 'NBW_IN': 9, 'NBW_OUT': 17}
+.     -.--ns INFO     gpi                                ..mbed/gpi_embed.cpp:79   in set_program_name_in_venv        Did not detect Python virtual environment. Using system-wide Python interpreter
+     -.--ns INFO     gpi                                ../gpi/GpiCommon.cpp:101  in gpi_print_registered_impl       VPI registered
+     0.00ns INFO     cocotb                             Running on Icarus Verilog version 13.0 (devel)
+     0.00ns INFO     cocotb                             Running tests with cocotb v2.0.0.dev0+8d6c1a63 from /usr/local/lib/python3.9/dist-packages/cocotb
+     0.00ns INFO     cocotb                             Seeding Python random module with 1773330307
+     0.00ns INFO     cocotb.regression                  running test_slicer_top.test_low_pass_filter (1/1)
+                                                            Test the Slicer Top module with edge cases and random data.
+   120.00ns INFO     cocotb                             All tests passed successfully.
+   120.00ns INFO     cocotb.regression                  test_slicer_top.test_low_pass_filter passed
+   120.00ns INFO     cocotb.regression                  **********************************************************************************************
+                                                        ** TEST                                  STATUS  SIM TIME (ns)  REAL TIME (s)  RATIO (ns/s) **
+                                                        **********************************************************************************************
+                                                        ** test_slicer_top.test_low_pass_filter   PASS         120.00           0.00      32046.13  **
+                                                        **********************************************************************************************
+                                                        ** TESTS=1 PASS=1 FAIL=0 SKIP=0                        120.00           0.01      13145.54  **
+                                                        **********************************************************************************************
+                                                        
+[DEBUG] Running simulation with NBW_REF=15, NBW_TH=16
+[DEBUG] Running simulation with NBW_IN=15, NBW_OUT=17
+[DEBUG] Parameters: {'NBW_REF': 15, 'NBW_TH': 16, 'NBW_IN': 15, 'NBW_OUT': 17}
+.     -.--ns INFO     gpi                                ..mbed/gpi_embed.cpp:79   in set_program_name_in_venv        Did not detect Python virtual environment. Using system-wide Python interpreter
+     -.--ns INFO     gpi                                ../gpi/GpiCommon.cpp:101  in gpi_print_registered_impl       VPI registered
+     0.00ns INFO     cocotb                             Running on Icarus Verilog version 13.0 (devel)
+     0.00ns INFO     cocotb                             Running tests with cocotb v2.0.0.dev0+8d6c1a63 from /usr/local/lib/python3.9/dist-packages/cocotb
+     0.00ns INFO     cocotb                             Seeding Python random module with 1773330307
+     0.00ns INFO     cocotb.regression                  running test_slicer_top.test_low_pass_filter (1/1)
+                                                            Test the Slicer Top module with edge cases and random data.
+   120.00ns INFO     cocotb                             All tests passed successfully.
+   120.00ns INFO     cocotb.regression                  test_slicer_top.test_low_pass_filter passed
+   120.00ns INFO     cocotb.regression                  **********************************************************************************************
+                                                        ** TEST                                  STATUS  SIM TIME (ns)  REAL TIME (s)  RATIO (ns/s) **
+                                                        **********************************************************************************************
+                                                        ** test_slicer_top.test_low_pass_filter   PASS         120.00           0.00      31944.43  **
+                                                        **********************************************************************************************
+                                                        ** TESTS=1 PASS=1 FAIL=0 SKIP=0                        120.00           0.01      13165.83  **
+                                                        **********************************************************************************************
+                                                        
+[DEBUG] Running simulation with NBW_REF=13, NBW_TH=15
+[DEBUG] Running simulation with NBW_IN=12, NBW_OUT=16
+[DEBUG] Parameters: {'NBW_REF': 13, 'NBW_TH': 15, 'NBW_IN': 12, 'NBW_OUT': 16}
+.     -.--ns INFO     gpi                                ..mbed/gpi_embed.cpp:79   in set_program_name_in_venv        Did not detect Python virtual environment. Using system-wide Python interpreter
+     -.--ns INFO     gpi                                ../gpi/GpiCommon.cpp:101  in gpi_print_registered_impl       VPI registered
+     0.00ns INFO     cocotb                             Running on Icarus Verilog version 13.0 (devel)
+     0.00ns INFO     cocotb                             Running tests with cocotb v2.0.0.dev0+8d6c1a63 from /usr/local/lib/python3.9/dist-packages/cocotb
+     0.00ns INFO     cocotb                             Seeding Python random module with 1773330307
+     0.00ns INFO     cocotb.regression                  running test_slicer_top.test_low_pass_filter (1/1)
+                                                            Test the Slicer Top module with edge cases and random data.
+   120.00ns INFO     cocotb                             All tests passed successfully.
+   120.00ns INFO     cocotb.regression                  test_slicer_top.test_low_pass_filter passed
+   120.00ns INFO     cocotb.regression                  **********************************************************************************************
+                                                        ** TEST                                  STATUS  SIM TIME (ns)  REAL TIME (s)  RATIO (ns/s) **
+                                                        **********************************************************************************************
+                                                        ** test_slicer_top.test_low_pass_filter   PASS         120.00           0.00      33069.41  **
+                                                        **********************************************************************************************
+                                                        ** TESTS=1 PASS=1 FAIL=0 SKIP=0                        120.00           0.01      13283.27  **
+                                                        **********************************************************************************************
+                                                        
+[DEBUG] Running simulation with NBW_REF=14, NBW_TH=12
+[DEBUG] Running simulation with NBW_IN=14, NBW_OUT=15
+[DEBUG] Parameters: {'NBW_REF': 14, 'NBW_TH': 12, 'NBW_IN': 14, 'NBW_OUT': 15}
+.
+
+============================= 56 passed in 10.51s ==============================

@@ -1,0 +1,112 @@
+{
+    "id": "646d76e9-4a77-40a6-9858-01d302518fc4",
+    "task_name": "cvdp_agentic_sigma_delta_audio_0001",
+    "trial_name": "cvdp_agentic_sigma_delta_audio_0__8gsW7Nw",
+    "trial_uri": "file:///home/saketh/research/cvdp_benchmark/output/terminus-2/openrouter__openai__gpt-5.4/2026-03-12__10-44-29/cvdp_agentic_sigma_delta_audio_0__8gsW7Nw",
+    "task_id": {
+        "path": "/home/saketh/research/cvdp_benchmark/harbor_output/cvdp_agentic_sigma_delta_audio_0001"
+    },
+    "source": "cvdp_v1.0.4_agentic_code_generation_no_commercial",
+    "task_checksum": "bcb4f21f97a1c601ba9f2bdcec5dbdead6506792af378e8d133c53fa2011d3d1",
+    "config": {
+        "task": {
+            "path": "/home/saketh/research/cvdp_benchmark/harbor_output/cvdp_agentic_sigma_delta_audio_0001",
+            "git_url": null,
+            "git_commit_id": null,
+            "overwrite": false,
+            "download_dir": null,
+            "source": "cvdp_v1.0.4_agentic_code_generation_no_commercial"
+        },
+        "trial_name": "cvdp_agentic_sigma_delta_audio_0__8gsW7Nw",
+        "trials_dir": "/home/saketh/research/cvdp_benchmark/output/terminus-2/openrouter__openai__gpt-5.4/2026-03-12__10-44-29",
+        "timeout_multiplier": 1.0,
+        "agent_timeout_multiplier": null,
+        "verifier_timeout_multiplier": null,
+        "agent_setup_timeout_multiplier": null,
+        "environment_build_timeout_multiplier": null,
+        "agent": {
+            "name": "terminus-2",
+            "import_path": null,
+            "model_name": "openrouter/openai/gpt-5.4",
+            "override_timeout_sec": null,
+            "override_setup_timeout_sec": null,
+            "max_timeout_sec": null,
+            "kwargs": {},
+            "env": {}
+        },
+        "environment": {
+            "type": "docker",
+            "import_path": null,
+            "force_build": false,
+            "delete": true,
+            "override_cpus": null,
+            "override_memory_mb": null,
+            "override_storage_mb": null,
+            "override_gpus": null,
+            "suppress_override_warnings": false,
+            "kwargs": {}
+        },
+        "verifier": {
+            "override_timeout_sec": null,
+            "max_timeout_sec": null,
+            "disable": false
+        },
+        "artifacts": [],
+        "job_id": "31848c0a-f9dd-4b14-8dd6-c2c77c298761"
+    },
+    "agent_info": {
+        "name": "terminus-2",
+        "version": "2.0.0",
+        "model_info": {
+            "name": "openai/gpt-5.4",
+            "provider": "openrouter"
+        }
+    },
+    "agent_result": {
+        "n_input_tokens": 112178,
+        "n_cache_tokens": 63744,
+        "n_output_tokens": 7496,
+        "cost_usd": null,
+        "rollout_details": [],
+        "metadata": {
+            "n_episodes": 10,
+            "api_request_times_msec": [
+                4743.654251098633,
+                4882.983684539795,
+                18480.13186454773,
+                5478.378772735596,
+                8868.302822113037,
+                18623.3127117157,
+                15623.221397399902,
+                21363.484144210815,
+                3631.4547061920166,
+                1694.0574645996094
+            ],
+            "summarization_count": 0
+        }
+    },
+    "verifier_result": {
+        "rewards": {
+            "reward": 1.0
+        }
+    },
+    "exception_info": null,
+    "started_at": "2026-03-12T15:19:22.528946Z",
+    "finished_at": "2026-03-12T15:21:44.384644Z",
+    "environment_setup": {
+        "started_at": "2026-03-12T15:19:22.530153Z",
+        "finished_at": "2026-03-12T15:19:24.646866Z"
+    },
+    "agent_setup": {
+        "started_at": "2026-03-12T15:19:24.646875Z",
+        "finished_at": "2026-03-12T15:19:29.994240Z"
+    },
+    "agent_execution": {
+        "started_at": "2026-03-12T15:19:29.994281Z",
+        "finished_at": "2026-03-12T15:21:31.868717Z"
+    },
+    "verifier": {
+        "started_at": "2026-03-12T15:21:31.868764Z",
+        "finished_at": "2026-03-12T15:21:33.942764Z"
+    }
+}

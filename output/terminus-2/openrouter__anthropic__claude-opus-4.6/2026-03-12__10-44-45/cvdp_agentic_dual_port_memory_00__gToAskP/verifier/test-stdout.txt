@@ -1,0 +1,58 @@
+Running service: 04-new-tb
+============================= test session starts ==============================
+platform linux -- Python 3.9.2, pytest-8.3.2, pluggy-1.5.0 -- /usr/bin/python3
+cachedir: /rundir/harness/.cache
+rootdir: /src
+collecting ... collected 1 item
+
+../../src/test_runner.py::test_runner      -.--ns INFO     gpi                                ..mbed/gpi_embed.cpp:79   in set_program_name_in_venv        Did not detect Python virtual environment. Using system-wide Python interpreter
+     -.--ns INFO     gpi                                ../gpi/GpiCommon.cpp:101  in gpi_print_registered_impl       VPI registered
+     0.00ns INFO     cocotb                             Running on Icarus Verilog version 13.0 (devel)
+     0.00ns INFO     cocotb                             Running tests with cocotb v2.0.0.dev0+8d6c1a63 from /usr/local/lib/python3.9/dist-packages/cocotb
+     0.00ns INFO     cocotb                             Seeding Python random module with 1773328625
+     0.00ns INFO     cocotb.regression                  running test_dual_port_memory.test_cvdp_true_dp_ram_ports_a_and_b (1/2)
+                                                            Test the cvdp_true_dp_ram for both Port A and Port B ensuring RAW behavior 
+Wrote Data = 0 to Port A at Addr = 26
+Wrote Data = 11 to Port B at Addr = 18
+Reading from Port A at Addr = 26: Expected = 0, Got = 0000
+Reading from Port B at Addr = 18: Expected = 11, Got = 1011
+Wrote Data = 2 to Port A at Addr = 29
+Wrote Data = 8 to Port B at Addr = 18
+Reading from Port A at Addr = 29: Expected = 2, Got = 0010
+Reading from Port B at Addr = 18: Expected = 8, Got = 1000
+Wrote Data = 3 to Port A at Addr = 17
+Wrote Data = 11 to Port B at Addr = 21
+Reading from Port A at Addr = 17: Expected = 3, Got = 0011
+Reading from Port B at Addr = 21: Expected = 11, Got = 1011
+Wrote Data = 14 to Port A at Addr = 27
+Wrote Data = 4 to Port B at Addr = 1
+Reading from Port A at Addr = 27: Expected = 14, Got = 1110
+Reading from Port B at Addr = 1: Expected = 4, Got = 0100
+Wrote Data = 5 to Port A at Addr = 23
+Wrote Data = 15 to Port B at Addr = 18
+Reading from Port A at Addr = 23: Expected = 5, Got = 0101
+Reading from Port B at Addr = 18: Expected = 15, Got = 1111
+Wrote Data = 12 to Port A at Addr = 10
+Wrote Data = 5 to Port B at Addr = 26
+Reading from Port A at Addr = 10: Expected = 12, Got = 1100
+Reading from Port B at Addr = 26: Expected = 5, Got = 0101
+   470.00ns INFO     cocotb.regression                  test_dual_port_memory.test_cvdp_true_dp_ram_ports_a_and_b passed
+   470.00ns INFO     cocotb.regression                  running test_dual_port_memory.test_true_dp_ram (2/2)
+Wrote Data = 10 to Port A at Addr = 1
+Reading from Port B at Addr = 1: Expected = 10, Got = 1010
+Wrote Data = 12 to Port B at Addr = 2
+Reading from Port A at Addr = 2: Expected = 12, Got = 1100
+   571.00ns INFO     cocotb.regression                  test_dual_port_memory.test_true_dp_ram passed
+   571.00ns INFO     cocotb.regression                  *******************************************************************************************************************
+                                                        ** TEST                                                       STATUS  SIM TIME (ns)  REAL TIME (s)  RATIO (ns/s) **
+                                                        *******************************************************************************************************************
+                                                        ** test_dual_port_memory.test_cvdp_true_dp_ram_ports_a_and_b   PASS         470.00           0.01      82679.31  **
+                                                        ** test_dual_port_memory.test_true_dp_ram                      PASS         101.00           0.00      85305.01  **
+                                                        *******************************************************************************************************************
+                                                        ** TESTS=2 PASS=2 FAIL=0 SKIP=0                                             571.00           0.01      49230.13  **
+                                                        *******************************************************************************************************************
+                                                        
+FST info: dumpfile /code/rundir/sim_build/dual_port_memory.fst opened for output.
+PASSED
+
+============================== 1 passed in 0.18s ===============================

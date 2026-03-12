@@ -1,0 +1,112 @@
+{
+    "id": "7c46ed43-b47d-403d-8e4d-bcd0ff715470",
+    "task_name": "cvdp_agentic_sorter_0009",
+    "trial_name": "cvdp_agentic_sorter_0009__VVvgaxq",
+    "trial_uri": "file:///home/saketh/research/cvdp_benchmark/output/terminus-2/openrouter__anthropic__claude-opus-4.6/2026-03-12__10-44-45/cvdp_agentic_sorter_0009__VVvgaxq",
+    "task_id": {
+        "path": "/home/saketh/research/cvdp_benchmark/harbor_output/cvdp_agentic_sorter_0009"
+    },
+    "source": "cvdp_v1.0.4_agentic_code_generation_no_commercial",
+    "task_checksum": "dcfad713e4544be5d090ea5a8dacd55e876bcb0aa16ba7edd5273ac33507f86f",
+    "config": {
+        "task": {
+            "path": "/home/saketh/research/cvdp_benchmark/harbor_output/cvdp_agentic_sorter_0009",
+            "git_url": null,
+            "git_commit_id": null,
+            "overwrite": false,
+            "download_dir": null,
+            "source": "cvdp_v1.0.4_agentic_code_generation_no_commercial"
+        },
+        "trial_name": "cvdp_agentic_sorter_0009__VVvgaxq",
+        "trials_dir": "/home/saketh/research/cvdp_benchmark/output/terminus-2/openrouter__anthropic__claude-opus-4.6/2026-03-12__10-44-45",
+        "timeout_multiplier": 1.0,
+        "agent_timeout_multiplier": null,
+        "verifier_timeout_multiplier": null,
+        "agent_setup_timeout_multiplier": null,
+        "environment_build_timeout_multiplier": null,
+        "agent": {
+            "name": "terminus-2",
+            "import_path": null,
+            "model_name": "openrouter/anthropic/claude-opus-4.6",
+            "override_timeout_sec": null,
+            "override_setup_timeout_sec": null,
+            "max_timeout_sec": null,
+            "kwargs": {},
+            "env": {}
+        },
+        "environment": {
+            "type": "docker",
+            "import_path": null,
+            "force_build": false,
+            "delete": true,
+            "override_cpus": null,
+            "override_memory_mb": null,
+            "override_storage_mb": null,
+            "override_gpus": null,
+            "suppress_override_warnings": false,
+            "kwargs": {}
+        },
+        "verifier": {
+            "override_timeout_sec": null,
+            "max_timeout_sec": null,
+            "disable": false
+        },
+        "artifacts": [],
+        "job_id": "1e837cdd-7fdd-4f0f-a767-a87d6fc07400"
+    },
+    "agent_info": {
+        "name": "terminus-2",
+        "version": "2.0.0",
+        "model_info": {
+            "name": "anthropic/claude-opus-4.6",
+            "provider": "openrouter"
+        }
+    },
+    "agent_result": {
+        "n_input_tokens": 139489,
+        "n_cache_tokens": 115043,
+        "n_output_tokens": 7279,
+        "cost_usd": null,
+        "rollout_details": [],
+        "metadata": {
+            "n_episodes": 10,
+            "api_request_times_msec": [
+                6640.477418899536,
+                3889.8138999938965,
+                66435.00781059265,
+                11556.4444065094,
+                4025.9904861450195,
+                4914.9720668792725,
+                6566.283702850342,
+                4034.3101024627686,
+                8020.880699157715,
+                4368.4937953948975
+            ],
+            "summarization_count": 0
+        }
+    },
+    "verifier_result": {
+        "rewards": {
+            "reward": 1.0
+        }
+    },
+    "exception_info": null,
+    "started_at": "2026-03-12T16:01:28.844504Z",
+    "finished_at": "2026-03-12T16:05:27.734142Z",
+    "environment_setup": {
+        "started_at": "2026-03-12T16:01:28.845044Z",
+        "finished_at": "2026-03-12T16:01:30.972243Z"
+    },
+    "agent_setup": {
+        "started_at": "2026-03-12T16:01:30.972253Z",
+        "finished_at": "2026-03-12T16:01:36.272466Z"
+    },
+    "agent_execution": {
+        "started_at": "2026-03-12T16:01:36.272491Z",
+        "finished_at": "2026-03-12T16:05:15.602156Z"
+    },
+    "verifier": {
+        "started_at": "2026-03-12T16:05:15.602218Z",
+        "finished_at": "2026-03-12T16:05:17.278818Z"
+    }
+}

@@ -1,0 +1,404 @@
+Running service: direct
+============================= test session starts ==============================
+platform linux -- Python 3.9.2, pytest-8.3.2, pluggy-1.5.0 -- /usr/bin/python3
+cachedir: /rundir/harness/.cache
+rootdir: /src
+collecting ... collected 5 items
+
+../../src/test_runner.py::test_runner [DEBUG] Running simulation with PRICE_WIDTH=4
+[DEBUG] Parameters: {'PRICE_WIDTH': 4}
+
+-------------------------------- live log call ---------------------------------
+INFO     Icarus:runner.py:480 Removing: /code/rundir/sim_build
+INFO     Icarus:runner.py:468 Running command iverilog -o /code/rundir/sim_build/sim.vvp -s order_matching_engine -g2012 -Porder_matching_engine.PRICE_WIDTH=4 -s cocotb_iverilog_dump -f /code/rundir/sim_build/cmds.f /code/rtl/order_matching_engine.sv /code/rtl/sorting_engine.sv /code/rundir/sim_build/cocotb_iverilog_dump.v in directory /code/rundir/sim_build
+INFO     Icarus:runner.py:468 Running command vvp -M /usr/local/lib/python3.9/dist-packages/cocotb/libs -m libcocotbvpi_icarus /code/rundir/sim_build/sim.vvp -fst in directory /code/rundir/sim_build
+     -.--ns INFO     gpi                                ..mbed/gpi_embed.cpp:79   in set_program_name_in_venv        Did not detect Python virtual environment. Using system-wide Python interpreter
+     -.--ns INFO     gpi                                ../gpi/GpiCommon.cpp:101  in gpi_print_registered_impl       VPI registered
+     0.00ns INFO     cocotb                             Running on Icarus Verilog version 13.0 (devel)
+     0.00ns INFO     cocotb                             Running tests with cocotb v2.0.0.dev0+8d6c1a63 from /usr/local/lib/python3.9/dist-packages/cocotb
+     0.00ns INFO     cocotb                             Seeding Python random module with 1773331830
+     0.00ns INFO     cocotb.regression                  running test_order_matching_engine.test_order_matching_engine (1/1)
+                                                            Cocotb testbench for order_matching_engine.
+     0.00ns INFO     cocotb.order_matching_engine       ---------------------------------------------------
+     0.00ns INFO     cocotb.order_matching_engine       Starting test: Matching scenario: valid match
+   230.00ns INFO     cocotb.order_matching_engine       Test 'Matching scenario: valid match': Measured latency = 21 cycles
+   230.00ns INFO     cocotb.order_matching_engine       Test 'Matching scenario: valid match' PASSED: Best bid = 12, Best ask = 2, Matched price = 2
+   250.00ns INFO     cocotb.order_matching_engine       ---------------------------------------------------
+   250.00ns INFO     cocotb.order_matching_engine       Starting test: No match scenario: no match
+   480.00ns INFO     cocotb.order_matching_engine       Test 'No match scenario: no match': Measured latency = 21 cycles
+   480.00ns INFO     cocotb.order_matching_engine       Test 'No match scenario: no match' PASSED: Best bid = 11, Best ask = 12, Matched price = 0
+   500.00ns INFO     cocotb.order_matching_engine       ---------------------------------------------------
+   500.00ns INFO     cocotb.order_matching_engine       Starting test: Extreme values: match at boundary
+   730.00ns INFO     cocotb.order_matching_engine       Test 'Extreme values: match at boundary': Measured latency = 21 cycles
+   730.00ns INFO     cocotb.order_matching_engine       Test 'Extreme values: match at boundary' PASSED: Best bid = 15, Best ask = 15, Matched price = 15
+   750.00ns INFO     cocotb.order_matching_engine       ---------------------------------------------------
+   750.00ns INFO     cocotb.order_matching_engine       Starting test: Random stress test iteration 1
+   980.00ns INFO     cocotb.order_matching_engine       Test 'Random stress test iteration 1': Measured latency = 21 cycles
+   980.00ns INFO     cocotb.order_matching_engine       Test 'Random stress test iteration 1' PASSED: Best bid = 10, Best ask = 0, Matched price = 0
+  1000.00ns INFO     cocotb.order_matching_engine       ---------------------------------------------------
+  1000.00ns INFO     cocotb.order_matching_engine       Starting test: Random stress test iteration 2
+  1230.00ns INFO     cocotb.order_matching_engine       Test 'Random stress test iteration 2': Measured latency = 21 cycles
+  1230.00ns INFO     cocotb.order_matching_engine       Test 'Random stress test iteration 2' PASSED: Best bid = 15, Best ask = 0, Matched price = 0
+  1250.00ns INFO     cocotb.order_matching_engine       ---------------------------------------------------
+  1250.00ns INFO     cocotb.order_matching_engine       Starting test: Random stress test iteration 3
+  1480.00ns INFO     cocotb.order_matching_engine       Test 'Random stress test iteration 3': Measured latency = 21 cycles
+  1480.00ns INFO     cocotb.order_matching_engine       Test 'Random stress test iteration 3' PASSED: Best bid = 9, Best ask = 2, Matched price = 2
+  1500.00ns INFO     cocotb.order_matching_engine       ---------------------------------------------------
+  1500.00ns INFO     cocotb.order_matching_engine       Starting test: Random stress test iteration 4
+  1730.00ns INFO     cocotb.order_matching_engine       Test 'Random stress test iteration 4': Measured latency = 21 cycles
+  1730.00ns INFO     cocotb.order_matching_engine       Test 'Random stress test iteration 4' PASSED: Best bid = 9, Best ask = 1, Matched price = 1
+  1750.00ns INFO     cocotb.order_matching_engine       ---------------------------------------------------
+  1750.00ns INFO     cocotb.order_matching_engine       Starting test: Random stress test iteration 5
+  1980.00ns INFO     cocotb.order_matching_engine       Test 'Random stress test iteration 5': Measured latency = 21 cycles
+  1980.00ns INFO     cocotb.order_matching_engine       Test 'Random stress test iteration 5' PASSED: Best bid = 15, Best ask = 0, Matched price = 0
+  2000.00ns INFO     cocotb.order_matching_engine       ---------------------------------------------------
+  2000.00ns INFO     cocotb.order_matching_engine       Starting test: Random stress test iteration 6
+  2230.00ns INFO     cocotb.order_matching_engine       Test 'Random stress test iteration 6': Measured latency = 21 cycles
+  2230.00ns INFO     cocotb.order_matching_engine       Test 'Random stress test iteration 6' PASSED: Best bid = 13, Best ask = 0, Matched price = 0
+  2250.00ns INFO     cocotb.order_matching_engine       ---------------------------------------------------
+  2250.00ns INFO     cocotb.order_matching_engine       Starting test: Random stress test iteration 7
+  2480.00ns INFO     cocotb.order_matching_engine       Test 'Random stress test iteration 7': Measured latency = 21 cycles
+  2480.00ns INFO     cocotb.order_matching_engine       Test 'Random stress test iteration 7' PASSED: Best bid = 15, Best ask = 0, Matched price = 0
+  2500.00ns INFO     cocotb.order_matching_engine       ---------------------------------------------------
+  2500.00ns INFO     cocotb.order_matching_engine       Starting test: Random stress test iteration 8
+  2730.00ns INFO     cocotb.order_matching_engine       Test 'Random stress test iteration 8': Measured latency = 21 cycles
+  2730.00ns INFO     cocotb.order_matching_engine       Test 'Random stress test iteration 8' PASSED: Best bid = 13, Best ask = 1, Matched price = 1
+  2750.00ns INFO     cocotb.order_matching_engine       ---------------------------------------------------
+  2750.00ns INFO     cocotb.order_matching_engine       Starting test: Random stress test iteration 9
+  2980.00ns INFO     cocotb.order_matching_engine       Test 'Random stress test iteration 9': Measured latency = 21 cycles
+  2980.00ns INFO     cocotb.order_matching_engine       Test 'Random stress test iteration 9' PASSED: Best bid = 14, Best ask = 1, Matched price = 1
+  3000.00ns INFO     cocotb.order_matching_engine       ---------------------------------------------------
+  3000.00ns INFO     cocotb.order_matching_engine       Starting test: Random stress test iteration 10
+  3230.00ns INFO     cocotb.order_matching_engine       Test 'Random stress test iteration 10': Measured latency = 21 cycles
+  3230.00ns INFO     cocotb.order_matching_engine       Test 'Random stress test iteration 10' PASSED: Best bid = 12, Best ask = 1, Matched price = 1
+  3250.00ns INFO     cocotb.order_matching_engine       All tests passed.
+  3250.00ns INFO     cocotb.regression                  test_order_matching_engine.test_order_matching_engine passed
+  3250.00ns INFO     cocotb.regression                  ***************************************************************************************************************
+                                                        ** TEST                                                   STATUS  SIM TIME (ns)  REAL TIME (s)  RATIO (ns/s) **
+                                                        ***************************************************************************************************************
+                                                        ** test_order_matching_engine.test_order_matching_engine   PASS        3250.00           0.03      99531.15  **
+                                                        ***************************************************************************************************************
+                                                        ** TESTS=1 PASS=1 FAIL=0 SKIP=0                                        3250.00           0.04      84867.94  **
+                                                        ***************************************************************************************************************
+                                                        
+FST info: dumpfile /code/rundir/sim_build/order_matching_engine.fst opened for output.
+INFO     Icarus:runner.py:438 Results file: /code/rundir/sim_build/test_runner.None
+PASSED
+../../src/test_runner.py::test_sort[4] [DEBUG] Running simulation with PRICE_WIDTH=4
+[DEBUG] Parameters: {'PRICE_WIDTH': 4}
+
+-------------------------------- live log call ---------------------------------
+INFO     Icarus:runner.py:480 Removing: /code/rundir/sim_build
+INFO     Icarus:runner.py:468 Running command iverilog -o /code/rundir/sim_build/sim.vvp -s order_matching_engine -g2012 -Porder_matching_engine.PRICE_WIDTH=4 -s cocotb_iverilog_dump -f /code/rundir/sim_build/cmds.f /code/rtl/order_matching_engine.sv /code/rtl/sorting_engine.sv /code/rundir/sim_build/cocotb_iverilog_dump.v in directory /code/rundir/sim_build
+INFO     Icarus:runner.py:468 Running command vvp -M /usr/local/lib/python3.9/dist-packages/cocotb/libs -m libcocotbvpi_icarus /code/rundir/sim_build/sim.vvp -fst in directory /code/rundir/sim_build
+     -.--ns INFO     gpi                                ..mbed/gpi_embed.cpp:79   in set_program_name_in_venv        Did not detect Python virtual environment. Using system-wide Python interpreter
+     -.--ns INFO     gpi                                ../gpi/GpiCommon.cpp:101  in gpi_print_registered_impl       VPI registered
+     0.00ns INFO     cocotb                             Running on Icarus Verilog version 13.0 (devel)
+     0.00ns INFO     cocotb                             Running tests with cocotb v2.0.0.dev0+8d6c1a63 from /usr/local/lib/python3.9/dist-packages/cocotb
+     0.00ns INFO     cocotb                             Seeding Python random module with 1773331831
+     0.00ns INFO     cocotb.regression                  running test_order_matching_engine.test_order_matching_engine (1/1)
+                                                            Cocotb testbench for order_matching_engine.
+     0.00ns INFO     cocotb.order_matching_engine       ---------------------------------------------------
+     0.00ns INFO     cocotb.order_matching_engine       Starting test: Matching scenario: valid match
+   230.00ns INFO     cocotb.order_matching_engine       Test 'Matching scenario: valid match': Measured latency = 21 cycles
+   230.00ns INFO     cocotb.order_matching_engine       Test 'Matching scenario: valid match' PASSED: Best bid = 12, Best ask = 2, Matched price = 2
+   250.00ns INFO     cocotb.order_matching_engine       ---------------------------------------------------
+   250.00ns INFO     cocotb.order_matching_engine       Starting test: No match scenario: no match
+   480.00ns INFO     cocotb.order_matching_engine       Test 'No match scenario: no match': Measured latency = 21 cycles
+   480.00ns INFO     cocotb.order_matching_engine       Test 'No match scenario: no match' PASSED: Best bid = 11, Best ask = 12, Matched price = 0
+   500.00ns INFO     cocotb.order_matching_engine       ---------------------------------------------------
+   500.00ns INFO     cocotb.order_matching_engine       Starting test: Extreme values: match at boundary
+   730.00ns INFO     cocotb.order_matching_engine       Test 'Extreme values: match at boundary': Measured latency = 21 cycles
+   730.00ns INFO     cocotb.order_matching_engine       Test 'Extreme values: match at boundary' PASSED: Best bid = 15, Best ask = 15, Matched price = 15
+   750.00ns INFO     cocotb.order_matching_engine       ---------------------------------------------------
+   750.00ns INFO     cocotb.order_matching_engine       Starting test: Random stress test iteration 1
+   980.00ns INFO     cocotb.order_matching_engine       Test 'Random stress test iteration 1': Measured latency = 21 cycles
+   980.00ns INFO     cocotb.order_matching_engine       Test 'Random stress test iteration 1' PASSED: Best bid = 14, Best ask = 5, Matched price = 5
+  1000.00ns INFO     cocotb.order_matching_engine       ---------------------------------------------------
+  1000.00ns INFO     cocotb.order_matching_engine       Starting test: Random stress test iteration 2
+  1230.00ns INFO     cocotb.order_matching_engine       Test 'Random stress test iteration 2': Measured latency = 21 cycles
+  1230.00ns INFO     cocotb.order_matching_engine       Test 'Random stress test iteration 2' PASSED: Best bid = 15, Best ask = 2, Matched price = 2
+  1250.00ns INFO     cocotb.order_matching_engine       ---------------------------------------------------
+  1250.00ns INFO     cocotb.order_matching_engine       Starting test: Random stress test iteration 3
+  1480.00ns INFO     cocotb.order_matching_engine       Test 'Random stress test iteration 3': Measured latency = 21 cycles
+  1480.00ns INFO     cocotb.order_matching_engine       Test 'Random stress test iteration 3' PASSED: Best bid = 10, Best ask = 0, Matched price = 0
+  1500.00ns INFO     cocotb.order_matching_engine       ---------------------------------------------------
+  1500.00ns INFO     cocotb.order_matching_engine       Starting test: Random stress test iteration 4
+  1730.00ns INFO     cocotb.order_matching_engine       Test 'Random stress test iteration 4': Measured latency = 21 cycles
+  1730.00ns INFO     cocotb.order_matching_engine       Test 'Random stress test iteration 4' PASSED: Best bid = 13, Best ask = 0, Matched price = 0
+  1750.00ns INFO     cocotb.order_matching_engine       ---------------------------------------------------
+  1750.00ns INFO     cocotb.order_matching_engine       Starting test: Random stress test iteration 5
+  1980.00ns INFO     cocotb.order_matching_engine       Test 'Random stress test iteration 5': Measured latency = 21 cycles
+  1980.00ns INFO     cocotb.order_matching_engine       Test 'Random stress test iteration 5' PASSED: Best bid = 15, Best ask = 2, Matched price = 2
+  2000.00ns INFO     cocotb.order_matching_engine       ---------------------------------------------------
+  2000.00ns INFO     cocotb.order_matching_engine       Starting test: Random stress test iteration 6
+  2230.00ns INFO     cocotb.order_matching_engine       Test 'Random stress test iteration 6': Measured latency = 21 cycles
+  2230.00ns INFO     cocotb.order_matching_engine       Test 'Random stress test iteration 6' PASSED: Best bid = 15, Best ask = 1, Matched price = 1
+  2250.00ns INFO     cocotb.order_matching_engine       ---------------------------------------------------
+  2250.00ns INFO     cocotb.order_matching_engine       Starting test: Random stress test iteration 7
+  2480.00ns INFO     cocotb.order_matching_engine       Test 'Random stress test iteration 7': Measured latency = 21 cycles
+  2480.00ns INFO     cocotb.order_matching_engine       Test 'Random stress test iteration 7' PASSED: Best bid = 14, Best ask = 1, Matched price = 1
+  2500.00ns INFO     cocotb.order_matching_engine       ---------------------------------------------------
+  2500.00ns INFO     cocotb.order_matching_engine       Starting test: Random stress test iteration 8
+  2730.00ns INFO     cocotb.order_matching_engine       Test 'Random stress test iteration 8': Measured latency = 21 cycles
+  2730.00ns INFO     cocotb.order_matching_engine       Test 'Random stress test iteration 8' PASSED: Best bid = 15, Best ask = 0, Matched price = 0
+  2750.00ns INFO     cocotb.order_matching_engine       ---------------------------------------------------
+  2750.00ns INFO     cocotb.order_matching_engine       Starting test: Random stress test iteration 9
+  2980.00ns INFO     cocotb.order_matching_engine       Test 'Random stress test iteration 9': Measured latency = 21 cycles
+  2980.00ns INFO     cocotb.order_matching_engine       Test 'Random stress test iteration 9' PASSED: Best bid = 14, Best ask = 0, Matched price = 0
+  3000.00ns INFO     cocotb.order_matching_engine       ---------------------------------------------------
+  3000.00ns INFO     cocotb.order_matching_engine       Starting test: Random stress test iteration 10
+  3230.00ns INFO     cocotb.order_matching_engine       Test 'Random stress test iteration 10': Measured latency = 21 cycles
+  3230.00ns INFO     cocotb.order_matching_engine       Test 'Random stress test iteration 10' PASSED: Best bid = 14, Best ask = 1, Matched price = 1
+  3250.00ns INFO     cocotb.order_matching_engine       All tests passed.
+  3250.00ns INFO     cocotb.regression                  test_order_matching_engine.test_order_matching_engine passed
+  3250.00ns INFO     cocotb.regression                  ***************************************************************************************************************
+                                                        ** TEST                                                   STATUS  SIM TIME (ns)  REAL TIME (s)  RATIO (ns/s) **
+                                                        ***************************************************************************************************************
+                                                        ** test_order_matching_engine.test_order_matching_engine   PASS        3250.00           0.03      93860.73  **
+                                                        ***************************************************************************************************************
+                                                        ** TESTS=1 PASS=1 FAIL=0 SKIP=0                                        3250.00           0.04      80573.40  **
+                                                        ***************************************************************************************************************
+                                                        
+FST info: dumpfile /code/rundir/sim_build/order_matching_engine.fst opened for output.
+INFO     Icarus:runner.py:438 Results file: /code/rundir/sim_build/test_sort[4].None
+PASSED
+../../src/test_runner.py::test_sort[5] [DEBUG] Running simulation with PRICE_WIDTH=5
+[DEBUG] Parameters: {'PRICE_WIDTH': 5}
+
+-------------------------------- live log call ---------------------------------
+INFO     Icarus:runner.py:480 Removing: /code/rundir/sim_build
+INFO     Icarus:runner.py:468 Running command iverilog -o /code/rundir/sim_build/sim.vvp -s order_matching_engine -g2012 -Porder_matching_engine.PRICE_WIDTH=5 -s cocotb_iverilog_dump -f /code/rundir/sim_build/cmds.f /code/rtl/order_matching_engine.sv /code/rtl/sorting_engine.sv /code/rundir/sim_build/cocotb_iverilog_dump.v in directory /code/rundir/sim_build
+INFO     Icarus:runner.py:468 Running command vvp -M /usr/local/lib/python3.9/dist-packages/cocotb/libs -m libcocotbvpi_icarus /code/rundir/sim_build/sim.vvp -fst in directory /code/rundir/sim_build
+     -.--ns INFO     gpi                                ..mbed/gpi_embed.cpp:79   in set_program_name_in_venv        Did not detect Python virtual environment. Using system-wide Python interpreter
+     -.--ns INFO     gpi                                ../gpi/GpiCommon.cpp:101  in gpi_print_registered_impl       VPI registered
+     0.00ns INFO     cocotb                             Running on Icarus Verilog version 13.0 (devel)
+     0.00ns INFO     cocotb                             Running tests with cocotb v2.0.0.dev0+8d6c1a63 from /usr/local/lib/python3.9/dist-packages/cocotb
+     0.00ns INFO     cocotb                             Seeding Python random module with 1773331831
+     0.00ns INFO     cocotb.regression                  running test_order_matching_engine.test_order_matching_engine (1/1)
+                                                            Cocotb testbench for order_matching_engine.
+     0.00ns INFO     cocotb.order_matching_engine       ---------------------------------------------------
+     0.00ns INFO     cocotb.order_matching_engine       Starting test: Matching scenario: valid match
+   230.00ns INFO     cocotb.order_matching_engine       Test 'Matching scenario: valid match': Measured latency = 21 cycles
+   230.00ns INFO     cocotb.order_matching_engine       Test 'Matching scenario: valid match' PASSED: Best bid = 24, Best ask = 4, Matched price = 4
+   250.00ns INFO     cocotb.order_matching_engine       ---------------------------------------------------
+   250.00ns INFO     cocotb.order_matching_engine       Starting test: No match scenario: no match
+   480.00ns INFO     cocotb.order_matching_engine       Test 'No match scenario: no match': Measured latency = 21 cycles
+   480.00ns INFO     cocotb.order_matching_engine       Test 'No match scenario: no match' PASSED: Best bid = 23, Best ask = 24, Matched price = 0
+   500.00ns INFO     cocotb.order_matching_engine       ---------------------------------------------------
+   500.00ns INFO     cocotb.order_matching_engine       Starting test: Extreme values: match at boundary
+   730.00ns INFO     cocotb.order_matching_engine       Test 'Extreme values: match at boundary': Measured latency = 21 cycles
+   730.00ns INFO     cocotb.order_matching_engine       Test 'Extreme values: match at boundary' PASSED: Best bid = 31, Best ask = 31, Matched price = 31
+   750.00ns INFO     cocotb.order_matching_engine       ---------------------------------------------------
+   750.00ns INFO     cocotb.order_matching_engine       Starting test: Random stress test iteration 1
+   980.00ns INFO     cocotb.order_matching_engine       Test 'Random stress test iteration 1': Measured latency = 21 cycles
+   980.00ns INFO     cocotb.order_matching_engine       Test 'Random stress test iteration 1' PASSED: Best bid = 29, Best ask = 10, Matched price = 10
+  1000.00ns INFO     cocotb.order_matching_engine       ---------------------------------------------------
+  1000.00ns INFO     cocotb.order_matching_engine       Starting test: Random stress test iteration 2
+  1230.00ns INFO     cocotb.order_matching_engine       Test 'Random stress test iteration 2': Measured latency = 21 cycles
+  1230.00ns INFO     cocotb.order_matching_engine       Test 'Random stress test iteration 2' PASSED: Best bid = 30, Best ask = 5, Matched price = 5
+  1250.00ns INFO     cocotb.order_matching_engine       ---------------------------------------------------
+  1250.00ns INFO     cocotb.order_matching_engine       Starting test: Random stress test iteration 3
+  1480.00ns INFO     cocotb.order_matching_engine       Test 'Random stress test iteration 3': Measured latency = 21 cycles
+  1480.00ns INFO     cocotb.order_matching_engine       Test 'Random stress test iteration 3' PASSED: Best bid = 20, Best ask = 0, Matched price = 0
+  1500.00ns INFO     cocotb.order_matching_engine       ---------------------------------------------------
+  1500.00ns INFO     cocotb.order_matching_engine       Starting test: Random stress test iteration 4
+  1730.00ns INFO     cocotb.order_matching_engine       Test 'Random stress test iteration 4': Measured latency = 21 cycles
+  1730.00ns INFO     cocotb.order_matching_engine       Test 'Random stress test iteration 4' PASSED: Best bid = 26, Best ask = 1, Matched price = 1
+  1750.00ns INFO     cocotb.order_matching_engine       ---------------------------------------------------
+  1750.00ns INFO     cocotb.order_matching_engine       Starting test: Random stress test iteration 5
+  1980.00ns INFO     cocotb.order_matching_engine       Test 'Random stress test iteration 5': Measured latency = 21 cycles
+  1980.00ns INFO     cocotb.order_matching_engine       Test 'Random stress test iteration 5' PASSED: Best bid = 31, Best ask = 4, Matched price = 4
+  2000.00ns INFO     cocotb.order_matching_engine       ---------------------------------------------------
+  2000.00ns INFO     cocotb.order_matching_engine       Starting test: Random stress test iteration 6
+  2230.00ns INFO     cocotb.order_matching_engine       Test 'Random stress test iteration 6': Measured latency = 21 cycles
+  2230.00ns INFO     cocotb.order_matching_engine       Test 'Random stress test iteration 6' PASSED: Best bid = 30, Best ask = 3, Matched price = 3
+  2250.00ns INFO     cocotb.order_matching_engine       ---------------------------------------------------
+  2250.00ns INFO     cocotb.order_matching_engine       Starting test: Random stress test iteration 7
+  2480.00ns INFO     cocotb.order_matching_engine       Test 'Random stress test iteration 7': Measured latency = 21 cycles
+  2480.00ns INFO     cocotb.order_matching_engine       Test 'Random stress test iteration 7' PASSED: Best bid = 29, Best ask = 3, Matched price = 3
+  2500.00ns INFO     cocotb.order_matching_engine       ---------------------------------------------------
+  2500.00ns INFO     cocotb.order_matching_engine       Starting test: Random stress test iteration 8
+  2730.00ns INFO     cocotb.order_matching_engine       Test 'Random stress test iteration 8': Measured latency = 21 cycles
+  2730.00ns INFO     cocotb.order_matching_engine       Test 'Random stress test iteration 8' PASSED: Best bid = 30, Best ask = 1, Matched price = 1
+  2750.00ns INFO     cocotb.order_matching_engine       ---------------------------------------------------
+  2750.00ns INFO     cocotb.order_matching_engine       Starting test: Random stress test iteration 9
+  2980.00ns INFO     cocotb.order_matching_engine       Test 'Random stress test iteration 9': Measured latency = 21 cycles
+  2980.00ns INFO     cocotb.order_matching_engine       Test 'Random stress test iteration 9' PASSED: Best bid = 28, Best ask = 1, Matched price = 1
+  3000.00ns INFO     cocotb.order_matching_engine       ---------------------------------------------------
+  3000.00ns INFO     cocotb.order_matching_engine       Starting test: Random stress test iteration 10
+  3230.00ns INFO     cocotb.order_matching_engine       Test 'Random stress test iteration 10': Measured latency = 21 cycles
+  3230.00ns INFO     cocotb.order_matching_engine       Test 'Random stress test iteration 10' PASSED: Best bid = 29, Best ask = 3, Matched price = 3
+  3250.00ns INFO     cocotb.order_matching_engine       All tests passed.
+  3250.00ns INFO     cocotb.regression                  test_order_matching_engine.test_order_matching_engine passed
+  3250.00ns INFO     cocotb.regression                  ***************************************************************************************************************
+                                                        ** TEST                                                   STATUS  SIM TIME (ns)  REAL TIME (s)  RATIO (ns/s) **
+                                                        ***************************************************************************************************************
+                                                        ** test_order_matching_engine.test_order_matching_engine   PASS        3250.00           0.05      61383.47  **
+                                                        ***************************************************************************************************************
+                                                        ** TESTS=1 PASS=1 FAIL=0 SKIP=0                                        3250.00           0.06      55150.70  **
+                                                        ***************************************************************************************************************
+                                                        
+FST info: dumpfile /code/rundir/sim_build/order_matching_engine.fst opened for output.
+INFO     Icarus:runner.py:438 Results file: /code/rundir/sim_build/test_sort[5].None
+PASSED
+../../src/test_runner.py::test_sort[8] [DEBUG] Running simulation with PRICE_WIDTH=8
+[DEBUG] Parameters: {'PRICE_WIDTH': 8}
+
+-------------------------------- live log call ---------------------------------
+INFO     Icarus:runner.py:480 Removing: /code/rundir/sim_build
+INFO     Icarus:runner.py:468 Running command iverilog -o /code/rundir/sim_build/sim.vvp -s order_matching_engine -g2012 -Porder_matching_engine.PRICE_WIDTH=8 -s cocotb_iverilog_dump -f /code/rundir/sim_build/cmds.f /code/rtl/order_matching_engine.sv /code/rtl/sorting_engine.sv /code/rundir/sim_build/cocotb_iverilog_dump.v in directory /code/rundir/sim_build
+INFO     Icarus:runner.py:468 Running command vvp -M /usr/local/lib/python3.9/dist-packages/cocotb/libs -m libcocotbvpi_icarus /code/rundir/sim_build/sim.vvp -fst in directory /code/rundir/sim_build
+     -.--ns INFO     gpi                                ..mbed/gpi_embed.cpp:79   in set_program_name_in_venv        Did not detect Python virtual environment. Using system-wide Python interpreter
+     -.--ns INFO     gpi                                ../gpi/GpiCommon.cpp:101  in gpi_print_registered_impl       VPI registered
+     0.00ns INFO     cocotb                             Running on Icarus Verilog version 13.0 (devel)
+     0.00ns INFO     cocotb                             Running tests with cocotb v2.0.0.dev0+8d6c1a63 from /usr/local/lib/python3.9/dist-packages/cocotb
+     0.00ns INFO     cocotb                             Seeding Python random module with 1773331831
+     0.00ns INFO     cocotb.regression                  running test_order_matching_engine.test_order_matching_engine (1/1)
+                                                            Cocotb testbench for order_matching_engine.
+     0.00ns INFO     cocotb.order_matching_engine       ---------------------------------------------------
+     0.00ns INFO     cocotb.order_matching_engine       Starting test: Matching scenario: valid match
+   230.00ns INFO     cocotb.order_matching_engine       Test 'Matching scenario: valid match': Measured latency = 21 cycles
+   230.00ns INFO     cocotb.order_matching_engine       Test 'Matching scenario: valid match' PASSED: Best bid = 204, Best ask = 38, Matched price = 38
+   250.00ns INFO     cocotb.order_matching_engine       ---------------------------------------------------
+   250.00ns INFO     cocotb.order_matching_engine       Starting test: No match scenario: no match
+   480.00ns INFO     cocotb.order_matching_engine       Test 'No match scenario: no match': Measured latency = 21 cycles
+   480.00ns INFO     cocotb.order_matching_engine       Test 'No match scenario: no match' PASSED: Best bid = 191, Best ask = 204, Matched price = 0
+   500.00ns INFO     cocotb.order_matching_engine       ---------------------------------------------------
+   500.00ns INFO     cocotb.order_matching_engine       Starting test: Extreme values: match at boundary
+   730.00ns INFO     cocotb.order_matching_engine       Test 'Extreme values: match at boundary': Measured latency = 21 cycles
+   730.00ns INFO     cocotb.order_matching_engine       Test 'Extreme values: match at boundary' PASSED: Best bid = 255, Best ask = 255, Matched price = 255
+   750.00ns INFO     cocotb.order_matching_engine       ---------------------------------------------------
+   750.00ns INFO     cocotb.order_matching_engine       Starting test: Random stress test iteration 1
+   980.00ns INFO     cocotb.order_matching_engine       Test 'Random stress test iteration 1': Measured latency = 21 cycles
+   980.00ns INFO     cocotb.order_matching_engine       Test 'Random stress test iteration 1' PASSED: Best bid = 233, Best ask = 80, Matched price = 80
+  1000.00ns INFO     cocotb.order_matching_engine       ---------------------------------------------------
+  1000.00ns INFO     cocotb.order_matching_engine       Starting test: Random stress test iteration 2
+  1230.00ns INFO     cocotb.order_matching_engine       Test 'Random stress test iteration 2': Measured latency = 21 cycles
+  1230.00ns INFO     cocotb.order_matching_engine       Test 'Random stress test iteration 2' PASSED: Best bid = 243, Best ask = 46, Matched price = 46
+  1250.00ns INFO     cocotb.order_matching_engine       ---------------------------------------------------
+  1250.00ns INFO     cocotb.order_matching_engine       Starting test: Random stress test iteration 3
+  1480.00ns INFO     cocotb.order_matching_engine       Test 'Random stress test iteration 3': Measured latency = 21 cycles
+  1480.00ns INFO     cocotb.order_matching_engine       Test 'Random stress test iteration 3' PASSED: Best bid = 163, Best ask = 0, Matched price = 0
+  1500.00ns INFO     cocotb.order_matching_engine       ---------------------------------------------------
+  1500.00ns INFO     cocotb.order_matching_engine       Starting test: Random stress test iteration 4
+  1730.00ns INFO     cocotb.order_matching_engine       Test 'Random stress test iteration 4': Measured latency = 21 cycles
+  1730.00ns INFO     cocotb.order_matching_engine       Test 'Random stress test iteration 4' PASSED: Best bid = 215, Best ask = 9, Matched price = 9
+  1750.00ns INFO     cocotb.order_matching_engine       ---------------------------------------------------
+  1750.00ns INFO     cocotb.order_matching_engine       Starting test: Random stress test iteration 5
+  1980.00ns INFO     cocotb.order_matching_engine       Test 'Random stress test iteration 5': Measured latency = 21 cycles
+  1980.00ns INFO     cocotb.order_matching_engine       Test 'Random stress test iteration 5' PASSED: Best bid = 248, Best ask = 33, Matched price = 33
+  2000.00ns INFO     cocotb.order_matching_engine       ---------------------------------------------------
+  2000.00ns INFO     cocotb.order_matching_engine       Starting test: Random stress test iteration 6
+  2230.00ns INFO     cocotb.order_matching_engine       Test 'Random stress test iteration 6': Measured latency = 21 cycles
+  2230.00ns INFO     cocotb.order_matching_engine       Test 'Random stress test iteration 6' PASSED: Best bid = 241, Best ask = 29, Matched price = 29
+  2250.00ns INFO     cocotb.order_matching_engine       ---------------------------------------------------
+  2250.00ns INFO     cocotb.order_matching_engine       Starting test: Random stress test iteration 7
+  2480.00ns INFO     cocotb.order_matching_engine       Test 'Random stress test iteration 7': Measured latency = 21 cycles
+  2480.00ns INFO     cocotb.order_matching_engine       Test 'Random stress test iteration 7' PASSED: Best bid = 237, Best ask = 25, Matched price = 25
+  2500.00ns INFO     cocotb.order_matching_engine       ---------------------------------------------------
+  2500.00ns INFO     cocotb.order_matching_engine       Starting test: Random stress test iteration 8
+  2730.00ns INFO     cocotb.order_matching_engine       Test 'Random stress test iteration 8': Measured latency = 21 cycles
+  2730.00ns INFO     cocotb.order_matching_engine       Test 'Random stress test iteration 8' PASSED: Best bid = 241, Best ask = 13, Matched price = 13
+  2750.00ns INFO     cocotb.order_matching_engine       ---------------------------------------------------
+  2750.00ns INFO     cocotb.order_matching_engine       Starting test: Random stress test iteration 9
+  2980.00ns INFO     cocotb.order_matching_engine       Test 'Random stress test iteration 9': Measured latency = 21 cycles
+  2980.00ns INFO     cocotb.order_matching_engine       Test 'Random stress test iteration 9' PASSED: Best bid = 229, Best ask = 14, Matched price = 14
+  3000.00ns INFO     cocotb.order_matching_engine       ---------------------------------------------------
+  3000.00ns INFO     cocotb.order_matching_engine       Starting test: Random stress test iteration 10
+  3230.00ns INFO     cocotb.order_matching_engine       Test 'Random stress test iteration 10': Measured latency = 21 cycles
+  3230.00ns INFO     cocotb.order_matching_engine       Test 'Random stress test iteration 10' PASSED: Best bid = 239, Best ask = 31, Matched price = 31
+  3250.00ns INFO     cocotb.order_matching_engine       All tests passed.
+  3250.00ns INFO     cocotb.regression                  test_order_matching_engine.test_order_matching_engine passed
+  3250.00ns INFO     cocotb.regression                  ***************************************************************************************************************
+                                                        ** TEST                                                   STATUS  SIM TIME (ns)  REAL TIME (s)  RATIO (ns/s) **
+                                                        ***************************************************************************************************************
+                                                        ** test_order_matching_engine.test_order_matching_engine   PASS        3250.00           0.04      91868.77  **
+                                                        ***************************************************************************************************************
+                                                        ** TESTS=1 PASS=1 FAIL=0 SKIP=0                                        3250.00           0.04      79222.90  **
+                                                        ***************************************************************************************************************
+                                                        
+FST info: dumpfile /code/rundir/sim_build/order_matching_engine.fst opened for output.
+INFO     Icarus:runner.py:438 Results file: /code/rundir/sim_build/test_sort[8].None
+PASSED
+../../src/test_runner.py::test_sort[12] [DEBUG] Running simulation with PRICE_WIDTH=12
+[DEBUG] Parameters: {'PRICE_WIDTH': 12}
+
+-------------------------------- live log call ---------------------------------
+INFO     Icarus:runner.py:480 Removing: /code/rundir/sim_build
+INFO     Icarus:runner.py:468 Running command iverilog -o /code/rundir/sim_build/sim.vvp -s order_matching_engine -g2012 -Porder_matching_engine.PRICE_WIDTH=12 -s cocotb_iverilog_dump -f /code/rundir/sim_build/cmds.f /code/rtl/order_matching_engine.sv /code/rtl/sorting_engine.sv /code/rundir/sim_build/cocotb_iverilog_dump.v in directory /code/rundir/sim_build
+INFO     Icarus:runner.py:468 Running command vvp -M /usr/local/lib/python3.9/dist-packages/cocotb/libs -m libcocotbvpi_icarus /code/rundir/sim_build/sim.vvp -fst in directory /code/rundir/sim_build
+     -.--ns INFO     gpi                                ..mbed/gpi_embed.cpp:79   in set_program_name_in_venv        Did not detect Python virtual environment. Using system-wide Python interpreter
+     -.--ns INFO     gpi                                ../gpi/GpiCommon.cpp:101  in gpi_print_registered_impl       VPI registered
+     0.00ns INFO     cocotb                             Running on Icarus Verilog version 13.0 (devel)
+     0.00ns INFO     cocotb                             Running tests with cocotb v2.0.0.dev0+8d6c1a63 from /usr/local/lib/python3.9/dist-packages/cocotb
+     0.00ns INFO     cocotb                             Seeding Python random module with 1773331831
+     0.00ns INFO     cocotb.regression                  running test_order_matching_engine.test_order_matching_engine (1/1)
+                                                            Cocotb testbench for order_matching_engine.
+     0.00ns INFO     cocotb.order_matching_engine       ---------------------------------------------------
+     0.00ns INFO     cocotb.order_matching_engine       Starting test: Matching scenario: valid match
+   230.00ns INFO     cocotb.order_matching_engine       Test 'Matching scenario: valid match': Measured latency = 21 cycles
+   230.00ns INFO     cocotb.order_matching_engine       Test 'Matching scenario: valid match' PASSED: Best bid = 3276, Best ask = 614, Matched price = 614
+   250.00ns INFO     cocotb.order_matching_engine       ---------------------------------------------------
+   250.00ns INFO     cocotb.order_matching_engine       Starting test: No match scenario: no match
+   480.00ns INFO     cocotb.order_matching_engine       Test 'No match scenario: no match': Measured latency = 21 cycles
+   480.00ns INFO     cocotb.order_matching_engine       Test 'No match scenario: no match' PASSED: Best bid = 3071, Best ask = 3276, Matched price = 0
+   500.00ns INFO     cocotb.order_matching_engine       ---------------------------------------------------
+   500.00ns INFO     cocotb.order_matching_engine       Starting test: Extreme values: match at boundary
+   730.00ns INFO     cocotb.order_matching_engine       Test 'Extreme values: match at boundary': Measured latency = 21 cycles
+   730.00ns INFO     cocotb.order_matching_engine       Test 'Extreme values: match at boundary' PASSED: Best bid = 4095, Best ask = 4095, Matched price = 4095
+   750.00ns INFO     cocotb.order_matching_engine       ---------------------------------------------------
+   750.00ns INFO     cocotb.order_matching_engine       Starting test: Random stress test iteration 1
+   980.00ns INFO     cocotb.order_matching_engine       Test 'Random stress test iteration 1': Measured latency = 21 cycles
+   980.00ns INFO     cocotb.order_matching_engine       Test 'Random stress test iteration 1' PASSED: Best bid = 3734, Best ask = 1284, Matched price = 1284
+  1000.00ns INFO     cocotb.order_matching_engine       ---------------------------------------------------
+  1000.00ns INFO     cocotb.order_matching_engine       Starting test: Random stress test iteration 2
+  1230.00ns INFO     cocotb.order_matching_engine       Test 'Random stress test iteration 2': Measured latency = 21 cycles
+  1230.00ns INFO     cocotb.order_matching_engine       Test 'Random stress test iteration 2' PASSED: Best bid = 3893, Best ask = 736, Matched price = 736
+  1250.00ns INFO     cocotb.order_matching_engine       ---------------------------------------------------
+  1250.00ns INFO     cocotb.order_matching_engine       Starting test: Random stress test iteration 3
+  1480.00ns INFO     cocotb.order_matching_engine       Test 'Random stress test iteration 3': Measured latency = 21 cycles
+  1480.00ns INFO     cocotb.order_matching_engine       Test 'Random stress test iteration 3' PASSED: Best bid = 2612, Best ask = 4, Matched price = 4
+  1500.00ns INFO     cocotb.order_matching_engine       ---------------------------------------------------
+  1500.00ns INFO     cocotb.order_matching_engine       Starting test: Random stress test iteration 4
+  1730.00ns INFO     cocotb.order_matching_engine       Test 'Random stress test iteration 4': Measured latency = 21 cycles
+  1730.00ns INFO     cocotb.order_matching_engine       Test 'Random stress test iteration 4' PASSED: Best bid = 3450, Best ask = 149, Matched price = 149
+  1750.00ns INFO     cocotb.order_matching_engine       ---------------------------------------------------
+  1750.00ns INFO     cocotb.order_matching_engine       Starting test: Random stress test iteration 5
+  1980.00ns INFO     cocotb.order_matching_engine       Test 'Random stress test iteration 5': Measured latency = 21 cycles
+  1980.00ns INFO     cocotb.order_matching_engine       Test 'Random stress test iteration 5' PASSED: Best bid = 3972, Best ask = 542, Matched price = 542
+  2000.00ns INFO     cocotb.order_matching_engine       ---------------------------------------------------
+  2000.00ns INFO     cocotb.order_matching_engine       Starting test: Random stress test iteration 6
+  2230.00ns INFO     cocotb.order_matching_engine       Test 'Random stress test iteration 6': Measured latency = 21 cycles
+  2230.00ns INFO     cocotb.order_matching_engine       Test 'Random stress test iteration 6' PASSED: Best bid = 3856, Best ask = 468, Matched price = 468
+  2250.00ns INFO     cocotb.order_matching_engine       ---------------------------------------------------
+  2250.00ns INFO     cocotb.order_matching_engine       Starting test: Random stress test iteration 7
+  2480.00ns INFO     cocotb.order_matching_engine       Test 'Random stress test iteration 7': Measured latency = 21 cycles
+  2480.00ns INFO     cocotb.order_matching_engine       Test 'Random stress test iteration 7' PASSED: Best bid = 3806, Best ask = 409, Matched price = 409
+  2500.00ns INFO     cocotb.order_matching_engine       ---------------------------------------------------
+  2500.00ns INFO     cocotb.order_matching_engine       Starting test: Random stress test iteration 8
+  2730.00ns INFO     cocotb.order_matching_engine       Test 'Random stress test iteration 8': Measured latency = 21 cycles
+  2730.00ns INFO     cocotb.order_matching_engine       Test 'Random stress test iteration 8' PASSED: Best bid = 3866, Best ask = 223, Matched price = 223
+  2750.00ns INFO     cocotb.order_matching_engine       ---------------------------------------------------
+  2750.00ns INFO     cocotb.order_matching_engine       Starting test: Random stress test iteration 9
+  2980.00ns INFO     cocotb.order_matching_engine       Test 'Random stress test iteration 9': Measured latency = 21 cycles
+  2980.00ns INFO     cocotb.order_matching_engine       Test 'Random stress test iteration 9' PASSED: Best bid = 3673, Best ask = 238, Matched price = 238
+  3000.00ns INFO     cocotb.order_matching_engine       ---------------------------------------------------
+  3000.00ns INFO     cocotb.order_matching_engine       Starting test: Random stress test iteration 10
+  3230.00ns INFO     cocotb.order_matching_engine       Test 'Random stress test iteration 10': Measured latency = 21 cycles
+  3230.00ns INFO     cocotb.order_matching_engine       Test 'Random stress test iteration 10' PASSED: Best bid = 3827, Best ask = 505, Matched price = 505
+  3250.00ns INFO     cocotb.order_matching_engine       All tests passed.
+  3250.00ns INFO     cocotb.regression                  test_order_matching_engine.test_order_matching_engine passed
+  3250.00ns INFO     cocotb.regression                  ***************************************************************************************************************
+                                                        ** TEST                                                   STATUS  SIM TIME (ns)  REAL TIME (s)  RATIO (ns/s) **
+                                                        ***************************************************************************************************************
+                                                        ** test_order_matching_engine.test_order_matching_engine   PASS        3250.00           0.04      88295.42  **
+                                                        ***************************************************************************************************************
+                                                        ** TESTS=1 PASS=1 FAIL=0 SKIP=0                                        3250.00           0.04      76598.18  **
+                                                        ***************************************************************************************************************
+                                                        
+FST info: dumpfile /code/rundir/sim_build/order_matching_engine.fst opened for output.
+INFO     Icarus:runner.py:438 Results file: /code/rundir/sim_build/test_sort[12].None
+PASSED
+
+============================== 5 passed in 1.11s ===============================

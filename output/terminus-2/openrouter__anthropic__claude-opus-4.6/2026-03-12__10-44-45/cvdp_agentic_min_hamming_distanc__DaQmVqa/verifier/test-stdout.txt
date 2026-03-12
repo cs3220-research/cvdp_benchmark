@@ -1,0 +1,398 @@
+Running service: 01-new-tb
+============================= test session starts ==============================
+platform linux -- Python 3.9.2, pytest-8.3.2, pluggy-1.5.0 -- /usr/bin/python3
+cachedir: /code/rundir/.cache
+rootdir: /src
+collecting ... collected 8 items
+
+../src/test_runner.py::test_min_distance[4-4-0]      -.--ns INFO     gpi                                ..mbed/gpi_embed.cpp:79   in set_program_name_in_venv        Did not detect Python virtual environment. Using system-wide Python interpreter
+     -.--ns INFO     gpi                                ../gpi/GpiCommon.cpp:101  in gpi_print_registered_impl       VPI registered
+     0.00ns INFO     cocotb                             Running on Icarus Verilog version 13.0 (devel)
+     0.00ns INFO     cocotb                             Running tests with cocotb v1.9.2 from /usr/local/lib/python3.9/dist-packages/cocotb
+     0.00ns INFO     cocotb                             Seeding Python random module with 1773327330
+     0.00ns INFO     cocotb.regression                  Found test test_Min_Hamming_Distance_Finder.test_Min_Hamming_Distance_Finder
+     0.00ns INFO     cocotb.regression                  running test_Min_Hamming_Distance_Finder (1/1)
+                                                          Test edge-case scenarios for the Min_Hamming_Distance_Finder module.
+     0.00ns INFO     cocotb.Min_Hamming_Distance_Finder Testing Min_Hamming_Distance_Finder with BIT_WIDTH=4 and REFERENCE_COUNT=4
+    10.00ns INFO     cocotb.Min_Hamming_Distance_Finder Edge Case 1 passed: Query=0001, Refs=0001000100010001 -> Expected index=0, dist=0; Got index=0, dist=0.
+    20.00ns INFO     cocotb.Min_Hamming_Distance_Finder Edge Case 2 passed: Query=0110, Refs=1100011001011001 -> Expected index=2, dist=0; Got index=2, dist=0.
+    70.00ns INFO     cocotb.Min_Hamming_Distance_Finder Starting Randomized Testing for Min_Hamming_Distance_Finder with BIT_WIDTH=4 and REFERENCE_COUNT=4
+    80.00ns INFO     cocotb.Min_Hamming_Distance_Finder Random Test 1 passed: Query=1010, Refs=1011100100100010, Expected index=0, dist=1; Got index=0, dist=1.
+    90.00ns INFO     cocotb.Min_Hamming_Distance_Finder Random Test 2 passed: Query=0001, Refs=1010100011010001, Expected index=0, dist=0; Got index=0, dist=0.
+   100.00ns INFO     cocotb.Min_Hamming_Distance_Finder Random Test 3 passed: Query=1100, Refs=0110101110111111, Expected index=0, dist=2; Got index=0, dist=2.
+   110.00ns INFO     cocotb.Min_Hamming_Distance_Finder Random Test 4 passed: Query=1110, Refs=0100100111010000, Expected index=1, dist=2; Got index=1, dist=2.
+   120.00ns INFO     cocotb.Min_Hamming_Distance_Finder Random Test 5 passed: Query=0100, Refs=1101010011010010, Expected index=2, dist=0; Got index=2, dist=0.
+   130.00ns INFO     cocotb.Min_Hamming_Distance_Finder Random Test 6 passed: Query=1110, Refs=1101001111111001, Expected index=1, dist=1; Got index=1, dist=1.
+   140.00ns INFO     cocotb.Min_Hamming_Distance_Finder Random Test 7 passed: Query=1011, Refs=1101100001011100, Expected index=2, dist=2; Got index=2, dist=2.
+   150.00ns INFO     cocotb.Min_Hamming_Distance_Finder Random Test 8 passed: Query=1010, Refs=1011110011000011, Expected index=3, dist=1; Got index=3, dist=1.
+   160.00ns INFO     cocotb.Min_Hamming_Distance_Finder Random Test 9 passed: Query=0011, Refs=1110001010100011, Expected index=0, dist=0; Got index=0, dist=0.
+   170.00ns INFO     cocotb.Min_Hamming_Distance_Finder Random Test 10 passed: Query=1110, Refs=1010011111010110, Expected index=0, dist=1; Got index=0, dist=1.
+   180.00ns INFO     cocotb.Min_Hamming_Distance_Finder Random Test 11 passed: Query=1110, Refs=1110001001001000, Expected index=3, dist=0; Got index=3, dist=0.
+   190.00ns INFO     cocotb.Min_Hamming_Distance_Finder Random Test 12 passed: Query=0110, Refs=1001101111111001, Expected index=1, dist=2; Got index=1, dist=2.
+   200.00ns INFO     cocotb.Min_Hamming_Distance_Finder Random Test 13 passed: Query=0110, Refs=0101001101110110, Expected index=0, dist=0; Got index=0, dist=0.
+   210.00ns INFO     cocotb.Min_Hamming_Distance_Finder Random Test 14 passed: Query=0111, Refs=1100110000101110, Expected index=0, dist=2; Got index=0, dist=2.
+   220.00ns INFO     cocotb.Min_Hamming_Distance_Finder Random Test 15 passed: Query=0101, Refs=1100100010110000, Expected index=0, dist=2; Got index=0, dist=2.
+   230.00ns INFO     cocotb.Min_Hamming_Distance_Finder Random Test 16 passed: Query=0010, Refs=0110010111011010, Expected index=0, dist=1; Got index=0, dist=1.
+   240.00ns INFO     cocotb.Min_Hamming_Distance_Finder Random Test 17 passed: Query=1011, Refs=0110011010111011, Expected index=0, dist=0; Got index=0, dist=0.
+   250.00ns INFO     cocotb.Min_Hamming_Distance_Finder Random Test 18 passed: Query=0000, Refs=0000110001101100, Expected index=3, dist=0; Got index=3, dist=0.
+   260.00ns INFO     cocotb.Min_Hamming_Distance_Finder Random Test 19 passed: Query=0110, Refs=1001101010001010, Expected index=0, dist=2; Got index=0, dist=2.
+   270.00ns INFO     cocotb.Min_Hamming_Distance_Finder Random Test 20 passed: Query=0011, Refs=1101110100010111, Expected index=0, dist=1; Got index=0, dist=1.
+   271.00ns INFO     cocotb.regression                  test_Min_Hamming_Distance_Finder passed
+   271.00ns INFO     cocotb.regression                  ***************************************************************************************************************************
+                                                        ** TEST                                                               STATUS  SIM TIME (ns)  REAL TIME (s)  RATIO (ns/s) **
+                                                        ***************************************************************************************************************************
+                                                        ** test_Min_Hamming_Distance_Finder.test_Min_Hamming_Distance_Finder   PASS         271.00           0.01      47706.56  **
+                                                        ***************************************************************************************************************************
+                                                        ** TESTS=1 PASS=1 FAIL=0 SKIP=0                                                     271.00           0.04       7733.57  **
+                                                        ***************************************************************************************************************************
+                                                        
+FST info: dumpfile /code/sim_build/Min_Hamming_Distance_Finder.fst opened for output.
+[DEBUG] Parameters: {'BIT_WIDTH': 4, 'REFERENCE_COUNT': 4}
+INFO: Running command iverilog -o /code/sim_build/sim.vvp -D COCOTB_SIM=1 -s Min_Hamming_Distance_Finder -g2012 -PMin_Hamming_Distance_Finder.BIT_WIDTH=4 -PMin_Hamming_Distance_Finder.REFERENCE_COUNT=4 -s cocotb_iverilog_dump -f /code/sim_build/cmds.f /code/rtl/Bitwise_Reduction.sv /code/rtl/Data_Reduction.sv /code/rtl/Bit_Difference_Counter.sv /code/rtl/Min_Hamming_Distance_Finder.sv /code/sim_build/cocotb_iverilog_dump.v in directory /code/sim_build
+INFO: Running command vvp -M /usr/local/lib/python3.9/dist-packages/cocotb/libs -m libcocotbvpi_icarus /code/sim_build/sim.vvp -fst in directory /code/sim_build
+INFO: Results file: /code/sim_build/test_min_distance[4-4-0].None
+PASSED
+../src/test_runner.py::test_min_distance[4-10-0]      -.--ns INFO     gpi                                ..mbed/gpi_embed.cpp:79   in set_program_name_in_venv        Did not detect Python virtual environment. Using system-wide Python interpreter
+     -.--ns INFO     gpi                                ../gpi/GpiCommon.cpp:101  in gpi_print_registered_impl       VPI registered
+     0.00ns INFO     cocotb                             Running on Icarus Verilog version 13.0 (devel)
+     0.00ns INFO     cocotb                             Running tests with cocotb v1.9.2 from /usr/local/lib/python3.9/dist-packages/cocotb
+     0.00ns INFO     cocotb                             Seeding Python random module with 1773327330
+     0.00ns INFO     cocotb.regression                  Found test test_Min_Hamming_Distance_Finder.test_Min_Hamming_Distance_Finder
+     0.00ns INFO     cocotb.regression                  running test_Min_Hamming_Distance_Finder (1/1)
+                                                          Test edge-case scenarios for the Min_Hamming_Distance_Finder module.
+     0.00ns INFO     cocotb.Min_Hamming_Distance_Finder Testing Min_Hamming_Distance_Finder with BIT_WIDTH=10 and REFERENCE_COUNT=4
+    10.00ns INFO     cocotb.Min_Hamming_Distance_Finder Edge Case 1 passed: Query=0001000010, Refs=0001000010000100001000010000100001000010 -> Expected index=0, dist=0; Got index=0, dist=0.
+    20.00ns INFO     cocotb.Min_Hamming_Distance_Finder Edge Case 2 passed: Query=0110000000, Refs=1100101000011000000001010001111001111111 -> Expected index=2, dist=0; Got index=2, dist=0.
+    70.00ns INFO     cocotb.Min_Hamming_Distance_Finder Starting Randomized Testing for Min_Hamming_Distance_Finder with BIT_WIDTH=10 and REFERENCE_COUNT=4
+    80.00ns INFO     cocotb.Min_Hamming_Distance_Finder Random Test 1 passed: Query=1010000110, Refs=1111100110111001001000100010010011001100, Expected index=2, dist=3; Got index=2, dist=3.
+    90.00ns INFO     cocotb.Min_Hamming_Distance_Finder Random Test 2 passed: Query=0001011011, Refs=1111111110101000110100010011010110001011, Expected index=1, dist=3; Got index=1, dist=3.
+   100.00ns INFO     cocotb.Min_Hamming_Distance_Finder Random Test 3 passed: Query=1100101100, Refs=1011101001101011101111110111100011000011, Expected index=1, dist=5; Got index=1, dist=5.
+   110.00ns INFO     cocotb.Min_Hamming_Distance_Finder Random Test 4 passed: Query=1110001010, Refs=1001101001001001110100000111110010111110, Expected index=0, dist=5; Got index=0, dist=5.
+   120.00ns INFO     cocotb.Min_Hamming_Distance_Finder Random Test 5 passed: Query=0100000000, Refs=1010110011010100110100101110110001101010, Expected index=2, dist=4; Got index=2, dist=4.
+   130.00ns INFO     cocotb.Min_Hamming_Distance_Finder Random Test 6 passed: Query=1110111011, Refs=0101111111010011111110011001110011001000, Expected index=2, dist=3; Got index=2, dist=3.
+   140.00ns INFO     cocotb.Min_Hamming_Distance_Finder Random Test 7 passed: Query=1010100000, Refs=1111100110111100110000111101001010111000, Expected index=0, dist=2; Got index=0, dist=2.
+   150.00ns INFO     cocotb.Min_Hamming_Distance_Finder Random Test 8 passed: Query=0011111001, Refs=1101101011100010101000111011111010000001, Expected index=1, dist=3; Got index=1, dist=3.
+   160.00ns INFO     cocotb.Min_Hamming_Distance_Finder Random Test 9 passed: Query=1110100100, Refs=0111000010100111110101100001011010000110, Expected index=0, dist=3; Got index=0, dist=3.
+   170.00ns INFO     cocotb.Min_Hamming_Distance_Finder Random Test 10 passed: Query=0110110011, Refs=1001011010011011111110011100110101000110, Expected index=2, dist=2; Got index=2, dist=2.
+   180.00ns INFO     cocotb.Min_Hamming_Distance_Finder Random Test 11 passed: Query=0110111100, Refs=1001101001010011011101101110110111000101, Expected index=1, dist=3; Got index=1, dist=3.
+   190.00ns INFO     cocotb.Min_Hamming_Distance_Finder Random Test 12 passed: Query=0111000111, Refs=0010111111001100001011101001001010101111, Expected index=2, dist=3; Got index=2, dist=3.
+   200.00ns INFO     cocotb.Min_Hamming_Distance_Finder Random Test 13 passed: Query=0010001000, Refs=0101101001100101110110101011111010110001, Expected index=0, dist=5; Got index=0, dist=5.
+   210.00ns INFO     cocotb.Min_Hamming_Distance_Finder Random Test 14 passed: Query=1100110101, Refs=0000110000000001101100000011000100100100, Expected index=0, dist=3; Got index=0, dist=3.
+   220.00ns INFO     cocotb.Min_Hamming_Distance_Finder Random Test 15 passed: Query=0110011100, Refs=0001111110011010100010101001001010011011, Expected index=2, dist=3; Got index=2, dist=3.
+   230.00ns INFO     cocotb.Min_Hamming_Distance_Finder Random Test 16 passed: Query=1100111101, Refs=1111110110111111100110101101111111011100, Expected index=2, dist=3; Got index=2, dist=3.
+   240.00ns INFO     cocotb.Min_Hamming_Distance_Finder Random Test 17 passed: Query=1101100100, Refs=0001110111111010110100010010001011110001, Expected index=2, dist=4; Got index=2, dist=4.
+   250.00ns INFO     cocotb.Min_Hamming_Distance_Finder Random Test 18 passed: Query=0101010101, Refs=1001100110001110111000010011001100000011, Expected index=1, dist=4; Got index=1, dist=4.
+   260.00ns INFO     cocotb.Min_Hamming_Distance_Finder Random Test 19 passed: Query=1000111010, Refs=1101011010001001011000011000011111111010, Expected index=0, dist=3; Got index=0, dist=3.
+   270.00ns INFO     cocotb.Min_Hamming_Distance_Finder Random Test 20 passed: Query=0010101001, Refs=1000111010110101111000101110101010000110, Expected index=1, dist=3; Got index=1, dist=3.
+   271.00ns INFO     cocotb.regression                  test_Min_Hamming_Distance_Finder passed
+   271.00ns INFO     cocotb.regression                  ***************************************************************************************************************************
+                                                        ** TEST                                                               STATUS  SIM TIME (ns)  REAL TIME (s)  RATIO (ns/s) **
+                                                        ***************************************************************************************************************************
+                                                        ** test_Min_Hamming_Distance_Finder.test_Min_Hamming_Distance_Finder   PASS         271.00           0.01      31063.82  **
+                                                        ***************************************************************************************************************************
+                                                        ** TESTS=1 PASS=1 FAIL=0 SKIP=0                                                     271.00           0.04       6700.80  **
+                                                        ***************************************************************************************************************************
+                                                        
+FST info: dumpfile /code/sim_build/Min_Hamming_Distance_Finder.fst opened for output.
+[DEBUG] Parameters: {'BIT_WIDTH': 10, 'REFERENCE_COUNT': 4}
+Removing: /code/sim_build
+INFO: Running command iverilog -o /code/sim_build/sim.vvp -D COCOTB_SIM=1 -s Min_Hamming_Distance_Finder -g2012 -PMin_Hamming_Distance_Finder.BIT_WIDTH=10 -PMin_Hamming_Distance_Finder.REFERENCE_COUNT=4 -s cocotb_iverilog_dump -f /code/sim_build/cmds.f /code/rtl/Bitwise_Reduction.sv /code/rtl/Data_Reduction.sv /code/rtl/Bit_Difference_Counter.sv /code/rtl/Min_Hamming_Distance_Finder.sv /code/sim_build/cocotb_iverilog_dump.v in directory /code/sim_build
+INFO: Running command vvp -M /usr/local/lib/python3.9/dist-packages/cocotb/libs -m libcocotbvpi_icarus /code/sim_build/sim.vvp -fst in directory /code/sim_build
+INFO: Results file: /code/sim_build/test_min_distance[4-10-0].None
+PASSED
+../src/test_runner.py::test_min_distance[4-3-0]      -.--ns INFO     gpi                                ..mbed/gpi_embed.cpp:79   in set_program_name_in_venv        Did not detect Python virtual environment. Using system-wide Python interpreter
+     -.--ns INFO     gpi                                ../gpi/GpiCommon.cpp:101  in gpi_print_registered_impl       VPI registered
+     0.00ns INFO     cocotb                             Running on Icarus Verilog version 13.0 (devel)
+     0.00ns INFO     cocotb                             Running tests with cocotb v1.9.2 from /usr/local/lib/python3.9/dist-packages/cocotb
+     0.00ns INFO     cocotb                             Seeding Python random module with 1773327330
+     0.00ns INFO     cocotb.regression                  Found test test_Min_Hamming_Distance_Finder.test_Min_Hamming_Distance_Finder
+     0.00ns INFO     cocotb.regression                  running test_Min_Hamming_Distance_Finder (1/1)
+                                                          Test edge-case scenarios for the Min_Hamming_Distance_Finder module.
+     0.00ns INFO     cocotb.Min_Hamming_Distance_Finder Testing Min_Hamming_Distance_Finder with BIT_WIDTH=3 and REFERENCE_COUNT=4
+    10.00ns INFO     cocotb.Min_Hamming_Distance_Finder Edge Case 1 passed: Query=000, Refs=000000000000 -> Expected index=0, dist=0; Got index=0, dist=0.
+    20.00ns INFO     cocotb.Min_Hamming_Distance_Finder Edge Case 2 passed: Query=011, Refs=110011010100 -> Expected index=2, dist=0; Got index=2, dist=0.
+    70.00ns INFO     cocotb.Min_Hamming_Distance_Finder Starting Randomized Testing for Min_Hamming_Distance_Finder with BIT_WIDTH=3 and REFERENCE_COUNT=4
+    80.00ns INFO     cocotb.Min_Hamming_Distance_Finder Random Test 1 passed: Query=101, Refs=101110010010, Expected index=3, dist=0; Got index=3, dist=0.
+    90.00ns INFO     cocotb.Min_Hamming_Distance_Finder Random Test 2 passed: Query=000, Refs=101010001101, Expected index=1, dist=1; Got index=1, dist=1.
+   100.00ns INFO     cocotb.Min_Hamming_Distance_Finder Random Test 3 passed: Query=110, Refs=011010111011, Expected index=1, dist=1; Got index=1, dist=1.
+   110.00ns INFO     cocotb.Min_Hamming_Distance_Finder Random Test 4 passed: Query=111, Refs=010010011101, Expected index=0, dist=1; Got index=0, dist=1.
+   120.00ns INFO     cocotb.Min_Hamming_Distance_Finder Random Test 5 passed: Query=010, Refs=110101001101, Expected index=3, dist=1; Got index=3, dist=1.
+   130.00ns INFO     cocotb.Min_Hamming_Distance_Finder Random Test 6 passed: Query=111, Refs=110100111111, Expected index=0, dist=0; Got index=0, dist=0.
+   140.00ns INFO     cocotb.Min_Hamming_Distance_Finder Random Test 7 passed: Query=101, Refs=110110000101, Expected index=0, dist=0; Got index=0, dist=0.
+   150.00ns INFO     cocotb.Min_Hamming_Distance_Finder Random Test 8 passed: Query=101, Refs=101111001100, Expected index=3, dist=0; Got index=3, dist=0.
+   160.00ns INFO     cocotb.Min_Hamming_Distance_Finder Random Test 9 passed: Query=001, Refs=111000101010, Expected index=1, dist=1; Got index=1, dist=1.
+   170.00ns INFO     cocotb.Min_Hamming_Distance_Finder Random Test 10 passed: Query=111, Refs=101001111101, Expected index=1, dist=0; Got index=1, dist=0.
+   180.00ns INFO     cocotb.Min_Hamming_Distance_Finder Random Test 11 passed: Query=111, Refs=111000100100, Expected index=3, dist=0; Got index=3, dist=0.
+   190.00ns INFO     cocotb.Min_Hamming_Distance_Finder Random Test 12 passed: Query=011, Refs=100110111111, Expected index=0, dist=1; Got index=0, dist=1.
+   200.00ns INFO     cocotb.Min_Hamming_Distance_Finder Random Test 13 passed: Query=011, Refs=010100110111, Expected index=0, dist=1; Got index=0, dist=1.
+   210.00ns INFO     cocotb.Min_Hamming_Distance_Finder Random Test 14 passed: Query=011, Refs=110011000010, Expected index=2, dist=0; Got index=2, dist=0.
+   220.00ns INFO     cocotb.Min_Hamming_Distance_Finder Random Test 15 passed: Query=010, Refs=110010001011, Expected index=2, dist=0; Got index=2, dist=0.
+   230.00ns INFO     cocotb.Min_Hamming_Distance_Finder Random Test 16 passed: Query=001, Refs=011001011101, Expected index=2, dist=0; Got index=2, dist=0.
+   240.00ns INFO     cocotb.Min_Hamming_Distance_Finder Random Test 17 passed: Query=101, Refs=011001101011, Expected index=1, dist=0; Got index=1, dist=0.
+   250.00ns INFO     cocotb.Min_Hamming_Distance_Finder Random Test 18 passed: Query=000, Refs=000011000110, Expected index=1, dist=0; Got index=1, dist=0.
+   260.00ns INFO     cocotb.Min_Hamming_Distance_Finder Random Test 19 passed: Query=011, Refs=100110101000, Expected index=0, dist=2; Got index=0, dist=2.
+   270.00ns INFO     cocotb.Min_Hamming_Distance_Finder Random Test 20 passed: Query=001, Refs=110111010001, Expected index=0, dist=0; Got index=0, dist=0.
+   271.00ns INFO     cocotb.regression                  test_Min_Hamming_Distance_Finder passed
+   271.00ns INFO     cocotb.regression                  ***************************************************************************************************************************
+                                                        ** TEST                                                               STATUS  SIM TIME (ns)  REAL TIME (s)  RATIO (ns/s) **
+                                                        ***************************************************************************************************************************
+                                                        ** test_Min_Hamming_Distance_Finder.test_Min_Hamming_Distance_Finder   PASS         271.00           0.00      54704.80  **
+                                                        ***************************************************************************************************************************
+                                                        ** TESTS=1 PASS=1 FAIL=0 SKIP=0                                                     271.00           0.04       7011.72  **
+                                                        ***************************************************************************************************************************
+                                                        
+FST info: dumpfile /code/sim_build/Min_Hamming_Distance_Finder.fst opened for output.
+[DEBUG] Parameters: {'BIT_WIDTH': 3, 'REFERENCE_COUNT': 4}
+Removing: /code/sim_build
+INFO: Running command iverilog -o /code/sim_build/sim.vvp -D COCOTB_SIM=1 -s Min_Hamming_Distance_Finder -g2012 -PMin_Hamming_Distance_Finder.BIT_WIDTH=3 -PMin_Hamming_Distance_Finder.REFERENCE_COUNT=4 -s cocotb_iverilog_dump -f /code/sim_build/cmds.f /code/rtl/Bitwise_Reduction.sv /code/rtl/Data_Reduction.sv /code/rtl/Bit_Difference_Counter.sv /code/rtl/Min_Hamming_Distance_Finder.sv /code/sim_build/cocotb_iverilog_dump.v in directory /code/sim_build
+INFO: Running command vvp -M /usr/local/lib/python3.9/dist-packages/cocotb/libs -m libcocotbvpi_icarus /code/sim_build/sim.vvp -fst in directory /code/sim_build
+INFO: Results file: /code/sim_build/test_min_distance[4-3-0].None
+PASSED
+../src/test_runner.py::test_min_distance[4-20-0]      -.--ns INFO     gpi                                ..mbed/gpi_embed.cpp:79   in set_program_name_in_venv        Did not detect Python virtual environment. Using system-wide Python interpreter
+     -.--ns INFO     gpi                                ../gpi/GpiCommon.cpp:101  in gpi_print_registered_impl       VPI registered
+     0.00ns INFO     cocotb                             Running on Icarus Verilog version 13.0 (devel)
+     0.00ns INFO     cocotb                             Running tests with cocotb v1.9.2 from /usr/local/lib/python3.9/dist-packages/cocotb
+     0.00ns INFO     cocotb                             Seeding Python random module with 1773327330
+     0.00ns INFO     cocotb.regression                  Found test test_Min_Hamming_Distance_Finder.test_Min_Hamming_Distance_Finder
+     0.00ns INFO     cocotb.regression                  running test_Min_Hamming_Distance_Finder (1/1)
+                                                          Test edge-case scenarios for the Min_Hamming_Distance_Finder module.
+     0.00ns INFO     cocotb.Min_Hamming_Distance_Finder Testing Min_Hamming_Distance_Finder with BIT_WIDTH=20 and REFERENCE_COUNT=4
+    10.00ns INFO     cocotb.Min_Hamming_Distance_Finder Edge Case 1 passed: Query=00010000100101110100, Refs=00010000100101110100000100001001011101000001000010010111010000010000100101110100 -> Expected index=0, dist=0; Got index=0, dist=0.
+    20.00ns INFO     cocotb.Min_Hamming_Distance_Finder Edge Case 2 passed: Query=01100000000001101111, Refs=11001010001111110110011000000000011011110101000111111111010010011111111110010000 -> Expected index=2, dist=0; Got index=2, dist=0.
+    70.00ns INFO     cocotb.Min_Hamming_Distance_Finder Starting Randomized Testing for Min_Hamming_Distance_Finder with BIT_WIDTH=20 and REFERENCE_COUNT=4
+    80.00ns INFO     cocotb.Min_Hamming_Distance_Finder Random Test 1 passed: Query=10100001101000010110, Refs=11010100010000001111100101000101000011011001011110111001001000100010010011001100, Expected index=1, dist=7; Got index=1, dist=7.
+    90.00ns INFO     cocotb.Min_Hamming_Distance_Finder Random Test 2 passed: Query=00010110111011011111, Refs=01100101100011111111111100011011100111110001011010101000110100010011010110001011, Expected index=1, dist=4; Got index=1, dist=4.
+   100.00ns INFO     cocotb.Min_Hamming_Distance_Finder Random Test 3 passed: Query=11010111011111101111, Refs=01110001010001011101001001011111101000001000111110111010010111111011001000011100, Expected index=1, dist=8; Got index=1, dist=8.
+   110.00ns INFO     cocotb.Min_Hamming_Distance_Finder Random Test 4 passed: Query=10010011101000001111, Refs=00100000000110101101000011100100111101001101000110011010011000110111111110110110, Expected index=1, dist=8; Got index=1, dist=8.
+   120.00ns INFO     cocotb.Min_Hamming_Distance_Finder Random Test 5 passed: Query=11101110111001001101, Refs=11011000010111000101111100011111111010100000011111010011111110011001110011001000, Expected index=3, dist=9; Got index=3, dist=9.
+   130.00ns INFO     cocotb.Min_Hamming_Distance_Finder Random Test 6 passed: Query=10101000001011101101, Refs=00011111001010111111100110001111101111011111001010111100110000111101001010111000, Expected index=2, dist=7; Got index=2, dist=7.
+   140.00ns INFO     cocotb.Min_Hamming_Distance_Finder Random Test 7 passed: Query=11101001001100011001, Refs=11100010010010000111000000111101011001101000010110100111110101100001011010000110, Expected index=1, dist=9; Got index=1, dist=9.
+   150.00ns INFO     cocotb.Min_Hamming_Distance_Finder Random Test 8 passed: Query=01101100111111101101, Refs=10000110000100011001011001010001111111010110001110011011111110011100110101000110, Expected index=2, dist=6; Got index=2, dist=6.
+   160.00ns INFO     cocotb.Min_Hamming_Distance_Finder Random Test 9 passed: Query=01101111000000101001, Refs=11111000010000111001101001001001100101111000110001010011011101101110110111000101, Expected index=3, dist=7; Got index=3, dist=7.
+   170.00ns INFO     cocotb.Min_Hamming_Distance_Finder Random Test 10 passed: Query=01110001110010011101, Refs=11001000101100000010111110100000101111010100010111001100001011101001001010101111, Expected index=2, dist=7; Got index=2, dist=7.
+   180.00ns INFO     cocotb.Min_Hamming_Distance_Finder Random Test 11 passed: Query=00100010000100011000, Refs=01100110101110110101101010111101011000000001001001100101110110101011111010110001, Expected index=1, dist=8; Got index=1, dist=8.
+   190.00ns INFO     cocotb.Min_Hamming_Distance_Finder Random Test 12 passed: Query=00000011011000000110, Refs=00110011100001111000101100101101010010000110011100001100011011001010110001001101, Expected index=1, dist=7; Got index=1, dist=7.
+   200.00ns INFO     cocotb.Min_Hamming_Distance_Finder Random Test 13 passed: Query=00111110011011000100, Refs=01100111101101111011111101011101110101100101100011011101000101110000110010110110, Expected index=0, dist=10; Got index=0, dist=10.
+   210.00ns INFO     cocotb.Min_Hamming_Distance_Finder Random Test 14 passed: Query=11011001001001110111, Refs=10111011011110010001110110110100011000101111111111111010110100010010001011110001, Expected index=2, dist=6; Got index=2, dist=6.
+   220.00ns INFO     cocotb.Min_Hamming_Distance_Finder Random Test 15 passed: Query=01010101010000110101, Refs=11110001110001111001100100001011110101110001011010001110111000010011001100000011, Expected index=3, dist=7; Got index=3, dist=7.
+   230.00ns INFO     cocotb.Min_Hamming_Distance_Finder Random Test 16 passed: Query=10001110100011011001, Refs=00010101001000101101011000100111110111111000100010001001011000011000011111111010, Expected index=1, dist=7; Got index=1, dist=7.
+   240.00ns INFO     cocotb.Min_Hamming_Distance_Finder Random Test 17 passed: Query=01111010100010110000, Refs=00111101011011100001110010100000110001000101000101110001000100101110110111010100, Expected index=0, dist=8; Got index=0, dist=8.
+   250.00ns INFO     cocotb.Min_Hamming_Distance_Finder Random Test 18 passed: Query=01101101110011001001, Refs=10011100010111000111000101110101101100001001111001011001010010010100110100101111, Expected index=3, dist=10; Got index=3, dist=10.
+   260.00ns INFO     cocotb.Min_Hamming_Distance_Finder Random Test 19 passed: Query=11111001101100011010, Refs=11011001100100111110000001110010110101110001011111101101010001101111111010111101, Expected index=3, dist=4; Got index=3, dist=4.
+   270.00ns INFO     cocotb.Min_Hamming_Distance_Finder Random Test 20 passed: Query=01100101111001110011, Refs=11001111101100111111001110010010101111011110000001101100001110010000100100110110, Expected index=1, dist=7; Got index=1, dist=7.
+   271.00ns INFO     cocotb.regression                  test_Min_Hamming_Distance_Finder passed
+   271.00ns INFO     cocotb.regression                  ***************************************************************************************************************************
+                                                        ** TEST                                                               STATUS  SIM TIME (ns)  REAL TIME (s)  RATIO (ns/s) **
+                                                        ***************************************************************************************************************************
+                                                        ** test_Min_Hamming_Distance_Finder.test_Min_Hamming_Distance_Finder   PASS         271.00           0.03      10295.80  **
+                                                        ***************************************************************************************************************************
+                                                        ** TESTS=1 PASS=1 FAIL=0 SKIP=0                                                     271.00           0.07       3687.90  **
+                                                        ***************************************************************************************************************************
+                                                        
+FST info: dumpfile /code/sim_build/Min_Hamming_Distance_Finder.fst opened for output.
+[DEBUG] Parameters: {'BIT_WIDTH': 20, 'REFERENCE_COUNT': 4}
+Removing: /code/sim_build
+INFO: Running command iverilog -o /code/sim_build/sim.vvp -D COCOTB_SIM=1 -s Min_Hamming_Distance_Finder -g2012 -PMin_Hamming_Distance_Finder.BIT_WIDTH=20 -PMin_Hamming_Distance_Finder.REFERENCE_COUNT=4 -s cocotb_iverilog_dump -f /code/sim_build/cmds.f /code/rtl/Bitwise_Reduction.sv /code/rtl/Data_Reduction.sv /code/rtl/Bit_Difference_Counter.sv /code/rtl/Min_Hamming_Distance_Finder.sv /code/sim_build/cocotb_iverilog_dump.v in directory /code/sim_build
+INFO: Running command vvp -M /usr/local/lib/python3.9/dist-packages/cocotb/libs -m libcocotbvpi_icarus /code/sim_build/sim.vvp -fst in directory /code/sim_build
+INFO: Results file: /code/sim_build/test_min_distance[4-20-0].None
+PASSED
+../src/test_runner.py::test_min_distance[8-4-0]      -.--ns INFO     gpi                                ..mbed/gpi_embed.cpp:79   in set_program_name_in_venv        Did not detect Python virtual environment. Using system-wide Python interpreter
+     -.--ns INFO     gpi                                ../gpi/GpiCommon.cpp:101  in gpi_print_registered_impl       VPI registered
+     0.00ns INFO     cocotb                             Running on Icarus Verilog version 13.0 (devel)
+     0.00ns INFO     cocotb                             Running tests with cocotb v1.9.2 from /usr/local/lib/python3.9/dist-packages/cocotb
+     0.00ns INFO     cocotb                             Seeding Python random module with 1773327331
+     0.00ns INFO     cocotb.regression                  Found test test_Min_Hamming_Distance_Finder.test_Min_Hamming_Distance_Finder
+     0.00ns INFO     cocotb.regression                  running test_Min_Hamming_Distance_Finder (1/1)
+                                                          Test edge-case scenarios for the Min_Hamming_Distance_Finder module.
+     0.00ns INFO     cocotb.Min_Hamming_Distance_Finder Testing Min_Hamming_Distance_Finder with BIT_WIDTH=4 and REFERENCE_COUNT=8
+    10.00ns INFO     cocotb.Min_Hamming_Distance_Finder Edge Case 1 passed: Query=1101, Refs=11011101110111011101110111011101 -> Expected index=0, dist=0; Got index=0, dist=0.
+    20.00ns INFO     cocotb.Min_Hamming_Distance_Finder Edge Case 2 passed: Query=1011, Refs=00000000000000001111101111110100 -> Expected index=2, dist=0; Got index=2, dist=0.
+    70.00ns INFO     cocotb.Min_Hamming_Distance_Finder Starting Randomized Testing for Min_Hamming_Distance_Finder with BIT_WIDTH=4 and REFERENCE_COUNT=8
+    80.00ns INFO     cocotb.Min_Hamming_Distance_Finder Random Test 1 passed: Query=0111, Refs=10001101100001011011111100010011, Expected index=0, dist=1; Got index=0, dist=1.
+    90.00ns INFO     cocotb.Min_Hamming_Distance_Finder Random Test 2 passed: Query=1011, Refs=10010000011011001001100101000101, Expected index=2, dist=1; Got index=2, dist=1.
+   100.00ns INFO     cocotb.Min_Hamming_Distance_Finder Random Test 3 passed: Query=0000, Refs=11101100010101000110100100110011, Expected index=4, dist=1; Got index=4, dist=1.
+   110.00ns INFO     cocotb.Min_Hamming_Distance_Finder Random Test 4 passed: Query=0000, Refs=01011101010010000001000000101000, Expected index=2, dist=0; Got index=2, dist=0.
+   120.00ns INFO     cocotb.Min_Hamming_Distance_Finder Random Test 5 passed: Query=0101, Refs=11011111011001000011010101110100, Expected index=2, dist=0; Got index=2, dist=0.
+   130.00ns INFO     cocotb.Min_Hamming_Distance_Finder Random Test 6 passed: Query=0000, Refs=11000001011100111100000111100111, Expected index=2, dist=1; Got index=2, dist=1.
+   140.00ns INFO     cocotb.Min_Hamming_Distance_Finder Random Test 7 passed: Query=0101, Refs=00111100111001011110100001110101, Expected index=0, dist=0; Got index=0, dist=0.
+   150.00ns INFO     cocotb.Min_Hamming_Distance_Finder Random Test 8 passed: Query=0111, Refs=10111110010110110110000001010010, Expected index=1, dist=1; Got index=1, dist=1.
+   160.00ns INFO     cocotb.Min_Hamming_Distance_Finder Random Test 9 passed: Query=0101, Refs=01101010100111111101001011110111, Expected index=0, dist=1; Got index=0, dist=1.
+   170.00ns INFO     cocotb.Min_Hamming_Distance_Finder Random Test 10 passed: Query=0010, Refs=01010110001110010111100100111000, Expected index=1, dist=1; Got index=1, dist=1.
+   180.00ns INFO     cocotb.Min_Hamming_Distance_Finder Random Test 11 passed: Query=1000, Refs=00101110100001001001000101000100, Expected index=5, dist=0; Got index=5, dist=0.
+   190.00ns INFO     cocotb.Min_Hamming_Distance_Finder Random Test 12 passed: Query=0000, Refs=10011000001010110001000100100100, Expected index=0, dist=1; Got index=0, dist=1.
+   200.00ns INFO     cocotb.Min_Hamming_Distance_Finder Random Test 13 passed: Query=0010, Refs=10010001011100000110001101111110, Expected index=2, dist=1; Got index=2, dist=1.
+   210.00ns INFO     cocotb.Min_Hamming_Distance_Finder Random Test 14 passed: Query=0100, Refs=01011001110010110001100000111110, Expected index=5, dist=1; Got index=5, dist=1.
+   220.00ns INFO     cocotb.Min_Hamming_Distance_Finder Random Test 15 passed: Query=0110, Refs=10101000101101010000001100101000, Expected index=1, dist=1; Got index=1, dist=1.
+   230.00ns INFO     cocotb.Min_Hamming_Distance_Finder Random Test 16 passed: Query=0010, Refs=00010001000010101000110011000111, Expected index=4, dist=1; Got index=4, dist=1.
+   240.00ns INFO     cocotb.Min_Hamming_Distance_Finder Random Test 17 passed: Query=1101, Refs=10100101001100001010110110110111, Expected index=2, dist=0; Got index=2, dist=0.
+   250.00ns INFO     cocotb.Min_Hamming_Distance_Finder Random Test 18 passed: Query=1101, Refs=01101101100010010000001000101000, Expected index=6, dist=0; Got index=6, dist=0.
+   260.00ns INFO     cocotb.Min_Hamming_Distance_Finder Random Test 19 passed: Query=1110, Refs=11011000000011100001000101010011, Expected index=4, dist=0; Got index=4, dist=0.
+   270.00ns INFO     cocotb.Min_Hamming_Distance_Finder Random Test 20 passed: Query=0011, Refs=10100110001011111101001111001110, Expected index=2, dist=0; Got index=2, dist=0.
+   271.00ns INFO     cocotb.regression                  test_Min_Hamming_Distance_Finder passed
+   271.00ns INFO     cocotb.regression                  ***************************************************************************************************************************
+                                                        ** TEST                                                               STATUS  SIM TIME (ns)  REAL TIME (s)  RATIO (ns/s) **
+                                                        ***************************************************************************************************************************
+                                                        ** test_Min_Hamming_Distance_Finder.test_Min_Hamming_Distance_Finder   PASS         271.00           0.01      23171.06  **
+                                                        ***************************************************************************************************************************
+                                                        ** TESTS=1 PASS=1 FAIL=0 SKIP=0                                                     271.00           0.04       6202.32  **
+                                                        ***************************************************************************************************************************
+                                                        
+FST info: dumpfile /code/sim_build/Min_Hamming_Distance_Finder.fst opened for output.
+[DEBUG] Parameters: {'BIT_WIDTH': 4, 'REFERENCE_COUNT': 8}
+Removing: /code/sim_build
+INFO: Running command iverilog -o /code/sim_build/sim.vvp -D COCOTB_SIM=1 -s Min_Hamming_Distance_Finder -g2012 -PMin_Hamming_Distance_Finder.BIT_WIDTH=4 -PMin_Hamming_Distance_Finder.REFERENCE_COUNT=8 -s cocotb_iverilog_dump -f /code/sim_build/cmds.f /code/rtl/Bitwise_Reduction.sv /code/rtl/Data_Reduction.sv /code/rtl/Bit_Difference_Counter.sv /code/rtl/Min_Hamming_Distance_Finder.sv /code/sim_build/cocotb_iverilog_dump.v in directory /code/sim_build
+INFO: Running command vvp -M /usr/local/lib/python3.9/dist-packages/cocotb/libs -m libcocotbvpi_icarus /code/sim_build/sim.vvp -fst in directory /code/sim_build
+INFO: Results file: /code/sim_build/test_min_distance[8-4-0].None
+PASSED
+../src/test_runner.py::test_min_distance[8-10-0]      -.--ns INFO     gpi                                ..mbed/gpi_embed.cpp:79   in set_program_name_in_venv        Did not detect Python virtual environment. Using system-wide Python interpreter
+     -.--ns INFO     gpi                                ../gpi/GpiCommon.cpp:101  in gpi_print_registered_impl       VPI registered
+     0.00ns INFO     cocotb                             Running on Icarus Verilog version 13.0 (devel)
+     0.00ns INFO     cocotb                             Running tests with cocotb v1.9.2 from /usr/local/lib/python3.9/dist-packages/cocotb
+     0.00ns INFO     cocotb                             Seeding Python random module with 1773327331
+     0.00ns INFO     cocotb.regression                  Found test test_Min_Hamming_Distance_Finder.test_Min_Hamming_Distance_Finder
+     0.00ns INFO     cocotb.regression                  running test_Min_Hamming_Distance_Finder (1/1)
+                                                          Test edge-case scenarios for the Min_Hamming_Distance_Finder module.
+     0.00ns INFO     cocotb.Min_Hamming_Distance_Finder Testing Min_Hamming_Distance_Finder with BIT_WIDTH=10 and REFERENCE_COUNT=8
+    10.00ns INFO     cocotb.Min_Hamming_Distance_Finder Edge Case 1 passed: Query=1101011110, Refs=11010111101101011110110101111011010111101101011110110101111011010111101101011110 -> Expected index=0, dist=0; Got index=0, dist=0.
+    20.00ns INFO     cocotb.Min_Hamming_Distance_Finder Edge Case 2 passed: Query=1011010100, Refs=00000000000000000000000000000000000000001111010100101101010011110001000100101011 -> Expected index=2, dist=0; Got index=2, dist=0.
+    70.00ns INFO     cocotb.Min_Hamming_Distance_Finder Starting Randomized Testing for Min_Hamming_Distance_Finder with BIT_WIDTH=10 and REFERENCE_COUNT=8
+    80.00ns INFO     cocotb.Min_Hamming_Distance_Finder Random Test 1 passed: Query=0111000100, Refs=10010000011011000101111010100110011110101101011010001101100001011011111100010011, Expected index=6, dist=3; Got index=6, dist=3.
+    90.00ns INFO     cocotb.Min_Hamming_Distance_Finder Random Test 2 passed: Query=0000010110, Refs=01011101010010000000000111101001100000110011100111101100010101000110100100110011, Expected index=1, dist=3; Got index=1, dist=3.
+   100.00ns INFO     cocotb.Min_Hamming_Distance_Finder Random Test 3 passed: Query=0101101101, Refs=11101010010011001101011100110100100010001100110011011111011001000011010101110100, Expected index=1, dist=2; Got index=1, dist=2.
+   110.00ns INFO     cocotb.Min_Hamming_Distance_Finder Random Test 4 passed: Query=0000111000, Refs=10110001001001101001101100110000100011111101110111000001011100111100000111100111, Expected index=1, dist=3; Got index=1, dist=3.
+   120.00ns INFO     cocotb.Min_Hamming_Distance_Finder Random Test 5 passed: Query=0101001011, Refs=10111110010110110011101110011101100000010111100100111100111001011110100001110101, Expected index=1, dist=3; Got index=1, dist=3.
+   130.00ns INFO     cocotb.Min_Hamming_Distance_Finder Random Test 6 passed: Query=0101111000, Refs=00010000100010111010010000001001111100111110111101101010100111111101001011110111, Expected index=1, dist=4; Got index=1, dist=4.
+   140.00ns INFO     cocotb.Min_Hamming_Distance_Finder Random Test 7 passed: Query=1010110001, Refs=00000011101101110010111010000100100100010100010001000001011111110000101100001001, Expected index=4, dist=2; Got index=4, dist=2.
+   150.00ns INFO     cocotb.Min_Hamming_Distance_Finder Random Test 8 passed: Query=0010110110, Refs=00100110011010101110001101001001000100001100011010010001011100000110001101111110, Expected index=5, dist=3; Got index=5, dist=3.
+   160.00ns INFO     cocotb.Min_Hamming_Distance_Finder Random Test 9 passed: Query=1011001110, Refs=00110010000101011100111000100100111001111110100010011110001110111101111111110000, Expected index=7, dist=3; Got index=7, dist=3.
+   170.00ns INFO     cocotb.Min_Hamming_Distance_Finder Random Test 10 passed: Query=0010000010, Refs=10100101001100000110101101011110111011111001111000010001000010101000110011000111, Expected index=0, dist=3; Got index=0, dist=3.
+   180.00ns INFO     cocotb.Min_Hamming_Distance_Finder Random Test 11 passed: Query=1101101101, Refs=01110011000100001001010000011101111000101001011001101101100010010000001000101000, Expected index=0, dist=4; Got index=0, dist=4.
+   190.00ns INFO     cocotb.Min_Hamming_Distance_Finder Random Test 12 passed: Query=0011001011, Refs=11000111000101011011000100000111000101001010011010100110001011111101001111001110, Expected index=5, dist=3; Got index=5, dist=3.
+   200.00ns INFO     cocotb.Min_Hamming_Distance_Finder Random Test 13 passed: Query=1011110110, Refs=10111110011100101001011100101100100111101010110100100110110111011010011110110010, Expected index=3, dist=2; Got index=3, dist=2.
+   210.00ns INFO     cocotb.Min_Hamming_Distance_Finder Random Test 14 passed: Query=1011110101, Refs=00001011101011011011111010111100001010000001011001101100101011001010010011100110, Expected index=0, dist=4; Got index=0, dist=4.
+   220.00ns INFO     cocotb.Min_Hamming_Distance_Finder Random Test 15 passed: Query=0110100011, Refs=11001100000011100000111100011100110101110001110100001100101010111011000000010000, Expected index=5, dist=4; Got index=5, dist=4.
+   230.00ns INFO     cocotb.Min_Hamming_Distance_Finder Random Test 16 passed: Query=0101000100, Refs=00111110111010011001110100110000001000000100111110111100000001100110111000000011, Expected index=5, dist=2; Got index=5, dist=2.
+   240.00ns INFO     cocotb.Min_Hamming_Distance_Finder Random Test 17 passed: Query=1101100101, Refs=00001101101101010011101010010100010101101011101110111100000001100110100111000111, Expected index=5, dist=3; Got index=5, dist=3.
+   250.00ns INFO     cocotb.Min_Hamming_Distance_Finder Random Test 18 passed: Query=0001010110, Refs=01000100000000100011111101100110001100001001111100000110110111001110110101011101, Expected index=0, dist=4; Got index=0, dist=4.
+   260.00ns INFO     cocotb.Min_Hamming_Distance_Finder Random Test 19 passed: Query=0110101000, Refs=10011100010100110101101011111011001101001100000101101011111000011000100111000110, Expected index=0, dist=5; Got index=0, dist=5.
+   270.00ns INFO     cocotb.Min_Hamming_Distance_Finder Random Test 20 passed: Query=0011000100, Refs=01001000101001110110101010100011110101000011110010110001101111010011000111000101, Expected index=0, dist=2; Got index=0, dist=2.
+   271.00ns INFO     cocotb.regression                  test_Min_Hamming_Distance_Finder passed
+   271.00ns INFO     cocotb.regression                  ***************************************************************************************************************************
+                                                        ** TEST                                                               STATUS  SIM TIME (ns)  REAL TIME (s)  RATIO (ns/s) **
+                                                        ***************************************************************************************************************************
+                                                        ** test_Min_Hamming_Distance_Finder.test_Min_Hamming_Distance_Finder   PASS         271.00           0.01      20431.70  **
+                                                        ***************************************************************************************************************************
+                                                        ** TESTS=1 PASS=1 FAIL=0 SKIP=0                                                     271.00           0.04       6558.29  **
+                                                        ***************************************************************************************************************************
+                                                        
+FST info: dumpfile /code/sim_build/Min_Hamming_Distance_Finder.fst opened for output.
+[DEBUG] Parameters: {'BIT_WIDTH': 10, 'REFERENCE_COUNT': 8}
+Removing: /code/sim_build
+INFO: Running command iverilog -o /code/sim_build/sim.vvp -D COCOTB_SIM=1 -s Min_Hamming_Distance_Finder -g2012 -PMin_Hamming_Distance_Finder.BIT_WIDTH=10 -PMin_Hamming_Distance_Finder.REFERENCE_COUNT=8 -s cocotb_iverilog_dump -f /code/sim_build/cmds.f /code/rtl/Bitwise_Reduction.sv /code/rtl/Data_Reduction.sv /code/rtl/Bit_Difference_Counter.sv /code/rtl/Min_Hamming_Distance_Finder.sv /code/sim_build/cocotb_iverilog_dump.v in directory /code/sim_build
+INFO: Running command vvp -M /usr/local/lib/python3.9/dist-packages/cocotb/libs -m libcocotbvpi_icarus /code/sim_build/sim.vvp -fst in directory /code/sim_build
+INFO: Results file: /code/sim_build/test_min_distance[8-10-0].None
+PASSED
+../src/test_runner.py::test_min_distance[8-3-0]      -.--ns INFO     gpi                                ..mbed/gpi_embed.cpp:79   in set_program_name_in_venv        Did not detect Python virtual environment. Using system-wide Python interpreter
+     -.--ns INFO     gpi                                ../gpi/GpiCommon.cpp:101  in gpi_print_registered_impl       VPI registered
+     0.00ns INFO     cocotb                             Running on Icarus Verilog version 13.0 (devel)
+     0.00ns INFO     cocotb                             Running tests with cocotb v1.9.2 from /usr/local/lib/python3.9/dist-packages/cocotb
+     0.00ns INFO     cocotb                             Seeding Python random module with 1773327331
+     0.00ns INFO     cocotb.regression                  Found test test_Min_Hamming_Distance_Finder.test_Min_Hamming_Distance_Finder
+     0.00ns INFO     cocotb.regression                  running test_Min_Hamming_Distance_Finder (1/1)
+                                                          Test edge-case scenarios for the Min_Hamming_Distance_Finder module.
+     0.00ns INFO     cocotb.Min_Hamming_Distance_Finder Testing Min_Hamming_Distance_Finder with BIT_WIDTH=3 and REFERENCE_COUNT=8
+    10.00ns INFO     cocotb.Min_Hamming_Distance_Finder Edge Case 1 passed: Query=110, Refs=110110110110110110110110 -> Expected index=0, dist=0; Got index=0, dist=0.
+    20.00ns INFO     cocotb.Min_Hamming_Distance_Finder Edge Case 2 passed: Query=101, Refs=000000000000111101111010 -> Expected index=2, dist=0; Got index=2, dist=0.
+    70.00ns INFO     cocotb.Min_Hamming_Distance_Finder Starting Randomized Testing for Min_Hamming_Distance_Finder with BIT_WIDTH=3 and REFERENCE_COUNT=8
+    80.00ns INFO     cocotb.Min_Hamming_Distance_Finder Random Test 1 passed: Query=011, Refs=100011011000010110111111, Expected index=5, dist=0; Got index=5, dist=0.
+    90.00ns INFO     cocotb.Min_Hamming_Distance_Finder Random Test 2 passed: Query=101, Refs=100100000110110010011001, Expected index=0, dist=1; Got index=0, dist=1.
+   100.00ns INFO     cocotb.Min_Hamming_Distance_Finder Random Test 3 passed: Query=000, Refs=111011000101010001101001, Expected index=5, dist=0; Got index=5, dist=0.
+   110.00ns INFO     cocotb.Min_Hamming_Distance_Finder Random Test 4 passed: Query=000, Refs=010111010100100000010000, Expected index=0, dist=0; Got index=0, dist=0.
+   120.00ns INFO     cocotb.Min_Hamming_Distance_Finder Random Test 5 passed: Query=010, Refs=110111110110010000110101, Expected index=3, dist=0; Got index=3, dist=0.
+   130.00ns INFO     cocotb.Min_Hamming_Distance_Finder Random Test 6 passed: Query=000, Refs=110000010111001111000001, Expected index=1, dist=0; Got index=1, dist=0.
+   140.00ns INFO     cocotb.Min_Hamming_Distance_Finder Random Test 7 passed: Query=010, Refs=001111001110010111101000, Expected index=3, dist=0; Got index=3, dist=0.
+   150.00ns INFO     cocotb.Min_Hamming_Distance_Finder Random Test 8 passed: Query=011, Refs=101111100101101101100000, Expected index=6, dist=1; Got index=6, dist=1.
+   160.00ns INFO     cocotb.Min_Hamming_Distance_Finder Random Test 9 passed: Query=010, Refs=011010101001111111010010, Expected index=0, dist=0; Got index=0, dist=0.
+   170.00ns INFO     cocotb.Min_Hamming_Distance_Finder Random Test 10 passed: Query=001, Refs=010101100011100101111001, Expected index=0, dist=0; Got index=0, dist=0.
+   180.00ns INFO     cocotb.Min_Hamming_Distance_Finder Random Test 11 passed: Query=100, Refs=001011101000010010010001, Expected index=4, dist=1; Got index=4, dist=1.
+   190.00ns INFO     cocotb.Min_Hamming_Distance_Finder Random Test 12 passed: Query=000, Refs=100110000010101100010001, Expected index=5, dist=0; Got index=5, dist=0.
+   200.00ns INFO     cocotb.Min_Hamming_Distance_Finder Random Test 13 passed: Query=001, Refs=100100010111000001100011, Expected index=2, dist=0; Got index=2, dist=0.
+   210.00ns INFO     cocotb.Min_Hamming_Distance_Finder Random Test 14 passed: Query=010, Refs=010110011100101100011000, Expected index=7, dist=0; Got index=7, dist=0.
+   220.00ns INFO     cocotb.Min_Hamming_Distance_Finder Random Test 15 passed: Query=011, Refs=101010001011010100000011, Expected index=0, dist=0; Got index=0, dist=0.
+   230.00ns INFO     cocotb.Min_Hamming_Distance_Finder Random Test 16 passed: Query=001, Refs=000100010000101010001100, Expected index=1, dist=0; Got index=1, dist=0.
+   240.00ns INFO     cocotb.Min_Hamming_Distance_Finder Random Test 17 passed: Query=110, Refs=101001010011000010101101, Expected index=2, dist=1; Got index=2, dist=1.
+   250.00ns INFO     cocotb.Min_Hamming_Distance_Finder Random Test 18 passed: Query=110, Refs=011011011000100100000010, Expected index=0, dist=1; Got index=0, dist=1.
+   260.00ns INFO     cocotb.Min_Hamming_Distance_Finder Random Test 19 passed: Query=111, Refs=110110000000111000010001, Expected index=3, dist=0; Got index=3, dist=0.
+   270.00ns INFO     cocotb.Min_Hamming_Distance_Finder Random Test 20 passed: Query=001, Refs=101001100010111111010011, Expected index=6, dist=0; Got index=6, dist=0.
+   271.00ns INFO     cocotb.regression                  test_Min_Hamming_Distance_Finder passed
+   271.00ns INFO     cocotb.regression                  ***************************************************************************************************************************
+                                                        ** TEST                                                               STATUS  SIM TIME (ns)  REAL TIME (s)  RATIO (ns/s) **
+                                                        ***************************************************************************************************************************
+                                                        ** test_Min_Hamming_Distance_Finder.test_Min_Hamming_Distance_Finder   PASS         271.00           0.01      37227.14  **
+                                                        ***************************************************************************************************************************
+                                                        ** TESTS=1 PASS=1 FAIL=0 SKIP=0                                                     271.00           0.04       7607.07  **
+                                                        ***************************************************************************************************************************
+                                                        
+FST info: dumpfile /code/sim_build/Min_Hamming_Distance_Finder.fst opened for output.
+[DEBUG] Parameters: {'BIT_WIDTH': 3, 'REFERENCE_COUNT': 8}
+Removing: /code/sim_build
+INFO: Running command iverilog -o /code/sim_build/sim.vvp -D COCOTB_SIM=1 -s Min_Hamming_Distance_Finder -g2012 -PMin_Hamming_Distance_Finder.BIT_WIDTH=3 -PMin_Hamming_Distance_Finder.REFERENCE_COUNT=8 -s cocotb_iverilog_dump -f /code/sim_build/cmds.f /code/rtl/Bitwise_Reduction.sv /code/rtl/Data_Reduction.sv /code/rtl/Bit_Difference_Counter.sv /code/rtl/Min_Hamming_Distance_Finder.sv /code/sim_build/cocotb_iverilog_dump.v in directory /code/sim_build
+INFO: Running command vvp -M /usr/local/lib/python3.9/dist-packages/cocotb/libs -m libcocotbvpi_icarus /code/sim_build/sim.vvp -fst in directory /code/sim_build
+INFO: Results file: /code/sim_build/test_min_distance[8-3-0].None
+PASSED
+../src/test_runner.py::test_min_distance[8-20-0]      -.--ns INFO     gpi                                ..mbed/gpi_embed.cpp:79   in set_program_name_in_venv        Did not detect Python virtual environment. Using system-wide Python interpreter
+     -.--ns INFO     gpi                                ../gpi/GpiCommon.cpp:101  in gpi_print_registered_impl       VPI registered
+     0.00ns INFO     cocotb                             Running on Icarus Verilog version 13.0 (devel)
+     0.00ns INFO     cocotb                             Running tests with cocotb v1.9.2 from /usr/local/lib/python3.9/dist-packages/cocotb
+     0.00ns INFO     cocotb                             Seeding Python random module with 1773327331
+     0.00ns INFO     cocotb.regression                  Found test test_Min_Hamming_Distance_Finder.test_Min_Hamming_Distance_Finder
+     0.00ns INFO     cocotb.regression                  running test_Min_Hamming_Distance_Finder (1/1)
+                                                          Test edge-case scenarios for the Min_Hamming_Distance_Finder module.
+     0.00ns INFO     cocotb.Min_Hamming_Distance_Finder Testing Min_Hamming_Distance_Finder with BIT_WIDTH=20 and REFERENCE_COUNT=8
+    10.00ns INFO     cocotb.Min_Hamming_Distance_Finder Edge Case 1 passed: Query=11010111100000111011, Refs=1101011110000011101111010111100000111011110101111000001110111101011110000011101111010111100000111011110101111000001110111101011110000011101111010111100000111011 -> Expected index=0, dist=0; Got index=0, dist=0.
+    20.00ns INFO     cocotb.Min_Hamming_Distance_Finder Edge Case 2 passed: Query=10110101001100110100, Refs=0000000000000000000000000000000000000000000000000000000000000000000000000000000011110101001001111011101101010011001101001111000100001011001101001010110011001011 -> Expected index=2, dist=0; Got index=2, dist=0.
+    70.00ns INFO     cocotb.Min_Hamming_Distance_Finder Starting Randomized Testing for Min_Hamming_Distance_Finder with BIT_WIDTH=20 and REFERENCE_COUNT=8
+    80.00ns INFO     cocotb.Min_Hamming_Distance_Finder Random Test 1 passed: Query=01110001001011101100, Refs=1010011001001001111010011111101010000110010001011111100110110110100100000110110010011001010001010101111010100110011110101101011010001101100001011011111100010011, Expected index=4, dist=4; Got index=4, dist=4.
+    90.00ns INFO     cocotb.Min_Hamming_Distance_Finder Random Test 2 passed: Query=00000101101101110010, Refs=1010111001101100110101011110111110000111010001001001000001111101010111010100100000010000001010000000000111101001100000110011100111101100010101000110100100110011, Expected index=0, dist=6; Got index=0, dist=6.
+   100.00ns INFO     cocotb.Min_Hamming_Distance_Finder Random Test 3 passed: Query=01011011011011101110, Refs=1010010111001111100011100001001010100110110111110101010011111101111010100100110010110100101000111101011100110100100010001100110011011111011001000011010101110100, Expected index=2, dist=7; Got index=2, dist=7.
+   110.00ns INFO     cocotb.Min_Hamming_Distance_Finder Random Test 4 passed: Query=00001110001111111011, Refs=0011110011100101111010000111010100101001011100100010011111100101101100010010011000110010011100111001101100110000100011111101110111000001011100111100000111100111, Expected index=0, dist=7; Got index=0, dist=7.
+   120.00ns INFO     cocotb.Min_Hamming_Distance_Finder Random Test 5 passed: Query=01110111001110110000, Refs=0001000010001011010101101010100010100100000010011111001111101111011010101001111111010010111101110010111100010110110100000111101010111110010110110110000001010010, Expected index=2, dist=7; Got index=2, dist=7.
+   130.00ns INFO     cocotb.Min_Hamming_Distance_Finder Random Test 6 passed: Query=10101100011100101111, Refs=1000100001111000101110111101100110011000001010110001000100100100000000111011011101000001000100010010111010000100100100010100010001000001011111110000101100001001, Expected index=7, dist=5; Got index=7, dist=5.
+   140.00ns INFO     cocotb.Min_Hamming_Distance_Finder Random Test 7 passed: Query=00101101100101100101, Refs=1001111000111011110111111111000001011001110010110001100000111110001001100110101010011000110011001110001101001001000100001100011010010001011100000110001101111110, Expected index=2, dist=8; Got index=2, dist=8.
+   150.00ns INFO     cocotb.Min_Hamming_Distance_Finder Random Test 8 passed: Query=01100100001010110010, Refs=0001000100001010100011001100011100010000010101100010010011100001100000101100010011011010001000011010011111011001011111000100111110101000101101010000001100101000, Expected index=0, dist=8; Got index=0, dist=8.
+   160.00ns INFO     cocotb.Min_Hamming_Distance_Finder Random Test 9 passed: Query=11010110101111011101, Refs=1001010000011101111000101001011001101101100010010000001000101000011011011011111100001101111100111110000010101101110101111010101010100101001100001010110110110111, Expected index=7, dist=6; Got index=7, dist=6.
+   170.00ns INFO     cocotb.Min_Hamming_Distance_Finder Random Test 10 passed: Query=11100110001000010110, Refs=1100011100010101101000101000001010110001000001110001010010100110101001100010111111010011110011100001100101110001010100101001011111011000000011100001000101010011, Expected index=7, dist=7; Got index=7, dist=7.
+   180.00ns INFO     cocotb.Min_Hamming_Distance_Finder Random Test 11 passed: Query=10111101100001101000, Refs=0101111010111111110001110100110010101010000000101110011010001000101111100111001011010011111101001001011100101100100111101010110100100110110111011010011110110010, Expected index=1, dist=5; Got index=1, dist=5.
+   190.00ns INFO     cocotb.Min_Hamming_Distance_Finder Random Test 12 passed: Query=11011001010110010100, Refs=0011010001111101000010010111010111101110111000000010100001010110110111000011011001010001111101100000101110101101100000010111100010111110101111000010100000010110, Expected index=2, dist=8; Got index=2, dist=8.
+   200.00ns INFO     cocotb.Min_Hamming_Distance_Finder Random Test 13 passed: Query=00011001010101110110, Refs=1001110100110000001000000100111110111100000001100110111000000011001010001000011011110101001000101100110000001110111000000001010100001111000111001101011100011101, Expected index=1, dist=8; Got index=1, dist=8.
+   210.00ns INFO     cocotb.Min_Hamming_Distance_Finder Random Test 14 passed: Query=01111101110100100001, Refs=0110110010101100000101111101101010110011100000101110111100110001111001100011100100101110010000011110010101000100000011000001101110111010001001011111110110111100, Expected index=6, dist=6; Got index=6, dist=6.
+   220.00ns INFO     cocotb.Min_Hamming_Distance_Finder Random Test 15 passed: Query=01110101001010001010, Refs=0000101011010111001110010010001011100100101101110001010100011000110011010110011111100010100111011101110100010111001101000100101000001101101101010100100010101110, Expected index=0, dist=6; Got index=0, dist=6.
+   230.00ns INFO     cocotb.Min_Hamming_Distance_Finder Random Test 16 passed: Query=00001101101110011101, Refs=0101101011111011001101001100000101101011111000011000100111000110001101010000110110110100010111100100010000000010110000110100111100111111011001100011000010011111, Expected index=1, dist=8; Got index=1, dist=8.
+   240.00ns INFO     cocotb.Min_Hamming_Distance_Finder Random Test 17 passed: Query=00110001000110000001, Refs=1000100111101001111011011011100011101011001000110101010101100100010010001010011111101011000111000110101010100011110101000011110010110001101111010011000111000101, Expected index=0, dist=6; Got index=0, dist=6.
+   250.00ns INFO     cocotb.Min_Hamming_Distance_Finder Random Test 18 passed: Query=10110111001000000111, Refs=0110001100011000100000011010011010010100101110010110110000110111001000001111100100101100100110100111100100100001110110010100001110010110001111010000001010111100, Expected index=5, dist=7; Got index=5, dist=7.
+   260.00ns INFO     cocotb.Min_Hamming_Distance_Finder Random Test 19 passed: Query=00001010100110010000, Refs=0111000111101011101011110111000100101100010000011111101100000001111000011100110010001110101001110010010110010001101001111000101011100000011111010001100111111101, Expected index=4, dist=7; Got index=4, dist=7.
+   270.00ns INFO     cocotb.Min_Hamming_Distance_Finder Random Test 20 passed: Query=01111001111101100010, Refs=1110011011001011011110010010101111000000111100111000001111000010100000000010111010010000000010001011100000010001111010100100010100011101110001111010000110100010, Expected index=0, dist=7; Got index=0, dist=7.
+   271.00ns INFO     cocotb.regression                  test_Min_Hamming_Distance_Finder passed
+   271.00ns INFO     cocotb.regression                  ***************************************************************************************************************************
+                                                        ** TEST                                                               STATUS  SIM TIME (ns)  REAL TIME (s)  RATIO (ns/s) **
+                                                        ***************************************************************************************************************************
+                                                        ** test_Min_Hamming_Distance_Finder.test_Min_Hamming_Distance_Finder   PASS         271.00           0.02      12177.98  **
+                                                        ***************************************************************************************************************************
+                                                        ** TESTS=1 PASS=1 FAIL=0 SKIP=0                                                     271.00           0.05       5388.38  **
+                                                        ***************************************************************************************************************************
+                                                        
+FST info: dumpfile /code/sim_build/Min_Hamming_Distance_Finder.fst opened for output.
+[DEBUG] Parameters: {'BIT_WIDTH': 20, 'REFERENCE_COUNT': 8}
+Removing: /code/sim_build
+INFO: Running command iverilog -o /code/sim_build/sim.vvp -D COCOTB_SIM=1 -s Min_Hamming_Distance_Finder -g2012 -PMin_Hamming_Distance_Finder.BIT_WIDTH=20 -PMin_Hamming_Distance_Finder.REFERENCE_COUNT=8 -s cocotb_iverilog_dump -f /code/sim_build/cmds.f /code/rtl/Bitwise_Reduction.sv /code/rtl/Data_Reduction.sv /code/rtl/Bit_Difference_Counter.sv /code/rtl/Min_Hamming_Distance_Finder.sv /code/sim_build/cocotb_iverilog_dump.v in directory /code/sim_build
+INFO: Running command vvp -M /usr/local/lib/python3.9/dist-packages/cocotb/libs -m libcocotbvpi_icarus /code/sim_build/sim.vvp -fst in directory /code/sim_build
+INFO: Results file: /code/sim_build/test_min_distance[8-20-0].None
+PASSED
+
+=============================== warnings summary ===============================
+src/test_runner.py:2
+  /code/src/test_runner.py:2: UserWarning: Python runners and associated APIs are an experimental feature and subject to change.
+    from cocotb.runner import get_runner
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+========================= 8 passed, 1 warning in 1.78s =========================

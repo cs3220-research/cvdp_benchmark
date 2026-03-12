@@ -1,0 +1,25 @@
+Running service: test_poly_decimator
+============================= test session starts ==============================
+platform linux -- Python 3.9.2, pytest-8.3.2, pluggy-1.5.0 -- /usr/bin/python3
+cachedir: /code/rundir/.cache
+rootdir: /src/test_poly_decimator
+collecting ... collected 1 item
+
+../../src/test_poly_decimator/test_runner.py::test_poly_decimator[0-16-16-2-2] 
+-------------------------------- live log call ---------------------------------
+INFO     Icarus:runner.py:480 Removing: /code/rundir/sim_build
+INFO     Icarus:runner.py:468 Running command iverilog -o /code/rundir/sim_build/sim.vvp -s poly_decimator -g2012 -Ppoly_decimator.M=2 -Ppoly_decimator.TAPS=2 -Ppoly_decimator.COEFF_WIDTH=16 -Ppoly_decimator.DATA_WIDTH=16 -s cocotb_iverilog_dump -f /code/rundir/sim_build/cmds.f /code/rtl/adder_tree.sv /code/rtl/coeff_ram.sv /code/rtl/shift_register.sv /code/rtl/poly_filter.sv /code/rtl/poly_decimator.sv /code/rundir/sim_build/cocotb_iverilog_dump.v in directory /code/rundir/sim_build
+INFO     Icarus:runner.py:468 Running command vvp -M /usr/local/lib/python3.9/dist-packages/cocotb/libs -m libcocotbvpi_icarus /code/rundir/sim_build/sim.vvp -fst in directory /code/rundir/sim_build
+     -.--ns INFO     gpi                                ..mbed/gpi_embed.cpp:79   in set_program_name_in_venv        Did not detect Python virtual environment. Using system-wide Python interpreter
+     -.--ns INFO     gpi                                ../gpi/GpiCommon.cpp:101  in gpi_print_registered_impl       VPI registered
+     0.00ns INFO     cocotb                             Running on Icarus Verilog version 13.0 (devel)
+     0.00ns INFO     cocotb                             Running tests with cocotb v2.0.0.dev0+8d6c1a63 from /usr/local/lib/python3.9/dist-packages/cocotb
+     0.00ns INFO     cocotb                             Seeding Python random module with 1773330970
+     0.00ns INFO     cocotb.regression                  running test_poly_decimator.test_one_sample_decimation (1/4)
+                                                            Test that after feeding M input samples, one decimated output is generated.
+    50.00ns INFO     cocotb.poly_decimator              Starting test_one_sample_decimation
+    51.00ns INFO     cocotb.poly_decimator              Populating coefficient RAMs (decimator): tap_count = 2, phase_count = 2, total_coeffs = 4
+    51.00ns INFO     cocotb.poly_decimator              Set coefficient for phase 0, tap 0 (addr 0) to 1
+    51.00ns INFO     cocotb.poly_decimator              Set coefficient for phase 0, tap 1 (addr 1) to 2
+    51.00ns INFO     cocotb.poly_decimator              Set coefficient for phase 1, tap 0 (addr 2) to 3
+    51.00ns INFO     cocotb.poly_decimator              Set coefficient for phase 1, tap 1 (addr 3) to 4

@@ -1,0 +1,34 @@
+{
+    "id": "d6a93d66-d5b6-498a-bca1-c982d1d01b82",
+    "started_at": "2026-03-11T19:16:07.053300",
+    "finished_at": null,
+    "n_total_trials": 92,
+    "stats": {
+        "n_trials": 2,
+        "n_errors": 1,
+        "evals": {
+            "terminus-2__openai-gpt-4o-mini__cvdp_v1.0.4_agentic_code_generation_no_commercial": {
+                "n_trials": 1,
+                "n_errors": 1,
+                "metrics": [
+                    {
+                        "mean": 0.0
+                    }
+                ],
+                "reward_stats": {
+                    "reward": {
+                        "0.0": [
+                            "cvdp_agentic_64b66b_codec_0001__JiHJEGV"
+                        ]
+                    }
+                },
+                "exception_stats": {
+                    "CancelledError": [
+                        "cvdp_agentic_aes_encryption_decr__98Lx4zR"
+                    ]
+                }
+            }
+        }
+    },
+    "trial_results": []
+}

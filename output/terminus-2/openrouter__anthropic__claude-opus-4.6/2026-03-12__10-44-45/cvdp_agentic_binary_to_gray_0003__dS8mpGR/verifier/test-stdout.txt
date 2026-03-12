@@ -1,0 +1,253 @@
+Running service: direct
+============================= test session starts ==============================
+platform linux -- Python 3.9.2, pytest-8.3.2, pluggy-1.5.0 -- /usr/bin/python3
+cachedir: /rundir/harness/.cache
+rootdir: /src
+collecting ... collected 3 items
+
+../../src/test_runner.py::test_runner [DEBUG] Running simulation with WIDTH=6
+[DEBUG] Parameters: {'WIDTH': 6}
+
+-------------------------------- live log call ---------------------------------
+INFO     Icarus:runner.py:480 Removing: /code/rundir/sim_build
+INFO     Icarus:runner.py:468 Running command iverilog -o /code/rundir/sim_build/sim.vvp -s binary_to_gray -g2012 -Pbinary_to_gray.WIDTH=6 -s cocotb_iverilog_dump -f /code/rundir/sim_build/cmds.f /code/rtl/binary_to_gray.sv /code/rundir/sim_build/cocotb_iverilog_dump.v in directory /code/rundir/sim_build
+INFO     Icarus:runner.py:468 Running command vvp -M /usr/local/lib/python3.9/dist-packages/cocotb/libs -m libcocotbvpi_icarus /code/rundir/sim_build/sim.vvp -fst in directory /code/rundir/sim_build
+     -.--ns INFO     gpi                                ..mbed/gpi_embed.cpp:79   in set_program_name_in_venv        Did not detect Python virtual environment. Using system-wide Python interpreter
+     -.--ns INFO     gpi                                ../gpi/GpiCommon.cpp:101  in gpi_print_registered_impl       VPI registered
+     0.00ns INFO     cocotb                             Running on Icarus Verilog version 13.0 (devel)
+     0.00ns INFO     cocotb                             Running tests with cocotb v2.0.0.dev0+8d6c1a63 from /usr/local/lib/python3.9/dist-packages/cocotb
+     0.00ns INFO     cocotb                             Seeding Python random module with 1773327901
+     0.00ns INFO     cocotb.regression                  running test_binary_to_gray.test_binary_to_gray (1/1)
+                                                            Test Binary to Gray Code Conversion
+     0.00ns INFO     cocotb.binary_to_gray              Running predefined test cases with WIDTH=6
+    10.00ns INFO     cocotb                             Pushed Binary: 000000, Expected Gray: 000000, DUT Gray: 000000
+    20.00ns INFO     cocotb                             Pushed Binary: 000001, Expected Gray: 000001, DUT Gray: 000001
+    30.00ns INFO     cocotb                             Pushed Binary: 000010, Expected Gray: 000011, DUT Gray: 000011
+    40.00ns INFO     cocotb                             Pushed Binary: 000011, Expected Gray: 000010, DUT Gray: 000010
+    50.00ns INFO     cocotb                             Pushed Binary: 000100, Expected Gray: 000110, DUT Gray: 000110
+    60.00ns INFO     cocotb                             Pushed Binary: 000101, Expected Gray: 000111, DUT Gray: 000111
+    70.00ns INFO     cocotb                             Pushed Binary: 000110, Expected Gray: 000101, DUT Gray: 000101
+    80.00ns INFO     cocotb                             Pushed Binary: 000111, Expected Gray: 000100, DUT Gray: 000100
+    90.00ns INFO     cocotb                             Pushed Binary: 001000, Expected Gray: 001100, DUT Gray: 001100
+   100.00ns INFO     cocotb                             Pushed Binary: 001001, Expected Gray: 001101, DUT Gray: 001101
+   110.00ns INFO     cocotb                             Pushed Binary: 001010, Expected Gray: 001111, DUT Gray: 001111
+   120.00ns INFO     cocotb                             Pushed Binary: 001011, Expected Gray: 001110, DUT Gray: 001110
+   130.00ns INFO     cocotb                             Pushed Binary: 001100, Expected Gray: 001010, DUT Gray: 001010
+   140.00ns INFO     cocotb                             Pushed Binary: 001101, Expected Gray: 001011, DUT Gray: 001011
+   150.00ns INFO     cocotb                             Pushed Binary: 001110, Expected Gray: 001001, DUT Gray: 001001
+   160.00ns INFO     cocotb                             Pushed Binary: 001111, Expected Gray: 001000, DUT Gray: 001000
+   170.00ns INFO     cocotb                             Pushed Binary: 010000, Expected Gray: 011000, DUT Gray: 011000
+   180.00ns INFO     cocotb                             Pushed Binary: 010001, Expected Gray: 011001, DUT Gray: 011001
+   190.00ns INFO     cocotb                             Pushed Binary: 010010, Expected Gray: 011011, DUT Gray: 011011
+   200.00ns INFO     cocotb                             Pushed Binary: 010011, Expected Gray: 011010, DUT Gray: 011010
+   210.00ns INFO     cocotb                             Pushed Binary: 010100, Expected Gray: 011110, DUT Gray: 011110
+   220.00ns INFO     cocotb                             Pushed Binary: 010101, Expected Gray: 011111, DUT Gray: 011111
+   230.00ns INFO     cocotb                             Pushed Binary: 010110, Expected Gray: 011101, DUT Gray: 011101
+   240.00ns INFO     cocotb                             Pushed Binary: 010111, Expected Gray: 011100, DUT Gray: 011100
+   250.00ns INFO     cocotb                             Pushed Binary: 011000, Expected Gray: 010100, DUT Gray: 010100
+   260.00ns INFO     cocotb                             Pushed Binary: 011001, Expected Gray: 010101, DUT Gray: 010101
+   270.00ns INFO     cocotb                             Pushed Binary: 011010, Expected Gray: 010111, DUT Gray: 010111
+   280.00ns INFO     cocotb                             Pushed Binary: 011011, Expected Gray: 010110, DUT Gray: 010110
+   290.00ns INFO     cocotb                             Pushed Binary: 011100, Expected Gray: 010010, DUT Gray: 010010
+   300.00ns INFO     cocotb                             Pushed Binary: 011101, Expected Gray: 010011, DUT Gray: 010011
+   310.00ns INFO     cocotb                             Pushed Binary: 011110, Expected Gray: 010001, DUT Gray: 010001
+   320.00ns INFO     cocotb                             Pushed Binary: 011111, Expected Gray: 010000, DUT Gray: 010000
+   330.00ns INFO     cocotb                             Pushed Binary: 100000, Expected Gray: 110000, DUT Gray: 110000
+   340.00ns INFO     cocotb                             Pushed Binary: 100001, Expected Gray: 110001, DUT Gray: 110001
+   350.00ns INFO     cocotb                             Pushed Binary: 100010, Expected Gray: 110011, DUT Gray: 110011
+   360.00ns INFO     cocotb                             Pushed Binary: 100011, Expected Gray: 110010, DUT Gray: 110010
+   370.00ns INFO     cocotb                             Pushed Binary: 100100, Expected Gray: 110110, DUT Gray: 110110
+   380.00ns INFO     cocotb                             Pushed Binary: 100101, Expected Gray: 110111, DUT Gray: 110111
+   390.00ns INFO     cocotb                             Pushed Binary: 100110, Expected Gray: 110101, DUT Gray: 110101
+   400.00ns INFO     cocotb                             Pushed Binary: 100111, Expected Gray: 110100, DUT Gray: 110100
+   410.00ns INFO     cocotb                             Pushed Binary: 101000, Expected Gray: 111100, DUT Gray: 111100
+   420.00ns INFO     cocotb                             Pushed Binary: 101001, Expected Gray: 111101, DUT Gray: 111101
+   430.00ns INFO     cocotb                             Pushed Binary: 101010, Expected Gray: 111111, DUT Gray: 111111
+   440.00ns INFO     cocotb                             Pushed Binary: 101011, Expected Gray: 111110, DUT Gray: 111110
+   450.00ns INFO     cocotb                             Pushed Binary: 101100, Expected Gray: 111010, DUT Gray: 111010
+   460.00ns INFO     cocotb                             Pushed Binary: 101101, Expected Gray: 111011, DUT Gray: 111011
+   470.00ns INFO     cocotb                             Pushed Binary: 101110, Expected Gray: 111001, DUT Gray: 111001
+   480.00ns INFO     cocotb                             Pushed Binary: 101111, Expected Gray: 111000, DUT Gray: 111000
+   490.00ns INFO     cocotb                             Pushed Binary: 110000, Expected Gray: 101000, DUT Gray: 101000
+   500.00ns INFO     cocotb                             Pushed Binary: 110001, Expected Gray: 101001, DUT Gray: 101001
+   510.00ns INFO     cocotb                             Pushed Binary: 110010, Expected Gray: 101011, DUT Gray: 101011
+   520.00ns INFO     cocotb                             Pushed Binary: 110011, Expected Gray: 101010, DUT Gray: 101010
+   530.00ns INFO     cocotb                             Pushed Binary: 110100, Expected Gray: 101110, DUT Gray: 101110
+   540.00ns INFO     cocotb                             Pushed Binary: 110101, Expected Gray: 101111, DUT Gray: 101111
+   550.00ns INFO     cocotb                             Pushed Binary: 110110, Expected Gray: 101101, DUT Gray: 101101
+   560.00ns INFO     cocotb                             Pushed Binary: 110111, Expected Gray: 101100, DUT Gray: 101100
+   570.00ns INFO     cocotb                             Pushed Binary: 111000, Expected Gray: 100100, DUT Gray: 100100
+   580.00ns INFO     cocotb                             Pushed Binary: 111001, Expected Gray: 100101, DUT Gray: 100101
+   590.00ns INFO     cocotb                             Pushed Binary: 111010, Expected Gray: 100111, DUT Gray: 100111
+   600.00ns INFO     cocotb                             Pushed Binary: 111011, Expected Gray: 100110, DUT Gray: 100110
+   610.00ns INFO     cocotb                             Pushed Binary: 111100, Expected Gray: 100010, DUT Gray: 100010
+   620.00ns INFO     cocotb                             Pushed Binary: 111101, Expected Gray: 100011, DUT Gray: 100011
+   630.00ns INFO     cocotb                             Pushed Binary: 111110, Expected Gray: 100001, DUT Gray: 100001
+   640.00ns INFO     cocotb                             Pushed Binary: 111111, Expected Gray: 100000, DUT Gray: 100000
+   640.00ns INFO     cocotb.binary_to_gray              --- Printing Random Values ---
+   650.00ns INFO     cocotb                             Pushed Binary: 000101, Expected Gray: 000111, DUT Gray: 000111
+   660.00ns INFO     cocotb                             Pushed Binary: 101001, Expected Gray: 111101, DUT Gray: 111101
+   670.00ns INFO     cocotb                             Pushed Binary: 000011, Expected Gray: 000010, DUT Gray: 000010
+   680.00ns INFO     cocotb                             Pushed Binary: 111110, Expected Gray: 100001, DUT Gray: 100001
+   690.00ns INFO     cocotb                             Pushed Binary: 001111, Expected Gray: 001000, DUT Gray: 001000
+   700.00ns INFO     cocotb                             Pushed Binary: 100000, Expected Gray: 110000, DUT Gray: 110000
+   710.00ns INFO     cocotb                             Pushed Binary: 110110, Expected Gray: 101101, DUT Gray: 101101
+   720.00ns INFO     cocotb                             Pushed Binary: 010010, Expected Gray: 011011, DUT Gray: 011011
+   730.00ns INFO     cocotb                             Pushed Binary: 101010, Expected Gray: 111111, DUT Gray: 111111
+   740.00ns INFO     cocotb                             Pushed Binary: 010001, Expected Gray: 011001, DUT Gray: 011001
+   750.00ns INFO     cocotb                             Pushed Binary: 000011, Expected Gray: 000010, DUT Gray: 000010
+   760.00ns INFO     cocotb                             Pushed Binary: 001111, Expected Gray: 001000, DUT Gray: 001000
+   770.00ns INFO     cocotb                             Pushed Binary: 110111, Expected Gray: 101100, DUT Gray: 101100
+   780.00ns INFO     cocotb                             Pushed Binary: 100101, Expected Gray: 110111, DUT Gray: 110111
+   790.00ns INFO     cocotb                             Pushed Binary: 101110, Expected Gray: 111001, DUT Gray: 111001
+   800.00ns INFO     cocotb                             Pushed Binary: 100101, Expected Gray: 110111, DUT Gray: 110111
+   800.00ns INFO     cocotb.regression                  test_binary_to_gray.test_binary_to_gray passed
+   800.00ns INFO     cocotb.regression                  *************************************************************************************************
+                                                        ** TEST                                     STATUS  SIM TIME (ns)  REAL TIME (s)  RATIO (ns/s) **
+                                                        *************************************************************************************************
+                                                        ** test_binary_to_gray.test_binary_to_gray   PASS         800.00           0.01      92068.68  **
+                                                        *************************************************************************************************
+                                                        ** TESTS=1 PASS=1 FAIL=0 SKIP=0                           800.00           0.01      64354.49  **
+                                                        *************************************************************************************************
+                                                        
+FST info: dumpfile /code/rundir/sim_build/binary_to_gray.fst opened for output.
+INFO     Icarus:runner.py:438 Results file: /code/rundir/sim_build/test_runner.None
+PASSED
+../../src/test_runner.py::test_binary_to_gray[4] [DEBUG] Running simulation with WIDTH=4
+[DEBUG] Parameters: {'WIDTH': 4}
+
+-------------------------------- live log call ---------------------------------
+INFO     Icarus:runner.py:480 Removing: /code/rundir/sim_build
+INFO     Icarus:runner.py:468 Running command iverilog -o /code/rundir/sim_build/sim.vvp -s binary_to_gray -g2012 -Pbinary_to_gray.WIDTH=4 -s cocotb_iverilog_dump -f /code/rundir/sim_build/cmds.f /code/rtl/binary_to_gray.sv /code/rundir/sim_build/cocotb_iverilog_dump.v in directory /code/rundir/sim_build
+INFO     Icarus:runner.py:468 Running command vvp -M /usr/local/lib/python3.9/dist-packages/cocotb/libs -m libcocotbvpi_icarus /code/rundir/sim_build/sim.vvp -fst in directory /code/rundir/sim_build
+     -.--ns INFO     gpi                                ..mbed/gpi_embed.cpp:79   in set_program_name_in_venv        Did not detect Python virtual environment. Using system-wide Python interpreter
+     -.--ns INFO     gpi                                ../gpi/GpiCommon.cpp:101  in gpi_print_registered_impl       VPI registered
+     0.00ns INFO     cocotb                             Running on Icarus Verilog version 13.0 (devel)
+     0.00ns INFO     cocotb                             Running tests with cocotb v2.0.0.dev0+8d6c1a63 from /usr/local/lib/python3.9/dist-packages/cocotb
+     0.00ns INFO     cocotb                             Seeding Python random module with 1773327901
+     0.00ns INFO     cocotb.regression                  running test_binary_to_gray.test_binary_to_gray (1/1)
+                                                            Test Binary to Gray Code Conversion
+     0.00ns INFO     cocotb.binary_to_gray              Running predefined test cases with WIDTH=4
+    10.00ns INFO     cocotb                             Pushed Binary: 0000, Expected Gray: 0000, DUT Gray: 0000
+    20.00ns INFO     cocotb                             Pushed Binary: 0001, Expected Gray: 0001, DUT Gray: 0001
+    30.00ns INFO     cocotb                             Pushed Binary: 0010, Expected Gray: 0011, DUT Gray: 0011
+    40.00ns INFO     cocotb                             Pushed Binary: 0011, Expected Gray: 0010, DUT Gray: 0010
+    50.00ns INFO     cocotb                             Pushed Binary: 0100, Expected Gray: 0110, DUT Gray: 0110
+    60.00ns INFO     cocotb                             Pushed Binary: 0101, Expected Gray: 0111, DUT Gray: 0111
+    70.00ns INFO     cocotb                             Pushed Binary: 0110, Expected Gray: 0101, DUT Gray: 0101
+    80.00ns INFO     cocotb                             Pushed Binary: 0111, Expected Gray: 0100, DUT Gray: 0100
+    90.00ns INFO     cocotb                             Pushed Binary: 1000, Expected Gray: 1100, DUT Gray: 1100
+   100.00ns INFO     cocotb                             Pushed Binary: 1001, Expected Gray: 1101, DUT Gray: 1101
+   110.00ns INFO     cocotb                             Pushed Binary: 1010, Expected Gray: 1111, DUT Gray: 1111
+   120.00ns INFO     cocotb                             Pushed Binary: 1011, Expected Gray: 1110, DUT Gray: 1110
+   130.00ns INFO     cocotb                             Pushed Binary: 1100, Expected Gray: 1010, DUT Gray: 1010
+   140.00ns INFO     cocotb                             Pushed Binary: 1101, Expected Gray: 1011, DUT Gray: 1011
+   150.00ns INFO     cocotb                             Pushed Binary: 1110, Expected Gray: 1001, DUT Gray: 1001
+   160.00ns INFO     cocotb                             Pushed Binary: 1111, Expected Gray: 1000, DUT Gray: 1000
+   160.00ns INFO     cocotb.binary_to_gray              --- Printing Random Values ---
+   170.00ns INFO     cocotb                             Pushed Binary: 0001, Expected Gray: 0001, DUT Gray: 0001
+   180.00ns INFO     cocotb                             Pushed Binary: 1010, Expected Gray: 1111, DUT Gray: 1111
+   190.00ns INFO     cocotb                             Pushed Binary: 0000, Expected Gray: 0000, DUT Gray: 0000
+   200.00ns INFO     cocotb                             Pushed Binary: 1111, Expected Gray: 1000, DUT Gray: 1000
+   210.00ns INFO     cocotb                             Pushed Binary: 0011, Expected Gray: 0010, DUT Gray: 0010
+   220.00ns INFO     cocotb                             Pushed Binary: 1000, Expected Gray: 1100, DUT Gray: 1100
+   230.00ns INFO     cocotb                             Pushed Binary: 1101, Expected Gray: 1011, DUT Gray: 1011
+   240.00ns INFO     cocotb                             Pushed Binary: 0100, Expected Gray: 0110, DUT Gray: 0110
+   250.00ns INFO     cocotb                             Pushed Binary: 1010, Expected Gray: 1111, DUT Gray: 1111
+   260.00ns INFO     cocotb                             Pushed Binary: 0100, Expected Gray: 0110, DUT Gray: 0110
+   270.00ns INFO     cocotb                             Pushed Binary: 0000, Expected Gray: 0000, DUT Gray: 0000
+   280.00ns INFO     cocotb                             Pushed Binary: 0011, Expected Gray: 0010, DUT Gray: 0010
+   290.00ns INFO     cocotb                             Pushed Binary: 1101, Expected Gray: 1011, DUT Gray: 1011
+   300.00ns INFO     cocotb                             Pushed Binary: 1001, Expected Gray: 1101, DUT Gray: 1101
+   310.00ns INFO     cocotb                             Pushed Binary: 1011, Expected Gray: 1110, DUT Gray: 1110
+   320.00ns INFO     cocotb                             Pushed Binary: 1001, Expected Gray: 1101, DUT Gray: 1101
+   320.00ns INFO     cocotb.regression                  test_binary_to_gray.test_binary_to_gray passed
+   320.00ns INFO     cocotb.regression                  *************************************************************************************************
+                                                        ** TEST                                     STATUS  SIM TIME (ns)  REAL TIME (s)  RATIO (ns/s) **
+                                                        *************************************************************************************************
+                                                        ** test_binary_to_gray.test_binary_to_gray   PASS         320.00           0.00      65347.74  **
+                                                        *************************************************************************************************
+                                                        ** TESTS=1 PASS=1 FAIL=0 SKIP=0                           320.00           0.01      29686.31  **
+                                                        *************************************************************************************************
+                                                        
+FST info: dumpfile /code/rundir/sim_build/binary_to_gray.fst opened for output.
+INFO     Icarus:runner.py:438 Results file: /code/rundir/sim_build/test_binary_to_gray[4].None
+PASSED
+../../src/test_runner.py::test_binary_to_gray[5] [DEBUG] Running simulation with WIDTH=5
+[DEBUG] Parameters: {'WIDTH': 5}
+
+-------------------------------- live log call ---------------------------------
+INFO     Icarus:runner.py:480 Removing: /code/rundir/sim_build
+INFO     Icarus:runner.py:468 Running command iverilog -o /code/rundir/sim_build/sim.vvp -s binary_to_gray -g2012 -Pbinary_to_gray.WIDTH=5 -s cocotb_iverilog_dump -f /code/rundir/sim_build/cmds.f /code/rtl/binary_to_gray.sv /code/rundir/sim_build/cocotb_iverilog_dump.v in directory /code/rundir/sim_build
+INFO     Icarus:runner.py:468 Running command vvp -M /usr/local/lib/python3.9/dist-packages/cocotb/libs -m libcocotbvpi_icarus /code/rundir/sim_build/sim.vvp -fst in directory /code/rundir/sim_build
+     -.--ns INFO     gpi                                ..mbed/gpi_embed.cpp:79   in set_program_name_in_venv        Did not detect Python virtual environment. Using system-wide Python interpreter
+     -.--ns INFO     gpi                                ../gpi/GpiCommon.cpp:101  in gpi_print_registered_impl       VPI registered
+     0.00ns INFO     cocotb                             Running on Icarus Verilog version 13.0 (devel)
+     0.00ns INFO     cocotb                             Running tests with cocotb v2.0.0.dev0+8d6c1a63 from /usr/local/lib/python3.9/dist-packages/cocotb
+     0.00ns INFO     cocotb                             Seeding Python random module with 1773327902
+     0.00ns INFO     cocotb.regression                  running test_binary_to_gray.test_binary_to_gray (1/1)
+                                                            Test Binary to Gray Code Conversion
+     0.00ns INFO     cocotb.binary_to_gray              Running predefined test cases with WIDTH=5
+    10.00ns INFO     cocotb                             Pushed Binary: 00000, Expected Gray: 00000, DUT Gray: 00000
+    20.00ns INFO     cocotb                             Pushed Binary: 00001, Expected Gray: 00001, DUT Gray: 00001
+    30.00ns INFO     cocotb                             Pushed Binary: 00010, Expected Gray: 00011, DUT Gray: 00011
+    40.00ns INFO     cocotb                             Pushed Binary: 00011, Expected Gray: 00010, DUT Gray: 00010
+    50.00ns INFO     cocotb                             Pushed Binary: 00100, Expected Gray: 00110, DUT Gray: 00110
+    60.00ns INFO     cocotb                             Pushed Binary: 00101, Expected Gray: 00111, DUT Gray: 00111
+    70.00ns INFO     cocotb                             Pushed Binary: 00110, Expected Gray: 00101, DUT Gray: 00101
+    80.00ns INFO     cocotb                             Pushed Binary: 00111, Expected Gray: 00100, DUT Gray: 00100
+    90.00ns INFO     cocotb                             Pushed Binary: 01000, Expected Gray: 01100, DUT Gray: 01100
+   100.00ns INFO     cocotb                             Pushed Binary: 01001, Expected Gray: 01101, DUT Gray: 01101
+   110.00ns INFO     cocotb                             Pushed Binary: 01010, Expected Gray: 01111, DUT Gray: 01111
+   120.00ns INFO     cocotb                             Pushed Binary: 01011, Expected Gray: 01110, DUT Gray: 01110
+   130.00ns INFO     cocotb                             Pushed Binary: 01100, Expected Gray: 01010, DUT Gray: 01010
+   140.00ns INFO     cocotb                             Pushed Binary: 01101, Expected Gray: 01011, DUT Gray: 01011
+   150.00ns INFO     cocotb                             Pushed Binary: 01110, Expected Gray: 01001, DUT Gray: 01001
+   160.00ns INFO     cocotb                             Pushed Binary: 01111, Expected Gray: 01000, DUT Gray: 01000
+   170.00ns INFO     cocotb                             Pushed Binary: 10000, Expected Gray: 11000, DUT Gray: 11000
+   180.00ns INFO     cocotb                             Pushed Binary: 10001, Expected Gray: 11001, DUT Gray: 11001
+   190.00ns INFO     cocotb                             Pushed Binary: 10010, Expected Gray: 11011, DUT Gray: 11011
+   200.00ns INFO     cocotb                             Pushed Binary: 10011, Expected Gray: 11010, DUT Gray: 11010
+   210.00ns INFO     cocotb                             Pushed Binary: 10100, Expected Gray: 11110, DUT Gray: 11110
+   220.00ns INFO     cocotb                             Pushed Binary: 10101, Expected Gray: 11111, DUT Gray: 11111
+   230.00ns INFO     cocotb                             Pushed Binary: 10110, Expected Gray: 11101, DUT Gray: 11101
+   240.00ns INFO     cocotb                             Pushed Binary: 10111, Expected Gray: 11100, DUT Gray: 11100
+   250.00ns INFO     cocotb                             Pushed Binary: 11000, Expected Gray: 10100, DUT Gray: 10100
+   260.00ns INFO     cocotb                             Pushed Binary: 11001, Expected Gray: 10101, DUT Gray: 10101
+   270.00ns INFO     cocotb                             Pushed Binary: 11010, Expected Gray: 10111, DUT Gray: 10111
+   280.00ns INFO     cocotb                             Pushed Binary: 11011, Expected Gray: 10110, DUT Gray: 10110
+   290.00ns INFO     cocotb                             Pushed Binary: 11100, Expected Gray: 10010, DUT Gray: 10010
+   300.00ns INFO     cocotb                             Pushed Binary: 11101, Expected Gray: 10011, DUT Gray: 10011
+   310.00ns INFO     cocotb                             Pushed Binary: 11110, Expected Gray: 10001, DUT Gray: 10001
+   320.00ns INFO     cocotb                             Pushed Binary: 11111, Expected Gray: 10000, DUT Gray: 10000
+   320.00ns INFO     cocotb.binary_to_gray              --- Printing Random Values ---
+   330.00ns INFO     cocotb                             Pushed Binary: 11100, Expected Gray: 10010, DUT Gray: 10010
+   340.00ns INFO     cocotb                             Pushed Binary: 00001, Expected Gray: 00001, DUT Gray: 00001
+   350.00ns INFO     cocotb                             Pushed Binary: 10110, Expected Gray: 11101, DUT Gray: 11101
+   360.00ns INFO     cocotb                             Pushed Binary: 00000, Expected Gray: 00000, DUT Gray: 00000
+   370.00ns INFO     cocotb                             Pushed Binary: 00011, Expected Gray: 00010, DUT Gray: 00010
+   380.00ns INFO     cocotb                             Pushed Binary: 10100, Expected Gray: 11110, DUT Gray: 11110
+   390.00ns INFO     cocotb                             Pushed Binary: 11011, Expected Gray: 10110, DUT Gray: 10110
+   400.00ns INFO     cocotb                             Pushed Binary: 00110, Expected Gray: 00101, DUT Gray: 00101
+   410.00ns INFO     cocotb                             Pushed Binary: 10010, Expected Gray: 11011, DUT Gray: 11011
+   420.00ns INFO     cocotb                             Pushed Binary: 11100, Expected Gray: 10010, DUT Gray: 10010
+   430.00ns INFO     cocotb                             Pushed Binary: 00010, Expected Gray: 00011, DUT Gray: 00011
+   440.00ns INFO     cocotb                             Pushed Binary: 10110, Expected Gray: 11101, DUT Gray: 11101
+   450.00ns INFO     cocotb                             Pushed Binary: 01101, Expected Gray: 01011, DUT Gray: 01011
+   460.00ns INFO     cocotb                             Pushed Binary: 10101, Expected Gray: 11111, DUT Gray: 11111
+   470.00ns INFO     cocotb                             Pushed Binary: 10101, Expected Gray: 11111, DUT Gray: 11111
+   480.00ns INFO     cocotb                             Pushed Binary: 01110, Expected Gray: 01001, DUT Gray: 01001
+   480.00ns INFO     cocotb.regression                  test_binary_to_gray.test_binary_to_gray passed
+   480.00ns INFO     cocotb.regression                  *************************************************************************************************
+                                                        ** TEST                                     STATUS  SIM TIME (ns)  REAL TIME (s)  RATIO (ns/s) **
+                                                        *************************************************************************************************
+                                                        ** test_binary_to_gray.test_binary_to_gray   PASS         480.00           0.01      75772.15  **
+                                                        *************************************************************************************************
+                                                        ** TESTS=1 PASS=1 FAIL=0 SKIP=0                           480.00           0.01      42326.63  **
+                                                        *************************************************************************************************
+                                                        
+FST info: dumpfile /code/rundir/sim_build/binary_to_gray.fst opened for output.
+INFO     Icarus:runner.py:438 Results file: /code/rundir/sim_build/test_binary_to_gray[5].None
+PASSED
+
+============================== 3 passed in 0.73s ===============================

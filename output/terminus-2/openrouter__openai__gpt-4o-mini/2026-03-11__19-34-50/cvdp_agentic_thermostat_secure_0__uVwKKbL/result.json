@@ -1,0 +1,174 @@
+{
+    "id": "cb0ef5b7-79bf-4058-ae50-1f27f85ca13f",
+    "task_name": "cvdp_agentic_thermostat_secure_0001",
+    "trial_name": "cvdp_agentic_thermostat_secure_0__uVwKKbL",
+    "trial_uri": "file:///home/saketh/research/cvdp_benchmark/jobs/2026-03-11__19-34-50/cvdp_agentic_thermostat_secure_0__uVwKKbL",
+    "task_id": {
+        "path": "/home/saketh/research/cvdp_benchmark/harbor_output/cvdp_agentic_thermostat_secure_0001"
+    },
+    "source": "cvdp_v1.0.4_agentic_code_generation_no_commercial",
+    "task_checksum": "3ff364e1fb8f2f264428dae1d8015f48573459910256a6d9d87a2414330816db",
+    "config": {
+        "task": {
+            "path": "/home/saketh/research/cvdp_benchmark/harbor_output/cvdp_agentic_thermostat_secure_0001",
+            "git_url": null,
+            "git_commit_id": null,
+            "overwrite": false,
+            "download_dir": null,
+            "source": "cvdp_v1.0.4_agentic_code_generation_no_commercial"
+        },
+        "trial_name": "cvdp_agentic_thermostat_secure_0__uVwKKbL",
+        "trials_dir": "/home/saketh/research/cvdp_benchmark/jobs/2026-03-11__19-34-50",
+        "timeout_multiplier": 1.0,
+        "agent_timeout_multiplier": null,
+        "verifier_timeout_multiplier": null,
+        "agent_setup_timeout_multiplier": null,
+        "environment_build_timeout_multiplier": null,
+        "agent": {
+            "name": "terminus-2",
+            "import_path": null,
+            "model_name": "openrouter/openai/gpt-4o-mini",
+            "override_timeout_sec": null,
+            "override_setup_timeout_sec": null,
+            "max_timeout_sec": null,
+            "kwargs": {},
+            "env": {}
+        },
+        "environment": {
+            "type": "docker",
+            "import_path": null,
+            "force_build": false,
+            "delete": true,
+            "override_cpus": null,
+            "override_memory_mb": null,
+            "override_storage_mb": null,
+            "override_gpus": null,
+            "suppress_override_warnings": false,
+            "kwargs": {}
+        },
+        "verifier": {
+            "override_timeout_sec": null,
+            "max_timeout_sec": null,
+            "disable": false
+        },
+        "artifacts": [],
+        "job_id": "162fbf46-8549-4789-9f0f-8ce418b47fe3"
+    },
+    "agent_info": {
+        "name": "terminus-2",
+        "version": "2.0.0",
+        "model_info": {
+            "name": "openai/gpt-4o-mini",
+            "provider": "openrouter"
+        }
+    },
+    "agent_result": {
+        "n_input_tokens": 2065802,
+        "n_cache_tokens": 1744384,
+        "n_output_tokens": 41865,
+        "cost_usd": null,
+        "rollout_details": [],
+        "metadata": {
+            "n_episodes": 72,
+            "api_request_times_msec": [
+                4313.922643661499,
+                3860.079526901245,
+                13824.814796447754,
+                6346.751689910889,
+                13104.503393173218,
+                3688.11297416687,
+                7040.371894836426,
+                3999.0358352661133,
+                10603.157043457031,
+                6257.823944091797,
+                16819.366693496704,
+                4239.411354064941,
+                5335.511922836304,
+                17361.576080322266,
+                12089.91813659668,
+                10187.709093093872,
+                10864.644765853882,
+                16824.21326637268,
+                33338.24110031128,
+                15837.190628051758,
+                38115.628242492676,
+                19876.723527908325,
+                17618.019819259644,
+                3994.457483291626,
+                15591.939449310303,
+                14992.777109146118,
+                45136.394739151,
+                14874.288558959961,
+                49600.88515281677,
+                16035.983562469482,
+                17011.645793914795,
+                21437.207221984863,
+                73229.06255722046,
+                6858.930349349976,
+                20800.249338150024,
+                8694.525957107544,
+                21763.93961906433,
+                20042.461395263672,
+                23441.946029663086,
+                7675.126075744629,
+                26432.051420211792,
+                38035.17246246338,
+                5634.098768234253,
+                6403.945207595825,
+                6557.251930236816,
+                6991.83201789856,
+                7310.588359832764,
+                31925.34565925598,
+                55271.11005783081,
+                7277.555227279663,
+                8056.690216064453,
+                7272.656679153442,
+                9129.295349121094,
+                8018.769264221191,
+                8548.718452453613,
+                18345.728158950806,
+                22279.85644340515,
+                8654.193878173828,
+                13247.794389724731,
+                6072.441339492798,
+                8195.34158706665,
+                5534.854412078857,
+                13289.113759994507,
+                5902.936697006226,
+                22087.241888046265,
+                7298.659563064575,
+                6997.962236404419,
+                6295.436143875122,
+                5688.230752944946,
+                5679.949760437012,
+                3492.9606914520264,
+                4804.749250411987
+            ],
+            "summarization_count": 0
+        }
+    },
+    "verifier_result": {
+        "rewards": {
+            "reward": 0.0
+        }
+    },
+    "exception_info": null,
+    "started_at": "2026-03-12T01:01:01.425522Z",
+    "finished_at": "2026-03-12T01:21:18.774060Z",
+    "environment_setup": {
+        "started_at": "2026-03-12T01:01:01.441573Z",
+        "finished_at": "2026-03-12T01:01:03.506864Z"
+    },
+    "agent_setup": {
+        "started_at": "2026-03-12T01:01:03.506871Z",
+        "finished_at": "2026-03-12T01:01:08.606885Z"
+    },
+    "agent_execution": {
+        "started_at": "2026-03-12T01:01:08.606912Z",
+        "finished_at": "2026-03-12T01:21:08.010537Z"
+    },
+    "verifier": {
+        "started_at": "2026-03-12T01:21:08.010603Z",
+        "finished_at": "2026-03-12T01:21:08.365574Z"
+    }
+}

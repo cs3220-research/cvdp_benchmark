@@ -1,0 +1,45 @@
+Running service: direct
+============================= test session starts ==============================
+platform linux -- Python 3.9.2, pytest-8.3.2, pluggy-1.5.0 -- /usr/bin/python3
+cachedir: /code/rundir/.cache
+rootdir: /src
+collecting ... collected 1 item
+
+../../src/test_runner.py::test_rc5_enc_16bit_run      -.--ns INFO     gpi                                ..mbed/gpi_embed.cpp:79   in set_program_name_in_venv        Did not detect Python virtual environment. Using system-wide Python interpreter
+     -.--ns INFO     gpi                                ../gpi/GpiCommon.cpp:101  in gpi_print_registered_impl       VPI registered
+     0.00ns INFO     cocotb                             Running on Icarus Verilog version 13.0 (devel)
+     0.00ns INFO     cocotb                             Running tests with cocotb v2.0.0.dev0+8d6c1a63 from /usr/local/lib/python3.9/dist-packages/cocotb
+     0.00ns INFO     cocotb                             Seeding Python random module with 1773331348
+     0.00ns INFO     cocotb.regression                  running test_rc5_enc_16bit.test_rc5_enc_16bit (1/1)
+                                                            Test the rc5_enc_16bit encryption module
+/code/src/test_rc5_enc_16bit.py:62: DeprecationWarning: `.integer` property is deprecated. Use `value.to_unsigned()` instead.
+  encrypted = dut.c.value.integer
+   120.00ns INFO     cocotb.rc5_enc_16bit               Plaintext: 0x4660, Ciphertext: 0x35360, Expected: 0x35360
+   260.00ns INFO     cocotb.rc5_enc_16bit               Plaintext: 0x43981, Ciphertext: 0x38617, Expected: 0x38617
+   400.00ns INFO     cocotb.rc5_enc_16bit               Plaintext: 0x0, Ciphertext: 0x29587, Expected: 0x29587
+   540.00ns INFO     cocotb.rc5_enc_16bit               Plaintext: 0x65535, Ciphertext: 0x61593, Expected: 0x61593
+   680.00ns INFO     cocotb.rc5_enc_16bit               Plaintext: 0x42405, Ciphertext: 0x5436, Expected: 0x5436
+   820.00ns INFO     cocotb.rc5_enc_16bit               Plaintext: 0x8738, Ciphertext: 0x41576, Expected: 0x41576
+   960.00ns INFO     cocotb.rc5_enc_16bit               Plaintext: 0x13107, Ciphertext: 0x38515, Expected: 0x38515
+  1100.00ns INFO     cocotb.rc5_enc_16bit               Plaintext: 0x17476, Ciphertext: 0x48821, Expected: 0x48821
+  1240.00ns INFO     cocotb.rc5_enc_16bit               Plaintext: 0x21845, Ciphertext: 0x3375, Expected: 0x3375
+  1380.00ns INFO     cocotb.rc5_enc_16bit               Plaintext: 0x65535, Ciphertext: 0x61593, Expected: 0x61593
+  1390.00ns INFO     cocotb.regression                  test_rc5_enc_16bit.test_rc5_enc_16bit passed
+  1390.00ns INFO     cocotb.regression                  ***********************************************************************************************
+                                                        ** TEST                                   STATUS  SIM TIME (ns)  REAL TIME (s)  RATIO (ns/s) **
+                                                        ***********************************************************************************************
+                                                        ** test_rc5_enc_16bit.test_rc5_enc_16bit   PASS        1390.00           0.02      90142.91  **
+                                                        ***********************************************************************************************
+                                                        ** TESTS=1 PASS=1 FAIL=0 SKIP=0                        1390.00           0.02      73278.15  **
+                                                        ***********************************************************************************************
+                                                        
+VCD info: dumpfile /code/rundir/sim_build/rc5_enc_16bit.fst opened for output.
+PASSED
+
+=============================== warnings summary ===============================
+../src/test_runner.py:12
+  /code/src/test_runner.py:12: PytestUnknownMarkWarning: Unknown pytest.mark.tb - is this a typo?  You can register custom marks to avoid this warning - for details, see https://docs.pytest.org/en/stable/how-to/mark.html
+    @pytest.mark.tb
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+========================= 1 passed, 1 warning in 0.23s =========================

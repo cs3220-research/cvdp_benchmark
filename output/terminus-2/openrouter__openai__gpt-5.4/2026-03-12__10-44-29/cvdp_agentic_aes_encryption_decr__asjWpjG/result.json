@@ -1,0 +1,111 @@
+{
+    "id": "24f1d15d-79ec-4d5c-84a1-bc8caf97c0d2",
+    "task_name": "cvdp_agentic_aes_encryption_decryption_0018",
+    "trial_name": "cvdp_agentic_aes_encryption_decr__asjWpjG",
+    "trial_uri": "file:///home/saketh/research/cvdp_benchmark/output/terminus-2/openrouter__openai__gpt-5.4/2026-03-12__10-44-29/cvdp_agentic_aes_encryption_decr__asjWpjG",
+    "task_id": {
+        "path": "/home/saketh/research/cvdp_benchmark/harbor_output/cvdp_agentic_aes_encryption_decryption_0018"
+    },
+    "source": "cvdp_v1.0.4_agentic_code_generation_no_commercial",
+    "task_checksum": "df6dbb08f9c7affa3c284850a3d981ec195311cc2e04bec32a14257222bc23bf",
+    "config": {
+        "task": {
+            "path": "/home/saketh/research/cvdp_benchmark/harbor_output/cvdp_agentic_aes_encryption_decryption_0018",
+            "git_url": null,
+            "git_commit_id": null,
+            "overwrite": false,
+            "download_dir": null,
+            "source": "cvdp_v1.0.4_agentic_code_generation_no_commercial"
+        },
+        "trial_name": "cvdp_agentic_aes_encryption_decr__asjWpjG",
+        "trials_dir": "/home/saketh/research/cvdp_benchmark/output/terminus-2/openrouter__openai__gpt-5.4/2026-03-12__10-44-29",
+        "timeout_multiplier": 1.0,
+        "agent_timeout_multiplier": null,
+        "verifier_timeout_multiplier": null,
+        "agent_setup_timeout_multiplier": null,
+        "environment_build_timeout_multiplier": null,
+        "agent": {
+            "name": "terminus-2",
+            "import_path": null,
+            "model_name": "openrouter/openai/gpt-5.4",
+            "override_timeout_sec": null,
+            "override_setup_timeout_sec": null,
+            "max_timeout_sec": null,
+            "kwargs": {},
+            "env": {}
+        },
+        "environment": {
+            "type": "docker",
+            "import_path": null,
+            "force_build": false,
+            "delete": true,
+            "override_cpus": null,
+            "override_memory_mb": null,
+            "override_storage_mb": null,
+            "override_gpus": null,
+            "suppress_override_warnings": false,
+            "kwargs": {}
+        },
+        "verifier": {
+            "override_timeout_sec": null,
+            "max_timeout_sec": null,
+            "disable": false
+        },
+        "artifacts": [],
+        "job_id": "31848c0a-f9dd-4b14-8dd6-c2c77c298761"
+    },
+    "agent_info": {
+        "name": "terminus-2",
+        "version": "2.0.0",
+        "model_info": {
+            "name": "openai/gpt-5.4",
+            "provider": "openrouter"
+        }
+    },
+    "agent_result": {
+        "n_input_tokens": 109812,
+        "n_cache_tokens": 62080,
+        "n_output_tokens": 4880,
+        "cost_usd": null,
+        "rollout_details": [],
+        "metadata": {
+            "n_episodes": 9,
+            "api_request_times_msec": [
+                11280.792236328125,
+                7044.296026229858,
+                5912.491083145142,
+                5709.439516067505,
+                31801.49483680725,
+                6215.813875198364,
+                5874.897241592407,
+                3853.36971282959,
+                3219.529390335083
+            ],
+            "summarization_count": 0
+        }
+    },
+    "verifier_result": {
+        "rewards": {
+            "reward": 1.0
+        }
+    },
+    "exception_info": null,
+    "started_at": "2026-03-12T14:44:29.315776Z",
+    "finished_at": "2026-03-12T14:48:53.126304Z",
+    "environment_setup": {
+        "started_at": "2026-03-12T14:44:29.319021Z",
+        "finished_at": "2026-03-12T14:44:37.942772Z"
+    },
+    "agent_setup": {
+        "started_at": "2026-03-12T14:44:37.942779Z",
+        "finished_at": "2026-03-12T14:44:44.694329Z"
+    },
+    "agent_execution": {
+        "started_at": "2026-03-12T14:44:44.694357Z",
+        "finished_at": "2026-03-12T14:46:35.792612Z"
+    },
+    "verifier": {
+        "started_at": "2026-03-12T14:46:35.792668Z",
+        "finished_at": "2026-03-12T14:48:42.627997Z"
+    }
+}

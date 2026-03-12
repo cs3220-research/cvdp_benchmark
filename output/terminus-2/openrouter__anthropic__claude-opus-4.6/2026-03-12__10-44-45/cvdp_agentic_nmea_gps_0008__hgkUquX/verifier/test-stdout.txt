@@ -1,0 +1,159 @@
+Running service: direct
+============================= test session starts ==============================
+platform linux -- Python 3.9.2, pytest-8.3.2, pluggy-1.5.0 -- /usr/bin/python3
+cachedir: /rundir/harness/.cache
+rootdir: /src
+collecting ... collected 2 items
+
+../src/test_runner.py::test_areg_param[0] 
+-------------------------------- live log call ---------------------------------
+INFO     Icarus:runner.py:468 Running command iverilog -o /code/sim_build/sim.vvp -s nmea_decoder -g2012 -s cocotb_iverilog_dump -f /code/sim_build/cmds.f /code/rtl/nmea_decoder.sv /code/sim_build/cocotb_iverilog_dump.v in directory /code/sim_build
+INFO     Icarus:runner.py:468 Running command vvp -M /usr/local/lib/python3.9/dist-packages/cocotb/libs -m libcocotbvpi_icarus /code/sim_build/sim.vvp -fst in directory /code/sim_build
+     -.--ns INFO     gpi                                ..mbed/gpi_embed.cpp:79   in set_program_name_in_venv        Did not detect Python virtual environment. Using system-wide Python interpreter
+     -.--ns INFO     gpi                                ../gpi/GpiCommon.cpp:101  in gpi_print_registered_impl       VPI registered
+     0.00ns INFO     cocotb                             Running on Icarus Verilog version 13.0 (devel)
+     0.00ns INFO     cocotb                             Running tests with cocotb v2.0.0.dev0+8d6c1a63 from /usr/local/lib/python3.9/dist-packages/cocotb
+     0.00ns INFO     cocotb                             Seeding Python random module with 1773331172
+     0.00ns INFO     cocotb.regression                  running test_nmea_decoder.test_nmea_decoder (1/1)
+                                                            Testbench for the modified NMEA decoder.
+    30.00ns INFO     cocotb                             Starting Test Case 1: Valid $GPRMC sentence
+   720.00ns INFO     cocotb                             Test Case 1 data_out for valid sentence: dut.data_out.value = 0011000100110010
+   720.00ns INFO     cocotb                             SUCCESS: Correct data_out for valid sentence
+   720.00ns INFO     cocotb                             Starting Test Case 2: Invalid sentence
+  1020.00ns INFO     cocotb                             Test Case 2 Correctly handled invalid sentence with data_valid: dut.data_valid.value = 0
+  1020.00ns INFO     cocotb                             SUCCESS: Correctly handled invalid sentence with data_valid = 0
+  1020.00ns INFO     cocotb                             Starting Test Case 3: Buffer Overflow
+  1840.00ns INFO     cocotb                             Test Case 3 Correctly detected overflow with error_overflow: dut.error_overflow.value = 1
+  1840.00ns INFO     cocotb                             SUCCESS: Overflow correctly detected
+  1840.00ns INFO     cocotb                             Starting Test Case 4: Watchdog timeout
+ 26910.00ns INFO     cocotb.regression                  test_nmea_decoder.test_nmea_decoder failed
+                                                        Traceback (most recent call last):
+                                                          File "/code/src/test_nmea_decoder.py", line 128, in test_nmea_decoder
+                                                            assert dut.watchdog_timeout.value == 1, f"ERROR: Expected watchdog_timeout = 1, got {dut.watchdog_timeout.value}"
+                                                        AssertionError: ERROR: Expected watchdog_timeout = 1, got 0
+                                                        assert LogicArray('0', Range(0, 'downto', 0)) == 1
+                                                         +  where LogicArray('0', Range(0, 'downto', 0)) = LogicObject(nmea_decoder.watchdog_timeout).value
+                                                         +    where LogicObject(nmea_decoder.watchdog_timeout) = HierarchyObject(nmea_decoder).watchdog_timeout
+ 26910.00ns INFO     cocotb.regression                  *********************************************************************************************
+                                                        ** TEST                                 STATUS  SIM TIME (ns)  REAL TIME (s)  RATIO (ns/s) **
+                                                        *********************************************************************************************
+                                                        ** test_nmea_decoder.test_nmea_decoder   FAIL       26910.00           0.27     100562.22  **
+                                                        *********************************************************************************************
+                                                        ** TESTS=1 PASS=0 FAIL=1 SKIP=0                     26910.00           0.27      98039.47  **
+                                                        *********************************************************************************************
+                                                        
+FST info: dumpfile /code/sim_build/nmea_decoder.fst opened for output.
+FAILED
+../src/test_runner.py::test_areg_param[1] 
+-------------------------------- live log call ---------------------------------
+INFO     Icarus:runner.py:480 Removing: /code/sim_build
+INFO     Icarus:runner.py:468 Running command iverilog -o /code/sim_build/sim.vvp -s nmea_decoder -g2012 -s cocotb_iverilog_dump -f /code/sim_build/cmds.f /code/rtl/nmea_decoder.sv /code/sim_build/cocotb_iverilog_dump.v in directory /code/sim_build
+INFO     Icarus:runner.py:468 Running command vvp -M /usr/local/lib/python3.9/dist-packages/cocotb/libs -m libcocotbvpi_icarus /code/sim_build/sim.vvp -fst in directory /code/sim_build
+     -.--ns INFO     gpi                                ..mbed/gpi_embed.cpp:79   in set_program_name_in_venv        Did not detect Python virtual environment. Using system-wide Python interpreter
+     -.--ns INFO     gpi                                ../gpi/GpiCommon.cpp:101  in gpi_print_registered_impl       VPI registered
+     0.00ns INFO     cocotb                             Running on Icarus Verilog version 13.0 (devel)
+     0.00ns INFO     cocotb                             Running tests with cocotb v2.0.0.dev0+8d6c1a63 from /usr/local/lib/python3.9/dist-packages/cocotb
+     0.00ns INFO     cocotb                             Seeding Python random module with 1773331172
+     0.00ns INFO     cocotb.regression                  running test_nmea_decoder.test_nmea_decoder (1/1)
+                                                            Testbench for the modified NMEA decoder.
+    30.00ns INFO     cocotb                             Starting Test Case 1: Valid $GPRMC sentence
+   720.00ns INFO     cocotb                             Test Case 1 data_out for valid sentence: dut.data_out.value = 0011000100110010
+   720.00ns INFO     cocotb                             SUCCESS: Correct data_out for valid sentence
+   720.00ns INFO     cocotb                             Starting Test Case 2: Invalid sentence
+  1020.00ns INFO     cocotb                             Test Case 2 Correctly handled invalid sentence with data_valid: dut.data_valid.value = 0
+  1020.00ns INFO     cocotb                             SUCCESS: Correctly handled invalid sentence with data_valid = 0
+  1020.00ns INFO     cocotb                             Starting Test Case 3: Buffer Overflow
+  1840.00ns INFO     cocotb                             Test Case 3 Correctly detected overflow with error_overflow: dut.error_overflow.value = 1
+  1840.00ns INFO     cocotb                             SUCCESS: Overflow correctly detected
+  1840.00ns INFO     cocotb                             Starting Test Case 4: Watchdog timeout
+ 26910.00ns INFO     cocotb.regression                  test_nmea_decoder.test_nmea_decoder failed
+                                                        Traceback (most recent call last):
+                                                          File "/code/src/test_nmea_decoder.py", line 128, in test_nmea_decoder
+                                                            assert dut.watchdog_timeout.value == 1, f"ERROR: Expected watchdog_timeout = 1, got {dut.watchdog_timeout.value}"
+                                                        AssertionError: ERROR: Expected watchdog_timeout = 1, got 0
+                                                        assert LogicArray('0', Range(0, 'downto', 0)) == 1
+                                                         +  where LogicArray('0', Range(0, 'downto', 0)) = LogicObject(nmea_decoder.watchdog_timeout).value
+                                                         +    where LogicObject(nmea_decoder.watchdog_timeout) = HierarchyObject(nmea_decoder).watchdog_timeout
+ 26910.00ns INFO     cocotb.regression                  *********************************************************************************************
+                                                        ** TEST                                 STATUS  SIM TIME (ns)  REAL TIME (s)  RATIO (ns/s) **
+                                                        *********************************************************************************************
+                                                        ** test_nmea_decoder.test_nmea_decoder   FAIL       26910.00           0.28      97815.59  **
+                                                        *********************************************************************************************
+                                                        ** TESTS=1 PASS=0 FAIL=1 SKIP=0                     26910.00           0.29      94089.10  **
+                                                        *********************************************************************************************
+                                                        
+FST info: dumpfile /code/sim_build/nmea_decoder.fst opened for output.
+FAILED
+
+=================================== FAILURES ===================================
+______________________________ test_areg_param[0] ______________________________
+
+test = 0
+
+    @pytest.mark.parametrize("test", range(2))
+    def test_areg_param(test):
+>           runner()
+
+src/test_runner.py:29: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+plusargs = [], parameter = {}
+
+    def runner(plusargs=[], parameter={}):
+        runner = get_runner(sim)
+        runner.build(
+            sources=verilog_sources,
+            hdl_toplevel=toplevel,
+            # Arguments
+            parameters=parameter,
+            always=True,
+            clean=True,
+            waves=wave,
+            verbose=True,
+            timescale=("1ns", "1ns"),
+            log_file="sim.log")
+>       runner.test(hdl_toplevel=toplevel, test_module=module, waves=wave, plusargs=plusargs)
+E       SystemExit: ERROR: Failed 1 of 1 tests.
+
+src/test_runner.py:24: SystemExit
+------------------------------ Captured log call -------------------------------
+INFO     Icarus:runner.py:468 Running command iverilog -o /code/sim_build/sim.vvp -s nmea_decoder -g2012 -s cocotb_iverilog_dump -f /code/sim_build/cmds.f /code/rtl/nmea_decoder.sv /code/sim_build/cocotb_iverilog_dump.v in directory /code/sim_build
+INFO     Icarus:runner.py:468 Running command vvp -M /usr/local/lib/python3.9/dist-packages/cocotb/libs -m libcocotbvpi_icarus /code/sim_build/sim.vvp -fst in directory /code/sim_build
+______________________________ test_areg_param[1] ______________________________
+
+test = 1
+
+    @pytest.mark.parametrize("test", range(2))
+    def test_areg_param(test):
+>           runner()
+
+src/test_runner.py:29: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+plusargs = [], parameter = {}
+
+    def runner(plusargs=[], parameter={}):
+        runner = get_runner(sim)
+        runner.build(
+            sources=verilog_sources,
+            hdl_toplevel=toplevel,
+            # Arguments
+            parameters=parameter,
+            always=True,
+            clean=True,
+            waves=wave,
+            verbose=True,
+            timescale=("1ns", "1ns"),
+            log_file="sim.log")
+>       runner.test(hdl_toplevel=toplevel, test_module=module, waves=wave, plusargs=plusargs)
+E       SystemExit: ERROR: Failed 1 of 1 tests.
+
+src/test_runner.py:24: SystemExit
+------------------------------ Captured log call -------------------------------
+INFO     Icarus:runner.py:480 Removing: /code/sim_build
+INFO     Icarus:runner.py:468 Running command iverilog -o /code/sim_build/sim.vvp -s nmea_decoder -g2012 -s cocotb_iverilog_dump -f /code/sim_build/cmds.f /code/rtl/nmea_decoder.sv /code/sim_build/cocotb_iverilog_dump.v in directory /code/sim_build
+INFO     Icarus:runner.py:468 Running command vvp -M /usr/local/lib/python3.9/dist-packages/cocotb/libs -m libcocotbvpi_icarus /code/sim_build/sim.vvp -fst in directory /code/sim_build
+=========================== short test summary info ============================
+FAILED ../src/test_runner.py::test_areg_param[0] - SystemExit: ERROR: Failed ...
+FAILED ../src/test_runner.py::test_areg_param[1] - SystemExit: ERROR: Failed ...
+============================== 2 failed in 1.05s ===============================

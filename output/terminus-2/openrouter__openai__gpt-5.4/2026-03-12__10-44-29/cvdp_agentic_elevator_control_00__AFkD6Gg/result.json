@@ -1,0 +1,125 @@
+{
+    "id": "80c95fb3-bdf3-48d7-9fd0-dd9fef4f3118",
+    "task_name": "cvdp_agentic_elevator_control_0004",
+    "trial_name": "cvdp_agentic_elevator_control_00__AFkD6Gg",
+    "trial_uri": "file:///home/saketh/research/cvdp_benchmark/output/terminus-2/openrouter__openai__gpt-5.4/2026-03-12__10-44-29/cvdp_agentic_elevator_control_00__AFkD6Gg",
+    "task_id": {
+        "path": "/home/saketh/research/cvdp_benchmark/harbor_output/cvdp_agentic_elevator_control_0004"
+    },
+    "source": "cvdp_v1.0.4_agentic_code_generation_no_commercial",
+    "task_checksum": "8930963247e70106cfd7b701400c9bfe7f77aaea0b5f719cb106c4766aa545a5",
+    "config": {
+        "task": {
+            "path": "/home/saketh/research/cvdp_benchmark/harbor_output/cvdp_agentic_elevator_control_0004",
+            "git_url": null,
+            "git_commit_id": null,
+            "overwrite": false,
+            "download_dir": null,
+            "source": "cvdp_v1.0.4_agentic_code_generation_no_commercial"
+        },
+        "trial_name": "cvdp_agentic_elevator_control_00__AFkD6Gg",
+        "trials_dir": "/home/saketh/research/cvdp_benchmark/output/terminus-2/openrouter__openai__gpt-5.4/2026-03-12__10-44-29",
+        "timeout_multiplier": 1.0,
+        "agent_timeout_multiplier": null,
+        "verifier_timeout_multiplier": null,
+        "agent_setup_timeout_multiplier": null,
+        "environment_build_timeout_multiplier": null,
+        "agent": {
+            "name": "terminus-2",
+            "import_path": null,
+            "model_name": "openrouter/openai/gpt-5.4",
+            "override_timeout_sec": null,
+            "override_setup_timeout_sec": null,
+            "max_timeout_sec": null,
+            "kwargs": {},
+            "env": {}
+        },
+        "environment": {
+            "type": "docker",
+            "import_path": null,
+            "force_build": false,
+            "delete": true,
+            "override_cpus": null,
+            "override_memory_mb": null,
+            "override_storage_mb": null,
+            "override_gpus": null,
+            "suppress_override_warnings": false,
+            "kwargs": {}
+        },
+        "verifier": {
+            "override_timeout_sec": null,
+            "max_timeout_sec": null,
+            "disable": false
+        },
+        "artifacts": [],
+        "job_id": "31848c0a-f9dd-4b14-8dd6-c2c77c298761"
+    },
+    "agent_info": {
+        "name": "terminus-2",
+        "version": "2.0.0",
+        "model_info": {
+            "name": "openai/gpt-5.4",
+            "provider": "openrouter"
+        }
+    },
+    "agent_result": {
+        "n_input_tokens": 571688,
+        "n_cache_tokens": 418688,
+        "n_output_tokens": 18488,
+        "cost_usd": null,
+        "rollout_details": [],
+        "metadata": {
+            "n_episodes": 23,
+            "api_request_times_msec": [
+                4158.349990844727,
+                7232.055187225342,
+                5768.316030502319,
+                26967.49758720398,
+                4669.820785522461,
+                5325.887203216553,
+                6823.318004608154,
+                25751.34778022766,
+                6084.683418273926,
+                9142.499685287476,
+                25656.289100646973,
+                5923.223257064819,
+                7567.054986953735,
+                6269.774675369263,
+                18637.600421905518,
+                25207.799673080444,
+                11539.684057235718,
+                10123.37613105774,
+                31728.166818618774,
+                7208.012580871582,
+                9640.946865081787,
+                3173.9566326141357,
+                3139.4760608673096
+            ],
+            "summarization_count": 0
+        }
+    },
+    "verifier_result": {
+        "rewards": {
+            "reward": 1.0
+        }
+    },
+    "exception_info": null,
+    "started_at": "2026-03-12T14:59:34.456975Z",
+    "finished_at": "2026-03-12T15:07:12.202183Z",
+    "environment_setup": {
+        "started_at": "2026-03-12T14:59:34.457895Z",
+        "finished_at": "2026-03-12T14:59:36.840692Z"
+    },
+    "agent_setup": {
+        "started_at": "2026-03-12T14:59:36.840699Z",
+        "finished_at": "2026-03-12T14:59:42.029828Z"
+    },
+    "agent_execution": {
+        "started_at": "2026-03-12T14:59:42.029855Z",
+        "finished_at": "2026-03-12T15:07:00.386509Z"
+    },
+    "verifier": {
+        "started_at": "2026-03-12T15:07:00.386567Z",
+        "finished_at": "2026-03-12T15:07:01.717050Z"
+    }
+}

@@ -1,0 +1,140 @@
+Running service: tb
+============================= test session starts ==============================
+platform linux -- Python 3.9.2, pytest-8.3.2, pluggy-1.5.0 -- /usr/bin/python3
+cachedir: /rundir/harness/.cache
+rootdir: /src
+collecting ... collected 5 items
+
+../../src/test_runner.py::test_bst[6-5]      -.--ns INFO     gpi                                ..mbed/gpi_embed.cpp:79   in set_program_name_in_venv        Did not detect Python virtual environment. Using system-wide Python interpreter
+     -.--ns INFO     gpi                                ../gpi/GpiCommon.cpp:101  in gpi_print_registered_impl       VPI registered
+     0.00ns INFO     cocotb                             Running on Icarus Verilog version 13.0 (devel)
+     0.00ns INFO     cocotb                             Running tests with cocotb v2.0.0.dev0+8d6c1a63 from /usr/local/lib/python3.9/dist-packages/cocotb
+     0.00ns INFO     cocotb                             Seeding Python random module with 1773327739
+     0.00ns INFO     cocotb.regression                  running test_bst_operations.test_bst_operations (1/1)
+   535.00ns INFO     cocotb                             [SEARCH (largest key)] Operation complete in 46 cycles
+   535.00ns INFO     cocotb                             [SEARCH (largest key)] out_keys: 000101111101000000010100000001
+   535.00ns INFO     cocotb                             [SEARCH (largest key)] out_sorted_data: 111101010100000101000001000000
+output data 1028673600
+key [1, 20, 0, 63, 5]
+left_child [2, 4, 15, 15, 15]
+right_child [1, 15, 15, 15, 15]
+   775.00ns INFO     cocotb                             [DELETE (largest key)] Operation complete in 22 cycles
+   775.00ns INFO     cocotb                             [DELETE (largest key)] out_keys: 000101111111000000010100000001
+   775.00ns INFO     cocotb                             [DELETE (largest key)] out_sorted_data: 111101010100000101000001000000
+   775.00ns INFO     cocotb.regression                  test_bst_operations.test_bst_operations passed
+   775.00ns INFO     cocotb.regression                  *************************************************************************************************
+                                                        ** TEST                                     STATUS  SIM TIME (ns)  REAL TIME (s)  RATIO (ns/s) **
+                                                        *************************************************************************************************
+                                                        ** test_bst_operations.test_bst_operations   PASS         775.00           0.01      72481.67  **
+                                                        *************************************************************************************************
+                                                        ** TESTS=1 PASS=1 FAIL=0 SKIP=0                           775.00           0.02      41449.92  **
+                                                        *************************************************************************************************
+                                                        
+VCD info: dumpfile /code/rundir/sim_build/bst_operations.fst opened for output.
+Running with: DATA_WIDTH = 6, ARRAY_SIZE = 5
+PASSED
+../../src/test_runner.py::test_bst[6-6]      -.--ns INFO     gpi                                ..mbed/gpi_embed.cpp:79   in set_program_name_in_venv        Did not detect Python virtual environment. Using system-wide Python interpreter
+     -.--ns INFO     gpi                                ../gpi/GpiCommon.cpp:101  in gpi_print_registered_impl       VPI registered
+     0.00ns INFO     cocotb                             Running on Icarus Verilog version 13.0 (devel)
+     0.00ns INFO     cocotb                             Running tests with cocotb v2.0.0.dev0+8d6c1a63 from /usr/local/lib/python3.9/dist-packages/cocotb
+     0.00ns INFO     cocotb                             Seeding Python random module with 1773327739
+     0.00ns INFO     cocotb.regression                  running test_bst_operations.test_bst_operations (1/1)
+    95.00ns WARNING  cocotb                             [DELETE (smallest key)] Operation invalid
+    95.00ns INFO     cocotb.regression                  test_bst_operations.test_bst_operations passed
+    95.00ns INFO     cocotb.regression                  *************************************************************************************************
+                                                        ** TEST                                     STATUS  SIM TIME (ns)  REAL TIME (s)  RATIO (ns/s) **
+                                                        *************************************************************************************************
+                                                        ** test_bst_operations.test_bst_operations   PASS          95.00           0.00      40675.67  **
+                                                        *************************************************************************************************
+                                                        ** TESTS=1 PASS=1 FAIL=0 SKIP=0                            95.00           0.01       7117.24  **
+                                                        *************************************************************************************************
+                                                        
+VCD info: dumpfile /code/rundir/sim_build/bst_operations.fst opened for output.
+Running with: DATA_WIDTH = 6, ARRAY_SIZE = 6
+PASSED
+../../src/test_runner.py::test_bst[16-10]      -.--ns INFO     gpi                                ..mbed/gpi_embed.cpp:79   in set_program_name_in_venv        Did not detect Python virtual environment. Using system-wide Python interpreter
+     -.--ns INFO     gpi                                ../gpi/GpiCommon.cpp:101  in gpi_print_registered_impl       VPI registered
+     0.00ns INFO     cocotb                             Running on Icarus Verilog version 13.0 (devel)
+     0.00ns INFO     cocotb                             Running tests with cocotb v2.0.0.dev0+8d6c1a63 from /usr/local/lib/python3.9/dist-packages/cocotb
+     0.00ns INFO     cocotb                             Seeding Python random module with 1773327739
+     0.00ns INFO     cocotb.regression                  running test_bst_operations.test_bst_operations (1/1)
+  1225.00ns INFO     cocotb                             [SEARCH (largest key)] Operation complete in 115 cycles
+  1225.00ns INFO     cocotb                             [SEARCH (largest key)] out_keys: 1010011101111010100001100001100001011101100000100100110010001111000101110100111100010101011011011011101111010000101111101111011111000011101011001110010010010010
+  1225.00ns INFO     cocotb                             [SEARCH (largest key)] out_sorted_data: 1110010010010010110000111010110010111110111101111011101111010000101001110111101010000110000110000101110110000010010011001000111100010111010011110001010101101101
+output data 1304922850224984312018410749308629774641696544109
+key [50092, 65535, 48887, 48080, 5485, 5967, 19599, 23938, 34328, 42874]
+left_child [2, 31, 3, 4, 31, 31, 31, 31, 31, 31]
+right_child [31, 31, 31, 31, 5, 6, 7, 8, 9, 31]
+  1955.00ns INFO     cocotb                             [DELETE (largest key)] Operation complete in 71 cycles
+  1955.00ns INFO     cocotb                             [DELETE (largest key)] out_keys: 1010011101111010100001100001100001011101100000100100110010001111000101110100111100010101011011011011101111010000101111101111011111111111111111111100001110101100
+  1955.00ns INFO     cocotb                             [DELETE (largest key)] out_sorted_data: 1110010010010010110000111010110010111110111101111011101111010000101001110111101010000110000110000101110110000010010011001000111100010111010011110001010101101101
+  1955.00ns INFO     cocotb.regression                  test_bst_operations.test_bst_operations passed
+  1955.00ns INFO     cocotb.regression                  *************************************************************************************************
+                                                        ** TEST                                     STATUS  SIM TIME (ns)  REAL TIME (s)  RATIO (ns/s) **
+                                                        *************************************************************************************************
+                                                        ** test_bst_operations.test_bst_operations   PASS        1955.00           0.03      71469.10  **
+                                                        *************************************************************************************************
+                                                        ** TESTS=1 PASS=1 FAIL=0 SKIP=0                          1955.00           0.04      54178.16  **
+                                                        *************************************************************************************************
+                                                        
+VCD info: dumpfile /code/rundir/sim_build/bst_operations.fst opened for output.
+Running with: DATA_WIDTH = 16, ARRAY_SIZE = 10
+PASSED
+../../src/test_runner.py::test_bst[6-15]      -.--ns INFO     gpi                                ..mbed/gpi_embed.cpp:79   in set_program_name_in_venv        Did not detect Python virtual environment. Using system-wide Python interpreter
+     -.--ns INFO     gpi                                ../gpi/GpiCommon.cpp:101  in gpi_print_registered_impl       VPI registered
+     0.00ns INFO     cocotb                             Running on Icarus Verilog version 13.0 (devel)
+     0.00ns INFO     cocotb                             Running tests with cocotb v2.0.0.dev0+8d6c1a63 from /usr/local/lib/python3.9/dist-packages/cocotb
+     0.00ns INFO     cocotb                             Seeding Python random module with 1773327740
+     0.00ns INFO     cocotb.regression                  running test_bst_operations.test_bst_operations (1/1)
+  2435.00ns INFO     cocotb                             [SEARCH (largest key)] Operation complete in 236 cycles
+  2435.00ns INFO     cocotb                             [SEARCH (largest key)] out_keys: 110010110001110000101111101110101000100011100000011110010101010011010001001111001110001001
+  2435.00ns INFO     cocotb                             [SEARCH (largest key)] out_sorted_data: 110010110001110000101111101110101000100011100000011110010101010011010001001111001110001001
+output data 982180192326005745944687497
+key [9, 14, 15, 17, 19, 21, 30, 32, 35, 40, 46, 47, 48, 49, 63]
+left_child [31, 31, 31, 31, 31, 31, 31, 31, 31, 31, 31, 31, 31, 31, 31]
+right_child [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 31, 31]
+  4175.00ns INFO     cocotb                             [DELETE (largest key)] Operation complete in 172 cycles
+  4175.00ns INFO     cocotb                             [DELETE (largest key)] out_keys: 111111110001110000101111101110101000100011100000011110010101010011010001001111001110001001
+  4175.00ns INFO     cocotb                             [DELETE (largest key)] out_sorted_data: 110010110001110000101111101110101000100011100000011110010101010011010001001111001110001001
+  4175.00ns INFO     cocotb.regression                  test_bst_operations.test_bst_operations passed
+  4175.00ns INFO     cocotb.regression                  *************************************************************************************************
+                                                        ** TEST                                     STATUS  SIM TIME (ns)  REAL TIME (s)  RATIO (ns/s) **
+                                                        *************************************************************************************************
+                                                        ** test_bst_operations.test_bst_operations   PASS        4175.00           0.06      70054.12  **
+                                                        *************************************************************************************************
+                                                        ** TESTS=1 PASS=1 FAIL=0 SKIP=0                          4175.00           0.07      61826.63  **
+                                                        *************************************************************************************************
+                                                        
+VCD info: dumpfile /code/rundir/sim_build/bst_operations.fst opened for output.
+Running with: DATA_WIDTH = 6, ARRAY_SIZE = 15
+PASSED
+../../src/test_runner.py::test_bst[32-15]      -.--ns INFO     gpi                                ..mbed/gpi_embed.cpp:79   in set_program_name_in_venv        Did not detect Python virtual environment. Using system-wide Python interpreter
+     -.--ns INFO     gpi                                ../gpi/GpiCommon.cpp:101  in gpi_print_registered_impl       VPI registered
+     0.00ns INFO     cocotb                             Running on Icarus Verilog version 13.0 (devel)
+     0.00ns INFO     cocotb                             Running tests with cocotb v2.0.0.dev0+8d6c1a63 from /usr/local/lib/python3.9/dist-packages/cocotb
+     0.00ns INFO     cocotb                             Seeding Python random module with 1773327740
+     0.00ns INFO     cocotb.regression                  running test_bst_operations.test_bst_operations (1/1)
+  2435.00ns INFO     cocotb                             [SEARCH (largest key)] Operation complete in 236 cycles
+  2435.00ns INFO     cocotb                             [SEARCH (largest key)] out_keys: 000010111111011010001000100001110000111101110001000000011101111100110000011000000100100011001100001110010000000000010000101010100011101011011111010011101000000100111111000001111000100100111101010101001111000110000001001011110101101000100101011001111101101010000000100100111111010011101101100010100111010010101100100001111001111111101100001110100101000110101101111100110110111001100010101100011100010011101011100110111101001001110000100111000110011011010110100010010011011110001101
+  2435.00ns INFO     cocotb                             [SEARCH (largest key)] out_sorted_data: 110101101000100100110111100011011101001001110000100111000110011010110001110001001110101110011011101011011111001101101110011000101001111111101100001110100101000110001010011101001010110010000111100000001001001111110100111011010101101000100101011001111101101001010100111100011000000100101111001111110000011110001001001111010011101011011111010011101000000100111001000000000001000010101010001100000110000001001000110011000000111101110001000000011101111100001011111101101000100010000111
+output data 2616122887811811640919767415677981666293637030032010132864218741686692339586268363402416233760537437984014577227768921690025832052168956346534023
+key [3530595430, 4294967295, 2982472603, 2918411874, 2683058769, 2322902151, 2157180141, 1512400858, 1425113391, 1057458493, 987713153, 956305578, 811616460, 259064287, 200706183]
+left_child [2, 31, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 31]
+right_child [31, 31, 31, 31, 31, 31, 31, 31, 31, 31, 31, 31, 31, 31, 31]
+  3905.00ns INFO     cocotb                             [DELETE (largest key)] Operation complete in 145 cycles
+  3905.00ns INFO     cocotb                             [DELETE (largest key)] out_keys: 000010111111011010001000100001110000111101110001000000011101111100110000011000000100100011001100001110010000000000010000101010100011101011011111010011101000000100111111000001111000100100111101010101001111000110000001001011110101101000100101011001111101101010000000100100111111010011101101100010100111010010101100100001111001111111101100001110100101000110101101111100110110111001100010101100011100010011101011100110111111111111111111111111111111111111010010011100001001110001100110
+  3905.00ns INFO     cocotb                             [DELETE (largest key)] out_sorted_data: 110101101000100100110111100011011101001001110000100111000110011010110001110001001110101110011011101011011111001101101110011000101001111111101100001110100101000110001010011101001010110010000111100000001001001111110100111011010101101000100101011001111101101001010100111100011000000100101111001111110000011110001001001111010011101011011111010011101000000100111001000000000001000010101010001100000110000001001000110011000000111101110001000000011101111100001011111101101000100010000111
+  3905.00ns INFO     cocotb.regression                  test_bst_operations.test_bst_operations passed
+  3905.00ns INFO     cocotb.regression                  *************************************************************************************************
+                                                        ** TEST                                     STATUS  SIM TIME (ns)  REAL TIME (s)  RATIO (ns/s) **
+                                                        *************************************************************************************************
+                                                        ** test_bst_operations.test_bst_operations   PASS        3905.00           0.06      61944.78  **
+                                                        *************************************************************************************************
+                                                        ** TESTS=1 PASS=1 FAIL=0 SKIP=0                          3905.00           0.07      53871.82  **
+                                                        *************************************************************************************************
+                                                        
+VCD info: dumpfile /code/rundir/sim_build/bst_operations.fst opened for output.
+Running with: DATA_WIDTH = 32, ARRAY_SIZE = 15
+PASSED
+
+============================== 5 passed in 1.06s ===============================

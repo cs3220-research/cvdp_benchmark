@@ -1,0 +1,129 @@
+Running service: direct
+============================= test session starts ==============================
+platform linux -- Python 3.9.2, pytest-8.3.2, pluggy-1.5.0 -- /usr/bin/python3
+cachedir: /code/rundir/.cache
+rootdir: /src
+collecting ... collected 1 item
+
+../../src/test_runner.py::test_runner      -.--ns INFO     gpi                                ..mbed/gpi_embed.cpp:79   in set_program_name_in_venv        Did not detect Python virtual environment. Using system-wide Python interpreter
+     -.--ns INFO     gpi                                ../gpi/GpiCommon.cpp:101  in gpi_print_registered_impl       VPI registered
+     0.00ns INFO     cocotb                             Running on Icarus Verilog version 13.0 (devel)
+     0.00ns INFO     cocotb                             Running tests with cocotb v2.0.0.dev0+8d6c1a63 from /usr/local/lib/python3.9/dist-packages/cocotb
+     0.00ns INFO     cocotb                             Seeding Python random module with 1773277676
+     0.00ns INFO     cocotb.regression                  running test_rgb_color_space_hsv.test_rgb_to_hsv (1/7)
+                                                            Test predefined RGB inputs and compare HSV outputs with expected values.
+     0.00ns INFO     cocotb.regression                  test_rgb_color_space_hsv.test_rgb_to_hsv failed
+                                                        Traceback (most recent call last):
+                                                          File "/src/test_rgb_color_space_hsv.py", line 133, in test_rgb_to_hsv
+                                                            await initialize_dut(dut)  # Ensure RAM is initialized
+                                                          File "/src/test_rgb_color_space_hsv.py", line 30, in initialize_dut
+                                                            dut.rst.value = 1
+                                                          File "/usr/local/lib/python3.9/dist-packages/cocotb/handle.py", line 450, in __getattr__
+                                                            raise AttributeError(str(e)) from None
+                                                        AttributeError: 'rgb_color_space_hsv contains no child object named rst'
+     0.00ns INFO     cocotb.regression                  running test_rgb_color_space_hsv.test_rgb_to_hsv_random (2/7)
+                                                            Test random RGB inputs and compare HSV outputs with expected values.
+     1.00ns INFO     cocotb.regression                  test_rgb_color_space_hsv.test_rgb_to_hsv_random failed
+                                                        Traceback (most recent call last):
+                                                          File "/src/test_rgb_color_space_hsv.py", line 164, in test_rgb_to_hsv_random
+                                                            await initialize_dut(dut)  # Ensure RAM is initialized
+                                                          File "/src/test_rgb_color_space_hsv.py", line 30, in initialize_dut
+                                                            dut.rst.value = 1
+                                                          File "/usr/local/lib/python3.9/dist-packages/cocotb/handle.py", line 450, in __getattr__
+                                                            raise AttributeError(str(e)) from None
+                                                        AttributeError: 'rgb_color_space_hsv contains no child object named rst'
+     1.00ns INFO     cocotb.regression                  running test_rgb_color_space_hsv.test_rgb_to_hsv_random_r_max (3/7)
+                                                            Test random RGB inputs where R is the maximum value.
+     2.00ns INFO     cocotb.regression                  test_rgb_color_space_hsv.test_rgb_to_hsv_random_r_max failed
+                                                        Traceback (most recent call last):
+                                                          File "/src/test_rgb_color_space_hsv.py", line 182, in test_rgb_to_hsv_random_r_max
+                                                            await initialize_dut(dut)  # Ensure RAM is initialized
+                                                          File "/src/test_rgb_color_space_hsv.py", line 30, in initialize_dut
+                                                            dut.rst.value = 1
+                                                          File "/usr/local/lib/python3.9/dist-packages/cocotb/handle.py", line 450, in __getattr__
+                                                            raise AttributeError(str(e)) from None
+                                                        AttributeError: 'rgb_color_space_hsv contains no child object named rst'
+     2.00ns INFO     cocotb.regression                  running test_rgb_color_space_hsv.test_rgb_to_hsv_random_g_max (4/7)
+                                                            Test random RGB inputs where G is the maximum value.
+     3.00ns INFO     cocotb.regression                  test_rgb_color_space_hsv.test_rgb_to_hsv_random_g_max failed
+                                                        Traceback (most recent call last):
+                                                          File "/src/test_rgb_color_space_hsv.py", line 200, in test_rgb_to_hsv_random_g_max
+                                                            await initialize_dut(dut)  # Ensure RAM is initialized
+                                                          File "/src/test_rgb_color_space_hsv.py", line 30, in initialize_dut
+                                                            dut.rst.value = 1
+                                                          File "/usr/local/lib/python3.9/dist-packages/cocotb/handle.py", line 450, in __getattr__
+                                                            raise AttributeError(str(e)) from None
+                                                        AttributeError: 'rgb_color_space_hsv contains no child object named rst'
+     3.00ns INFO     cocotb.regression                  running test_rgb_color_space_hsv.test_rgb_to_hsv_random_b_max (5/7)
+                                                            Test random RGB inputs where B is the maximum value.
+     4.00ns INFO     cocotb.regression                  test_rgb_color_space_hsv.test_rgb_to_hsv_random_b_max failed
+                                                        Traceback (most recent call last):
+                                                          File "/src/test_rgb_color_space_hsv.py", line 218, in test_rgb_to_hsv_random_b_max
+                                                            await initialize_dut(dut)  # Ensure RAM is initialized
+                                                          File "/src/test_rgb_color_space_hsv.py", line 30, in initialize_dut
+                                                            dut.rst.value = 1
+                                                          File "/usr/local/lib/python3.9/dist-packages/cocotb/handle.py", line 450, in __getattr__
+                                                            raise AttributeError(str(e)) from None
+                                                        AttributeError: 'rgb_color_space_hsv contains no child object named rst'
+     4.00ns INFO     cocotb.regression                  running test_rgb_color_space_hsv.test_rgb_to_hsv_max_min_same (6/7)
+                                                            Test RGB inputs where max and min values are the same (grayscale colors).
+     5.00ns INFO     cocotb.regression                  test_rgb_color_space_hsv.test_rgb_to_hsv_max_min_same failed
+                                                        Traceback (most recent call last):
+                                                          File "/src/test_rgb_color_space_hsv.py", line 235, in test_rgb_to_hsv_max_min_same
+                                                            await initialize_dut(dut)  # Ensure RAM is initialized
+                                                          File "/src/test_rgb_color_space_hsv.py", line 30, in initialize_dut
+                                                            dut.rst.value = 1
+                                                          File "/usr/local/lib/python3.9/dist-packages/cocotb/handle.py", line 450, in __getattr__
+                                                            raise AttributeError(str(e)) from None
+                                                        AttributeError: 'rgb_color_space_hsv contains no child object named rst'
+     5.00ns INFO     cocotb.regression                  running test_rgb_color_space_hsv.test_reset_outputs_zero (7/7)
+                                                            Verify that outputs are 0 after reset.
+     6.00ns INFO     cocotb.regression                  test_rgb_color_space_hsv.test_reset_outputs_zero failed
+                                                        Traceback (most recent call last):
+                                                          File "/src/test_rgb_color_space_hsv.py", line 253, in test_reset_outputs_zero
+                                                            await initialize_dut(dut)  # Ensure RAM is initialized and reset is applied
+                                                          File "/src/test_rgb_color_space_hsv.py", line 30, in initialize_dut
+                                                            dut.rst.value = 1
+                                                          File "/usr/local/lib/python3.9/dist-packages/cocotb/handle.py", line 450, in __getattr__
+                                                            raise AttributeError(str(e)) from None
+                                                        AttributeError: 'rgb_color_space_hsv contains no child object named rst'
+     6.00ns INFO     cocotb.regression                  ***************************************************************************************************************
+                                                        ** TEST                                                   STATUS  SIM TIME (ns)  REAL TIME (s)  RATIO (ns/s) **
+                                                        ***************************************************************************************************************
+                                                        ** test_rgb_color_space_hsv.test_rgb_to_hsv                FAIL           0.00           0.00          0.00  **
+                                                        ** test_rgb_color_space_hsv.test_rgb_to_hsv_random         FAIL           1.00           0.00       2480.37  **
+                                                        ** test_rgb_color_space_hsv.test_rgb_to_hsv_random_r_max   FAIL           1.00           0.00      13315.25  **
+                                                        ** test_rgb_color_space_hsv.test_rgb_to_hsv_random_g_max   FAIL           1.00           0.00      16320.25  **
+                                                        ** test_rgb_color_space_hsv.test_rgb_to_hsv_random_b_max   FAIL           1.00           0.00      16578.28  **
+                                                        ** test_rgb_color_space_hsv.test_rgb_to_hsv_max_min_same   FAIL           1.00           0.00      11748.75  **
+                                                        ** test_rgb_color_space_hsv.test_reset_outputs_zero        FAIL           1.00           0.00      16448.25  **
+                                                        ***************************************************************************************************************
+                                                        ** TESTS=7 PASS=0 FAIL=7 SKIP=0                                           6.00           0.01        744.64  **
+                                                        ***************************************************************************************************************
+                                                        
+FST info: dumpfile /code/rundir/sim_build/rgb_color_space_hsv.fst opened for output.
+FAILED
+
+=================================== FAILURES ===================================
+_________________________________ test_runner __________________________________
+
+    def test_runner():
+        runner = get_runner(sim)
+    
+        runner.build(
+            sources=verilog_sources,
+            hdl_toplevel=toplevel,
+            always=True,
+            clean=True,
+            waves=True,
+            verbose=True,
+            timescale=("1ns", "1ns"),
+            log_file="sim.log"
+        )
+>       runner.test(hdl_toplevel=toplevel, test_module=module,waves=True)
+E       SystemExit: ERROR: Failed 7 of 7 tests.
+
+/src/test_runner.py:27: SystemExit
+=========================== short test summary info ============================
+FAILED ../../src/test_runner.py::test_runner - SystemExit: ERROR: Failed 7 of...
+============================== 1 failed in 0.18s ===============================

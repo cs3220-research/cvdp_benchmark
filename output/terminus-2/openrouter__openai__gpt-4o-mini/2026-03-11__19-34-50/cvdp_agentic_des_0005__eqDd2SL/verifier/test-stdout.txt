@@ -1,0 +1,63 @@
+Running service: sanity
+============================= test session starts ==============================
+platform linux -- Python 3.9.2, pytest-8.3.2, pluggy-1.5.0 -- /usr/bin/python3
+cachedir: /rundir/harness/.cache
+rootdir: /src
+collecting ... collected 1 item
+
+../../src/test_runner.py::test_data      -.--ns INFO     gpi                                ..mbed/gpi_embed.cpp:79   in set_program_name_in_venv        Did not detect Python virtual environment. Using system-wide Python interpreter
+     -.--ns INFO     gpi                                ../gpi/GpiCommon.cpp:101  in gpi_print_registered_impl       VPI registered
+     0.00ns INFO     cocotb                             Running on Icarus Verilog version 13.0 (devel)
+     0.00ns INFO     cocotb                             Running tests with cocotb v2.0.0.dev0+8d6c1a63 from /usr/local/lib/python3.9/dist-packages/cocotb
+     0.00ns INFO     cocotb                             Seeding Python random module with 1773273306
+     0.00ns INFO     cocotb.regression                  running test_des3_enc.test_des3_enc (1/1)
+                                                            Test the des3_enc module with edge cases and random data.
+   345.00ns INFO     cocotb.regression                  test_des3_enc.test_des3_enc failed
+                                                        Traceback (most recent call last):
+                                                          File "/src/test_des3_enc.py", line 70, in test_des3_enc
+                                                            assert latency_counter == 48, f"[ERROR] DUT latency must be 48 clock cycles"
+                                                        AssertionError: [ERROR] DUT latency must be 48 clock cycles
+                                                        assert 33 == 48
+   345.00ns INFO     cocotb.regression                  **************************************************************************************
+                                                        ** TEST                          STATUS  SIM TIME (ns)  REAL TIME (s)  RATIO (ns/s) **
+                                                        **************************************************************************************
+                                                        ** test_des3_enc.test_des3_enc    FAIL         345.00           0.03      11109.50  **
+                                                        **************************************************************************************
+                                                        ** TESTS=1 PASS=0 FAIL=1 SKIP=0                345.00           0.04       9185.13  **
+                                                        **************************************************************************************
+                                                        
+FST info: dumpfile /code/rundir/sim_build/des3_enc.fst opened for output.
+FAILED
+
+=================================== FAILURES ===================================
+__________________________________ test_data ___________________________________
+
+    def test_data():
+        # Run the simulation with specified parameters
+>       runner()
+
+/src/test_runner.py:35: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+    def runner():
+        # Configure and run the simulation
+        sim_runner = get_runner(sim)
+        sim_runner.build(
+            sources=verilog_sources,
+            hdl_toplevel=toplevel,
+            always=True,
+            clean=True,
+            waves=wave,
+            verbose=True,
+            timescale=("1ns", "1ns"),
+            log_file="sim.log"
+        )
+    
+        # Run the test
+>       sim_runner.test(hdl_toplevel=toplevel, test_module=module, waves=True)
+E       SystemExit: ERROR: Failed 1 of 1 tests.
+
+/src/test_runner.py:30: SystemExit
+=========================== short test summary info ============================
+FAILED ../../src/test_runner.py::test_data - SystemExit: ERROR: Failed 1 of 1...
+============================== 1 failed in 0.52s ===============================

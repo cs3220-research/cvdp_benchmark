@@ -1,0 +1,237 @@
+Running service: direct
+============================= test session starts ==============================
+platform linux -- Python 3.9.2, pytest-8.3.2, pluggy-1.5.0 -- /usr/bin/python3
+cachedir: /code/rundir/.cache
+rootdir: /src
+collecting ... collected 1 item
+
+../../src/test_runner.py::test_runner      -.--ns INFO     gpi                                ..mbed/gpi_embed.cpp:79   in set_program_name_in_venv        Did not detect Python virtual environment. Using system-wide Python interpreter
+     -.--ns INFO     gpi                                ../gpi/GpiCommon.cpp:101  in gpi_print_registered_impl       VPI registered
+     0.00ns INFO     cocotb                             Running on Icarus Verilog version 13.0 (devel)
+     0.00ns INFO     cocotb                             Running tests with cocotb v2.0.0.dev0+8d6c1a63 from /usr/local/lib/python3.9/dist-packages/cocotb
+     0.00ns INFO     cocotb                             Seeding Python random module with 1773326717
+     0.00ns INFO     cocotb.regression                  running test_top_64b66b_codec.top_reset_test (1/16)
+                                                            Test the reset behavior of the decoder 
+     0.00ns INFO     cocotb.regression                  test_top_64b66b_codec.top_reset_test failed
+                                                        Traceback (most recent call last):
+                                                          File "/src/test_top_64b66b_codec.py", line 69, in top_reset_test
+                                                            await dut_initialization(dut)
+                                                          File "/src/test_top_64b66b_codec.py", line 10, in dut_initialization
+                                                            dut.dec_data_valid_in.value = 0
+                                                          File "/usr/local/lib/python3.9/dist-packages/cocotb/handle.py", line 450, in __getattr__
+                                                            raise AttributeError(str(e)) from None
+                                                        AttributeError: 'top_64b66b_codec contains no child object named dec_data_valid_in'
+     0.00ns INFO     cocotb.regression                  running test_top_64b66b_codec.encoder_fixed_pattern_test (2/16)
+                                                            Test encoding when all data octets are pure data 
+     1.00ns INFO     cocotb.regression                  test_top_64b66b_codec.encoder_fixed_pattern_test failed
+                                                        Traceback (most recent call last):
+                                                          File "/src/test_top_64b66b_codec.py", line 95, in encoder_fixed_pattern_test
+                                                            await dut_initialization(dut)
+                                                          File "/src/test_top_64b66b_codec.py", line 10, in dut_initialization
+                                                            dut.dec_data_valid_in.value = 0
+                                                          File "/usr/local/lib/python3.9/dist-packages/cocotb/handle.py", line 450, in __getattr__
+                                                            raise AttributeError(str(e)) from None
+                                                        AttributeError: 'top_64b66b_codec contains no child object named dec_data_valid_in'
+     1.00ns INFO     cocotb.regression                  running test_top_64b66b_codec.encoder_control_encoding_test (3/16)
+                                                            Test encoding when control characters are in the last four octets 
+     2.00ns INFO     cocotb.regression                  test_top_64b66b_codec.encoder_control_encoding_test failed
+                                                        Traceback (most recent call last):
+                                                          File "/src/test_top_64b66b_codec.py", line 119, in encoder_control_encoding_test
+                                                            await dut_initialization(dut)
+                                                          File "/src/test_top_64b66b_codec.py", line 10, in dut_initialization
+                                                            dut.dec_data_valid_in.value = 0
+                                                          File "/usr/local/lib/python3.9/dist-packages/cocotb/handle.py", line 450, in __getattr__
+                                                            raise AttributeError(str(e)) from None
+                                                        AttributeError: 'top_64b66b_codec contains no child object named dec_data_valid_in'
+     2.00ns INFO     cocotb.regression                  running test_top_64b66b_codec.encoder_mixed_data_control_test (4/16)
+                                                            Test encoding when control characters are mixed in the data 
+     3.00ns INFO     cocotb.regression                  test_top_64b66b_codec.encoder_mixed_data_control_test failed
+                                                        Traceback (most recent call last):
+                                                          File "/src/test_top_64b66b_codec.py", line 145, in encoder_mixed_data_control_test
+                                                            await dut_initialization(dut)
+                                                          File "/src/test_top_64b66b_codec.py", line 10, in dut_initialization
+                                                            dut.dec_data_valid_in.value = 0
+                                                          File "/usr/local/lib/python3.9/dist-packages/cocotb/handle.py", line 450, in __getattr__
+                                                            raise AttributeError(str(e)) from None
+                                                        AttributeError: 'top_64b66b_codec contains no child object named dec_data_valid_in'
+     3.00ns INFO     cocotb.regression                  running test_top_64b66b_codec.encoder_all_control_symbols_test (5/16)
+                                                            Test encoding when all characters are control 
+     4.00ns INFO     cocotb.regression                  test_top_64b66b_codec.encoder_all_control_symbols_test failed
+                                                        Traceback (most recent call last):
+                                                          File "/src/test_top_64b66b_codec.py", line 173, in encoder_all_control_symbols_test
+                                                            await dut_initialization(dut)
+                                                          File "/src/test_top_64b66b_codec.py", line 10, in dut_initialization
+                                                            dut.dec_data_valid_in.value = 0
+                                                          File "/usr/local/lib/python3.9/dist-packages/cocotb/handle.py", line 450, in __getattr__
+                                                            raise AttributeError(str(e)) from None
+                                                        AttributeError: 'top_64b66b_codec contains no child object named dec_data_valid_in'
+     4.00ns INFO     cocotb.regression                  running test_top_64b66b_codec.encoder_random_data_control_test (6/16)
+                                                            Test encoding with random data and control inputs 
+     5.00ns INFO     cocotb.regression                  test_top_64b66b_codec.encoder_random_data_control_test failed
+                                                        Traceback (most recent call last):
+                                                          File "/src/test_top_64b66b_codec.py", line 200, in encoder_random_data_control_test
+                                                            await dut_initialization(dut)
+                                                          File "/src/test_top_64b66b_codec.py", line 10, in dut_initialization
+                                                            dut.dec_data_valid_in.value = 0
+                                                          File "/usr/local/lib/python3.9/dist-packages/cocotb/handle.py", line 450, in __getattr__
+                                                            raise AttributeError(str(e)) from None
+                                                        AttributeError: 'top_64b66b_codec contains no child object named dec_data_valid_in'
+     5.00ns INFO     cocotb.regression                  running test_top_64b66b_codec.encoder_random_data_only_test (7/16)
+                                                            Test encoding with random data and control inputs 
+     6.00ns INFO     cocotb.regression                  test_top_64b66b_codec.encoder_random_data_only_test failed
+                                                        Traceback (most recent call last):
+                                                          File "/src/test_top_64b66b_codec.py", line 238, in encoder_random_data_only_test
+                                                            await dut_initialization(dut)
+                                                          File "/src/test_top_64b66b_codec.py", line 10, in dut_initialization
+                                                            dut.dec_data_valid_in.value = 0
+                                                          File "/usr/local/lib/python3.9/dist-packages/cocotb/handle.py", line 450, in __getattr__
+                                                            raise AttributeError(str(e)) from None
+                                                        AttributeError: 'top_64b66b_codec contains no child object named dec_data_valid_in'
+     6.00ns INFO     cocotb.regression                  running test_top_64b66b_codec.encoder_test_all_control_combinations (8/16)
+                                                            Cocotb test for 64b/66b encoder with full test cases and expected outputs
+     7.00ns INFO     cocotb.regression                  test_top_64b66b_codec.encoder_test_all_control_combinations failed
+                                                        Traceback (most recent call last):
+                                                          File "/src/test_top_64b66b_codec.py", line 275, in encoder_test_all_control_combinations
+                                                            await dut_initialization(dut)
+                                                          File "/src/test_top_64b66b_codec.py", line 10, in dut_initialization
+                                                            dut.dec_data_valid_in.value = 0
+                                                          File "/usr/local/lib/python3.9/dist-packages/cocotb/handle.py", line 450, in __getattr__
+                                                            raise AttributeError(str(e)) from None
+                                                        AttributeError: 'top_64b66b_codec contains no child object named dec_data_valid_in'
+     7.00ns INFO     cocotb.regression                  running test_top_64b66b_codec.encoder_test_all_octets_control (9/16)
+                                                            Cocotb test for 64b/66b encoder with full test cases and expected outputs
+     8.00ns INFO     cocotb.regression                  test_top_64b66b_codec.encoder_test_all_octets_control failed
+                                                        Traceback (most recent call last):
+                                                          File "/src/test_top_64b66b_codec.py", line 339, in encoder_test_all_octets_control
+                                                            await dut_initialization(dut)
+                                                          File "/src/test_top_64b66b_codec.py", line 10, in dut_initialization
+                                                            dut.dec_data_valid_in.value = 0
+                                                          File "/usr/local/lib/python3.9/dist-packages/cocotb/handle.py", line 450, in __getattr__
+                                                            raise AttributeError(str(e)) from None
+                                                        AttributeError: 'top_64b66b_codec contains no child object named dec_data_valid_in'
+     8.00ns INFO     cocotb.regression                  running test_top_64b66b_codec.encoder_test_mixed_data_control_octets (10/16)
+                                                            Cocotb test for 64b/66b encoder with full test cases and expected outputs
+     9.00ns INFO     cocotb.regression                  test_top_64b66b_codec.encoder_test_mixed_data_control_octets failed
+                                                        Traceback (most recent call last):
+                                                          File "/src/test_top_64b66b_codec.py", line 390, in encoder_test_mixed_data_control_octets
+                                                            await dut_initialization(dut)
+                                                          File "/src/test_top_64b66b_codec.py", line 10, in dut_initialization
+                                                            dut.dec_data_valid_in.value = 0
+                                                          File "/usr/local/lib/python3.9/dist-packages/cocotb/handle.py", line 450, in __getattr__
+                                                            raise AttributeError(str(e)) from None
+                                                        AttributeError: 'top_64b66b_codec contains no child object named dec_data_valid_in'
+     9.00ns INFO     cocotb.regression                  running test_top_64b66b_codec.decoder_random_any_sync_header_data_test (11/16)
+                                                            Test decoding with random sync headers and data 
+    10.00ns INFO     cocotb.regression                  test_top_64b66b_codec.decoder_random_any_sync_header_data_test failed
+                                                        Traceback (most recent call last):
+                                                          File "/src/test_top_64b66b_codec.py", line 453, in decoder_random_any_sync_header_data_test
+                                                            await dut_initialization(dut)
+                                                          File "/src/test_top_64b66b_codec.py", line 10, in dut_initialization
+                                                            dut.dec_data_valid_in.value = 0
+                                                          File "/usr/local/lib/python3.9/dist-packages/cocotb/handle.py", line 450, in __getattr__
+                                                            raise AttributeError(str(e)) from None
+                                                        AttributeError: 'top_64b66b_codec contains no child object named dec_data_valid_in'
+    10.00ns INFO     cocotb.regression                  running test_top_64b66b_codec.decoder_random_valid_data_test (12/16)
+                                                            Test decoding with random sync headers and data 
+    11.00ns INFO     cocotb.regression                  test_top_64b66b_codec.decoder_random_valid_data_test failed
+                                                        Traceback (most recent call last):
+                                                          File "/src/test_top_64b66b_codec.py", line 484, in decoder_random_valid_data_test
+                                                            await dut_initialization(dut)
+                                                          File "/src/test_top_64b66b_codec.py", line 10, in dut_initialization
+                                                            dut.dec_data_valid_in.value = 0
+                                                          File "/usr/local/lib/python3.9/dist-packages/cocotb/handle.py", line 450, in __getattr__
+                                                            raise AttributeError(str(e)) from None
+                                                        AttributeError: 'top_64b66b_codec contains no child object named dec_data_valid_in'
+    11.00ns INFO     cocotb.regression                  running test_top_64b66b_codec.decoder_control_only_test (13/16)
+                                                            Test decoding for control-only mode 
+    12.00ns INFO     cocotb.regression                  test_top_64b66b_codec.decoder_control_only_test failed
+                                                        Traceback (most recent call last):
+                                                          File "/src/test_top_64b66b_codec.py", line 515, in decoder_control_only_test
+                                                            await dut_initialization(dut)
+                                                          File "/src/test_top_64b66b_codec.py", line 10, in dut_initialization
+                                                            dut.dec_data_valid_in.value = 0
+                                                          File "/usr/local/lib/python3.9/dist-packages/cocotb/handle.py", line 450, in __getattr__
+                                                            raise AttributeError(str(e)) from None
+                                                        AttributeError: 'top_64b66b_codec contains no child object named dec_data_valid_in'
+    12.00ns INFO     cocotb.regression                  running test_top_64b66b_codec.decoder_mixed_mode_test (14/16)
+                                                            Test decoding for mixed mode 
+    13.00ns INFO     cocotb.regression                  test_top_64b66b_codec.decoder_mixed_mode_test failed
+                                                        Traceback (most recent call last):
+                                                          File "/src/test_top_64b66b_codec.py", line 548, in decoder_mixed_mode_test
+                                                            await dut_initialization(dut)
+                                                          File "/src/test_top_64b66b_codec.py", line 10, in dut_initialization
+                                                            dut.dec_data_valid_in.value = 0
+                                                          File "/usr/local/lib/python3.9/dist-packages/cocotb/handle.py", line 450, in __getattr__
+                                                            raise AttributeError(str(e)) from None
+                                                        AttributeError: 'top_64b66b_codec contains no child object named dec_data_valid_in'
+    13.00ns INFO     cocotb.regression                  running test_top_64b66b_codec.decoder_control_mixed_mode_dec_sync_error_test (15/16)
+                                                            Test decoding for mixed mode 
+    14.00ns INFO     cocotb.regression                  test_top_64b66b_codec.decoder_control_mixed_mode_dec_sync_error_test failed
+                                                        Traceback (most recent call last):
+                                                          File "/src/test_top_64b66b_codec.py", line 598, in decoder_control_mixed_mode_dec_sync_error_test
+                                                            await dut_initialization(dut)
+                                                          File "/src/test_top_64b66b_codec.py", line 10, in dut_initialization
+                                                            dut.dec_data_valid_in.value = 0
+                                                          File "/usr/local/lib/python3.9/dist-packages/cocotb/handle.py", line 450, in __getattr__
+                                                            raise AttributeError(str(e)) from None
+                                                        AttributeError: 'top_64b66b_codec contains no child object named dec_data_valid_in'
+    14.00ns INFO     cocotb.regression                  running test_top_64b66b_codec.decoder_control_mixed_mode_decoder_error_test (16/16)
+                                                            Test decoding for mixed mode 
+    15.00ns INFO     cocotb.regression                  test_top_64b66b_codec.decoder_control_mixed_mode_decoder_error_test failed
+                                                        Traceback (most recent call last):
+                                                          File "/src/test_top_64b66b_codec.py", line 639, in decoder_control_mixed_mode_decoder_error_test
+                                                            await dut_initialization(dut)
+                                                          File "/src/test_top_64b66b_codec.py", line 10, in dut_initialization
+                                                            dut.dec_data_valid_in.value = 0
+                                                          File "/usr/local/lib/python3.9/dist-packages/cocotb/handle.py", line 450, in __getattr__
+                                                            raise AttributeError(str(e)) from None
+                                                        AttributeError: 'top_64b66b_codec contains no child object named dec_data_valid_in'
+    15.00ns INFO     cocotb.regression                  ******************************************************************************************************************************
+                                                        ** TEST                                                                  STATUS  SIM TIME (ns)  REAL TIME (s)  RATIO (ns/s) **
+                                                        ******************************************************************************************************************************
+                                                        ** test_top_64b66b_codec.top_reset_test                                   FAIL           0.00           0.00          0.00  **
+                                                        ** test_top_64b66b_codec.encoder_fixed_pattern_test                       FAIL           1.00           0.00       1372.03  **
+                                                        ** test_top_64b66b_codec.encoder_control_encoding_test                    FAIL           1.00           0.00       9446.63  **
+                                                        ** test_top_64b66b_codec.encoder_mixed_data_control_test                  FAIL           1.00           0.00      10034.22  **
+                                                        ** test_top_64b66b_codec.encoder_all_control_symbols_test                 FAIL           1.00           0.00      10255.02  **
+                                                        ** test_top_64b66b_codec.encoder_random_data_control_test                 FAIL           1.00           0.00      10058.28  **
+                                                        ** test_top_64b66b_codec.encoder_random_data_only_test                    FAIL           1.00           0.00       9892.23  **
+                                                        ** test_top_64b66b_codec.encoder_test_all_control_combinations            FAIL           1.00           0.00      10180.35  **
+                                                        ** test_top_64b66b_codec.encoder_test_all_octets_control                  FAIL           1.00           0.00       9731.56  **
+                                                        ** test_top_64b66b_codec.encoder_test_mixed_data_control_octets           FAIL           1.00           0.00       8272.79  **
+                                                        ** test_top_64b66b_codec.decoder_random_any_sync_header_data_test         FAIL           1.00           0.00       8473.34  **
+                                                        ** test_top_64b66b_codec.decoder_random_valid_data_test                   FAIL           1.00           0.00       5017.11  **
+                                                        ** test_top_64b66b_codec.decoder_control_only_test                        FAIL           1.00           0.00       5289.16  **
+                                                        ** test_top_64b66b_codec.decoder_mixed_mode_test                          FAIL           1.00           0.00       9058.97  **
+                                                        ** test_top_64b66b_codec.decoder_control_mixed_mode_dec_sync_error_test   FAIL           1.00           0.00       7256.58  **
+                                                        ** test_top_64b66b_codec.decoder_control_mixed_mode_decoder_error_test    FAIL           1.00           0.00       7530.17  **
+                                                        ******************************************************************************************************************************
+                                                        ** TESTS=16 PASS=0 FAIL=16 SKIP=0                                                       15.00           0.02        603.22  **
+                                                        ******************************************************************************************************************************
+                                                        
+FST info: dumpfile /code/rundir/sim_build/top_64b66b_codec.fst opened for output.
+FAILED
+
+=================================== FAILURES ===================================
+_________________________________ test_runner __________________________________
+
+    def test_runner():
+        runner = get_runner(sim)
+    
+        runner.build(
+            sources=verilog_sources,
+            hdl_toplevel=toplevel,
+            always=True,
+            clean=True,
+            waves=True,
+            verbose=True,
+            timescale=("1ns", "1ns"),
+            log_file="sim.log"
+        )
+>       runner.test(hdl_toplevel=toplevel, test_module=module,waves=True)
+E       SystemExit: ERROR: Failed 16 of 16 tests.
+
+/src/test_runner.py:27: SystemExit
+=========================== short test summary info ============================
+FAILED ../../src/test_runner.py::test_runner - SystemExit: ERROR: Failed 16 o...
+============================== 1 failed in 0.24s ===============================

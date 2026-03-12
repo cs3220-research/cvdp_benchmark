@@ -1,0 +1,140 @@
+{
+    "id": "4169c603-e304-430a-a3bd-bed48597849f",
+    "task_name": "cvdp_agentic_aes_encryption_decryption_0005",
+    "trial_name": "cvdp_agentic_aes_encryption_decr__ksAYjEh",
+    "trial_uri": "file:///home/saketh/research/cvdp_benchmark/output/terminus-2/openrouter__anthropic__claude-opus-4.6/2026-03-12__10-44-45/cvdp_agentic_aes_encryption_decr__ksAYjEh",
+    "task_id": {
+        "path": "/home/saketh/research/cvdp_benchmark/harbor_output/cvdp_agentic_aes_encryption_decryption_0005"
+    },
+    "source": "cvdp_v1.0.4_agentic_code_generation_no_commercial",
+    "task_checksum": "6eebf4ca68911a2a56ae5e9dfccf0bbc36cd4dc67b2dcbc299f0d6d2c74cf419",
+    "config": {
+        "task": {
+            "path": "/home/saketh/research/cvdp_benchmark/harbor_output/cvdp_agentic_aes_encryption_decryption_0005",
+            "git_url": null,
+            "git_commit_id": null,
+            "overwrite": false,
+            "download_dir": null,
+            "source": "cvdp_v1.0.4_agentic_code_generation_no_commercial"
+        },
+        "trial_name": "cvdp_agentic_aes_encryption_decr__ksAYjEh",
+        "trials_dir": "/home/saketh/research/cvdp_benchmark/output/terminus-2/openrouter__anthropic__claude-opus-4.6/2026-03-12__10-44-45",
+        "timeout_multiplier": 1.0,
+        "agent_timeout_multiplier": null,
+        "verifier_timeout_multiplier": null,
+        "agent_setup_timeout_multiplier": null,
+        "environment_build_timeout_multiplier": null,
+        "agent": {
+            "name": "terminus-2",
+            "import_path": null,
+            "model_name": "openrouter/anthropic/claude-opus-4.6",
+            "override_timeout_sec": null,
+            "override_setup_timeout_sec": null,
+            "max_timeout_sec": null,
+            "kwargs": {},
+            "env": {}
+        },
+        "environment": {
+            "type": "docker",
+            "import_path": null,
+            "force_build": false,
+            "delete": true,
+            "override_cpus": null,
+            "override_memory_mb": null,
+            "override_storage_mb": null,
+            "override_gpus": null,
+            "suppress_override_warnings": false,
+            "kwargs": {}
+        },
+        "verifier": {
+            "override_timeout_sec": null,
+            "max_timeout_sec": null,
+            "disable": false
+        },
+        "artifacts": [],
+        "job_id": "1e837cdd-7fdd-4f0f-a767-a87d6fc07400"
+    },
+    "agent_info": {
+        "name": "terminus-2",
+        "version": "2.0.0",
+        "model_info": {
+            "name": "anthropic/claude-opus-4.6",
+            "provider": "openrouter"
+        }
+    },
+    "agent_result": {
+        "n_input_tokens": 1973907,
+        "n_cache_tokens": 1886894,
+        "n_output_tokens": 36258,
+        "cost_usd": null,
+        "rollout_details": [],
+        "metadata": {
+            "n_episodes": 38,
+            "api_request_times_msec": [
+                9938.57741355896,
+                3568.225860595703,
+                3435.2574348449707,
+                4456.910848617554,
+                4848.355054855347,
+                4651.803970336914,
+                5959.7532749176025,
+                4877.797603607178,
+                50617.023229599,
+                56575.63352584839,
+                4988.779544830322,
+                4725.740671157837,
+                8016.494035720825,
+                33561.80143356323,
+                49448.51803779602,
+                8560.863256454468,
+                7699.286937713623,
+                40047.61576652527,
+                49732.26761817932,
+                4652.428150177002,
+                11811.79165840149,
+                37832.2114944458,
+                6686.635494232178,
+                49064.825773239136,
+                6060.7171058654785,
+                14978.278398513794,
+                10814.294815063477,
+                6757.200241088867,
+                4437.493562698364,
+                3490.1068210601807,
+                4725.893497467041,
+                7761.7597579956055,
+                4747.150182723999,
+                3073.9893913269043,
+                3422.621965408325,
+                3874.394178390503,
+                5761.0485553741455,
+                7200.905799865723
+            ],
+            "summarization_count": 0
+        }
+    },
+    "verifier_result": {
+        "rewards": {
+            "reward": 1.0
+        }
+    },
+    "exception_info": null,
+    "started_at": "2026-03-12T14:44:45.547579Z",
+    "finished_at": "2026-03-12T15:01:39.335740Z",
+    "environment_setup": {
+        "started_at": "2026-03-12T14:44:45.548666Z",
+        "finished_at": "2026-03-12T14:44:53.058319Z"
+    },
+    "agent_setup": {
+        "started_at": "2026-03-12T14:44:53.058329Z",
+        "finished_at": "2026-03-12T14:45:00.196581Z"
+    },
+    "agent_execution": {
+        "started_at": "2026-03-12T14:45:00.196606Z",
+        "finished_at": "2026-03-12T14:59:56.631028Z"
+    },
+    "verifier": {
+        "started_at": "2026-03-12T14:59:56.631105Z",
+        "finished_at": "2026-03-12T15:01:28.837038Z"
+    }
+}

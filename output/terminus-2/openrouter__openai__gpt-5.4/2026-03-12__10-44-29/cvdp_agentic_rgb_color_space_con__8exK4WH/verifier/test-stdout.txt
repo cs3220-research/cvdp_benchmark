@@ -1,0 +1,158 @@
+Running service: direct
+============================= test session starts ==============================
+platform linux -- Python 3.9.2, pytest-8.3.2, pluggy-1.5.0 -- /usr/bin/python3
+cachedir: /code/rundir/.cache
+rootdir: /src
+collecting ... collected 1 item
+
+../../src/test_runner.py::test_runner      -.--ns INFO     gpi                                ..mbed/gpi_embed.cpp:79   in set_program_name_in_venv        Did not detect Python virtual environment. Using system-wide Python interpreter
+     -.--ns INFO     gpi                                ../gpi/GpiCommon.cpp:101  in gpi_print_registered_impl       VPI registered
+     0.00ns INFO     cocotb                             Running on Icarus Verilog version 13.0 (devel)
+     0.00ns INFO     cocotb                             Running tests with cocotb v2.0.0.dev0+8d6c1a63 from /usr/local/lib/python3.9/dist-packages/cocotb
+     0.00ns INFO     cocotb                             Seeding Python random module with 1773328758
+     0.00ns INFO     cocotb.regression                  running test_rgb_color_space_hsv.test_rgb_to_hsv (1/7)
+                                                            Test predefined RGB inputs and compare HSV outputs with expected values.
+  2670.00ns INFO     cocotb.regression                  test_rgb_color_space_hsv.test_rgb_to_hsv failed
+                                                        Traceback (most recent call last):
+                                                          File "/src/test_rgb_color_space_hsv.py", line 158, in test_rgb_to_hsv
+                                                            await compare_rgb_to_hsv(dut, r, g, b)
+                                                          File "/src/test_rgb_color_space_hsv.py", line 106, in compare_rgb_to_hsv
+                                                            h_out, s_out, v_out = await apply_rgb_input(dut, r, g, b)
+                                                          File "/src/test_rgb_color_space_hsv.py", line 66, in apply_rgb_input
+                                                            h_out = int(dut.h_component.value)
+                                                          File "/usr/local/lib/python3.9/dist-packages/cocotb/types/logic_array.py", line 478, in __int__
+                                                            return self.to_unsigned()
+                                                          File "/usr/local/lib/python3.9/dist-packages/cocotb/types/logic_array.py", line 379, in to_unsigned
+                                                            value = value << 1 | int(bit)
+                                                          File "/usr/local/lib/python3.9/dist-packages/cocotb/types/logic.py", line 243, in __int__
+                                                            raise ValueError(f"Cannot convert {self!r} to int")
+                                                        ValueError: Cannot convert Logic('X') to int
+  2670.00ns INFO     cocotb.regression                  running test_rgb_color_space_hsv.test_rgb_to_hsv_random (2/7)
+                                                            Test random RGB inputs and compare HSV outputs with expected values.
+  5351.00ns INFO     cocotb.regression                  test_rgb_color_space_hsv.test_rgb_to_hsv_random failed
+                                                        Traceback (most recent call last):
+                                                          File "/src/test_rgb_color_space_hsv.py", line 176, in test_rgb_to_hsv_random
+                                                            await compare_rgb_to_hsv(dut, random_r, random_g, random_b)
+                                                          File "/src/test_rgb_color_space_hsv.py", line 106, in compare_rgb_to_hsv
+                                                            h_out, s_out, v_out = await apply_rgb_input(dut, r, g, b)
+                                                          File "/src/test_rgb_color_space_hsv.py", line 66, in apply_rgb_input
+                                                            h_out = int(dut.h_component.value)
+                                                          File "/usr/local/lib/python3.9/dist-packages/cocotb/types/logic_array.py", line 478, in __int__
+                                                            return self.to_unsigned()
+                                                          File "/usr/local/lib/python3.9/dist-packages/cocotb/types/logic_array.py", line 379, in to_unsigned
+                                                            value = value << 1 | int(bit)
+                                                          File "/usr/local/lib/python3.9/dist-packages/cocotb/types/logic.py", line 243, in __int__
+                                                            raise ValueError(f"Cannot convert {self!r} to int")
+                                                        ValueError: Cannot convert Logic('X') to int
+  5351.00ns INFO     cocotb.regression                  running test_rgb_color_space_hsv.test_rgb_to_hsv_random_r_max (3/7)
+                                                            Test random RGB inputs where R is the maximum value.
+  8032.00ns INFO     cocotb.regression                  test_rgb_color_space_hsv.test_rgb_to_hsv_random_r_max failed
+                                                        Traceback (most recent call last):
+                                                          File "/src/test_rgb_color_space_hsv.py", line 194, in test_rgb_to_hsv_random_r_max
+                                                            await compare_rgb_to_hsv(dut, random_r, random_g, random_b)
+                                                          File "/src/test_rgb_color_space_hsv.py", line 106, in compare_rgb_to_hsv
+                                                            h_out, s_out, v_out = await apply_rgb_input(dut, r, g, b)
+                                                          File "/src/test_rgb_color_space_hsv.py", line 66, in apply_rgb_input
+                                                            h_out = int(dut.h_component.value)
+                                                          File "/usr/local/lib/python3.9/dist-packages/cocotb/types/logic_array.py", line 478, in __int__
+                                                            return self.to_unsigned()
+                                                          File "/usr/local/lib/python3.9/dist-packages/cocotb/types/logic_array.py", line 379, in to_unsigned
+                                                            value = value << 1 | int(bit)
+                                                          File "/usr/local/lib/python3.9/dist-packages/cocotb/types/logic.py", line 243, in __int__
+                                                            raise ValueError(f"Cannot convert {self!r} to int")
+                                                        ValueError: Cannot convert Logic('X') to int
+  8032.00ns INFO     cocotb.regression                  running test_rgb_color_space_hsv.test_rgb_to_hsv_random_g_max (4/7)
+                                                            Test random RGB inputs where G is the maximum value.
+ 10713.00ns INFO     cocotb.regression                  test_rgb_color_space_hsv.test_rgb_to_hsv_random_g_max failed
+                                                        Traceback (most recent call last):
+                                                          File "/src/test_rgb_color_space_hsv.py", line 212, in test_rgb_to_hsv_random_g_max
+                                                            await compare_rgb_to_hsv(dut, random_r, random_g, random_b)
+                                                          File "/src/test_rgb_color_space_hsv.py", line 106, in compare_rgb_to_hsv
+                                                            h_out, s_out, v_out = await apply_rgb_input(dut, r, g, b)
+                                                          File "/src/test_rgb_color_space_hsv.py", line 66, in apply_rgb_input
+                                                            h_out = int(dut.h_component.value)
+                                                          File "/usr/local/lib/python3.9/dist-packages/cocotb/types/logic_array.py", line 478, in __int__
+                                                            return self.to_unsigned()
+                                                          File "/usr/local/lib/python3.9/dist-packages/cocotb/types/logic_array.py", line 379, in to_unsigned
+                                                            value = value << 1 | int(bit)
+                                                          File "/usr/local/lib/python3.9/dist-packages/cocotb/types/logic.py", line 243, in __int__
+                                                            raise ValueError(f"Cannot convert {self!r} to int")
+                                                        ValueError: Cannot convert Logic('X') to int
+ 10713.00ns INFO     cocotb.regression                  running test_rgb_color_space_hsv.test_rgb_to_hsv_random_b_max (5/7)
+                                                            Test random RGB inputs where B is the maximum value.
+ 13394.00ns INFO     cocotb.regression                  test_rgb_color_space_hsv.test_rgb_to_hsv_random_b_max failed
+                                                        Traceback (most recent call last):
+                                                          File "/src/test_rgb_color_space_hsv.py", line 230, in test_rgb_to_hsv_random_b_max
+                                                            await compare_rgb_to_hsv(dut, random_r, random_g, random_b)
+                                                          File "/src/test_rgb_color_space_hsv.py", line 106, in compare_rgb_to_hsv
+                                                            h_out, s_out, v_out = await apply_rgb_input(dut, r, g, b)
+                                                          File "/src/test_rgb_color_space_hsv.py", line 66, in apply_rgb_input
+                                                            h_out = int(dut.h_component.value)
+                                                          File "/usr/local/lib/python3.9/dist-packages/cocotb/types/logic_array.py", line 478, in __int__
+                                                            return self.to_unsigned()
+                                                          File "/usr/local/lib/python3.9/dist-packages/cocotb/types/logic_array.py", line 379, in to_unsigned
+                                                            value = value << 1 | int(bit)
+                                                          File "/usr/local/lib/python3.9/dist-packages/cocotb/types/logic.py", line 243, in __int__
+                                                            raise ValueError(f"Cannot convert {self!r} to int")
+                                                        ValueError: Cannot convert Logic('X') to int
+ 13394.00ns INFO     cocotb.regression                  running test_rgb_color_space_hsv.test_rgb_to_hsv_max_min_same (6/7)
+                                                            Test RGB inputs where max and min values are the same (grayscale colors).
+ 16075.00ns INFO     cocotb.regression                  test_rgb_color_space_hsv.test_rgb_to_hsv_max_min_same failed
+                                                        Traceback (most recent call last):
+                                                          File "/src/test_rgb_color_space_hsv.py", line 248, in test_rgb_to_hsv_max_min_same
+                                                            await compare_rgb_to_hsv(dut, r, g, b)
+                                                          File "/src/test_rgb_color_space_hsv.py", line 106, in compare_rgb_to_hsv
+                                                            h_out, s_out, v_out = await apply_rgb_input(dut, r, g, b)
+                                                          File "/src/test_rgb_color_space_hsv.py", line 67, in apply_rgb_input
+                                                            s_out = int(dut.s_component.value)
+                                                          File "/usr/local/lib/python3.9/dist-packages/cocotb/types/logic_array.py", line 478, in __int__
+                                                            return self.to_unsigned()
+                                                          File "/usr/local/lib/python3.9/dist-packages/cocotb/types/logic_array.py", line 379, in to_unsigned
+                                                            value = value << 1 | int(bit)
+                                                          File "/usr/local/lib/python3.9/dist-packages/cocotb/types/logic.py", line 243, in __int__
+                                                            raise ValueError(f"Cannot convert {self!r} to int")
+                                                        ValueError: Cannot convert Logic('X') to int
+ 16075.00ns INFO     cocotb.regression                  running test_rgb_color_space_hsv.test_reset_outputs_zero (7/7)
+                                                            Verify that outputs are 0 after reset.
+After reset: H = 0, S = 0, V = 0
+ 18656.00ns INFO     cocotb.regression                  test_rgb_color_space_hsv.test_reset_outputs_zero passed
+ 18656.00ns INFO     cocotb.regression                  ***************************************************************************************************************
+                                                        ** TEST                                                   STATUS  SIM TIME (ns)  REAL TIME (s)  RATIO (ns/s) **
+                                                        ***************************************************************************************************************
+                                                        ** test_rgb_color_space_hsv.test_rgb_to_hsv                FAIL        2670.00           0.03      84136.92  **
+                                                        ** test_rgb_color_space_hsv.test_rgb_to_hsv_random         FAIL        2681.00           0.03      88374.35  **
+                                                        ** test_rgb_color_space_hsv.test_rgb_to_hsv_random_r_max   FAIL        2681.00           0.04      72670.77  **
+                                                        ** test_rgb_color_space_hsv.test_rgb_to_hsv_random_g_max   FAIL        2681.00           0.04      72596.17  **
+                                                        ** test_rgb_color_space_hsv.test_rgb_to_hsv_random_b_max   FAIL        2681.00           0.03      87460.85  **
+                                                        ** test_rgb_color_space_hsv.test_rgb_to_hsv_max_min_same   FAIL        2681.00           0.03      76829.04  **
+                                                        ** test_rgb_color_space_hsv.test_reset_outputs_zero        PASS        2581.00           0.03      74879.64  **
+                                                        ***************************************************************************************************************
+                                                        ** TESTS=7 PASS=1 FAIL=6 SKIP=0                                       18656.00           0.25      75702.97  **
+                                                        ***************************************************************************************************************
+                                                        
+FST info: dumpfile /code/rundir/sim_build/rgb_color_space_hsv.fst opened for output.
+FAILED
+
+=================================== FAILURES ===================================
+_________________________________ test_runner __________________________________
+
+    def test_runner():
+        runner = get_runner(sim)
+    
+        runner.build(
+            sources=verilog_sources,
+            hdl_toplevel=toplevel,
+            always=True,
+            clean=True,
+            waves=True,
+            verbose=True,
+            timescale=("1ns", "1ns"),
+            log_file="sim.log"
+        )
+>       runner.test(hdl_toplevel=toplevel, test_module=module,waves=True)
+E       SystemExit: ERROR: Failed 6 of 7 tests.
+
+/src/test_runner.py:27: SystemExit
+=========================== short test summary info ============================
+FAILED ../../src/test_runner.py::test_runner - SystemExit: ERROR: Failed 6 of...
+============================== 1 failed in 0.45s ===============================

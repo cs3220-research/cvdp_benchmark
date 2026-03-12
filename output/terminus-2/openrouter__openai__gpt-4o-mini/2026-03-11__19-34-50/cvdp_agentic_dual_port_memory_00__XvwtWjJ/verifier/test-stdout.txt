@@ -1,0 +1,76 @@
+Running service: 04-new-tb
+============================= test session starts ==============================
+platform linux -- Python 3.9.2, pytest-8.3.2, pluggy-1.5.0 -- /usr/bin/python3
+cachedir: /rundir/harness/.cache
+rootdir: /src
+collecting ... collected 1 item
+
+../../src/test_runner.py::test_runner      -.--ns INFO     gpi                                ..mbed/gpi_embed.cpp:79   in set_program_name_in_venv        Did not detect Python virtual environment. Using system-wide Python interpreter
+     -.--ns INFO     gpi                                ../gpi/GpiCommon.cpp:101  in gpi_print_registered_impl       VPI registered
+     0.00ns INFO     cocotb                             Running on Icarus Verilog version 13.0 (devel)
+     0.00ns INFO     cocotb                             Running tests with cocotb v2.0.0.dev0+8d6c1a63 from /usr/local/lib/python3.9/dist-packages/cocotb
+     0.00ns INFO     cocotb                             Seeding Python random module with 1773273892
+     0.00ns INFO     cocotb.regression                  running test_dual_port_memory.test_cvdp_true_dp_ram_ports_a_and_b (1/2)
+                                                            Test the cvdp_true_dp_ram for both Port A and Port B ensuring RAW behavior 
+Wrote Data = 8 to Port A at Addr = 7
+Wrote Data = 3 to Port B at Addr = 19
+Reading from Port A at Addr = 7: Expected = 8, Got = 0100
+    50.00ns INFO     cocotb.regression                  test_dual_port_memory.test_cvdp_true_dp_ram_ports_a_and_b failed
+                                                        Traceback (most recent call last):
+                                                          File "/code/src/test_dual_port_memory.py", line 84, in test_cvdp_true_dp_ram_ports_a_and_b
+                                                            await read_from_port_a(dut, addr_a, data_a)
+                                                          File "/code/src/test_dual_port_memory.py", line 35, in read_from_port_a
+                                                            assert dut.data_out_a.value == expected_data, f"Port A failed to read {expected_data} at address {addr}, got {dut.data_out_a.value}"
+                                                        AssertionError: Port A failed to read 8 at address 7, got 0100
+                                                        assert LogicArray('0100', Range(3, 'downto', 0)) == 8
+                                                         +  where LogicArray('0100', Range(3, 'downto', 0)) = LogicObject(dual_port_memory.data_out_a).value
+                                                         +    where LogicObject(dual_port_memory.data_out_a) = HierarchyObject(dual_port_memory).data_out_a
+    50.00ns INFO     cocotb.regression                  running test_dual_port_memory.test_true_dp_ram (2/2)
+Wrote Data = 10 to Port A at Addr = 1
+Reading from Port B at Addr = 1: Expected = 10, Got = 1111
+   111.00ns INFO     cocotb.regression                  test_dual_port_memory.test_true_dp_ram failed
+                                                        Traceback (most recent call last):
+                                                          File "/code/src/test_dual_port_memory.py", line 126, in test_true_dp_ram
+                                                            await read_from_port_b(dut, addr_a, test_data_a)
+                                                          File "/code/src/test_dual_port_memory.py", line 54, in read_from_port_b
+                                                            assert dut.data_out_b.value == expected_data, f"Port B failed to read {expected_data} at address {addr}, got {dut.data_out_b.value}"
+                                                        AssertionError: Port B failed to read 10 at address 1, got 1111
+                                                        assert LogicArray('1111', Range(3, 'downto', 0)) == 10
+                                                         +  where LogicArray('1111', Range(3, 'downto', 0)) = LogicObject(dual_port_memory.data_out_b).value
+                                                         +    where LogicObject(dual_port_memory.data_out_b) = HierarchyObject(dual_port_memory).data_out_b
+   111.00ns INFO     cocotb.regression                  *******************************************************************************************************************
+                                                        ** TEST                                                       STATUS  SIM TIME (ns)  REAL TIME (s)  RATIO (ns/s) **
+                                                        *******************************************************************************************************************
+                                                        ** test_dual_port_memory.test_cvdp_true_dp_ram_ports_a_and_b   FAIL          50.00           0.00      33293.41  **
+                                                        ** test_dual_port_memory.test_true_dp_ram                      FAIL          61.00           0.00      67632.18  **
+                                                        *******************************************************************************************************************
+                                                        ** TESTS=2 PASS=0 FAIL=2 SKIP=0                                             111.00           0.01      14742.02  **
+                                                        *******************************************************************************************************************
+                                                        
+FST info: dumpfile /code/rundir/sim_build/dual_port_memory.fst opened for output.
+FAILED
+
+=================================== FAILURES ===================================
+_________________________________ test_runner __________________________________
+
+    def test_runner():
+    
+        runner = get_runner(sim)
+        runner.build(
+            sources=verilog_sources,
+            hdl_toplevel=toplevel,
+            # Arguments
+            always=True,
+            clean=True,
+            waves=True,
+            verbose=True,
+            timescale=("1ns", "1ns"),
+            log_file="build.log")
+    
+>       runner.test(hdl_toplevel=toplevel, test_module=module, waves=True)
+E       SystemExit: ERROR: Failed 2 of 2 tests.
+
+/src/test_runner.py:28: SystemExit
+=========================== short test summary info ============================
+FAILED ../../src/test_runner.py::test_runner - SystemExit: ERROR: Failed 2 of...
+============================== 1 failed in 0.23s ===============================

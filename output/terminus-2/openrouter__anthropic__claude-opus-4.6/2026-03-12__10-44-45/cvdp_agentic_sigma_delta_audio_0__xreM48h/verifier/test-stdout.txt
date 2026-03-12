@@ -1,0 +1,319 @@
+Running service: 01-new-tb
+============================= test session starts ==============================
+platform linux -- Python 3.9.2, pytest-8.3.2, pluggy-1.5.0 -- /usr/bin/python3
+cachedir: /rundir/harness/.cache
+rootdir: /src
+collecting ... collected 10 items
+
+../../src/test_runner.py::test_sigma_delta_audio[0]      -.--ns INFO     gpi                                ..mbed/gpi_embed.cpp:79   in set_program_name_in_venv        Did not detect Python virtual environment. Using system-wide Python interpreter
+     -.--ns INFO     gpi                                ../gpi/GpiCommon.cpp:101  in gpi_print_registered_impl       VPI registered
+     0.00ns INFO     cocotb                             Running on Icarus Verilog version 13.0 (devel)
+     0.00ns INFO     cocotb                             Running tests with cocotb v2.0.0.dev0+8d6c1a63 from /usr/local/lib/python3.9/dist-packages/cocotb
+     0.00ns INFO     cocotb                             Seeding Python random module with 1773331829
+     0.00ns INFO     cocotb.regression                  running test_sigma_delta_audio.test_sigma_delta_audio (1/1)
+                                                            Cocotb testbench replicating paula_audio_sigmadelta_tb logic
+     0.00ns INFO     cocotb                             ----- Test Start -----
+    20.00ns INFO     cocotb                             Running Test Case 1: Zero Input Test
+    40.00ns INFO     cocotb                             Test Case 1 Passed
+    40.00ns INFO     cocotb                             Running Test Case 2: Maximum Negative Values
+    60.00ns INFO     cocotb                             Test Case 2 Passed
+    60.00ns INFO     cocotb                             Running Test Case 3: Small Positive Values
+    80.00ns INFO     cocotb                             Test Case 3 Passed
+    80.00ns INFO     cocotb                             Running Test Case 4: Small Negative Values
+   100.00ns INFO     cocotb                             Test Case 4 Passed
+   100.00ns INFO     cocotb                             Running Test Case 5: Large Alternating Values
+   110.00ns INFO     cocotb                             Test Case 5 Passed
+   110.00ns INFO     cocotb                             All tests passed!
+   110.00ns INFO     cocotb                             ----- Test Completed -----
+   110.00ns INFO     cocotb.regression                  test_sigma_delta_audio.test_sigma_delta_audio passed
+   110.00ns INFO     cocotb.regression                  *******************************************************************************************************
+                                                        ** TEST                                           STATUS  SIM TIME (ns)  REAL TIME (s)  RATIO (ns/s) **
+                                                        *******************************************************************************************************
+                                                        ** test_sigma_delta_audio.test_sigma_delta_audio   PASS         110.00           0.00      34854.83  **
+                                                        *******************************************************************************************************
+                                                        ** TESTS=1 PASS=1 FAIL=0 SKIP=0                                 110.00           0.01      12826.26  **
+                                                        *******************************************************************************************************
+                                                        
+FST info: dumpfile /code/rundir/sim_build/sigma_delta_audio.fst opened for output.
+PASSED
+../../src/test_runner.py::test_sigma_delta_audio[1]      -.--ns INFO     gpi                                ..mbed/gpi_embed.cpp:79   in set_program_name_in_venv        Did not detect Python virtual environment. Using system-wide Python interpreter
+     -.--ns INFO     gpi                                ../gpi/GpiCommon.cpp:101  in gpi_print_registered_impl       VPI registered
+     0.00ns INFO     cocotb                             Running on Icarus Verilog version 13.0 (devel)
+     0.00ns INFO     cocotb                             Running tests with cocotb v2.0.0.dev0+8d6c1a63 from /usr/local/lib/python3.9/dist-packages/cocotb
+     0.00ns INFO     cocotb                             Seeding Python random module with 1773331829
+     0.00ns INFO     cocotb.regression                  running test_sigma_delta_audio.test_sigma_delta_audio (1/1)
+                                                            Cocotb testbench replicating paula_audio_sigmadelta_tb logic
+     0.00ns INFO     cocotb                             ----- Test Start -----
+    20.00ns INFO     cocotb                             Running Test Case 1: Zero Input Test
+    40.00ns INFO     cocotb                             Test Case 1 Passed
+    40.00ns INFO     cocotb                             Running Test Case 2: Maximum Negative Values
+    60.00ns INFO     cocotb                             Test Case 2 Passed
+    60.00ns INFO     cocotb                             Running Test Case 3: Small Positive Values
+    80.00ns INFO     cocotb                             Test Case 3 Passed
+    80.00ns INFO     cocotb                             Running Test Case 4: Small Negative Values
+   100.00ns INFO     cocotb                             Test Case 4 Passed
+   100.00ns INFO     cocotb                             Running Test Case 5: Large Alternating Values
+   110.00ns INFO     cocotb                             Test Case 5 Passed
+   110.00ns INFO     cocotb                             All tests passed!
+   110.00ns INFO     cocotb                             ----- Test Completed -----
+   110.00ns INFO     cocotb.regression                  test_sigma_delta_audio.test_sigma_delta_audio passed
+   110.00ns INFO     cocotb.regression                  *******************************************************************************************************
+                                                        ** TEST                                           STATUS  SIM TIME (ns)  REAL TIME (s)  RATIO (ns/s) **
+                                                        *******************************************************************************************************
+                                                        ** test_sigma_delta_audio.test_sigma_delta_audio   PASS         110.00           0.00      37610.94  **
+                                                        *******************************************************************************************************
+                                                        ** TESTS=1 PASS=1 FAIL=0 SKIP=0                                 110.00           0.01      13556.65  **
+                                                        *******************************************************************************************************
+                                                        
+FST info: dumpfile /code/rundir/sim_build/sigma_delta_audio.fst opened for output.
+PASSED
+../../src/test_runner.py::test_sigma_delta_audio[2]      -.--ns INFO     gpi                                ..mbed/gpi_embed.cpp:79   in set_program_name_in_venv        Did not detect Python virtual environment. Using system-wide Python interpreter
+     -.--ns INFO     gpi                                ../gpi/GpiCommon.cpp:101  in gpi_print_registered_impl       VPI registered
+     0.00ns INFO     cocotb                             Running on Icarus Verilog version 13.0 (devel)
+     0.00ns INFO     cocotb                             Running tests with cocotb v2.0.0.dev0+8d6c1a63 from /usr/local/lib/python3.9/dist-packages/cocotb
+     0.00ns INFO     cocotb                             Seeding Python random module with 1773331829
+     0.00ns INFO     cocotb.regression                  running test_sigma_delta_audio.test_sigma_delta_audio (1/1)
+                                                            Cocotb testbench replicating paula_audio_sigmadelta_tb logic
+     0.00ns INFO     cocotb                             ----- Test Start -----
+    20.00ns INFO     cocotb                             Running Test Case 1: Zero Input Test
+    40.00ns INFO     cocotb                             Test Case 1 Passed
+    40.00ns INFO     cocotb                             Running Test Case 2: Maximum Negative Values
+    60.00ns INFO     cocotb                             Test Case 2 Passed
+    60.00ns INFO     cocotb                             Running Test Case 3: Small Positive Values
+    80.00ns INFO     cocotb                             Test Case 3 Passed
+    80.00ns INFO     cocotb                             Running Test Case 4: Small Negative Values
+   100.00ns INFO     cocotb                             Test Case 4 Passed
+   100.00ns INFO     cocotb                             Running Test Case 5: Large Alternating Values
+   110.00ns INFO     cocotb                             Test Case 5 Passed
+   110.00ns INFO     cocotb                             All tests passed!
+   110.00ns INFO     cocotb                             ----- Test Completed -----
+   110.00ns INFO     cocotb.regression                  test_sigma_delta_audio.test_sigma_delta_audio passed
+   110.00ns INFO     cocotb.regression                  *******************************************************************************************************
+                                                        ** TEST                                           STATUS  SIM TIME (ns)  REAL TIME (s)  RATIO (ns/s) **
+                                                        *******************************************************************************************************
+                                                        ** test_sigma_delta_audio.test_sigma_delta_audio   PASS         110.00           0.00      36850.91  **
+                                                        *******************************************************************************************************
+                                                        ** TESTS=1 PASS=1 FAIL=0 SKIP=0                                 110.00           0.01      13546.30  **
+                                                        *******************************************************************************************************
+                                                        
+FST info: dumpfile /code/rundir/sim_build/sigma_delta_audio.fst opened for output.
+PASSED
+../../src/test_runner.py::test_sigma_delta_audio[3]      -.--ns INFO     gpi                                ..mbed/gpi_embed.cpp:79   in set_program_name_in_venv        Did not detect Python virtual environment. Using system-wide Python interpreter
+     -.--ns INFO     gpi                                ../gpi/GpiCommon.cpp:101  in gpi_print_registered_impl       VPI registered
+     0.00ns INFO     cocotb                             Running on Icarus Verilog version 13.0 (devel)
+     0.00ns INFO     cocotb                             Running tests with cocotb v2.0.0.dev0+8d6c1a63 from /usr/local/lib/python3.9/dist-packages/cocotb
+     0.00ns INFO     cocotb                             Seeding Python random module with 1773331829
+     0.00ns INFO     cocotb.regression                  running test_sigma_delta_audio.test_sigma_delta_audio (1/1)
+                                                            Cocotb testbench replicating paula_audio_sigmadelta_tb logic
+     0.00ns INFO     cocotb                             ----- Test Start -----
+    20.00ns INFO     cocotb                             Running Test Case 1: Zero Input Test
+    40.00ns INFO     cocotb                             Test Case 1 Passed
+    40.00ns INFO     cocotb                             Running Test Case 2: Maximum Negative Values
+    60.00ns INFO     cocotb                             Test Case 2 Passed
+    60.00ns INFO     cocotb                             Running Test Case 3: Small Positive Values
+    80.00ns INFO     cocotb                             Test Case 3 Passed
+    80.00ns INFO     cocotb                             Running Test Case 4: Small Negative Values
+   100.00ns INFO     cocotb                             Test Case 4 Passed
+   100.00ns INFO     cocotb                             Running Test Case 5: Large Alternating Values
+   110.00ns INFO     cocotb                             Test Case 5 Passed
+   110.00ns INFO     cocotb                             All tests passed!
+   110.00ns INFO     cocotb                             ----- Test Completed -----
+   110.00ns INFO     cocotb.regression                  test_sigma_delta_audio.test_sigma_delta_audio passed
+   110.00ns INFO     cocotb.regression                  *******************************************************************************************************
+                                                        ** TEST                                           STATUS  SIM TIME (ns)  REAL TIME (s)  RATIO (ns/s) **
+                                                        *******************************************************************************************************
+                                                        ** test_sigma_delta_audio.test_sigma_delta_audio   PASS         110.00           0.00      34193.54  **
+                                                        *******************************************************************************************************
+                                                        ** TESTS=1 PASS=1 FAIL=0 SKIP=0                                 110.00           0.01      11654.38  **
+                                                        *******************************************************************************************************
+                                                        
+FST info: dumpfile /code/rundir/sim_build/sigma_delta_audio.fst opened for output.
+PASSED
+../../src/test_runner.py::test_sigma_delta_audio[4]      -.--ns INFO     gpi                                ..mbed/gpi_embed.cpp:79   in set_program_name_in_venv        Did not detect Python virtual environment. Using system-wide Python interpreter
+     -.--ns INFO     gpi                                ../gpi/GpiCommon.cpp:101  in gpi_print_registered_impl       VPI registered
+     0.00ns INFO     cocotb                             Running on Icarus Verilog version 13.0 (devel)
+     0.00ns INFO     cocotb                             Running tests with cocotb v2.0.0.dev0+8d6c1a63 from /usr/local/lib/python3.9/dist-packages/cocotb
+     0.00ns INFO     cocotb                             Seeding Python random module with 1773331830
+     0.00ns INFO     cocotb.regression                  running test_sigma_delta_audio.test_sigma_delta_audio (1/1)
+                                                            Cocotb testbench replicating paula_audio_sigmadelta_tb logic
+     0.00ns INFO     cocotb                             ----- Test Start -----
+    20.00ns INFO     cocotb                             Running Test Case 1: Zero Input Test
+    40.00ns INFO     cocotb                             Test Case 1 Passed
+    40.00ns INFO     cocotb                             Running Test Case 2: Maximum Negative Values
+    60.00ns INFO     cocotb                             Test Case 2 Passed
+    60.00ns INFO     cocotb                             Running Test Case 3: Small Positive Values
+    80.00ns INFO     cocotb                             Test Case 3 Passed
+    80.00ns INFO     cocotb                             Running Test Case 4: Small Negative Values
+   100.00ns INFO     cocotb                             Test Case 4 Passed
+   100.00ns INFO     cocotb                             Running Test Case 5: Large Alternating Values
+   110.00ns INFO     cocotb                             Test Case 5 Passed
+   110.00ns INFO     cocotb                             All tests passed!
+   110.00ns INFO     cocotb                             ----- Test Completed -----
+   110.00ns INFO     cocotb.regression                  test_sigma_delta_audio.test_sigma_delta_audio passed
+   110.00ns INFO     cocotb.regression                  *******************************************************************************************************
+                                                        ** TEST                                           STATUS  SIM TIME (ns)  REAL TIME (s)  RATIO (ns/s) **
+                                                        *******************************************************************************************************
+                                                        ** test_sigma_delta_audio.test_sigma_delta_audio   PASS         110.00           0.00      37052.16  **
+                                                        *******************************************************************************************************
+                                                        ** TESTS=1 PASS=1 FAIL=0 SKIP=0                                 110.00           0.01      13251.76  **
+                                                        *******************************************************************************************************
+                                                        
+FST info: dumpfile /code/rundir/sim_build/sigma_delta_audio.fst opened for output.
+PASSED
+../../src/test_runner.py::test_sigma_delta_audio[5]      -.--ns INFO     gpi                                ..mbed/gpi_embed.cpp:79   in set_program_name_in_venv        Did not detect Python virtual environment. Using system-wide Python interpreter
+     -.--ns INFO     gpi                                ../gpi/GpiCommon.cpp:101  in gpi_print_registered_impl       VPI registered
+     0.00ns INFO     cocotb                             Running on Icarus Verilog version 13.0 (devel)
+     0.00ns INFO     cocotb                             Running tests with cocotb v2.0.0.dev0+8d6c1a63 from /usr/local/lib/python3.9/dist-packages/cocotb
+     0.00ns INFO     cocotb                             Seeding Python random module with 1773331830
+     0.00ns INFO     cocotb.regression                  running test_sigma_delta_audio.test_sigma_delta_audio (1/1)
+                                                            Cocotb testbench replicating paula_audio_sigmadelta_tb logic
+     0.00ns INFO     cocotb                             ----- Test Start -----
+    20.00ns INFO     cocotb                             Running Test Case 1: Zero Input Test
+    40.00ns INFO     cocotb                             Test Case 1 Passed
+    40.00ns INFO     cocotb                             Running Test Case 2: Maximum Negative Values
+    60.00ns INFO     cocotb                             Test Case 2 Passed
+    60.00ns INFO     cocotb                             Running Test Case 3: Small Positive Values
+    80.00ns INFO     cocotb                             Test Case 3 Passed
+    80.00ns INFO     cocotb                             Running Test Case 4: Small Negative Values
+   100.00ns INFO     cocotb                             Test Case 4 Passed
+   100.00ns INFO     cocotb                             Running Test Case 5: Large Alternating Values
+   110.00ns INFO     cocotb                             Test Case 5 Passed
+   110.00ns INFO     cocotb                             All tests passed!
+   110.00ns INFO     cocotb                             ----- Test Completed -----
+   110.00ns INFO     cocotb.regression                  test_sigma_delta_audio.test_sigma_delta_audio passed
+   110.00ns INFO     cocotb.regression                  *******************************************************************************************************
+                                                        ** TEST                                           STATUS  SIM TIME (ns)  REAL TIME (s)  RATIO (ns/s) **
+                                                        *******************************************************************************************************
+                                                        ** test_sigma_delta_audio.test_sigma_delta_audio   PASS         110.00           0.00      37288.73  **
+                                                        *******************************************************************************************************
+                                                        ** TESTS=1 PASS=1 FAIL=0 SKIP=0                                 110.00           0.01      13656.16  **
+                                                        *******************************************************************************************************
+                                                        
+FST info: dumpfile /code/rundir/sim_build/sigma_delta_audio.fst opened for output.
+PASSED
+../../src/test_runner.py::test_sigma_delta_audio[6]      -.--ns INFO     gpi                                ..mbed/gpi_embed.cpp:79   in set_program_name_in_venv        Did not detect Python virtual environment. Using system-wide Python interpreter
+     -.--ns INFO     gpi                                ../gpi/GpiCommon.cpp:101  in gpi_print_registered_impl       VPI registered
+     0.00ns INFO     cocotb                             Running on Icarus Verilog version 13.0 (devel)
+     0.00ns INFO     cocotb                             Running tests with cocotb v2.0.0.dev0+8d6c1a63 from /usr/local/lib/python3.9/dist-packages/cocotb
+     0.00ns INFO     cocotb                             Seeding Python random module with 1773331830
+     0.00ns INFO     cocotb.regression                  running test_sigma_delta_audio.test_sigma_delta_audio (1/1)
+                                                            Cocotb testbench replicating paula_audio_sigmadelta_tb logic
+     0.00ns INFO     cocotb                             ----- Test Start -----
+    20.00ns INFO     cocotb                             Running Test Case 1: Zero Input Test
+    40.00ns INFO     cocotb                             Test Case 1 Passed
+    40.00ns INFO     cocotb                             Running Test Case 2: Maximum Negative Values
+    60.00ns INFO     cocotb                             Test Case 2 Passed
+    60.00ns INFO     cocotb                             Running Test Case 3: Small Positive Values
+    80.00ns INFO     cocotb                             Test Case 3 Passed
+    80.00ns INFO     cocotb                             Running Test Case 4: Small Negative Values
+   100.00ns INFO     cocotb                             Test Case 4 Passed
+   100.00ns INFO     cocotb                             Running Test Case 5: Large Alternating Values
+   110.00ns INFO     cocotb                             Test Case 5 Passed
+   110.00ns INFO     cocotb                             All tests passed!
+   110.00ns INFO     cocotb                             ----- Test Completed -----
+   110.00ns INFO     cocotb.regression                  test_sigma_delta_audio.test_sigma_delta_audio passed
+   110.00ns INFO     cocotb.regression                  *******************************************************************************************************
+                                                        ** TEST                                           STATUS  SIM TIME (ns)  REAL TIME (s)  RATIO (ns/s) **
+                                                        *******************************************************************************************************
+                                                        ** test_sigma_delta_audio.test_sigma_delta_audio   PASS         110.00           0.00      37761.78  **
+                                                        *******************************************************************************************************
+                                                        ** TESTS=1 PASS=1 FAIL=0 SKIP=0                                 110.00           0.01       8729.04  **
+                                                        *******************************************************************************************************
+                                                        
+FST info: dumpfile /code/rundir/sim_build/sigma_delta_audio.fst opened for output.
+PASSED
+../../src/test_runner.py::test_sigma_delta_audio[7]      -.--ns INFO     gpi                                ..mbed/gpi_embed.cpp:79   in set_program_name_in_venv        Did not detect Python virtual environment. Using system-wide Python interpreter
+     -.--ns INFO     gpi                                ../gpi/GpiCommon.cpp:101  in gpi_print_registered_impl       VPI registered
+     0.00ns INFO     cocotb                             Running on Icarus Verilog version 13.0 (devel)
+     0.00ns INFO     cocotb                             Running tests with cocotb v2.0.0.dev0+8d6c1a63 from /usr/local/lib/python3.9/dist-packages/cocotb
+     0.00ns INFO     cocotb                             Seeding Python random module with 1773331830
+     0.00ns INFO     cocotb.regression                  running test_sigma_delta_audio.test_sigma_delta_audio (1/1)
+                                                            Cocotb testbench replicating paula_audio_sigmadelta_tb logic
+     0.00ns INFO     cocotb                             ----- Test Start -----
+    20.00ns INFO     cocotb                             Running Test Case 1: Zero Input Test
+    40.00ns INFO     cocotb                             Test Case 1 Passed
+    40.00ns INFO     cocotb                             Running Test Case 2: Maximum Negative Values
+    60.00ns INFO     cocotb                             Test Case 2 Passed
+    60.00ns INFO     cocotb                             Running Test Case 3: Small Positive Values
+    80.00ns INFO     cocotb                             Test Case 3 Passed
+    80.00ns INFO     cocotb                             Running Test Case 4: Small Negative Values
+   100.00ns INFO     cocotb                             Test Case 4 Passed
+   100.00ns INFO     cocotb                             Running Test Case 5: Large Alternating Values
+   110.00ns INFO     cocotb                             Test Case 5 Passed
+   110.00ns INFO     cocotb                             All tests passed!
+   110.00ns INFO     cocotb                             ----- Test Completed -----
+   110.00ns INFO     cocotb.regression                  test_sigma_delta_audio.test_sigma_delta_audio passed
+   110.00ns INFO     cocotb.regression                  *******************************************************************************************************
+                                                        ** TEST                                           STATUS  SIM TIME (ns)  REAL TIME (s)  RATIO (ns/s) **
+                                                        *******************************************************************************************************
+                                                        ** test_sigma_delta_audio.test_sigma_delta_audio   PASS         110.00           0.01      21276.16  **
+                                                        *******************************************************************************************************
+                                                        ** TESTS=1 PASS=1 FAIL=0 SKIP=0                                 110.00           0.01       7360.66  **
+                                                        *******************************************************************************************************
+                                                        
+FST info: dumpfile /code/rundir/sim_build/sigma_delta_audio.fst opened for output.
+PASSED
+../../src/test_runner.py::test_sigma_delta_audio[8]      -.--ns INFO     gpi                                ..mbed/gpi_embed.cpp:79   in set_program_name_in_venv        Did not detect Python virtual environment. Using system-wide Python interpreter
+     -.--ns INFO     gpi                                ../gpi/GpiCommon.cpp:101  in gpi_print_registered_impl       VPI registered
+     0.00ns INFO     cocotb                             Running on Icarus Verilog version 13.0 (devel)
+     0.00ns INFO     cocotb                             Running tests with cocotb v2.0.0.dev0+8d6c1a63 from /usr/local/lib/python3.9/dist-packages/cocotb
+     0.00ns INFO     cocotb                             Seeding Python random module with 1773331830
+     0.00ns INFO     cocotb.regression                  running test_sigma_delta_audio.test_sigma_delta_audio (1/1)
+                                                            Cocotb testbench replicating paula_audio_sigmadelta_tb logic
+     0.00ns INFO     cocotb                             ----- Test Start -----
+    20.00ns INFO     cocotb                             Running Test Case 1: Zero Input Test
+    40.00ns INFO     cocotb                             Test Case 1 Passed
+    40.00ns INFO     cocotb                             Running Test Case 2: Maximum Negative Values
+    60.00ns INFO     cocotb                             Test Case 2 Passed
+    60.00ns INFO     cocotb                             Running Test Case 3: Small Positive Values
+    80.00ns INFO     cocotb                             Test Case 3 Passed
+    80.00ns INFO     cocotb                             Running Test Case 4: Small Negative Values
+   100.00ns INFO     cocotb                             Test Case 4 Passed
+   100.00ns INFO     cocotb                             Running Test Case 5: Large Alternating Values
+   110.00ns INFO     cocotb                             Test Case 5 Passed
+   110.00ns INFO     cocotb                             All tests passed!
+   110.00ns INFO     cocotb                             ----- Test Completed -----
+   110.00ns INFO     cocotb.regression                  test_sigma_delta_audio.test_sigma_delta_audio passed
+   110.00ns INFO     cocotb.regression                  *******************************************************************************************************
+                                                        ** TEST                                           STATUS  SIM TIME (ns)  REAL TIME (s)  RATIO (ns/s) **
+                                                        *******************************************************************************************************
+                                                        ** test_sigma_delta_audio.test_sigma_delta_audio   PASS         110.00           0.00      36611.13  **
+                                                        *******************************************************************************************************
+                                                        ** TESTS=1 PASS=1 FAIL=0 SKIP=0                                 110.00           0.01      12000.87  **
+                                                        *******************************************************************************************************
+                                                        
+FST info: dumpfile /code/rundir/sim_build/sigma_delta_audio.fst opened for output.
+PASSED
+../../src/test_runner.py::test_sigma_delta_audio[9]      -.--ns INFO     gpi                                ..mbed/gpi_embed.cpp:79   in set_program_name_in_venv        Did not detect Python virtual environment. Using system-wide Python interpreter
+     -.--ns INFO     gpi                                ../gpi/GpiCommon.cpp:101  in gpi_print_registered_impl       VPI registered
+     0.00ns INFO     cocotb                             Running on Icarus Verilog version 13.0 (devel)
+     0.00ns INFO     cocotb                             Running tests with cocotb v2.0.0.dev0+8d6c1a63 from /usr/local/lib/python3.9/dist-packages/cocotb
+     0.00ns INFO     cocotb                             Seeding Python random module with 1773331831
+     0.00ns INFO     cocotb.regression                  running test_sigma_delta_audio.test_sigma_delta_audio (1/1)
+                                                            Cocotb testbench replicating paula_audio_sigmadelta_tb logic
+     0.00ns INFO     cocotb                             ----- Test Start -----
+    20.00ns INFO     cocotb                             Running Test Case 1: Zero Input Test
+    40.00ns INFO     cocotb                             Test Case 1 Passed
+    40.00ns INFO     cocotb                             Running Test Case 2: Maximum Negative Values
+    60.00ns INFO     cocotb                             Test Case 2 Passed
+    60.00ns INFO     cocotb                             Running Test Case 3: Small Positive Values
+    80.00ns INFO     cocotb                             Test Case 3 Passed
+    80.00ns INFO     cocotb                             Running Test Case 4: Small Negative Values
+   100.00ns INFO     cocotb                             Test Case 4 Passed
+   100.00ns INFO     cocotb                             Running Test Case 5: Large Alternating Values
+   110.00ns INFO     cocotb                             Test Case 5 Passed
+   110.00ns INFO     cocotb                             All tests passed!
+   110.00ns INFO     cocotb                             ----- Test Completed -----
+   110.00ns INFO     cocotb.regression                  test_sigma_delta_audio.test_sigma_delta_audio passed
+   110.00ns INFO     cocotb.regression                  *******************************************************************************************************
+                                                        ** TEST                                           STATUS  SIM TIME (ns)  REAL TIME (s)  RATIO (ns/s) **
+                                                        *******************************************************************************************************
+                                                        ** test_sigma_delta_audio.test_sigma_delta_audio   PASS         110.00           0.00      37836.10  **
+                                                        *******************************************************************************************************
+                                                        ** TESTS=1 PASS=1 FAIL=0 SKIP=0                                 110.00           0.01      13747.31  **
+                                                        *******************************************************************************************************
+                                                        
+FST info: dumpfile /code/rundir/sim_build/sigma_delta_audio.fst opened for output.
+PASSED
+
+============================== 10 passed in 1.93s ==============================

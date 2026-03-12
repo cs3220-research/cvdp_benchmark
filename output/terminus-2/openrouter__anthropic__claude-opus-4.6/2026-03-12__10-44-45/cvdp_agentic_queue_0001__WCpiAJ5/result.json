@@ -1,0 +1,108 @@
+{
+    "id": "66c0d17c-233f-4ce6-a5b6-1fc0cbb61777",
+    "task_name": "cvdp_agentic_queue_0001",
+    "trial_name": "cvdp_agentic_queue_0001__WCpiAJ5",
+    "trial_uri": "file:///home/saketh/research/cvdp_benchmark/output/terminus-2/openrouter__anthropic__claude-opus-4.6/2026-03-12__10-44-45/cvdp_agentic_queue_0001__WCpiAJ5",
+    "task_id": {
+        "path": "/home/saketh/research/cvdp_benchmark/harbor_output/cvdp_agentic_queue_0001"
+    },
+    "source": "cvdp_v1.0.4_agentic_code_generation_no_commercial",
+    "task_checksum": "cc2acd94432730afa5200778b05336900f567db4e7941a5b92996ad918f34bdc",
+    "config": {
+        "task": {
+            "path": "/home/saketh/research/cvdp_benchmark/harbor_output/cvdp_agentic_queue_0001",
+            "git_url": null,
+            "git_commit_id": null,
+            "overwrite": false,
+            "download_dir": null,
+            "source": "cvdp_v1.0.4_agentic_code_generation_no_commercial"
+        },
+        "trial_name": "cvdp_agentic_queue_0001__WCpiAJ5",
+        "trials_dir": "/home/saketh/research/cvdp_benchmark/output/terminus-2/openrouter__anthropic__claude-opus-4.6/2026-03-12__10-44-45",
+        "timeout_multiplier": 1.0,
+        "agent_timeout_multiplier": null,
+        "verifier_timeout_multiplier": null,
+        "agent_setup_timeout_multiplier": null,
+        "environment_build_timeout_multiplier": null,
+        "agent": {
+            "name": "terminus-2",
+            "import_path": null,
+            "model_name": "openrouter/anthropic/claude-opus-4.6",
+            "override_timeout_sec": null,
+            "override_setup_timeout_sec": null,
+            "max_timeout_sec": null,
+            "kwargs": {},
+            "env": {}
+        },
+        "environment": {
+            "type": "docker",
+            "import_path": null,
+            "force_build": false,
+            "delete": true,
+            "override_cpus": null,
+            "override_memory_mb": null,
+            "override_storage_mb": null,
+            "override_gpus": null,
+            "suppress_override_warnings": false,
+            "kwargs": {}
+        },
+        "verifier": {
+            "override_timeout_sec": null,
+            "max_timeout_sec": null,
+            "disable": false
+        },
+        "artifacts": [],
+        "job_id": "1e837cdd-7fdd-4f0f-a767-a87d6fc07400"
+    },
+    "agent_info": {
+        "name": "terminus-2",
+        "version": "2.0.0",
+        "model_info": {
+            "name": "anthropic/claude-opus-4.6",
+            "provider": "openrouter"
+        }
+    },
+    "agent_result": {
+        "n_input_tokens": 44418,
+        "n_cache_tokens": 28624,
+        "n_output_tokens": 3592,
+        "cost_usd": null,
+        "rollout_details": [],
+        "metadata": {
+            "n_episodes": 6,
+            "api_request_times_msec": [
+                5526.395082473755,
+                5022.525072097778,
+                25848.142862319946,
+                11872.073888778687,
+                6753.560304641724,
+                5434.697389602661
+            ],
+            "summarization_count": 0
+        }
+    },
+    "verifier_result": {
+        "rewards": {
+            "reward": 1.0
+        }
+    },
+    "exception_info": null,
+    "started_at": "2026-03-12T15:54:45.360516Z",
+    "finished_at": "2026-03-12T15:56:38.750088Z",
+    "environment_setup": {
+        "started_at": "2026-03-12T15:54:45.361013Z",
+        "finished_at": "2026-03-12T15:54:47.303688Z"
+    },
+    "agent_setup": {
+        "started_at": "2026-03-12T15:54:47.303697Z",
+        "finished_at": "2026-03-12T15:54:52.345504Z"
+    },
+    "agent_execution": {
+        "started_at": "2026-03-12T15:54:52.345528Z",
+        "finished_at": "2026-03-12T15:56:27.760841Z"
+    },
+    "verifier": {
+        "started_at": "2026-03-12T15:56:27.760900Z",
+        "finished_at": "2026-03-12T15:56:28.299925Z"
+    }
+}

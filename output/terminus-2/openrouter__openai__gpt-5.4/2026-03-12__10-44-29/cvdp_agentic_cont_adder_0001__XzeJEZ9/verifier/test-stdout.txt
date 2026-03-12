@@ -1,0 +1,47 @@
+Running service: direct
+============================= test session starts ==============================
+platform linux -- Python 3.9.2, pytest-8.3.2, pluggy-1.5.0 -- /usr/bin/python3
+cachedir: /rundir/harness/.cache
+rootdir: /src
+collecting ... collected 1 item
+
+../src/test_runner.py::test_runner      -.--ns INFO     gpi                                ..mbed/gpi_embed.cpp:79   in set_program_name_in_venv        Did not detect Python virtual environment. Using system-wide Python interpreter
+     -.--ns INFO     gpi                                ../gpi/GpiCommon.cpp:101  in gpi_print_registered_impl       VPI registered
+     0.00ns INFO     cocotb                             Running on Icarus Verilog version 13.0 (devel)
+     0.00ns INFO     cocotb                             Running tests with cocotb v1.9.2 from /usr/local/lib/python3.9/dist-packages/cocotb
+     0.00ns INFO     cocotb                             Seeding Python random module with 1773327325
+     0.00ns INFO     cocotb.regression                  Found test test_continuous_adder.test_basic
+     0.00ns INFO     cocotb.regression                  Found test test_continuous_adder.test_random
+     0.00ns INFO     cocotb.regression                  Found test test_continuous_adder.test_edge_cases
+     0.00ns INFO     cocotb.regression                  running test_basic (1/3)
+                                                          Basic scenario: accumulate a few values, then flush.
+    91.00ns INFO     cocotb.regression                  test_basic passed
+    91.00ns INFO     cocotb.regression                  running test_random (2/3)
+                                                          Random scenario: feed random inputs and flush.
+   202.00ns INFO     cocotb.regression                  test_random passed
+   202.00ns INFO     cocotb.regression                  running test_edge_cases (3/3)
+                                                          Edge scenario: feed near-maximum 32-bit values.
+   293.00ns INFO     cocotb.regression                  test_edge_cases passed
+   293.00ns INFO     cocotb.regression                  ***********************************************************************************************
+                                                        ** TEST                                   STATUS  SIM TIME (ns)  REAL TIME (s)  RATIO (ns/s) **
+                                                        ***********************************************************************************************
+                                                        ** test_continuous_adder.test_basic        PASS          91.00           0.00      45748.73  **
+                                                        ** test_continuous_adder.test_random       PASS         111.00           0.00      67046.05  **
+                                                        ** test_continuous_adder.test_edge_cases   PASS          91.00           0.00      69675.37  **
+                                                        ***********************************************************************************************
+                                                        ** TESTS=3 PASS=3 FAIL=0 SKIP=0                         293.00           0.04       8327.95  **
+                                                        ***********************************************************************************************
+                                                        
+FST info: dumpfile /code/sim_build/continuous_adder.fst opened for output.
+INFO: Running command iverilog -o /code/sim_build/sim.vvp -D COCOTB_SIM=1 -s continuous_adder -g2012 -Pcontinuous_adder.DATA_WIDTH=32 -Pcontinuous_adder.ENABLE_THRESHOLD=0 -Pcontinuous_adder.THRESHOLD=16 -Pcontinuous_adder.REGISTER_OUTPUT=0 -s cocotb_iverilog_dump -f /code/sim_build/cmds.f /code/rtl/continuous_adder.sv /code/sim_build/cocotb_iverilog_dump.v in directory /code/sim_build
+INFO: Running command vvp -M /usr/local/lib/python3.9/dist-packages/cocotb/libs -m libcocotbvpi_icarus /code/sim_build/sim.vvp -fst in directory /code/sim_build
+INFO: Results file: /code/sim_build/test_runner.None
+PASSED
+
+=============================== warnings summary ===============================
+../src/test_runner.py:2
+  /src/test_runner.py:2: UserWarning: Python runners and associated APIs are an experimental feature and subject to change.
+    from cocotb.runner import get_runner
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+========================= 1 passed, 1 warning in 0.21s =========================

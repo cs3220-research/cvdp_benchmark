@@ -1,0 +1,74 @@
+Running service: direct
+============================= test session starts ==============================
+platform linux -- Python 3.9.2, pytest-8.3.2, pluggy-1.5.0 -- /usr/bin/python3
+cachedir: /rundir/harness/.cache
+rootdir: /src
+collecting ... collected 2 items
+
+../src/test_runner.py::test_areg_param[0] 
+-------------------------------- live log call ---------------------------------
+INFO     Icarus:runner.py:468 Running command iverilog -o /code/sim_build/sim.vvp -s fixed_priority_arbiter -g2012 -s cocotb_iverilog_dump -f /code/sim_build/cmds.f /code/rtl/fixed_priority_arbiter.sv /code/sim_build/cocotb_iverilog_dump.v in directory /code/sim_build
+INFO     Icarus:runner.py:468 Running command vvp -M /usr/local/lib/python3.9/dist-packages/cocotb/libs -m libcocotbvpi_icarus /code/sim_build/sim.vvp -fst in directory /code/sim_build
+     -.--ns INFO     gpi                                ..mbed/gpi_embed.cpp:79   in set_program_name_in_venv        Did not detect Python virtual environment. Using system-wide Python interpreter
+     -.--ns INFO     gpi                                ../gpi/GpiCommon.cpp:101  in gpi_print_registered_impl       VPI registered
+     0.00ns INFO     cocotb                             Running on Icarus Verilog version 13.0 (devel)
+     0.00ns INFO     cocotb                             Running tests with cocotb v2.0.0.dev0+8d6c1a63 from /usr/local/lib/python3.9/dist-packages/cocotb
+     0.00ns INFO     cocotb                             Seeding Python random module with 1773327784
+     0.00ns INFO     cocotb.regression                  running test_fixed_priority_arbiter.test_fixed_priority_arbiter (1/1)
+                                                            Fixed Priority Arbiter Testbench
+    20.00ns INFO     cocotb                             Test Case 1: Single request
+    40.00ns INFO     cocotb                             Test Case 2: Multiple requests (fixed priority)
+    50.00ns INFO     cocotb                             Test Case 3: Priority override active
+    60.00ns INFO     cocotb                             Test Case 4: Highest priority among requests
+    70.00ns INFO     cocotb                             Test Case 5: Grant updates dynamically
+    90.00ns INFO     cocotb                             Test Case 6: Priority override during request changes
+   110.00ns INFO     cocotb                             Test Case 7: Manual clear
+   120.00ns INFO     cocotb                             Test Case 8: Reset during active requests
+   140.00ns INFO     cocotb                             All test cases passed successfully.
+   140.00ns INFO     cocotb.regression                  test_fixed_priority_arbiter.test_fixed_priority_arbiter passed
+   140.00ns INFO     cocotb.regression                  *****************************************************************************************************************
+                                                        ** TEST                                                     STATUS  SIM TIME (ns)  REAL TIME (s)  RATIO (ns/s) **
+                                                        *****************************************************************************************************************
+                                                        ** test_fixed_priority_arbiter.test_fixed_priority_arbiter   PASS         140.00           0.00      45117.37  **
+                                                        *****************************************************************************************************************
+                                                        ** TESTS=1 PASS=1 FAIL=0 SKIP=0                                           140.00           0.01      15458.39  **
+                                                        *****************************************************************************************************************
+                                                        
+FST info: dumpfile /code/sim_build/fixed_priority_arbiter.fst opened for output.
+INFO     Icarus:runner.py:438 Results file: /code/sim_build/test_areg_param[0].None
+PASSED
+../src/test_runner.py::test_areg_param[1] 
+-------------------------------- live log call ---------------------------------
+INFO     Icarus:runner.py:480 Removing: /code/sim_build
+INFO     Icarus:runner.py:468 Running command iverilog -o /code/sim_build/sim.vvp -s fixed_priority_arbiter -g2012 -s cocotb_iverilog_dump -f /code/sim_build/cmds.f /code/rtl/fixed_priority_arbiter.sv /code/sim_build/cocotb_iverilog_dump.v in directory /code/sim_build
+INFO     Icarus:runner.py:468 Running command vvp -M /usr/local/lib/python3.9/dist-packages/cocotb/libs -m libcocotbvpi_icarus /code/sim_build/sim.vvp -fst in directory /code/sim_build
+     -.--ns INFO     gpi                                ..mbed/gpi_embed.cpp:79   in set_program_name_in_venv        Did not detect Python virtual environment. Using system-wide Python interpreter
+     -.--ns INFO     gpi                                ../gpi/GpiCommon.cpp:101  in gpi_print_registered_impl       VPI registered
+     0.00ns INFO     cocotb                             Running on Icarus Verilog version 13.0 (devel)
+     0.00ns INFO     cocotb                             Running tests with cocotb v2.0.0.dev0+8d6c1a63 from /usr/local/lib/python3.9/dist-packages/cocotb
+     0.00ns INFO     cocotb                             Seeding Python random module with 1773327784
+     0.00ns INFO     cocotb.regression                  running test_fixed_priority_arbiter.test_fixed_priority_arbiter (1/1)
+                                                            Fixed Priority Arbiter Testbench
+    20.00ns INFO     cocotb                             Test Case 1: Single request
+    40.00ns INFO     cocotb                             Test Case 2: Multiple requests (fixed priority)
+    50.00ns INFO     cocotb                             Test Case 3: Priority override active
+    60.00ns INFO     cocotb                             Test Case 4: Highest priority among requests
+    70.00ns INFO     cocotb                             Test Case 5: Grant updates dynamically
+    90.00ns INFO     cocotb                             Test Case 6: Priority override during request changes
+   110.00ns INFO     cocotb                             Test Case 7: Manual clear
+   120.00ns INFO     cocotb                             Test Case 8: Reset during active requests
+   140.00ns INFO     cocotb                             All test cases passed successfully.
+   140.00ns INFO     cocotb.regression                  test_fixed_priority_arbiter.test_fixed_priority_arbiter passed
+   140.00ns INFO     cocotb.regression                  *****************************************************************************************************************
+                                                        ** TEST                                                     STATUS  SIM TIME (ns)  REAL TIME (s)  RATIO (ns/s) **
+                                                        *****************************************************************************************************************
+                                                        ** test_fixed_priority_arbiter.test_fixed_priority_arbiter   PASS         140.00           0.00      47950.56  **
+                                                        *****************************************************************************************************************
+                                                        ** TESTS=1 PASS=1 FAIL=0 SKIP=0                                           140.00           0.01      19425.14  **
+                                                        *****************************************************************************************************************
+                                                        
+FST info: dumpfile /code/sim_build/fixed_priority_arbiter.fst opened for output.
+INFO     Icarus:runner.py:438 Results file: /code/sim_build/test_areg_param[1].None
+PASSED
+
+============================== 2 passed in 0.44s ===============================

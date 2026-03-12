@@ -1,0 +1,96 @@
+Running service: direct
+============================= test session starts ==============================
+platform linux -- Python 3.9.2, pytest-8.3.2, pluggy-1.5.0 -- /usr/bin/python3
+cachedir: /rundir/harness/.cache
+rootdir: /src
+collecting ... collected 1 item
+
+../../src/test_runner.py::test_event_scheduler Running event scheduler testbench...
+
+-------------------------------- live log call ---------------------------------
+INFO     Icarus:runner.py:468 Running command iverilog -o /code/rundir/sim_build/sim.vvp -s event_scheduler -g2012 -s cocotb_iverilog_dump -f /code/rundir/sim_build/cmds.f /code/rtl/event_scheduler.sv /code/rundir/sim_build/cocotb_iverilog_dump.v in directory /code/rundir/sim_build
+INFO     Icarus:runner.py:468 Running command vvp -M /usr/local/lib/python3.9/dist-packages/cocotb/libs -m libcocotbvpi_icarus /code/rundir/sim_build/sim.vvp -fst in directory /code/rundir/sim_build
+     -.--ns INFO     gpi                                ..mbed/gpi_embed.cpp:79   in set_program_name_in_venv        Did not detect Python virtual environment. Using system-wide Python interpreter
+     -.--ns INFO     gpi                                ../gpi/GpiCommon.cpp:101  in gpi_print_registered_impl       VPI registered
+     0.00ns INFO     cocotb                             Running on Icarus Verilog version 13.0 (devel)
+     0.00ns INFO     cocotb                             Running tests with cocotb v2.0.0.dev0+8d6c1a63 from /usr/local/lib/python3.9/dist-packages/cocotb
+     0.00ns INFO     cocotb                             Seeding Python random module with 1773331106
+     0.00ns INFO     cocotb.regression                  running test_event_scheduler.tc1_add_event_and_trigger (1/10)
+                                                            TC1: Add event ID=1 with timestamp = current_time+30, priority=2 and wait for trigger.
+     0.00ns INFO     cocotb                             TC1: Starting test: add event and trigger
+    60.00ns INFO     cocotb                             TC1: current_time=40, log_event_time=40, log_event_id=1
+    60.00ns INFO     cocotb.regression                  test_event_scheduler.tc1_add_event_and_trigger passed
+    60.00ns INFO     cocotb.regression                  running test_event_scheduler.tc2_cancel_event (2/10)
+                                                            TC2: Add event ID=2 with timestamp=current_time+50 then cancel it before trigger.
+    61.00ns INFO     cocotb                             TC2: Starting test: add event then cancel it
+   191.00ns INFO     cocotb                             TC2: current_time=100
+   191.00ns INFO     cocotb.regression                  test_event_scheduler.tc2_cancel_event passed
+   191.00ns INFO     cocotb.regression                  running test_event_scheduler.tc3_modify_event (3/10)
+                                                            TC3: Add event ID=3, then modify it (timestamp=current_time+90, priority=4) and wait for trigger.
+   192.00ns INFO     cocotb                             TC3: Starting test: add event then modify it
+   322.00ns INFO     cocotb                             TC3: current_time=100, log_event_time=100
+   322.00ns INFO     cocotb.regression                  test_event_scheduler.tc3_modify_event passed
+   322.00ns INFO     cocotb.regression                  running test_event_scheduler.tc4_duplicate_add (4/10)
+                                                            TC4: Add event ID=4 twice; expect error on duplicate addition.
+   323.00ns INFO     cocotb                             TC4: Starting test: duplicate add event
+   413.00ns INFO     cocotb                             TC4: current_time=60, log_event_time=50
+   413.00ns INFO     cocotb.regression                  test_event_scheduler.tc4_duplicate_add passed
+   413.00ns INFO     cocotb.regression                  running test_event_scheduler.tc5_modify_nonexistent (5/10)
+                                                            TC5: Attempt to modify event ID=5 (which hasn't been added); expect error.
+   414.00ns INFO     cocotb                             TC5: Starting test: modify non-existent event
+   494.00ns INFO     cocotb                             TC5: current_time=50
+   494.00ns INFO     cocotb.regression                  test_event_scheduler.tc5_modify_nonexistent passed
+   494.00ns INFO     cocotb.regression                  running test_event_scheduler.tc6_cancel_nonexistent (6/10)
+                                                            TC6: Attempt to cancel event ID=6 (which hasn't been added); expect error.
+   495.00ns INFO     cocotb                             TC6: Starting test: cancel non-existent event
+   575.00ns INFO     cocotb                             TC6: current_time=50
+   575.00ns INFO     cocotb.regression                  test_event_scheduler.tc6_cancel_nonexistent passed
+   575.00ns INFO     cocotb.regression                  running test_event_scheduler.tc7_recurring_event (7/10)
+                                                            TC7: Add recurring event ID=7 with recurring_interval=20 and verify repeated triggers.
+   576.00ns INFO     cocotb                             TC7: Starting test: recurring event
+   656.00ns INFO     cocotb                             TC7: First trigger at time 50
+   676.00ns INFO     cocotb                             TC7: Second trigger at time 70
+   676.00ns INFO     cocotb.regression                  test_event_scheduler.tc7_recurring_event passed
+   676.00ns INFO     cocotb.regression                  running test_event_scheduler.tc8_logging (8/10)
+                                                            TC8: Add event ID=8 and verify log_event_time and log_event_id outputs.
+   677.00ns INFO     cocotb                             TC8: Starting test: event logging
+   747.00ns INFO     cocotb                             TC8: Triggered at time 40 with event id 8
+   747.00ns INFO     cocotb.regression                  test_event_scheduler.tc8_logging passed
+   747.00ns INFO     cocotb.regression                  running test_event_scheduler.tc9_modify_then_cancel (9/10)
+                                                            TC9: Add event ID=9, then modify and cancel it; expect no trigger.
+   748.00ns INFO     cocotb                             TC9: Starting test: modify then cancel event
+   878.00ns INFO     cocotb                             TC9: current_time=100
+   878.00ns INFO     cocotb.regression                  test_event_scheduler.tc9_modify_then_cancel passed
+   878.00ns INFO     cocotb.regression                  running test_event_scheduler.tc10_priority_selection (10/10)
+                                                            TC10: Add event ID=10 and then event ID=11 (with same target timestamp) in consecutive cycles; expect event with higher priority (ID 11) to trigger.
+   879.00ns INFO     cocotb                             TC10: Starting test: concurrent events with priority selection
+  1089.00ns INFO     cocotb                             TC10: Triggered event id 11 at time 180
+  1089.00ns INFO     cocotb.regression                  test_event_scheduler.tc10_priority_selection passed
+  1089.00ns INFO     cocotb.regression                  ********************************************************************************************************
+                                                        ** TEST                                            STATUS  SIM TIME (ns)  REAL TIME (s)  RATIO (ns/s) **
+                                                        ********************************************************************************************************
+                                                        ** test_event_scheduler.tc1_add_event_and_trigger   PASS          60.00           0.00      17252.23  **
+                                                        ** test_event_scheduler.tc2_cancel_event            PASS         131.00           0.00      30435.60  **
+                                                        ** test_event_scheduler.tc3_modify_event            PASS         131.00           0.00      28971.99  **
+                                                        ** test_event_scheduler.tc4_duplicate_add           PASS          91.00           0.00      27239.63  **
+                                                        ** test_event_scheduler.tc5_modify_nonexistent      PASS          81.00           0.00      29827.80  **
+                                                        ** test_event_scheduler.tc6_cancel_nonexistent      PASS          81.00           0.00      30044.09  **
+                                                        ** test_event_scheduler.tc7_recurring_event         PASS         101.00           0.00      31923.49  **
+                                                        ** test_event_scheduler.tc8_logging                 PASS          71.00           0.00      52763.21  **
+                                                        ** test_event_scheduler.tc9_modify_then_cancel      PASS         131.00           0.00      55748.16  **
+                                                        ** test_event_scheduler.tc10_priority_selection     PASS         211.00           0.00      58702.45  **
+                                                        ********************************************************************************************************
+                                                        ** TESTS=10 PASS=10 FAIL=0 SKIP=0                               1089.00           0.05      22511.35  **
+                                                        ********************************************************************************************************
+                                                        
+FST info: dumpfile /code/rundir/sim_build/event_scheduler.fst opened for output.
+INFO     Icarus:runner.py:438 Results file: /code/rundir/sim_build/test_event_scheduler.None
+PASSED
+
+=============================== warnings summary ===============================
+../../src/test_runner.py:40
+  /src/test_runner.py:40: PytestUnknownMarkWarning: Unknown pytest.mark.simulation - is this a typo?  You can register custom marks to avoid this warning - for details, see https://docs.pytest.org/en/stable/how-to/mark.html
+    @pytest.mark.simulation
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+========================= 1 passed, 1 warning in 0.23s =========================

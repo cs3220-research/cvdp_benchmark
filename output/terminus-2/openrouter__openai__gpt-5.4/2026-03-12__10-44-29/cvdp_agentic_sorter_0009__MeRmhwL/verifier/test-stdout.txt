@@ -1,0 +1,290 @@
+Running service: direct
+============================= test session starts ==============================
+platform linux -- Python 3.9.2, pytest-8.3.2, pluggy-1.5.0 -- /usr/bin/python3
+cachedir: /rundir/harness/.cache
+rootdir: /src
+collecting ... collected 6 items
+
+../../src/test_runner.py::test_runner [DEBUG] Running simulation with WIDTH=4
+[DEBUG] Parameters: {'WIDTH': 4}
+
+-------------------------------- live log call ---------------------------------
+INFO     Icarus:runner.py:468 Running command iverilog -o /code/rundir/sim_build/sim.vvp -s sorting_engine -g2012 -Psorting_engine.WIDTH=4 -s cocotb_iverilog_dump -f /code/rundir/sim_build/cmds.f /code/rtl/sorting_engine.sv /code/rundir/sim_build/cocotb_iverilog_dump.v in directory /code/rundir/sim_build
+INFO     Icarus:runner.py:468 Running command vvp -M /usr/local/lib/python3.9/dist-packages/cocotb/libs -m libcocotbvpi_icarus /code/rundir/sim_build/sim.vvp -fst in directory /code/rundir/sim_build
+     -.--ns INFO     gpi                                ..mbed/gpi_embed.cpp:79   in set_program_name_in_venv        Did not detect Python virtual environment. Using system-wide Python interpreter
+     -.--ns INFO     gpi                                ../gpi/GpiCommon.cpp:101  in gpi_print_registered_impl       VPI registered
+     0.00ns INFO     cocotb                             Running on Icarus Verilog version 13.0 (devel)
+     0.00ns INFO     cocotb                             Running tests with cocotb v2.0.0.dev0+8d6c1a63 from /usr/local/lib/python3.9/dist-packages/cocotb
+     0.00ns INFO     cocotb                             Seeding Python random module with 1773328946
+     0.00ns INFO     cocotb.regression                  running test_sorting_engine.test_sorting_engine (1/1)
+                                                            Cocotb Testbench for the sorting_engine module.
+     0.00ns INFO     cocotb.sorting_engine              ***** Starting Test: Already Sorted *****
+   200.00ns INFO     cocotb.sorting_engine              Latency check passed for test Already Sorted: 17 cycles
+   200.00ns INFO     cocotb.sorting_engine              Test Already Sorted PASSED.
+   210.00ns INFO     cocotb.sorting_engine              ***** Starting Test: Reverse Sorted *****
+   410.00ns INFO     cocotb.sorting_engine              Latency check passed for test Reverse Sorted: 17 cycles
+   410.00ns INFO     cocotb.sorting_engine              Test Reverse Sorted PASSED.
+   420.00ns INFO     cocotb.sorting_engine              ***** Starting Test: Random Unsorted *****
+   620.00ns INFO     cocotb.sorting_engine              Latency check passed for test Random Unsorted: 17 cycles
+   620.00ns INFO     cocotb.sorting_engine              Test Random Unsorted PASSED.
+   630.00ns INFO     cocotb.sorting_engine              ***** Starting Test: All Equal *****
+   830.00ns INFO     cocotb.sorting_engine              Latency check passed for test All Equal: 17 cycles
+   830.00ns INFO     cocotb.sorting_engine              Test All Equal PASSED.
+   840.00ns INFO     cocotb.sorting_engine              ***** Starting Test: Edge Values *****
+  1040.00ns INFO     cocotb.sorting_engine              Latency check passed for test Edge Values: 17 cycles
+  1040.00ns INFO     cocotb.sorting_engine              Test Edge Values PASSED.
+  1050.00ns INFO     cocotb.sorting_engine              ***** Starting Test: Consecutive Operation 1 *****
+  1250.00ns INFO     cocotb.sorting_engine              Latency check passed for test Consecutive Operation 1: 17 cycles
+  1250.00ns INFO     cocotb.sorting_engine              Test Consecutive Operation 1 PASSED.
+  1260.00ns INFO     cocotb.sorting_engine              ***** Starting Test: Consecutive Operation 2 *****
+  1460.00ns INFO     cocotb.sorting_engine              Latency check passed for test Consecutive Operation 2: 17 cycles
+  1460.00ns INFO     cocotb.sorting_engine              Test Consecutive Operation 2 PASSED.
+  1470.00ns INFO     cocotb.regression                  test_sorting_engine.test_sorting_engine passed
+  1470.00ns INFO     cocotb.regression                  *************************************************************************************************
+                                                        ** TEST                                     STATUS  SIM TIME (ns)  REAL TIME (s)  RATIO (ns/s) **
+                                                        *************************************************************************************************
+                                                        ** test_sorting_engine.test_sorting_engine   PASS        1470.00           0.02      91465.93  **
+                                                        *************************************************************************************************
+                                                        ** TESTS=1 PASS=1 FAIL=0 SKIP=0                          1470.00           0.02      69102.78  **
+                                                        *************************************************************************************************
+                                                        
+FST info: dumpfile /code/rundir/sim_build/sorting_engine.fst opened for output.
+INFO     Icarus:runner.py:438 Results file: /code/rundir/sim_build/test_runner.None
+PASSED
+../../src/test_runner.py::test_sort[1] [DEBUG] Running simulation with WIDTH=1
+[DEBUG] Parameters: {'WIDTH': 1}
+
+-------------------------------- live log call ---------------------------------
+INFO     Icarus:runner.py:480 Removing: /code/rundir/sim_build
+INFO     Icarus:runner.py:468 Running command iverilog -o /code/rundir/sim_build/sim.vvp -s sorting_engine -g2012 -Psorting_engine.WIDTH=1 -s cocotb_iverilog_dump -f /code/rundir/sim_build/cmds.f /code/rtl/sorting_engine.sv /code/rundir/sim_build/cocotb_iverilog_dump.v in directory /code/rundir/sim_build
+INFO     Icarus:runner.py:468 Running command vvp -M /usr/local/lib/python3.9/dist-packages/cocotb/libs -m libcocotbvpi_icarus /code/rundir/sim_build/sim.vvp -fst in directory /code/rundir/sim_build
+     -.--ns INFO     gpi                                ..mbed/gpi_embed.cpp:79   in set_program_name_in_venv        Did not detect Python virtual environment. Using system-wide Python interpreter
+     -.--ns INFO     gpi                                ../gpi/GpiCommon.cpp:101  in gpi_print_registered_impl       VPI registered
+     0.00ns INFO     cocotb                             Running on Icarus Verilog version 13.0 (devel)
+     0.00ns INFO     cocotb                             Running tests with cocotb v2.0.0.dev0+8d6c1a63 from /usr/local/lib/python3.9/dist-packages/cocotb
+     0.00ns INFO     cocotb                             Seeding Python random module with 1773328946
+     0.00ns INFO     cocotb.regression                  running test_sorting_engine.test_sorting_engine (1/1)
+                                                            Cocotb Testbench for the sorting_engine module.
+     0.00ns INFO     cocotb.sorting_engine              ***** Starting Test: Already Sorted *****
+   200.00ns INFO     cocotb.sorting_engine              Latency check passed for test Already Sorted: 17 cycles
+   200.00ns INFO     cocotb.sorting_engine              Test Already Sorted PASSED.
+   210.00ns INFO     cocotb.sorting_engine              ***** Starting Test: Reverse Sorted *****
+   410.00ns INFO     cocotb.sorting_engine              Latency check passed for test Reverse Sorted: 17 cycles
+   410.00ns INFO     cocotb.sorting_engine              Test Reverse Sorted PASSED.
+   420.00ns INFO     cocotb.sorting_engine              ***** Starting Test: Random Unsorted *****
+   620.00ns INFO     cocotb.sorting_engine              Latency check passed for test Random Unsorted: 17 cycles
+   620.00ns INFO     cocotb.sorting_engine              Test Random Unsorted PASSED.
+   630.00ns INFO     cocotb.sorting_engine              ***** Starting Test: All Equal *****
+   830.00ns INFO     cocotb.sorting_engine              Latency check passed for test All Equal: 17 cycles
+   830.00ns INFO     cocotb.sorting_engine              Test All Equal PASSED.
+   840.00ns INFO     cocotb.sorting_engine              ***** Starting Test: Edge Values *****
+  1040.00ns INFO     cocotb.sorting_engine              Latency check passed for test Edge Values: 17 cycles
+  1040.00ns INFO     cocotb.sorting_engine              Test Edge Values PASSED.
+  1050.00ns INFO     cocotb.sorting_engine              ***** Starting Test: Consecutive Operation 1 *****
+  1250.00ns INFO     cocotb.sorting_engine              Latency check passed for test Consecutive Operation 1: 17 cycles
+  1250.00ns INFO     cocotb.sorting_engine              Test Consecutive Operation 1 PASSED.
+  1260.00ns INFO     cocotb.sorting_engine              ***** Starting Test: Consecutive Operation 2 *****
+  1460.00ns INFO     cocotb.sorting_engine              Latency check passed for test Consecutive Operation 2: 17 cycles
+  1460.00ns INFO     cocotb.sorting_engine              Test Consecutive Operation 2 PASSED.
+  1470.00ns INFO     cocotb.regression                  test_sorting_engine.test_sorting_engine passed
+  1470.00ns INFO     cocotb.regression                  *************************************************************************************************
+                                                        ** TEST                                     STATUS  SIM TIME (ns)  REAL TIME (s)  RATIO (ns/s) **
+                                                        *************************************************************************************************
+                                                        ** test_sorting_engine.test_sorting_engine   PASS        1470.00           0.02      97098.02  **
+                                                        *************************************************************************************************
+                                                        ** TESTS=1 PASS=1 FAIL=0 SKIP=0                          1470.00           0.02      73963.85  **
+                                                        *************************************************************************************************
+                                                        
+FST info: dumpfile /code/rundir/sim_build/sorting_engine.fst opened for output.
+INFO     Icarus:runner.py:438 Results file: /code/rundir/sim_build/test_sort[1].None
+PASSED
+../../src/test_runner.py::test_sort[2] [DEBUG] Running simulation with WIDTH=2
+[DEBUG] Parameters: {'WIDTH': 2}
+
+-------------------------------- live log call ---------------------------------
+INFO     Icarus:runner.py:480 Removing: /code/rundir/sim_build
+INFO     Icarus:runner.py:468 Running command iverilog -o /code/rundir/sim_build/sim.vvp -s sorting_engine -g2012 -Psorting_engine.WIDTH=2 -s cocotb_iverilog_dump -f /code/rundir/sim_build/cmds.f /code/rtl/sorting_engine.sv /code/rundir/sim_build/cocotb_iverilog_dump.v in directory /code/rundir/sim_build
+INFO     Icarus:runner.py:468 Running command vvp -M /usr/local/lib/python3.9/dist-packages/cocotb/libs -m libcocotbvpi_icarus /code/rundir/sim_build/sim.vvp -fst in directory /code/rundir/sim_build
+     -.--ns INFO     gpi                                ..mbed/gpi_embed.cpp:79   in set_program_name_in_venv        Did not detect Python virtual environment. Using system-wide Python interpreter
+     -.--ns INFO     gpi                                ../gpi/GpiCommon.cpp:101  in gpi_print_registered_impl       VPI registered
+     0.00ns INFO     cocotb                             Running on Icarus Verilog version 13.0 (devel)
+     0.00ns INFO     cocotb                             Running tests with cocotb v2.0.0.dev0+8d6c1a63 from /usr/local/lib/python3.9/dist-packages/cocotb
+     0.00ns INFO     cocotb                             Seeding Python random module with 1773328946
+     0.00ns INFO     cocotb.regression                  running test_sorting_engine.test_sorting_engine (1/1)
+                                                            Cocotb Testbench for the sorting_engine module.
+     0.00ns INFO     cocotb.sorting_engine              ***** Starting Test: Already Sorted *****
+   200.00ns INFO     cocotb.sorting_engine              Latency check passed for test Already Sorted: 17 cycles
+   200.00ns INFO     cocotb.sorting_engine              Test Already Sorted PASSED.
+   210.00ns INFO     cocotb.sorting_engine              ***** Starting Test: Reverse Sorted *****
+   410.00ns INFO     cocotb.sorting_engine              Latency check passed for test Reverse Sorted: 17 cycles
+   410.00ns INFO     cocotb.sorting_engine              Test Reverse Sorted PASSED.
+   420.00ns INFO     cocotb.sorting_engine              ***** Starting Test: Random Unsorted *****
+   620.00ns INFO     cocotb.sorting_engine              Latency check passed for test Random Unsorted: 17 cycles
+   620.00ns INFO     cocotb.sorting_engine              Test Random Unsorted PASSED.
+   630.00ns INFO     cocotb.sorting_engine              ***** Starting Test: All Equal *****
+   830.00ns INFO     cocotb.sorting_engine              Latency check passed for test All Equal: 17 cycles
+   830.00ns INFO     cocotb.sorting_engine              Test All Equal PASSED.
+   840.00ns INFO     cocotb.sorting_engine              ***** Starting Test: Edge Values *****
+  1040.00ns INFO     cocotb.sorting_engine              Latency check passed for test Edge Values: 17 cycles
+  1040.00ns INFO     cocotb.sorting_engine              Test Edge Values PASSED.
+  1050.00ns INFO     cocotb.sorting_engine              ***** Starting Test: Consecutive Operation 1 *****
+  1250.00ns INFO     cocotb.sorting_engine              Latency check passed for test Consecutive Operation 1: 17 cycles
+  1250.00ns INFO     cocotb.sorting_engine              Test Consecutive Operation 1 PASSED.
+  1260.00ns INFO     cocotb.sorting_engine              ***** Starting Test: Consecutive Operation 2 *****
+  1460.00ns INFO     cocotb.sorting_engine              Latency check passed for test Consecutive Operation 2: 17 cycles
+  1460.00ns INFO     cocotb.sorting_engine              Test Consecutive Operation 2 PASSED.
+  1470.00ns INFO     cocotb.regression                  test_sorting_engine.test_sorting_engine passed
+  1470.00ns INFO     cocotb.regression                  *************************************************************************************************
+                                                        ** TEST                                     STATUS  SIM TIME (ns)  REAL TIME (s)  RATIO (ns/s) **
+                                                        *************************************************************************************************
+                                                        ** test_sorting_engine.test_sorting_engine   PASS        1470.00           0.02      91807.78  **
+                                                        *************************************************************************************************
+                                                        ** TESTS=1 PASS=1 FAIL=0 SKIP=0                          1470.00           0.02      70393.51  **
+                                                        *************************************************************************************************
+                                                        
+FST info: dumpfile /code/rundir/sim_build/sorting_engine.fst opened for output.
+INFO     Icarus:runner.py:438 Results file: /code/rundir/sim_build/test_sort[2].None
+PASSED
+../../src/test_runner.py::test_sort[3] [DEBUG] Running simulation with WIDTH=3
+[DEBUG] Parameters: {'WIDTH': 3}
+
+-------------------------------- live log call ---------------------------------
+INFO     Icarus:runner.py:480 Removing: /code/rundir/sim_build
+INFO     Icarus:runner.py:468 Running command iverilog -o /code/rundir/sim_build/sim.vvp -s sorting_engine -g2012 -Psorting_engine.WIDTH=3 -s cocotb_iverilog_dump -f /code/rundir/sim_build/cmds.f /code/rtl/sorting_engine.sv /code/rundir/sim_build/cocotb_iverilog_dump.v in directory /code/rundir/sim_build
+INFO     Icarus:runner.py:468 Running command vvp -M /usr/local/lib/python3.9/dist-packages/cocotb/libs -m libcocotbvpi_icarus /code/rundir/sim_build/sim.vvp -fst in directory /code/rundir/sim_build
+     -.--ns INFO     gpi                                ..mbed/gpi_embed.cpp:79   in set_program_name_in_venv        Did not detect Python virtual environment. Using system-wide Python interpreter
+     -.--ns INFO     gpi                                ../gpi/GpiCommon.cpp:101  in gpi_print_registered_impl       VPI registered
+     0.00ns INFO     cocotb                             Running on Icarus Verilog version 13.0 (devel)
+     0.00ns INFO     cocotb                             Running tests with cocotb v2.0.0.dev0+8d6c1a63 from /usr/local/lib/python3.9/dist-packages/cocotb
+     0.00ns INFO     cocotb                             Seeding Python random module with 1773328946
+     0.00ns INFO     cocotb.regression                  running test_sorting_engine.test_sorting_engine (1/1)
+                                                            Cocotb Testbench for the sorting_engine module.
+     0.00ns INFO     cocotb.sorting_engine              ***** Starting Test: Already Sorted *****
+   200.00ns INFO     cocotb.sorting_engine              Latency check passed for test Already Sorted: 17 cycles
+   200.00ns INFO     cocotb.sorting_engine              Test Already Sorted PASSED.
+   210.00ns INFO     cocotb.sorting_engine              ***** Starting Test: Reverse Sorted *****
+   410.00ns INFO     cocotb.sorting_engine              Latency check passed for test Reverse Sorted: 17 cycles
+   410.00ns INFO     cocotb.sorting_engine              Test Reverse Sorted PASSED.
+   420.00ns INFO     cocotb.sorting_engine              ***** Starting Test: Random Unsorted *****
+   620.00ns INFO     cocotb.sorting_engine              Latency check passed for test Random Unsorted: 17 cycles
+   620.00ns INFO     cocotb.sorting_engine              Test Random Unsorted PASSED.
+   630.00ns INFO     cocotb.sorting_engine              ***** Starting Test: All Equal *****
+   830.00ns INFO     cocotb.sorting_engine              Latency check passed for test All Equal: 17 cycles
+   830.00ns INFO     cocotb.sorting_engine              Test All Equal PASSED.
+   840.00ns INFO     cocotb.sorting_engine              ***** Starting Test: Edge Values *****
+  1040.00ns INFO     cocotb.sorting_engine              Latency check passed for test Edge Values: 17 cycles
+  1040.00ns INFO     cocotb.sorting_engine              Test Edge Values PASSED.
+  1050.00ns INFO     cocotb.sorting_engine              ***** Starting Test: Consecutive Operation 1 *****
+  1250.00ns INFO     cocotb.sorting_engine              Latency check passed for test Consecutive Operation 1: 17 cycles
+  1250.00ns INFO     cocotb.sorting_engine              Test Consecutive Operation 1 PASSED.
+  1260.00ns INFO     cocotb.sorting_engine              ***** Starting Test: Consecutive Operation 2 *****
+  1460.00ns INFO     cocotb.sorting_engine              Latency check passed for test Consecutive Operation 2: 17 cycles
+  1460.00ns INFO     cocotb.sorting_engine              Test Consecutive Operation 2 PASSED.
+  1470.00ns INFO     cocotb.regression                  test_sorting_engine.test_sorting_engine passed
+  1470.00ns INFO     cocotb.regression                  *************************************************************************************************
+                                                        ** TEST                                     STATUS  SIM TIME (ns)  REAL TIME (s)  RATIO (ns/s) **
+                                                        *************************************************************************************************
+                                                        ** test_sorting_engine.test_sorting_engine   PASS        1470.00           0.02      92941.21  **
+                                                        *************************************************************************************************
+                                                        ** TESTS=1 PASS=1 FAIL=0 SKIP=0                          1470.00           0.02      71039.12  **
+                                                        *************************************************************************************************
+                                                        
+FST info: dumpfile /code/rundir/sim_build/sorting_engine.fst opened for output.
+INFO     Icarus:runner.py:438 Results file: /code/rundir/sim_build/test_sort[3].None
+PASSED
+../../src/test_runner.py::test_sort[4] [DEBUG] Running simulation with WIDTH=4
+[DEBUG] Parameters: {'WIDTH': 4}
+
+-------------------------------- live log call ---------------------------------
+INFO     Icarus:runner.py:480 Removing: /code/rundir/sim_build
+INFO     Icarus:runner.py:468 Running command iverilog -o /code/rundir/sim_build/sim.vvp -s sorting_engine -g2012 -Psorting_engine.WIDTH=4 -s cocotb_iverilog_dump -f /code/rundir/sim_build/cmds.f /code/rtl/sorting_engine.sv /code/rundir/sim_build/cocotb_iverilog_dump.v in directory /code/rundir/sim_build
+INFO     Icarus:runner.py:468 Running command vvp -M /usr/local/lib/python3.9/dist-packages/cocotb/libs -m libcocotbvpi_icarus /code/rundir/sim_build/sim.vvp -fst in directory /code/rundir/sim_build
+     -.--ns INFO     gpi                                ..mbed/gpi_embed.cpp:79   in set_program_name_in_venv        Did not detect Python virtual environment. Using system-wide Python interpreter
+     -.--ns INFO     gpi                                ../gpi/GpiCommon.cpp:101  in gpi_print_registered_impl       VPI registered
+     0.00ns INFO     cocotb                             Running on Icarus Verilog version 13.0 (devel)
+     0.00ns INFO     cocotb                             Running tests with cocotb v2.0.0.dev0+8d6c1a63 from /usr/local/lib/python3.9/dist-packages/cocotb
+     0.00ns INFO     cocotb                             Seeding Python random module with 1773328946
+     0.00ns INFO     cocotb.regression                  running test_sorting_engine.test_sorting_engine (1/1)
+                                                            Cocotb Testbench for the sorting_engine module.
+     0.00ns INFO     cocotb.sorting_engine              ***** Starting Test: Already Sorted *****
+   200.00ns INFO     cocotb.sorting_engine              Latency check passed for test Already Sorted: 17 cycles
+   200.00ns INFO     cocotb.sorting_engine              Test Already Sorted PASSED.
+   210.00ns INFO     cocotb.sorting_engine              ***** Starting Test: Reverse Sorted *****
+   410.00ns INFO     cocotb.sorting_engine              Latency check passed for test Reverse Sorted: 17 cycles
+   410.00ns INFO     cocotb.sorting_engine              Test Reverse Sorted PASSED.
+   420.00ns INFO     cocotb.sorting_engine              ***** Starting Test: Random Unsorted *****
+   620.00ns INFO     cocotb.sorting_engine              Latency check passed for test Random Unsorted: 17 cycles
+   620.00ns INFO     cocotb.sorting_engine              Test Random Unsorted PASSED.
+   630.00ns INFO     cocotb.sorting_engine              ***** Starting Test: All Equal *****
+   830.00ns INFO     cocotb.sorting_engine              Latency check passed for test All Equal: 17 cycles
+   830.00ns INFO     cocotb.sorting_engine              Test All Equal PASSED.
+   840.00ns INFO     cocotb.sorting_engine              ***** Starting Test: Edge Values *****
+  1040.00ns INFO     cocotb.sorting_engine              Latency check passed for test Edge Values: 17 cycles
+  1040.00ns INFO     cocotb.sorting_engine              Test Edge Values PASSED.
+  1050.00ns INFO     cocotb.sorting_engine              ***** Starting Test: Consecutive Operation 1 *****
+  1250.00ns INFO     cocotb.sorting_engine              Latency check passed for test Consecutive Operation 1: 17 cycles
+  1250.00ns INFO     cocotb.sorting_engine              Test Consecutive Operation 1 PASSED.
+  1260.00ns INFO     cocotb.sorting_engine              ***** Starting Test: Consecutive Operation 2 *****
+  1460.00ns INFO     cocotb.sorting_engine              Latency check passed for test Consecutive Operation 2: 17 cycles
+  1460.00ns INFO     cocotb.sorting_engine              Test Consecutive Operation 2 PASSED.
+  1470.00ns INFO     cocotb.regression                  test_sorting_engine.test_sorting_engine passed
+  1470.00ns INFO     cocotb.regression                  *************************************************************************************************
+                                                        ** TEST                                     STATUS  SIM TIME (ns)  REAL TIME (s)  RATIO (ns/s) **
+                                                        *************************************************************************************************
+                                                        ** test_sorting_engine.test_sorting_engine   PASS        1470.00           0.02      90748.39  **
+                                                        *************************************************************************************************
+                                                        ** TESTS=1 PASS=1 FAIL=0 SKIP=0                          1470.00           0.02      70045.63  **
+                                                        *************************************************************************************************
+                                                        
+FST info: dumpfile /code/rundir/sim_build/sorting_engine.fst opened for output.
+INFO     Icarus:runner.py:438 Results file: /code/rundir/sim_build/test_sort[4].None
+PASSED
+../../src/test_runner.py::test_sort[5] [DEBUG] Running simulation with WIDTH=5
+[DEBUG] Parameters: {'WIDTH': 5}
+
+-------------------------------- live log call ---------------------------------
+INFO     Icarus:runner.py:480 Removing: /code/rundir/sim_build
+INFO     Icarus:runner.py:468 Running command iverilog -o /code/rundir/sim_build/sim.vvp -s sorting_engine -g2012 -Psorting_engine.WIDTH=5 -s cocotb_iverilog_dump -f /code/rundir/sim_build/cmds.f /code/rtl/sorting_engine.sv /code/rundir/sim_build/cocotb_iverilog_dump.v in directory /code/rundir/sim_build
+INFO     Icarus:runner.py:468 Running command vvp -M /usr/local/lib/python3.9/dist-packages/cocotb/libs -m libcocotbvpi_icarus /code/rundir/sim_build/sim.vvp -fst in directory /code/rundir/sim_build
+     -.--ns INFO     gpi                                ..mbed/gpi_embed.cpp:79   in set_program_name_in_venv        Did not detect Python virtual environment. Using system-wide Python interpreter
+     -.--ns INFO     gpi                                ../gpi/GpiCommon.cpp:101  in gpi_print_registered_impl       VPI registered
+     0.00ns INFO     cocotb                             Running on Icarus Verilog version 13.0 (devel)
+     0.00ns INFO     cocotb                             Running tests with cocotb v2.0.0.dev0+8d6c1a63 from /usr/local/lib/python3.9/dist-packages/cocotb
+     0.00ns INFO     cocotb                             Seeding Python random module with 1773328947
+     0.00ns INFO     cocotb.regression                  running test_sorting_engine.test_sorting_engine (1/1)
+                                                            Cocotb Testbench for the sorting_engine module.
+     0.00ns INFO     cocotb.sorting_engine              ***** Starting Test: Already Sorted *****
+   200.00ns INFO     cocotb.sorting_engine              Latency check passed for test Already Sorted: 17 cycles
+   200.00ns INFO     cocotb.sorting_engine              Test Already Sorted PASSED.
+   210.00ns INFO     cocotb.sorting_engine              ***** Starting Test: Reverse Sorted *****
+   410.00ns INFO     cocotb.sorting_engine              Latency check passed for test Reverse Sorted: 17 cycles
+   410.00ns INFO     cocotb.sorting_engine              Test Reverse Sorted PASSED.
+   420.00ns INFO     cocotb.sorting_engine              ***** Starting Test: Random Unsorted *****
+   620.00ns INFO     cocotb.sorting_engine              Latency check passed for test Random Unsorted: 17 cycles
+   620.00ns INFO     cocotb.sorting_engine              Test Random Unsorted PASSED.
+   630.00ns INFO     cocotb.sorting_engine              ***** Starting Test: All Equal *****
+   830.00ns INFO     cocotb.sorting_engine              Latency check passed for test All Equal: 17 cycles
+   830.00ns INFO     cocotb.sorting_engine              Test All Equal PASSED.
+   840.00ns INFO     cocotb.sorting_engine              ***** Starting Test: Edge Values *****
+  1040.00ns INFO     cocotb.sorting_engine              Latency check passed for test Edge Values: 17 cycles
+  1040.00ns INFO     cocotb.sorting_engine              Test Edge Values PASSED.
+  1050.00ns INFO     cocotb.sorting_engine              ***** Starting Test: Consecutive Operation 1 *****
+  1250.00ns INFO     cocotb.sorting_engine              Latency check passed for test Consecutive Operation 1: 17 cycles
+  1250.00ns INFO     cocotb.sorting_engine              Test Consecutive Operation 1 PASSED.
+  1260.00ns INFO     cocotb.sorting_engine              ***** Starting Test: Consecutive Operation 2 *****
+  1460.00ns INFO     cocotb.sorting_engine              Latency check passed for test Consecutive Operation 2: 17 cycles
+  1460.00ns INFO     cocotb.sorting_engine              Test Consecutive Operation 2 PASSED.
+  1470.00ns INFO     cocotb.regression                  test_sorting_engine.test_sorting_engine passed
+  1470.00ns INFO     cocotb.regression                  *************************************************************************************************
+                                                        ** TEST                                     STATUS  SIM TIME (ns)  REAL TIME (s)  RATIO (ns/s) **
+                                                        *************************************************************************************************
+                                                        ** test_sorting_engine.test_sorting_engine   PASS        1470.00           0.02      85738.50  **
+                                                        *************************************************************************************************
+                                                        ** TESTS=1 PASS=1 FAIL=0 SKIP=0                          1470.00           0.02      63473.52  **
+                                                        *************************************************************************************************
+                                                        
+FST info: dumpfile /code/rundir/sim_build/sorting_engine.fst opened for output.
+INFO     Icarus:runner.py:438 Results file: /code/rundir/sim_build/test_sort[5].None
+PASSED
+
+============================== 6 passed in 1.15s ===============================

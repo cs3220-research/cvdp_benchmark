@@ -1,0 +1,352 @@
+Running service: direct
+============================= test session starts ==============================
+platform linux -- Python 3.9.2, pytest-8.3.2, pluggy-1.5.0
+cachedir: /rundir/harness/.cache
+rootdir: /src
+collected 18 items
+
+../../src/test_runner.py      -.--ns INFO     gpi                                ..mbed/gpi_embed.cpp:79   in set_program_name_in_venv        Did not detect Python virtual environment. Using system-wide Python interpreter
+     -.--ns INFO     gpi                                ../gpi/GpiCommon.cpp:101  in gpi_print_registered_impl       VPI registered
+     0.00ns INFO     cocotb                             Running on Icarus Verilog version 13.0 (devel)
+     0.00ns INFO     cocotb                             Running tests with cocotb v2.0.0.dev0+8d6c1a63 from /usr/local/lib/python3.9/dist-packages/cocotb
+     0.00ns INFO     cocotb                             Seeding Python random module with 1773332514
+     0.00ns INFO     cocotb.regression                  running test_phase_rotation_viterbi.test_low_pass_filter (1/1)
+                                                            Test the Phase Rotation Viterbi module with edge cases and random data.
+  1020.00ns INFO     cocotb                             All tests passed successfully.
+  1020.00ns INFO     cocotb.regression                  test_phase_rotation_viterbi.test_low_pass_filter passed
+  1020.00ns INFO     cocotb.regression                  **********************************************************************************************************
+                                                        ** TEST                                              STATUS  SIM TIME (ns)  REAL TIME (s)  RATIO (ns/s) **
+                                                        **********************************************************************************************************
+                                                        ** test_phase_rotation_viterbi.test_low_pass_filter   PASS        1020.00           0.03      31635.93  **
+                                                        **********************************************************************************************************
+                                                        ** TESTS=1 PASS=1 FAIL=0 SKIP=0                                   1020.00           0.04      26200.59  **
+                                                        **********************************************************************************************************
+                                                        
+[DEBUG] Running simulation with NBW_IN=8
+[DEBUG] Parameters: {'NBW_IN': 8}
+.     -.--ns INFO     gpi                                ..mbed/gpi_embed.cpp:79   in set_program_name_in_venv        Did not detect Python virtual environment. Using system-wide Python interpreter
+     -.--ns INFO     gpi                                ../gpi/GpiCommon.cpp:101  in gpi_print_registered_impl       VPI registered
+     0.00ns INFO     cocotb                             Running on Icarus Verilog version 13.0 (devel)
+     0.00ns INFO     cocotb                             Running tests with cocotb v2.0.0.dev0+8d6c1a63 from /usr/local/lib/python3.9/dist-packages/cocotb
+     0.00ns INFO     cocotb                             Seeding Python random module with 1773332514
+     0.00ns INFO     cocotb.regression                  running test_phase_rotation_viterbi.test_low_pass_filter (1/1)
+                                                            Test the Phase Rotation Viterbi module with edge cases and random data.
+  1020.00ns INFO     cocotb                             All tests passed successfully.
+  1020.00ns INFO     cocotb.regression                  test_phase_rotation_viterbi.test_low_pass_filter passed
+  1020.00ns INFO     cocotb.regression                  **********************************************************************************************************
+                                                        ** TEST                                              STATUS  SIM TIME (ns)  REAL TIME (s)  RATIO (ns/s) **
+                                                        **********************************************************************************************************
+                                                        ** test_phase_rotation_viterbi.test_low_pass_filter   PASS        1020.00           0.03      30519.04  **
+                                                        **********************************************************************************************************
+                                                        ** TESTS=1 PASS=1 FAIL=0 SKIP=0                                   1020.00           0.04      24576.42  **
+                                                        **********************************************************************************************************
+                                                        
+[DEBUG] Running simulation with NBW_IN=13
+[DEBUG] Parameters: {'NBW_IN': 13}
+.     -.--ns INFO     gpi                                ..mbed/gpi_embed.cpp:79   in set_program_name_in_venv        Did not detect Python virtual environment. Using system-wide Python interpreter
+     -.--ns INFO     gpi                                ../gpi/GpiCommon.cpp:101  in gpi_print_registered_impl       VPI registered
+     0.00ns INFO     cocotb                             Running on Icarus Verilog version 13.0 (devel)
+     0.00ns INFO     cocotb                             Running tests with cocotb v2.0.0.dev0+8d6c1a63 from /usr/local/lib/python3.9/dist-packages/cocotb
+     0.00ns INFO     cocotb                             Seeding Python random module with 1773332515
+     0.00ns INFO     cocotb.regression                  running test_phase_rotation_viterbi.test_low_pass_filter (1/1)
+                                                            Test the Phase Rotation Viterbi module with edge cases and random data.
+  1020.00ns INFO     cocotb                             All tests passed successfully.
+  1020.00ns INFO     cocotb.regression                  test_phase_rotation_viterbi.test_low_pass_filter passed
+  1020.00ns INFO     cocotb.regression                  **********************************************************************************************************
+                                                        ** TEST                                              STATUS  SIM TIME (ns)  REAL TIME (s)  RATIO (ns/s) **
+                                                        **********************************************************************************************************
+                                                        ** test_phase_rotation_viterbi.test_low_pass_filter   PASS        1020.00           0.03      29618.33  **
+                                                        **********************************************************************************************************
+                                                        ** TESTS=1 PASS=1 FAIL=0 SKIP=0                                   1020.00           0.04      24659.29  **
+                                                        **********************************************************************************************************
+                                                        
+[DEBUG] Running simulation with NBW_IN=10
+[DEBUG] Parameters: {'NBW_IN': 10}
+.     -.--ns INFO     gpi                                ..mbed/gpi_embed.cpp:79   in set_program_name_in_venv        Did not detect Python virtual environment. Using system-wide Python interpreter
+     -.--ns INFO     gpi                                ../gpi/GpiCommon.cpp:101  in gpi_print_registered_impl       VPI registered
+     0.00ns INFO     cocotb                             Running on Icarus Verilog version 13.0 (devel)
+     0.00ns INFO     cocotb                             Running tests with cocotb v2.0.0.dev0+8d6c1a63 from /usr/local/lib/python3.9/dist-packages/cocotb
+     0.00ns INFO     cocotb                             Seeding Python random module with 1773332515
+     0.00ns INFO     cocotb.regression                  running test_phase_rotation_viterbi.test_low_pass_filter (1/1)
+                                                            Test the Phase Rotation Viterbi module with edge cases and random data.
+  1020.00ns INFO     cocotb                             All tests passed successfully.
+  1020.00ns INFO     cocotb.regression                  test_phase_rotation_viterbi.test_low_pass_filter passed
+  1020.00ns INFO     cocotb.regression                  **********************************************************************************************************
+                                                        ** TEST                                              STATUS  SIM TIME (ns)  REAL TIME (s)  RATIO (ns/s) **
+                                                        **********************************************************************************************************
+                                                        ** test_phase_rotation_viterbi.test_low_pass_filter   PASS        1020.00           0.03      30636.84  **
+                                                        **********************************************************************************************************
+                                                        ** TESTS=1 PASS=1 FAIL=0 SKIP=0                                   1020.00           0.04      26035.57  **
+                                                        **********************************************************************************************************
+                                                        
+[DEBUG] Running simulation with NBW_IN=15
+[DEBUG] Parameters: {'NBW_IN': 15}
+.     -.--ns INFO     gpi                                ..mbed/gpi_embed.cpp:79   in set_program_name_in_venv        Did not detect Python virtual environment. Using system-wide Python interpreter
+     -.--ns INFO     gpi                                ../gpi/GpiCommon.cpp:101  in gpi_print_registered_impl       VPI registered
+     0.00ns INFO     cocotb                             Running on Icarus Verilog version 13.0 (devel)
+     0.00ns INFO     cocotb                             Running tests with cocotb v2.0.0.dev0+8d6c1a63 from /usr/local/lib/python3.9/dist-packages/cocotb
+     0.00ns INFO     cocotb                             Seeding Python random module with 1773332515
+     0.00ns INFO     cocotb.regression                  running test_phase_rotation_viterbi.test_low_pass_filter (1/1)
+                                                            Test the Phase Rotation Viterbi module with edge cases and random data.
+  1020.00ns INFO     cocotb                             All tests passed successfully.
+  1020.00ns INFO     cocotb.regression                  test_phase_rotation_viterbi.test_low_pass_filter passed
+  1020.00ns INFO     cocotb.regression                  **********************************************************************************************************
+                                                        ** TEST                                              STATUS  SIM TIME (ns)  REAL TIME (s)  RATIO (ns/s) **
+                                                        **********************************************************************************************************
+                                                        ** test_phase_rotation_viterbi.test_low_pass_filter   PASS        1020.00           0.03      29680.18  **
+                                                        **********************************************************************************************************
+                                                        ** TESTS=1 PASS=1 FAIL=0 SKIP=0                                   1020.00           0.04      25165.97  **
+                                                        **********************************************************************************************************
+                                                        
+[DEBUG] Running simulation with NBW_IN=15
+[DEBUG] Parameters: {'NBW_IN': 15}
+.     -.--ns INFO     gpi                                ..mbed/gpi_embed.cpp:79   in set_program_name_in_venv        Did not detect Python virtual environment. Using system-wide Python interpreter
+     -.--ns INFO     gpi                                ../gpi/GpiCommon.cpp:101  in gpi_print_registered_impl       VPI registered
+     0.00ns INFO     cocotb                             Running on Icarus Verilog version 13.0 (devel)
+     0.00ns INFO     cocotb                             Running tests with cocotb v2.0.0.dev0+8d6c1a63 from /usr/local/lib/python3.9/dist-packages/cocotb
+     0.00ns INFO     cocotb                             Seeding Python random module with 1773332515
+     0.00ns INFO     cocotb.regression                  running test_phase_rotation_viterbi.test_low_pass_filter (1/1)
+                                                            Test the Phase Rotation Viterbi module with edge cases and random data.
+  1020.00ns INFO     cocotb                             All tests passed successfully.
+  1020.00ns INFO     cocotb.regression                  test_phase_rotation_viterbi.test_low_pass_filter passed
+  1020.00ns INFO     cocotb.regression                  **********************************************************************************************************
+                                                        ** TEST                                              STATUS  SIM TIME (ns)  REAL TIME (s)  RATIO (ns/s) **
+                                                        **********************************************************************************************************
+                                                        ** test_phase_rotation_viterbi.test_low_pass_filter   PASS        1020.00           0.03      32976.88  **
+                                                        **********************************************************************************************************
+                                                        ** TESTS=1 PASS=1 FAIL=0 SKIP=0                                   1020.00           0.04      25073.94  **
+                                                        **********************************************************************************************************
+                                                        
+[DEBUG] Running simulation with NBW_IN=11
+[DEBUG] Parameters: {'NBW_IN': 11}
+.     -.--ns INFO     gpi                                ..mbed/gpi_embed.cpp:79   in set_program_name_in_venv        Did not detect Python virtual environment. Using system-wide Python interpreter
+     -.--ns INFO     gpi                                ../gpi/GpiCommon.cpp:101  in gpi_print_registered_impl       VPI registered
+     0.00ns INFO     cocotb                             Running on Icarus Verilog version 13.0 (devel)
+     0.00ns INFO     cocotb                             Running tests with cocotb v2.0.0.dev0+8d6c1a63 from /usr/local/lib/python3.9/dist-packages/cocotb
+     0.00ns INFO     cocotb                             Seeding Python random module with 1773332516
+     0.00ns INFO     cocotb.regression                  running test_phase_rotation_viterbi.test_low_pass_filter (1/1)
+                                                            Test the Phase Rotation Viterbi module with edge cases and random data.
+  1020.00ns INFO     cocotb                             All tests passed successfully.
+  1020.00ns INFO     cocotb.regression                  test_phase_rotation_viterbi.test_low_pass_filter passed
+  1020.00ns INFO     cocotb.regression                  **********************************************************************************************************
+                                                        ** TEST                                              STATUS  SIM TIME (ns)  REAL TIME (s)  RATIO (ns/s) **
+                                                        **********************************************************************************************************
+                                                        ** test_phase_rotation_viterbi.test_low_pass_filter   PASS        1020.00           0.03      35188.85  **
+                                                        **********************************************************************************************************
+                                                        ** TESTS=1 PASS=1 FAIL=0 SKIP=0                                   1020.00           0.04      29100.56  **
+                                                        **********************************************************************************************************
+                                                        
+[DEBUG] Running simulation with NBW_IN=8
+[DEBUG] Parameters: {'NBW_IN': 8}
+.     -.--ns INFO     gpi                                ..mbed/gpi_embed.cpp:79   in set_program_name_in_venv        Did not detect Python virtual environment. Using system-wide Python interpreter
+     -.--ns INFO     gpi                                ../gpi/GpiCommon.cpp:101  in gpi_print_registered_impl       VPI registered
+     0.00ns INFO     cocotb                             Running on Icarus Verilog version 13.0 (devel)
+     0.00ns INFO     cocotb                             Running tests with cocotb v2.0.0.dev0+8d6c1a63 from /usr/local/lib/python3.9/dist-packages/cocotb
+     0.00ns INFO     cocotb                             Seeding Python random module with 1773332516
+     0.00ns INFO     cocotb.regression                  running test_phase_rotation_viterbi.test_low_pass_filter (1/1)
+                                                            Test the Phase Rotation Viterbi module with edge cases and random data.
+  1020.00ns INFO     cocotb                             All tests passed successfully.
+  1020.00ns INFO     cocotb.regression                  test_phase_rotation_viterbi.test_low_pass_filter passed
+  1020.00ns INFO     cocotb.regression                  **********************************************************************************************************
+                                                        ** TEST                                              STATUS  SIM TIME (ns)  REAL TIME (s)  RATIO (ns/s) **
+                                                        **********************************************************************************************************
+                                                        ** test_phase_rotation_viterbi.test_low_pass_filter   PASS        1020.00           0.03      29899.43  **
+                                                        **********************************************************************************************************
+                                                        ** TESTS=1 PASS=1 FAIL=0 SKIP=0                                   1020.00           0.04      24539.63  **
+                                                        **********************************************************************************************************
+                                                        
+[DEBUG] Running simulation with NBW_IN=13
+[DEBUG] Parameters: {'NBW_IN': 13}
+.     -.--ns INFO     gpi                                ..mbed/gpi_embed.cpp:79   in set_program_name_in_venv        Did not detect Python virtual environment. Using system-wide Python interpreter
+     -.--ns INFO     gpi                                ../gpi/GpiCommon.cpp:101  in gpi_print_registered_impl       VPI registered
+     0.00ns INFO     cocotb                             Running on Icarus Verilog version 13.0 (devel)
+     0.00ns INFO     cocotb                             Running tests with cocotb v2.0.0.dev0+8d6c1a63 from /usr/local/lib/python3.9/dist-packages/cocotb
+     0.00ns INFO     cocotb                             Seeding Python random module with 1773332516
+     0.00ns INFO     cocotb.regression                  running test_phase_rotation_viterbi.test_low_pass_filter (1/1)
+                                                            Test the Phase Rotation Viterbi module with edge cases and random data.
+  1020.00ns INFO     cocotb                             All tests passed successfully.
+  1020.00ns INFO     cocotb.regression                  test_phase_rotation_viterbi.test_low_pass_filter passed
+  1020.00ns INFO     cocotb.regression                  **********************************************************************************************************
+                                                        ** TEST                                              STATUS  SIM TIME (ns)  REAL TIME (s)  RATIO (ns/s) **
+                                                        **********************************************************************************************************
+                                                        ** test_phase_rotation_viterbi.test_low_pass_filter   PASS        1020.00           0.03      32071.11  **
+                                                        **********************************************************************************************************
+                                                        ** TESTS=1 PASS=1 FAIL=0 SKIP=0                                   1020.00           0.04      26979.65  **
+                                                        **********************************************************************************************************
+                                                        
+[DEBUG] Running simulation with NBW_IN=10
+[DEBUG] Parameters: {'NBW_IN': 10}
+.     -.--ns INFO     gpi                                ..mbed/gpi_embed.cpp:79   in set_program_name_in_venv        Did not detect Python virtual environment. Using system-wide Python interpreter
+     -.--ns INFO     gpi                                ../gpi/GpiCommon.cpp:101  in gpi_print_registered_impl       VPI registered
+     0.00ns INFO     cocotb                             Running on Icarus Verilog version 13.0 (devel)
+     0.00ns INFO     cocotb                             Running tests with cocotb v2.0.0.dev0+8d6c1a63 from /usr/local/lib/python3.9/dist-packages/cocotb
+     0.00ns INFO     cocotb                             Seeding Python random module with 1773332516
+     0.00ns INFO     cocotb.regression                  running test_phase_rotation_viterbi.test_low_pass_filter (1/1)
+                                                            Test the Phase Rotation Viterbi module with edge cases and random data.
+  1020.00ns INFO     cocotb                             All tests passed successfully.
+  1020.00ns INFO     cocotb.regression                  test_phase_rotation_viterbi.test_low_pass_filter passed
+  1020.00ns INFO     cocotb.regression                  **********************************************************************************************************
+                                                        ** TEST                                              STATUS  SIM TIME (ns)  REAL TIME (s)  RATIO (ns/s) **
+                                                        **********************************************************************************************************
+                                                        ** test_phase_rotation_viterbi.test_low_pass_filter   PASS        1020.00           0.04      27921.70  **
+                                                        **********************************************************************************************************
+                                                        ** TESTS=1 PASS=1 FAIL=0 SKIP=0                                   1020.00           0.04      23806.87  **
+                                                        **********************************************************************************************************
+                                                        
+[DEBUG] Running simulation with NBW_IN=15
+[DEBUG] Parameters: {'NBW_IN': 15}
+.     -.--ns INFO     gpi                                ..mbed/gpi_embed.cpp:79   in set_program_name_in_venv        Did not detect Python virtual environment. Using system-wide Python interpreter
+     -.--ns INFO     gpi                                ../gpi/GpiCommon.cpp:101  in gpi_print_registered_impl       VPI registered
+     0.00ns INFO     cocotb                             Running on Icarus Verilog version 13.0 (devel)
+     0.00ns INFO     cocotb                             Running tests with cocotb v2.0.0.dev0+8d6c1a63 from /usr/local/lib/python3.9/dist-packages/cocotb
+     0.00ns INFO     cocotb                             Seeding Python random module with 1773332517
+     0.00ns INFO     cocotb.regression                  running test_phase_rotation_viterbi.test_low_pass_filter (1/1)
+                                                            Test the Phase Rotation Viterbi module with edge cases and random data.
+  1020.00ns INFO     cocotb                             All tests passed successfully.
+  1020.00ns INFO     cocotb.regression                  test_phase_rotation_viterbi.test_low_pass_filter passed
+  1020.00ns INFO     cocotb.regression                  **********************************************************************************************************
+                                                        ** TEST                                              STATUS  SIM TIME (ns)  REAL TIME (s)  RATIO (ns/s) **
+                                                        **********************************************************************************************************
+                                                        ** test_phase_rotation_viterbi.test_low_pass_filter   PASS        1020.00           0.03      30568.11  **
+                                                        **********************************************************************************************************
+                                                        ** TESTS=1 PASS=1 FAIL=0 SKIP=0                                   1020.00           0.04      26007.55  **
+                                                        **********************************************************************************************************
+                                                        
+[DEBUG] Running simulation with NBW_IN=15
+[DEBUG] Parameters: {'NBW_IN': 15}
+.     -.--ns INFO     gpi                                ..mbed/gpi_embed.cpp:79   in set_program_name_in_venv        Did not detect Python virtual environment. Using system-wide Python interpreter
+     -.--ns INFO     gpi                                ../gpi/GpiCommon.cpp:101  in gpi_print_registered_impl       VPI registered
+     0.00ns INFO     cocotb                             Running on Icarus Verilog version 13.0 (devel)
+     0.00ns INFO     cocotb                             Running tests with cocotb v2.0.0.dev0+8d6c1a63 from /usr/local/lib/python3.9/dist-packages/cocotb
+     0.00ns INFO     cocotb                             Seeding Python random module with 1773332517
+     0.00ns INFO     cocotb.regression                  running test_phase_rotation_viterbi.test_low_pass_filter (1/1)
+                                                            Test the Phase Rotation Viterbi module with edge cases and random data.
+  1020.00ns INFO     cocotb                             All tests passed successfully.
+  1020.00ns INFO     cocotb.regression                  test_phase_rotation_viterbi.test_low_pass_filter passed
+  1020.00ns INFO     cocotb.regression                  **********************************************************************************************************
+                                                        ** TEST                                              STATUS  SIM TIME (ns)  REAL TIME (s)  RATIO (ns/s) **
+                                                        **********************************************************************************************************
+                                                        ** test_phase_rotation_viterbi.test_low_pass_filter   PASS        1020.00           0.03      34088.89  **
+                                                        **********************************************************************************************************
+                                                        ** TESTS=1 PASS=1 FAIL=0 SKIP=0                                   1020.00           0.04      28259.58  **
+                                                        **********************************************************************************************************
+                                                        
+[DEBUG] Running simulation with NBW_IN=11
+[DEBUG] Parameters: {'NBW_IN': 11}
+.     -.--ns INFO     gpi                                ..mbed/gpi_embed.cpp:79   in set_program_name_in_venv        Did not detect Python virtual environment. Using system-wide Python interpreter
+     -.--ns INFO     gpi                                ../gpi/GpiCommon.cpp:101  in gpi_print_registered_impl       VPI registered
+     0.00ns INFO     cocotb                             Running on Icarus Verilog version 13.0 (devel)
+     0.00ns INFO     cocotb                             Running tests with cocotb v2.0.0.dev0+8d6c1a63 from /usr/local/lib/python3.9/dist-packages/cocotb
+     0.00ns INFO     cocotb                             Seeding Python random module with 1773332517
+     0.00ns INFO     cocotb.regression                  running test_phase_rotation_viterbi.test_low_pass_filter (1/1)
+                                                            Test the Phase Rotation Viterbi module with edge cases and random data.
+  1020.00ns INFO     cocotb                             All tests passed successfully.
+  1020.00ns INFO     cocotb.regression                  test_phase_rotation_viterbi.test_low_pass_filter passed
+  1020.00ns INFO     cocotb.regression                  **********************************************************************************************************
+                                                        ** TEST                                              STATUS  SIM TIME (ns)  REAL TIME (s)  RATIO (ns/s) **
+                                                        **********************************************************************************************************
+                                                        ** test_phase_rotation_viterbi.test_low_pass_filter   PASS        1020.00           0.03      37065.00  **
+                                                        **********************************************************************************************************
+                                                        ** TESTS=1 PASS=1 FAIL=0 SKIP=0                                   1020.00           0.03      30546.28  **
+                                                        **********************************************************************************************************
+                                                        
+[DEBUG] Running simulation with NBW_IN=8
+[DEBUG] Parameters: {'NBW_IN': 8}
+.     -.--ns INFO     gpi                                ..mbed/gpi_embed.cpp:79   in set_program_name_in_venv        Did not detect Python virtual environment. Using system-wide Python interpreter
+     -.--ns INFO     gpi                                ../gpi/GpiCommon.cpp:101  in gpi_print_registered_impl       VPI registered
+     0.00ns INFO     cocotb                             Running on Icarus Verilog version 13.0 (devel)
+     0.00ns INFO     cocotb                             Running tests with cocotb v2.0.0.dev0+8d6c1a63 from /usr/local/lib/python3.9/dist-packages/cocotb
+     0.00ns INFO     cocotb                             Seeding Python random module with 1773332517
+     0.00ns INFO     cocotb.regression                  running test_phase_rotation_viterbi.test_low_pass_filter (1/1)
+                                                            Test the Phase Rotation Viterbi module with edge cases and random data.
+  1020.00ns INFO     cocotb                             All tests passed successfully.
+  1020.00ns INFO     cocotb.regression                  test_phase_rotation_viterbi.test_low_pass_filter passed
+  1020.00ns INFO     cocotb.regression                  **********************************************************************************************************
+                                                        ** TEST                                              STATUS  SIM TIME (ns)  REAL TIME (s)  RATIO (ns/s) **
+                                                        **********************************************************************************************************
+                                                        ** test_phase_rotation_viterbi.test_low_pass_filter   PASS        1020.00           0.04      25076.73  **
+                                                        **********************************************************************************************************
+                                                        ** TESTS=1 PASS=1 FAIL=0 SKIP=0                                   1020.00           0.05      21742.97  **
+                                                        **********************************************************************************************************
+                                                        
+[DEBUG] Running simulation with NBW_IN=13
+[DEBUG] Parameters: {'NBW_IN': 13}
+.     -.--ns INFO     gpi                                ..mbed/gpi_embed.cpp:79   in set_program_name_in_venv        Did not detect Python virtual environment. Using system-wide Python interpreter
+     -.--ns INFO     gpi                                ../gpi/GpiCommon.cpp:101  in gpi_print_registered_impl       VPI registered
+     0.00ns INFO     cocotb                             Running on Icarus Verilog version 13.0 (devel)
+     0.00ns INFO     cocotb                             Running tests with cocotb v2.0.0.dev0+8d6c1a63 from /usr/local/lib/python3.9/dist-packages/cocotb
+     0.00ns INFO     cocotb                             Seeding Python random module with 1773332518
+     0.00ns INFO     cocotb.regression                  running test_phase_rotation_viterbi.test_low_pass_filter (1/1)
+                                                            Test the Phase Rotation Viterbi module with edge cases and random data.
+  1020.00ns INFO     cocotb                             All tests passed successfully.
+  1020.00ns INFO     cocotb.regression                  test_phase_rotation_viterbi.test_low_pass_filter passed
+  1020.00ns INFO     cocotb.regression                  **********************************************************************************************************
+                                                        ** TEST                                              STATUS  SIM TIME (ns)  REAL TIME (s)  RATIO (ns/s) **
+                                                        **********************************************************************************************************
+                                                        ** test_phase_rotation_viterbi.test_low_pass_filter   PASS        1020.00           0.04      28297.90  **
+                                                        **********************************************************************************************************
+                                                        ** TESTS=1 PASS=1 FAIL=0 SKIP=0                                   1020.00           0.04      23308.93  **
+                                                        **********************************************************************************************************
+                                                        
+[DEBUG] Running simulation with NBW_IN=10
+[DEBUG] Parameters: {'NBW_IN': 10}
+.     -.--ns INFO     gpi                                ..mbed/gpi_embed.cpp:79   in set_program_name_in_venv        Did not detect Python virtual environment. Using system-wide Python interpreter
+     -.--ns INFO     gpi                                ../gpi/GpiCommon.cpp:101  in gpi_print_registered_impl       VPI registered
+     0.00ns INFO     cocotb                             Running on Icarus Verilog version 13.0 (devel)
+     0.00ns INFO     cocotb                             Running tests with cocotb v2.0.0.dev0+8d6c1a63 from /usr/local/lib/python3.9/dist-packages/cocotb
+     0.00ns INFO     cocotb                             Seeding Python random module with 1773332518
+     0.00ns INFO     cocotb.regression                  running test_phase_rotation_viterbi.test_low_pass_filter (1/1)
+                                                            Test the Phase Rotation Viterbi module with edge cases and random data.
+  1020.00ns INFO     cocotb                             All tests passed successfully.
+  1020.00ns INFO     cocotb.regression                  test_phase_rotation_viterbi.test_low_pass_filter passed
+  1020.00ns INFO     cocotb.regression                  **********************************************************************************************************
+                                                        ** TEST                                              STATUS  SIM TIME (ns)  REAL TIME (s)  RATIO (ns/s) **
+                                                        **********************************************************************************************************
+                                                        ** test_phase_rotation_viterbi.test_low_pass_filter   PASS        1020.00           0.03      31164.20  **
+                                                        **********************************************************************************************************
+                                                        ** TESTS=1 PASS=1 FAIL=0 SKIP=0                                   1020.00           0.04      26224.04  **
+                                                        **********************************************************************************************************
+                                                        
+[DEBUG] Running simulation with NBW_IN=15
+[DEBUG] Parameters: {'NBW_IN': 15}
+.     -.--ns INFO     gpi                                ..mbed/gpi_embed.cpp:79   in set_program_name_in_venv        Did not detect Python virtual environment. Using system-wide Python interpreter
+     -.--ns INFO     gpi                                ../gpi/GpiCommon.cpp:101  in gpi_print_registered_impl       VPI registered
+     0.00ns INFO     cocotb                             Running on Icarus Verilog version 13.0 (devel)
+     0.00ns INFO     cocotb                             Running tests with cocotb v2.0.0.dev0+8d6c1a63 from /usr/local/lib/python3.9/dist-packages/cocotb
+     0.00ns INFO     cocotb                             Seeding Python random module with 1773332518
+     0.00ns INFO     cocotb.regression                  running test_phase_rotation_viterbi.test_low_pass_filter (1/1)
+                                                            Test the Phase Rotation Viterbi module with edge cases and random data.
+  1020.00ns INFO     cocotb                             All tests passed successfully.
+  1020.00ns INFO     cocotb.regression                  test_phase_rotation_viterbi.test_low_pass_filter passed
+  1020.00ns INFO     cocotb.regression                  **********************************************************************************************************
+                                                        ** TEST                                              STATUS  SIM TIME (ns)  REAL TIME (s)  RATIO (ns/s) **
+                                                        **********************************************************************************************************
+                                                        ** test_phase_rotation_viterbi.test_low_pass_filter   PASS        1020.00           0.03      30086.36  **
+                                                        **********************************************************************************************************
+                                                        ** TESTS=1 PASS=1 FAIL=0 SKIP=0                                   1020.00           0.04      24762.20  **
+                                                        **********************************************************************************************************
+                                                        
+[DEBUG] Running simulation with NBW_IN=15
+[DEBUG] Parameters: {'NBW_IN': 15}
+.     -.--ns INFO     gpi                                ..mbed/gpi_embed.cpp:79   in set_program_name_in_venv        Did not detect Python virtual environment. Using system-wide Python interpreter
+     -.--ns INFO     gpi                                ../gpi/GpiCommon.cpp:101  in gpi_print_registered_impl       VPI registered
+     0.00ns INFO     cocotb                             Running on Icarus Verilog version 13.0 (devel)
+     0.00ns INFO     cocotb                             Running tests with cocotb v2.0.0.dev0+8d6c1a63 from /usr/local/lib/python3.9/dist-packages/cocotb
+     0.00ns INFO     cocotb                             Seeding Python random module with 1773332519
+     0.00ns INFO     cocotb.regression                  running test_phase_rotation_viterbi.test_low_pass_filter (1/1)
+                                                            Test the Phase Rotation Viterbi module with edge cases and random data.
+  1020.00ns INFO     cocotb                             All tests passed successfully.
+  1020.00ns INFO     cocotb.regression                  test_phase_rotation_viterbi.test_low_pass_filter passed
+  1020.00ns INFO     cocotb.regression                  **********************************************************************************************************
+                                                        ** TEST                                              STATUS  SIM TIME (ns)  REAL TIME (s)  RATIO (ns/s) **
+                                                        **********************************************************************************************************
+                                                        ** test_phase_rotation_viterbi.test_low_pass_filter   PASS        1020.00           0.03      32049.97  **
+                                                        **********************************************************************************************************
+                                                        ** TESTS=1 PASS=1 FAIL=0 SKIP=0                                   1020.00           0.04      27073.73  **
+                                                        **********************************************************************************************************
+                                                        
+[DEBUG] Running simulation with NBW_IN=11
+[DEBUG] Parameters: {'NBW_IN': 11}
+.
+
+============================== 18 passed in 4.76s ==============================

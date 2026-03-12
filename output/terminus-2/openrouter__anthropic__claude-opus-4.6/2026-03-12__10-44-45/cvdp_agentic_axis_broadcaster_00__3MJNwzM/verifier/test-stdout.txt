@@ -1,0 +1,68 @@
+Running service: direct
+============================= test session starts ==============================
+platform linux -- Python 3.9.2, pytest-8.3.2, pluggy-1.5.0 -- /usr/bin/python3
+cachedir: /rundir/harness/.cache
+rootdir: /src
+collecting ... collected 1 item
+
+../src/test_runner.py::test_axis_broadcast[0] 
+-------------------------------- live log call ---------------------------------
+INFO     Icarus:runner.py:468 Running command iverilog -o /code/sim_build/sim.vvp -s axis_broadcast -g2012 -f /code/sim_build/cmds.f /code/rtl/axis_broadcast.sv in directory /code/sim_build
+INFO     Icarus:runner.py:468 Running command vvp -M /usr/local/lib/python3.9/dist-packages/cocotb/libs -m libcocotbvpi_icarus /code/sim_build/sim.vvp in directory /code/sim_build
+     -.--ns INFO     gpi                                ..mbed/gpi_embed.cpp:79   in set_program_name_in_venv        Did not detect Python virtual environment. Using system-wide Python interpreter
+     -.--ns INFO     gpi                                ../gpi/GpiCommon.cpp:101  in gpi_print_registered_impl       VPI registered
+     0.00ns INFO     cocotb                             Running on Icarus Verilog version 13.0 (devel)
+     0.00ns INFO     cocotb                             Running tests with cocotb v2.0.0.dev0+8d6c1a63 from /usr/local/lib/python3.9/dist-packages/cocotb
+     0.00ns INFO     cocotb                             Seeding Python random module with 1773327640
+     0.00ns INFO     cocotb.regression                  running test_axis_broadcast.test_axis_broadcast (1/1)
+reset successful 
+    22.00ns INFO     cocotb.regression                  test_axis_broadcast.test_axis_broadcast failed
+                                                        Traceback (most recent call last):
+                                                          File "/src/test_axis_broadcast.py", line 45, in test_axis_broadcast
+                                                            assert dut.m_axis_tdata_1.value == 0xA5, f"[ERROR] m_axis_tdata value is : {dut.m_axis_tdata.value}"
+                                                          File "/usr/local/lib/python3.9/dist-packages/cocotb/handle.py", line 450, in __getattr__
+                                                            raise AttributeError(str(e)) from None
+                                                        AttributeError: 'axis_broadcast contains no child object named m_axis_tdata'
+    22.00ns INFO     cocotb.regression                  *************************************************************************************************
+                                                        ** TEST                                     STATUS  SIM TIME (ns)  REAL TIME (s)  RATIO (ns/s) **
+                                                        *************************************************************************************************
+                                                        ** test_axis_broadcast.test_axis_broadcast   FAIL          22.00           0.00      11032.36  **
+                                                        *************************************************************************************************
+                                                        ** TESTS=1 PASS=0 FAIL=1 SKIP=0                            22.00           0.01       1793.97  **
+                                                        *************************************************************************************************
+                                                        
+FAILED
+
+=================================== FAILURES ===================================
+____________________________ test_axis_broadcast[0] ____________________________
+
+test = 0
+
+    @pytest.mark.parametrize("test", range(1))
+    def test_axis_broadcast(test):
+>       runner()
+
+/src/test_runner.py:28: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+    def runner():
+        runner = get_runner(sim)
+        runner.build(
+            sources=verilog_sources,
+            hdl_toplevel=toplevel,
+            always=True,
+            clean=True,
+            waves=False,
+            verbose=True,
+            timescale=("1ns", "1ns"),
+            log_file="sim.log")
+>       runner.test(hdl_toplevel=toplevel, test_module=module)
+E       SystemExit: ERROR: Failed 1 of 1 tests.
+
+/src/test_runner.py:23: SystemExit
+------------------------------ Captured log call -------------------------------
+INFO     Icarus:runner.py:468 Running command iverilog -o /code/sim_build/sim.vvp -s axis_broadcast -g2012 -f /code/sim_build/cmds.f /code/rtl/axis_broadcast.sv in directory /code/sim_build
+INFO     Icarus:runner.py:468 Running command vvp -M /usr/local/lib/python3.9/dist-packages/cocotb/libs -m libcocotbvpi_icarus /code/sim_build/sim.vvp in directory /code/sim_build
+=========================== short test summary info ============================
+FAILED ../src/test_runner.py::test_axis_broadcast[0] - SystemExit: ERROR: Fai...
+============================== 1 failed in 0.26s ===============================

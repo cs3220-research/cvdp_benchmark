@@ -1,0 +1,74 @@
+Running service: direct
+============================= test session starts ==============================
+platform linux -- Python 3.9.2, pytest-8.3.2, pluggy-1.5.0 -- /usr/bin/python3
+cachedir: /rundir/harness/.cache
+rootdir: /src
+collecting ... collected 1 item
+
+../src/test_runner.py::test_runner 
+-------------------------------- live log call ---------------------------------
+INFO     Icarus:runner.py:468 Running command iverilog -o /code/sim_build/sim.vvp -s caesar_cipher -g2012 -s cocotb_iverilog_dump -f /code/sim_build/cmds.f /code/rtl/caesar_cipher.sv /code/sim_build/cocotb_iverilog_dump.v in directory /code/sim_build
+INFO     Icarus:runner.py:468 Running command vvp -M /usr/local/lib/python3.9/dist-packages/cocotb/libs -m libcocotbvpi_icarus /code/sim_build/sim.vvp -fst in directory /code/sim_build
+     -.--ns INFO     gpi                                ..mbed/gpi_embed.cpp:79   in set_program_name_in_venv        Did not detect Python virtual environment. Using system-wide Python interpreter
+     -.--ns INFO     gpi                                ../gpi/GpiCommon.cpp:101  in gpi_print_registered_impl       VPI registered
+     0.00ns INFO     cocotb                             Running on Icarus Verilog version 13.0 (devel)
+     0.00ns INFO     cocotb                             Running tests with cocotb v2.0.0.dev0+8d6c1a63 from /usr/local/lib/python3.9/dist-packages/cocotb
+     0.00ns INFO     cocotb                             Seeding Python random module with 1773273407
+     0.00ns INFO     cocotb.regression                  running test_caesar_cipher.test_predefined_cases (1/4)
+                                                            Test caesar_cipher with predefined cases
+     0.00ns INFO     cocotb.caesar_cipher               Testing Caesar cipher with input 'hello', key = 3
+     5.00ns INFO     cocotb.caesar_cipher               Passed for input 'hello' with key 3: output 'khoor'
+     5.00ns INFO     cocotb.caesar_cipher               Testing Caesar cipher with input 'WORLD', key = 4
+    10.00ns INFO     cocotb.caesar_cipher               Passed for input 'WORLD' with key 4: output 'ASVPH'
+    10.00ns INFO     cocotb.caesar_cipher               Testing Caesar cipher with input 'Caesar', key = 5
+    16.00ns INFO     cocotb.caesar_cipher               Passed for input 'Caesar' with key 5: output 'Hfjxfw'
+    16.00ns INFO     cocotb.caesar_cipher               Testing Caesar cipher with input 'Python3!', key = 2
+    24.00ns INFO     cocotb.caesar_cipher               Passed for input 'Python3!' with key 2: output 'Ravjqp3!'
+    24.00ns INFO     cocotb.caesar_cipher               Testing Caesar cipher with input 'EdgeCaseZ', key = 1
+    33.00ns INFO     cocotb.caesar_cipher               Passed for input 'EdgeCaseZ' with key 1: output 'FehfDbtfA'
+    33.00ns INFO     cocotb.regression                  test_caesar_cipher.test_predefined_cases passed
+    33.00ns INFO     cocotb.regression                  running test_caesar_cipher.test_boundary_conditions (2/4)
+                                                            Test caesar_cipher with boundary conditions
+    34.00ns INFO     cocotb.caesar_cipher               Testing boundary condition with input 'Z', key = 1
+    35.00ns INFO     cocotb.caesar_cipher               Passed boundary condition test for input 'Z' with key 1: output 'A'
+    35.00ns INFO     cocotb.caesar_cipher               Testing boundary condition with input 'z', key = 1
+    36.00ns INFO     cocotb.caesar_cipher               Passed boundary condition test for input 'z' with key 1: output 'a'
+    36.00ns INFO     cocotb.caesar_cipher               Testing boundary condition with input 'A', key = 15
+    37.00ns INFO     cocotb.caesar_cipher               Passed boundary condition test for input 'A' with key 15: output 'P'
+    37.00ns INFO     cocotb.caesar_cipher               Testing boundary condition with input 'a', key = 15
+    38.00ns INFO     cocotb.caesar_cipher               Passed boundary condition test for input 'a' with key 15: output 'p'
+    38.00ns INFO     cocotb.regression                  test_caesar_cipher.test_boundary_conditions passed
+    38.00ns INFO     cocotb.regression                  running test_caesar_cipher.test_random_cases (3/4)
+                                                            Test caesar_cipher with random inputs and keys
+    39.00ns INFO     cocotb.caesar_cipher               Testing random input 'YrpfFWQR', key = 6
+    47.00ns INFO     cocotb.caesar_cipher               Random test passed for input 'YrpfFWQR' with key 6: output 'ExvlLCWX'
+    47.00ns INFO     cocotb.caesar_cipher               Testing random input 'dSQKNYUh', key = 12
+    55.00ns INFO     cocotb.caesar_cipher               Random test passed for input 'dSQKNYUh' with key 12: output 'pECWZKGt'
+    55.00ns INFO     cocotb.caesar_cipher               Testing random input 'qKBNXdgs', key = 14
+    63.00ns INFO     cocotb.caesar_cipher               Random test passed for input 'qKBNXdgs' with key 14: output 'eYPBLrug'
+    63.00ns INFO     cocotb.caesar_cipher               Testing random input 'kquVbXWl', key = 15
+    71.00ns INFO     cocotb.caesar_cipher               Random test passed for input 'kquVbXWl' with key 15: output 'zfjKqMLa'
+    71.00ns INFO     cocotb.caesar_cipher               Testing random input 'NaYjNmfh', key = 10
+    79.00ns INFO     cocotb.caesar_cipher               Random test passed for input 'NaYjNmfh' with key 10: output 'XkItXwpr'
+    79.00ns INFO     cocotb.regression                  test_caesar_cipher.test_random_cases passed
+    79.00ns INFO     cocotb.regression                  running test_caesar_cipher.test_with_numbers_and_symbols (4/4)
+                                                            Test caesar_cipher with numbers and symbols to ensure they remain unchanged
+    80.00ns INFO     cocotb.caesar_cipher               Testing Caesar cipher with input 'Hello123!@#World', key = 3 (includes numbers and symbols)
+    96.00ns INFO     cocotb.caesar_cipher               Passed for input 'Hello123!@#World' with key 3: output 'Khoor123!@#Zruog'
+    96.00ns INFO     cocotb.regression                  test_caesar_cipher.test_with_numbers_and_symbols passed
+    96.00ns INFO     cocotb.regression                  **********************************************************************************************************
+                                                        ** TEST                                              STATUS  SIM TIME (ns)  REAL TIME (s)  RATIO (ns/s) **
+                                                        **********************************************************************************************************
+                                                        ** test_caesar_cipher.test_predefined_cases           PASS          33.00           0.00      12261.87  **
+                                                        ** test_caesar_cipher.test_boundary_conditions        PASS           5.00           0.00       9027.77  **
+                                                        ** test_caesar_cipher.test_random_cases               PASS          41.00           0.00      15752.17  **
+                                                        ** test_caesar_cipher.test_with_numbers_and_symbols   PASS          17.00           0.00      16227.39  **
+                                                        **********************************************************************************************************
+                                                        ** TESTS=4 PASS=4 FAIL=0 SKIP=0                                     96.00           0.01       7435.06  **
+                                                        **********************************************************************************************************
+                                                        
+FST info: dumpfile /code/sim_build/caesar_cipher.fst opened for output.
+INFO     Icarus:runner.py:438 Results file: /code/sim_build/test_runner.None
+PASSED
+
+============================== 1 passed in 0.19s ===============================

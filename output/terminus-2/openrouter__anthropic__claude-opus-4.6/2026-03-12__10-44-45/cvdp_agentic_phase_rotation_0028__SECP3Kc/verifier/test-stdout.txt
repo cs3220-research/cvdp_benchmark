@@ -1,0 +1,805 @@
+Running service: direct
+============================= test session starts ==============================
+platform linux -- Python 3.9.2, pytest-8.3.2, pluggy-1.5.0
+cachedir: /rundir/harness/.cache
+rootdir: /src
+collected 15 items
+
+../../src/test_runner.py      -.--ns INFO     gpi                                ..mbed/gpi_embed.cpp:79   in set_program_name_in_venv        Did not detect Python virtual environment. Using system-wide Python interpreter
+     -.--ns INFO     gpi                                ../gpi/GpiCommon.cpp:101  in gpi_print_registered_impl       VPI registered
+     0.00ns INFO     cocotb                             Running on Icarus Verilog version 13.0 (devel)
+     0.00ns INFO     cocotb                             Running tests with cocotb v2.0.0.dev0+8d6c1a63 from /usr/local/lib/python3.9/dist-packages/cocotb
+     0.00ns INFO     cocotb                             Seeding Python random module with 1773330756
+     0.00ns INFO     cocotb.regression                  running test_detect_sequence.test_low_pass_filter (1/1)
+     0.00ns WARNING  cocotb                             NS_PROC: 23, NS_PROC_OVERLAP: 22, NS_DATA_IN: 54, NBW_PILOT_POS: 5, NBW_DATA_IN: 3, NBI_DATA_IN: 1, NBW_TH_PROC: 5, NBW_ENERGY: 5
+     0.00ns WARNING  gpi                                VPI: Not able to map type vpiNamedBegin(33) to object.
+     0.00ns WARNING  gpi                                Unable to create $ivl_for_loop0 via any registered implementation
+     0.00ns WARNING  gpi                                VPI: Not able to map type vpiNamedBegin(33) to object.
+     0.00ns WARNING  gpi                                Unable to create $ivl_for_loop1 via any registered implementation
+     0.00ns WARNING  gpi                                VPI: Not able to map type vpiNamedBegin(33) to object.
+     0.00ns WARNING  gpi                                Unable to create $ivl_for_loop2 via any registered implementation
+     0.00ns WARNING  gpi                                VPI: Not able to map type vpiNamedBegin(33) to object.
+     0.00ns WARNING  gpi                                Unable to create $ivl_for_loop3 via any registered implementation
+     0.00ns WARNING  gpi                                VPI: Not able to map type vpiNamedBegin(33) to object.
+     0.00ns WARNING  gpi                                Unable to create $ivl_for_loop4 via any registered implementation
+     0.00ns WARNING  gpi                                VPI: Not able to map type vpiNamedBegin(33) to object.
+     0.00ns WARNING  gpi                                Unable to create $ivl_for_loop5 via any registered implementation
+using function insert_data_and_process
+using function insert_data_and_process
+using function insert_data_and_process
+using function insert_data_and_process
+using function insert_data_and_process
+using function insert_data_and_process
+using function insert_data_and_process
+using function insert_data_and_process
+using function insert_data_and_process
+using function insert_data_and_process
+using function insert_data_and_process
+using function insert_data_and_process
+using function insert_data_and_process
+using function insert_data_and_process
+using function insert_data_and_process
+   170.00ns INFO     cocotb                             All tests passed finished.
+   170.00ns INFO     cocotb.regression                  test_detect_sequence.test_low_pass_filter passed
+   170.00ns INFO     cocotb.regression                  ***************************************************************************************************
+                                                        ** TEST                                       STATUS  SIM TIME (ns)  REAL TIME (s)  RATIO (ns/s) **
+                                                        ***************************************************************************************************
+                                                        ** test_detect_sequence.test_low_pass_filter   PASS         170.00           0.02      10867.89  **
+                                                        ***************************************************************************************************
+                                                        ** TESTS=1 PASS=1 FAIL=0 SKIP=0                             170.00           0.02       7911.59  **
+                                                        ***************************************************************************************************
+                                                        
+[DEBUG] Running simulation with:
+  NBW_DATA_IN = 3
+  NS = 32
+  NBI_DATA_IN = 1
+  NBW_ENERGY = 5
+  NBW_PILOT_POS = 5
+  NBW_TH_PROC = 5
+  NS_PROC = 23
+  NS_PROC_OVERLAP = 22
+.     -.--ns INFO     gpi                                ..mbed/gpi_embed.cpp:79   in set_program_name_in_venv        Did not detect Python virtual environment. Using system-wide Python interpreter
+     -.--ns INFO     gpi                                ../gpi/GpiCommon.cpp:101  in gpi_print_registered_impl       VPI registered
+     0.00ns INFO     cocotb                             Running on Icarus Verilog version 13.0 (devel)
+     0.00ns INFO     cocotb                             Running tests with cocotb v2.0.0.dev0+8d6c1a63 from /usr/local/lib/python3.9/dist-packages/cocotb
+     0.00ns INFO     cocotb                             Seeding Python random module with 1773330756
+     0.00ns INFO     cocotb.regression                  running test_detect_sequence.test_low_pass_filter (1/1)
+     0.00ns WARNING  cocotb                             NS_PROC: 23, NS_PROC_OVERLAP: 22, NS_DATA_IN: 54, NBW_PILOT_POS: 5, NBW_DATA_IN: 4, NBI_DATA_IN: 2, NBW_TH_PROC: 6, NBW_ENERGY: 6
+     0.00ns WARNING  gpi                                VPI: Not able to map type vpiNamedBegin(33) to object.
+     0.00ns WARNING  gpi                                Unable to create $ivl_for_loop0 via any registered implementation
+     0.00ns WARNING  gpi                                VPI: Not able to map type vpiNamedBegin(33) to object.
+     0.00ns WARNING  gpi                                Unable to create $ivl_for_loop1 via any registered implementation
+     0.00ns WARNING  gpi                                VPI: Not able to map type vpiNamedBegin(33) to object.
+     0.00ns WARNING  gpi                                Unable to create $ivl_for_loop2 via any registered implementation
+     0.00ns WARNING  gpi                                VPI: Not able to map type vpiNamedBegin(33) to object.
+     0.00ns WARNING  gpi                                Unable to create $ivl_for_loop3 via any registered implementation
+     0.00ns WARNING  gpi                                VPI: Not able to map type vpiNamedBegin(33) to object.
+     0.00ns WARNING  gpi                                Unable to create $ivl_for_loop4 via any registered implementation
+     0.00ns WARNING  gpi                                VPI: Not able to map type vpiNamedBegin(33) to object.
+     0.00ns WARNING  gpi                                Unable to create $ivl_for_loop5 via any registered implementation
+using function insert_data_and_process
+using function insert_data_and_process
+using function insert_data_and_process
+using function insert_data_and_process
+using function insert_data_and_process
+using function insert_data_and_process
+using function insert_data_and_process
+using function insert_data_and_process
+using function insert_data_and_process
+using function insert_data_and_process
+using function insert_data_and_process
+using function insert_data_and_process
+using function insert_data_and_process
+using function insert_data_and_process
+using function insert_data_and_process
+   170.00ns INFO     cocotb                             All tests passed finished.
+   170.00ns INFO     cocotb.regression                  test_detect_sequence.test_low_pass_filter passed
+   170.00ns INFO     cocotb.regression                  ***************************************************************************************************
+                                                        ** TEST                                       STATUS  SIM TIME (ns)  REAL TIME (s)  RATIO (ns/s) **
+                                                        ***************************************************************************************************
+                                                        ** test_detect_sequence.test_low_pass_filter   PASS         170.00           0.02      10000.87  **
+                                                        ***************************************************************************************************
+                                                        ** TESTS=1 PASS=1 FAIL=0 SKIP=0                             170.00           0.02       7495.97  **
+                                                        ***************************************************************************************************
+                                                        
+[DEBUG] Running simulation with:
+  NBW_DATA_IN = 4
+  NS = 32
+  NBI_DATA_IN = 2
+  NBW_ENERGY = 6
+  NBW_PILOT_POS = 5
+  NBW_TH_PROC = 6
+  NS_PROC = 23
+  NS_PROC_OVERLAP = 22
+.     -.--ns INFO     gpi                                ..mbed/gpi_embed.cpp:79   in set_program_name_in_venv        Did not detect Python virtual environment. Using system-wide Python interpreter
+     -.--ns INFO     gpi                                ../gpi/GpiCommon.cpp:101  in gpi_print_registered_impl       VPI registered
+     0.00ns INFO     cocotb                             Running on Icarus Verilog version 13.0 (devel)
+     0.00ns INFO     cocotb                             Running tests with cocotb v2.0.0.dev0+8d6c1a63 from /usr/local/lib/python3.9/dist-packages/cocotb
+     0.00ns INFO     cocotb                             Seeding Python random module with 1773330756
+     0.00ns INFO     cocotb.regression                  running test_detect_sequence.test_low_pass_filter (1/1)
+     0.00ns WARNING  cocotb                             NS_PROC: 23, NS_PROC_OVERLAP: 22, NS_DATA_IN: 54, NBW_PILOT_POS: 5, NBW_DATA_IN: 5, NBI_DATA_IN: 3, NBW_TH_PROC: 7, NBW_ENERGY: 7
+     0.00ns WARNING  gpi                                VPI: Not able to map type vpiNamedBegin(33) to object.
+     0.00ns WARNING  gpi                                Unable to create $ivl_for_loop0 via any registered implementation
+     0.00ns WARNING  gpi                                VPI: Not able to map type vpiNamedBegin(33) to object.
+     0.00ns WARNING  gpi                                Unable to create $ivl_for_loop1 via any registered implementation
+     0.00ns WARNING  gpi                                VPI: Not able to map type vpiNamedBegin(33) to object.
+     0.00ns WARNING  gpi                                Unable to create $ivl_for_loop2 via any registered implementation
+     0.00ns WARNING  gpi                                VPI: Not able to map type vpiNamedBegin(33) to object.
+     0.00ns WARNING  gpi                                Unable to create $ivl_for_loop3 via any registered implementation
+     0.00ns WARNING  gpi                                VPI: Not able to map type vpiNamedBegin(33) to object.
+     0.00ns WARNING  gpi                                Unable to create $ivl_for_loop4 via any registered implementation
+     0.00ns WARNING  gpi                                VPI: Not able to map type vpiNamedBegin(33) to object.
+     0.00ns WARNING  gpi                                Unable to create $ivl_for_loop5 via any registered implementation
+using function insert_data_and_process
+using function insert_data_and_process
+using function insert_data_and_process
+using function insert_data_and_process
+using function insert_data_and_process
+using function insert_data_and_process
+using function insert_data_and_process
+using function insert_data_and_process
+using function insert_data_and_process
+using function insert_data_and_process
+using function insert_data_and_process
+using function insert_data_and_process
+using function insert_data_and_process
+using function insert_data_and_process
+using function insert_data_and_process
+   170.00ns INFO     cocotb                             All tests passed finished.
+   170.00ns INFO     cocotb.regression                  test_detect_sequence.test_low_pass_filter passed
+   170.00ns INFO     cocotb.regression                  ***************************************************************************************************
+                                                        ** TEST                                       STATUS  SIM TIME (ns)  REAL TIME (s)  RATIO (ns/s) **
+                                                        ***************************************************************************************************
+                                                        ** test_detect_sequence.test_low_pass_filter   PASS         170.00           0.02       9862.26  **
+                                                        ***************************************************************************************************
+                                                        ** TESTS=1 PASS=1 FAIL=0 SKIP=0                             170.00           0.02       7443.31  **
+                                                        ***************************************************************************************************
+                                                        
+[DEBUG] Running simulation with:
+  NBW_DATA_IN = 5
+  NS = 32
+  NBI_DATA_IN = 3
+  NBW_ENERGY = 7
+  NBW_PILOT_POS = 5
+  NBW_TH_PROC = 7
+  NS_PROC = 23
+  NS_PROC_OVERLAP = 22
+.     -.--ns INFO     gpi                                ..mbed/gpi_embed.cpp:79   in set_program_name_in_venv        Did not detect Python virtual environment. Using system-wide Python interpreter
+     -.--ns INFO     gpi                                ../gpi/GpiCommon.cpp:101  in gpi_print_registered_impl       VPI registered
+     0.00ns INFO     cocotb                             Running on Icarus Verilog version 13.0 (devel)
+     0.00ns INFO     cocotb                             Running tests with cocotb v2.0.0.dev0+8d6c1a63 from /usr/local/lib/python3.9/dist-packages/cocotb
+     0.00ns INFO     cocotb                             Seeding Python random module with 1773330757
+     0.00ns INFO     cocotb.regression                  running test_detect_sequence.test_low_pass_filter (1/1)
+     0.00ns WARNING  cocotb                             NS_PROC: 23, NS_PROC_OVERLAP: 22, NS_DATA_IN: 54, NBW_PILOT_POS: 5, NBW_DATA_IN: 6, NBI_DATA_IN: 4, NBW_TH_PROC: 8, NBW_ENERGY: 8
+     0.00ns WARNING  gpi                                VPI: Not able to map type vpiNamedBegin(33) to object.
+     0.00ns WARNING  gpi                                Unable to create $ivl_for_loop0 via any registered implementation
+     0.00ns WARNING  gpi                                VPI: Not able to map type vpiNamedBegin(33) to object.
+     0.00ns WARNING  gpi                                Unable to create $ivl_for_loop1 via any registered implementation
+     0.00ns WARNING  gpi                                VPI: Not able to map type vpiNamedBegin(33) to object.
+     0.00ns WARNING  gpi                                Unable to create $ivl_for_loop2 via any registered implementation
+     0.00ns WARNING  gpi                                VPI: Not able to map type vpiNamedBegin(33) to object.
+     0.00ns WARNING  gpi                                Unable to create $ivl_for_loop3 via any registered implementation
+     0.00ns WARNING  gpi                                VPI: Not able to map type vpiNamedBegin(33) to object.
+     0.00ns WARNING  gpi                                Unable to create $ivl_for_loop4 via any registered implementation
+     0.00ns WARNING  gpi                                VPI: Not able to map type vpiNamedBegin(33) to object.
+     0.00ns WARNING  gpi                                Unable to create $ivl_for_loop5 via any registered implementation
+using function insert_data_and_process
+using function insert_data_and_process
+using function insert_data_and_process
+using function insert_data_and_process
+using function insert_data_and_process
+using function insert_data_and_process
+using function insert_data_and_process
+using function insert_data_and_process
+using function insert_data_and_process
+using function insert_data_and_process
+using function insert_data_and_process
+using function insert_data_and_process
+using function insert_data_and_process
+using function insert_data_and_process
+using function insert_data_and_process
+   170.00ns INFO     cocotb                             All tests passed finished.
+   170.00ns INFO     cocotb.regression                  test_detect_sequence.test_low_pass_filter passed
+   170.00ns INFO     cocotb.regression                  ***************************************************************************************************
+                                                        ** TEST                                       STATUS  SIM TIME (ns)  REAL TIME (s)  RATIO (ns/s) **
+                                                        ***************************************************************************************************
+                                                        ** test_detect_sequence.test_low_pass_filter   PASS         170.00           0.02       9245.74  **
+                                                        ***************************************************************************************************
+                                                        ** TESTS=1 PASS=1 FAIL=0 SKIP=0                             170.00           0.02       6947.26  **
+                                                        ***************************************************************************************************
+                                                        
+[DEBUG] Running simulation with:
+  NBW_DATA_IN = 6
+  NS = 32
+  NBI_DATA_IN = 4
+  NBW_ENERGY = 8
+  NBW_PILOT_POS = 5
+  NBW_TH_PROC = 8
+  NS_PROC = 23
+  NS_PROC_OVERLAP = 22
+.     -.--ns INFO     gpi                                ..mbed/gpi_embed.cpp:79   in set_program_name_in_venv        Did not detect Python virtual environment. Using system-wide Python interpreter
+     -.--ns INFO     gpi                                ../gpi/GpiCommon.cpp:101  in gpi_print_registered_impl       VPI registered
+     0.00ns INFO     cocotb                             Running on Icarus Verilog version 13.0 (devel)
+     0.00ns INFO     cocotb                             Running tests with cocotb v2.0.0.dev0+8d6c1a63 from /usr/local/lib/python3.9/dist-packages/cocotb
+     0.00ns INFO     cocotb                             Seeding Python random module with 1773330757
+     0.00ns INFO     cocotb.regression                  running test_detect_sequence.test_low_pass_filter (1/1)
+     0.00ns WARNING  cocotb                             NS_PROC: 23, NS_PROC_OVERLAP: 22, NS_DATA_IN: 54, NBW_PILOT_POS: 5, NBW_DATA_IN: 7, NBI_DATA_IN: 5, NBW_TH_PROC: 9, NBW_ENERGY: 9
+     0.00ns WARNING  gpi                                VPI: Not able to map type vpiNamedBegin(33) to object.
+     0.00ns WARNING  gpi                                Unable to create $ivl_for_loop0 via any registered implementation
+     0.00ns WARNING  gpi                                VPI: Not able to map type vpiNamedBegin(33) to object.
+     0.00ns WARNING  gpi                                Unable to create $ivl_for_loop1 via any registered implementation
+     0.00ns WARNING  gpi                                VPI: Not able to map type vpiNamedBegin(33) to object.
+     0.00ns WARNING  gpi                                Unable to create $ivl_for_loop2 via any registered implementation
+     0.00ns WARNING  gpi                                VPI: Not able to map type vpiNamedBegin(33) to object.
+     0.00ns WARNING  gpi                                Unable to create $ivl_for_loop3 via any registered implementation
+     0.00ns WARNING  gpi                                VPI: Not able to map type vpiNamedBegin(33) to object.
+     0.00ns WARNING  gpi                                Unable to create $ivl_for_loop4 via any registered implementation
+     0.00ns WARNING  gpi                                VPI: Not able to map type vpiNamedBegin(33) to object.
+     0.00ns WARNING  gpi                                Unable to create $ivl_for_loop5 via any registered implementation
+using function insert_data_and_process
+using function insert_data_and_process
+using function insert_data_and_process
+using function insert_data_and_process
+using function insert_data_and_process
+using function insert_data_and_process
+using function insert_data_and_process
+using function insert_data_and_process
+using function insert_data_and_process
+using function insert_data_and_process
+using function insert_data_and_process
+using function insert_data_and_process
+using function insert_data_and_process
+using function insert_data_and_process
+using function insert_data_and_process
+   170.00ns INFO     cocotb                             All tests passed finished.
+   170.00ns INFO     cocotb.regression                  test_detect_sequence.test_low_pass_filter passed
+   170.00ns INFO     cocotb.regression                  ***************************************************************************************************
+                                                        ** TEST                                       STATUS  SIM TIME (ns)  REAL TIME (s)  RATIO (ns/s) **
+                                                        ***************************************************************************************************
+                                                        ** test_detect_sequence.test_low_pass_filter   PASS         170.00           0.02       8591.78  **
+                                                        ***************************************************************************************************
+                                                        ** TESTS=1 PASS=1 FAIL=0 SKIP=0                             170.00           0.03       6683.15  **
+                                                        ***************************************************************************************************
+                                                        
+[DEBUG] Running simulation with:
+  NBW_DATA_IN = 7
+  NS = 32
+  NBI_DATA_IN = 5
+  NBW_ENERGY = 9
+  NBW_PILOT_POS = 5
+  NBW_TH_PROC = 9
+  NS_PROC = 23
+  NS_PROC_OVERLAP = 22
+.     -.--ns INFO     gpi                                ..mbed/gpi_embed.cpp:79   in set_program_name_in_venv        Did not detect Python virtual environment. Using system-wide Python interpreter
+     -.--ns INFO     gpi                                ../gpi/GpiCommon.cpp:101  in gpi_print_registered_impl       VPI registered
+     0.00ns INFO     cocotb                             Running on Icarus Verilog version 13.0 (devel)
+     0.00ns INFO     cocotb                             Running tests with cocotb v2.0.0.dev0+8d6c1a63 from /usr/local/lib/python3.9/dist-packages/cocotb
+     0.00ns INFO     cocotb                             Seeding Python random module with 1773330757
+     0.00ns INFO     cocotb.regression                  running test_detect_sequence.test_low_pass_filter (1/1)
+     0.00ns WARNING  cocotb                             NS_PROC: 23, NS_PROC_OVERLAP: 22, NS_DATA_IN: 54, NBW_PILOT_POS: 5, NBW_DATA_IN: 3, NBI_DATA_IN: 1, NBW_TH_PROC: 5, NBW_ENERGY: 5
+     0.00ns WARNING  gpi                                VPI: Not able to map type vpiNamedBegin(33) to object.
+     0.00ns WARNING  gpi                                Unable to create $ivl_for_loop0 via any registered implementation
+     0.00ns WARNING  gpi                                VPI: Not able to map type vpiNamedBegin(33) to object.
+     0.00ns WARNING  gpi                                Unable to create $ivl_for_loop1 via any registered implementation
+     0.00ns WARNING  gpi                                VPI: Not able to map type vpiNamedBegin(33) to object.
+     0.00ns WARNING  gpi                                Unable to create $ivl_for_loop2 via any registered implementation
+     0.00ns WARNING  gpi                                VPI: Not able to map type vpiNamedBegin(33) to object.
+     0.00ns WARNING  gpi                                Unable to create $ivl_for_loop3 via any registered implementation
+     0.00ns WARNING  gpi                                VPI: Not able to map type vpiNamedBegin(33) to object.
+     0.00ns WARNING  gpi                                Unable to create $ivl_for_loop4 via any registered implementation
+     0.00ns WARNING  gpi                                VPI: Not able to map type vpiNamedBegin(33) to object.
+     0.00ns WARNING  gpi                                Unable to create $ivl_for_loop5 via any registered implementation
+using function insert_data_and_process
+using function insert_data_and_process
+using function insert_data_and_process
+using function insert_data_and_process
+using function insert_data_and_process
+using function insert_data_and_process
+using function insert_data_and_process
+using function insert_data_and_process
+using function insert_data_and_process
+using function insert_data_and_process
+using function insert_data_and_process
+using function insert_data_and_process
+using function insert_data_and_process
+using function insert_data_and_process
+using function insert_data_and_process
+   170.00ns INFO     cocotb                             All tests passed finished.
+   170.00ns INFO     cocotb.regression                  test_detect_sequence.test_low_pass_filter passed
+   170.00ns INFO     cocotb.regression                  ***************************************************************************************************
+                                                        ** TEST                                       STATUS  SIM TIME (ns)  REAL TIME (s)  RATIO (ns/s) **
+                                                        ***************************************************************************************************
+                                                        ** test_detect_sequence.test_low_pass_filter   PASS         170.00           0.02      11150.35  **
+                                                        ***************************************************************************************************
+                                                        ** TESTS=1 PASS=1 FAIL=0 SKIP=0                             170.00           0.02       8145.21  **
+                                                        ***************************************************************************************************
+                                                        
+[DEBUG] Running simulation with:
+  NBW_DATA_IN = 3
+  NS = 32
+  NBI_DATA_IN = 1
+  NBW_ENERGY = 5
+  NBW_PILOT_POS = 5
+  NBW_TH_PROC = 5
+  NS_PROC = 23
+  NS_PROC_OVERLAP = 22
+.     -.--ns INFO     gpi                                ..mbed/gpi_embed.cpp:79   in set_program_name_in_venv        Did not detect Python virtual environment. Using system-wide Python interpreter
+     -.--ns INFO     gpi                                ../gpi/GpiCommon.cpp:101  in gpi_print_registered_impl       VPI registered
+     0.00ns INFO     cocotb                             Running on Icarus Verilog version 13.0 (devel)
+     0.00ns INFO     cocotb                             Running tests with cocotb v2.0.0.dev0+8d6c1a63 from /usr/local/lib/python3.9/dist-packages/cocotb
+     0.00ns INFO     cocotb                             Seeding Python random module with 1773330757
+     0.00ns INFO     cocotb.regression                  running test_detect_sequence.test_low_pass_filter (1/1)
+     0.00ns WARNING  cocotb                             NS_PROC: 23, NS_PROC_OVERLAP: 22, NS_DATA_IN: 54, NBW_PILOT_POS: 5, NBW_DATA_IN: 4, NBI_DATA_IN: 2, NBW_TH_PROC: 6, NBW_ENERGY: 6
+     0.00ns WARNING  gpi                                VPI: Not able to map type vpiNamedBegin(33) to object.
+     0.00ns WARNING  gpi                                Unable to create $ivl_for_loop0 via any registered implementation
+     0.00ns WARNING  gpi                                VPI: Not able to map type vpiNamedBegin(33) to object.
+     0.00ns WARNING  gpi                                Unable to create $ivl_for_loop1 via any registered implementation
+     0.00ns WARNING  gpi                                VPI: Not able to map type vpiNamedBegin(33) to object.
+     0.00ns WARNING  gpi                                Unable to create $ivl_for_loop2 via any registered implementation
+     0.00ns WARNING  gpi                                VPI: Not able to map type vpiNamedBegin(33) to object.
+     0.00ns WARNING  gpi                                Unable to create $ivl_for_loop3 via any registered implementation
+     0.00ns WARNING  gpi                                VPI: Not able to map type vpiNamedBegin(33) to object.
+     0.00ns WARNING  gpi                                Unable to create $ivl_for_loop4 via any registered implementation
+     0.00ns WARNING  gpi                                VPI: Not able to map type vpiNamedBegin(33) to object.
+     0.00ns WARNING  gpi                                Unable to create $ivl_for_loop5 via any registered implementation
+using function insert_data_and_process
+using function insert_data_and_process
+using function insert_data_and_process
+using function insert_data_and_process
+using function insert_data_and_process
+using function insert_data_and_process
+using function insert_data_and_process
+using function insert_data_and_process
+using function insert_data_and_process
+using function insert_data_and_process
+using function insert_data_and_process
+using function insert_data_and_process
+using function insert_data_and_process
+using function insert_data_and_process
+using function insert_data_and_process
+   170.00ns INFO     cocotb                             All tests passed finished.
+   170.00ns INFO     cocotb.regression                  test_detect_sequence.test_low_pass_filter passed
+   170.00ns INFO     cocotb.regression                  ***************************************************************************************************
+                                                        ** TEST                                       STATUS  SIM TIME (ns)  REAL TIME (s)  RATIO (ns/s) **
+                                                        ***************************************************************************************************
+                                                        ** test_detect_sequence.test_low_pass_filter   PASS         170.00           0.02       9634.52  **
+                                                        ***************************************************************************************************
+                                                        ** TESTS=1 PASS=1 FAIL=0 SKIP=0                             170.00           0.02       7293.55  **
+                                                        ***************************************************************************************************
+                                                        
+[DEBUG] Running simulation with:
+  NBW_DATA_IN = 4
+  NS = 32
+  NBI_DATA_IN = 2
+  NBW_ENERGY = 6
+  NBW_PILOT_POS = 5
+  NBW_TH_PROC = 6
+  NS_PROC = 23
+  NS_PROC_OVERLAP = 22
+.     -.--ns INFO     gpi                                ..mbed/gpi_embed.cpp:79   in set_program_name_in_venv        Did not detect Python virtual environment. Using system-wide Python interpreter
+     -.--ns INFO     gpi                                ../gpi/GpiCommon.cpp:101  in gpi_print_registered_impl       VPI registered
+     0.00ns INFO     cocotb                             Running on Icarus Verilog version 13.0 (devel)
+     0.00ns INFO     cocotb                             Running tests with cocotb v2.0.0.dev0+8d6c1a63 from /usr/local/lib/python3.9/dist-packages/cocotb
+     0.00ns INFO     cocotb                             Seeding Python random module with 1773330757
+     0.00ns INFO     cocotb.regression                  running test_detect_sequence.test_low_pass_filter (1/1)
+     0.00ns WARNING  cocotb                             NS_PROC: 23, NS_PROC_OVERLAP: 22, NS_DATA_IN: 54, NBW_PILOT_POS: 5, NBW_DATA_IN: 5, NBI_DATA_IN: 3, NBW_TH_PROC: 7, NBW_ENERGY: 7
+     0.00ns WARNING  gpi                                VPI: Not able to map type vpiNamedBegin(33) to object.
+     0.00ns WARNING  gpi                                Unable to create $ivl_for_loop0 via any registered implementation
+     0.00ns WARNING  gpi                                VPI: Not able to map type vpiNamedBegin(33) to object.
+     0.00ns WARNING  gpi                                Unable to create $ivl_for_loop1 via any registered implementation
+     0.00ns WARNING  gpi                                VPI: Not able to map type vpiNamedBegin(33) to object.
+     0.00ns WARNING  gpi                                Unable to create $ivl_for_loop2 via any registered implementation
+     0.00ns WARNING  gpi                                VPI: Not able to map type vpiNamedBegin(33) to object.
+     0.00ns WARNING  gpi                                Unable to create $ivl_for_loop3 via any registered implementation
+     0.00ns WARNING  gpi                                VPI: Not able to map type vpiNamedBegin(33) to object.
+     0.00ns WARNING  gpi                                Unable to create $ivl_for_loop4 via any registered implementation
+     0.00ns WARNING  gpi                                VPI: Not able to map type vpiNamedBegin(33) to object.
+     0.00ns WARNING  gpi                                Unable to create $ivl_for_loop5 via any registered implementation
+using function insert_data_and_process
+using function insert_data_and_process
+using function insert_data_and_process
+using function insert_data_and_process
+using function insert_data_and_process
+using function insert_data_and_process
+using function insert_data_and_process
+using function insert_data_and_process
+using function insert_data_and_process
+using function insert_data_and_process
+using function insert_data_and_process
+using function insert_data_and_process
+using function insert_data_and_process
+using function insert_data_and_process
+using function insert_data_and_process
+   170.00ns INFO     cocotb                             All tests passed finished.
+   170.00ns INFO     cocotb.regression                  test_detect_sequence.test_low_pass_filter passed
+   170.00ns INFO     cocotb.regression                  ***************************************************************************************************
+                                                        ** TEST                                       STATUS  SIM TIME (ns)  REAL TIME (s)  RATIO (ns/s) **
+                                                        ***************************************************************************************************
+                                                        ** test_detect_sequence.test_low_pass_filter   PASS         170.00           0.02       8556.62  **
+                                                        ***************************************************************************************************
+                                                        ** TESTS=1 PASS=1 FAIL=0 SKIP=0                             170.00           0.03       6012.73  **
+                                                        ***************************************************************************************************
+                                                        
+[DEBUG] Running simulation with:
+  NBW_DATA_IN = 5
+  NS = 32
+  NBI_DATA_IN = 3
+  NBW_ENERGY = 7
+  NBW_PILOT_POS = 5
+  NBW_TH_PROC = 7
+  NS_PROC = 23
+  NS_PROC_OVERLAP = 22
+.     -.--ns INFO     gpi                                ..mbed/gpi_embed.cpp:79   in set_program_name_in_venv        Did not detect Python virtual environment. Using system-wide Python interpreter
+     -.--ns INFO     gpi                                ../gpi/GpiCommon.cpp:101  in gpi_print_registered_impl       VPI registered
+     0.00ns INFO     cocotb                             Running on Icarus Verilog version 13.0 (devel)
+     0.00ns INFO     cocotb                             Running tests with cocotb v2.0.0.dev0+8d6c1a63 from /usr/local/lib/python3.9/dist-packages/cocotb
+     0.00ns INFO     cocotb                             Seeding Python random module with 1773330758
+     0.00ns INFO     cocotb.regression                  running test_detect_sequence.test_low_pass_filter (1/1)
+     0.00ns WARNING  cocotb                             NS_PROC: 23, NS_PROC_OVERLAP: 22, NS_DATA_IN: 54, NBW_PILOT_POS: 5, NBW_DATA_IN: 6, NBI_DATA_IN: 4, NBW_TH_PROC: 8, NBW_ENERGY: 8
+     0.00ns WARNING  gpi                                VPI: Not able to map type vpiNamedBegin(33) to object.
+     0.00ns WARNING  gpi                                Unable to create $ivl_for_loop0 via any registered implementation
+     0.00ns WARNING  gpi                                VPI: Not able to map type vpiNamedBegin(33) to object.
+     0.00ns WARNING  gpi                                Unable to create $ivl_for_loop1 via any registered implementation
+     0.00ns WARNING  gpi                                VPI: Not able to map type vpiNamedBegin(33) to object.
+     0.00ns WARNING  gpi                                Unable to create $ivl_for_loop2 via any registered implementation
+     0.00ns WARNING  gpi                                VPI: Not able to map type vpiNamedBegin(33) to object.
+     0.00ns WARNING  gpi                                Unable to create $ivl_for_loop3 via any registered implementation
+     0.00ns WARNING  gpi                                VPI: Not able to map type vpiNamedBegin(33) to object.
+     0.00ns WARNING  gpi                                Unable to create $ivl_for_loop4 via any registered implementation
+     0.00ns WARNING  gpi                                VPI: Not able to map type vpiNamedBegin(33) to object.
+     0.00ns WARNING  gpi                                Unable to create $ivl_for_loop5 via any registered implementation
+using function insert_data_and_process
+using function insert_data_and_process
+using function insert_data_and_process
+using function insert_data_and_process
+using function insert_data_and_process
+using function insert_data_and_process
+using function insert_data_and_process
+using function insert_data_and_process
+using function insert_data_and_process
+using function insert_data_and_process
+using function insert_data_and_process
+using function insert_data_and_process
+using function insert_data_and_process
+using function insert_data_and_process
+using function insert_data_and_process
+   170.00ns INFO     cocotb                             All tests passed finished.
+   170.00ns INFO     cocotb.regression                  test_detect_sequence.test_low_pass_filter passed
+   170.00ns INFO     cocotb.regression                  ***************************************************************************************************
+                                                        ** TEST                                       STATUS  SIM TIME (ns)  REAL TIME (s)  RATIO (ns/s) **
+                                                        ***************************************************************************************************
+                                                        ** test_detect_sequence.test_low_pass_filter   PASS         170.00           0.02       8274.61  **
+                                                        ***************************************************************************************************
+                                                        ** TESTS=1 PASS=1 FAIL=0 SKIP=0                             170.00           0.03       6480.57  **
+                                                        ***************************************************************************************************
+                                                        
+[DEBUG] Running simulation with:
+  NBW_DATA_IN = 6
+  NS = 32
+  NBI_DATA_IN = 4
+  NBW_ENERGY = 8
+  NBW_PILOT_POS = 5
+  NBW_TH_PROC = 8
+  NS_PROC = 23
+  NS_PROC_OVERLAP = 22
+.     -.--ns INFO     gpi                                ..mbed/gpi_embed.cpp:79   in set_program_name_in_venv        Did not detect Python virtual environment. Using system-wide Python interpreter
+     -.--ns INFO     gpi                                ../gpi/GpiCommon.cpp:101  in gpi_print_registered_impl       VPI registered
+     0.00ns INFO     cocotb                             Running on Icarus Verilog version 13.0 (devel)
+     0.00ns INFO     cocotb                             Running tests with cocotb v2.0.0.dev0+8d6c1a63 from /usr/local/lib/python3.9/dist-packages/cocotb
+     0.00ns INFO     cocotb                             Seeding Python random module with 1773330758
+     0.00ns INFO     cocotb.regression                  running test_detect_sequence.test_low_pass_filter (1/1)
+     0.00ns WARNING  cocotb                             NS_PROC: 23, NS_PROC_OVERLAP: 22, NS_DATA_IN: 54, NBW_PILOT_POS: 5, NBW_DATA_IN: 7, NBI_DATA_IN: 5, NBW_TH_PROC: 9, NBW_ENERGY: 9
+     0.00ns WARNING  gpi                                VPI: Not able to map type vpiNamedBegin(33) to object.
+     0.00ns WARNING  gpi                                Unable to create $ivl_for_loop0 via any registered implementation
+     0.00ns WARNING  gpi                                VPI: Not able to map type vpiNamedBegin(33) to object.
+     0.00ns WARNING  gpi                                Unable to create $ivl_for_loop1 via any registered implementation
+     0.00ns WARNING  gpi                                VPI: Not able to map type vpiNamedBegin(33) to object.
+     0.00ns WARNING  gpi                                Unable to create $ivl_for_loop2 via any registered implementation
+     0.00ns WARNING  gpi                                VPI: Not able to map type vpiNamedBegin(33) to object.
+     0.00ns WARNING  gpi                                Unable to create $ivl_for_loop3 via any registered implementation
+     0.00ns WARNING  gpi                                VPI: Not able to map type vpiNamedBegin(33) to object.
+     0.00ns WARNING  gpi                                Unable to create $ivl_for_loop4 via any registered implementation
+     0.00ns WARNING  gpi                                VPI: Not able to map type vpiNamedBegin(33) to object.
+     0.00ns WARNING  gpi                                Unable to create $ivl_for_loop5 via any registered implementation
+using function insert_data_and_process
+using function insert_data_and_process
+using function insert_data_and_process
+using function insert_data_and_process
+using function insert_data_and_process
+using function insert_data_and_process
+using function insert_data_and_process
+using function insert_data_and_process
+using function insert_data_and_process
+using function insert_data_and_process
+using function insert_data_and_process
+using function insert_data_and_process
+using function insert_data_and_process
+using function insert_data_and_process
+using function insert_data_and_process
+   170.00ns INFO     cocotb                             All tests passed finished.
+   170.00ns INFO     cocotb.regression                  test_detect_sequence.test_low_pass_filter passed
+   170.00ns INFO     cocotb.regression                  ***************************************************************************************************
+                                                        ** TEST                                       STATUS  SIM TIME (ns)  REAL TIME (s)  RATIO (ns/s) **
+                                                        ***************************************************************************************************
+                                                        ** test_detect_sequence.test_low_pass_filter   PASS         170.00           0.02       7928.92  **
+                                                        ***************************************************************************************************
+                                                        ** TESTS=1 PASS=1 FAIL=0 SKIP=0                             170.00           0.03       6266.15  **
+                                                        ***************************************************************************************************
+                                                        
+[DEBUG] Running simulation with:
+  NBW_DATA_IN = 7
+  NS = 32
+  NBI_DATA_IN = 5
+  NBW_ENERGY = 9
+  NBW_PILOT_POS = 5
+  NBW_TH_PROC = 9
+  NS_PROC = 23
+  NS_PROC_OVERLAP = 22
+.     -.--ns INFO     gpi                                ..mbed/gpi_embed.cpp:79   in set_program_name_in_venv        Did not detect Python virtual environment. Using system-wide Python interpreter
+     -.--ns INFO     gpi                                ../gpi/GpiCommon.cpp:101  in gpi_print_registered_impl       VPI registered
+     0.00ns INFO     cocotb                             Running on Icarus Verilog version 13.0 (devel)
+     0.00ns INFO     cocotb                             Running tests with cocotb v2.0.0.dev0+8d6c1a63 from /usr/local/lib/python3.9/dist-packages/cocotb
+     0.00ns INFO     cocotb                             Seeding Python random module with 1773330758
+     0.00ns INFO     cocotb.regression                  running test_detect_sequence.test_low_pass_filter (1/1)
+     0.00ns WARNING  cocotb                             NS_PROC: 23, NS_PROC_OVERLAP: 22, NS_DATA_IN: 54, NBW_PILOT_POS: 5, NBW_DATA_IN: 3, NBI_DATA_IN: 1, NBW_TH_PROC: 5, NBW_ENERGY: 5
+     0.00ns WARNING  gpi                                VPI: Not able to map type vpiNamedBegin(33) to object.
+     0.00ns WARNING  gpi                                Unable to create $ivl_for_loop0 via any registered implementation
+     0.00ns WARNING  gpi                                VPI: Not able to map type vpiNamedBegin(33) to object.
+     0.00ns WARNING  gpi                                Unable to create $ivl_for_loop1 via any registered implementation
+     0.00ns WARNING  gpi                                VPI: Not able to map type vpiNamedBegin(33) to object.
+     0.00ns WARNING  gpi                                Unable to create $ivl_for_loop2 via any registered implementation
+     0.00ns WARNING  gpi                                VPI: Not able to map type vpiNamedBegin(33) to object.
+     0.00ns WARNING  gpi                                Unable to create $ivl_for_loop3 via any registered implementation
+     0.00ns WARNING  gpi                                VPI: Not able to map type vpiNamedBegin(33) to object.
+     0.00ns WARNING  gpi                                Unable to create $ivl_for_loop4 via any registered implementation
+     0.00ns WARNING  gpi                                VPI: Not able to map type vpiNamedBegin(33) to object.
+     0.00ns WARNING  gpi                                Unable to create $ivl_for_loop5 via any registered implementation
+using function insert_data_and_process
+using function insert_data_and_process
+using function insert_data_and_process
+using function insert_data_and_process
+using function insert_data_and_process
+using function insert_data_and_process
+using function insert_data_and_process
+using function insert_data_and_process
+using function insert_data_and_process
+using function insert_data_and_process
+using function insert_data_and_process
+using function insert_data_and_process
+using function insert_data_and_process
+using function insert_data_and_process
+using function insert_data_and_process
+   170.00ns INFO     cocotb                             All tests passed finished.
+   170.00ns INFO     cocotb.regression                  test_detect_sequence.test_low_pass_filter passed
+   170.00ns INFO     cocotb.regression                  ***************************************************************************************************
+                                                        ** TEST                                       STATUS  SIM TIME (ns)  REAL TIME (s)  RATIO (ns/s) **
+                                                        ***************************************************************************************************
+                                                        ** test_detect_sequence.test_low_pass_filter   PASS         170.00           0.02       9622.17  **
+                                                        ***************************************************************************************************
+                                                        ** TESTS=1 PASS=1 FAIL=0 SKIP=0                             170.00           0.02       7261.02  **
+                                                        ***************************************************************************************************
+                                                        
+[DEBUG] Running simulation with:
+  NBW_DATA_IN = 3
+  NS = 32
+  NBI_DATA_IN = 1
+  NBW_ENERGY = 5
+  NBW_PILOT_POS = 5
+  NBW_TH_PROC = 5
+  NS_PROC = 23
+  NS_PROC_OVERLAP = 22
+.     -.--ns INFO     gpi                                ..mbed/gpi_embed.cpp:79   in set_program_name_in_venv        Did not detect Python virtual environment. Using system-wide Python interpreter
+     -.--ns INFO     gpi                                ../gpi/GpiCommon.cpp:101  in gpi_print_registered_impl       VPI registered
+     0.00ns INFO     cocotb                             Running on Icarus Verilog version 13.0 (devel)
+     0.00ns INFO     cocotb                             Running tests with cocotb v2.0.0.dev0+8d6c1a63 from /usr/local/lib/python3.9/dist-packages/cocotb
+     0.00ns INFO     cocotb                             Seeding Python random module with 1773330758
+     0.00ns INFO     cocotb.regression                  running test_detect_sequence.test_low_pass_filter (1/1)
+     0.00ns WARNING  cocotb                             NS_PROC: 23, NS_PROC_OVERLAP: 22, NS_DATA_IN: 54, NBW_PILOT_POS: 5, NBW_DATA_IN: 4, NBI_DATA_IN: 2, NBW_TH_PROC: 6, NBW_ENERGY: 6
+     0.00ns WARNING  gpi                                VPI: Not able to map type vpiNamedBegin(33) to object.
+     0.00ns WARNING  gpi                                Unable to create $ivl_for_loop0 via any registered implementation
+     0.00ns WARNING  gpi                                VPI: Not able to map type vpiNamedBegin(33) to object.
+     0.00ns WARNING  gpi                                Unable to create $ivl_for_loop1 via any registered implementation
+     0.00ns WARNING  gpi                                VPI: Not able to map type vpiNamedBegin(33) to object.
+     0.00ns WARNING  gpi                                Unable to create $ivl_for_loop2 via any registered implementation
+     0.00ns WARNING  gpi                                VPI: Not able to map type vpiNamedBegin(33) to object.
+     0.00ns WARNING  gpi                                Unable to create $ivl_for_loop3 via any registered implementation
+     0.00ns WARNING  gpi                                VPI: Not able to map type vpiNamedBegin(33) to object.
+     0.00ns WARNING  gpi                                Unable to create $ivl_for_loop4 via any registered implementation
+     0.00ns WARNING  gpi                                VPI: Not able to map type vpiNamedBegin(33) to object.
+     0.00ns WARNING  gpi                                Unable to create $ivl_for_loop5 via any registered implementation
+using function insert_data_and_process
+using function insert_data_and_process
+using function insert_data_and_process
+using function insert_data_and_process
+using function insert_data_and_process
+using function insert_data_and_process
+using function insert_data_and_process
+using function insert_data_and_process
+using function insert_data_and_process
+using function insert_data_and_process
+using function insert_data_and_process
+using function insert_data_and_process
+using function insert_data_and_process
+using function insert_data_and_process
+using function insert_data_and_process
+   170.00ns INFO     cocotb                             All tests passed finished.
+   170.00ns INFO     cocotb.regression                  test_detect_sequence.test_low_pass_filter passed
+   170.00ns INFO     cocotb.regression                  ***************************************************************************************************
+                                                        ** TEST                                       STATUS  SIM TIME (ns)  REAL TIME (s)  RATIO (ns/s) **
+                                                        ***************************************************************************************************
+                                                        ** test_detect_sequence.test_low_pass_filter   PASS         170.00           0.02       9908.72  **
+                                                        ***************************************************************************************************
+                                                        ** TESTS=1 PASS=1 FAIL=0 SKIP=0                             170.00           0.02       7477.73  **
+                                                        ***************************************************************************************************
+                                                        
+[DEBUG] Running simulation with:
+  NBW_DATA_IN = 4
+  NS = 32
+  NBI_DATA_IN = 2
+  NBW_ENERGY = 6
+  NBW_PILOT_POS = 5
+  NBW_TH_PROC = 6
+  NS_PROC = 23
+  NS_PROC_OVERLAP = 22
+.     -.--ns INFO     gpi                                ..mbed/gpi_embed.cpp:79   in set_program_name_in_venv        Did not detect Python virtual environment. Using system-wide Python interpreter
+     -.--ns INFO     gpi                                ../gpi/GpiCommon.cpp:101  in gpi_print_registered_impl       VPI registered
+     0.00ns INFO     cocotb                             Running on Icarus Verilog version 13.0 (devel)
+     0.00ns INFO     cocotb                             Running tests with cocotb v2.0.0.dev0+8d6c1a63 from /usr/local/lib/python3.9/dist-packages/cocotb
+     0.00ns INFO     cocotb                             Seeding Python random module with 1773330759
+     0.00ns INFO     cocotb.regression                  running test_detect_sequence.test_low_pass_filter (1/1)
+     0.00ns WARNING  cocotb                             NS_PROC: 23, NS_PROC_OVERLAP: 22, NS_DATA_IN: 54, NBW_PILOT_POS: 5, NBW_DATA_IN: 5, NBI_DATA_IN: 3, NBW_TH_PROC: 7, NBW_ENERGY: 7
+     0.00ns WARNING  gpi                                VPI: Not able to map type vpiNamedBegin(33) to object.
+     0.00ns WARNING  gpi                                Unable to create $ivl_for_loop0 via any registered implementation
+     0.00ns WARNING  gpi                                VPI: Not able to map type vpiNamedBegin(33) to object.
+     0.00ns WARNING  gpi                                Unable to create $ivl_for_loop1 via any registered implementation
+     0.00ns WARNING  gpi                                VPI: Not able to map type vpiNamedBegin(33) to object.
+     0.00ns WARNING  gpi                                Unable to create $ivl_for_loop2 via any registered implementation
+     0.00ns WARNING  gpi                                VPI: Not able to map type vpiNamedBegin(33) to object.
+     0.00ns WARNING  gpi                                Unable to create $ivl_for_loop3 via any registered implementation
+     0.00ns WARNING  gpi                                VPI: Not able to map type vpiNamedBegin(33) to object.
+     0.00ns WARNING  gpi                                Unable to create $ivl_for_loop4 via any registered implementation
+     0.00ns WARNING  gpi                                VPI: Not able to map type vpiNamedBegin(33) to object.
+     0.00ns WARNING  gpi                                Unable to create $ivl_for_loop5 via any registered implementation
+using function insert_data_and_process
+using function insert_data_and_process
+using function insert_data_and_process
+using function insert_data_and_process
+using function insert_data_and_process
+using function insert_data_and_process
+using function insert_data_and_process
+using function insert_data_and_process
+using function insert_data_and_process
+using function insert_data_and_process
+using function insert_data_and_process
+using function insert_data_and_process
+using function insert_data_and_process
+using function insert_data_and_process
+using function insert_data_and_process
+   170.00ns INFO     cocotb                             All tests passed finished.
+   170.00ns INFO     cocotb.regression                  test_detect_sequence.test_low_pass_filter passed
+   170.00ns INFO     cocotb.regression                  ***************************************************************************************************
+                                                        ** TEST                                       STATUS  SIM TIME (ns)  REAL TIME (s)  RATIO (ns/s) **
+                                                        ***************************************************************************************************
+                                                        ** test_detect_sequence.test_low_pass_filter   PASS         170.00           0.02       9112.46  **
+                                                        ***************************************************************************************************
+                                                        ** TESTS=1 PASS=1 FAIL=0 SKIP=0                             170.00           0.02       7022.11  **
+                                                        ***************************************************************************************************
+                                                        
+[DEBUG] Running simulation with:
+  NBW_DATA_IN = 5
+  NS = 32
+  NBI_DATA_IN = 3
+  NBW_ENERGY = 7
+  NBW_PILOT_POS = 5
+  NBW_TH_PROC = 7
+  NS_PROC = 23
+  NS_PROC_OVERLAP = 22
+.     -.--ns INFO     gpi                                ..mbed/gpi_embed.cpp:79   in set_program_name_in_venv        Did not detect Python virtual environment. Using system-wide Python interpreter
+     -.--ns INFO     gpi                                ../gpi/GpiCommon.cpp:101  in gpi_print_registered_impl       VPI registered
+     0.00ns INFO     cocotb                             Running on Icarus Verilog version 13.0 (devel)
+     0.00ns INFO     cocotb                             Running tests with cocotb v2.0.0.dev0+8d6c1a63 from /usr/local/lib/python3.9/dist-packages/cocotb
+     0.00ns INFO     cocotb                             Seeding Python random module with 1773330759
+     0.00ns INFO     cocotb.regression                  running test_detect_sequence.test_low_pass_filter (1/1)
+     0.00ns WARNING  cocotb                             NS_PROC: 23, NS_PROC_OVERLAP: 22, NS_DATA_IN: 54, NBW_PILOT_POS: 5, NBW_DATA_IN: 6, NBI_DATA_IN: 4, NBW_TH_PROC: 8, NBW_ENERGY: 8
+     0.00ns WARNING  gpi                                VPI: Not able to map type vpiNamedBegin(33) to object.
+     0.00ns WARNING  gpi                                Unable to create $ivl_for_loop0 via any registered implementation
+     0.00ns WARNING  gpi                                VPI: Not able to map type vpiNamedBegin(33) to object.
+     0.00ns WARNING  gpi                                Unable to create $ivl_for_loop1 via any registered implementation
+     0.00ns WARNING  gpi                                VPI: Not able to map type vpiNamedBegin(33) to object.
+     0.00ns WARNING  gpi                                Unable to create $ivl_for_loop2 via any registered implementation
+     0.00ns WARNING  gpi                                VPI: Not able to map type vpiNamedBegin(33) to object.
+     0.00ns WARNING  gpi                                Unable to create $ivl_for_loop3 via any registered implementation
+     0.00ns WARNING  gpi                                VPI: Not able to map type vpiNamedBegin(33) to object.
+     0.00ns WARNING  gpi                                Unable to create $ivl_for_loop4 via any registered implementation
+     0.00ns WARNING  gpi                                VPI: Not able to map type vpiNamedBegin(33) to object.
+     0.00ns WARNING  gpi                                Unable to create $ivl_for_loop5 via any registered implementation
+using function insert_data_and_process
+using function insert_data_and_process
+using function insert_data_and_process
+using function insert_data_and_process
+using function insert_data_and_process
+using function insert_data_and_process
+using function insert_data_and_process
+using function insert_data_and_process
+using function insert_data_and_process
+using function insert_data_and_process
+using function insert_data_and_process
+using function insert_data_and_process
+using function insert_data_and_process
+using function insert_data_and_process
+using function insert_data_and_process
+   170.00ns INFO     cocotb                             All tests passed finished.
+   170.00ns INFO     cocotb.regression                  test_detect_sequence.test_low_pass_filter passed
+   170.00ns INFO     cocotb.regression                  ***************************************************************************************************
+                                                        ** TEST                                       STATUS  SIM TIME (ns)  REAL TIME (s)  RATIO (ns/s) **
+                                                        ***************************************************************************************************
+                                                        ** test_detect_sequence.test_low_pass_filter   PASS         170.00           0.02       9231.26  **
+                                                        ***************************************************************************************************
+                                                        ** TESTS=1 PASS=1 FAIL=0 SKIP=0                             170.00           0.02       7048.69  **
+                                                        ***************************************************************************************************
+                                                        
+[DEBUG] Running simulation with:
+  NBW_DATA_IN = 6
+  NS = 32
+  NBI_DATA_IN = 4
+  NBW_ENERGY = 8
+  NBW_PILOT_POS = 5
+  NBW_TH_PROC = 8
+  NS_PROC = 23
+  NS_PROC_OVERLAP = 22
+.     -.--ns INFO     gpi                                ..mbed/gpi_embed.cpp:79   in set_program_name_in_venv        Did not detect Python virtual environment. Using system-wide Python interpreter
+     -.--ns INFO     gpi                                ../gpi/GpiCommon.cpp:101  in gpi_print_registered_impl       VPI registered
+     0.00ns INFO     cocotb                             Running on Icarus Verilog version 13.0 (devel)
+     0.00ns INFO     cocotb                             Running tests with cocotb v2.0.0.dev0+8d6c1a63 from /usr/local/lib/python3.9/dist-packages/cocotb
+     0.00ns INFO     cocotb                             Seeding Python random module with 1773330759
+     0.00ns INFO     cocotb.regression                  running test_detect_sequence.test_low_pass_filter (1/1)
+     0.00ns WARNING  cocotb                             NS_PROC: 23, NS_PROC_OVERLAP: 22, NS_DATA_IN: 54, NBW_PILOT_POS: 5, NBW_DATA_IN: 7, NBI_DATA_IN: 5, NBW_TH_PROC: 9, NBW_ENERGY: 9
+     0.00ns WARNING  gpi                                VPI: Not able to map type vpiNamedBegin(33) to object.
+     0.00ns WARNING  gpi                                Unable to create $ivl_for_loop0 via any registered implementation
+     0.00ns WARNING  gpi                                VPI: Not able to map type vpiNamedBegin(33) to object.
+     0.00ns WARNING  gpi                                Unable to create $ivl_for_loop1 via any registered implementation
+     0.00ns WARNING  gpi                                VPI: Not able to map type vpiNamedBegin(33) to object.
+     0.00ns WARNING  gpi                                Unable to create $ivl_for_loop2 via any registered implementation
+     0.00ns WARNING  gpi                                VPI: Not able to map type vpiNamedBegin(33) to object.
+     0.00ns WARNING  gpi                                Unable to create $ivl_for_loop3 via any registered implementation
+     0.00ns WARNING  gpi                                VPI: Not able to map type vpiNamedBegin(33) to object.
+     0.00ns WARNING  gpi                                Unable to create $ivl_for_loop4 via any registered implementation
+     0.00ns WARNING  gpi                                VPI: Not able to map type vpiNamedBegin(33) to object.
+     0.00ns WARNING  gpi                                Unable to create $ivl_for_loop5 via any registered implementation
+using function insert_data_and_process
+using function insert_data_and_process
+using function insert_data_and_process
+using function insert_data_and_process
+using function insert_data_and_process
+using function insert_data_and_process
+using function insert_data_and_process
+using function insert_data_and_process
+using function insert_data_and_process
+using function insert_data_and_process
+using function insert_data_and_process
+using function insert_data_and_process
+using function insert_data_and_process
+using function insert_data_and_process
+using function insert_data_and_process
+   170.00ns INFO     cocotb                             All tests passed finished.
+   170.00ns INFO     cocotb.regression                  test_detect_sequence.test_low_pass_filter passed
+   170.00ns INFO     cocotb.regression                  ***************************************************************************************************
+                                                        ** TEST                                       STATUS  SIM TIME (ns)  REAL TIME (s)  RATIO (ns/s) **
+                                                        ***************************************************************************************************
+                                                        ** test_detect_sequence.test_low_pass_filter   PASS         170.00           0.02       8700.50  **
+                                                        ***************************************************************************************************
+                                                        ** TESTS=1 PASS=1 FAIL=0 SKIP=0                             170.00           0.03       6721.45  **
+                                                        ***************************************************************************************************
+                                                        
+[DEBUG] Running simulation with:
+  NBW_DATA_IN = 7
+  NS = 32
+  NBI_DATA_IN = 5
+  NBW_ENERGY = 9
+  NBW_PILOT_POS = 5
+  NBW_TH_PROC = 9
+  NS_PROC = 23
+  NS_PROC_OVERLAP = 22
+.
+
+============================== 15 passed in 3.14s ==============================

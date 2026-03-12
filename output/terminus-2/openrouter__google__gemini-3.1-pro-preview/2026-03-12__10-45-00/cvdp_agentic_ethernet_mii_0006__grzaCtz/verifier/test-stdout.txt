@@ -1,0 +1,2376 @@
+Running service: direct
+============================= test session starts ==============================
+platform linux -- Python 3.9.2, pytest-8.3.2, pluggy-1.5.0 -- /usr/bin/python3
+cachedir: /code/rundir/.cache
+rootdir: /src
+collecting ... collected 1 item
+
+../../src/test_runner.py::test_runner      -.--ns INFO     gpi                                ..mbed/gpi_embed.cpp:79   in set_program_name_in_venv        Did not detect Python virtual environment. Using system-wide Python interpreter
+     -.--ns INFO     gpi                                ../gpi/GpiCommon.cpp:101  in gpi_print_registered_impl       VPI registered
+     0.00ns INFO     cocotb                             Running on Icarus Verilog version 13.0 (devel)
+     0.00ns INFO     cocotb                             Running tests with cocotb v2.0.0.dev0+8d6c1a63 from /usr/local/lib/python3.9/dist-packages/cocotb
+     0.00ns INFO     cocotb                             Seeding Python random module with 1773331250
+     0.00ns INFO     cocotb.regression                  running test_ethernet_mac_tx.test_tx_len_12 (1/10)
+
+============================================================
+--- Starting TX Test ---
+Length: 12, IRQ: 1, Dest MAC: 0xDDAABBCCDDEE
+[CFG WRITE] Addr=0x000007F8, Data=0x00000001
+[CFG WRITE] Addr=0x00000000, Data=0xBBCCDDEE
+[CFG WRITE] Addr=0x00000004, Data=0xAA55DDAA
+[CFG WRITE] Addr=0x00000008, Data=0xAA55AA55
+[CFG WRITE] Addr=0x0000000C, Data=0x03020100
+[CFG WRITE] Addr=0x00000010, Data=0x07060504
+[CFG WRITE] Addr=0x00000014, Data=0x0B0A0908
+[CFG WRITE] Addr=0x000007F4, Data=0x00000018
+[CFG WRITE] Addr=0x000007FC, Data=0x00000001
+
+AXI Stream Output:
+[AXI] Data=0xAA55DDAA, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0xAA55AA55, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0x03020100, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0x07060504, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0x0B0A0908, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0x00000000, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0x00000000, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0x00000000, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0x00000000, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0x00000000, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0x00000000, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0x00000000, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0x00000000, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0x00000000, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0x00000000, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0x00000000, Valid=1, Strb=0xF, Last=1
+
+AXI output mismatch!
+Expected: [238, 221, 204, 187, 170, 221, 85, 170, 85, 170, 85, 170, 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+Received: [170, 221, 85, 170, 85, 170, 85, 170, 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+   440.00ns INFO     cocotb.regression                  test_ethernet_mac_tx.test_tx_len_12 failed
+                                                        Traceback (most recent call last):
+                                                          File "/code/src/test_ethernet_mac_tx.py", line 156, in test_tx_len_12
+                                                            await test_packet(dut, 12, 1, 0xDDAABBCCDDEE)
+                                                          File "/code/src/test_ethernet_mac_tx.py", line 101, in test_packet
+                                                            await monitor_output(dut, expected_bytes)
+                                                          File "/code/src/test_ethernet_mac_tx.py", line 57, in monitor_output
+                                                            assert received == expected_bytes, f"AXI output mismatch!"
+                                                        AssertionError: AXI output mismatch!
+                                                        assert [170, 221, 85, 170, 85, 170, ...] == [238, 221, 204, 187, 170, 221, ...]
+   440.00ns INFO     cocotb.regression                  running test_ethernet_mac_tx.test_tx_len_64 (2/10)
+
+============================================================
+--- Starting TX Test ---
+Length: 64, IRQ: 1, Dest MAC: 0xCCCCCCCCCCCC
+[CFG WRITE] Addr=0x000007F8, Data=0x00000001
+[CFG WRITE] Addr=0x00000000, Data=0xCCCCCCCC
+[CFG WRITE] Addr=0x00000004, Data=0xAA55CCCC
+[CFG WRITE] Addr=0x00000008, Data=0xAA55AA55
+[CFG WRITE] Addr=0x0000000C, Data=0x03020100
+[CFG WRITE] Addr=0x00000010, Data=0x07060504
+[CFG WRITE] Addr=0x00000014, Data=0x0B0A0908
+[CFG WRITE] Addr=0x00000018, Data=0x0F0E0D0C
+[CFG WRITE] Addr=0x0000001C, Data=0x13121110
+[CFG WRITE] Addr=0x00000020, Data=0x17161514
+[CFG WRITE] Addr=0x00000024, Data=0x1B1A1918
+[CFG WRITE] Addr=0x00000028, Data=0x1F1E1D1C
+[CFG WRITE] Addr=0x0000002C, Data=0x23222120
+[CFG WRITE] Addr=0x00000030, Data=0x27262524
+[CFG WRITE] Addr=0x00000034, Data=0x2B2A2928
+[CFG WRITE] Addr=0x00000038, Data=0x2F2E2D2C
+[CFG WRITE] Addr=0x0000003C, Data=0x33323130
+[CFG WRITE] Addr=0x00000040, Data=0x37363534
+[CFG WRITE] Addr=0x00000044, Data=0x3B3A3938
+[CFG WRITE] Addr=0x00000048, Data=0x3F3E3D3C
+[CFG WRITE] Addr=0x000007F4, Data=0x0000004C
+[CFG WRITE] Addr=0x000007FC, Data=0x00000001
+
+AXI Stream Output:
+[AXI] Data=0xAA55CCCC, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0xAA55AA55, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0x03020100, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0x07060504, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0x0B0A0908, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0x0F0E0D0C, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0x13121110, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0x17161514, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0x1B1A1918, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0x1F1E1D1C, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0x23222120, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0x27262524, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0x2B2A2928, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0x2F2E2D2C, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0x33323130, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0x37363534, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0x3B3A3938, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0x3F3E3D3C, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0x00000000, Valid=1, Strb=0xF, Last=1
+
+AXI output mismatch!
+Expected: [204, 204, 204, 204, 204, 204, 85, 170, 85, 170, 85, 170, 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57, 58, 59, 60, 61, 62, 63]
+Received: [204, 204, 85, 170, 85, 170, 85, 170, 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57, 58, 59, 60, 61, 62, 63, 0, 0, 0, 0]
+  1181.00ns INFO     cocotb.regression                  test_ethernet_mac_tx.test_tx_len_64 failed
+                                                        Traceback (most recent call last):
+                                                          File "/code/src/test_ethernet_mac_tx.py", line 163, in test_tx_len_64
+                                                            await test_packet(dut, 64, 1, 0xCCCCCCCCCCCC)
+                                                          File "/code/src/test_ethernet_mac_tx.py", line 101, in test_packet
+                                                            await monitor_output(dut, expected_bytes)
+                                                          File "/code/src/test_ethernet_mac_tx.py", line 57, in monitor_output
+                                                            assert received == expected_bytes, f"AXI output mismatch!"
+                                                        AssertionError: AXI output mismatch!
+                                                        assert [204, 204, 85, 170, 85, 170, ...] == [204, 204, 204, 204, 204, 204, ...]
+  1181.00ns INFO     cocotb.regression                  running test_ethernet_mac_tx.test_tx_len_1518 (3/10)
+
+============================================================
+--- Starting TX Test ---
+Length: 1518, IRQ: 1, Dest MAC: 0xDDAABBCCDDEE
+[CFG WRITE] Addr=0x000007F8, Data=0x00000001
+[CFG WRITE] Addr=0x00000000, Data=0xBBCCDDEE
+[CFG WRITE] Addr=0x00000004, Data=0xAA55DDAA
+[CFG WRITE] Addr=0x00000008, Data=0xAA55AA55
+[CFG WRITE] Addr=0x0000000C, Data=0x03020100
+[CFG WRITE] Addr=0x00000010, Data=0x07060504
+[CFG WRITE] Addr=0x00000014, Data=0x0B0A0908
+[CFG WRITE] Addr=0x00000018, Data=0x0F0E0D0C
+[CFG WRITE] Addr=0x0000001C, Data=0x13121110
+[CFG WRITE] Addr=0x00000020, Data=0x17161514
+[CFG WRITE] Addr=0x00000024, Data=0x1B1A1918
+[CFG WRITE] Addr=0x00000028, Data=0x1F1E1D1C
+[CFG WRITE] Addr=0x0000002C, Data=0x23222120
+[CFG WRITE] Addr=0x00000030, Data=0x27262524
+[CFG WRITE] Addr=0x00000034, Data=0x2B2A2928
+[CFG WRITE] Addr=0x00000038, Data=0x2F2E2D2C
+[CFG WRITE] Addr=0x0000003C, Data=0x33323130
+[CFG WRITE] Addr=0x00000040, Data=0x37363534
+[CFG WRITE] Addr=0x00000044, Data=0x3B3A3938
+[CFG WRITE] Addr=0x00000048, Data=0x3F3E3D3C
+[CFG WRITE] Addr=0x0000004C, Data=0x43424140
+[CFG WRITE] Addr=0x00000050, Data=0x47464544
+[CFG WRITE] Addr=0x00000054, Data=0x4B4A4948
+[CFG WRITE] Addr=0x00000058, Data=0x4F4E4D4C
+[CFG WRITE] Addr=0x0000005C, Data=0x53525150
+[CFG WRITE] Addr=0x00000060, Data=0x57565554
+[CFG WRITE] Addr=0x00000064, Data=0x5B5A5958
+[CFG WRITE] Addr=0x00000068, Data=0x5F5E5D5C
+[CFG WRITE] Addr=0x0000006C, Data=0x63626160
+[CFG WRITE] Addr=0x00000070, Data=0x67666564
+[CFG WRITE] Addr=0x00000074, Data=0x6B6A6968
+[CFG WRITE] Addr=0x00000078, Data=0x6F6E6D6C
+[CFG WRITE] Addr=0x0000007C, Data=0x73727170
+[CFG WRITE] Addr=0x00000080, Data=0x77767574
+[CFG WRITE] Addr=0x00000084, Data=0x7B7A7978
+[CFG WRITE] Addr=0x00000088, Data=0x7F7E7D7C
+[CFG WRITE] Addr=0x0000008C, Data=0x83828180
+[CFG WRITE] Addr=0x00000090, Data=0x87868584
+[CFG WRITE] Addr=0x00000094, Data=0x8B8A8988
+[CFG WRITE] Addr=0x00000098, Data=0x8F8E8D8C
+[CFG WRITE] Addr=0x0000009C, Data=0x93929190
+[CFG WRITE] Addr=0x000000A0, Data=0x97969594
+[CFG WRITE] Addr=0x000000A4, Data=0x9B9A9998
+[CFG WRITE] Addr=0x000000A8, Data=0x9F9E9D9C
+[CFG WRITE] Addr=0x000000AC, Data=0xA3A2A1A0
+[CFG WRITE] Addr=0x000000B0, Data=0xA7A6A5A4
+[CFG WRITE] Addr=0x000000B4, Data=0xABAAA9A8
+[CFG WRITE] Addr=0x000000B8, Data=0xAFAEADAC
+[CFG WRITE] Addr=0x000000BC, Data=0xB3B2B1B0
+[CFG WRITE] Addr=0x000000C0, Data=0xB7B6B5B4
+[CFG WRITE] Addr=0x000000C4, Data=0xBBBAB9B8
+[CFG WRITE] Addr=0x000000C8, Data=0xBFBEBDBC
+[CFG WRITE] Addr=0x000000CC, Data=0xC3C2C1C0
+[CFG WRITE] Addr=0x000000D0, Data=0xC7C6C5C4
+[CFG WRITE] Addr=0x000000D4, Data=0xCBCAC9C8
+[CFG WRITE] Addr=0x000000D8, Data=0xCFCECDCC
+[CFG WRITE] Addr=0x000000DC, Data=0xD3D2D1D0
+[CFG WRITE] Addr=0x000000E0, Data=0xD7D6D5D4
+[CFG WRITE] Addr=0x000000E4, Data=0xDBDAD9D8
+[CFG WRITE] Addr=0x000000E8, Data=0xDFDEDDDC
+[CFG WRITE] Addr=0x000000EC, Data=0xE3E2E1E0
+[CFG WRITE] Addr=0x000000F0, Data=0xE7E6E5E4
+[CFG WRITE] Addr=0x000000F4, Data=0xEBEAE9E8
+[CFG WRITE] Addr=0x000000F8, Data=0xEFEEEDEC
+[CFG WRITE] Addr=0x000000FC, Data=0xF3F2F1F0
+[CFG WRITE] Addr=0x00000100, Data=0xF7F6F5F4
+[CFG WRITE] Addr=0x00000104, Data=0xFBFAF9F8
+[CFG WRITE] Addr=0x00000108, Data=0xFFFEFDFC
+[CFG WRITE] Addr=0x0000010C, Data=0x03020100
+[CFG WRITE] Addr=0x00000110, Data=0x07060504
+[CFG WRITE] Addr=0x00000114, Data=0x0B0A0908
+[CFG WRITE] Addr=0x00000118, Data=0x0F0E0D0C
+[CFG WRITE] Addr=0x0000011C, Data=0x13121110
+[CFG WRITE] Addr=0x00000120, Data=0x17161514
+[CFG WRITE] Addr=0x00000124, Data=0x1B1A1918
+[CFG WRITE] Addr=0x00000128, Data=0x1F1E1D1C
+[CFG WRITE] Addr=0x0000012C, Data=0x23222120
+[CFG WRITE] Addr=0x00000130, Data=0x27262524
+[CFG WRITE] Addr=0x00000134, Data=0x2B2A2928
+[CFG WRITE] Addr=0x00000138, Data=0x2F2E2D2C
+[CFG WRITE] Addr=0x0000013C, Data=0x33323130
+[CFG WRITE] Addr=0x00000140, Data=0x37363534
+[CFG WRITE] Addr=0x00000144, Data=0x3B3A3938
+[CFG WRITE] Addr=0x00000148, Data=0x3F3E3D3C
+[CFG WRITE] Addr=0x0000014C, Data=0x43424140
+[CFG WRITE] Addr=0x00000150, Data=0x47464544
+[CFG WRITE] Addr=0x00000154, Data=0x4B4A4948
+[CFG WRITE] Addr=0x00000158, Data=0x4F4E4D4C
+[CFG WRITE] Addr=0x0000015C, Data=0x53525150
+[CFG WRITE] Addr=0x00000160, Data=0x57565554
+[CFG WRITE] Addr=0x00000164, Data=0x5B5A5958
+[CFG WRITE] Addr=0x00000168, Data=0x5F5E5D5C
+[CFG WRITE] Addr=0x0000016C, Data=0x63626160
+[CFG WRITE] Addr=0x00000170, Data=0x67666564
+[CFG WRITE] Addr=0x00000174, Data=0x6B6A6968
+[CFG WRITE] Addr=0x00000178, Data=0x6F6E6D6C
+[CFG WRITE] Addr=0x0000017C, Data=0x73727170
+[CFG WRITE] Addr=0x00000180, Data=0x77767574
+[CFG WRITE] Addr=0x00000184, Data=0x7B7A7978
+[CFG WRITE] Addr=0x00000188, Data=0x7F7E7D7C
+[CFG WRITE] Addr=0x0000018C, Data=0x83828180
+[CFG WRITE] Addr=0x00000190, Data=0x87868584
+[CFG WRITE] Addr=0x00000194, Data=0x8B8A8988
+[CFG WRITE] Addr=0x00000198, Data=0x8F8E8D8C
+[CFG WRITE] Addr=0x0000019C, Data=0x93929190
+[CFG WRITE] Addr=0x000001A0, Data=0x97969594
+[CFG WRITE] Addr=0x000001A4, Data=0x9B9A9998
+[CFG WRITE] Addr=0x000001A8, Data=0x9F9E9D9C
+[CFG WRITE] Addr=0x000001AC, Data=0xA3A2A1A0
+[CFG WRITE] Addr=0x000001B0, Data=0xA7A6A5A4
+[CFG WRITE] Addr=0x000001B4, Data=0xABAAA9A8
+[CFG WRITE] Addr=0x000001B8, Data=0xAFAEADAC
+[CFG WRITE] Addr=0x000001BC, Data=0xB3B2B1B0
+[CFG WRITE] Addr=0x000001C0, Data=0xB7B6B5B4
+[CFG WRITE] Addr=0x000001C4, Data=0xBBBAB9B8
+[CFG WRITE] Addr=0x000001C8, Data=0xBFBEBDBC
+[CFG WRITE] Addr=0x000001CC, Data=0xC3C2C1C0
+[CFG WRITE] Addr=0x000001D0, Data=0xC7C6C5C4
+[CFG WRITE] Addr=0x000001D4, Data=0xCBCAC9C8
+[CFG WRITE] Addr=0x000001D8, Data=0xCFCECDCC
+[CFG WRITE] Addr=0x000001DC, Data=0xD3D2D1D0
+[CFG WRITE] Addr=0x000001E0, Data=0xD7D6D5D4
+[CFG WRITE] Addr=0x000001E4, Data=0xDBDAD9D8
+[CFG WRITE] Addr=0x000001E8, Data=0xDFDEDDDC
+[CFG WRITE] Addr=0x000001EC, Data=0xE3E2E1E0
+[CFG WRITE] Addr=0x000001F0, Data=0xE7E6E5E4
+[CFG WRITE] Addr=0x000001F4, Data=0xEBEAE9E8
+[CFG WRITE] Addr=0x000001F8, Data=0xEFEEEDEC
+[CFG WRITE] Addr=0x000001FC, Data=0xF3F2F1F0
+[CFG WRITE] Addr=0x00000200, Data=0xF7F6F5F4
+[CFG WRITE] Addr=0x00000204, Data=0xFBFAF9F8
+[CFG WRITE] Addr=0x00000208, Data=0xFFFEFDFC
+[CFG WRITE] Addr=0x0000020C, Data=0x03020100
+[CFG WRITE] Addr=0x00000210, Data=0x07060504
+[CFG WRITE] Addr=0x00000214, Data=0x0B0A0908
+[CFG WRITE] Addr=0x00000218, Data=0x0F0E0D0C
+[CFG WRITE] Addr=0x0000021C, Data=0x13121110
+[CFG WRITE] Addr=0x00000220, Data=0x17161514
+[CFG WRITE] Addr=0x00000224, Data=0x1B1A1918
+[CFG WRITE] Addr=0x00000228, Data=0x1F1E1D1C
+[CFG WRITE] Addr=0x0000022C, Data=0x23222120
+[CFG WRITE] Addr=0x00000230, Data=0x27262524
+[CFG WRITE] Addr=0x00000234, Data=0x2B2A2928
+[CFG WRITE] Addr=0x00000238, Data=0x2F2E2D2C
+[CFG WRITE] Addr=0x0000023C, Data=0x33323130
+[CFG WRITE] Addr=0x00000240, Data=0x37363534
+[CFG WRITE] Addr=0x00000244, Data=0x3B3A3938
+[CFG WRITE] Addr=0x00000248, Data=0x3F3E3D3C
+[CFG WRITE] Addr=0x0000024C, Data=0x43424140
+[CFG WRITE] Addr=0x00000250, Data=0x47464544
+[CFG WRITE] Addr=0x00000254, Data=0x4B4A4948
+[CFG WRITE] Addr=0x00000258, Data=0x4F4E4D4C
+[CFG WRITE] Addr=0x0000025C, Data=0x53525150
+[CFG WRITE] Addr=0x00000260, Data=0x57565554
+[CFG WRITE] Addr=0x00000264, Data=0x5B5A5958
+[CFG WRITE] Addr=0x00000268, Data=0x5F5E5D5C
+[CFG WRITE] Addr=0x0000026C, Data=0x63626160
+[CFG WRITE] Addr=0x00000270, Data=0x67666564
+[CFG WRITE] Addr=0x00000274, Data=0x6B6A6968
+[CFG WRITE] Addr=0x00000278, Data=0x6F6E6D6C
+[CFG WRITE] Addr=0x0000027C, Data=0x73727170
+[CFG WRITE] Addr=0x00000280, Data=0x77767574
+[CFG WRITE] Addr=0x00000284, Data=0x7B7A7978
+[CFG WRITE] Addr=0x00000288, Data=0x7F7E7D7C
+[CFG WRITE] Addr=0x0000028C, Data=0x83828180
+[CFG WRITE] Addr=0x00000290, Data=0x87868584
+[CFG WRITE] Addr=0x00000294, Data=0x8B8A8988
+[CFG WRITE] Addr=0x00000298, Data=0x8F8E8D8C
+[CFG WRITE] Addr=0x0000029C, Data=0x93929190
+[CFG WRITE] Addr=0x000002A0, Data=0x97969594
+[CFG WRITE] Addr=0x000002A4, Data=0x9B9A9998
+[CFG WRITE] Addr=0x000002A8, Data=0x9F9E9D9C
+[CFG WRITE] Addr=0x000002AC, Data=0xA3A2A1A0
+[CFG WRITE] Addr=0x000002B0, Data=0xA7A6A5A4
+[CFG WRITE] Addr=0x000002B4, Data=0xABAAA9A8
+[CFG WRITE] Addr=0x000002B8, Data=0xAFAEADAC
+[CFG WRITE] Addr=0x000002BC, Data=0xB3B2B1B0
+[CFG WRITE] Addr=0x000002C0, Data=0xB7B6B5B4
+[CFG WRITE] Addr=0x000002C4, Data=0xBBBAB9B8
+[CFG WRITE] Addr=0x000002C8, Data=0xBFBEBDBC
+[CFG WRITE] Addr=0x000002CC, Data=0xC3C2C1C0
+[CFG WRITE] Addr=0x000002D0, Data=0xC7C6C5C4
+[CFG WRITE] Addr=0x000002D4, Data=0xCBCAC9C8
+[CFG WRITE] Addr=0x000002D8, Data=0xCFCECDCC
+[CFG WRITE] Addr=0x000002DC, Data=0xD3D2D1D0
+[CFG WRITE] Addr=0x000002E0, Data=0xD7D6D5D4
+[CFG WRITE] Addr=0x000002E4, Data=0xDBDAD9D8
+[CFG WRITE] Addr=0x000002E8, Data=0xDFDEDDDC
+[CFG WRITE] Addr=0x000002EC, Data=0xE3E2E1E0
+[CFG WRITE] Addr=0x000002F0, Data=0xE7E6E5E4
+[CFG WRITE] Addr=0x000002F4, Data=0xEBEAE9E8
+[CFG WRITE] Addr=0x000002F8, Data=0xEFEEEDEC
+[CFG WRITE] Addr=0x000002FC, Data=0xF3F2F1F0
+[CFG WRITE] Addr=0x00000300, Data=0xF7F6F5F4
+[CFG WRITE] Addr=0x00000304, Data=0xFBFAF9F8
+[CFG WRITE] Addr=0x00000308, Data=0xFFFEFDFC
+[CFG WRITE] Addr=0x0000030C, Data=0x03020100
+[CFG WRITE] Addr=0x00000310, Data=0x07060504
+[CFG WRITE] Addr=0x00000314, Data=0x0B0A0908
+[CFG WRITE] Addr=0x00000318, Data=0x0F0E0D0C
+[CFG WRITE] Addr=0x0000031C, Data=0x13121110
+[CFG WRITE] Addr=0x00000320, Data=0x17161514
+[CFG WRITE] Addr=0x00000324, Data=0x1B1A1918
+[CFG WRITE] Addr=0x00000328, Data=0x1F1E1D1C
+[CFG WRITE] Addr=0x0000032C, Data=0x23222120
+[CFG WRITE] Addr=0x00000330, Data=0x27262524
+[CFG WRITE] Addr=0x00000334, Data=0x2B2A2928
+[CFG WRITE] Addr=0x00000338, Data=0x2F2E2D2C
+[CFG WRITE] Addr=0x0000033C, Data=0x33323130
+[CFG WRITE] Addr=0x00000340, Data=0x37363534
+[CFG WRITE] Addr=0x00000344, Data=0x3B3A3938
+[CFG WRITE] Addr=0x00000348, Data=0x3F3E3D3C
+[CFG WRITE] Addr=0x0000034C, Data=0x43424140
+[CFG WRITE] Addr=0x00000350, Data=0x47464544
+[CFG WRITE] Addr=0x00000354, Data=0x4B4A4948
+[CFG WRITE] Addr=0x00000358, Data=0x4F4E4D4C
+[CFG WRITE] Addr=0x0000035C, Data=0x53525150
+[CFG WRITE] Addr=0x00000360, Data=0x57565554
+[CFG WRITE] Addr=0x00000364, Data=0x5B5A5958
+[CFG WRITE] Addr=0x00000368, Data=0x5F5E5D5C
+[CFG WRITE] Addr=0x0000036C, Data=0x63626160
+[CFG WRITE] Addr=0x00000370, Data=0x67666564
+[CFG WRITE] Addr=0x00000374, Data=0x6B6A6968
+[CFG WRITE] Addr=0x00000378, Data=0x6F6E6D6C
+[CFG WRITE] Addr=0x0000037C, Data=0x73727170
+[CFG WRITE] Addr=0x00000380, Data=0x77767574
+[CFG WRITE] Addr=0x00000384, Data=0x7B7A7978
+[CFG WRITE] Addr=0x00000388, Data=0x7F7E7D7C
+[CFG WRITE] Addr=0x0000038C, Data=0x83828180
+[CFG WRITE] Addr=0x00000390, Data=0x87868584
+[CFG WRITE] Addr=0x00000394, Data=0x8B8A8988
+[CFG WRITE] Addr=0x00000398, Data=0x8F8E8D8C
+[CFG WRITE] Addr=0x0000039C, Data=0x93929190
+[CFG WRITE] Addr=0x000003A0, Data=0x97969594
+[CFG WRITE] Addr=0x000003A4, Data=0x9B9A9998
+[CFG WRITE] Addr=0x000003A8, Data=0x9F9E9D9C
+[CFG WRITE] Addr=0x000003AC, Data=0xA3A2A1A0
+[CFG WRITE] Addr=0x000003B0, Data=0xA7A6A5A4
+[CFG WRITE] Addr=0x000003B4, Data=0xABAAA9A8
+[CFG WRITE] Addr=0x000003B8, Data=0xAFAEADAC
+[CFG WRITE] Addr=0x000003BC, Data=0xB3B2B1B0
+[CFG WRITE] Addr=0x000003C0, Data=0xB7B6B5B4
+[CFG WRITE] Addr=0x000003C4, Data=0xBBBAB9B8
+[CFG WRITE] Addr=0x000003C8, Data=0xBFBEBDBC
+[CFG WRITE] Addr=0x000003CC, Data=0xC3C2C1C0
+[CFG WRITE] Addr=0x000003D0, Data=0xC7C6C5C4
+[CFG WRITE] Addr=0x000003D4, Data=0xCBCAC9C8
+[CFG WRITE] Addr=0x000003D8, Data=0xCFCECDCC
+[CFG WRITE] Addr=0x000003DC, Data=0xD3D2D1D0
+[CFG WRITE] Addr=0x000003E0, Data=0xD7D6D5D4
+[CFG WRITE] Addr=0x000003E4, Data=0xDBDAD9D8
+[CFG WRITE] Addr=0x000003E8, Data=0xDFDEDDDC
+[CFG WRITE] Addr=0x000003EC, Data=0xE3E2E1E0
+[CFG WRITE] Addr=0x000003F0, Data=0xE7E6E5E4
+[CFG WRITE] Addr=0x000003F4, Data=0xEBEAE9E8
+[CFG WRITE] Addr=0x000003F8, Data=0xEFEEEDEC
+[CFG WRITE] Addr=0x000003FC, Data=0xF3F2F1F0
+[CFG WRITE] Addr=0x00000400, Data=0xF7F6F5F4
+[CFG WRITE] Addr=0x00000404, Data=0xFBFAF9F8
+[CFG WRITE] Addr=0x00000408, Data=0xFFFEFDFC
+[CFG WRITE] Addr=0x0000040C, Data=0x03020100
+[CFG WRITE] Addr=0x00000410, Data=0x07060504
+[CFG WRITE] Addr=0x00000414, Data=0x0B0A0908
+[CFG WRITE] Addr=0x00000418, Data=0x0F0E0D0C
+[CFG WRITE] Addr=0x0000041C, Data=0x13121110
+[CFG WRITE] Addr=0x00000420, Data=0x17161514
+[CFG WRITE] Addr=0x00000424, Data=0x1B1A1918
+[CFG WRITE] Addr=0x00000428, Data=0x1F1E1D1C
+[CFG WRITE] Addr=0x0000042C, Data=0x23222120
+[CFG WRITE] Addr=0x00000430, Data=0x27262524
+[CFG WRITE] Addr=0x00000434, Data=0x2B2A2928
+[CFG WRITE] Addr=0x00000438, Data=0x2F2E2D2C
+[CFG WRITE] Addr=0x0000043C, Data=0x33323130
+[CFG WRITE] Addr=0x00000440, Data=0x37363534
+[CFG WRITE] Addr=0x00000444, Data=0x3B3A3938
+[CFG WRITE] Addr=0x00000448, Data=0x3F3E3D3C
+[CFG WRITE] Addr=0x0000044C, Data=0x43424140
+[CFG WRITE] Addr=0x00000450, Data=0x47464544
+[CFG WRITE] Addr=0x00000454, Data=0x4B4A4948
+[CFG WRITE] Addr=0x00000458, Data=0x4F4E4D4C
+[CFG WRITE] Addr=0x0000045C, Data=0x53525150
+[CFG WRITE] Addr=0x00000460, Data=0x57565554
+[CFG WRITE] Addr=0x00000464, Data=0x5B5A5958
+[CFG WRITE] Addr=0x00000468, Data=0x5F5E5D5C
+[CFG WRITE] Addr=0x0000046C, Data=0x63626160
+[CFG WRITE] Addr=0x00000470, Data=0x67666564
+[CFG WRITE] Addr=0x00000474, Data=0x6B6A6968
+[CFG WRITE] Addr=0x00000478, Data=0x6F6E6D6C
+[CFG WRITE] Addr=0x0000047C, Data=0x73727170
+[CFG WRITE] Addr=0x00000480, Data=0x77767574
+[CFG WRITE] Addr=0x00000484, Data=0x7B7A7978
+[CFG WRITE] Addr=0x00000488, Data=0x7F7E7D7C
+[CFG WRITE] Addr=0x0000048C, Data=0x83828180
+[CFG WRITE] Addr=0x00000490, Data=0x87868584
+[CFG WRITE] Addr=0x00000494, Data=0x8B8A8988
+[CFG WRITE] Addr=0x00000498, Data=0x8F8E8D8C
+[CFG WRITE] Addr=0x0000049C, Data=0x93929190
+[CFG WRITE] Addr=0x000004A0, Data=0x97969594
+[CFG WRITE] Addr=0x000004A4, Data=0x9B9A9998
+[CFG WRITE] Addr=0x000004A8, Data=0x9F9E9D9C
+[CFG WRITE] Addr=0x000004AC, Data=0xA3A2A1A0
+[CFG WRITE] Addr=0x000004B0, Data=0xA7A6A5A4
+[CFG WRITE] Addr=0x000004B4, Data=0xABAAA9A8
+[CFG WRITE] Addr=0x000004B8, Data=0xAFAEADAC
+[CFG WRITE] Addr=0x000004BC, Data=0xB3B2B1B0
+[CFG WRITE] Addr=0x000004C0, Data=0xB7B6B5B4
+[CFG WRITE] Addr=0x000004C4, Data=0xBBBAB9B8
+[CFG WRITE] Addr=0x000004C8, Data=0xBFBEBDBC
+[CFG WRITE] Addr=0x000004CC, Data=0xC3C2C1C0
+[CFG WRITE] Addr=0x000004D0, Data=0xC7C6C5C4
+[CFG WRITE] Addr=0x000004D4, Data=0xCBCAC9C8
+[CFG WRITE] Addr=0x000004D8, Data=0xCFCECDCC
+[CFG WRITE] Addr=0x000004DC, Data=0xD3D2D1D0
+[CFG WRITE] Addr=0x000004E0, Data=0xD7D6D5D4
+[CFG WRITE] Addr=0x000004E4, Data=0xDBDAD9D8
+[CFG WRITE] Addr=0x000004E8, Data=0xDFDEDDDC
+[CFG WRITE] Addr=0x000004EC, Data=0xE3E2E1E0
+[CFG WRITE] Addr=0x000004F0, Data=0xE7E6E5E4
+[CFG WRITE] Addr=0x000004F4, Data=0xEBEAE9E8
+[CFG WRITE] Addr=0x000004F8, Data=0xEFEEEDEC
+[CFG WRITE] Addr=0x000004FC, Data=0xF3F2F1F0
+[CFG WRITE] Addr=0x00000500, Data=0xF7F6F5F4
+[CFG WRITE] Addr=0x00000504, Data=0xFBFAF9F8
+[CFG WRITE] Addr=0x00000508, Data=0xFFFEFDFC
+[CFG WRITE] Addr=0x0000050C, Data=0x03020100
+[CFG WRITE] Addr=0x00000510, Data=0x07060504
+[CFG WRITE] Addr=0x00000514, Data=0x0B0A0908
+[CFG WRITE] Addr=0x00000518, Data=0x0F0E0D0C
+[CFG WRITE] Addr=0x0000051C, Data=0x13121110
+[CFG WRITE] Addr=0x00000520, Data=0x17161514
+[CFG WRITE] Addr=0x00000524, Data=0x1B1A1918
+[CFG WRITE] Addr=0x00000528, Data=0x1F1E1D1C
+[CFG WRITE] Addr=0x0000052C, Data=0x23222120
+[CFG WRITE] Addr=0x00000530, Data=0x27262524
+[CFG WRITE] Addr=0x00000534, Data=0x2B2A2928
+[CFG WRITE] Addr=0x00000538, Data=0x2F2E2D2C
+[CFG WRITE] Addr=0x0000053C, Data=0x33323130
+[CFG WRITE] Addr=0x00000540, Data=0x37363534
+[CFG WRITE] Addr=0x00000544, Data=0x3B3A3938
+[CFG WRITE] Addr=0x00000548, Data=0x3F3E3D3C
+[CFG WRITE] Addr=0x0000054C, Data=0x43424140
+[CFG WRITE] Addr=0x00000550, Data=0x47464544
+[CFG WRITE] Addr=0x00000554, Data=0x4B4A4948
+[CFG WRITE] Addr=0x00000558, Data=0x4F4E4D4C
+[CFG WRITE] Addr=0x0000055C, Data=0x53525150
+[CFG WRITE] Addr=0x00000560, Data=0x57565554
+[CFG WRITE] Addr=0x00000564, Data=0x5B5A5958
+[CFG WRITE] Addr=0x00000568, Data=0x5F5E5D5C
+[CFG WRITE] Addr=0x0000056C, Data=0x63626160
+[CFG WRITE] Addr=0x00000570, Data=0x67666564
+[CFG WRITE] Addr=0x00000574, Data=0x6B6A6968
+[CFG WRITE] Addr=0x00000578, Data=0x6F6E6D6C
+[CFG WRITE] Addr=0x0000057C, Data=0x73727170
+[CFG WRITE] Addr=0x00000580, Data=0x77767574
+[CFG WRITE] Addr=0x00000584, Data=0x7B7A7978
+[CFG WRITE] Addr=0x00000588, Data=0x7F7E7D7C
+[CFG WRITE] Addr=0x0000058C, Data=0x83828180
+[CFG WRITE] Addr=0x00000590, Data=0x87868584
+[CFG WRITE] Addr=0x00000594, Data=0x8B8A8988
+[CFG WRITE] Addr=0x00000598, Data=0x8F8E8D8C
+[CFG WRITE] Addr=0x0000059C, Data=0x93929190
+[CFG WRITE] Addr=0x000005A0, Data=0x97969594
+[CFG WRITE] Addr=0x000005A4, Data=0x9B9A9998
+[CFG WRITE] Addr=0x000005A8, Data=0x9F9E9D9C
+[CFG WRITE] Addr=0x000005AC, Data=0xA3A2A1A0
+[CFG WRITE] Addr=0x000005B0, Data=0xA7A6A5A4
+[CFG WRITE] Addr=0x000005B4, Data=0xABAAA9A8
+[CFG WRITE] Addr=0x000005B8, Data=0xAFAEADAC
+[CFG WRITE] Addr=0x000005BC, Data=0xB3B2B1B0
+[CFG WRITE] Addr=0x000005C0, Data=0xB7B6B5B4
+[CFG WRITE] Addr=0x000005C4, Data=0xBBBAB9B8
+[CFG WRITE] Addr=0x000005C8, Data=0xBFBEBDBC
+[CFG WRITE] Addr=0x000005CC, Data=0xC3C2C1C0
+[CFG WRITE] Addr=0x000005D0, Data=0xC7C6C5C4
+[CFG WRITE] Addr=0x000005D4, Data=0xCBCAC9C8
+[CFG WRITE] Addr=0x000005D8, Data=0xCFCECDCC
+[CFG WRITE] Addr=0x000005DC, Data=0xD3D2D1D0
+[CFG WRITE] Addr=0x000005E0, Data=0xD7D6D5D4
+[CFG WRITE] Addr=0x000005E4, Data=0xDBDAD9D8
+[CFG WRITE] Addr=0x000005E8, Data=0xDFDEDDDC
+[CFG WRITE] Addr=0x000005EC, Data=0xE3E2E1E0
+[CFG WRITE] Addr=0x000005F0, Data=0xE7E6E5E4
+[CFG WRITE] Addr=0x000005F4, Data=0xEBEAE9E8
+[CFG WRITE] Addr=0x000005F8, Data=0x0000EDEC
+[CFG WRITE] Addr=0x000007F4, Data=0x000005FA
+[CFG WRITE] Addr=0x000007FC, Data=0x00000001
+
+AXI Stream Output:
+[AXI] Data=0xAA55DDAA, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0xAA55AA55, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0x03020100, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0x07060504, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0x0B0A0908, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0x0F0E0D0C, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0x13121110, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0x17161514, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0x1B1A1918, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0x1F1E1D1C, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0x23222120, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0x27262524, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0x2B2A2928, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0x2F2E2D2C, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0x33323130, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0x37363534, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0x3B3A3938, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0x3F3E3D3C, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0x43424140, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0x47464544, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0x4B4A4948, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0x4F4E4D4C, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0x53525150, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0x57565554, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0x5B5A5958, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0x5F5E5D5C, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0x63626160, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0x67666564, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0x6B6A6968, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0x6F6E6D6C, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0x73727170, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0x77767574, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0x7B7A7978, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0x7F7E7D7C, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0x83828180, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0x87868584, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0x8B8A8988, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0x8F8E8D8C, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0x93929190, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0x97969594, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0x9B9A9998, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0x9F9E9D9C, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0xA3A2A1A0, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0xA7A6A5A4, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0xABAAA9A8, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0xAFAEADAC, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0xB3B2B1B0, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0xB7B6B5B4, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0xBBBAB9B8, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0xBFBEBDBC, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0xC3C2C1C0, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0xC7C6C5C4, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0xCBCAC9C8, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0xCFCECDCC, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0xD3D2D1D0, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0xD7D6D5D4, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0xDBDAD9D8, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0xDFDEDDDC, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0xE3E2E1E0, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0xE7E6E5E4, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0xEBEAE9E8, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0xEFEEEDEC, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0xF3F2F1F0, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0xF7F6F5F4, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0xFBFAF9F8, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0xFFFEFDFC, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0x03020100, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0x07060504, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0x0B0A0908, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0x0F0E0D0C, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0x13121110, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0x17161514, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0x1B1A1918, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0x1F1E1D1C, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0x23222120, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0x27262524, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0x2B2A2928, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0x2F2E2D2C, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0x33323130, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0x37363534, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0x3B3A3938, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0x3F3E3D3C, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0x43424140, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0x47464544, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0x4B4A4948, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0x4F4E4D4C, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0x53525150, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0x57565554, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0x5B5A5958, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0x5F5E5D5C, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0x63626160, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0x67666564, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0x6B6A6968, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0x6F6E6D6C, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0x73727170, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0x77767574, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0x7B7A7978, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0x7F7E7D7C, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0x83828180, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0x87868584, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0x8B8A8988, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0x8F8E8D8C, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0x93929190, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0x97969594, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0x9B9A9998, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0x9F9E9D9C, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0xA3A2A1A0, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0xA7A6A5A4, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0xABAAA9A8, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0xAFAEADAC, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0xB3B2B1B0, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0xB7B6B5B4, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0xBBBAB9B8, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0xBFBEBDBC, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0xC3C2C1C0, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0xC7C6C5C4, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0xCBCAC9C8, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0xCFCECDCC, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0xD3D2D1D0, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0xD7D6D5D4, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0xDBDAD9D8, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0xDFDEDDDC, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0xE3E2E1E0, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0xE7E6E5E4, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0xEBEAE9E8, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0xEFEEEDEC, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0xF3F2F1F0, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0xF7F6F5F4, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0xFBFAF9F8, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0xFFFEFDFC, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0x03020100, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0x07060504, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0x0B0A0908, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0x0F0E0D0C, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0x13121110, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0x17161514, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0x1B1A1918, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0x1F1E1D1C, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0x23222120, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0x27262524, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0x2B2A2928, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0x2F2E2D2C, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0x33323130, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0x37363534, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0x3B3A3938, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0x3F3E3D3C, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0x43424140, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0x47464544, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0x4B4A4948, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0x4F4E4D4C, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0x53525150, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0x57565554, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0x5B5A5958, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0x5F5E5D5C, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0x63626160, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0x67666564, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0x6B6A6968, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0x6F6E6D6C, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0x73727170, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0x77767574, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0x7B7A7978, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0x7F7E7D7C, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0x83828180, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0x87868584, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0x8B8A8988, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0x8F8E8D8C, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0x93929190, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0x97969594, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0x9B9A9998, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0x9F9E9D9C, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0xA3A2A1A0, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0xA7A6A5A4, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0xABAAA9A8, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0xAFAEADAC, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0xB3B2B1B0, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0xB7B6B5B4, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0xBBBAB9B8, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0xBFBEBDBC, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0xC3C2C1C0, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0xC7C6C5C4, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0xCBCAC9C8, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0xCFCECDCC, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0xD3D2D1D0, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0xD7D6D5D4, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0xDBDAD9D8, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0xDFDEDDDC, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0xE3E2E1E0, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0xE7E6E5E4, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0xEBEAE9E8, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0xEFEEEDEC, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0xF3F2F1F0, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0xF7F6F5F4, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0xFBFAF9F8, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0xFFFEFDFC, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0x03020100, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0x07060504, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0x0B0A0908, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0x0F0E0D0C, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0x13121110, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0x17161514, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0x1B1A1918, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0x1F1E1D1C, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0x23222120, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0x27262524, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0x2B2A2928, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0x2F2E2D2C, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0x33323130, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0x37363534, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0x3B3A3938, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0x3F3E3D3C, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0x43424140, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0x47464544, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0x4B4A4948, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0x4F4E4D4C, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0x53525150, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0x57565554, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0x5B5A5958, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0x5F5E5D5C, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0x63626160, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0x67666564, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0x6B6A6968, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0x6F6E6D6C, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0x73727170, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0x77767574, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0x7B7A7978, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0x7F7E7D7C, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0x83828180, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0x87868584, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0x8B8A8988, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0x8F8E8D8C, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0x93929190, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0x97969594, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0x9B9A9998, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0x9F9E9D9C, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0xA3A2A1A0, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0xA7A6A5A4, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0xABAAA9A8, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0xAFAEADAC, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0xB3B2B1B0, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0xB7B6B5B4, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0xBBBAB9B8, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0xBFBEBDBC, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0xC3C2C1C0, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0xC7C6C5C4, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0xCBCAC9C8, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0xCFCECDCC, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0xD3D2D1D0, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0xD7D6D5D4, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0xDBDAD9D8, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0xDFDEDDDC, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0xE3E2E1E0, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0xE7E6E5E4, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0xEBEAE9E8, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0xEFEEEDEC, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0xF3F2F1F0, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0xF7F6F5F4, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0xFBFAF9F8, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0xFFFEFDFC, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0x03020100, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0x07060504, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0x0B0A0908, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0x0F0E0D0C, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0x13121110, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0x17161514, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0x1B1A1918, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0x1F1E1D1C, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0x23222120, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0x27262524, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0x2B2A2928, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0x2F2E2D2C, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0x33323130, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0x37363534, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0x3B3A3938, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0x3F3E3D3C, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0x43424140, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0x47464544, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0x4B4A4948, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0x4F4E4D4C, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0x53525150, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0x57565554, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0x5B5A5958, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0x5F5E5D5C, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0x63626160, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0x67666564, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0x6B6A6968, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0x6F6E6D6C, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0x73727170, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0x77767574, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0x7B7A7978, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0x7F7E7D7C, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0x83828180, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0x87868584, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0x8B8A8988, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0x8F8E8D8C, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0x93929190, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0x97969594, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0x9B9A9998, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0x9F9E9D9C, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0xA3A2A1A0, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0xA7A6A5A4, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0xABAAA9A8, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0xAFAEADAC, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0xB3B2B1B0, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0xB7B6B5B4, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0xBBBAB9B8, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0xBFBEBDBC, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0xC3C2C1C0, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0xC7C6C5C4, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0xCBCAC9C8, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0xCFCECDCC, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0xD3D2D1D0, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0xD7D6D5D4, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0xDBDAD9D8, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0xDFDEDDDC, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0xE3E2E1E0, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0xE7E6E5E4, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0xEBEAE9E8, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0xEFEEEDEC, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0xF3F2F1F0, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0xF7F6F5F4, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0xFBFAF9F8, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0xFFFEFDFC, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0x03020100, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0x07060504, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0x0B0A0908, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0x0F0E0D0C, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0x13121110, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0x17161514, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0x1B1A1918, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0x1F1E1D1C, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0x23222120, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0x27262524, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0x2B2A2928, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0x2F2E2D2C, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0x33323130, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0x37363534, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0x3B3A3938, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0x3F3E3D3C, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0x43424140, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0x47464544, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0x4B4A4948, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0x4F4E4D4C, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0x53525150, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0x57565554, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0x5B5A5958, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0x5F5E5D5C, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0x63626160, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0x67666564, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0x6B6A6968, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0x6F6E6D6C, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0x73727170, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0x77767574, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0x7B7A7978, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0x7F7E7D7C, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0x83828180, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0x87868584, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0x8B8A8988, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0x8F8E8D8C, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0x93929190, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0x97969594, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0x9B9A9998, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0x9F9E9D9C, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0xA3A2A1A0, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0xA7A6A5A4, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0xABAAA9A8, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0xAFAEADAC, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0xB3B2B1B0, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0xB7B6B5B4, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0xBBBAB9B8, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0xBFBEBDBC, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0xC3C2C1C0, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0xC7C6C5C4, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0xCBCAC9C8, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0xCFCECDCC, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0xD3D2D1D0, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0xD7D6D5D4, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0xDBDAD9D8, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0xDFDEDDDC, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0xE3E2E1E0, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0xE7E6E5E4, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0xEBEAE9E8, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0x0000EDEC, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0x00000000, Valid=1, Strb=0x3, Last=1
+
+AXI output mismatch!
+Expected: [238, 221, 204, 187, 170, 221, 85, 170, 85, 170, 85, 170, 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57, 58, 59, 60, 61, 62, 63, 64, 65, 66, 67, 68, 69, 70, 71, 72, 73, 74, 75, 76, 77, 78, 79, 80, 81, 82, 83, 84, 85, 86, 87, 88, 89, 90, 91, 92, 93, 94, 95, 96, 97, 98, 99, 100, 101, 102, 103, 104, 105, 106, 107, 108, 109, 110, 111, 112, 113, 114, 115, 116, 117, 118, 119, 120, 121, 122, 123, 124, 125, 126, 127, 128, 129, 130, 131, 132, 133, 134, 135, 136, 137, 138, 139, 140, 141, 142, 143, 144, 145, 146, 147, 148, 149, 150, 151, 152, 153, 154, 155, 156, 157, 158, 159, 160, 161, 162, 163, 164, 165, 166, 167, 168, 169, 170, 171, 172, 173, 174, 175, 176, 177, 178, 179, 180, 181, 182, 183, 184, 185, 186, 187, 188, 189, 190, 191, 192, 193, 194, 195, 196, 197, 198, 199, 200, 201, 202, 203, 204, 205, 206, 207, 208, 209, 210, 211, 212, 213, 214, 215, 216, 217, 218, 219, 220, 221, 222, 223, 224, 225, 226, 227, 228, 229, 230, 231, 232, 233, 234, 235, 236, 237, 238, 239, 240, 241, 242, 243, 244, 245, 246, 247, 248, 249, 250, 251, 252, 253, 254, 255, 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57, 58, 59, 60, 61, 62, 63, 64, 65, 66, 67, 68, 69, 70, 71, 72, 73, 74, 75, 76, 77, 78, 79, 80, 81, 82, 83, 84, 85, 86, 87, 88, 89, 90, 91, 92, 93, 94, 95, 96, 97, 98, 99, 100, 101, 102, 103, 104, 105, 106, 107, 108, 109, 110, 111, 112, 113, 114, 115, 116, 117, 118, 119, 120, 121, 122, 123, 124, 125, 126, 127, 128, 129, 130, 131, 132, 133, 134, 135, 136, 137, 138, 139, 140, 141, 142, 143, 144, 145, 146, 147, 148, 149, 150, 151, 152, 153, 154, 155, 156, 157, 158, 159, 160, 161, 162, 163, 164, 165, 166, 167, 168, 169, 170, 171, 172, 173, 174, 175, 176, 177, 178, 179, 180, 181, 182, 183, 184, 185, 186, 187, 188, 189, 190, 191, 192, 193, 194, 195, 196, 197, 198, 199, 200, 201, 202, 203, 204, 205, 206, 207, 208, 209, 210, 211, 212, 213, 214, 215, 216, 217, 218, 219, 220, 221, 222, 223, 224, 225, 226, 227, 228, 229, 230, 231, 232, 233, 234, 235, 236, 237, 238, 239, 240, 241, 242, 243, 244, 245, 246, 247, 248, 249, 250, 251, 252, 253, 254, 255, 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57, 58, 59, 60, 61, 62, 63, 64, 65, 66, 67, 68, 69, 70, 71, 72, 73, 74, 75, 76, 77, 78, 79, 80, 81, 82, 83, 84, 85, 86, 87, 88, 89, 90, 91, 92, 93, 94, 95, 96, 97, 98, 99, 100, 101, 102, 103, 104, 105, 106, 107, 108, 109, 110, 111, 112, 113, 114, 115, 116, 117, 118, 119, 120, 121, 122, 123, 124, 125, 126, 127, 128, 129, 130, 131, 132, 133, 134, 135, 136, 137, 138, 139, 140, 141, 142, 143, 144, 145, 146, 147, 148, 149, 150, 151, 152, 153, 154, 155, 156, 157, 158, 159, 160, 161, 162, 163, 164, 165, 166, 167, 168, 169, 170, 171, 172, 173, 174, 175, 176, 177, 178, 179, 180, 181, 182, 183, 184, 185, 186, 187, 188, 189, 190, 191, 192, 193, 194, 195, 196, 197, 198, 199, 200, 201, 202, 203, 204, 205, 206, 207, 208, 209, 210, 211, 212, 213, 214, 215, 216, 217, 218, 219, 220, 221, 222, 223, 224, 225, 226, 227, 228, 229, 230, 231, 232, 233, 234, 235, 236, 237, 238, 239, 240, 241, 242, 243, 244, 245, 246, 247, 248, 249, 250, 251, 252, 253, 254, 255, 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57, 58, 59, 60, 61, 62, 63, 64, 65, 66, 67, 68, 69, 70, 71, 72, 73, 74, 75, 76, 77, 78, 79, 80, 81, 82, 83, 84, 85, 86, 87, 88, 89, 90, 91, 92, 93, 94, 95, 96, 97, 98, 99, 100, 101, 102, 103, 104, 105, 106, 107, 108, 109, 110, 111, 112, 113, 114, 115, 116, 117, 118, 119, 120, 121, 122, 123, 124, 125, 126, 127, 128, 129, 130, 131, 132, 133, 134, 135, 136, 137, 138, 139, 140, 141, 142, 143, 144, 145, 146, 147, 148, 149, 150, 151, 152, 153, 154, 155, 156, 157, 158, 159, 160, 161, 162, 163, 164, 165, 166, 167, 168, 169, 170, 171, 172, 173, 174, 175, 176, 177, 178, 179, 180, 181, 182, 183, 184, 185, 186, 187, 188, 189, 190, 191, 192, 193, 194, 195, 196, 197, 198, 199, 200, 201, 202, 203, 204, 205, 206, 207, 208, 209, 210, 211, 212, 213, 214, 215, 216, 217, 218, 219, 220, 221, 222, 223, 224, 225, 226, 227, 228, 229, 230, 231, 232, 233, 234, 235, 236, 237, 238, 239, 240, 241, 242, 243, 244, 245, 246, 247, 248, 249, 250, 251, 252, 253, 254, 255, 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57, 58, 59, 60, 61, 62, 63, 64, 65, 66, 67, 68, 69, 70, 71, 72, 73, 74, 75, 76, 77, 78, 79, 80, 81, 82, 83, 84, 85, 86, 87, 88, 89, 90, 91, 92, 93, 94, 95, 96, 97, 98, 99, 100, 101, 102, 103, 104, 105, 106, 107, 108, 109, 110, 111, 112, 113, 114, 115, 116, 117, 118, 119, 120, 121, 122, 123, 124, 125, 126, 127, 128, 129, 130, 131, 132, 133, 134, 135, 136, 137, 138, 139, 140, 141, 142, 143, 144, 145, 146, 147, 148, 149, 150, 151, 152, 153, 154, 155, 156, 157, 158, 159, 160, 161, 162, 163, 164, 165, 166, 167, 168, 169, 170, 171, 172, 173, 174, 175, 176, 177, 178, 179, 180, 181, 182, 183, 184, 185, 186, 187, 188, 189, 190, 191, 192, 193, 194, 195, 196, 197, 198, 199, 200, 201, 202, 203, 204, 205, 206, 207, 208, 209, 210, 211, 212, 213, 214, 215, 216, 217, 218, 219, 220, 221, 222, 223, 224, 225, 226, 227, 228, 229, 230, 231, 232, 233, 234, 235, 236, 237, 238, 239, 240, 241, 242, 243, 244, 245, 246, 247, 248, 249, 250, 251, 252, 253, 254, 255, 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57, 58, 59, 60, 61, 62, 63, 64, 65, 66, 67, 68, 69, 70, 71, 72, 73, 74, 75, 76, 77, 78, 79, 80, 81, 82, 83, 84, 85, 86, 87, 88, 89, 90, 91, 92, 93, 94, 95, 96, 97, 98, 99, 100, 101, 102, 103, 104, 105, 106, 107, 108, 109, 110, 111, 112, 113, 114, 115, 116, 117, 118, 119, 120, 121, 122, 123, 124, 125, 126, 127, 128, 129, 130, 131, 132, 133, 134, 135, 136, 137, 138, 139, 140, 141, 142, 143, 144, 145, 146, 147, 148, 149, 150, 151, 152, 153, 154, 155, 156, 157, 158, 159, 160, 161, 162, 163, 164, 165, 166, 167, 168, 169, 170, 171, 172, 173, 174, 175, 176, 177, 178, 179, 180, 181, 182, 183, 184, 185, 186, 187, 188, 189, 190, 191, 192, 193, 194, 195, 196, 197, 198, 199, 200, 201, 202, 203, 204, 205, 206, 207, 208, 209, 210, 211, 212, 213, 214, 215, 216, 217, 218, 219, 220, 221, 222, 223, 224, 225, 226, 227, 228, 229, 230, 231, 232, 233, 234, 235, 236, 237]
+Received: [170, 221, 85, 170, 85, 170, 85, 170, 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57, 58, 59, 60, 61, 62, 63, 64, 65, 66, 67, 68, 69, 70, 71, 72, 73, 74, 75, 76, 77, 78, 79, 80, 81, 82, 83, 84, 85, 86, 87, 88, 89, 90, 91, 92, 93, 94, 95, 96, 97, 98, 99, 100, 101, 102, 103, 104, 105, 106, 107, 108, 109, 110, 111, 112, 113, 114, 115, 116, 117, 118, 119, 120, 121, 122, 123, 124, 125, 126, 127, 128, 129, 130, 131, 132, 133, 134, 135, 136, 137, 138, 139, 140, 141, 142, 143, 144, 145, 146, 147, 148, 149, 150, 151, 152, 153, 154, 155, 156, 157, 158, 159, 160, 161, 162, 163, 164, 165, 166, 167, 168, 169, 170, 171, 172, 173, 174, 175, 176, 177, 178, 179, 180, 181, 182, 183, 184, 185, 186, 187, 188, 189, 190, 191, 192, 193, 194, 195, 196, 197, 198, 199, 200, 201, 202, 203, 204, 205, 206, 207, 208, 209, 210, 211, 212, 213, 214, 215, 216, 217, 218, 219, 220, 221, 222, 223, 224, 225, 226, 227, 228, 229, 230, 231, 232, 233, 234, 235, 236, 237, 238, 239, 240, 241, 242, 243, 244, 245, 246, 247, 248, 249, 250, 251, 252, 253, 254, 255, 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57, 58, 59, 60, 61, 62, 63, 64, 65, 66, 67, 68, 69, 70, 71, 72, 73, 74, 75, 76, 77, 78, 79, 80, 81, 82, 83, 84, 85, 86, 87, 88, 89, 90, 91, 92, 93, 94, 95, 96, 97, 98, 99, 100, 101, 102, 103, 104, 105, 106, 107, 108, 109, 110, 111, 112, 113, 114, 115, 116, 117, 118, 119, 120, 121, 122, 123, 124, 125, 126, 127, 128, 129, 130, 131, 132, 133, 134, 135, 136, 137, 138, 139, 140, 141, 142, 143, 144, 145, 146, 147, 148, 149, 150, 151, 152, 153, 154, 155, 156, 157, 158, 159, 160, 161, 162, 163, 164, 165, 166, 167, 168, 169, 170, 171, 172, 173, 174, 175, 176, 177, 178, 179, 180, 181, 182, 183, 184, 185, 186, 187, 188, 189, 190, 191, 192, 193, 194, 195, 196, 197, 198, 199, 200, 201, 202, 203, 204, 205, 206, 207, 208, 209, 210, 211, 212, 213, 214, 215, 216, 217, 218, 219, 220, 221, 222, 223, 224, 225, 226, 227, 228, 229, 230, 231, 232, 233, 234, 235, 236, 237, 238, 239, 240, 241, 242, 243, 244, 245, 246, 247, 248, 249, 250, 251, 252, 253, 254, 255, 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57, 58, 59, 60, 61, 62, 63, 64, 65, 66, 67, 68, 69, 70, 71, 72, 73, 74, 75, 76, 77, 78, 79, 80, 81, 82, 83, 84, 85, 86, 87, 88, 89, 90, 91, 92, 93, 94, 95, 96, 97, 98, 99, 100, 101, 102, 103, 104, 105, 106, 107, 108, 109, 110, 111, 112, 113, 114, 115, 116, 117, 118, 119, 120, 121, 122, 123, 124, 125, 126, 127, 128, 129, 130, 131, 132, 133, 134, 135, 136, 137, 138, 139, 140, 141, 142, 143, 144, 145, 146, 147, 148, 149, 150, 151, 152, 153, 154, 155, 156, 157, 158, 159, 160, 161, 162, 163, 164, 165, 166, 167, 168, 169, 170, 171, 172, 173, 174, 175, 176, 177, 178, 179, 180, 181, 182, 183, 184, 185, 186, 187, 188, 189, 190, 191, 192, 193, 194, 195, 196, 197, 198, 199, 200, 201, 202, 203, 204, 205, 206, 207, 208, 209, 210, 211, 212, 213, 214, 215, 216, 217, 218, 219, 220, 221, 222, 223, 224, 225, 226, 227, 228, 229, 230, 231, 232, 233, 234, 235, 236, 237, 238, 239, 240, 241, 242, 243, 244, 245, 246, 247, 248, 249, 250, 251, 252, 253, 254, 255, 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57, 58, 59, 60, 61, 62, 63, 64, 65, 66, 67, 68, 69, 70, 71, 72, 73, 74, 75, 76, 77, 78, 79, 80, 81, 82, 83, 84, 85, 86, 87, 88, 89, 90, 91, 92, 93, 94, 95, 96, 97, 98, 99, 100, 101, 102, 103, 104, 105, 106, 107, 108, 109, 110, 111, 112, 113, 114, 115, 116, 117, 118, 119, 120, 121, 122, 123, 124, 125, 126, 127, 128, 129, 130, 131, 132, 133, 134, 135, 136, 137, 138, 139, 140, 141, 142, 143, 144, 145, 146, 147, 148, 149, 150, 151, 152, 153, 154, 155, 156, 157, 158, 159, 160, 161, 162, 163, 164, 165, 166, 167, 168, 169, 170, 171, 172, 173, 174, 175, 176, 177, 178, 179, 180, 181, 182, 183, 184, 185, 186, 187, 188, 189, 190, 191, 192, 193, 194, 195, 196, 197, 198, 199, 200, 201, 202, 203, 204, 205, 206, 207, 208, 209, 210, 211, 212, 213, 214, 215, 216, 217, 218, 219, 220, 221, 222, 223, 224, 225, 226, 227, 228, 229, 230, 231, 232, 233, 234, 235, 236, 237, 238, 239, 240, 241, 242, 243, 244, 245, 246, 247, 248, 249, 250, 251, 252, 253, 254, 255, 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57, 58, 59, 60, 61, 62, 63, 64, 65, 66, 67, 68, 69, 70, 71, 72, 73, 74, 75, 76, 77, 78, 79, 80, 81, 82, 83, 84, 85, 86, 87, 88, 89, 90, 91, 92, 93, 94, 95, 96, 97, 98, 99, 100, 101, 102, 103, 104, 105, 106, 107, 108, 109, 110, 111, 112, 113, 114, 115, 116, 117, 118, 119, 120, 121, 122, 123, 124, 125, 126, 127, 128, 129, 130, 131, 132, 133, 134, 135, 136, 137, 138, 139, 140, 141, 142, 143, 144, 145, 146, 147, 148, 149, 150, 151, 152, 153, 154, 155, 156, 157, 158, 159, 160, 161, 162, 163, 164, 165, 166, 167, 168, 169, 170, 171, 172, 173, 174, 175, 176, 177, 178, 179, 180, 181, 182, 183, 184, 185, 186, 187, 188, 189, 190, 191, 192, 193, 194, 195, 196, 197, 198, 199, 200, 201, 202, 203, 204, 205, 206, 207, 208, 209, 210, 211, 212, 213, 214, 215, 216, 217, 218, 219, 220, 221, 222, 223, 224, 225, 226, 227, 228, 229, 230, 231, 232, 233, 234, 235, 236, 237, 238, 239, 240, 241, 242, 243, 244, 245, 246, 247, 248, 249, 250, 251, 252, 253, 254, 255, 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57, 58, 59, 60, 61, 62, 63, 64, 65, 66, 67, 68, 69, 70, 71, 72, 73, 74, 75, 76, 77, 78, 79, 80, 81, 82, 83, 84, 85, 86, 87, 88, 89, 90, 91, 92, 93, 94, 95, 96, 97, 98, 99, 100, 101, 102, 103, 104, 105, 106, 107, 108, 109, 110, 111, 112, 113, 114, 115, 116, 117, 118, 119, 120, 121, 122, 123, 124, 125, 126, 127, 128, 129, 130, 131, 132, 133, 134, 135, 136, 137, 138, 139, 140, 141, 142, 143, 144, 145, 146, 147, 148, 149, 150, 151, 152, 153, 154, 155, 156, 157, 158, 159, 160, 161, 162, 163, 164, 165, 166, 167, 168, 169, 170, 171, 172, 173, 174, 175, 176, 177, 178, 179, 180, 181, 182, 183, 184, 185, 186, 187, 188, 189, 190, 191, 192, 193, 194, 195, 196, 197, 198, 199, 200, 201, 202, 203, 204, 205, 206, 207, 208, 209, 210, 211, 212, 213, 214, 215, 216, 217, 218, 219, 220, 221, 222, 223, 224, 225, 226, 227, 228, 229, 230, 231, 232, 233, 234, 235, 236, 237, 0, 0, 0, 0]
+ 12842.00ns INFO     cocotb.regression                  test_ethernet_mac_tx.test_tx_len_1518 failed
+                                                        Traceback (most recent call last):
+                                                          File "/code/src/test_ethernet_mac_tx.py", line 170, in test_tx_len_1518
+                                                            await test_packet(dut, 1518, 1, 0xDDAABBCCDDEE)
+                                                          File "/code/src/test_ethernet_mac_tx.py", line 101, in test_packet
+                                                            await monitor_output(dut, expected_bytes)
+                                                          File "/code/src/test_ethernet_mac_tx.py", line 57, in monitor_output
+                                                            assert received == expected_bytes, f"AXI output mismatch!"
+                                                        AssertionError: AXI output mismatch!
+                                                        assert [170, 221, 85, 170, 85, 170, ...] == [238, 221, 204, 187, 170, 221, ...]
+ 12842.00ns INFO     cocotb.regression                  running test_ethernet_mac_tx.test_tx_len_67 (4/10)
+
+============================================================
+--- Starting TX Test ---
+Length: 67, IRQ: 1, Dest MAC: 0xDDAABBCCDDEE
+[CFG WRITE] Addr=0x000007F8, Data=0x00000001
+[CFG WRITE] Addr=0x00000000, Data=0xBBCCDDEE
+[CFG WRITE] Addr=0x00000004, Data=0xAA55DDAA
+[CFG WRITE] Addr=0x00000008, Data=0xAA55AA55
+[CFG WRITE] Addr=0x0000000C, Data=0x03020100
+[CFG WRITE] Addr=0x00000010, Data=0x07060504
+[CFG WRITE] Addr=0x00000014, Data=0x0B0A0908
+[CFG WRITE] Addr=0x00000018, Data=0x0F0E0D0C
+[CFG WRITE] Addr=0x0000001C, Data=0x13121110
+[CFG WRITE] Addr=0x00000020, Data=0x17161514
+[CFG WRITE] Addr=0x00000024, Data=0x1B1A1918
+[CFG WRITE] Addr=0x00000028, Data=0x1F1E1D1C
+[CFG WRITE] Addr=0x0000002C, Data=0x23222120
+[CFG WRITE] Addr=0x00000030, Data=0x27262524
+[CFG WRITE] Addr=0x00000034, Data=0x2B2A2928
+[CFG WRITE] Addr=0x00000038, Data=0x2F2E2D2C
+[CFG WRITE] Addr=0x0000003C, Data=0x33323130
+[CFG WRITE] Addr=0x00000040, Data=0x37363534
+[CFG WRITE] Addr=0x00000044, Data=0x3B3A3938
+[CFG WRITE] Addr=0x00000048, Data=0x3F3E3D3C
+[CFG WRITE] Addr=0x0000004C, Data=0x00424140
+[CFG WRITE] Addr=0x000007F4, Data=0x0000004F
+[CFG WRITE] Addr=0x000007FC, Data=0x00000001
+
+AXI Stream Output:
+[AXI] Data=0xAA55DDAA, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0xAA55AA55, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0x03020100, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0x07060504, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0x0B0A0908, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0x0F0E0D0C, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0x13121110, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0x17161514, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0x1B1A1918, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0x1F1E1D1C, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0x23222120, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0x27262524, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0x2B2A2928, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0x2F2E2D2C, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0x33323130, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0x37363534, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0x3B3A3938, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0x3F3E3D3C, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0x00424140, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0x00464544, Valid=1, Strb=0x7, Last=1
+
+AXI output mismatch!
+Expected: [238, 221, 204, 187, 170, 221, 85, 170, 85, 170, 85, 170, 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57, 58, 59, 60, 61, 62, 63, 64, 65, 66]
+Received: [170, 221, 85, 170, 85, 170, 85, 170, 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57, 58, 59, 60, 61, 62, 63, 64, 65, 66, 0, 68, 69, 70]
+ 13613.00ns INFO     cocotb.regression                  test_ethernet_mac_tx.test_tx_len_67 failed
+                                                        Traceback (most recent call last):
+                                                          File "/code/src/test_ethernet_mac_tx.py", line 177, in test_tx_len_67
+                                                            await test_packet(dut, 67, 1, 0xDDAABBCCDDEE)
+                                                          File "/code/src/test_ethernet_mac_tx.py", line 101, in test_packet
+                                                            await monitor_output(dut, expected_bytes)
+                                                          File "/code/src/test_ethernet_mac_tx.py", line 57, in monitor_output
+                                                            assert received == expected_bytes, f"AXI output mismatch!"
+                                                        AssertionError: AXI output mismatch!
+                                                        assert [170, 221, 85, 170, 85, 170, ...] == [238, 221, 204, 187, 170, 221, ...]
+ 13613.00ns INFO     cocotb.regression                  running test_ethernet_mac_tx.test_tx_len_66 (5/10)
+
+============================================================
+--- Starting TX Test ---
+Length: 66, IRQ: 1, Dest MAC: 0xDDAABBCCDDEE
+[CFG WRITE] Addr=0x000007F8, Data=0x00000001
+[CFG WRITE] Addr=0x00000000, Data=0xBBCCDDEE
+[CFG WRITE] Addr=0x00000004, Data=0xAA55DDAA
+[CFG WRITE] Addr=0x00000008, Data=0xAA55AA55
+[CFG WRITE] Addr=0x0000000C, Data=0x03020100
+[CFG WRITE] Addr=0x00000010, Data=0x07060504
+[CFG WRITE] Addr=0x00000014, Data=0x0B0A0908
+[CFG WRITE] Addr=0x00000018, Data=0x0F0E0D0C
+[CFG WRITE] Addr=0x0000001C, Data=0x13121110
+[CFG WRITE] Addr=0x00000020, Data=0x17161514
+[CFG WRITE] Addr=0x00000024, Data=0x1B1A1918
+[CFG WRITE] Addr=0x00000028, Data=0x1F1E1D1C
+[CFG WRITE] Addr=0x0000002C, Data=0x23222120
+[CFG WRITE] Addr=0x00000030, Data=0x27262524
+[CFG WRITE] Addr=0x00000034, Data=0x2B2A2928
+[CFG WRITE] Addr=0x00000038, Data=0x2F2E2D2C
+[CFG WRITE] Addr=0x0000003C, Data=0x33323130
+[CFG WRITE] Addr=0x00000040, Data=0x37363534
+[CFG WRITE] Addr=0x00000044, Data=0x3B3A3938
+[CFG WRITE] Addr=0x00000048, Data=0x3F3E3D3C
+[CFG WRITE] Addr=0x0000004C, Data=0x00004140
+[CFG WRITE] Addr=0x000007F4, Data=0x0000004E
+[CFG WRITE] Addr=0x000007FC, Data=0x00000001
+
+AXI Stream Output:
+[AXI] Data=0xAA55DDAA, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0xAA55AA55, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0x03020100, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0x07060504, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0x0B0A0908, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0x0F0E0D0C, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0x13121110, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0x17161514, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0x1B1A1918, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0x1F1E1D1C, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0x23222120, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0x27262524, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0x2B2A2928, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0x2F2E2D2C, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0x33323130, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0x37363534, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0x3B3A3938, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0x3F3E3D3C, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0x00004140, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0x00004544, Valid=1, Strb=0x3, Last=1
+
+AXI output mismatch!
+Expected: [238, 221, 204, 187, 170, 221, 85, 170, 85, 170, 85, 170, 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57, 58, 59, 60, 61, 62, 63, 64, 65]
+Received: [170, 221, 85, 170, 85, 170, 85, 170, 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57, 58, 59, 60, 61, 62, 63, 64, 65, 0, 0, 68, 69]
+ 14384.00ns INFO     cocotb.regression                  test_ethernet_mac_tx.test_tx_len_66 failed
+                                                        Traceback (most recent call last):
+                                                          File "/code/src/test_ethernet_mac_tx.py", line 184, in test_tx_len_66
+                                                            await test_packet(dut, 66, 1, 0xDDAABBCCDDEE)
+                                                          File "/code/src/test_ethernet_mac_tx.py", line 101, in test_packet
+                                                            await monitor_output(dut, expected_bytes)
+                                                          File "/code/src/test_ethernet_mac_tx.py", line 57, in monitor_output
+                                                            assert received == expected_bytes, f"AXI output mismatch!"
+                                                        AssertionError: AXI output mismatch!
+                                                        assert [170, 221, 85, 170, 85, 170, ...] == [238, 221, 204, 187, 170, 221, ...]
+ 14384.00ns INFO     cocotb.regression                  running test_ethernet_mac_tx.test_tx_len_65 (6/10)
+
+============================================================
+--- Starting TX Test ---
+Length: 65, IRQ: 1, Dest MAC: 0xDDAABBCCDDEE
+[CFG WRITE] Addr=0x000007F8, Data=0x00000001
+[CFG WRITE] Addr=0x00000000, Data=0xBBCCDDEE
+[CFG WRITE] Addr=0x00000004, Data=0xAA55DDAA
+[CFG WRITE] Addr=0x00000008, Data=0xAA55AA55
+[CFG WRITE] Addr=0x0000000C, Data=0x03020100
+[CFG WRITE] Addr=0x00000010, Data=0x07060504
+[CFG WRITE] Addr=0x00000014, Data=0x0B0A0908
+[CFG WRITE] Addr=0x00000018, Data=0x0F0E0D0C
+[CFG WRITE] Addr=0x0000001C, Data=0x13121110
+[CFG WRITE] Addr=0x00000020, Data=0x17161514
+[CFG WRITE] Addr=0x00000024, Data=0x1B1A1918
+[CFG WRITE] Addr=0x00000028, Data=0x1F1E1D1C
+[CFG WRITE] Addr=0x0000002C, Data=0x23222120
+[CFG WRITE] Addr=0x00000030, Data=0x27262524
+[CFG WRITE] Addr=0x00000034, Data=0x2B2A2928
+[CFG WRITE] Addr=0x00000038, Data=0x2F2E2D2C
+[CFG WRITE] Addr=0x0000003C, Data=0x33323130
+[CFG WRITE] Addr=0x00000040, Data=0x37363534
+[CFG WRITE] Addr=0x00000044, Data=0x3B3A3938
+[CFG WRITE] Addr=0x00000048, Data=0x3F3E3D3C
+[CFG WRITE] Addr=0x0000004C, Data=0x00000040
+[CFG WRITE] Addr=0x000007F4, Data=0x0000004D
+[CFG WRITE] Addr=0x000007FC, Data=0x00000001
+
+AXI Stream Output:
+[AXI] Data=0xAA55DDAA, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0xAA55AA55, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0x03020100, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0x07060504, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0x0B0A0908, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0x0F0E0D0C, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0x13121110, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0x17161514, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0x1B1A1918, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0x1F1E1D1C, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0x23222120, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0x27262524, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0x2B2A2928, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0x2F2E2D2C, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0x33323130, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0x37363534, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0x3B3A3938, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0x3F3E3D3C, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0x00000040, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0x00000044, Valid=1, Strb=0x1, Last=1
+
+AXI output mismatch!
+Expected: [238, 221, 204, 187, 170, 221, 85, 170, 85, 170, 85, 170, 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57, 58, 59, 60, 61, 62, 63, 64]
+Received: [170, 221, 85, 170, 85, 170, 85, 170, 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57, 58, 59, 60, 61, 62, 63, 64, 0, 0, 0, 68]
+ 15155.00ns INFO     cocotb.regression                  test_ethernet_mac_tx.test_tx_len_65 failed
+                                                        Traceback (most recent call last):
+                                                          File "/code/src/test_ethernet_mac_tx.py", line 191, in test_tx_len_65
+                                                            await test_packet(dut, 65, 1, 0xDDAABBCCDDEE)
+                                                          File "/code/src/test_ethernet_mac_tx.py", line 101, in test_packet
+                                                            await monitor_output(dut, expected_bytes)
+                                                          File "/code/src/test_ethernet_mac_tx.py", line 57, in monitor_output
+                                                            assert received == expected_bytes, f"AXI output mismatch!"
+                                                        AssertionError: AXI output mismatch!
+                                                        assert [170, 221, 85, 170, 85, 170, ...] == [238, 221, 204, 187, 170, 221, ...]
+ 15155.00ns INFO     cocotb.regression                  running test_ethernet_mac_tx.test_back_to_back_incr_payloads (7/10)
+
+============================================================
+--- Starting TX Test ---
+Length: 477, IRQ: 1, Dest MAC: 0xDDAABBCCDDEE
+[CFG WRITE] Addr=0x000007F8, Data=0x00000001
+[CFG WRITE] Addr=0x00000000, Data=0xBBCCDDEE
+[CFG WRITE] Addr=0x00000004, Data=0xAA55DDAA
+[CFG WRITE] Addr=0x00000008, Data=0xAA55AA55
+[CFG WRITE] Addr=0x0000000C, Data=0x03020100
+[CFG WRITE] Addr=0x00000010, Data=0x07060504
+[CFG WRITE] Addr=0x00000014, Data=0x0B0A0908
+[CFG WRITE] Addr=0x00000018, Data=0x0F0E0D0C
+[CFG WRITE] Addr=0x0000001C, Data=0x13121110
+[CFG WRITE] Addr=0x00000020, Data=0x17161514
+[CFG WRITE] Addr=0x00000024, Data=0x1B1A1918
+[CFG WRITE] Addr=0x00000028, Data=0x1F1E1D1C
+[CFG WRITE] Addr=0x0000002C, Data=0x23222120
+[CFG WRITE] Addr=0x00000030, Data=0x27262524
+[CFG WRITE] Addr=0x00000034, Data=0x2B2A2928
+[CFG WRITE] Addr=0x00000038, Data=0x2F2E2D2C
+[CFG WRITE] Addr=0x0000003C, Data=0x33323130
+[CFG WRITE] Addr=0x00000040, Data=0x37363534
+[CFG WRITE] Addr=0x00000044, Data=0x3B3A3938
+[CFG WRITE] Addr=0x00000048, Data=0x3F3E3D3C
+[CFG WRITE] Addr=0x0000004C, Data=0x43424140
+[CFG WRITE] Addr=0x00000050, Data=0x47464544
+[CFG WRITE] Addr=0x00000054, Data=0x4B4A4948
+[CFG WRITE] Addr=0x00000058, Data=0x4F4E4D4C
+[CFG WRITE] Addr=0x0000005C, Data=0x53525150
+[CFG WRITE] Addr=0x00000060, Data=0x57565554
+[CFG WRITE] Addr=0x00000064, Data=0x5B5A5958
+[CFG WRITE] Addr=0x00000068, Data=0x5F5E5D5C
+[CFG WRITE] Addr=0x0000006C, Data=0x63626160
+[CFG WRITE] Addr=0x00000070, Data=0x67666564
+[CFG WRITE] Addr=0x00000074, Data=0x6B6A6968
+[CFG WRITE] Addr=0x00000078, Data=0x6F6E6D6C
+[CFG WRITE] Addr=0x0000007C, Data=0x73727170
+[CFG WRITE] Addr=0x00000080, Data=0x77767574
+[CFG WRITE] Addr=0x00000084, Data=0x7B7A7978
+[CFG WRITE] Addr=0x00000088, Data=0x7F7E7D7C
+[CFG WRITE] Addr=0x0000008C, Data=0x83828180
+[CFG WRITE] Addr=0x00000090, Data=0x87868584
+[CFG WRITE] Addr=0x00000094, Data=0x8B8A8988
+[CFG WRITE] Addr=0x00000098, Data=0x8F8E8D8C
+[CFG WRITE] Addr=0x0000009C, Data=0x93929190
+[CFG WRITE] Addr=0x000000A0, Data=0x97969594
+[CFG WRITE] Addr=0x000000A4, Data=0x9B9A9998
+[CFG WRITE] Addr=0x000000A8, Data=0x9F9E9D9C
+[CFG WRITE] Addr=0x000000AC, Data=0xA3A2A1A0
+[CFG WRITE] Addr=0x000000B0, Data=0xA7A6A5A4
+[CFG WRITE] Addr=0x000000B4, Data=0xABAAA9A8
+[CFG WRITE] Addr=0x000000B8, Data=0xAFAEADAC
+[CFG WRITE] Addr=0x000000BC, Data=0xB3B2B1B0
+[CFG WRITE] Addr=0x000000C0, Data=0xB7B6B5B4
+[CFG WRITE] Addr=0x000000C4, Data=0xBBBAB9B8
+[CFG WRITE] Addr=0x000000C8, Data=0xBFBEBDBC
+[CFG WRITE] Addr=0x000000CC, Data=0xC3C2C1C0
+[CFG WRITE] Addr=0x000000D0, Data=0xC7C6C5C4
+[CFG WRITE] Addr=0x000000D4, Data=0xCBCAC9C8
+[CFG WRITE] Addr=0x000000D8, Data=0xCFCECDCC
+[CFG WRITE] Addr=0x000000DC, Data=0xD3D2D1D0
+[CFG WRITE] Addr=0x000000E0, Data=0xD7D6D5D4
+[CFG WRITE] Addr=0x000000E4, Data=0xDBDAD9D8
+[CFG WRITE] Addr=0x000000E8, Data=0xDFDEDDDC
+[CFG WRITE] Addr=0x000000EC, Data=0xE3E2E1E0
+[CFG WRITE] Addr=0x000000F0, Data=0xE7E6E5E4
+[CFG WRITE] Addr=0x000000F4, Data=0xEBEAE9E8
+[CFG WRITE] Addr=0x000000F8, Data=0xEFEEEDEC
+[CFG WRITE] Addr=0x000000FC, Data=0xF3F2F1F0
+[CFG WRITE] Addr=0x00000100, Data=0xF7F6F5F4
+[CFG WRITE] Addr=0x00000104, Data=0xFBFAF9F8
+[CFG WRITE] Addr=0x00000108, Data=0xFFFEFDFC
+[CFG WRITE] Addr=0x0000010C, Data=0x03020100
+[CFG WRITE] Addr=0x00000110, Data=0x07060504
+[CFG WRITE] Addr=0x00000114, Data=0x0B0A0908
+[CFG WRITE] Addr=0x00000118, Data=0x0F0E0D0C
+[CFG WRITE] Addr=0x0000011C, Data=0x13121110
+[CFG WRITE] Addr=0x00000120, Data=0x17161514
+[CFG WRITE] Addr=0x00000124, Data=0x1B1A1918
+[CFG WRITE] Addr=0x00000128, Data=0x1F1E1D1C
+[CFG WRITE] Addr=0x0000012C, Data=0x23222120
+[CFG WRITE] Addr=0x00000130, Data=0x27262524
+[CFG WRITE] Addr=0x00000134, Data=0x2B2A2928
+[CFG WRITE] Addr=0x00000138, Data=0x2F2E2D2C
+[CFG WRITE] Addr=0x0000013C, Data=0x33323130
+[CFG WRITE] Addr=0x00000140, Data=0x37363534
+[CFG WRITE] Addr=0x00000144, Data=0x3B3A3938
+[CFG WRITE] Addr=0x00000148, Data=0x3F3E3D3C
+[CFG WRITE] Addr=0x0000014C, Data=0x43424140
+[CFG WRITE] Addr=0x00000150, Data=0x47464544
+[CFG WRITE] Addr=0x00000154, Data=0x4B4A4948
+[CFG WRITE] Addr=0x00000158, Data=0x4F4E4D4C
+[CFG WRITE] Addr=0x0000015C, Data=0x53525150
+[CFG WRITE] Addr=0x00000160, Data=0x57565554
+[CFG WRITE] Addr=0x00000164, Data=0x5B5A5958
+[CFG WRITE] Addr=0x00000168, Data=0x5F5E5D5C
+[CFG WRITE] Addr=0x0000016C, Data=0x63626160
+[CFG WRITE] Addr=0x00000170, Data=0x67666564
+[CFG WRITE] Addr=0x00000174, Data=0x6B6A6968
+[CFG WRITE] Addr=0x00000178, Data=0x6F6E6D6C
+[CFG WRITE] Addr=0x0000017C, Data=0x73727170
+[CFG WRITE] Addr=0x00000180, Data=0x77767574
+[CFG WRITE] Addr=0x00000184, Data=0x7B7A7978
+[CFG WRITE] Addr=0x00000188, Data=0x7F7E7D7C
+[CFG WRITE] Addr=0x0000018C, Data=0x83828180
+[CFG WRITE] Addr=0x00000190, Data=0x87868584
+[CFG WRITE] Addr=0x00000194, Data=0x8B8A8988
+[CFG WRITE] Addr=0x00000198, Data=0x8F8E8D8C
+[CFG WRITE] Addr=0x0000019C, Data=0x93929190
+[CFG WRITE] Addr=0x000001A0, Data=0x97969594
+[CFG WRITE] Addr=0x000001A4, Data=0x9B9A9998
+[CFG WRITE] Addr=0x000001A8, Data=0x9F9E9D9C
+[CFG WRITE] Addr=0x000001AC, Data=0xA3A2A1A0
+[CFG WRITE] Addr=0x000001B0, Data=0xA7A6A5A4
+[CFG WRITE] Addr=0x000001B4, Data=0xABAAA9A8
+[CFG WRITE] Addr=0x000001B8, Data=0xAFAEADAC
+[CFG WRITE] Addr=0x000001BC, Data=0xB3B2B1B0
+[CFG WRITE] Addr=0x000001C0, Data=0xB7B6B5B4
+[CFG WRITE] Addr=0x000001C4, Data=0xBBBAB9B8
+[CFG WRITE] Addr=0x000001C8, Data=0xBFBEBDBC
+[CFG WRITE] Addr=0x000001CC, Data=0xC3C2C1C0
+[CFG WRITE] Addr=0x000001D0, Data=0xC7C6C5C4
+[CFG WRITE] Addr=0x000001D4, Data=0xCBCAC9C8
+[CFG WRITE] Addr=0x000001D8, Data=0xCFCECDCC
+[CFG WRITE] Addr=0x000001DC, Data=0xD3D2D1D0
+[CFG WRITE] Addr=0x000001E0, Data=0xD7D6D5D4
+[CFG WRITE] Addr=0x000001E4, Data=0xDBDAD9D8
+[CFG WRITE] Addr=0x000001E8, Data=0x000000DC
+[CFG WRITE] Addr=0x000007F4, Data=0x000001E9
+[CFG WRITE] Addr=0x000007FC, Data=0x00000001
+
+AXI Stream Output:
+[AXI] Data=0xAA55DDAA, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0xAA55AA55, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0x03020100, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0x07060504, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0x0B0A0908, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0x0F0E0D0C, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0x13121110, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0x17161514, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0x1B1A1918, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0x1F1E1D1C, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0x23222120, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0x27262524, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0x2B2A2928, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0x2F2E2D2C, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0x33323130, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0x37363534, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0x3B3A3938, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0x3F3E3D3C, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0x43424140, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0x47464544, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0x4B4A4948, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0x4F4E4D4C, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0x53525150, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0x57565554, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0x5B5A5958, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0x5F5E5D5C, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0x63626160, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0x67666564, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0x6B6A6968, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0x6F6E6D6C, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0x73727170, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0x77767574, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0x7B7A7978, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0x7F7E7D7C, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0x83828180, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0x87868584, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0x8B8A8988, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0x8F8E8D8C, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0x93929190, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0x97969594, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0x9B9A9998, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0x9F9E9D9C, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0xA3A2A1A0, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0xA7A6A5A4, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0xABAAA9A8, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0xAFAEADAC, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0xB3B2B1B0, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0xB7B6B5B4, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0xBBBAB9B8, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0xBFBEBDBC, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0xC3C2C1C0, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0xC7C6C5C4, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0xCBCAC9C8, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0xCFCECDCC, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0xD3D2D1D0, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0xD7D6D5D4, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0xDBDAD9D8, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0xDFDEDDDC, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0xE3E2E1E0, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0xE7E6E5E4, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0xEBEAE9E8, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0xEFEEEDEC, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0xF3F2F1F0, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0xF7F6F5F4, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0xFBFAF9F8, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0xFFFEFDFC, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0x03020100, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0x07060504, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0x0B0A0908, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0x0F0E0D0C, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0x13121110, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0x17161514, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0x1B1A1918, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0x1F1E1D1C, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0x23222120, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0x27262524, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0x2B2A2928, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0x2F2E2D2C, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0x33323130, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0x37363534, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0x3B3A3938, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0x3F3E3D3C, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0x43424140, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0x47464544, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0x4B4A4948, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0x4F4E4D4C, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0x53525150, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0x57565554, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0x5B5A5958, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0x5F5E5D5C, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0x63626160, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0x67666564, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0x6B6A6968, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0x6F6E6D6C, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0x73727170, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0x77767574, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0x7B7A7978, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0x7F7E7D7C, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0x83828180, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0x87868584, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0x8B8A8988, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0x8F8E8D8C, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0x93929190, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0x97969594, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0x9B9A9998, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0x9F9E9D9C, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0xA3A2A1A0, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0xA7A6A5A4, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0xABAAA9A8, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0xAFAEADAC, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0xB3B2B1B0, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0xB7B6B5B4, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0xBBBAB9B8, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0xBFBEBDBC, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0xC3C2C1C0, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0xC7C6C5C4, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0xCBCAC9C8, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0xCFCECDCC, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0xD3D2D1D0, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0xD7D6D5D4, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0xDBDAD9D8, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0x000000DC, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0x000000E0, Valid=1, Strb=0x1, Last=1
+
+AXI output mismatch!
+Expected: [238, 221, 204, 187, 170, 221, 85, 170, 85, 170, 85, 170, 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57, 58, 59, 60, 61, 62, 63, 64, 65, 66, 67, 68, 69, 70, 71, 72, 73, 74, 75, 76, 77, 78, 79, 80, 81, 82, 83, 84, 85, 86, 87, 88, 89, 90, 91, 92, 93, 94, 95, 96, 97, 98, 99, 100, 101, 102, 103, 104, 105, 106, 107, 108, 109, 110, 111, 112, 113, 114, 115, 116, 117, 118, 119, 120, 121, 122, 123, 124, 125, 126, 127, 128, 129, 130, 131, 132, 133, 134, 135, 136, 137, 138, 139, 140, 141, 142, 143, 144, 145, 146, 147, 148, 149, 150, 151, 152, 153, 154, 155, 156, 157, 158, 159, 160, 161, 162, 163, 164, 165, 166, 167, 168, 169, 170, 171, 172, 173, 174, 175, 176, 177, 178, 179, 180, 181, 182, 183, 184, 185, 186, 187, 188, 189, 190, 191, 192, 193, 194, 195, 196, 197, 198, 199, 200, 201, 202, 203, 204, 205, 206, 207, 208, 209, 210, 211, 212, 213, 214, 215, 216, 217, 218, 219, 220, 221, 222, 223, 224, 225, 226, 227, 228, 229, 230, 231, 232, 233, 234, 235, 236, 237, 238, 239, 240, 241, 242, 243, 244, 245, 246, 247, 248, 249, 250, 251, 252, 253, 254, 255, 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57, 58, 59, 60, 61, 62, 63, 64, 65, 66, 67, 68, 69, 70, 71, 72, 73, 74, 75, 76, 77, 78, 79, 80, 81, 82, 83, 84, 85, 86, 87, 88, 89, 90, 91, 92, 93, 94, 95, 96, 97, 98, 99, 100, 101, 102, 103, 104, 105, 106, 107, 108, 109, 110, 111, 112, 113, 114, 115, 116, 117, 118, 119, 120, 121, 122, 123, 124, 125, 126, 127, 128, 129, 130, 131, 132, 133, 134, 135, 136, 137, 138, 139, 140, 141, 142, 143, 144, 145, 146, 147, 148, 149, 150, 151, 152, 153, 154, 155, 156, 157, 158, 159, 160, 161, 162, 163, 164, 165, 166, 167, 168, 169, 170, 171, 172, 173, 174, 175, 176, 177, 178, 179, 180, 181, 182, 183, 184, 185, 186, 187, 188, 189, 190, 191, 192, 193, 194, 195, 196, 197, 198, 199, 200, 201, 202, 203, 204, 205, 206, 207, 208, 209, 210, 211, 212, 213, 214, 215, 216, 217, 218, 219, 220]
+Received: [170, 221, 85, 170, 85, 170, 85, 170, 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57, 58, 59, 60, 61, 62, 63, 64, 65, 66, 67, 68, 69, 70, 71, 72, 73, 74, 75, 76, 77, 78, 79, 80, 81, 82, 83, 84, 85, 86, 87, 88, 89, 90, 91, 92, 93, 94, 95, 96, 97, 98, 99, 100, 101, 102, 103, 104, 105, 106, 107, 108, 109, 110, 111, 112, 113, 114, 115, 116, 117, 118, 119, 120, 121, 122, 123, 124, 125, 126, 127, 128, 129, 130, 131, 132, 133, 134, 135, 136, 137, 138, 139, 140, 141, 142, 143, 144, 145, 146, 147, 148, 149, 150, 151, 152, 153, 154, 155, 156, 157, 158, 159, 160, 161, 162, 163, 164, 165, 166, 167, 168, 169, 170, 171, 172, 173, 174, 175, 176, 177, 178, 179, 180, 181, 182, 183, 184, 185, 186, 187, 188, 189, 190, 191, 192, 193, 194, 195, 196, 197, 198, 199, 200, 201, 202, 203, 204, 205, 206, 207, 208, 209, 210, 211, 212, 213, 214, 215, 216, 217, 218, 219, 220, 221, 222, 223, 224, 225, 226, 227, 228, 229, 230, 231, 232, 233, 234, 235, 236, 237, 238, 239, 240, 241, 242, 243, 244, 245, 246, 247, 248, 249, 250, 251, 252, 253, 254, 255, 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57, 58, 59, 60, 61, 62, 63, 64, 65, 66, 67, 68, 69, 70, 71, 72, 73, 74, 75, 76, 77, 78, 79, 80, 81, 82, 83, 84, 85, 86, 87, 88, 89, 90, 91, 92, 93, 94, 95, 96, 97, 98, 99, 100, 101, 102, 103, 104, 105, 106, 107, 108, 109, 110, 111, 112, 113, 114, 115, 116, 117, 118, 119, 120, 121, 122, 123, 124, 125, 126, 127, 128, 129, 130, 131, 132, 133, 134, 135, 136, 137, 138, 139, 140, 141, 142, 143, 144, 145, 146, 147, 148, 149, 150, 151, 152, 153, 154, 155, 156, 157, 158, 159, 160, 161, 162, 163, 164, 165, 166, 167, 168, 169, 170, 171, 172, 173, 174, 175, 176, 177, 178, 179, 180, 181, 182, 183, 184, 185, 186, 187, 188, 189, 190, 191, 192, 193, 194, 195, 196, 197, 198, 199, 200, 201, 202, 203, 204, 205, 206, 207, 208, 209, 210, 211, 212, 213, 214, 215, 216, 217, 218, 219, 220, 0, 0, 0, 224]
+ 19016.00ns INFO     cocotb.regression                  test_ethernet_mac_tx.test_back_to_back_incr_payloads failed
+                                                        Traceback (most recent call last):
+                                                          File "/code/src/test_ethernet_mac_tx.py", line 200, in test_back_to_back_incr_payloads
+                                                            await test_packet(dut, length, 1, 0xDDAABBCCDDEE)
+                                                          File "/code/src/test_ethernet_mac_tx.py", line 101, in test_packet
+                                                            await monitor_output(dut, expected_bytes)
+                                                          File "/code/src/test_ethernet_mac_tx.py", line 57, in monitor_output
+                                                            assert received == expected_bytes, f"AXI output mismatch!"
+                                                        AssertionError: AXI output mismatch!
+                                                        assert [170, 221, 85, 170, 85, 170, ...] == [238, 221, 204, 187, 170, 221, ...]
+ 19016.00ns INFO     cocotb.regression                  running test_ethernet_mac_tx.test_back_to_back_random_payloads (8/10)
+
+============================================================
+--- Starting TX Test ---
+Length: 1146, IRQ: 1, Dest MAC: 0xAABBCCDDEEFF
+[CFG WRITE] Addr=0x000007F8, Data=0x00000001
+[CFG WRITE] Addr=0x00000000, Data=0xCCDDEEFF
+[CFG WRITE] Addr=0x00000004, Data=0xAA55AABB
+[CFG WRITE] Addr=0x00000008, Data=0xAA55AA55
+[CFG WRITE] Addr=0x0000000C, Data=0x7AB3516B
+[CFG WRITE] Addr=0x00000010, Data=0xD1776FB1
+[CFG WRITE] Addr=0x00000014, Data=0x8D547DA1
+[CFG WRITE] Addr=0x00000018, Data=0xCA14F7DD
+[CFG WRITE] Addr=0x0000001C, Data=0xE1AAD66E
+[CFG WRITE] Addr=0x00000020, Data=0x8B888E1D
+[CFG WRITE] Addr=0x00000024, Data=0x27B48A7D
+[CFG WRITE] Addr=0x00000028, Data=0x54D0D419
+[CFG WRITE] Addr=0x0000002C, Data=0x67285E24
+[CFG WRITE] Addr=0x00000030, Data=0x17D2160A
+[CFG WRITE] Addr=0x00000034, Data=0xB965086B
+[CFG WRITE] Addr=0x00000038, Data=0x932744B5
+[CFG WRITE] Addr=0x0000003C, Data=0x98EB2E1C
+[CFG WRITE] Addr=0x00000040, Data=0x90654FD9
+[CFG WRITE] Addr=0x00000044, Data=0x1FE6BDF2
+[CFG WRITE] Addr=0x00000048, Data=0x3C2467F7
+[CFG WRITE] Addr=0x0000004C, Data=0x641B9BF6
+[CFG WRITE] Addr=0x00000050, Data=0xB073E887
+[CFG WRITE] Addr=0x00000054, Data=0xC0CA2BF5
+[CFG WRITE] Addr=0x00000058, Data=0xCDA0AED0
+[CFG WRITE] Addr=0x0000005C, Data=0x9194CE9D
+[CFG WRITE] Addr=0x00000060, Data=0x62CAD9F4
+[CFG WRITE] Addr=0x00000064, Data=0x5E389D18
+[CFG WRITE] Addr=0x00000068, Data=0x0E73FAB0
+[CFG WRITE] Addr=0x0000006C, Data=0x9554092C
+[CFG WRITE] Addr=0x00000070, Data=0xF11C79A9
+[CFG WRITE] Addr=0x00000074, Data=0x9A00D0D0
+[CFG WRITE] Addr=0x00000078, Data=0x6B2411FE
+[CFG WRITE] Addr=0x0000007C, Data=0x2F1344D5
+[CFG WRITE] Addr=0x00000080, Data=0xCD2C25B8
+[CFG WRITE] Addr=0x00000084, Data=0x5F8E88B6
+[CFG WRITE] Addr=0x00000088, Data=0x2EDC144B
+[CFG WRITE] Addr=0x0000008C, Data=0xEA86048F
+[CFG WRITE] Addr=0x00000090, Data=0x0F628439
+[CFG WRITE] Addr=0x00000094, Data=0xF26852FF
+[CFG WRITE] Addr=0x00000098, Data=0x76207072
+[CFG WRITE] Addr=0x0000009C, Data=0xE46540B1
+[CFG WRITE] Addr=0x000000A0, Data=0x76B3C2EB
+[CFG WRITE] Addr=0x000000A4, Data=0x9C169AAA
+[CFG WRITE] Addr=0x000000A8, Data=0x9ADB4AAC
+[CFG WRITE] Addr=0x000000AC, Data=0xF9DC5393
+[CFG WRITE] Addr=0x000000B0, Data=0x1348A16E
+[CFG WRITE] Addr=0x000000B4, Data=0xA9832BD6
+[CFG WRITE] Addr=0x000000B8, Data=0x5DA13F8E
+[CFG WRITE] Addr=0x000000BC, Data=0x1E1E43F0
+[CFG WRITE] Addr=0x000000C0, Data=0x3F0C37B2
+[CFG WRITE] Addr=0x000000C4, Data=0x61206D4E
+[CFG WRITE] Addr=0x000000C8, Data=0xB0B3FAC6
+[CFG WRITE] Addr=0x000000CC, Data=0x69D2EBB4
+[CFG WRITE] Addr=0x000000D0, Data=0xC18CC9B2
+[CFG WRITE] Addr=0x000000D4, Data=0xC7B4D666
+[CFG WRITE] Addr=0x000000D8, Data=0x5AADEB1F
+[CFG WRITE] Addr=0x000000DC, Data=0xAAD90CB6
+[CFG WRITE] Addr=0x000000E0, Data=0xC648A601
+[CFG WRITE] Addr=0x000000E4, Data=0x827199C0
+[CFG WRITE] Addr=0x000000E8, Data=0xB3E25E1E
+[CFG WRITE] Addr=0x000000EC, Data=0x25F25631
+[CFG WRITE] Addr=0x000000F0, Data=0x3F389E3A
+[CFG WRITE] Addr=0x000000F4, Data=0x70A95E6A
+[CFG WRITE] Addr=0x000000F8, Data=0xD626CD31
+[CFG WRITE] Addr=0x000000FC, Data=0xAC29F66D
+[CFG WRITE] Addr=0x00000100, Data=0x4B016FBF
+[CFG WRITE] Addr=0x00000104, Data=0x4BFEA958
+[CFG WRITE] Addr=0x00000108, Data=0x6065F456
+[CFG WRITE] Addr=0x0000010C, Data=0x9D58977B
+[CFG WRITE] Addr=0x00000110, Data=0x3CBD8086
+[CFG WRITE] Addr=0x00000114, Data=0x2F7E3357
+[CFG WRITE] Addr=0x00000118, Data=0x399B5BDF
+[CFG WRITE] Addr=0x0000011C, Data=0x0644186A
+[CFG WRITE] Addr=0x00000120, Data=0x9C20077F
+[CFG WRITE] Addr=0x00000124, Data=0xAA1B20CC
+[CFG WRITE] Addr=0x00000128, Data=0x60722419
+[CFG WRITE] Addr=0x0000012C, Data=0x0A78D66F
+[CFG WRITE] Addr=0x00000130, Data=0xA5758A6F
+[CFG WRITE] Addr=0x00000134, Data=0xD9B92CA2
+[CFG WRITE] Addr=0x00000138, Data=0x8498BCA6
+[CFG WRITE] Addr=0x0000013C, Data=0x4C54628C
+[CFG WRITE] Addr=0x00000140, Data=0x29B12E0F
+[CFG WRITE] Addr=0x00000144, Data=0x95481F62
+[CFG WRITE] Addr=0x00000148, Data=0x985D93BA
+[CFG WRITE] Addr=0x0000014C, Data=0x84E71D4B
+[CFG WRITE] Addr=0x00000150, Data=0x6D8DCE2F
+[CFG WRITE] Addr=0x00000154, Data=0xCED82D9D
+[CFG WRITE] Addr=0x00000158, Data=0xA3BE532D
+[CFG WRITE] Addr=0x0000015C, Data=0xD86E84C1
+[CFG WRITE] Addr=0x00000160, Data=0x5A786449
+[CFG WRITE] Addr=0x00000164, Data=0x1FA7D5A4
+[CFG WRITE] Addr=0x00000168, Data=0x054AF483
+[CFG WRITE] Addr=0x0000016C, Data=0xE21AC577
+[CFG WRITE] Addr=0x00000170, Data=0x7DD7766A
+[CFG WRITE] Addr=0x00000174, Data=0xA2CF57E2
+[CFG WRITE] Addr=0x00000178, Data=0x9026EEAC
+[CFG WRITE] Addr=0x0000017C, Data=0xA42FB8BE
+[CFG WRITE] Addr=0x00000180, Data=0x58CDB424
+[CFG WRITE] Addr=0x00000184, Data=0x18854BD7
+[CFG WRITE] Addr=0x00000188, Data=0x4D8FDACE
+[CFG WRITE] Addr=0x0000018C, Data=0x4E9CB75E
+[CFG WRITE] Addr=0x00000190, Data=0xC7E9E1A8
+[CFG WRITE] Addr=0x00000194, Data=0x8E6B1B75
+[CFG WRITE] Addr=0x00000198, Data=0x4B3EE6BE
+[CFG WRITE] Addr=0x0000019C, Data=0xF38C5EDB
+[CFG WRITE] Addr=0x000001A0, Data=0xA0D65EB6
+[CFG WRITE] Addr=0x000001A4, Data=0x0F4767DC
+[CFG WRITE] Addr=0x000001A8, Data=0x57DE9A10
+[CFG WRITE] Addr=0x000001AC, Data=0xE472E804
+[CFG WRITE] Addr=0x000001B0, Data=0x2A3D259D
+[CFG WRITE] Addr=0x000001B4, Data=0x8E80E3A3
+[CFG WRITE] Addr=0x000001B8, Data=0x7D3609EB
+[CFG WRITE] Addr=0x000001BC, Data=0x0AD15B6E
+[CFG WRITE] Addr=0x000001C0, Data=0x7AA57B7F
+[CFG WRITE] Addr=0x000001C4, Data=0x1BEC52F4
+[CFG WRITE] Addr=0x000001C8, Data=0x7381EF47
+[CFG WRITE] Addr=0x000001CC, Data=0xFBBEFCF1
+[CFG WRITE] Addr=0x000001D0, Data=0xB071C0D6
+[CFG WRITE] Addr=0x000001D4, Data=0x0E7C383D
+[CFG WRITE] Addr=0x000001D8, Data=0x98060791
+[CFG WRITE] Addr=0x000001DC, Data=0xE4E0C968
+[CFG WRITE] Addr=0x000001E0, Data=0x166F1744
+[CFG WRITE] Addr=0x000001E4, Data=0x6CC29717
+[CFG WRITE] Addr=0x000001E8, Data=0x1BF2D3C2
+[CFG WRITE] Addr=0x000001EC, Data=0x20F4F38C
+[CFG WRITE] Addr=0x000001F0, Data=0xC678F998
+[CFG WRITE] Addr=0x000001F4, Data=0xA7CBF993
+[CFG WRITE] Addr=0x000001F8, Data=0x08D7DE1F
+[CFG WRITE] Addr=0x000001FC, Data=0x3AD79B37
+[CFG WRITE] Addr=0x00000200, Data=0x2A621A1C
+[CFG WRITE] Addr=0x00000204, Data=0x95EFF511
+[CFG WRITE] Addr=0x00000208, Data=0x9053145B
+[CFG WRITE] Addr=0x0000020C, Data=0x72BF7DA7
+[CFG WRITE] Addr=0x00000210, Data=0x225EF770
+[CFG WRITE] Addr=0x00000214, Data=0x181A64BD
+[CFG WRITE] Addr=0x00000218, Data=0x031CE426
+[CFG WRITE] Addr=0x0000021C, Data=0x95847F28
+[CFG WRITE] Addr=0x00000220, Data=0x129EDE7F
+[CFG WRITE] Addr=0x00000224, Data=0x928B8B93
+[CFG WRITE] Addr=0x00000228, Data=0xC526AC01
+[CFG WRITE] Addr=0x0000022C, Data=0xCBEA299B
+[CFG WRITE] Addr=0x00000230, Data=0x8F3E56CF
+[CFG WRITE] Addr=0x00000234, Data=0x3DED0885
+[CFG WRITE] Addr=0x00000238, Data=0xA0CCC34E
+[CFG WRITE] Addr=0x0000023C, Data=0x11AA967B
+[CFG WRITE] Addr=0x00000240, Data=0xFD11473D
+[CFG WRITE] Addr=0x00000244, Data=0x32D3F7D0
+[CFG WRITE] Addr=0x00000248, Data=0x49A16191
+[CFG WRITE] Addr=0x0000024C, Data=0xA36072A1
+[CFG WRITE] Addr=0x00000250, Data=0x802DAFA9
+[CFG WRITE] Addr=0x00000254, Data=0xEBC83DD5
+[CFG WRITE] Addr=0x00000258, Data=0x516E6F06
+[CFG WRITE] Addr=0x0000025C, Data=0x72206FA2
+[CFG WRITE] Addr=0x00000260, Data=0xBA596DC5
+[CFG WRITE] Addr=0x00000264, Data=0xFC03DF1D
+[CFG WRITE] Addr=0x00000268, Data=0x3798D90B
+[CFG WRITE] Addr=0x0000026C, Data=0xDA602427
+[CFG WRITE] Addr=0x00000270, Data=0x27FF7618
+[CFG WRITE] Addr=0x00000274, Data=0x622CDE14
+[CFG WRITE] Addr=0x00000278, Data=0x91666807
+[CFG WRITE] Addr=0x0000027C, Data=0xFF9AD255
+[CFG WRITE] Addr=0x00000280, Data=0xA8D0757A
+[CFG WRITE] Addr=0x00000284, Data=0xCEBAF6B5
+[CFG WRITE] Addr=0x00000288, Data=0x060A167C
+[CFG WRITE] Addr=0x0000028C, Data=0xF8B9C15E
+[CFG WRITE] Addr=0x00000290, Data=0x75F84453
+[CFG WRITE] Addr=0x00000294, Data=0x4A0B9769
+[CFG WRITE] Addr=0x00000298, Data=0xC4CC7137
+[CFG WRITE] Addr=0x0000029C, Data=0xBC7C1B20
+[CFG WRITE] Addr=0x000002A0, Data=0x6491575C
+[CFG WRITE] Addr=0x000002A4, Data=0xB0B816E0
+[CFG WRITE] Addr=0x000002A8, Data=0x9B2A0AA6
+[CFG WRITE] Addr=0x000002AC, Data=0x25325E31
+[CFG WRITE] Addr=0x000002B0, Data=0x036DB922
+[CFG WRITE] Addr=0x000002B4, Data=0xD711817E
+[CFG WRITE] Addr=0x000002B8, Data=0xC63052B9
+[CFG WRITE] Addr=0x000002BC, Data=0xA9D0436F
+[CFG WRITE] Addr=0x000002C0, Data=0xC2D09894
+[CFG WRITE] Addr=0x000002C4, Data=0xE7EFE3F6
+[CFG WRITE] Addr=0x000002C8, Data=0x70DB426E
+[CFG WRITE] Addr=0x000002CC, Data=0x08B4CE68
+[CFG WRITE] Addr=0x000002D0, Data=0x4FBD5A3C
+[CFG WRITE] Addr=0x000002D4, Data=0xBBD2D9E5
+[CFG WRITE] Addr=0x000002D8, Data=0xBBB7BD6C
+[CFG WRITE] Addr=0x000002DC, Data=0x2D37E1C7
+[CFG WRITE] Addr=0x000002E0, Data=0x8602CAA9
+[CFG WRITE] Addr=0x000002E4, Data=0x38098E84
+[CFG WRITE] Addr=0x000002E8, Data=0xB144C357
+[CFG WRITE] Addr=0x000002EC, Data=0x83DFD3F3
+[CFG WRITE] Addr=0x000002F0, Data=0x7AA75FD0
+[CFG WRITE] Addr=0x000002F4, Data=0xF1D82D43
+[CFG WRITE] Addr=0x000002F8, Data=0x052C710E
+[CFG WRITE] Addr=0x000002FC, Data=0xF1B13C30
+[CFG WRITE] Addr=0x00000300, Data=0x4A23870E
+[CFG WRITE] Addr=0x00000304, Data=0xA4770DCD
+[CFG WRITE] Addr=0x00000308, Data=0xBEE6C582
+[CFG WRITE] Addr=0x0000030C, Data=0x0567FF32
+[CFG WRITE] Addr=0x00000310, Data=0x332B9D65
+[CFG WRITE] Addr=0x00000314, Data=0x36E9F49B
+[CFG WRITE] Addr=0x00000318, Data=0xC0B4C085
+[CFG WRITE] Addr=0x0000031C, Data=0x6AFA43BC
+[CFG WRITE] Addr=0x00000320, Data=0x227B23CD
+[CFG WRITE] Addr=0x00000324, Data=0x1CD2B5B8
+[CFG WRITE] Addr=0x00000328, Data=0xEA31D8C3
+[CFG WRITE] Addr=0x0000032C, Data=0x1D1DBF09
+[CFG WRITE] Addr=0x00000330, Data=0x3563192A
+[CFG WRITE] Addr=0x00000334, Data=0x1CC9B13E
+[CFG WRITE] Addr=0x00000338, Data=0x7B3CDA8D
+[CFG WRITE] Addr=0x0000033C, Data=0xDC14AC6D
+[CFG WRITE] Addr=0x00000340, Data=0xF75B8A27
+[CFG WRITE] Addr=0x00000344, Data=0xAE483AAB
+[CFG WRITE] Addr=0x00000348, Data=0x6421ED4E
+[CFG WRITE] Addr=0x0000034C, Data=0x0E95AAA0
+[CFG WRITE] Addr=0x00000350, Data=0x4B04BC61
+[CFG WRITE] Addr=0x00000354, Data=0x14C2FEB3
+[CFG WRITE] Addr=0x00000358, Data=0x151C213C
+[CFG WRITE] Addr=0x0000035C, Data=0x3E5826D9
+[CFG WRITE] Addr=0x00000360, Data=0x5DE2B1ED
+[CFG WRITE] Addr=0x00000364, Data=0x1F512C84
+[CFG WRITE] Addr=0x00000368, Data=0xBB1FE960
+[CFG WRITE] Addr=0x0000036C, Data=0x60A7EC5D
+[CFG WRITE] Addr=0x00000370, Data=0x639005B9
+[CFG WRITE] Addr=0x00000374, Data=0x63C2F4E4
+[CFG WRITE] Addr=0x00000378, Data=0x118C1112
+[CFG WRITE] Addr=0x0000037C, Data=0xB495ED0A
+[CFG WRITE] Addr=0x00000380, Data=0xE3152E99
+[CFG WRITE] Addr=0x00000384, Data=0x4C977422
+[CFG WRITE] Addr=0x00000388, Data=0x20C5BA8D
+[CFG WRITE] Addr=0x0000038C, Data=0x687051D3
+[CFG WRITE] Addr=0x00000390, Data=0x53CE7EB1
+[CFG WRITE] Addr=0x00000394, Data=0xC10C2415
+[CFG WRITE] Addr=0x00000398, Data=0x96FA6026
+[CFG WRITE] Addr=0x0000039C, Data=0x3AD7233E
+[CFG WRITE] Addr=0x000003A0, Data=0xB2EE24F2
+[CFG WRITE] Addr=0x000003A4, Data=0x58F532A6
+[CFG WRITE] Addr=0x000003A8, Data=0xE62676E0
+[CFG WRITE] Addr=0x000003AC, Data=0xDDB293B2
+[CFG WRITE] Addr=0x000003B0, Data=0x87D934AA
+[CFG WRITE] Addr=0x000003B4, Data=0x1DD8987F
+[CFG WRITE] Addr=0x000003B8, Data=0xB143D8C5
+[CFG WRITE] Addr=0x000003BC, Data=0xF3B74A1D
+[CFG WRITE] Addr=0x000003C0, Data=0x04CDF166
+[CFG WRITE] Addr=0x000003C4, Data=0xFB15E383
+[CFG WRITE] Addr=0x000003C8, Data=0xF2BEE75C
+[CFG WRITE] Addr=0x000003CC, Data=0x889CC2DB
+[CFG WRITE] Addr=0x000003D0, Data=0x36D32899
+[CFG WRITE] Addr=0x000003D4, Data=0x6AFC85E3
+[CFG WRITE] Addr=0x000003D8, Data=0xCB357679
+[CFG WRITE] Addr=0x000003DC, Data=0x4B38F03B
+[CFG WRITE] Addr=0x000003E0, Data=0x2CEC13E5
+[CFG WRITE] Addr=0x000003E4, Data=0x3F460875
+[CFG WRITE] Addr=0x000003E8, Data=0xB459B244
+[CFG WRITE] Addr=0x000003EC, Data=0x9F9F93D9
+[CFG WRITE] Addr=0x000003F0, Data=0xD5720BD7
+[CFG WRITE] Addr=0x000003F4, Data=0x39515B36
+[CFG WRITE] Addr=0x000003F8, Data=0x0A1C60FC
+[CFG WRITE] Addr=0x000003FC, Data=0x441D2944
+[CFG WRITE] Addr=0x00000400, Data=0xEE1DBF14
+[CFG WRITE] Addr=0x00000404, Data=0x9C01A6C3
+[CFG WRITE] Addr=0x00000408, Data=0x1C73338E
+[CFG WRITE] Addr=0x0000040C, Data=0xDAFDD655
+[CFG WRITE] Addr=0x00000410, Data=0xB2E53D2F
+[CFG WRITE] Addr=0x00000414, Data=0x9ECB1BA9
+[CFG WRITE] Addr=0x00000418, Data=0x5F93526E
+[CFG WRITE] Addr=0x0000041C, Data=0x8EA81B53
+[CFG WRITE] Addr=0x00000420, Data=0x0C46E8F7
+[CFG WRITE] Addr=0x00000424, Data=0xCD18CA8D
+[CFG WRITE] Addr=0x00000428, Data=0x0B1D0B64
+[CFG WRITE] Addr=0x0000042C, Data=0xA4336077
+[CFG WRITE] Addr=0x00000430, Data=0x057A61D1
+[CFG WRITE] Addr=0x00000434, Data=0x7BD2E1E7
+[CFG WRITE] Addr=0x00000438, Data=0xE56EAB48
+[CFG WRITE] Addr=0x0000043C, Data=0x1598DBE1
+[CFG WRITE] Addr=0x00000440, Data=0x81C06256
+[CFG WRITE] Addr=0x00000444, Data=0x1F20CCF7
+[CFG WRITE] Addr=0x00000448, Data=0x8CC976F0
+[CFG WRITE] Addr=0x0000044C, Data=0x238A8F6B
+[CFG WRITE] Addr=0x00000450, Data=0x9C764FE3
+[CFG WRITE] Addr=0x00000454, Data=0x09CF3631
+[CFG WRITE] Addr=0x00000458, Data=0xF4F900E6
+[CFG WRITE] Addr=0x0000045C, Data=0xC7416AED
+[CFG WRITE] Addr=0x00000460, Data=0x921D6895
+[CFG WRITE] Addr=0x00000464, Data=0x5B2B1B58
+[CFG WRITE] Addr=0x00000468, Data=0x051EC452
+[CFG WRITE] Addr=0x0000046C, Data=0x0C855147
+[CFG WRITE] Addr=0x00000470, Data=0x4771BCBA
+[CFG WRITE] Addr=0x00000474, Data=0x7FAB8D4D
+[CFG WRITE] Addr=0x00000478, Data=0xC8C955AE
+[CFG WRITE] Addr=0x0000047C, Data=0x1F82BE3E
+[CFG WRITE] Addr=0x00000480, Data=0xB2E2138A
+[CFG WRITE] Addr=0x00000484, Data=0x0000A2F5
+[CFG WRITE] Addr=0x000007F4, Data=0x00000486
+[CFG WRITE] Addr=0x000007FC, Data=0x00000001
+
+AXI Stream Output:
+[AXI] Data=0xAA55AABB, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0xAA55AA55, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0x7AB3516B, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0xD1776FB1, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0x8D547DA1, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0xCA14F7DD, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0xE1AAD66E, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0x8B888E1D, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0x27B48A7D, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0x54D0D419, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0x67285E24, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0x17D2160A, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0xB965086B, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0x932744B5, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0x98EB2E1C, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0x90654FD9, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0x1FE6BDF2, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0x3C2467F7, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0x641B9BF6, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0xB073E887, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0xC0CA2BF5, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0xCDA0AED0, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0x9194CE9D, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0x62CAD9F4, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0x5E389D18, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0x0E73FAB0, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0x9554092C, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0xF11C79A9, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0x9A00D0D0, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0x6B2411FE, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0x2F1344D5, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0xCD2C25B8, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0x5F8E88B6, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0x2EDC144B, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0xEA86048F, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0x0F628439, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0xF26852FF, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0x76207072, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0xE46540B1, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0x76B3C2EB, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0x9C169AAA, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0x9ADB4AAC, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0xF9DC5393, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0x1348A16E, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0xA9832BD6, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0x5DA13F8E, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0x1E1E43F0, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0x3F0C37B2, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0x61206D4E, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0xB0B3FAC6, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0x69D2EBB4, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0xC18CC9B2, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0xC7B4D666, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0x5AADEB1F, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0xAAD90CB6, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0xC648A601, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0x827199C0, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0xB3E25E1E, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0x25F25631, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0x3F389E3A, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0x70A95E6A, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0xD626CD31, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0xAC29F66D, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0x4B016FBF, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0x4BFEA958, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0x6065F456, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0x9D58977B, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0x3CBD8086, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0x2F7E3357, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0x399B5BDF, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0x0644186A, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0x9C20077F, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0xAA1B20CC, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0x60722419, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0x0A78D66F, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0xA5758A6F, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0xD9B92CA2, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0x8498BCA6, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0x4C54628C, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0x29B12E0F, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0x95481F62, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0x985D93BA, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0x84E71D4B, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0x6D8DCE2F, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0xCED82D9D, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0xA3BE532D, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0xD86E84C1, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0x5A786449, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0x1FA7D5A4, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0x054AF483, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0xE21AC577, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0x7DD7766A, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0xA2CF57E2, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0x9026EEAC, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0xA42FB8BE, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0x58CDB424, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0x18854BD7, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0x4D8FDACE, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0x4E9CB75E, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0xC7E9E1A8, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0x8E6B1B75, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0x4B3EE6BE, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0xF38C5EDB, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0xA0D65EB6, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0x0F4767DC, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0x57DE9A10, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0xE472E804, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0x2A3D259D, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0x8E80E3A3, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0x7D3609EB, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0x0AD15B6E, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0x7AA57B7F, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0x1BEC52F4, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0x7381EF47, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0xFBBEFCF1, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0xB071C0D6, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0x0E7C383D, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0x98060791, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0xE4E0C968, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0x166F1744, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0x6CC29717, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0x1BF2D3C2, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0x20F4F38C, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0xC678F998, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0xA7CBF993, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0x08D7DE1F, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0x3AD79B37, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0x2A621A1C, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0x95EFF511, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0x9053145B, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0x72BF7DA7, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0x225EF770, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0x181A64BD, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0x031CE426, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0x95847F28, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0x129EDE7F, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0x928B8B93, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0xC526AC01, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0xCBEA299B, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0x8F3E56CF, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0x3DED0885, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0xA0CCC34E, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0x11AA967B, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0xFD11473D, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0x32D3F7D0, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0x49A16191, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0xA36072A1, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0x802DAFA9, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0xEBC83DD5, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0x516E6F06, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0x72206FA2, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0xBA596DC5, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0xFC03DF1D, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0x3798D90B, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0xDA602427, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0x27FF7618, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0x622CDE14, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0x91666807, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0xFF9AD255, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0xA8D0757A, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0xCEBAF6B5, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0x060A167C, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0xF8B9C15E, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0x75F84453, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0x4A0B9769, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0xC4CC7137, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0xBC7C1B20, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0x6491575C, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0xB0B816E0, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0x9B2A0AA6, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0x25325E31, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0x036DB922, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0xD711817E, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0xC63052B9, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0xA9D0436F, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0xC2D09894, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0xE7EFE3F6, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0x70DB426E, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0x08B4CE68, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0x4FBD5A3C, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0xBBD2D9E5, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0xBBB7BD6C, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0x2D37E1C7, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0x8602CAA9, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0x38098E84, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0xB144C357, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0x83DFD3F3, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0x7AA75FD0, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0xF1D82D43, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0x052C710E, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0xF1B13C30, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0x4A23870E, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0xA4770DCD, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0xBEE6C582, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0x0567FF32, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0x332B9D65, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0x36E9F49B, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0xC0B4C085, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0x6AFA43BC, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0x227B23CD, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0x1CD2B5B8, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0xEA31D8C3, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0x1D1DBF09, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0x3563192A, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0x1CC9B13E, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0x7B3CDA8D, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0xDC14AC6D, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0xF75B8A27, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0xAE483AAB, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0x6421ED4E, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0x0E95AAA0, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0x4B04BC61, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0x14C2FEB3, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0x151C213C, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0x3E5826D9, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0x5DE2B1ED, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0x1F512C84, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0xBB1FE960, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0x60A7EC5D, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0x639005B9, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0x63C2F4E4, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0x118C1112, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0xB495ED0A, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0xE3152E99, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0x4C977422, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0x20C5BA8D, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0x687051D3, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0x53CE7EB1, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0xC10C2415, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0x96FA6026, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0x3AD7233E, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0xB2EE24F2, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0x58F532A6, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0xE62676E0, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0xDDB293B2, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0x87D934AA, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0x1DD8987F, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0xB143D8C5, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0xF3B74A1D, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0x04CDF166, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0xFB15E383, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0xF2BEE75C, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0x889CC2DB, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0x36D32899, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0x6AFC85E3, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0xCB357679, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0x4B38F03B, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0x2CEC13E5, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0x3F460875, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0xB459B244, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0x9F9F93D9, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0xD5720BD7, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0x39515B36, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0x0A1C60FC, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0x441D2944, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0xEE1DBF14, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0x9C01A6C3, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0x1C73338E, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0xDAFDD655, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0xB2E53D2F, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0x9ECB1BA9, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0x5F93526E, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0x8EA81B53, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0x0C46E8F7, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0xCD18CA8D, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0x0B1D0B64, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0xA4336077, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0x057A61D1, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0x7BD2E1E7, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0xE56EAB48, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0x1598DBE1, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0x81C06256, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0x1F20CCF7, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0x8CC976F0, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0x238A8F6B, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0x9C764FE3, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0x09CF3631, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0xF4F900E6, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0xC7416AED, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0x921D6895, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0x5B2B1B58, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0x051EC452, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0x0C855147, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0x4771BCBA, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0x7FAB8D4D, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0xC8C955AE, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0x1F82BE3E, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0xB2E2138A, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0x0000A2F5, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0x00007D7C, Valid=1, Strb=0x3, Last=1
+
+AXI output mismatch!
+Expected: [255, 238, 221, 204, 187, 170, 85, 170, 85, 170, 85, 170, 107, 81, 179, 122, 177, 111, 119, 209, 161, 125, 84, 141, 221, 247, 20, 202, 110, 214, 170, 225, 29, 142, 136, 139, 125, 138, 180, 39, 25, 212, 208, 84, 36, 94, 40, 103, 10, 22, 210, 23, 107, 8, 101, 185, 181, 68, 39, 147, 28, 46, 235, 152, 217, 79, 101, 144, 242, 189, 230, 31, 247, 103, 36, 60, 246, 155, 27, 100, 135, 232, 115, 176, 245, 43, 202, 192, 208, 174, 160, 205, 157, 206, 148, 145, 244, 217, 202, 98, 24, 157, 56, 94, 176, 250, 115, 14, 44, 9, 84, 149, 169, 121, 28, 241, 208, 208, 0, 154, 254, 17, 36, 107, 213, 68, 19, 47, 184, 37, 44, 205, 182, 136, 142, 95, 75, 20, 220, 46, 143, 4, 134, 234, 57, 132, 98, 15, 255, 82, 104, 242, 114, 112, 32, 118, 177, 64, 101, 228, 235, 194, 179, 118, 170, 154, 22, 156, 172, 74, 219, 154, 147, 83, 220, 249, 110, 161, 72, 19, 214, 43, 131, 169, 142, 63, 161, 93, 240, 67, 30, 30, 178, 55, 12, 63, 78, 109, 32, 97, 198, 250, 179, 176, 180, 235, 210, 105, 178, 201, 140, 193, 102, 214, 180, 199, 31, 235, 173, 90, 182, 12, 217, 170, 1, 166, 72, 198, 192, 153, 113, 130, 30, 94, 226, 179, 49, 86, 242, 37, 58, 158, 56, 63, 106, 94, 169, 112, 49, 205, 38, 214, 109, 246, 41, 172, 191, 111, 1, 75, 88, 169, 254, 75, 86, 244, 101, 96, 123, 151, 88, 157, 134, 128, 189, 60, 87, 51, 126, 47, 223, 91, 155, 57, 106, 24, 68, 6, 127, 7, 32, 156, 204, 32, 27, 170, 25, 36, 114, 96, 111, 214, 120, 10, 111, 138, 117, 165, 162, 44, 185, 217, 166, 188, 152, 132, 140, 98, 84, 76, 15, 46, 177, 41, 98, 31, 72, 149, 186, 147, 93, 152, 75, 29, 231, 132, 47, 206, 141, 109, 157, 45, 216, 206, 45, 83, 190, 163, 193, 132, 110, 216, 73, 100, 120, 90, 164, 213, 167, 31, 131, 244, 74, 5, 119, 197, 26, 226, 106, 118, 215, 125, 226, 87, 207, 162, 172, 238, 38, 144, 190, 184, 47, 164, 36, 180, 205, 88, 215, 75, 133, 24, 206, 218, 143, 77, 94, 183, 156, 78, 168, 225, 233, 199, 117, 27, 107, 142, 190, 230, 62, 75, 219, 94, 140, 243, 182, 94, 214, 160, 220, 103, 71, 15, 16, 154, 222, 87, 4, 232, 114, 228, 157, 37, 61, 42, 163, 227, 128, 142, 235, 9, 54, 125, 110, 91, 209, 10, 127, 123, 165, 122, 244, 82, 236, 27, 71, 239, 129, 115, 241, 252, 190, 251, 214, 192, 113, 176, 61, 56, 124, 14, 145, 7, 6, 152, 104, 201, 224, 228, 68, 23, 111, 22, 23, 151, 194, 108, 194, 211, 242, 27, 140, 243, 244, 32, 152, 249, 120, 198, 147, 249, 203, 167, 31, 222, 215, 8, 55, 155, 215, 58, 28, 26, 98, 42, 17, 245, 239, 149, 91, 20, 83, 144, 167, 125, 191, 114, 112, 247, 94, 34, 189, 100, 26, 24, 38, 228, 28, 3, 40, 127, 132, 149, 127, 222, 158, 18, 147, 139, 139, 146, 1, 172, 38, 197, 155, 41, 234, 203, 207, 86, 62, 143, 133, 8, 237, 61, 78, 195, 204, 160, 123, 150, 170, 17, 61, 71, 17, 253, 208, 247, 211, 50, 145, 97, 161, 73, 161, 114, 96, 163, 169, 175, 45, 128, 213, 61, 200, 235, 6, 111, 110, 81, 162, 111, 32, 114, 197, 109, 89, 186, 29, 223, 3, 252, 11, 217, 152, 55, 39, 36, 96, 218, 24, 118, 255, 39, 20, 222, 44, 98, 7, 104, 102, 145, 85, 210, 154, 255, 122, 117, 208, 168, 181, 246, 186, 206, 124, 22, 10, 6, 94, 193, 185, 248, 83, 68, 248, 117, 105, 151, 11, 74, 55, 113, 204, 196, 32, 27, 124, 188, 92, 87, 145, 100, 224, 22, 184, 176, 166, 10, 42, 155, 49, 94, 50, 37, 34, 185, 109, 3, 126, 129, 17, 215, 185, 82, 48, 198, 111, 67, 208, 169, 148, 152, 208, 194, 246, 227, 239, 231, 110, 66, 219, 112, 104, 206, 180, 8, 60, 90, 189, 79, 229, 217, 210, 187, 108, 189, 183, 187, 199, 225, 55, 45, 169, 202, 2, 134, 132, 142, 9, 56, 87, 195, 68, 177, 243, 211, 223, 131, 208, 95, 167, 122, 67, 45, 216, 241, 14, 113, 44, 5, 48, 60, 177, 241, 14, 135, 35, 74, 205, 13, 119, 164, 130, 197, 230, 190, 50, 255, 103, 5, 101, 157, 43, 51, 155, 244, 233, 54, 133, 192, 180, 192, 188, 67, 250, 106, 205, 35, 123, 34, 184, 181, 210, 28, 195, 216, 49, 234, 9, 191, 29, 29, 42, 25, 99, 53, 62, 177, 201, 28, 141, 218, 60, 123, 109, 172, 20, 220, 39, 138, 91, 247, 171, 58, 72, 174, 78, 237, 33, 100, 160, 170, 149, 14, 97, 188, 4, 75, 179, 254, 194, 20, 60, 33, 28, 21, 217, 38, 88, 62, 237, 177, 226, 93, 132, 44, 81, 31, 96, 233, 31, 187, 93, 236, 167, 96, 185, 5, 144, 99, 228, 244, 194, 99, 18, 17, 140, 17, 10, 237, 149, 180, 153, 46, 21, 227, 34, 116, 151, 76, 141, 186, 197, 32, 211, 81, 112, 104, 177, 126, 206, 83, 21, 36, 12, 193, 38, 96, 250, 150, 62, 35, 215, 58, 242, 36, 238, 178, 166, 50, 245, 88, 224, 118, 38, 230, 178, 147, 178, 221, 170, 52, 217, 135, 127, 152, 216, 29, 197, 216, 67, 177, 29, 74, 183, 243, 102, 241, 205, 4, 131, 227, 21, 251, 92, 231, 190, 242, 219, 194, 156, 136, 153, 40, 211, 54, 227, 133, 252, 106, 121, 118, 53, 203, 59, 240, 56, 75, 229, 19, 236, 44, 117, 8, 70, 63, 68, 178, 89, 180, 217, 147, 159, 159, 215, 11, 114, 213, 54, 91, 81, 57, 252, 96, 28, 10, 68, 41, 29, 68, 20, 191, 29, 238, 195, 166, 1, 156, 142, 51, 115, 28, 85, 214, 253, 218, 47, 61, 229, 178, 169, 27, 203, 158, 110, 82, 147, 95, 83, 27, 168, 142, 247, 232, 70, 12, 141, 202, 24, 205, 100, 11, 29, 11, 119, 96, 51, 164, 209, 97, 122, 5, 231, 225, 210, 123, 72, 171, 110, 229, 225, 219, 152, 21, 86, 98, 192, 129, 247, 204, 32, 31, 240, 118, 201, 140, 107, 143, 138, 35, 227, 79, 118, 156, 49, 54, 207, 9, 230, 0, 249, 244, 237, 106, 65, 199, 149, 104, 29, 146, 88, 27, 43, 91, 82, 196, 30, 5, 71, 81, 133, 12, 186, 188, 113, 71, 77, 141, 171, 127, 174, 85, 201, 200, 62, 190, 130, 31, 138, 19, 226, 178, 245, 162]
+Received: [187, 170, 85, 170, 85, 170, 85, 170, 107, 81, 179, 122, 177, 111, 119, 209, 161, 125, 84, 141, 221, 247, 20, 202, 110, 214, 170, 225, 29, 142, 136, 139, 125, 138, 180, 39, 25, 212, 208, 84, 36, 94, 40, 103, 10, 22, 210, 23, 107, 8, 101, 185, 181, 68, 39, 147, 28, 46, 235, 152, 217, 79, 101, 144, 242, 189, 230, 31, 247, 103, 36, 60, 246, 155, 27, 100, 135, 232, 115, 176, 245, 43, 202, 192, 208, 174, 160, 205, 157, 206, 148, 145, 244, 217, 202, 98, 24, 157, 56, 94, 176, 250, 115, 14, 44, 9, 84, 149, 169, 121, 28, 241, 208, 208, 0, 154, 254, 17, 36, 107, 213, 68, 19, 47, 184, 37, 44, 205, 182, 136, 142, 95, 75, 20, 220, 46, 143, 4, 134, 234, 57, 132, 98, 15, 255, 82, 104, 242, 114, 112, 32, 118, 177, 64, 101, 228, 235, 194, 179, 118, 170, 154, 22, 156, 172, 74, 219, 154, 147, 83, 220, 249, 110, 161, 72, 19, 214, 43, 131, 169, 142, 63, 161, 93, 240, 67, 30, 30, 178, 55, 12, 63, 78, 109, 32, 97, 198, 250, 179, 176, 180, 235, 210, 105, 178, 201, 140, 193, 102, 214, 180, 199, 31, 235, 173, 90, 182, 12, 217, 170, 1, 166, 72, 198, 192, 153, 113, 130, 30, 94, 226, 179, 49, 86, 242, 37, 58, 158, 56, 63, 106, 94, 169, 112, 49, 205, 38, 214, 109, 246, 41, 172, 191, 111, 1, 75, 88, 169, 254, 75, 86, 244, 101, 96, 123, 151, 88, 157, 134, 128, 189, 60, 87, 51, 126, 47, 223, 91, 155, 57, 106, 24, 68, 6, 127, 7, 32, 156, 204, 32, 27, 170, 25, 36, 114, 96, 111, 214, 120, 10, 111, 138, 117, 165, 162, 44, 185, 217, 166, 188, 152, 132, 140, 98, 84, 76, 15, 46, 177, 41, 98, 31, 72, 149, 186, 147, 93, 152, 75, 29, 231, 132, 47, 206, 141, 109, 157, 45, 216, 206, 45, 83, 190, 163, 193, 132, 110, 216, 73, 100, 120, 90, 164, 213, 167, 31, 131, 244, 74, 5, 119, 197, 26, 226, 106, 118, 215, 125, 226, 87, 207, 162, 172, 238, 38, 144, 190, 184, 47, 164, 36, 180, 205, 88, 215, 75, 133, 24, 206, 218, 143, 77, 94, 183, 156, 78, 168, 225, 233, 199, 117, 27, 107, 142, 190, 230, 62, 75, 219, 94, 140, 243, 182, 94, 214, 160, 220, 103, 71, 15, 16, 154, 222, 87, 4, 232, 114, 228, 157, 37, 61, 42, 163, 227, 128, 142, 235, 9, 54, 125, 110, 91, 209, 10, 127, 123, 165, 122, 244, 82, 236, 27, 71, 239, 129, 115, 241, 252, 190, 251, 214, 192, 113, 176, 61, 56, 124, 14, 145, 7, 6, 152, 104, 201, 224, 228, 68, 23, 111, 22, 23, 151, 194, 108, 194, 211, 242, 27, 140, 243, 244, 32, 152, 249, 120, 198, 147, 249, 203, 167, 31, 222, 215, 8, 55, 155, 215, 58, 28, 26, 98, 42, 17, 245, 239, 149, 91, 20, 83, 144, 167, 125, 191, 114, 112, 247, 94, 34, 189, 100, 26, 24, 38, 228, 28, 3, 40, 127, 132, 149, 127, 222, 158, 18, 147, 139, 139, 146, 1, 172, 38, 197, 155, 41, 234, 203, 207, 86, 62, 143, 133, 8, 237, 61, 78, 195, 204, 160, 123, 150, 170, 17, 61, 71, 17, 253, 208, 247, 211, 50, 145, 97, 161, 73, 161, 114, 96, 163, 169, 175, 45, 128, 213, 61, 200, 235, 6, 111, 110, 81, 162, 111, 32, 114, 197, 109, 89, 186, 29, 223, 3, 252, 11, 217, 152, 55, 39, 36, 96, 218, 24, 118, 255, 39, 20, 222, 44, 98, 7, 104, 102, 145, 85, 210, 154, 255, 122, 117, 208, 168, 181, 246, 186, 206, 124, 22, 10, 6, 94, 193, 185, 248, 83, 68, 248, 117, 105, 151, 11, 74, 55, 113, 204, 196, 32, 27, 124, 188, 92, 87, 145, 100, 224, 22, 184, 176, 166, 10, 42, 155, 49, 94, 50, 37, 34, 185, 109, 3, 126, 129, 17, 215, 185, 82, 48, 198, 111, 67, 208, 169, 148, 152, 208, 194, 246, 227, 239, 231, 110, 66, 219, 112, 104, 206, 180, 8, 60, 90, 189, 79, 229, 217, 210, 187, 108, 189, 183, 187, 199, 225, 55, 45, 169, 202, 2, 134, 132, 142, 9, 56, 87, 195, 68, 177, 243, 211, 223, 131, 208, 95, 167, 122, 67, 45, 216, 241, 14, 113, 44, 5, 48, 60, 177, 241, 14, 135, 35, 74, 205, 13, 119, 164, 130, 197, 230, 190, 50, 255, 103, 5, 101, 157, 43, 51, 155, 244, 233, 54, 133, 192, 180, 192, 188, 67, 250, 106, 205, 35, 123, 34, 184, 181, 210, 28, 195, 216, 49, 234, 9, 191, 29, 29, 42, 25, 99, 53, 62, 177, 201, 28, 141, 218, 60, 123, 109, 172, 20, 220, 39, 138, 91, 247, 171, 58, 72, 174, 78, 237, 33, 100, 160, 170, 149, 14, 97, 188, 4, 75, 179, 254, 194, 20, 60, 33, 28, 21, 217, 38, 88, 62, 237, 177, 226, 93, 132, 44, 81, 31, 96, 233, 31, 187, 93, 236, 167, 96, 185, 5, 144, 99, 228, 244, 194, 99, 18, 17, 140, 17, 10, 237, 149, 180, 153, 46, 21, 227, 34, 116, 151, 76, 141, 186, 197, 32, 211, 81, 112, 104, 177, 126, 206, 83, 21, 36, 12, 193, 38, 96, 250, 150, 62, 35, 215, 58, 242, 36, 238, 178, 166, 50, 245, 88, 224, 118, 38, 230, 178, 147, 178, 221, 170, 52, 217, 135, 127, 152, 216, 29, 197, 216, 67, 177, 29, 74, 183, 243, 102, 241, 205, 4, 131, 227, 21, 251, 92, 231, 190, 242, 219, 194, 156, 136, 153, 40, 211, 54, 227, 133, 252, 106, 121, 118, 53, 203, 59, 240, 56, 75, 229, 19, 236, 44, 117, 8, 70, 63, 68, 178, 89, 180, 217, 147, 159, 159, 215, 11, 114, 213, 54, 91, 81, 57, 252, 96, 28, 10, 68, 41, 29, 68, 20, 191, 29, 238, 195, 166, 1, 156, 142, 51, 115, 28, 85, 214, 253, 218, 47, 61, 229, 178, 169, 27, 203, 158, 110, 82, 147, 95, 83, 27, 168, 142, 247, 232, 70, 12, 141, 202, 24, 205, 100, 11, 29, 11, 119, 96, 51, 164, 209, 97, 122, 5, 231, 225, 210, 123, 72, 171, 110, 229, 225, 219, 152, 21, 86, 98, 192, 129, 247, 204, 32, 31, 240, 118, 201, 140, 107, 143, 138, 35, 227, 79, 118, 156, 49, 54, 207, 9, 230, 0, 249, 244, 237, 106, 65, 199, 149, 104, 29, 146, 88, 27, 43, 91, 82, 196, 30, 5, 71, 81, 133, 12, 186, 188, 113, 71, 77, 141, 171, 127, 174, 85, 201, 200, 62, 190, 130, 31, 138, 19, 226, 178, 245, 162, 0, 0, 124, 125]
+ 27887.00ns INFO     cocotb.regression                  test_ethernet_mac_tx.test_back_to_back_random_payloads failed
+                                                        Traceback (most recent call last):
+                                                          File "/code/src/test_ethernet_mac_tx.py", line 210, in test_back_to_back_random_payloads
+                                                            await test_packet(dut, length, 1, 0xAABBCCDDEEFF, payload_data=payload)
+                                                          File "/code/src/test_ethernet_mac_tx.py", line 101, in test_packet
+                                                            await monitor_output(dut, expected_bytes)
+                                                          File "/code/src/test_ethernet_mac_tx.py", line 57, in monitor_output
+                                                            assert received == expected_bytes, f"AXI output mismatch!"
+                                                        AssertionError: AXI output mismatch!
+                                                        assert [187, 170, 85, 170, 85, 170, ...] == [255, 238, 221, 204, 187, 170, ...]
+ 27887.00ns INFO     cocotb.regression                  running test_ethernet_mac_tx.test_back_to_back_incr_payloads_interrupt_disable (9/10)
+
+============================================================
+--- Starting TX Test ---
+Length: 530, IRQ: 0, Dest MAC: 0xDDAABBCCDDEE
+[CFG WRITE] Addr=0x00000000, Data=0xBBCCDDEE
+[CFG WRITE] Addr=0x00000004, Data=0xAA55DDAA
+[CFG WRITE] Addr=0x00000008, Data=0xAA55AA55
+[CFG WRITE] Addr=0x0000000C, Data=0x03020100
+[CFG WRITE] Addr=0x00000010, Data=0x07060504
+[CFG WRITE] Addr=0x00000014, Data=0x0B0A0908
+[CFG WRITE] Addr=0x00000018, Data=0x0F0E0D0C
+[CFG WRITE] Addr=0x0000001C, Data=0x13121110
+[CFG WRITE] Addr=0x00000020, Data=0x17161514
+[CFG WRITE] Addr=0x00000024, Data=0x1B1A1918
+[CFG WRITE] Addr=0x00000028, Data=0x1F1E1D1C
+[CFG WRITE] Addr=0x0000002C, Data=0x23222120
+[CFG WRITE] Addr=0x00000030, Data=0x27262524
+[CFG WRITE] Addr=0x00000034, Data=0x2B2A2928
+[CFG WRITE] Addr=0x00000038, Data=0x2F2E2D2C
+[CFG WRITE] Addr=0x0000003C, Data=0x33323130
+[CFG WRITE] Addr=0x00000040, Data=0x37363534
+[CFG WRITE] Addr=0x00000044, Data=0x3B3A3938
+[CFG WRITE] Addr=0x00000048, Data=0x3F3E3D3C
+[CFG WRITE] Addr=0x0000004C, Data=0x43424140
+[CFG WRITE] Addr=0x00000050, Data=0x47464544
+[CFG WRITE] Addr=0x00000054, Data=0x4B4A4948
+[CFG WRITE] Addr=0x00000058, Data=0x4F4E4D4C
+[CFG WRITE] Addr=0x0000005C, Data=0x53525150
+[CFG WRITE] Addr=0x00000060, Data=0x57565554
+[CFG WRITE] Addr=0x00000064, Data=0x5B5A5958
+[CFG WRITE] Addr=0x00000068, Data=0x5F5E5D5C
+[CFG WRITE] Addr=0x0000006C, Data=0x63626160
+[CFG WRITE] Addr=0x00000070, Data=0x67666564
+[CFG WRITE] Addr=0x00000074, Data=0x6B6A6968
+[CFG WRITE] Addr=0x00000078, Data=0x6F6E6D6C
+[CFG WRITE] Addr=0x0000007C, Data=0x73727170
+[CFG WRITE] Addr=0x00000080, Data=0x77767574
+[CFG WRITE] Addr=0x00000084, Data=0x7B7A7978
+[CFG WRITE] Addr=0x00000088, Data=0x7F7E7D7C
+[CFG WRITE] Addr=0x0000008C, Data=0x83828180
+[CFG WRITE] Addr=0x00000090, Data=0x87868584
+[CFG WRITE] Addr=0x00000094, Data=0x8B8A8988
+[CFG WRITE] Addr=0x00000098, Data=0x8F8E8D8C
+[CFG WRITE] Addr=0x0000009C, Data=0x93929190
+[CFG WRITE] Addr=0x000000A0, Data=0x97969594
+[CFG WRITE] Addr=0x000000A4, Data=0x9B9A9998
+[CFG WRITE] Addr=0x000000A8, Data=0x9F9E9D9C
+[CFG WRITE] Addr=0x000000AC, Data=0xA3A2A1A0
+[CFG WRITE] Addr=0x000000B0, Data=0xA7A6A5A4
+[CFG WRITE] Addr=0x000000B4, Data=0xABAAA9A8
+[CFG WRITE] Addr=0x000000B8, Data=0xAFAEADAC
+[CFG WRITE] Addr=0x000000BC, Data=0xB3B2B1B0
+[CFG WRITE] Addr=0x000000C0, Data=0xB7B6B5B4
+[CFG WRITE] Addr=0x000000C4, Data=0xBBBAB9B8
+[CFG WRITE] Addr=0x000000C8, Data=0xBFBEBDBC
+[CFG WRITE] Addr=0x000000CC, Data=0xC3C2C1C0
+[CFG WRITE] Addr=0x000000D0, Data=0xC7C6C5C4
+[CFG WRITE] Addr=0x000000D4, Data=0xCBCAC9C8
+[CFG WRITE] Addr=0x000000D8, Data=0xCFCECDCC
+[CFG WRITE] Addr=0x000000DC, Data=0xD3D2D1D0
+[CFG WRITE] Addr=0x000000E0, Data=0xD7D6D5D4
+[CFG WRITE] Addr=0x000000E4, Data=0xDBDAD9D8
+[CFG WRITE] Addr=0x000000E8, Data=0xDFDEDDDC
+[CFG WRITE] Addr=0x000000EC, Data=0xE3E2E1E0
+[CFG WRITE] Addr=0x000000F0, Data=0xE7E6E5E4
+[CFG WRITE] Addr=0x000000F4, Data=0xEBEAE9E8
+[CFG WRITE] Addr=0x000000F8, Data=0xEFEEEDEC
+[CFG WRITE] Addr=0x000000FC, Data=0xF3F2F1F0
+[CFG WRITE] Addr=0x00000100, Data=0xF7F6F5F4
+[CFG WRITE] Addr=0x00000104, Data=0xFBFAF9F8
+[CFG WRITE] Addr=0x00000108, Data=0xFFFEFDFC
+[CFG WRITE] Addr=0x0000010C, Data=0x03020100
+[CFG WRITE] Addr=0x00000110, Data=0x07060504
+[CFG WRITE] Addr=0x00000114, Data=0x0B0A0908
+[CFG WRITE] Addr=0x00000118, Data=0x0F0E0D0C
+[CFG WRITE] Addr=0x0000011C, Data=0x13121110
+[CFG WRITE] Addr=0x00000120, Data=0x17161514
+[CFG WRITE] Addr=0x00000124, Data=0x1B1A1918
+[CFG WRITE] Addr=0x00000128, Data=0x1F1E1D1C
+[CFG WRITE] Addr=0x0000012C, Data=0x23222120
+[CFG WRITE] Addr=0x00000130, Data=0x27262524
+[CFG WRITE] Addr=0x00000134, Data=0x2B2A2928
+[CFG WRITE] Addr=0x00000138, Data=0x2F2E2D2C
+[CFG WRITE] Addr=0x0000013C, Data=0x33323130
+[CFG WRITE] Addr=0x00000140, Data=0x37363534
+[CFG WRITE] Addr=0x00000144, Data=0x3B3A3938
+[CFG WRITE] Addr=0x00000148, Data=0x3F3E3D3C
+[CFG WRITE] Addr=0x0000014C, Data=0x43424140
+[CFG WRITE] Addr=0x00000150, Data=0x47464544
+[CFG WRITE] Addr=0x00000154, Data=0x4B4A4948
+[CFG WRITE] Addr=0x00000158, Data=0x4F4E4D4C
+[CFG WRITE] Addr=0x0000015C, Data=0x53525150
+[CFG WRITE] Addr=0x00000160, Data=0x57565554
+[CFG WRITE] Addr=0x00000164, Data=0x5B5A5958
+[CFG WRITE] Addr=0x00000168, Data=0x5F5E5D5C
+[CFG WRITE] Addr=0x0000016C, Data=0x63626160
+[CFG WRITE] Addr=0x00000170, Data=0x67666564
+[CFG WRITE] Addr=0x00000174, Data=0x6B6A6968
+[CFG WRITE] Addr=0x00000178, Data=0x6F6E6D6C
+[CFG WRITE] Addr=0x0000017C, Data=0x73727170
+[CFG WRITE] Addr=0x00000180, Data=0x77767574
+[CFG WRITE] Addr=0x00000184, Data=0x7B7A7978
+[CFG WRITE] Addr=0x00000188, Data=0x7F7E7D7C
+[CFG WRITE] Addr=0x0000018C, Data=0x83828180
+[CFG WRITE] Addr=0x00000190, Data=0x87868584
+[CFG WRITE] Addr=0x00000194, Data=0x8B8A8988
+[CFG WRITE] Addr=0x00000198, Data=0x8F8E8D8C
+[CFG WRITE] Addr=0x0000019C, Data=0x93929190
+[CFG WRITE] Addr=0x000001A0, Data=0x97969594
+[CFG WRITE] Addr=0x000001A4, Data=0x9B9A9998
+[CFG WRITE] Addr=0x000001A8, Data=0x9F9E9D9C
+[CFG WRITE] Addr=0x000001AC, Data=0xA3A2A1A0
+[CFG WRITE] Addr=0x000001B0, Data=0xA7A6A5A4
+[CFG WRITE] Addr=0x000001B4, Data=0xABAAA9A8
+[CFG WRITE] Addr=0x000001B8, Data=0xAFAEADAC
+[CFG WRITE] Addr=0x000001BC, Data=0xB3B2B1B0
+[CFG WRITE] Addr=0x000001C0, Data=0xB7B6B5B4
+[CFG WRITE] Addr=0x000001C4, Data=0xBBBAB9B8
+[CFG WRITE] Addr=0x000001C8, Data=0xBFBEBDBC
+[CFG WRITE] Addr=0x000001CC, Data=0xC3C2C1C0
+[CFG WRITE] Addr=0x000001D0, Data=0xC7C6C5C4
+[CFG WRITE] Addr=0x000001D4, Data=0xCBCAC9C8
+[CFG WRITE] Addr=0x000001D8, Data=0xCFCECDCC
+[CFG WRITE] Addr=0x000001DC, Data=0xD3D2D1D0
+[CFG WRITE] Addr=0x000001E0, Data=0xD7D6D5D4
+[CFG WRITE] Addr=0x000001E4, Data=0xDBDAD9D8
+[CFG WRITE] Addr=0x000001E8, Data=0xDFDEDDDC
+[CFG WRITE] Addr=0x000001EC, Data=0xE3E2E1E0
+[CFG WRITE] Addr=0x000001F0, Data=0xE7E6E5E4
+[CFG WRITE] Addr=0x000001F4, Data=0xEBEAE9E8
+[CFG WRITE] Addr=0x000001F8, Data=0xEFEEEDEC
+[CFG WRITE] Addr=0x000001FC, Data=0xF3F2F1F0
+[CFG WRITE] Addr=0x00000200, Data=0xF7F6F5F4
+[CFG WRITE] Addr=0x00000204, Data=0xFBFAF9F8
+[CFG WRITE] Addr=0x00000208, Data=0xFFFEFDFC
+[CFG WRITE] Addr=0x0000020C, Data=0x03020100
+[CFG WRITE] Addr=0x00000210, Data=0x07060504
+[CFG WRITE] Addr=0x00000214, Data=0x0B0A0908
+[CFG WRITE] Addr=0x00000218, Data=0x0F0E0D0C
+[CFG WRITE] Addr=0x0000021C, Data=0x00001110
+[CFG WRITE] Addr=0x000007F4, Data=0x0000021E
+[CFG WRITE] Addr=0x000007FC, Data=0x00000001
+
+AXI Stream Output:
+[AXI] Data=0xAA55DDAA, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0xAA55AA55, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0x03020100, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0x07060504, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0x0B0A0908, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0x0F0E0D0C, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0x13121110, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0x17161514, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0x1B1A1918, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0x1F1E1D1C, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0x23222120, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0x27262524, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0x2B2A2928, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0x2F2E2D2C, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0x33323130, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0x37363534, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0x3B3A3938, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0x3F3E3D3C, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0x43424140, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0x47464544, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0x4B4A4948, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0x4F4E4D4C, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0x53525150, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0x57565554, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0x5B5A5958, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0x5F5E5D5C, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0x63626160, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0x67666564, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0x6B6A6968, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0x6F6E6D6C, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0x73727170, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0x77767574, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0x7B7A7978, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0x7F7E7D7C, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0x83828180, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0x87868584, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0x8B8A8988, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0x8F8E8D8C, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0x93929190, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0x97969594, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0x9B9A9998, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0x9F9E9D9C, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0xA3A2A1A0, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0xA7A6A5A4, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0xABAAA9A8, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0xAFAEADAC, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0xB3B2B1B0, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0xB7B6B5B4, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0xBBBAB9B8, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0xBFBEBDBC, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0xC3C2C1C0, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0xC7C6C5C4, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0xCBCAC9C8, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0xCFCECDCC, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0xD3D2D1D0, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0xD7D6D5D4, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0xDBDAD9D8, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0xDFDEDDDC, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0xE3E2E1E0, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0xE7E6E5E4, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0xEBEAE9E8, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0xEFEEEDEC, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0xF3F2F1F0, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0xF7F6F5F4, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0xFBFAF9F8, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0xFFFEFDFC, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0x03020100, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0x07060504, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0x0B0A0908, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0x0F0E0D0C, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0x13121110, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0x17161514, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0x1B1A1918, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0x1F1E1D1C, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0x23222120, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0x27262524, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0x2B2A2928, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0x2F2E2D2C, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0x33323130, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0x37363534, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0x3B3A3938, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0x3F3E3D3C, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0x43424140, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0x47464544, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0x4B4A4948, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0x4F4E4D4C, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0x53525150, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0x57565554, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0x5B5A5958, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0x5F5E5D5C, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0x63626160, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0x67666564, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0x6B6A6968, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0x6F6E6D6C, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0x73727170, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0x77767574, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0x7B7A7978, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0x7F7E7D7C, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0x83828180, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0x87868584, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0x8B8A8988, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0x8F8E8D8C, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0x93929190, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0x97969594, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0x9B9A9998, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0x9F9E9D9C, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0xA3A2A1A0, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0xA7A6A5A4, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0xABAAA9A8, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0xAFAEADAC, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0xB3B2B1B0, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0xB7B6B5B4, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0xBBBAB9B8, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0xBFBEBDBC, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0xC3C2C1C0, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0xC7C6C5C4, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0xCBCAC9C8, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0xCFCECDCC, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0xD3D2D1D0, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0xD7D6D5D4, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0xDBDAD9D8, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0xDFDEDDDC, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0xE3E2E1E0, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0xE7E6E5E4, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0xEBEAE9E8, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0xEFEEEDEC, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0xF3F2F1F0, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0xF7F6F5F4, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0xFBFAF9F8, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0xFFFEFDFC, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0x03020100, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0x07060504, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0x0B0A0908, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0x0F0E0D0C, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0x00001110, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0x0000DE7F, Valid=1, Strb=0x3, Last=1
+
+AXI output mismatch!
+Expected: [238, 221, 204, 187, 170, 221, 85, 170, 85, 170, 85, 170, 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57, 58, 59, 60, 61, 62, 63, 64, 65, 66, 67, 68, 69, 70, 71, 72, 73, 74, 75, 76, 77, 78, 79, 80, 81, 82, 83, 84, 85, 86, 87, 88, 89, 90, 91, 92, 93, 94, 95, 96, 97, 98, 99, 100, 101, 102, 103, 104, 105, 106, 107, 108, 109, 110, 111, 112, 113, 114, 115, 116, 117, 118, 119, 120, 121, 122, 123, 124, 125, 126, 127, 128, 129, 130, 131, 132, 133, 134, 135, 136, 137, 138, 139, 140, 141, 142, 143, 144, 145, 146, 147, 148, 149, 150, 151, 152, 153, 154, 155, 156, 157, 158, 159, 160, 161, 162, 163, 164, 165, 166, 167, 168, 169, 170, 171, 172, 173, 174, 175, 176, 177, 178, 179, 180, 181, 182, 183, 184, 185, 186, 187, 188, 189, 190, 191, 192, 193, 194, 195, 196, 197, 198, 199, 200, 201, 202, 203, 204, 205, 206, 207, 208, 209, 210, 211, 212, 213, 214, 215, 216, 217, 218, 219, 220, 221, 222, 223, 224, 225, 226, 227, 228, 229, 230, 231, 232, 233, 234, 235, 236, 237, 238, 239, 240, 241, 242, 243, 244, 245, 246, 247, 248, 249, 250, 251, 252, 253, 254, 255, 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57, 58, 59, 60, 61, 62, 63, 64, 65, 66, 67, 68, 69, 70, 71, 72, 73, 74, 75, 76, 77, 78, 79, 80, 81, 82, 83, 84, 85, 86, 87, 88, 89, 90, 91, 92, 93, 94, 95, 96, 97, 98, 99, 100, 101, 102, 103, 104, 105, 106, 107, 108, 109, 110, 111, 112, 113, 114, 115, 116, 117, 118, 119, 120, 121, 122, 123, 124, 125, 126, 127, 128, 129, 130, 131, 132, 133, 134, 135, 136, 137, 138, 139, 140, 141, 142, 143, 144, 145, 146, 147, 148, 149, 150, 151, 152, 153, 154, 155, 156, 157, 158, 159, 160, 161, 162, 163, 164, 165, 166, 167, 168, 169, 170, 171, 172, 173, 174, 175, 176, 177, 178, 179, 180, 181, 182, 183, 184, 185, 186, 187, 188, 189, 190, 191, 192, 193, 194, 195, 196, 197, 198, 199, 200, 201, 202, 203, 204, 205, 206, 207, 208, 209, 210, 211, 212, 213, 214, 215, 216, 217, 218, 219, 220, 221, 222, 223, 224, 225, 226, 227, 228, 229, 230, 231, 232, 233, 234, 235, 236, 237, 238, 239, 240, 241, 242, 243, 244, 245, 246, 247, 248, 249, 250, 251, 252, 253, 254, 255, 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17]
+Received: [170, 221, 85, 170, 85, 170, 85, 170, 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57, 58, 59, 60, 61, 62, 63, 64, 65, 66, 67, 68, 69, 70, 71, 72, 73, 74, 75, 76, 77, 78, 79, 80, 81, 82, 83, 84, 85, 86, 87, 88, 89, 90, 91, 92, 93, 94, 95, 96, 97, 98, 99, 100, 101, 102, 103, 104, 105, 106, 107, 108, 109, 110, 111, 112, 113, 114, 115, 116, 117, 118, 119, 120, 121, 122, 123, 124, 125, 126, 127, 128, 129, 130, 131, 132, 133, 134, 135, 136, 137, 138, 139, 140, 141, 142, 143, 144, 145, 146, 147, 148, 149, 150, 151, 152, 153, 154, 155, 156, 157, 158, 159, 160, 161, 162, 163, 164, 165, 166, 167, 168, 169, 170, 171, 172, 173, 174, 175, 176, 177, 178, 179, 180, 181, 182, 183, 184, 185, 186, 187, 188, 189, 190, 191, 192, 193, 194, 195, 196, 197, 198, 199, 200, 201, 202, 203, 204, 205, 206, 207, 208, 209, 210, 211, 212, 213, 214, 215, 216, 217, 218, 219, 220, 221, 222, 223, 224, 225, 226, 227, 228, 229, 230, 231, 232, 233, 234, 235, 236, 237, 238, 239, 240, 241, 242, 243, 244, 245, 246, 247, 248, 249, 250, 251, 252, 253, 254, 255, 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57, 58, 59, 60, 61, 62, 63, 64, 65, 66, 67, 68, 69, 70, 71, 72, 73, 74, 75, 76, 77, 78, 79, 80, 81, 82, 83, 84, 85, 86, 87, 88, 89, 90, 91, 92, 93, 94, 95, 96, 97, 98, 99, 100, 101, 102, 103, 104, 105, 106, 107, 108, 109, 110, 111, 112, 113, 114, 115, 116, 117, 118, 119, 120, 121, 122, 123, 124, 125, 126, 127, 128, 129, 130, 131, 132, 133, 134, 135, 136, 137, 138, 139, 140, 141, 142, 143, 144, 145, 146, 147, 148, 149, 150, 151, 152, 153, 154, 155, 156, 157, 158, 159, 160, 161, 162, 163, 164, 165, 166, 167, 168, 169, 170, 171, 172, 173, 174, 175, 176, 177, 178, 179, 180, 181, 182, 183, 184, 185, 186, 187, 188, 189, 190, 191, 192, 193, 194, 195, 196, 197, 198, 199, 200, 201, 202, 203, 204, 205, 206, 207, 208, 209, 210, 211, 212, 213, 214, 215, 216, 217, 218, 219, 220, 221, 222, 223, 224, 225, 226, 227, 228, 229, 230, 231, 232, 233, 234, 235, 236, 237, 238, 239, 240, 241, 242, 243, 244, 245, 246, 247, 248, 249, 250, 251, 252, 253, 254, 255, 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 0, 0, 127, 222]
+ 32118.00ns INFO     cocotb.regression                  test_ethernet_mac_tx.test_back_to_back_incr_payloads_interrupt_disable failed
+                                                        Traceback (most recent call last):
+                                                          File "/code/src/test_ethernet_mac_tx.py", line 219, in test_back_to_back_incr_payloads_interrupt_disable
+                                                            await test_packet(dut, length, 0, 0xDDAABBCCDDEE)
+                                                          File "/code/src/test_ethernet_mac_tx.py", line 101, in test_packet
+                                                            await monitor_output(dut, expected_bytes)
+                                                          File "/code/src/test_ethernet_mac_tx.py", line 57, in monitor_output
+                                                            assert received == expected_bytes, f"AXI output mismatch!"
+                                                        AssertionError: AXI output mismatch!
+                                                        assert [170, 221, 85, 170, 85, 170, ...] == [238, 221, 204, 187, 170, 221, ...]
+ 32118.00ns INFO     cocotb.regression                  running test_ethernet_mac_tx.test_mac_program_only_frames (10/10)
+
+============================================================
+--- Starting TX Test ---
+Length: 64, IRQ: 1, Dest MAC: 0x112233445566
+[CFG WRITE] Addr=0x000007F8, Data=0x00000001
+[CFG WRITE] Addr=0x00000000, Data=0x33445566
+[CFG WRITE] Addr=0x00000004, Data=0xAA551122
+[CFG WRITE] Addr=0x00000008, Data=0xAA55AA55
+[CFG WRITE] Addr=0x0000000C, Data=0x08E6E227
+[CFG WRITE] Addr=0x00000010, Data=0x5AC6797E
+[CFG WRITE] Addr=0x00000014, Data=0x3DD97576
+[CFG WRITE] Addr=0x00000018, Data=0x0D9A408A
+[CFG WRITE] Addr=0x0000001C, Data=0xA7B0B8E8
+[CFG WRITE] Addr=0x00000020, Data=0xFCC33C86
+[CFG WRITE] Addr=0x00000024, Data=0xAC24BB67
+[CFG WRITE] Addr=0x00000028, Data=0x2AE458ED
+[CFG WRITE] Addr=0x0000002C, Data=0xCB886F01
+[CFG WRITE] Addr=0x00000030, Data=0xAD52D1B6
+[CFG WRITE] Addr=0x00000034, Data=0x02A3E9C7
+[CFG WRITE] Addr=0x00000038, Data=0x15822E6C
+[CFG WRITE] Addr=0x0000003C, Data=0x22C307AF
+[CFG WRITE] Addr=0x00000040, Data=0x36C4DAA9
+[CFG WRITE] Addr=0x00000044, Data=0x21BD2331
+[CFG WRITE] Addr=0x00000048, Data=0x9E6E58A1
+[CFG WRITE] Addr=0x000007F4, Data=0x0000004C
+[CFG WRITE] Addr=0x000007FC, Data=0x00000001
+
+AXI Stream Output:
+[AXI] Data=0xAA551122, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0xAA55AA55, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0x08E6E227, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0x5AC6797E, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0x3DD97576, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0x0D9A408A, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0xA7B0B8E8, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0xFCC33C86, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0xAC24BB67, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0x2AE458ED, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0xCB886F01, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0xAD52D1B6, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0x02A3E9C7, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0x15822E6C, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0x22C307AF, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0x36C4DAA9, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0x21BD2331, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0x9E6E58A1, Valid=1, Strb=0xF, Last=0
+[AXI] Data=0x43424140, Valid=1, Strb=0xF, Last=1
+
+AXI output mismatch!
+Expected: [102, 85, 68, 51, 34, 17, 85, 170, 85, 170, 85, 170, 39, 226, 230, 8, 126, 121, 198, 90, 118, 117, 217, 61, 138, 64, 154, 13, 232, 184, 176, 167, 134, 60, 195, 252, 103, 187, 36, 172, 237, 88, 228, 42, 1, 111, 136, 203, 182, 209, 82, 173, 199, 233, 163, 2, 108, 46, 130, 21, 175, 7, 195, 34, 169, 218, 196, 54, 49, 35, 189, 33, 161, 88, 110, 158]
+Received: [34, 17, 85, 170, 85, 170, 85, 170, 39, 226, 230, 8, 126, 121, 198, 90, 118, 117, 217, 61, 138, 64, 154, 13, 232, 184, 176, 167, 134, 60, 195, 252, 103, 187, 36, 172, 237, 88, 228, 42, 1, 111, 136, 203, 182, 209, 82, 173, 199, 233, 163, 2, 108, 46, 130, 21, 175, 7, 195, 34, 169, 218, 196, 54, 49, 35, 189, 33, 161, 88, 110, 158, 64, 65, 66, 67]
+ 32859.00ns INFO     cocotb.regression                  test_ethernet_mac_tx.test_mac_program_only_frames failed
+                                                        Traceback (most recent call last):
+                                                          File "/code/src/test_ethernet_mac_tx.py", line 230, in test_mac_program_only_frames
+                                                            await test_packet(dut, length, 1, dest_mac, payload)
+                                                          File "/code/src/test_ethernet_mac_tx.py", line 101, in test_packet
+                                                            await monitor_output(dut, expected_bytes)
+                                                          File "/code/src/test_ethernet_mac_tx.py", line 57, in monitor_output
+                                                            assert received == expected_bytes, f"AXI output mismatch!"
+                                                        AssertionError: AXI output mismatch!
+                                                        assert [34, 17, 85, 170, 85, 170, ...] == [102, 85, 68, 51, 34, 17, ...]
+ 32859.00ns INFO     cocotb.regression                  ********************************************************************************************************************************
+                                                        ** TEST                                                                    STATUS  SIM TIME (ns)  REAL TIME (s)  RATIO (ns/s) **
+                                                        ********************************************************************************************************************************
+                                                        ** test_ethernet_mac_tx.test_tx_len_12                                      FAIL         440.00           0.01      75526.65  **
+                                                        ** test_ethernet_mac_tx.test_tx_len_64                                      FAIL         741.00           0.01      86769.01  **
+                                                        ** test_ethernet_mac_tx.test_tx_len_1518                                    FAIL       11661.00           0.15      76889.23  **
+                                                        ** test_ethernet_mac_tx.test_tx_len_67                                      FAIL         771.00           0.01      66735.63  **
+                                                        ** test_ethernet_mac_tx.test_tx_len_66                                      FAIL         771.00           0.01      90926.71  **
+                                                        ** test_ethernet_mac_tx.test_tx_len_65                                      FAIL         771.00           0.01      90234.06  **
+                                                        ** test_ethernet_mac_tx.test_back_to_back_incr_payloads                     FAIL        3861.00           0.04      88839.07  **
+                                                        ** test_ethernet_mac_tx.test_back_to_back_random_payloads                   FAIL        8871.00           0.10      85418.43  **
+                                                        ** test_ethernet_mac_tx.test_back_to_back_incr_payloads_interrupt_disable   FAIL        4231.00           0.05      86277.21  **
+                                                        ** test_ethernet_mac_tx.test_mac_program_only_frames                        FAIL         741.00           0.01      87701.88  **
+                                                        ********************************************************************************************************************************
+                                                        ** TESTS=10 PASS=0 FAIL=10 SKIP=0                                                      32859.00           0.41      80526.55  **
+                                                        ********************************************************************************************************************************
+                                                        
+FST info: dumpfile /code/rundir/sim_build/ethernet_mac_tx.fst opened for output.
+FAILED
+
+=================================== FAILURES ===================================
+_________________________________ test_runner __________________________________
+
+    def test_runner():
+        runner = get_runner(sim)
+    
+        runner.build(
+            sources=verilog_sources,
+            hdl_toplevel=toplevel,
+            always=True,
+            clean=True,
+            waves=True,
+            verbose=True,
+            timescale=("1ns", "1ns"),
+            log_file="sim.log"
+        )
+>       runner.test(hdl_toplevel=toplevel, test_module=module,waves=True)
+E       SystemExit: ERROR: Failed 10 of 10 tests.
+
+/src/test_runner.py:27: SystemExit
+=========================== short test summary info ============================
+FAILED ../../src/test_runner.py::test_runner - SystemExit: ERROR: Failed 10 o...
+============================== 1 failed in 0.61s ===============================

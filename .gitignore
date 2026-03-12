@@ -12,3 +12,16 @@ work_*.txt
 /refinement_analysis*
 /failure_analysis*/
 /model_sweep_results*
+
+# Harbor task registry
+!harbor_output/*
+
+# Eval output — track results, ignore bulky agent traces
+!output/**
+output/**/agent/
+output/**/*.cast
+output/**/*.pane
+output/**/trial.log
+
+# Eval launcher logs
+/logs/

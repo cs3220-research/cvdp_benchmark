@@ -1,0 +1,610 @@
+Running service: direct
+============================= test session starts ==============================
+platform linux -- Python 3.9.2, pytest-8.3.2, pluggy-1.5.0
+cachedir: /rundir/harness/.cache
+rootdir: /src
+collected 30 items
+
+../../src/test_runner.py      -.--ns INFO     gpi                                ..mbed/gpi_embed.cpp:79   in set_program_name_in_venv        Did not detect Python virtual environment. Using system-wide Python interpreter
+     -.--ns INFO     gpi                                ../gpi/GpiCommon.cpp:101  in gpi_print_registered_impl       VPI registered
+     0.00ns INFO     cocotb                             Running on Icarus Verilog version 13.0 (devel)
+     0.00ns INFO     cocotb                             Running tests with cocotb v2.0.0.dev0+8d6c1a63 from /usr/local/lib/python3.9/dist-packages/cocotb
+     0.00ns INFO     cocotb                             Seeding Python random module with 1773330794
+     0.00ns INFO     cocotb.regression                  running test_control_fsm.test_control_logic_0 (1/2)
+  2580.00ns INFO     cocotb.regression                  test_control_fsm.test_control_logic_0 passed
+  2580.00ns INFO     cocotb.regression                  running test_control_fsm.test_fsm_states (2/2)
+  5161.00ns INFO     cocotb.regression                  test_control_fsm.test_fsm_states passed
+  5161.00ns INFO     cocotb.regression                  ***********************************************************************************************
+                                                        ** TEST                                   STATUS  SIM TIME (ns)  REAL TIME (s)  RATIO (ns/s) **
+                                                        ***********************************************************************************************
+                                                        ** test_control_fsm.test_control_logic_0   PASS        2580.00           0.05      55626.23  **
+                                                        ** test_control_fsm.test_fsm_states        PASS        2581.00           0.04      61203.89  **
+                                                        ***********************************************************************************************
+                                                        ** TESTS=2 PASS=2 FAIL=0 SKIP=0                        5161.00           0.09      54522.93  **
+                                                        ***********************************************************************************************
+                                                        
+[DEBUG] Running simulation with NBW_WAIT=3
+[DEBUG] Parameters: {'NBW_WAIT': 3}
+.     -.--ns INFO     gpi                                ..mbed/gpi_embed.cpp:79   in set_program_name_in_venv        Did not detect Python virtual environment. Using system-wide Python interpreter
+     -.--ns INFO     gpi                                ../gpi/GpiCommon.cpp:101  in gpi_print_registered_impl       VPI registered
+     0.00ns INFO     cocotb                             Running on Icarus Verilog version 13.0 (devel)
+     0.00ns INFO     cocotb                             Running tests with cocotb v2.0.0.dev0+8d6c1a63 from /usr/local/lib/python3.9/dist-packages/cocotb
+     0.00ns INFO     cocotb                             Seeding Python random module with 1773330794
+     0.00ns INFO     cocotb.regression                  running test_control_fsm.test_control_logic_0 (1/2)
+  2580.00ns INFO     cocotb.regression                  test_control_fsm.test_control_logic_0 passed
+  2580.00ns INFO     cocotb.regression                  running test_control_fsm.test_fsm_states (2/2)
+  5161.00ns INFO     cocotb.regression                  test_control_fsm.test_fsm_states passed
+  5161.00ns INFO     cocotb.regression                  ***********************************************************************************************
+                                                        ** TEST                                   STATUS  SIM TIME (ns)  REAL TIME (s)  RATIO (ns/s) **
+                                                        ***********************************************************************************************
+                                                        ** test_control_fsm.test_control_logic_0   PASS        2580.00           0.04      57665.03  **
+                                                        ** test_control_fsm.test_fsm_states        PASS        2581.00           0.05      55072.26  **
+                                                        ***********************************************************************************************
+                                                        ** TESTS=2 PASS=2 FAIL=0 SKIP=0                        5161.00           0.10      52840.51  **
+                                                        ***********************************************************************************************
+                                                        
+[DEBUG] Running simulation with NBW_WAIT=5
+[DEBUG] Parameters: {'NBW_WAIT': 5}
+.     -.--ns INFO     gpi                                ..mbed/gpi_embed.cpp:79   in set_program_name_in_venv        Did not detect Python virtual environment. Using system-wide Python interpreter
+     -.--ns INFO     gpi                                ../gpi/GpiCommon.cpp:101  in gpi_print_registered_impl       VPI registered
+     0.00ns INFO     cocotb                             Running on Icarus Verilog version 13.0 (devel)
+     0.00ns INFO     cocotb                             Running tests with cocotb v2.0.0.dev0+8d6c1a63 from /usr/local/lib/python3.9/dist-packages/cocotb
+     0.00ns INFO     cocotb                             Seeding Python random module with 1773330795
+     0.00ns INFO     cocotb.regression                  running test_control_fsm.test_control_logic_0 (1/2)
+  2580.00ns INFO     cocotb.regression                  test_control_fsm.test_control_logic_0 passed
+  2580.00ns INFO     cocotb.regression                  running test_control_fsm.test_fsm_states (2/2)
+  5161.00ns INFO     cocotb.regression                  test_control_fsm.test_fsm_states passed
+  5161.00ns INFO     cocotb.regression                  ***********************************************************************************************
+                                                        ** TEST                                   STATUS  SIM TIME (ns)  REAL TIME (s)  RATIO (ns/s) **
+                                                        ***********************************************************************************************
+                                                        ** test_control_fsm.test_control_logic_0   PASS        2580.00           0.05      51478.30  **
+                                                        ** test_control_fsm.test_fsm_states        PASS        2581.00           0.05      55771.07  **
+                                                        ***********************************************************************************************
+                                                        ** TESTS=2 PASS=2 FAIL=0 SKIP=0                        5161.00           0.11      48446.04  **
+                                                        ***********************************************************************************************
+                                                        
+[DEBUG] Running simulation with NBW_WAIT=4
+[DEBUG] Parameters: {'NBW_WAIT': 4}
+.     -.--ns INFO     gpi                                ..mbed/gpi_embed.cpp:79   in set_program_name_in_venv        Did not detect Python virtual environment. Using system-wide Python interpreter
+     -.--ns INFO     gpi                                ../gpi/GpiCommon.cpp:101  in gpi_print_registered_impl       VPI registered
+     0.00ns INFO     cocotb                             Running on Icarus Verilog version 13.0 (devel)
+     0.00ns INFO     cocotb                             Running tests with cocotb v2.0.0.dev0+8d6c1a63 from /usr/local/lib/python3.9/dist-packages/cocotb
+     0.00ns INFO     cocotb                             Seeding Python random module with 1773330795
+     0.00ns INFO     cocotb.regression                  running test_control_fsm.test_control_logic_0 (1/2)
+  2580.00ns INFO     cocotb.regression                  test_control_fsm.test_control_logic_0 passed
+  2580.00ns INFO     cocotb.regression                  running test_control_fsm.test_fsm_states (2/2)
+  5161.00ns INFO     cocotb.regression                  test_control_fsm.test_fsm_states passed
+  5161.00ns INFO     cocotb.regression                  ***********************************************************************************************
+                                                        ** TEST                                   STATUS  SIM TIME (ns)  REAL TIME (s)  RATIO (ns/s) **
+                                                        ***********************************************************************************************
+                                                        ** test_control_fsm.test_control_logic_0   PASS        2580.00           0.05      49969.77  **
+                                                        ** test_control_fsm.test_fsm_states        PASS        2581.00           0.05      51690.05  **
+                                                        ***********************************************************************************************
+                                                        ** TESTS=2 PASS=2 FAIL=0 SKIP=0                        5161.00           0.11      47438.29  **
+                                                        ***********************************************************************************************
+                                                        
+[DEBUG] Running simulation with NBW_WAIT=7
+[DEBUG] Parameters: {'NBW_WAIT': 7}
+.     -.--ns INFO     gpi                                ..mbed/gpi_embed.cpp:79   in set_program_name_in_venv        Did not detect Python virtual environment. Using system-wide Python interpreter
+     -.--ns INFO     gpi                                ../gpi/GpiCommon.cpp:101  in gpi_print_registered_impl       VPI registered
+     0.00ns INFO     cocotb                             Running on Icarus Verilog version 13.0 (devel)
+     0.00ns INFO     cocotb                             Running tests with cocotb v2.0.0.dev0+8d6c1a63 from /usr/local/lib/python3.9/dist-packages/cocotb
+     0.00ns INFO     cocotb                             Seeding Python random module with 1773330795
+     0.00ns INFO     cocotb.regression                  running test_control_fsm.test_control_logic_0 (1/2)
+  2580.00ns INFO     cocotb.regression                  test_control_fsm.test_control_logic_0 passed
+  2580.00ns INFO     cocotb.regression                  running test_control_fsm.test_fsm_states (2/2)
+  5161.00ns INFO     cocotb.regression                  test_control_fsm.test_fsm_states passed
+  5161.00ns INFO     cocotb.regression                  ***********************************************************************************************
+                                                        ** TEST                                   STATUS  SIM TIME (ns)  REAL TIME (s)  RATIO (ns/s) **
+                                                        ***********************************************************************************************
+                                                        ** test_control_fsm.test_control_logic_0   PASS        2580.00           0.04      57918.11  **
+                                                        ** test_control_fsm.test_fsm_states        PASS        2581.00           0.04      63553.05  **
+                                                        ***********************************************************************************************
+                                                        ** TESTS=2 PASS=2 FAIL=0 SKIP=0                        5161.00           0.09      56582.74  **
+                                                        ***********************************************************************************************
+                                                        
+[DEBUG] Running simulation with NBW_WAIT=8
+[DEBUG] Parameters: {'NBW_WAIT': 8}
+.     -.--ns INFO     gpi                                ..mbed/gpi_embed.cpp:79   in set_program_name_in_venv        Did not detect Python virtual environment. Using system-wide Python interpreter
+     -.--ns INFO     gpi                                ../gpi/GpiCommon.cpp:101  in gpi_print_registered_impl       VPI registered
+     0.00ns INFO     cocotb                             Running on Icarus Verilog version 13.0 (devel)
+     0.00ns INFO     cocotb                             Running tests with cocotb v2.0.0.dev0+8d6c1a63 from /usr/local/lib/python3.9/dist-packages/cocotb
+     0.00ns INFO     cocotb                             Seeding Python random module with 1773330796
+     0.00ns INFO     cocotb.regression                  running test_control_fsm.test_control_logic_0 (1/2)
+  2580.00ns INFO     cocotb.regression                  test_control_fsm.test_control_logic_0 passed
+  2580.00ns INFO     cocotb.regression                  running test_control_fsm.test_fsm_states (2/2)
+  5161.00ns INFO     cocotb.regression                  test_control_fsm.test_fsm_states passed
+  5161.00ns INFO     cocotb.regression                  ***********************************************************************************************
+                                                        ** TEST                                   STATUS  SIM TIME (ns)  REAL TIME (s)  RATIO (ns/s) **
+                                                        ***********************************************************************************************
+                                                        ** test_control_fsm.test_control_logic_0   PASS        2580.00           0.04      58831.90  **
+                                                        ** test_control_fsm.test_fsm_states        PASS        2581.00           0.04      63767.55  **
+                                                        ***********************************************************************************************
+                                                        ** TESTS=2 PASS=2 FAIL=0 SKIP=0                        5161.00           0.09      57050.25  **
+                                                        ***********************************************************************************************
+                                                        
+[DEBUG] Running simulation with NBW_WAIT=7
+[DEBUG] Parameters: {'NBW_WAIT': 7}
+.     -.--ns INFO     gpi                                ..mbed/gpi_embed.cpp:79   in set_program_name_in_venv        Did not detect Python virtual environment. Using system-wide Python interpreter
+     -.--ns INFO     gpi                                ../gpi/GpiCommon.cpp:101  in gpi_print_registered_impl       VPI registered
+     0.00ns INFO     cocotb                             Running on Icarus Verilog version 13.0 (devel)
+     0.00ns INFO     cocotb                             Running tests with cocotb v2.0.0.dev0+8d6c1a63 from /usr/local/lib/python3.9/dist-packages/cocotb
+     0.00ns INFO     cocotb                             Seeding Python random module with 1773330796
+     0.00ns INFO     cocotb.regression                  running test_control_fsm.test_control_logic_0 (1/2)
+  2580.00ns INFO     cocotb.regression                  test_control_fsm.test_control_logic_0 passed
+  2580.00ns INFO     cocotb.regression                  running test_control_fsm.test_fsm_states (2/2)
+  5161.00ns INFO     cocotb.regression                  test_control_fsm.test_fsm_states passed
+  5161.00ns INFO     cocotb.regression                  ***********************************************************************************************
+                                                        ** TEST                                   STATUS  SIM TIME (ns)  REAL TIME (s)  RATIO (ns/s) **
+                                                        ***********************************************************************************************
+                                                        ** test_control_fsm.test_control_logic_0   PASS        2580.00           0.04      57903.86  **
+                                                        ** test_control_fsm.test_fsm_states        PASS        2581.00           0.04      57554.89  **
+                                                        ***********************************************************************************************
+                                                        ** TESTS=2 PASS=2 FAIL=0 SKIP=0                        5161.00           0.10      54093.75  **
+                                                        ***********************************************************************************************
+                                                        
+[DEBUG] Running simulation with NBW_WAIT=3
+[DEBUG] Parameters: {'NBW_WAIT': 3}
+.     -.--ns INFO     gpi                                ..mbed/gpi_embed.cpp:79   in set_program_name_in_venv        Did not detect Python virtual environment. Using system-wide Python interpreter
+     -.--ns INFO     gpi                                ../gpi/GpiCommon.cpp:101  in gpi_print_registered_impl       VPI registered
+     0.00ns INFO     cocotb                             Running on Icarus Verilog version 13.0 (devel)
+     0.00ns INFO     cocotb                             Running tests with cocotb v2.0.0.dev0+8d6c1a63 from /usr/local/lib/python3.9/dist-packages/cocotb
+     0.00ns INFO     cocotb                             Seeding Python random module with 1773330796
+     0.00ns INFO     cocotb.regression                  running test_control_fsm.test_control_logic_0 (1/2)
+  2580.00ns INFO     cocotb.regression                  test_control_fsm.test_control_logic_0 passed
+  2580.00ns INFO     cocotb.regression                  running test_control_fsm.test_fsm_states (2/2)
+  5161.00ns INFO     cocotb.regression                  test_control_fsm.test_fsm_states passed
+  5161.00ns INFO     cocotb.regression                  ***********************************************************************************************
+                                                        ** TEST                                   STATUS  SIM TIME (ns)  REAL TIME (s)  RATIO (ns/s) **
+                                                        ***********************************************************************************************
+                                                        ** test_control_fsm.test_control_logic_0   PASS        2580.00           0.04      57856.80  **
+                                                        ** test_control_fsm.test_fsm_states        PASS        2581.00           0.05      54524.16  **
+                                                        ***********************************************************************************************
+                                                        ** TESTS=2 PASS=2 FAIL=0 SKIP=0                        5161.00           0.10      52641.85  **
+                                                        ***********************************************************************************************
+                                                        
+[DEBUG] Running simulation with NBW_WAIT=5
+[DEBUG] Parameters: {'NBW_WAIT': 5}
+.     -.--ns INFO     gpi                                ..mbed/gpi_embed.cpp:79   in set_program_name_in_venv        Did not detect Python virtual environment. Using system-wide Python interpreter
+     -.--ns INFO     gpi                                ../gpi/GpiCommon.cpp:101  in gpi_print_registered_impl       VPI registered
+     0.00ns INFO     cocotb                             Running on Icarus Verilog version 13.0 (devel)
+     0.00ns INFO     cocotb                             Running tests with cocotb v2.0.0.dev0+8d6c1a63 from /usr/local/lib/python3.9/dist-packages/cocotb
+     0.00ns INFO     cocotb                             Seeding Python random module with 1773330796
+     0.00ns INFO     cocotb.regression                  running test_control_fsm.test_control_logic_0 (1/2)
+  2580.00ns INFO     cocotb.regression                  test_control_fsm.test_control_logic_0 passed
+  2580.00ns INFO     cocotb.regression                  running test_control_fsm.test_fsm_states (2/2)
+  5161.00ns INFO     cocotb.regression                  test_control_fsm.test_fsm_states passed
+  5161.00ns INFO     cocotb.regression                  ***********************************************************************************************
+                                                        ** TEST                                   STATUS  SIM TIME (ns)  REAL TIME (s)  RATIO (ns/s) **
+                                                        ***********************************************************************************************
+                                                        ** test_control_fsm.test_control_logic_0   PASS        2580.00           0.05      54375.13  **
+                                                        ** test_control_fsm.test_fsm_states        PASS        2581.00           0.04      61151.68  **
+                                                        ***********************************************************************************************
+                                                        ** TESTS=2 PASS=2 FAIL=0 SKIP=0                        5161.00           0.10      53800.93  **
+                                                        ***********************************************************************************************
+                                                        
+[DEBUG] Running simulation with NBW_WAIT=4
+[DEBUG] Parameters: {'NBW_WAIT': 4}
+.     -.--ns INFO     gpi                                ..mbed/gpi_embed.cpp:79   in set_program_name_in_venv        Did not detect Python virtual environment. Using system-wide Python interpreter
+     -.--ns INFO     gpi                                ../gpi/GpiCommon.cpp:101  in gpi_print_registered_impl       VPI registered
+     0.00ns INFO     cocotb                             Running on Icarus Verilog version 13.0 (devel)
+     0.00ns INFO     cocotb                             Running tests with cocotb v2.0.0.dev0+8d6c1a63 from /usr/local/lib/python3.9/dist-packages/cocotb
+     0.00ns INFO     cocotb                             Seeding Python random module with 1773330797
+     0.00ns INFO     cocotb.regression                  running test_control_fsm.test_control_logic_0 (1/2)
+  2580.00ns INFO     cocotb.regression                  test_control_fsm.test_control_logic_0 passed
+  2580.00ns INFO     cocotb.regression                  running test_control_fsm.test_fsm_states (2/2)
+  5161.00ns INFO     cocotb.regression                  test_control_fsm.test_fsm_states passed
+  5161.00ns INFO     cocotb.regression                  ***********************************************************************************************
+                                                        ** TEST                                   STATUS  SIM TIME (ns)  REAL TIME (s)  RATIO (ns/s) **
+                                                        ***********************************************************************************************
+                                                        ** test_control_fsm.test_control_logic_0   PASS        2580.00           0.05      52823.18  **
+                                                        ** test_control_fsm.test_fsm_states        PASS        2581.00           0.05      49968.38  **
+                                                        ***********************************************************************************************
+                                                        ** TESTS=2 PASS=2 FAIL=0 SKIP=0                        5161.00           0.11      48082.53  **
+                                                        ***********************************************************************************************
+                                                        
+[DEBUG] Running simulation with NBW_WAIT=7
+[DEBUG] Parameters: {'NBW_WAIT': 7}
+.     -.--ns INFO     gpi                                ..mbed/gpi_embed.cpp:79   in set_program_name_in_venv        Did not detect Python virtual environment. Using system-wide Python interpreter
+     -.--ns INFO     gpi                                ../gpi/GpiCommon.cpp:101  in gpi_print_registered_impl       VPI registered
+     0.00ns INFO     cocotb                             Running on Icarus Verilog version 13.0 (devel)
+     0.00ns INFO     cocotb                             Running tests with cocotb v2.0.0.dev0+8d6c1a63 from /usr/local/lib/python3.9/dist-packages/cocotb
+     0.00ns INFO     cocotb                             Seeding Python random module with 1773330797
+     0.00ns INFO     cocotb.regression                  running test_control_fsm.test_control_logic_0 (1/2)
+  2580.00ns INFO     cocotb.regression                  test_control_fsm.test_control_logic_0 passed
+  2580.00ns INFO     cocotb.regression                  running test_control_fsm.test_fsm_states (2/2)
+  5161.00ns INFO     cocotb.regression                  test_control_fsm.test_fsm_states passed
+  5161.00ns INFO     cocotb.regression                  ***********************************************************************************************
+                                                        ** TEST                                   STATUS  SIM TIME (ns)  REAL TIME (s)  RATIO (ns/s) **
+                                                        ***********************************************************************************************
+                                                        ** test_control_fsm.test_control_logic_0   PASS        2580.00           0.05      56950.34  **
+                                                        ** test_control_fsm.test_fsm_states        PASS        2581.00           0.04      63602.71  **
+                                                        ***********************************************************************************************
+                                                        ** TESTS=2 PASS=2 FAIL=0 SKIP=0                        5161.00           0.09      55968.73  **
+                                                        ***********************************************************************************************
+                                                        
+[DEBUG] Running simulation with NBW_WAIT=8
+[DEBUG] Parameters: {'NBW_WAIT': 8}
+.     -.--ns INFO     gpi                                ..mbed/gpi_embed.cpp:79   in set_program_name_in_venv        Did not detect Python virtual environment. Using system-wide Python interpreter
+     -.--ns INFO     gpi                                ../gpi/GpiCommon.cpp:101  in gpi_print_registered_impl       VPI registered
+     0.00ns INFO     cocotb                             Running on Icarus Verilog version 13.0 (devel)
+     0.00ns INFO     cocotb                             Running tests with cocotb v2.0.0.dev0+8d6c1a63 from /usr/local/lib/python3.9/dist-packages/cocotb
+     0.00ns INFO     cocotb                             Seeding Python random module with 1773330797
+     0.00ns INFO     cocotb.regression                  running test_control_fsm.test_control_logic_0 (1/2)
+  2580.00ns INFO     cocotb.regression                  test_control_fsm.test_control_logic_0 passed
+  2580.00ns INFO     cocotb.regression                  running test_control_fsm.test_fsm_states (2/2)
+  5161.00ns INFO     cocotb.regression                  test_control_fsm.test_fsm_states passed
+  5161.00ns INFO     cocotb.regression                  ***********************************************************************************************
+                                                        ** TEST                                   STATUS  SIM TIME (ns)  REAL TIME (s)  RATIO (ns/s) **
+                                                        ***********************************************************************************************
+                                                        ** test_control_fsm.test_control_logic_0   PASS        2580.00           0.05      49856.04  **
+                                                        ** test_control_fsm.test_fsm_states        PASS        2581.00           0.04      58988.11  **
+                                                        ***********************************************************************************************
+                                                        ** TESTS=2 PASS=2 FAIL=0 SKIP=0                        5161.00           0.10      50764.40  **
+                                                        ***********************************************************************************************
+                                                        
+[DEBUG] Running simulation with NBW_WAIT=7
+[DEBUG] Parameters: {'NBW_WAIT': 7}
+.     -.--ns INFO     gpi                                ..mbed/gpi_embed.cpp:79   in set_program_name_in_venv        Did not detect Python virtual environment. Using system-wide Python interpreter
+     -.--ns INFO     gpi                                ../gpi/GpiCommon.cpp:101  in gpi_print_registered_impl       VPI registered
+     0.00ns INFO     cocotb                             Running on Icarus Verilog version 13.0 (devel)
+     0.00ns INFO     cocotb                             Running tests with cocotb v2.0.0.dev0+8d6c1a63 from /usr/local/lib/python3.9/dist-packages/cocotb
+     0.00ns INFO     cocotb                             Seeding Python random module with 1773330797
+     0.00ns INFO     cocotb.regression                  running test_control_fsm.test_control_logic_0 (1/2)
+  2580.00ns INFO     cocotb.regression                  test_control_fsm.test_control_logic_0 passed
+  2580.00ns INFO     cocotb.regression                  running test_control_fsm.test_fsm_states (2/2)
+  5161.00ns INFO     cocotb.regression                  test_control_fsm.test_fsm_states passed
+  5161.00ns INFO     cocotb.regression                  ***********************************************************************************************
+                                                        ** TEST                                   STATUS  SIM TIME (ns)  REAL TIME (s)  RATIO (ns/s) **
+                                                        ***********************************************************************************************
+                                                        ** test_control_fsm.test_control_logic_0   PASS        2580.00           0.04      57813.22  **
+                                                        ** test_control_fsm.test_fsm_states        PASS        2581.00           0.04      61258.61  **
+                                                        ***********************************************************************************************
+                                                        ** TESTS=2 PASS=2 FAIL=0 SKIP=0                        5161.00           0.09      55627.72  **
+                                                        ***********************************************************************************************
+                                                        
+[DEBUG] Running simulation with NBW_WAIT=3
+[DEBUG] Parameters: {'NBW_WAIT': 3}
+.     -.--ns INFO     gpi                                ..mbed/gpi_embed.cpp:79   in set_program_name_in_venv        Did not detect Python virtual environment. Using system-wide Python interpreter
+     -.--ns INFO     gpi                                ../gpi/GpiCommon.cpp:101  in gpi_print_registered_impl       VPI registered
+     0.00ns INFO     cocotb                             Running on Icarus Verilog version 13.0 (devel)
+     0.00ns INFO     cocotb                             Running tests with cocotb v2.0.0.dev0+8d6c1a63 from /usr/local/lib/python3.9/dist-packages/cocotb
+     0.00ns INFO     cocotb                             Seeding Python random module with 1773330798
+     0.00ns INFO     cocotb.regression                  running test_control_fsm.test_control_logic_0 (1/2)
+  2580.00ns INFO     cocotb.regression                  test_control_fsm.test_control_logic_0 passed
+  2580.00ns INFO     cocotb.regression                  running test_control_fsm.test_fsm_states (2/2)
+  5161.00ns INFO     cocotb.regression                  test_control_fsm.test_fsm_states passed
+  5161.00ns INFO     cocotb.regression                  ***********************************************************************************************
+                                                        ** TEST                                   STATUS  SIM TIME (ns)  REAL TIME (s)  RATIO (ns/s) **
+                                                        ***********************************************************************************************
+                                                        ** test_control_fsm.test_control_logic_0   PASS        2580.00           0.05      54052.20  **
+                                                        ** test_control_fsm.test_fsm_states        PASS        2581.00           0.05      50947.84  **
+                                                        ***********************************************************************************************
+                                                        ** TESTS=2 PASS=2 FAIL=0 SKIP=0                        5161.00           0.10      49248.21  **
+                                                        ***********************************************************************************************
+                                                        
+[DEBUG] Running simulation with NBW_WAIT=5
+[DEBUG] Parameters: {'NBW_WAIT': 5}
+.     -.--ns INFO     gpi                                ..mbed/gpi_embed.cpp:79   in set_program_name_in_venv        Did not detect Python virtual environment. Using system-wide Python interpreter
+     -.--ns INFO     gpi                                ../gpi/GpiCommon.cpp:101  in gpi_print_registered_impl       VPI registered
+     0.00ns INFO     cocotb                             Running on Icarus Verilog version 13.0 (devel)
+     0.00ns INFO     cocotb                             Running tests with cocotb v2.0.0.dev0+8d6c1a63 from /usr/local/lib/python3.9/dist-packages/cocotb
+     0.00ns INFO     cocotb                             Seeding Python random module with 1773330798
+     0.00ns INFO     cocotb.regression                  running test_control_fsm.test_control_logic_0 (1/2)
+  2580.00ns INFO     cocotb.regression                  test_control_fsm.test_control_logic_0 passed
+  2580.00ns INFO     cocotb.regression                  running test_control_fsm.test_fsm_states (2/2)
+  5161.00ns INFO     cocotb.regression                  test_control_fsm.test_fsm_states passed
+  5161.00ns INFO     cocotb.regression                  ***********************************************************************************************
+                                                        ** TEST                                   STATUS  SIM TIME (ns)  REAL TIME (s)  RATIO (ns/s) **
+                                                        ***********************************************************************************************
+                                                        ** test_control_fsm.test_control_logic_0   PASS        2580.00           0.05      55732.23  **
+                                                        ** test_control_fsm.test_fsm_states        PASS        2581.00           0.04      61913.41  **
+                                                        ***********************************************************************************************
+                                                        ** TESTS=2 PASS=2 FAIL=0 SKIP=0                        5161.00           0.09      54840.63  **
+                                                        ***********************************************************************************************
+                                                        
+[DEBUG] Running simulation with NBW_WAIT=4
+[DEBUG] Parameters: {'NBW_WAIT': 4}
+.     -.--ns INFO     gpi                                ..mbed/gpi_embed.cpp:79   in set_program_name_in_venv        Did not detect Python virtual environment. Using system-wide Python interpreter
+     -.--ns INFO     gpi                                ../gpi/GpiCommon.cpp:101  in gpi_print_registered_impl       VPI registered
+     0.00ns INFO     cocotb                             Running on Icarus Verilog version 13.0 (devel)
+     0.00ns INFO     cocotb                             Running tests with cocotb v2.0.0.dev0+8d6c1a63 from /usr/local/lib/python3.9/dist-packages/cocotb
+     0.00ns INFO     cocotb                             Seeding Python random module with 1773330798
+     0.00ns INFO     cocotb.regression                  running test_control_fsm.test_control_logic_0 (1/2)
+  2580.00ns INFO     cocotb.regression                  test_control_fsm.test_control_logic_0 passed
+  2580.00ns INFO     cocotb.regression                  running test_control_fsm.test_fsm_states (2/2)
+  5161.00ns INFO     cocotb.regression                  test_control_fsm.test_fsm_states passed
+  5161.00ns INFO     cocotb.regression                  ***********************************************************************************************
+                                                        ** TEST                                   STATUS  SIM TIME (ns)  REAL TIME (s)  RATIO (ns/s) **
+                                                        ***********************************************************************************************
+                                                        ** test_control_fsm.test_control_logic_0   PASS        2580.00           0.05      56328.40  **
+                                                        ** test_control_fsm.test_fsm_states        PASS        2581.00           0.04      60225.98  **
+                                                        ***********************************************************************************************
+                                                        ** TESTS=2 PASS=2 FAIL=0 SKIP=0                        5161.00           0.10      53755.77  **
+                                                        ***********************************************************************************************
+                                                        
+[DEBUG] Running simulation with NBW_WAIT=7
+[DEBUG] Parameters: {'NBW_WAIT': 7}
+.     -.--ns INFO     gpi                                ..mbed/gpi_embed.cpp:79   in set_program_name_in_venv        Did not detect Python virtual environment. Using system-wide Python interpreter
+     -.--ns INFO     gpi                                ../gpi/GpiCommon.cpp:101  in gpi_print_registered_impl       VPI registered
+     0.00ns INFO     cocotb                             Running on Icarus Verilog version 13.0 (devel)
+     0.00ns INFO     cocotb                             Running tests with cocotb v2.0.0.dev0+8d6c1a63 from /usr/local/lib/python3.9/dist-packages/cocotb
+     0.00ns INFO     cocotb                             Seeding Python random module with 1773330798
+     0.00ns INFO     cocotb.regression                  running test_control_fsm.test_control_logic_0 (1/2)
+  2580.00ns INFO     cocotb.regression                  test_control_fsm.test_control_logic_0 passed
+  2580.00ns INFO     cocotb.regression                  running test_control_fsm.test_fsm_states (2/2)
+  5161.00ns INFO     cocotb.regression                  test_control_fsm.test_fsm_states passed
+  5161.00ns INFO     cocotb.regression                  ***********************************************************************************************
+                                                        ** TEST                                   STATUS  SIM TIME (ns)  REAL TIME (s)  RATIO (ns/s) **
+                                                        ***********************************************************************************************
+                                                        ** test_control_fsm.test_control_logic_0   PASS        2580.00           0.05      55817.03  **
+                                                        ** test_control_fsm.test_fsm_states        PASS        2581.00           0.04      60162.05  **
+                                                        ***********************************************************************************************
+                                                        ** TESTS=2 PASS=2 FAIL=0 SKIP=0                        5161.00           0.10      54141.91  **
+                                                        ***********************************************************************************************
+                                                        
+[DEBUG] Running simulation with NBW_WAIT=8
+[DEBUG] Parameters: {'NBW_WAIT': 8}
+.     -.--ns INFO     gpi                                ..mbed/gpi_embed.cpp:79   in set_program_name_in_venv        Did not detect Python virtual environment. Using system-wide Python interpreter
+     -.--ns INFO     gpi                                ../gpi/GpiCommon.cpp:101  in gpi_print_registered_impl       VPI registered
+     0.00ns INFO     cocotb                             Running on Icarus Verilog version 13.0 (devel)
+     0.00ns INFO     cocotb                             Running tests with cocotb v2.0.0.dev0+8d6c1a63 from /usr/local/lib/python3.9/dist-packages/cocotb
+     0.00ns INFO     cocotb                             Seeding Python random module with 1773330799
+     0.00ns INFO     cocotb.regression                  running test_control_fsm.test_control_logic_0 (1/2)
+  2580.00ns INFO     cocotb.regression                  test_control_fsm.test_control_logic_0 passed
+  2580.00ns INFO     cocotb.regression                  running test_control_fsm.test_fsm_states (2/2)
+  5161.00ns INFO     cocotb.regression                  test_control_fsm.test_fsm_states passed
+  5161.00ns INFO     cocotb.regression                  ***********************************************************************************************
+                                                        ** TEST                                   STATUS  SIM TIME (ns)  REAL TIME (s)  RATIO (ns/s) **
+                                                        ***********************************************************************************************
+                                                        ** test_control_fsm.test_control_logic_0   PASS        2580.00           0.05      57150.35  **
+                                                        ** test_control_fsm.test_fsm_states        PASS        2581.00           0.04      63139.38  **
+                                                        ***********************************************************************************************
+                                                        ** TESTS=2 PASS=2 FAIL=0 SKIP=0                        5161.00           0.09      55937.93  **
+                                                        ***********************************************************************************************
+                                                        
+[DEBUG] Running simulation with NBW_WAIT=7
+[DEBUG] Parameters: {'NBW_WAIT': 7}
+.     -.--ns INFO     gpi                                ..mbed/gpi_embed.cpp:79   in set_program_name_in_venv        Did not detect Python virtual environment. Using system-wide Python interpreter
+     -.--ns INFO     gpi                                ../gpi/GpiCommon.cpp:101  in gpi_print_registered_impl       VPI registered
+     0.00ns INFO     cocotb                             Running on Icarus Verilog version 13.0 (devel)
+     0.00ns INFO     cocotb                             Running tests with cocotb v2.0.0.dev0+8d6c1a63 from /usr/local/lib/python3.9/dist-packages/cocotb
+     0.00ns INFO     cocotb                             Seeding Python random module with 1773330799
+     0.00ns INFO     cocotb.regression                  running test_control_fsm.test_control_logic_0 (1/2)
+  2580.00ns INFO     cocotb.regression                  test_control_fsm.test_control_logic_0 passed
+  2580.00ns INFO     cocotb.regression                  running test_control_fsm.test_fsm_states (2/2)
+  5161.00ns INFO     cocotb.regression                  test_control_fsm.test_fsm_states passed
+  5161.00ns INFO     cocotb.regression                  ***********************************************************************************************
+                                                        ** TEST                                   STATUS  SIM TIME (ns)  REAL TIME (s)  RATIO (ns/s) **
+                                                        ***********************************************************************************************
+                                                        ** test_control_fsm.test_control_logic_0   PASS        2580.00           0.04      57549.72  **
+                                                        ** test_control_fsm.test_fsm_states        PASS        2581.00           0.04      63267.79  **
+                                                        ***********************************************************************************************
+                                                        ** TESTS=2 PASS=2 FAIL=0 SKIP=0                        5161.00           0.09      56251.47  **
+                                                        ***********************************************************************************************
+                                                        
+[DEBUG] Running simulation with NBW_WAIT=3
+[DEBUG] Parameters: {'NBW_WAIT': 3}
+.     -.--ns INFO     gpi                                ..mbed/gpi_embed.cpp:79   in set_program_name_in_venv        Did not detect Python virtual environment. Using system-wide Python interpreter
+     -.--ns INFO     gpi                                ../gpi/GpiCommon.cpp:101  in gpi_print_registered_impl       VPI registered
+     0.00ns INFO     cocotb                             Running on Icarus Verilog version 13.0 (devel)
+     0.00ns INFO     cocotb                             Running tests with cocotb v2.0.0.dev0+8d6c1a63 from /usr/local/lib/python3.9/dist-packages/cocotb
+     0.00ns INFO     cocotb                             Seeding Python random module with 1773330799
+     0.00ns INFO     cocotb.regression                  running test_control_fsm.test_control_logic_0 (1/2)
+  2580.00ns INFO     cocotb.regression                  test_control_fsm.test_control_logic_0 passed
+  2580.00ns INFO     cocotb.regression                  running test_control_fsm.test_fsm_states (2/2)
+  5161.00ns INFO     cocotb.regression                  test_control_fsm.test_fsm_states passed
+  5161.00ns INFO     cocotb.regression                  ***********************************************************************************************
+                                                        ** TEST                                   STATUS  SIM TIME (ns)  REAL TIME (s)  RATIO (ns/s) **
+                                                        ***********************************************************************************************
+                                                        ** test_control_fsm.test_control_logic_0   PASS        2580.00           0.04      59309.77  **
+                                                        ** test_control_fsm.test_fsm_states        PASS        2581.00           0.04      63443.54  **
+                                                        ***********************************************************************************************
+                                                        ** TESTS=2 PASS=2 FAIL=0 SKIP=0                        5161.00           0.09      57214.76  **
+                                                        ***********************************************************************************************
+                                                        
+[DEBUG] Running simulation with NBW_WAIT=5
+[DEBUG] Parameters: {'NBW_WAIT': 5}
+.     -.--ns INFO     gpi                                ..mbed/gpi_embed.cpp:79   in set_program_name_in_venv        Did not detect Python virtual environment. Using system-wide Python interpreter
+     -.--ns INFO     gpi                                ../gpi/GpiCommon.cpp:101  in gpi_print_registered_impl       VPI registered
+     0.00ns INFO     cocotb                             Running on Icarus Verilog version 13.0 (devel)
+     0.00ns INFO     cocotb                             Running tests with cocotb v2.0.0.dev0+8d6c1a63 from /usr/local/lib/python3.9/dist-packages/cocotb
+     0.00ns INFO     cocotb                             Seeding Python random module with 1773330799
+     0.00ns INFO     cocotb.regression                  running test_control_fsm.test_control_logic_0 (1/2)
+  2580.00ns INFO     cocotb.regression                  test_control_fsm.test_control_logic_0 passed
+  2580.00ns INFO     cocotb.regression                  running test_control_fsm.test_fsm_states (2/2)
+  5161.00ns INFO     cocotb.regression                  test_control_fsm.test_fsm_states passed
+  5161.00ns INFO     cocotb.regression                  ***********************************************************************************************
+                                                        ** TEST                                   STATUS  SIM TIME (ns)  REAL TIME (s)  RATIO (ns/s) **
+                                                        ***********************************************************************************************
+                                                        ** test_control_fsm.test_control_logic_0   PASS        2580.00           0.05      56940.75  **
+                                                        ** test_control_fsm.test_fsm_states        PASS        2581.00           0.04      61297.80  **
+                                                        ***********************************************************************************************
+                                                        ** TESTS=2 PASS=2 FAIL=0 SKIP=0                        5161.00           0.09      55154.74  **
+                                                        ***********************************************************************************************
+                                                        
+[DEBUG] Running simulation with NBW_WAIT=4
+[DEBUG] Parameters: {'NBW_WAIT': 4}
+.     -.--ns INFO     gpi                                ..mbed/gpi_embed.cpp:79   in set_program_name_in_venv        Did not detect Python virtual environment. Using system-wide Python interpreter
+     -.--ns INFO     gpi                                ../gpi/GpiCommon.cpp:101  in gpi_print_registered_impl       VPI registered
+     0.00ns INFO     cocotb                             Running on Icarus Verilog version 13.0 (devel)
+     0.00ns INFO     cocotb                             Running tests with cocotb v2.0.0.dev0+8d6c1a63 from /usr/local/lib/python3.9/dist-packages/cocotb
+     0.00ns INFO     cocotb                             Seeding Python random module with 1773330800
+     0.00ns INFO     cocotb.regression                  running test_control_fsm.test_control_logic_0 (1/2)
+  2580.00ns INFO     cocotb.regression                  test_control_fsm.test_control_logic_0 passed
+  2580.00ns INFO     cocotb.regression                  running test_control_fsm.test_fsm_states (2/2)
+  5161.00ns INFO     cocotb.regression                  test_control_fsm.test_fsm_states passed
+  5161.00ns INFO     cocotb.regression                  ***********************************************************************************************
+                                                        ** TEST                                   STATUS  SIM TIME (ns)  REAL TIME (s)  RATIO (ns/s) **
+                                                        ***********************************************************************************************
+                                                        ** test_control_fsm.test_control_logic_0   PASS        2580.00           0.05      54683.71  **
+                                                        ** test_control_fsm.test_fsm_states        PASS        2581.00           0.04      61218.77  **
+                                                        ***********************************************************************************************
+                                                        ** TESTS=2 PASS=2 FAIL=0 SKIP=0                        5161.00           0.10      54058.35  **
+                                                        ***********************************************************************************************
+                                                        
+[DEBUG] Running simulation with NBW_WAIT=7
+[DEBUG] Parameters: {'NBW_WAIT': 7}
+.     -.--ns INFO     gpi                                ..mbed/gpi_embed.cpp:79   in set_program_name_in_venv        Did not detect Python virtual environment. Using system-wide Python interpreter
+     -.--ns INFO     gpi                                ../gpi/GpiCommon.cpp:101  in gpi_print_registered_impl       VPI registered
+     0.00ns INFO     cocotb                             Running on Icarus Verilog version 13.0 (devel)
+     0.00ns INFO     cocotb                             Running tests with cocotb v2.0.0.dev0+8d6c1a63 from /usr/local/lib/python3.9/dist-packages/cocotb
+     0.00ns INFO     cocotb                             Seeding Python random module with 1773330800
+     0.00ns INFO     cocotb.regression                  running test_control_fsm.test_control_logic_0 (1/2)
+  2580.00ns INFO     cocotb.regression                  test_control_fsm.test_control_logic_0 passed
+  2580.00ns INFO     cocotb.regression                  running test_control_fsm.test_fsm_states (2/2)
+  5161.00ns INFO     cocotb.regression                  test_control_fsm.test_fsm_states passed
+  5161.00ns INFO     cocotb.regression                  ***********************************************************************************************
+                                                        ** TEST                                   STATUS  SIM TIME (ns)  REAL TIME (s)  RATIO (ns/s) **
+                                                        ***********************************************************************************************
+                                                        ** test_control_fsm.test_control_logic_0   PASS        2580.00           0.04      59032.49  **
+                                                        ** test_control_fsm.test_fsm_states        PASS        2581.00           0.04      63763.05  **
+                                                        ***********************************************************************************************
+                                                        ** TESTS=2 PASS=2 FAIL=0 SKIP=0                        5161.00           0.09      57209.16  **
+                                                        ***********************************************************************************************
+                                                        
+[DEBUG] Running simulation with NBW_WAIT=8
+[DEBUG] Parameters: {'NBW_WAIT': 8}
+.     -.--ns INFO     gpi                                ..mbed/gpi_embed.cpp:79   in set_program_name_in_venv        Did not detect Python virtual environment. Using system-wide Python interpreter
+     -.--ns INFO     gpi                                ../gpi/GpiCommon.cpp:101  in gpi_print_registered_impl       VPI registered
+     0.00ns INFO     cocotb                             Running on Icarus Verilog version 13.0 (devel)
+     0.00ns INFO     cocotb                             Running tests with cocotb v2.0.0.dev0+8d6c1a63 from /usr/local/lib/python3.9/dist-packages/cocotb
+     0.00ns INFO     cocotb                             Seeding Python random module with 1773330800
+     0.00ns INFO     cocotb.regression                  running test_control_fsm.test_control_logic_0 (1/2)
+  2580.00ns INFO     cocotb.regression                  test_control_fsm.test_control_logic_0 passed
+  2580.00ns INFO     cocotb.regression                  running test_control_fsm.test_fsm_states (2/2)
+  5161.00ns INFO     cocotb.regression                  test_control_fsm.test_fsm_states passed
+  5161.00ns INFO     cocotb.regression                  ***********************************************************************************************
+                                                        ** TEST                                   STATUS  SIM TIME (ns)  REAL TIME (s)  RATIO (ns/s) **
+                                                        ***********************************************************************************************
+                                                        ** test_control_fsm.test_control_logic_0   PASS        2580.00           0.05      50680.04  **
+                                                        ** test_control_fsm.test_fsm_states        PASS        2581.00           0.05      53722.96  **
+                                                        ***********************************************************************************************
+                                                        ** TESTS=2 PASS=2 FAIL=0 SKIP=0                        5161.00           0.11      47866.16  **
+                                                        ***********************************************************************************************
+                                                        
+[DEBUG] Running simulation with NBW_WAIT=7
+[DEBUG] Parameters: {'NBW_WAIT': 7}
+.     -.--ns INFO     gpi                                ..mbed/gpi_embed.cpp:79   in set_program_name_in_venv        Did not detect Python virtual environment. Using system-wide Python interpreter
+     -.--ns INFO     gpi                                ../gpi/GpiCommon.cpp:101  in gpi_print_registered_impl       VPI registered
+     0.00ns INFO     cocotb                             Running on Icarus Verilog version 13.0 (devel)
+     0.00ns INFO     cocotb                             Running tests with cocotb v2.0.0.dev0+8d6c1a63 from /usr/local/lib/python3.9/dist-packages/cocotb
+     0.00ns INFO     cocotb                             Seeding Python random module with 1773330801
+     0.00ns INFO     cocotb.regression                  running test_control_fsm.test_control_logic_0 (1/2)
+  2580.00ns INFO     cocotb.regression                  test_control_fsm.test_control_logic_0 passed
+  2580.00ns INFO     cocotb.regression                  running test_control_fsm.test_fsm_states (2/2)
+  5161.00ns INFO     cocotb.regression                  test_control_fsm.test_fsm_states passed
+  5161.00ns INFO     cocotb.regression                  ***********************************************************************************************
+                                                        ** TEST                                   STATUS  SIM TIME (ns)  REAL TIME (s)  RATIO (ns/s) **
+                                                        ***********************************************************************************************
+                                                        ** test_control_fsm.test_control_logic_0   PASS        2580.00           0.05      51189.00  **
+                                                        ** test_control_fsm.test_fsm_states        PASS        2581.00           0.05      56026.80  **
+                                                        ***********************************************************************************************
+                                                        ** TESTS=2 PASS=2 FAIL=0 SKIP=0                        5161.00           0.10      50340.82  **
+                                                        ***********************************************************************************************
+                                                        
+[DEBUG] Running simulation with NBW_WAIT=3
+[DEBUG] Parameters: {'NBW_WAIT': 3}
+.     -.--ns INFO     gpi                                ..mbed/gpi_embed.cpp:79   in set_program_name_in_venv        Did not detect Python virtual environment. Using system-wide Python interpreter
+     -.--ns INFO     gpi                                ../gpi/GpiCommon.cpp:101  in gpi_print_registered_impl       VPI registered
+     0.00ns INFO     cocotb                             Running on Icarus Verilog version 13.0 (devel)
+     0.00ns INFO     cocotb                             Running tests with cocotb v2.0.0.dev0+8d6c1a63 from /usr/local/lib/python3.9/dist-packages/cocotb
+     0.00ns INFO     cocotb                             Seeding Python random module with 1773330801
+     0.00ns INFO     cocotb.regression                  running test_control_fsm.test_control_logic_0 (1/2)
+  2580.00ns INFO     cocotb.regression                  test_control_fsm.test_control_logic_0 passed
+  2580.00ns INFO     cocotb.regression                  running test_control_fsm.test_fsm_states (2/2)
+  5161.00ns INFO     cocotb.regression                  test_control_fsm.test_fsm_states passed
+  5161.00ns INFO     cocotb.regression                  ***********************************************************************************************
+                                                        ** TEST                                   STATUS  SIM TIME (ns)  REAL TIME (s)  RATIO (ns/s) **
+                                                        ***********************************************************************************************
+                                                        ** test_control_fsm.test_control_logic_0   PASS        2580.00           0.05      56506.05  **
+                                                        ** test_control_fsm.test_fsm_states        PASS        2581.00           0.04      58093.85  **
+                                                        ***********************************************************************************************
+                                                        ** TESTS=2 PASS=2 FAIL=0 SKIP=0                        5161.00           0.10      53467.25  **
+                                                        ***********************************************************************************************
+                                                        
+[DEBUG] Running simulation with NBW_WAIT=5
+[DEBUG] Parameters: {'NBW_WAIT': 5}
+.     -.--ns INFO     gpi                                ..mbed/gpi_embed.cpp:79   in set_program_name_in_venv        Did not detect Python virtual environment. Using system-wide Python interpreter
+     -.--ns INFO     gpi                                ../gpi/GpiCommon.cpp:101  in gpi_print_registered_impl       VPI registered
+     0.00ns INFO     cocotb                             Running on Icarus Verilog version 13.0 (devel)
+     0.00ns INFO     cocotb                             Running tests with cocotb v2.0.0.dev0+8d6c1a63 from /usr/local/lib/python3.9/dist-packages/cocotb
+     0.00ns INFO     cocotb                             Seeding Python random module with 1773330801
+     0.00ns INFO     cocotb.regression                  running test_control_fsm.test_control_logic_0 (1/2)
+  2580.00ns INFO     cocotb.regression                  test_control_fsm.test_control_logic_0 passed
+  2580.00ns INFO     cocotb.regression                  running test_control_fsm.test_fsm_states (2/2)
+  5161.00ns INFO     cocotb.regression                  test_control_fsm.test_fsm_states passed
+  5161.00ns INFO     cocotb.regression                  ***********************************************************************************************
+                                                        ** TEST                                   STATUS  SIM TIME (ns)  REAL TIME (s)  RATIO (ns/s) **
+                                                        ***********************************************************************************************
+                                                        ** test_control_fsm.test_control_logic_0   PASS        2580.00           0.05      51052.56  **
+                                                        ** test_control_fsm.test_fsm_states        PASS        2581.00           0.05      55524.20  **
+                                                        ***********************************************************************************************
+                                                        ** TESTS=2 PASS=2 FAIL=0 SKIP=0                        5161.00           0.10      50019.19  **
+                                                        ***********************************************************************************************
+                                                        
+[DEBUG] Running simulation with NBW_WAIT=4
+[DEBUG] Parameters: {'NBW_WAIT': 4}
+.     -.--ns INFO     gpi                                ..mbed/gpi_embed.cpp:79   in set_program_name_in_venv        Did not detect Python virtual environment. Using system-wide Python interpreter
+     -.--ns INFO     gpi                                ../gpi/GpiCommon.cpp:101  in gpi_print_registered_impl       VPI registered
+     0.00ns INFO     cocotb                             Running on Icarus Verilog version 13.0 (devel)
+     0.00ns INFO     cocotb                             Running tests with cocotb v2.0.0.dev0+8d6c1a63 from /usr/local/lib/python3.9/dist-packages/cocotb
+     0.00ns INFO     cocotb                             Seeding Python random module with 1773330801
+     0.00ns INFO     cocotb.regression                  running test_control_fsm.test_control_logic_0 (1/2)
+  2580.00ns INFO     cocotb.regression                  test_control_fsm.test_control_logic_0 passed
+  2580.00ns INFO     cocotb.regression                  running test_control_fsm.test_fsm_states (2/2)
+  5161.00ns INFO     cocotb.regression                  test_control_fsm.test_fsm_states passed
+  5161.00ns INFO     cocotb.regression                  ***********************************************************************************************
+                                                        ** TEST                                   STATUS  SIM TIME (ns)  REAL TIME (s)  RATIO (ns/s) **
+                                                        ***********************************************************************************************
+                                                        ** test_control_fsm.test_control_logic_0   PASS        2580.00           0.05      55816.17  **
+                                                        ** test_control_fsm.test_fsm_states        PASS        2581.00           0.04      62270.98  **
+                                                        ***********************************************************************************************
+                                                        ** TESTS=2 PASS=2 FAIL=0 SKIP=0                        5161.00           0.09      55031.91  **
+                                                        ***********************************************************************************************
+                                                        
+[DEBUG] Running simulation with NBW_WAIT=7
+[DEBUG] Parameters: {'NBW_WAIT': 7}
+.     -.--ns INFO     gpi                                ..mbed/gpi_embed.cpp:79   in set_program_name_in_venv        Did not detect Python virtual environment. Using system-wide Python interpreter
+     -.--ns INFO     gpi                                ../gpi/GpiCommon.cpp:101  in gpi_print_registered_impl       VPI registered
+     0.00ns INFO     cocotb                             Running on Icarus Verilog version 13.0 (devel)
+     0.00ns INFO     cocotb                             Running tests with cocotb v2.0.0.dev0+8d6c1a63 from /usr/local/lib/python3.9/dist-packages/cocotb
+     0.00ns INFO     cocotb                             Seeding Python random module with 1773330802
+     0.00ns INFO     cocotb.regression                  running test_control_fsm.test_control_logic_0 (1/2)
+  2580.00ns INFO     cocotb.regression                  test_control_fsm.test_control_logic_0 passed
+  2580.00ns INFO     cocotb.regression                  running test_control_fsm.test_fsm_states (2/2)
+  5161.00ns INFO     cocotb.regression                  test_control_fsm.test_fsm_states passed
+  5161.00ns INFO     cocotb.regression                  ***********************************************************************************************
+                                                        ** TEST                                   STATUS  SIM TIME (ns)  REAL TIME (s)  RATIO (ns/s) **
+                                                        ***********************************************************************************************
+                                                        ** test_control_fsm.test_control_logic_0   PASS        2580.00           0.05      52239.48  **
+                                                        ** test_control_fsm.test_fsm_states        PASS        2581.00           0.05      56241.62  **
+                                                        ***********************************************************************************************
+                                                        ** TESTS=2 PASS=2 FAIL=0 SKIP=0                        5161.00           0.10      50910.06  **
+                                                        ***********************************************************************************************
+                                                        
+[DEBUG] Running simulation with NBW_WAIT=8
+[DEBUG] Parameters: {'NBW_WAIT': 8}
+.     -.--ns INFO     gpi                                ..mbed/gpi_embed.cpp:79   in set_program_name_in_venv        Did not detect Python virtual environment. Using system-wide Python interpreter
+     -.--ns INFO     gpi                                ../gpi/GpiCommon.cpp:101  in gpi_print_registered_impl       VPI registered
+     0.00ns INFO     cocotb                             Running on Icarus Verilog version 13.0 (devel)
+     0.00ns INFO     cocotb                             Running tests with cocotb v2.0.0.dev0+8d6c1a63 from /usr/local/lib/python3.9/dist-packages/cocotb
+     0.00ns INFO     cocotb                             Seeding Python random module with 1773330802
+     0.00ns INFO     cocotb.regression                  running test_control_fsm.test_control_logic_0 (1/2)
+  2580.00ns INFO     cocotb.regression                  test_control_fsm.test_control_logic_0 passed
+  2580.00ns INFO     cocotb.regression                  running test_control_fsm.test_fsm_states (2/2)
+  5161.00ns INFO     cocotb.regression                  test_control_fsm.test_fsm_states passed
+  5161.00ns INFO     cocotb.regression                  ***********************************************************************************************
+                                                        ** TEST                                   STATUS  SIM TIME (ns)  REAL TIME (s)  RATIO (ns/s) **
+                                                        ***********************************************************************************************
+                                                        ** test_control_fsm.test_control_logic_0   PASS        2580.00           0.05      52899.62  **
+                                                        ** test_control_fsm.test_fsm_states        PASS        2581.00           0.05      55348.48  **
+                                                        ***********************************************************************************************
+                                                        ** TESTS=2 PASS=2 FAIL=0 SKIP=0                        5161.00           0.10      50858.50  **
+                                                        ***********************************************************************************************
+                                                        
+[DEBUG] Running simulation with NBW_WAIT=7
+[DEBUG] Parameters: {'NBW_WAIT': 7}
+.
+
+============================== 30 passed in 7.97s ==============================

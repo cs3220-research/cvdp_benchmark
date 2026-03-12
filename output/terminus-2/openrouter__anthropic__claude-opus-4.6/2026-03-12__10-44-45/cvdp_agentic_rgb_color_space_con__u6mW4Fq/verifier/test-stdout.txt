@@ -1,0 +1,290 @@
+Running service: direct
+============================= test session starts ==============================
+platform linux -- Python 3.9.2, pytest-8.3.2, pluggy-1.5.0 -- /usr/bin/python3
+cachedir: /code/rundir/.cache
+rootdir: /src
+collecting ... collected 1 item
+
+../../src/test_runner.py::test_runner      -.--ns INFO     gpi                                ..mbed/gpi_embed.cpp:79   in set_program_name_in_venv        Did not detect Python virtual environment. Using system-wide Python interpreter
+     -.--ns INFO     gpi                                ../gpi/GpiCommon.cpp:101  in gpi_print_registered_impl       VPI registered
+     0.00ns INFO     cocotb                             Running on Icarus Verilog version 13.0 (devel)
+     0.00ns INFO     cocotb                             Running tests with cocotb v2.0.0.dev0+8d6c1a63 from /usr/local/lib/python3.9/dist-packages/cocotb
+     0.00ns INFO     cocotb                             Seeding Python random module with 1773332368
+     0.00ns INFO     cocotb.regression                  running test_rgb_color_space_conversion.test_rgb_to_hsv_hsl_cmyk_predefined (1/8)
+                                                            Test predefined RGB inputs and compare HSV outputs with expected values.
+Input RGB: (193, 226,  60) → DUT HSV: (   0.00°,  73.46%,  88.63%) | Ref HSV: (  72.00°,  73.46%,  88.63%)
+  2660.00ns INFO     cocotb.regression                  test_rgb_color_space_conversion.test_rgb_to_hsv_hsl_cmyk_predefined failed
+                                                        Traceback (most recent call last):
+                                                          File "/code/src/test_rgb_color_space_conversion.py", line 270, in test_rgb_to_hsv_hsl_cmyk_predefined
+                                                            await compare_rgb_to_hsv(dut, r, g, b)
+                                                          File "/code/src/test_rgb_color_space_conversion.py", line 135, in compare_rgb_to_hsv
+                                                            assert abs(dut_h_deg - ref_h_deg) <= 0.25, f"Mismatch in H: Expected {ref_h_deg:.2f}°, got {dut_h_deg:.2f}°"
+                                                        AssertionError: Mismatch in H: Expected 72.00°, got 0.00°
+                                                        assert 72.0 <= 0.25
+                                                         +  where 72.0 = abs((0.0 - 72.0))
+  2660.00ns INFO     cocotb.regression                  running test_rgb_color_space_conversion.test_rgb_to_hsv_hsl_cmyk_random (2/8)
+                                                            Test random RGB inputs and compare HSV outputs with expected values.
+Input RGB: ( 16,  47, 120) → DUT HSV: (   0.00°,  86.67%,  47.06%) | Ref HSV: ( 222.00°,  86.67%,  47.06%)
+  5331.00ns INFO     cocotb.regression                  test_rgb_color_space_conversion.test_rgb_to_hsv_hsl_cmyk_random failed
+                                                        Traceback (most recent call last):
+                                                          File "/code/src/test_rgb_color_space_conversion.py", line 290, in test_rgb_to_hsv_hsl_cmyk_random
+                                                            await compare_rgb_to_hsv(dut, random_r, random_g, random_b)
+                                                          File "/code/src/test_rgb_color_space_conversion.py", line 135, in compare_rgb_to_hsv
+                                                            assert abs(dut_h_deg - ref_h_deg) <= 0.25, f"Mismatch in H: Expected {ref_h_deg:.2f}°, got {dut_h_deg:.2f}°"
+                                                        AssertionError: Mismatch in H: Expected 222.00°, got 0.00°
+                                                        assert 222.0 <= 0.25
+                                                         +  where 222.0 = abs((0.0 - 222.0))
+  5331.00ns INFO     cocotb.regression                  running test_rgb_color_space_conversion.test_rgb_to_hsv_hsl_cmyk_random_r_max (3/8)
+                                                            Test random RGB inputs where R is the maximum value.
+Input RGB: (112,  30,   2) → DUT HSV: (   0.00°,  98.22%,  43.92%) | Ref HSV: (  15.25°,  98.22%,  43.92%)
+  8002.00ns INFO     cocotb.regression                  test_rgb_color_space_conversion.test_rgb_to_hsv_hsl_cmyk_random_r_max failed
+                                                        Traceback (most recent call last):
+                                                          File "/code/src/test_rgb_color_space_conversion.py", line 310, in test_rgb_to_hsv_hsl_cmyk_random_r_max
+                                                            await compare_rgb_to_hsv(dut, random_r, random_g, random_b)
+                                                          File "/code/src/test_rgb_color_space_conversion.py", line 135, in compare_rgb_to_hsv
+                                                            assert abs(dut_h_deg - ref_h_deg) <= 0.25, f"Mismatch in H: Expected {ref_h_deg:.2f}°, got {dut_h_deg:.2f}°"
+                                                        AssertionError: Mismatch in H: Expected 15.25°, got 0.00°
+                                                        assert 15.25 <= 0.25
+                                                         +  where 15.25 = abs((0.0 - 15.25))
+  8002.00ns INFO     cocotb.regression                  running test_rgb_color_space_conversion.test_rgb_to_hsv_hsl_cmyk_random_g_max (4/8)
+                                                            Test random RGB inputs where G is the maximum value.
+Input RGB: ( 75,  89,   3) → DUT HSV: (   0.00°,  96.63%,  34.90%) | Ref HSV: (  69.75°,  96.63%,  34.90%)
+ 10673.00ns INFO     cocotb.regression                  test_rgb_color_space_conversion.test_rgb_to_hsv_hsl_cmyk_random_g_max failed
+                                                        Traceback (most recent call last):
+                                                          File "/code/src/test_rgb_color_space_conversion.py", line 330, in test_rgb_to_hsv_hsl_cmyk_random_g_max
+                                                            await compare_rgb_to_hsv(dut, random_r, random_g, random_b)
+                                                          File "/code/src/test_rgb_color_space_conversion.py", line 135, in compare_rgb_to_hsv
+                                                            assert abs(dut_h_deg - ref_h_deg) <= 0.25, f"Mismatch in H: Expected {ref_h_deg:.2f}°, got {dut_h_deg:.2f}°"
+                                                        AssertionError: Mismatch in H: Expected 69.75°, got 0.00°
+                                                        assert 69.75 <= 0.25
+                                                         +  where 69.75 = abs((0.0 - 69.75))
+ 10673.00ns INFO     cocotb.regression                  running test_rgb_color_space_conversion.test_rgb_to_hsv_hsl_cmyk_random_b_max (5/8)
+                                                            Test random RGB inputs where B is the maximum value.
+Input RGB: ( 40, 108, 118) → DUT HSV: (   0.00°,  66.11%,  46.27%) | Ref HSV: ( 187.75°,  66.11%,  46.27%)
+ 13344.00ns INFO     cocotb.regression                  test_rgb_color_space_conversion.test_rgb_to_hsv_hsl_cmyk_random_b_max failed
+                                                        Traceback (most recent call last):
+                                                          File "/code/src/test_rgb_color_space_conversion.py", line 350, in test_rgb_to_hsv_hsl_cmyk_random_b_max
+                                                            await compare_rgb_to_hsv(dut, random_r, random_g, random_b)
+                                                          File "/code/src/test_rgb_color_space_conversion.py", line 135, in compare_rgb_to_hsv
+                                                            assert abs(dut_h_deg - ref_h_deg) <= 0.25, f"Mismatch in H: Expected {ref_h_deg:.2f}°, got {dut_h_deg:.2f}°"
+                                                        AssertionError: Mismatch in H: Expected 187.75°, got 0.00°
+                                                        assert 187.75 <= 0.25
+                                                         +  where 187.75 = abs((0.0 - 187.75))
+ 13344.00ns INFO     cocotb.regression                  running test_rgb_color_space_conversion.test_rgb_to_hsv_hsl_cmyk_max_min_same (6/8)
+                                                            Test RGB inputs where max and min values are the same (grayscale colors).
+Input RGB: ( 82,  82,  82) → DUT HSV: (   0.00°,   0.00%,  32.16%) | Ref HSV: (   0.00°,   0.00%,  32.16%)
+Input RGB: ( 82,  82,  82) → DUT HSL: (   0.00°,   0.00%,  32.16%) | Ref HSL: (   0.00°,   0.00%,  32.16%)
+Input RGB: ( 82,  82,  82) → DUT CMYK: (  0.00%,   0.00%,   0.00%,  67.84%) | Ref CMYK: (  0.00%,   0.00%,   0.00%,  67.84%)
+Input RGB: (227, 227, 227) → DUT HSV: (   0.00°,   0.00%,  89.02%) | Ref HSV: (   0.00°,   0.00%,  89.02%)
+Input RGB: (227, 227, 227) → DUT HSL: (   0.00°,   0.00%,  89.02%) | Ref HSL: (   0.00°,   0.00%,  89.02%)
+Input RGB: (227, 227, 227) → DUT CMYK: (  0.00%,   0.00%,   0.00%,  10.98%) | Ref CMYK: (  0.00%,   0.00%,   0.00%,  10.98%)
+Input RGB: (156, 156, 156) → DUT HSV: (   0.00°,   0.00%,  61.18%) | Ref HSV: (   0.00°,   0.00%,  61.18%)
+Input RGB: (156, 156, 156) → DUT HSL: (   0.00°,   0.00%,  61.18%) | Ref HSL: (   0.00°,   0.00%,  61.18%)
+Input RGB: (156, 156, 156) → DUT CMYK: (  0.00%,   0.00%,   0.00%,  38.82%) | Ref CMYK: (  0.00%,   0.00%,   0.00%,  38.82%)
+Input RGB: ( 46,  46,  46) → DUT HSV: (   0.00°,   0.00%,  18.04%) | Ref HSV: (   0.00°,   0.00%,  18.04%)
+Input RGB: ( 46,  46,  46) → DUT HSL: (   0.00°,   0.00%,  18.04%) | Ref HSL: (   0.00°,   0.00%,  18.04%)
+Input RGB: ( 46,  46,  46) → DUT CMYK: (  0.00%,   0.00%,   0.00%,  81.96%) | Ref CMYK: (  0.00%,   0.00%,   0.00%,  81.96%)
+Input RGB: ( 98,  98,  98) → DUT HSV: (   0.00°,   0.00%,  38.43%) | Ref HSV: (   0.00°,   0.00%,  38.43%)
+Input RGB: ( 98,  98,  98) → DUT HSL: (   0.00°,   0.00%,  38.43%) | Ref HSL: (   0.00°,   0.00%,  38.43%)
+Input RGB: ( 98,  98,  98) → DUT CMYK: (  0.00%,   0.00%,   0.00%,  61.57%) | Ref CMYK: (  0.00%,   0.00%,   0.00%,  61.57%)
+Input RGB: ( 96,  96,  96) → DUT HSV: (   0.00°,   0.00%,  37.65%) | Ref HSV: (   0.00°,   0.00%,  37.65%)
+Input RGB: ( 96,  96,  96) → DUT HSL: (   0.00°,   0.00%,  37.65%) | Ref HSL: (   0.00°,   0.00%,  37.65%)
+Input RGB: ( 96,  96,  96) → DUT CMYK: (  0.00%,   0.00%,   0.00%,  62.35%) | Ref CMYK: (  0.00%,   0.00%,   0.00%,  62.35%)
+Input RGB: ( 86,  86,  86) → DUT HSV: (   0.00°,   0.00%,  33.73%) | Ref HSV: (   0.00°,   0.00%,  33.73%)
+Input RGB: ( 86,  86,  86) → DUT HSL: (   0.00°,   0.00%,  33.73%) | Ref HSL: (   0.00°,   0.00%,  33.73%)
+Input RGB: ( 86,  86,  86) → DUT CMYK: (  0.00%,   0.00%,   0.00%,  66.27%) | Ref CMYK: (  0.00%,   0.00%,   0.00%,  66.27%)
+Input RGB: ( 31,  31,  31) → DUT HSV: (   0.00°,   0.00%,  12.16%) | Ref HSV: (   0.00°,   0.00%,  12.16%)
+Input RGB: ( 31,  31,  31) → DUT HSL: (   0.00°,   0.00%,  12.16%) | Ref HSL: (   0.00°,   0.00%,  12.16%)
+Input RGB: ( 31,  31,  31) → DUT CMYK: (  0.00%,   0.00%,   0.00%,  87.84%) | Ref CMYK: (  0.00%,   0.00%,   0.00%,  87.84%)
+Input RGB: ( 98,  98,  98) → DUT HSV: (   0.00°,   0.00%,  38.43%) | Ref HSV: (   0.00°,   0.00%,  38.43%)
+Input RGB: ( 98,  98,  98) → DUT HSL: (   0.00°,   0.00%,  38.43%) | Ref HSL: (   0.00°,   0.00%,  38.43%)
+Input RGB: ( 98,  98,  98) → DUT CMYK: (  0.00%,   0.00%,   0.00%,  61.57%) | Ref CMYK: (  0.00%,   0.00%,   0.00%,  61.57%)
+Input RGB: (175, 175, 175) → DUT HSV: (   0.00°,   0.00%,  68.63%) | Ref HSV: (   0.00°,   0.00%,  68.63%)
+Input RGB: (175, 175, 175) → DUT HSL: (   0.00°,   0.00%,  68.63%) | Ref HSL: (   0.00°,   0.00%,  68.63%)
+Input RGB: (175, 175, 175) → DUT CMYK: (  0.00%,   0.00%,   0.00%,  31.37%) | Ref CMYK: (  0.00%,   0.00%,   0.00%,  31.37%)
+Input RGB: (231, 231, 231) → DUT HSV: (   0.00°,   0.00%,  90.59%) | Ref HSV: (   0.00°,   0.00%,  90.59%)
+Input RGB: (231, 231, 231) → DUT HSL: (   0.00°,   0.00%,  90.59%) | Ref HSL: (   0.00°,   0.00%,  90.59%)
+Input RGB: (231, 231, 231) → DUT CMYK: (  0.00%,   0.00%,   0.00%,   9.41%) | Ref CMYK: (  0.00%,   0.00%,   0.00%,   9.41%)
+Input RGB: ( 59,  59,  59) → DUT HSV: (   0.00°,   0.00%,  23.14%) | Ref HSV: (   0.00°,   0.00%,  23.14%)
+Input RGB: ( 59,  59,  59) → DUT HSL: (   0.00°,   0.00%,  23.14%) | Ref HSL: (   0.00°,   0.00%,  23.14%)
+Input RGB: ( 59,  59,  59) → DUT CMYK: (  0.00%,   0.00%,   0.00%,  76.86%) | Ref CMYK: (  0.00%,   0.00%,   0.00%,  76.86%)
+Input RGB: ( 96,  96,  96) → DUT HSV: (   0.00°,   0.00%,  37.65%) | Ref HSV: (   0.00°,   0.00%,  37.65%)
+Input RGB: ( 96,  96,  96) → DUT HSL: (   0.00°,   0.00%,  37.65%) | Ref HSL: (   0.00°,   0.00%,  37.65%)
+Input RGB: ( 96,  96,  96) → DUT CMYK: (  0.00%,   0.00%,   0.00%,  62.35%) | Ref CMYK: (  0.00%,   0.00%,   0.00%,  62.35%)
+Input RGB: (  9,   9,   9) → DUT HSV: (   0.00°,   0.00%,   3.53%) | Ref HSV: (   0.00°,   0.00%,   3.53%)
+Input RGB: (  9,   9,   9) → DUT HSL: (   0.00°,   0.00%,   3.53%) | Ref HSL: (   0.00°,   0.00%,   3.53%)
+Input RGB: (  9,   9,   9) → DUT CMYK: (  0.00%,   0.00%,   0.00%,  96.47%) | Ref CMYK: (  0.00%,   0.00%,   0.00%,  96.47%)
+Input RGB: (234, 234, 234) → DUT HSV: (   0.00°,   0.00%,  91.76%) | Ref HSV: (   0.00°,   0.00%,  91.76%)
+Input RGB: (234, 234, 234) → DUT HSL: (   0.00°,   0.00%,  91.76%) | Ref HSL: (   0.00°,   0.00%,  91.76%)
+Input RGB: (234, 234, 234) → DUT CMYK: (  0.00%,   0.00%,   0.00%,   8.24%) | Ref CMYK: (  0.00%,   0.00%,   0.00%,   8.24%)
+Input RGB: (158, 158, 158) → DUT HSV: (   0.00°,   0.00%,  61.96%) | Ref HSV: (   0.00°,   0.00%,  61.96%)
+Input RGB: (158, 158, 158) → DUT HSL: (   0.00°,   0.00%,  61.96%) | Ref HSL: (   0.00°,   0.00%,  61.96%)
+Input RGB: (158, 158, 158) → DUT CMYK: (  0.00%,   0.00%,   0.00%,  38.04%) | Ref CMYK: (  0.00%,   0.00%,   0.00%,  38.04%)
+Input RGB: (179, 179, 179) → DUT HSV: (   0.00°,   0.00%,  70.20%) | Ref HSV: (   0.00°,   0.00%,  70.20%)
+Input RGB: (179, 179, 179) → DUT HSL: (   0.00°,   0.00%,  70.20%) | Ref HSL: (   0.00°,   0.00%,  70.20%)
+Input RGB: (179, 179, 179) → DUT CMYK: (  0.00%,   0.00%,   0.00%,  29.80%) | Ref CMYK: (  0.00%,   0.00%,   0.00%,  29.80%)
+Input RGB: (252, 252, 252) → DUT HSV: (   0.00°,   0.00%,  98.82%) | Ref HSV: (   0.00°,   0.00%,  98.82%)
+Input RGB: (252, 252, 252) → DUT HSL: (   0.00°,   0.00%,  98.82%) | Ref HSL: (   0.00°,   0.00%,  98.82%)
+Input RGB: (252, 252, 252) → DUT CMYK: (  0.00%,   0.00%,   0.00%,   1.18%) | Ref CMYK: (  0.00%,   0.00%,   0.00%,   1.18%)
+Input RGB: (252, 252, 252) → DUT HSV: (   0.00°,   0.00%,  98.82%) | Ref HSV: (   0.00°,   0.00%,  98.82%)
+Input RGB: (252, 252, 252) → DUT HSL: (   0.00°,   0.00%,  98.82%) | Ref HSL: (   0.00°,   0.00%,  98.82%)
+Input RGB: (252, 252, 252) → DUT CMYK: (  0.00%,   0.00%,   0.00%,   1.18%) | Ref CMYK: (  0.00%,   0.00%,   0.00%,   1.18%)
+Input RGB: (196, 196, 196) → DUT HSV: (   0.00°,   0.00%,  76.86%) | Ref HSV: (   0.00°,   0.00%,  76.86%)
+Input RGB: (196, 196, 196) → DUT HSL: (   0.00°,   0.00%,  76.86%) | Ref HSL: (   0.00°,   0.00%,  76.86%)
+Input RGB: (196, 196, 196) → DUT CMYK: (  0.00%,   0.00%,   0.00%,  23.14%) | Ref CMYK: (  0.00%,   0.00%,   0.00%,  23.14%)
+Input RGB: ( 88,  88,  88) → DUT HSV: (   0.00°,   0.00%,  34.51%) | Ref HSV: (   0.00°,   0.00%,  34.51%)
+Input RGB: ( 88,  88,  88) → DUT HSL: (   0.00°,   0.00%,  34.51%) | Ref HSL: (   0.00°,   0.00%,  34.51%)
+Input RGB: ( 88,  88,  88) → DUT CMYK: (  0.00%,   0.00%,   0.00%,  65.49%) | Ref CMYK: (  0.00%,   0.00%,   0.00%,  65.49%)
+Input RGB: ( 94,  94,  94) → DUT HSV: (   0.00°,   0.00%,  36.86%) | Ref HSV: (   0.00°,   0.00%,  36.86%)
+Input RGB: ( 94,  94,  94) → DUT HSL: (   0.00°,   0.00%,  36.86%) | Ref HSL: (   0.00°,   0.00%,  36.86%)
+Input RGB: ( 94,  94,  94) → DUT CMYK: (  0.00%,   0.00%,   0.00%,  63.14%) | Ref CMYK: (  0.00%,   0.00%,   0.00%,  63.14%)
+Input RGB: ( 27,  27,  27) → DUT HSV: (   0.00°,   0.00%,  10.59%) | Ref HSV: (   0.00°,   0.00%,  10.59%)
+Input RGB: ( 27,  27,  27) → DUT HSL: (   0.00°,   0.00%,  10.59%) | Ref HSL: (   0.00°,   0.00%,  10.59%)
+Input RGB: ( 27,  27,  27) → DUT CMYK: (  0.00%,   0.00%,   0.00%,  89.41%) | Ref CMYK: (  0.00%,   0.00%,   0.00%,  89.41%)
+Input RGB: ( 18,  18,  18) → DUT HSV: (   0.00°,   0.00%,   7.06%) | Ref HSV: (   0.00°,   0.00%,   7.06%)
+Input RGB: ( 18,  18,  18) → DUT HSL: (   0.00°,   0.00%,   7.06%) | Ref HSL: (   0.00°,   0.00%,   7.06%)
+Input RGB: ( 18,  18,  18) → DUT CMYK: (  0.00%,   0.00%,   0.00%,  92.94%) | Ref CMYK: (  0.00%,   0.00%,   0.00%,  92.94%)
+Input RGB: (182, 182, 182) → DUT HSV: (   0.00°,   0.00%,  71.37%) | Ref HSV: (   0.00°,   0.00%,  71.37%)
+Input RGB: (182, 182, 182) → DUT HSL: (   0.00°,   0.00%,  71.37%) | Ref HSL: (   0.00°,   0.00%,  71.37%)
+Input RGB: (182, 182, 182) → DUT CMYK: (  0.00%,   0.00%,   0.00%,  28.63%) | Ref CMYK: (  0.00%,   0.00%,   0.00%,  28.63%)
+Input RGB: (106, 106, 106) → DUT HSV: (   0.00°,   0.00%,  41.57%) | Ref HSV: (   0.00°,   0.00%,  41.57%)
+Input RGB: (106, 106, 106) → DUT HSL: (   0.00°,   0.00%,  41.57%) | Ref HSL: (   0.00°,   0.00%,  41.57%)
+Input RGB: (106, 106, 106) → DUT CMYK: (  0.00%,   0.00%,   0.00%,  58.43%) | Ref CMYK: (  0.00%,   0.00%,   0.00%,  58.43%)
+Input RGB: ( 81,  81,  81) → DUT HSV: (   0.00°,   0.00%,  31.76%) | Ref HSV: (   0.00°,   0.00%,  31.76%)
+Input RGB: ( 81,  81,  81) → DUT HSL: (   0.00°,   0.00%,  31.76%) | Ref HSL: (   0.00°,   0.00%,  31.76%)
+Input RGB: ( 81,  81,  81) → DUT CMYK: (  0.00%,   0.00%,   0.00%,  68.24%) | Ref CMYK: (  0.00%,   0.00%,   0.00%,  68.24%)
+Input RGB: (249, 249, 249) → DUT HSV: (   0.00°,   0.00%,  97.65%) | Ref HSV: (   0.00°,   0.00%,  97.65%)
+Input RGB: (249, 249, 249) → DUT HSL: (   0.00°,   0.00%,  97.65%) | Ref HSL: (   0.00°,   0.00%,  97.65%)
+Input RGB: (249, 249, 249) → DUT CMYK: (  0.00%,   0.00%,   0.00%,   2.35%) | Ref CMYK: (  0.00%,   0.00%,   0.00%,   2.35%)
+Input RGB: (201, 201, 201) → DUT HSV: (   0.00°,   0.00%,  78.82%) | Ref HSV: (   0.00°,   0.00%,  78.82%)
+Input RGB: (201, 201, 201) → DUT HSL: (   0.00°,   0.00%,  78.82%) | Ref HSL: (   0.00°,   0.00%,  78.82%)
+Input RGB: (201, 201, 201) → DUT CMYK: (  0.00%,   0.00%,   0.00%,  21.18%) | Ref CMYK: (  0.00%,   0.00%,   0.00%,  21.18%)
+Input RGB: (147, 147, 147) → DUT HSV: (   0.00°,   0.00%,  57.65%) | Ref HSV: (   0.00°,   0.00%,  57.65%)
+Input RGB: (147, 147, 147) → DUT HSL: (   0.00°,   0.00%,  57.65%) | Ref HSL: (   0.00°,   0.00%,  57.65%)
+Input RGB: (147, 147, 147) → DUT CMYK: (  0.00%,   0.00%,   0.00%,  42.35%) | Ref CMYK: (  0.00%,   0.00%,   0.00%,  42.35%)
+Input RGB: (172, 172, 172) → DUT HSV: (   0.00°,   0.00%,  67.45%) | Ref HSV: (   0.00°,   0.00%,  67.45%)
+Input RGB: (172, 172, 172) → DUT HSL: (   0.00°,   0.00%,  67.45%) | Ref HSL: (   0.00°,   0.00%,  67.45%)
+Input RGB: (172, 172, 172) → DUT CMYK: (  0.00%,   0.00%,   0.00%,  32.55%) | Ref CMYK: (  0.00%,   0.00%,   0.00%,  32.55%)
+Input RGB: ( 98,  98,  98) → DUT HSV: (   0.00°,   0.00%,  38.43%) | Ref HSV: (   0.00°,   0.00%,  38.43%)
+Input RGB: ( 98,  98,  98) → DUT HSL: (   0.00°,   0.00%,  38.43%) | Ref HSL: (   0.00°,   0.00%,  38.43%)
+Input RGB: ( 98,  98,  98) → DUT CMYK: (  0.00%,   0.00%,   0.00%,  61.57%) | Ref CMYK: (  0.00%,   0.00%,   0.00%,  61.57%)
+Input RGB: ( 19,  19,  19) → DUT HSV: (   0.00°,   0.00%,   7.45%) | Ref HSV: (   0.00°,   0.00%,   7.45%)
+Input RGB: ( 19,  19,  19) → DUT HSL: (   0.00°,   0.00%,   7.45%) | Ref HSL: (   0.00°,   0.00%,   7.45%)
+Input RGB: ( 19,  19,  19) → DUT CMYK: (  0.00%,   0.00%,   0.00%,  92.55%) | Ref CMYK: (  0.00%,   0.00%,   0.00%,  92.55%)
+Input RGB: (147, 147, 147) → DUT HSV: (   0.00°,   0.00%,  57.65%) | Ref HSV: (   0.00°,   0.00%,  57.65%)
+Input RGB: (147, 147, 147) → DUT HSL: (   0.00°,   0.00%,  57.65%) | Ref HSL: (   0.00°,   0.00%,  57.65%)
+Input RGB: (147, 147, 147) → DUT CMYK: (  0.00%,   0.00%,   0.00%,  42.35%) | Ref CMYK: (  0.00%,   0.00%,   0.00%,  42.35%)
+Input RGB: ( 95,  95,  95) → DUT HSV: (   0.00°,   0.00%,  37.25%) | Ref HSV: (   0.00°,   0.00%,  37.25%)
+Input RGB: ( 95,  95,  95) → DUT HSL: (   0.00°,   0.00%,  37.25%) | Ref HSL: (   0.00°,   0.00%,  37.25%)
+Input RGB: ( 95,  95,  95) → DUT CMYK: (  0.00%,   0.00%,   0.00%,  62.75%) | Ref CMYK: (  0.00%,   0.00%,   0.00%,  62.75%)
+Input RGB: (240, 240, 240) → DUT HSV: (   0.00°,   0.00%,  94.12%) | Ref HSV: (   0.00°,   0.00%,  94.12%)
+Input RGB: (240, 240, 240) → DUT HSL: (   0.00°,   0.00%,  94.12%) | Ref HSL: (   0.00°,   0.00%,  94.12%)
+Input RGB: (240, 240, 240) → DUT CMYK: (  0.00%,   0.00%,   0.00%,   5.88%) | Ref CMYK: (  0.00%,   0.00%,   0.00%,   5.88%)
+Input RGB: (208, 208, 208) → DUT HSV: (   0.00°,   0.00%,  81.57%) | Ref HSV: (   0.00°,   0.00%,  81.57%)
+Input RGB: (208, 208, 208) → DUT HSL: (   0.00°,   0.00%,  81.57%) | Ref HSL: (   0.00°,   0.00%,  81.57%)
+Input RGB: (208, 208, 208) → DUT CMYK: (  0.00%,   0.00%,   0.00%,  18.43%) | Ref CMYK: (  0.00%,   0.00%,   0.00%,  18.43%)
+Input RGB: (153, 153, 153) → DUT HSV: (   0.00°,   0.00%,  60.00%) | Ref HSV: (   0.00°,   0.00%,  60.00%)
+Input RGB: (153, 153, 153) → DUT HSL: (   0.00°,   0.00%,  60.00%) | Ref HSL: (   0.00°,   0.00%,  60.00%)
+Input RGB: (153, 153, 153) → DUT CMYK: (  0.00%,   0.00%,   0.00%,  40.00%) | Ref CMYK: (  0.00%,   0.00%,   0.00%,  40.00%)
+Input RGB: ( 52,  52,  52) → DUT HSV: (   0.00°,   0.00%,  20.39%) | Ref HSV: (   0.00°,   0.00%,  20.39%)
+Input RGB: ( 52,  52,  52) → DUT HSL: (   0.00°,   0.00%,  20.39%) | Ref HSL: (   0.00°,   0.00%,  20.39%)
+Input RGB: ( 52,  52,  52) → DUT CMYK: (  0.00%,   0.00%,   0.00%,  79.61%) | Ref CMYK: (  0.00%,   0.00%,   0.00%,  79.61%)
+Input RGB: ( 65,  65,  65) → DUT HSV: (   0.00°,   0.00%,  25.49%) | Ref HSV: (   0.00°,   0.00%,  25.49%)
+Input RGB: ( 65,  65,  65) → DUT HSL: (   0.00°,   0.00%,  25.49%) | Ref HSL: (   0.00°,   0.00%,  25.49%)
+Input RGB: ( 65,  65,  65) → DUT CMYK: (  0.00%,   0.00%,   0.00%,  74.51%) | Ref CMYK: (  0.00%,   0.00%,   0.00%,  74.51%)
+Input RGB: (229, 229, 229) → DUT HSV: (   0.00°,   0.00%,  89.80%) | Ref HSV: (   0.00°,   0.00%,  89.80%)
+Input RGB: (229, 229, 229) → DUT HSL: (   0.00°,   0.00%,  89.80%) | Ref HSL: (   0.00°,   0.00%,  89.80%)
+Input RGB: (229, 229, 229) → DUT CMYK: (  0.00%,   0.00%,   0.00%,  10.20%) | Ref CMYK: (  0.00%,   0.00%,   0.00%,  10.20%)
+Input RGB: (240, 240, 240) → DUT HSV: (   0.00°,   0.00%,  94.12%) | Ref HSV: (   0.00°,   0.00%,  94.12%)
+Input RGB: (240, 240, 240) → DUT HSL: (   0.00°,   0.00%,  94.12%) | Ref HSL: (   0.00°,   0.00%,  94.12%)
+Input RGB: (240, 240, 240) → DUT CMYK: (  0.00%,   0.00%,   0.00%,   5.88%) | Ref CMYK: (  0.00%,   0.00%,   0.00%,   5.88%)
+Input RGB: (136, 136, 136) → DUT HSV: (   0.00°,   0.00%,  53.33%) | Ref HSV: (   0.00°,   0.00%,  53.33%)
+Input RGB: (136, 136, 136) → DUT HSL: (   0.00°,   0.00%,  53.33%) | Ref HSL: (   0.00°,   0.00%,  53.33%)
+Input RGB: (136, 136, 136) → DUT CMYK: (  0.00%,   0.00%,   0.00%,  46.67%) | Ref CMYK: (  0.00%,   0.00%,   0.00%,  46.67%)
+Input RGB: ( 41,  41,  41) → DUT HSV: (   0.00°,   0.00%,  16.08%) | Ref HSV: (   0.00°,   0.00%,  16.08%)
+Input RGB: ( 41,  41,  41) → DUT HSL: (   0.00°,   0.00%,  16.08%) | Ref HSL: (   0.00°,   0.00%,  16.08%)
+Input RGB: ( 41,  41,  41) → DUT CMYK: (  0.00%,   0.00%,   0.00%,  83.92%) | Ref CMYK: (  0.00%,   0.00%,   0.00%,  83.92%)
+Input RGB: ( 83,  83,  83) → DUT HSV: (   0.00°,   0.00%,  32.55%) | Ref HSV: (   0.00°,   0.00%,  32.55%)
+Input RGB: ( 83,  83,  83) → DUT HSL: (   0.00°,   0.00%,  32.55%) | Ref HSL: (   0.00°,   0.00%,  32.55%)
+Input RGB: ( 83,  83,  83) → DUT CMYK: (  0.00%,   0.00%,   0.00%,  67.45%) | Ref CMYK: (  0.00%,   0.00%,   0.00%,  67.45%)
+Input RGB: (139, 139, 139) → DUT HSV: (   0.00°,   0.00%,  54.51%) | Ref HSV: (   0.00°,   0.00%,  54.51%)
+Input RGB: (139, 139, 139) → DUT HSL: (   0.00°,   0.00%,  54.51%) | Ref HSL: (   0.00°,   0.00%,  54.51%)
+Input RGB: (139, 139, 139) → DUT CMYK: (  0.00%,   0.00%,   0.00%,  45.49%) | Ref CMYK: (  0.00%,   0.00%,   0.00%,  45.49%)
+Input RGB: ( 49,  49,  49) → DUT HSV: (   0.00°,   0.00%,  19.22%) | Ref HSV: (   0.00°,   0.00%,  19.22%)
+Input RGB: ( 49,  49,  49) → DUT HSL: (   0.00°,   0.00%,  19.22%) | Ref HSL: (   0.00°,   0.00%,  19.22%)
+Input RGB: ( 49,  49,  49) → DUT CMYK: (  0.00%,   0.00%,   0.00%,  80.78%) | Ref CMYK: (  0.00%,   0.00%,   0.00%,  80.78%)
+Input RGB: (224, 224, 224) → DUT HSV: (   0.00°,   0.00%,  87.84%) | Ref HSV: (   0.00°,   0.00%,  87.84%)
+Input RGB: (224, 224, 224) → DUT HSL: (   0.00°,   0.00%,  87.84%) | Ref HSL: (   0.00°,   0.00%,  87.84%)
+Input RGB: (224, 224, 224) → DUT CMYK: (  0.00%,   0.00%,   0.00%,  12.16%) | Ref CMYK: (  0.00%,   0.00%,   0.00%,  12.16%)
+Input RGB: (203, 203, 203) → DUT HSV: (   0.00°,   0.00%,  79.61%) | Ref HSV: (   0.00°,   0.00%,  79.61%)
+Input RGB: (203, 203, 203) → DUT HSL: (   0.00°,   0.00%,  79.61%) | Ref HSL: (   0.00°,   0.00%,  79.61%)
+Input RGB: (203, 203, 203) → DUT CMYK: (  0.00%,   0.00%,   0.00%,  20.39%) | Ref CMYK: (  0.00%,   0.00%,   0.00%,  20.39%)
+Input RGB: ( 17,  17,  17) → DUT HSV: (   0.00°,   0.00%,   6.67%) | Ref HSV: (   0.00°,   0.00%,   6.67%)
+Input RGB: ( 17,  17,  17) → DUT HSL: (   0.00°,   0.00%,   6.67%) | Ref HSL: (   0.00°,   0.00%,   6.67%)
+Input RGB: ( 17,  17,  17) → DUT CMYK: (  0.00%,   0.00%,   0.00%,  93.33%) | Ref CMYK: (  0.00%,   0.00%,   0.00%,  93.33%)
+ 29425.00ns INFO     cocotb.regression                  test_rgb_color_space_conversion.test_rgb_to_hsv_hsl_cmyk_max_min_same passed
+ 29425.00ns INFO     cocotb.regression                  running test_rgb_color_space_conversion.test_reset_outputs_zero (7/8)
+                                                            Verify that outputs are 0 after reset.
+After reset: HSV_H = 0, HSV_S = 0, HSV_V = 0 HSL_H = 0, HSL_S = 0, HSL_L = 0
+ 32006.00ns INFO     cocotb.regression                  test_rgb_color_space_conversion.test_reset_outputs_zero passed
+ 32006.00ns INFO     cocotb.regression                  running test_rgb_color_space_conversion.test_rgb_to_hsv_hsl_cmyk_color_table (8/8)
+Input RGB: (  0,   0,   0) → DUT HSV: (   0.00°,   0.00%,   0.00%) | Ref HSV: (   0.00°,   0.00%,   0.00%)
+Input RGB: (  0,   0,   0) → DUT HSL: (   0.00°,   0.00%,   0.00%) | Ref HSL: (   0.00°,   0.00%,   0.00%)
+Input RGB: (  0,   0,   0) → DUT CMYK: (  0.00%,   0.00%,   0.00%, 100.00%) | Ref CMYK: (  0.00%,   0.00%,   0.00%, 100.00%)
+Input RGB: (255, 255, 255) → DUT HSV: (   0.00°,   0.00%, 100.00%) | Ref HSV: (   0.00°,   0.00%, 100.00%)
+Input RGB: (255, 255, 255) → DUT HSL: (   0.00°,   0.00%, 100.00%) | Ref HSL: (   0.00°,   0.00%, 100.00%)
+Input RGB: (255, 255, 255) → DUT CMYK: (  0.00%,   0.00%,   0.00%,   0.00%) | Ref CMYK: (  0.00%,   0.00%,   0.00%,   0.00%)
+Input RGB: (255,   0,   0) → DUT HSV: (   0.00°, 100.00%, 100.00%) | Ref HSV: (   0.00°, 100.00%, 100.00%)
+Input RGB: (255,   0,   0) → DUT HSL: (   0.00°, 100.00%,  49.80%) | Ref HSL: (   0.00°, 100.00%,  50.20%)
+Input RGB: (255,   0,   0) → DUT CMYK: (  0.00%, 100.00%, 100.00%,   0.00%) | Ref CMYK: (  0.00%, 100.00%, 100.00%,   0.00%)
+Input RGB: (  0, 255,   0) → DUT HSV: (   0.00°, 100.00%, 100.00%) | Ref HSV: ( 120.00°, 100.00%, 100.00%)
+ 35487.00ns INFO     cocotb.regression                  test_rgb_color_space_conversion.test_rgb_to_hsv_hsl_cmyk_color_table failed
+                                                        Traceback (most recent call last):
+                                                          File "/code/src/test_rgb_color_space_conversion.py", line 433, in test_rgb_to_hsv_hsl_cmyk_color_table
+                                                            await compare_rgb_to_hsv(dut, r, g, b)
+                                                          File "/code/src/test_rgb_color_space_conversion.py", line 135, in compare_rgb_to_hsv
+                                                            assert abs(dut_h_deg - ref_h_deg) <= 0.25, f"Mismatch in H: Expected {ref_h_deg:.2f}°, got {dut_h_deg:.2f}°"
+                                                        AssertionError: Mismatch in H: Expected 120.00°, got 0.00°
+                                                        assert 120.0 <= 0.25
+                                                         +  where 120.0 = abs((0.0 - 120.0))
+ 35487.00ns INFO     cocotb.regression                  *******************************************************************************************************************************
+                                                        ** TEST                                                                   STATUS  SIM TIME (ns)  REAL TIME (s)  RATIO (ns/s) **
+                                                        *******************************************************************************************************************************
+                                                        ** test_rgb_color_space_conversion.test_rgb_to_hsv_hsl_cmyk_predefined     FAIL        2660.00           0.03      77943.07  **
+                                                        ** test_rgb_color_space_conversion.test_rgb_to_hsv_hsl_cmyk_random         FAIL        2671.00           0.03      82305.30  **
+                                                        ** test_rgb_color_space_conversion.test_rgb_to_hsv_hsl_cmyk_random_r_max   FAIL        2671.00           0.03      78400.67  **
+                                                        ** test_rgb_color_space_conversion.test_rgb_to_hsv_hsl_cmyk_random_g_max   FAIL        2671.00           0.03      80600.50  **
+                                                        ** test_rgb_color_space_conversion.test_rgb_to_hsv_hsl_cmyk_random_b_max   FAIL        2671.00           0.03      81798.10  **
+                                                        ** test_rgb_color_space_conversion.test_rgb_to_hsv_hsl_cmyk_max_min_same   PASS       16081.00           0.21      77296.13  **
+                                                        ** test_rgb_color_space_conversion.test_reset_outputs_zero                 PASS        2581.00           0.03      83126.00  **
+                                                        ** test_rgb_color_space_conversion.test_rgb_to_hsv_hsl_cmyk_color_table    FAIL        3481.00           0.04      81296.55  **
+                                                        *******************************************************************************************************************************
+                                                        ** TESTS=8 PASS=2 FAIL=6 SKIP=0                                                       35487.00           0.46      77477.86  **
+                                                        *******************************************************************************************************************************
+                                                        
+FST info: dumpfile /code/rundir/sim_build/rgb_color_space_conversion.fst opened for output.
+FAILED
+
+=================================== FAILURES ===================================
+_________________________________ test_runner __________________________________
+
+    def test_runner():
+        runner = get_runner(sim)
+    
+        runner.build(
+            sources=verilog_sources,
+            hdl_toplevel=toplevel,
+            always=True,
+            clean=True,
+            waves=True,
+            verbose=True,
+            timescale=("1ns", "1ns"),
+            log_file="sim.log"
+        )
+>       runner.test(hdl_toplevel=toplevel, test_module=module,waves=True)
+E       SystemExit: ERROR: Failed 6 of 8 tests.
+
+/src/test_runner.py:27: SystemExit
+=========================== short test summary info ============================
+FAILED ../../src/test_runner.py::test_runner - SystemExit: ERROR: Failed 6 of...
+============================== 1 failed in 0.64s ===============================

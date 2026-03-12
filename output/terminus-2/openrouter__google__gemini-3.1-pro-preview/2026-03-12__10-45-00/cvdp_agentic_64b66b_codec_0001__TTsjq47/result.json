@@ -1,0 +1,110 @@
+{
+    "id": "352bc0be-81ee-452e-aadc-f67fc015d614",
+    "task_name": "cvdp_agentic_64b66b_codec_0001",
+    "trial_name": "cvdp_agentic_64b66b_codec_0001__TTsjq47",
+    "trial_uri": "file:///home/saketh/research/cvdp_benchmark/output/terminus-2/openrouter__google__gemini-3.1-pro-preview/2026-03-12__10-45-00/cvdp_agentic_64b66b_codec_0001__TTsjq47",
+    "task_id": {
+        "path": "/home/saketh/research/cvdp_benchmark/harbor_output/cvdp_agentic_64b66b_codec_0001"
+    },
+    "source": "cvdp_v1.0.4_agentic_code_generation_no_commercial",
+    "task_checksum": "8d935dbc26626807e406b11c24774b7ddfd61cbf41409448626671626134c5d0",
+    "config": {
+        "task": {
+            "path": "/home/saketh/research/cvdp_benchmark/harbor_output/cvdp_agentic_64b66b_codec_0001",
+            "git_url": null,
+            "git_commit_id": null,
+            "overwrite": false,
+            "download_dir": null,
+            "source": "cvdp_v1.0.4_agentic_code_generation_no_commercial"
+        },
+        "trial_name": "cvdp_agentic_64b66b_codec_0001__TTsjq47",
+        "trials_dir": "/home/saketh/research/cvdp_benchmark/output/terminus-2/openrouter__google__gemini-3.1-pro-preview/2026-03-12__10-45-00",
+        "timeout_multiplier": 1.0,
+        "agent_timeout_multiplier": null,
+        "verifier_timeout_multiplier": null,
+        "agent_setup_timeout_multiplier": null,
+        "environment_build_timeout_multiplier": null,
+        "agent": {
+            "name": "terminus-2",
+            "import_path": null,
+            "model_name": "openrouter/google/gemini-3.1-pro-preview",
+            "override_timeout_sec": null,
+            "override_setup_timeout_sec": null,
+            "max_timeout_sec": null,
+            "kwargs": {},
+            "env": {}
+        },
+        "environment": {
+            "type": "docker",
+            "import_path": null,
+            "force_build": false,
+            "delete": true,
+            "override_cpus": null,
+            "override_memory_mb": null,
+            "override_storage_mb": null,
+            "override_gpus": null,
+            "suppress_override_warnings": false,
+            "kwargs": {}
+        },
+        "verifier": {
+            "override_timeout_sec": null,
+            "max_timeout_sec": null,
+            "disable": false
+        },
+        "artifacts": [],
+        "job_id": "909a80cc-9e37-4d73-9f93-1a5149d7ecd0"
+    },
+    "agent_info": {
+        "name": "terminus-2",
+        "version": "2.0.0",
+        "model_info": {
+            "name": "google/gemini-3.1-pro-preview",
+            "provider": "openrouter"
+        }
+    },
+    "agent_result": {
+        "n_input_tokens": 64974,
+        "n_cache_tokens": 24430,
+        "n_output_tokens": 19073,
+        "cost_usd": 0.08789418,
+        "rollout_details": [],
+        "metadata": {
+            "n_episodes": 8,
+            "api_request_times_msec": [
+                5288.3617877960205,
+                8665.467739105225,
+                42232.53059387207,
+                300665.8546924591,
+                13686.334609985352,
+                7892.229795455933,
+                18040.042877197266,
+                39451.02596282959
+            ],
+            "summarization_count": 0
+        }
+    },
+    "verifier_result": {
+        "rewards": {
+            "reward": 1.0
+        }
+    },
+    "exception_info": null,
+    "started_at": "2026-03-12T14:45:00.673440Z",
+    "finished_at": "2026-03-12T14:52:48.378203Z",
+    "environment_setup": {
+        "started_at": "2026-03-12T14:45:00.674622Z",
+        "finished_at": "2026-03-12T14:45:08.815869Z"
+    },
+    "agent_setup": {
+        "started_at": "2026-03-12T14:45:08.815877Z",
+        "finished_at": "2026-03-12T14:45:15.608467Z"
+    },
+    "agent_execution": {
+        "started_at": "2026-03-12T14:45:15.608492Z",
+        "finished_at": "2026-03-12T14:52:37.065479Z"
+    },
+    "verifier": {
+        "started_at": "2026-03-12T14:52:37.065539Z",
+        "finished_at": "2026-03-12T14:52:37.951776Z"
+    }
+}

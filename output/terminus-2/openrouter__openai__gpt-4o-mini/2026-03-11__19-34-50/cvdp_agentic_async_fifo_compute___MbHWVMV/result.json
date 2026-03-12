@@ -1,0 +1,112 @@
+{
+    "id": "8a07bd6a-c42a-43b4-bbaa-a2378b6b9b27",
+    "task_name": "cvdp_agentic_async_fifo_compute_ram_application_0001",
+    "trial_name": "cvdp_agentic_async_fifo_compute___MbHWVMV",
+    "trial_uri": "file:///home/saketh/research/cvdp_benchmark/jobs/2026-03-11__19-34-50/cvdp_agentic_async_fifo_compute___MbHWVMV",
+    "task_id": {
+        "path": "/home/saketh/research/cvdp_benchmark/harbor_output/cvdp_agentic_async_fifo_compute_ram_application_0001"
+    },
+    "source": "cvdp_v1.0.4_agentic_code_generation_no_commercial",
+    "task_checksum": "1503c31afc8dcf889c4948d4d9ac39bc3dbd5c6e520e4fb345d136cc863374a5",
+    "config": {
+        "task": {
+            "path": "/home/saketh/research/cvdp_benchmark/harbor_output/cvdp_agentic_async_fifo_compute_ram_application_0001",
+            "git_url": null,
+            "git_commit_id": null,
+            "overwrite": false,
+            "download_dir": null,
+            "source": "cvdp_v1.0.4_agentic_code_generation_no_commercial"
+        },
+        "trial_name": "cvdp_agentic_async_fifo_compute___MbHWVMV",
+        "trials_dir": "/home/saketh/research/cvdp_benchmark/jobs/2026-03-11__19-34-50",
+        "timeout_multiplier": 1.0,
+        "agent_timeout_multiplier": null,
+        "verifier_timeout_multiplier": null,
+        "agent_setup_timeout_multiplier": null,
+        "environment_build_timeout_multiplier": null,
+        "agent": {
+            "name": "terminus-2",
+            "import_path": null,
+            "model_name": "openrouter/openai/gpt-4o-mini",
+            "override_timeout_sec": null,
+            "override_setup_timeout_sec": null,
+            "max_timeout_sec": null,
+            "kwargs": {},
+            "env": {}
+        },
+        "environment": {
+            "type": "docker",
+            "import_path": null,
+            "force_build": false,
+            "delete": true,
+            "override_cpus": null,
+            "override_memory_mb": null,
+            "override_storage_mb": null,
+            "override_gpus": null,
+            "suppress_override_warnings": false,
+            "kwargs": {}
+        },
+        "verifier": {
+            "override_timeout_sec": null,
+            "max_timeout_sec": null,
+            "disable": false
+        },
+        "artifacts": [],
+        "job_id": "162fbf46-8549-4789-9f0f-8ce418b47fe3"
+    },
+    "agent_info": {
+        "name": "terminus-2",
+        "version": "2.0.0",
+        "model_info": {
+            "name": "openai/gpt-4o-mini",
+            "provider": "openrouter"
+        }
+    },
+    "agent_result": {
+        "n_input_tokens": 51363,
+        "n_cache_tokens": 44160,
+        "n_output_tokens": 3992,
+        "cost_usd": null,
+        "rollout_details": [],
+        "metadata": {
+            "n_episodes": 10,
+            "api_request_times_msec": [
+                4356.437206268311,
+                4968.849897384644,
+                3361.800193786621,
+                5584.541082382202,
+                14143.641233444214,
+                13927.618503570557,
+                22376.40905380249,
+                11667.71650314331,
+                4017.7810192108154,
+                3894.8919773101807
+            ],
+            "summarization_count": 0
+        }
+    },
+    "verifier_result": {
+        "rewards": {
+            "reward": 0.0
+        }
+    },
+    "exception_info": null,
+    "started_at": "2026-03-11T23:34:50.146367Z",
+    "finished_at": "2026-03-11T23:36:51.459266Z",
+    "environment_setup": {
+        "started_at": "2026-03-11T23:34:50.146963Z",
+        "finished_at": "2026-03-11T23:34:56.190744Z"
+    },
+    "agent_setup": {
+        "started_at": "2026-03-11T23:34:56.190774Z",
+        "finished_at": "2026-03-11T23:35:02.158749Z"
+    },
+    "agent_execution": {
+        "started_at": "2026-03-11T23:35:02.158784Z",
+        "finished_at": "2026-03-11T23:36:40.542999Z"
+    },
+    "verifier": {
+        "started_at": "2026-03-11T23:36:40.543046Z",
+        "finished_at": "2026-03-11T23:36:41.014237Z"
+    }
+}
