@@ -1,0 +1,111 @@
+{
+    "id": "17d9aca1-a86a-48b9-882b-d52104a3ba70",
+    "task_name": "cvdp_agentic_phase_rotation_0015",
+    "trial_name": "cvdp_agentic_phase_rotation_0015__76CcW7R",
+    "trial_uri": "file:///home/saketh/research/cvdp_benchmark/output/terminus-2/openrouter__google__gemini-3.1-pro-preview/2026-03-13__06-25-43/cvdp_agentic_phase_rotation_0015__76CcW7R",
+    "task_id": {
+        "path": "/home/saketh/research/cvdp_benchmark/harbor_output/cvdp_agentic_phase_rotation_0015"
+    },
+    "source": "cvdp_v1.0.4_agentic_code_generation_no_commercial",
+    "task_checksum": "82d1ea5531ccd2ffce73d5f096f117c22143acfde8459f6e7ea4ead669a785dc",
+    "config": {
+        "task": {
+            "path": "/home/saketh/research/cvdp_benchmark/harbor_output/cvdp_agentic_phase_rotation_0015",
+            "git_url": null,
+            "git_commit_id": null,
+            "overwrite": false,
+            "download_dir": null,
+            "source": "cvdp_v1.0.4_agentic_code_generation_no_commercial"
+        },
+        "trial_name": "cvdp_agentic_phase_rotation_0015__76CcW7R",
+        "trials_dir": "/home/saketh/research/cvdp_benchmark/output/terminus-2/openrouter__google__gemini-3.1-pro-preview/2026-03-13__06-25-43",
+        "timeout_multiplier": 1.0,
+        "agent_timeout_multiplier": null,
+        "verifier_timeout_multiplier": null,
+        "agent_setup_timeout_multiplier": null,
+        "environment_build_timeout_multiplier": null,
+        "agent": {
+            "name": "terminus-2",
+            "import_path": null,
+            "model_name": "openrouter/google/gemini-3.1-pro-preview",
+            "override_timeout_sec": null,
+            "override_setup_timeout_sec": null,
+            "max_timeout_sec": null,
+            "kwargs": {},
+            "env": {}
+        },
+        "environment": {
+            "type": "docker",
+            "import_path": null,
+            "force_build": false,
+            "delete": true,
+            "override_cpus": null,
+            "override_memory_mb": null,
+            "override_storage_mb": null,
+            "override_gpus": null,
+            "suppress_override_warnings": false,
+            "kwargs": {}
+        },
+        "verifier": {
+            "override_timeout_sec": null,
+            "max_timeout_sec": null,
+            "disable": false
+        },
+        "artifacts": [],
+        "job_id": "bc424f45-d6d7-4977-bc0b-6ae2d6638caf"
+    },
+    "agent_info": {
+        "name": "terminus-2",
+        "version": "2.0.0",
+        "model_info": {
+            "name": "google/gemini-3.1-pro-preview",
+            "provider": "openrouter"
+        }
+    },
+    "agent_result": {
+        "n_input_tokens": 102132,
+        "n_cache_tokens": 57076,
+        "n_output_tokens": 56180,
+        "cost_usd": null,
+        "rollout_details": [],
+        "metadata": {
+            "n_episodes": 9,
+            "api_request_times_msec": [
+                6562.254428863525,
+                7084.118366241455,
+                138485.74304580688,
+                52144.60754394531,
+                42684.468269348145,
+                45317.91663169861,
+                50605.51953315735,
+                74015.28906822205,
+                72768.03755760193
+            ],
+            "summarization_count": 0
+        }
+    },
+    "verifier_result": {
+        "rewards": {
+            "reward": 0.0
+        }
+    },
+    "exception_info": null,
+    "started_at": "2026-03-13T11:06:46.376167Z",
+    "finished_at": "2026-03-13T11:15:20.491483Z",
+    "environment_setup": {
+        "started_at": "2026-03-13T11:06:46.376734Z",
+        "finished_at": "2026-03-13T11:06:48.594744Z"
+    },
+    "agent_setup": {
+        "started_at": "2026-03-13T11:06:48.594751Z",
+        "finished_at": "2026-03-13T11:06:53.933490Z"
+    },
+    "agent_execution": {
+        "started_at": "2026-03-13T11:06:53.933513Z",
+        "finished_at": "2026-03-13T11:15:09.703876Z"
+    },
+    "verifier": {
+        "started_at": "2026-03-13T11:15:09.703917Z",
+        "finished_at": "2026-03-13T11:15:10.099032Z"
+    }
+}

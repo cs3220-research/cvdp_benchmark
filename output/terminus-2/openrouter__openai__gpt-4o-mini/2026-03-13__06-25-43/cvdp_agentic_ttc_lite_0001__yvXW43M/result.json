@@ -1,0 +1,169 @@
+{
+    "id": "6a66839c-a0b9-4824-a7f0-07bdbc9dd530",
+    "task_name": "cvdp_agentic_ttc_lite_0001",
+    "trial_name": "cvdp_agentic_ttc_lite_0001__yvXW43M",
+    "trial_uri": "file:///home/saketh/research/cvdp_benchmark/output/terminus-2/openrouter__openai__gpt-4o-mini/2026-03-13__06-25-43/cvdp_agentic_ttc_lite_0001__yvXW43M",
+    "task_id": {
+        "path": "/home/saketh/research/cvdp_benchmark/harbor_output/cvdp_agentic_ttc_lite_0001"
+    },
+    "source": "cvdp_v1.0.4_agentic_code_generation_no_commercial",
+    "task_checksum": "304b29a8433f890c14cf3c389a7d16e41ed8c46bbea49d100fb4393c98d0989c",
+    "config": {
+        "task": {
+            "path": "/home/saketh/research/cvdp_benchmark/harbor_output/cvdp_agentic_ttc_lite_0001",
+            "git_url": null,
+            "git_commit_id": null,
+            "overwrite": false,
+            "download_dir": null,
+            "source": "cvdp_v1.0.4_agentic_code_generation_no_commercial"
+        },
+        "trial_name": "cvdp_agentic_ttc_lite_0001__yvXW43M",
+        "trials_dir": "/home/saketh/research/cvdp_benchmark/output/terminus-2/openrouter__openai__gpt-4o-mini/2026-03-13__06-25-43",
+        "timeout_multiplier": 1.0,
+        "agent_timeout_multiplier": null,
+        "verifier_timeout_multiplier": null,
+        "agent_setup_timeout_multiplier": null,
+        "environment_build_timeout_multiplier": null,
+        "agent": {
+            "name": "terminus-2",
+            "import_path": null,
+            "model_name": "openrouter/openai/gpt-4o-mini",
+            "override_timeout_sec": null,
+            "override_setup_timeout_sec": null,
+            "max_timeout_sec": null,
+            "kwargs": {},
+            "env": {}
+        },
+        "environment": {
+            "type": "docker",
+            "import_path": null,
+            "force_build": false,
+            "delete": true,
+            "override_cpus": null,
+            "override_memory_mb": null,
+            "override_storage_mb": null,
+            "override_gpus": null,
+            "suppress_override_warnings": false,
+            "kwargs": {}
+        },
+        "verifier": {
+            "override_timeout_sec": null,
+            "max_timeout_sec": null,
+            "disable": false
+        },
+        "artifacts": [],
+        "job_id": "7092937d-0954-4feb-8353-3d38e6bcacaa"
+    },
+    "agent_info": {
+        "name": "terminus-2",
+        "version": "2.0.0",
+        "model_info": {
+            "name": "openai/gpt-4o-mini",
+            "provider": "openrouter"
+        }
+    },
+    "agent_result": {
+        "n_input_tokens": 2784429,
+        "n_cache_tokens": 2463488,
+        "n_output_tokens": 50479,
+        "cost_usd": null,
+        "rollout_details": [],
+        "metadata": {
+            "n_episodes": 63,
+            "api_request_times_msec": [
+                5139.797687530518,
+                6819.950342178345,
+                14640.9330368042,
+                13301.732540130615,
+                13837.36801147461,
+                17445.333242416382,
+                19021.90923690796,
+                16596.797704696655,
+                13032.841444015503,
+                14955.52372932434,
+                38751.54709815979,
+                12106.178045272827,
+                14262.174129486084,
+                15115.563869476318,
+                13323.207139968872,
+                13391.345977783203,
+                13389.845371246338,
+                13691.970109939575,
+                15483.445882797241,
+                13802.16383934021,
+                14933.266162872314,
+                14844.614505767822,
+                13822.861194610596,
+                14468.597173690796,
+                14776.330471038818,
+                16173.648118972778,
+                14619.41933631897,
+                43166.926860809326,
+                13190.104484558105,
+                13239.177227020264,
+                22898.41103553772,
+                21014.39094543457,
+                14974.377632141113,
+                13082.772016525269,
+                14670.034170150757,
+                14889.535665512085,
+                14714.99228477478,
+                36279.6094417572,
+                14554.607152938843,
+                17384.45782661438,
+                24993.388891220093,
+                14827.292919158936,
+                16893.82791519165,
+                16085.797786712646,
+                19592.742919921875,
+                15029.86478805542,
+                13684.32903289795,
+                18565.617322921753,
+                17057.924032211304,
+                15164.610385894775,
+                16430.68552017212,
+                15223.178148269653,
+                14089.889287948608,
+                14929.669857025146,
+                17841.084003448486,
+                16494.83299255371,
+                16452.903270721436,
+                15313.699722290039,
+                15929.675579071045,
+                15474.647283554077,
+                18518.47195625305,
+                41753.03649902344
+            ],
+            "summarization_count": 0
+        }
+    },
+    "verifier_result": {
+        "rewards": {
+            "reward": 0.0
+        }
+    },
+    "exception_info": {
+        "exception_type": "AgentTimeoutError",
+        "exception_message": "Agent execution timed out after 1200.0 seconds",
+        "exception_traceback": "Traceback (most recent call last):\n  File \"/home/saketh/.local/share/uv/python/cpython-3.12.12-linux-x86_64-gnu/lib/python3.12/asyncio/tasks.py\", line 520, in wait_for\n    return await fut\n           ^^^^^^^^^\n  File \"/home/saketh/.local/share/uv/tools/harbor/lib/python3.12/site-packages/harbor/agents/terminus_2/terminus_2.py\", line 1504, in run\n    await self._run_agent_loop(\n  File \"/home/saketh/.local/share/uv/tools/harbor/lib/python3.12/site-packages/harbor/agents/terminus_2/terminus_2.py\", line 1216, in _run_agent_loop\n    ) = await self._handle_llm_interaction(\n        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/saketh/.local/share/uv/tools/harbor/lib/python3.12/site-packages/harbor/agents/terminus_2/terminus_2.py\", line 1091, in _handle_llm_interaction\n    llm_response = await self._query_llm(\n                   ^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/saketh/.local/share/uv/tools/harbor/lib/python3.12/site-packages/tenacity/asyncio/__init__.py\", line 193, in async_wrapped\n    return await copy(fn, *args, **kwargs)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/saketh/.local/share/uv/tools/harbor/lib/python3.12/site-packages/tenacity/asyncio/__init__.py\", line 112, in __call__\n    do = await self.iter(retry_state=retry_state)\n         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/saketh/.local/share/uv/tools/harbor/lib/python3.12/site-packages/tenacity/asyncio/__init__.py\", line 157, in iter\n    result = await action(retry_state)\n             ^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/saketh/.local/share/uv/tools/harbor/lib/python3.12/site-packages/tenacity/_utils.py\", line 111, in inner\n    return call(*args, **kwargs)\n           ^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/saketh/.local/share/uv/tools/harbor/lib/python3.12/site-packages/tenacity/__init__.py\", line 393, in <lambda>\n    self._add_action_func(lambda rs: rs.outcome.result())\n                                     ^^^^^^^^^^^^^^^^^^^\n  File \"/home/saketh/.local/share/uv/python/cpython-3.12.12-linux-x86_64-gnu/lib/python3.12/concurrent/futures/_base.py\", line 449, in result\n    return self.__get_result()\n           ^^^^^^^^^^^^^^^^^^^\n  File \"/home/saketh/.local/share/uv/python/cpython-3.12.12-linux-x86_64-gnu/lib/python3.12/concurrent/futures/_base.py\", line 401, in __get_result\n    raise self._exception\n  File \"/home/saketh/.local/share/uv/tools/harbor/lib/python3.12/site-packages/tenacity/asyncio/__init__.py\", line 116, in __call__\n    result = await fn(*args, **kwargs)\n             ^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/saketh/.local/share/uv/tools/harbor/lib/python3.12/site-packages/harbor/agents/terminus_2/terminus_2.py\", line 914, in _query_llm\n    llm_response = await chat.chat(\n                   ^^^^^^^^^^^^^^^^\n  File \"/home/saketh/.local/share/uv/tools/harbor/lib/python3.12/site-packages/harbor/llms/chat.py\", line 78, in chat\n    llm_response: LLMResponse = await self._model.call(\n                                ^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/saketh/.local/share/uv/tools/harbor/lib/python3.12/site-packages/tenacity/asyncio/__init__.py\", line 193, in async_wrapped\n    return await copy(fn, *args, **kwargs)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/saketh/.local/share/uv/tools/harbor/lib/python3.12/site-packages/tenacity/asyncio/__init__.py\", line 112, in __call__\n    do = await self.iter(retry_state=retry_state)\n         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/saketh/.local/share/uv/tools/harbor/lib/python3.12/site-packages/tenacity/asyncio/__init__.py\", line 157, in iter\n    result = await action(retry_state)\n             ^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/saketh/.local/share/uv/tools/harbor/lib/python3.12/site-packages/tenacity/_utils.py\", line 111, in inner\n    return call(*args, **kwargs)\n           ^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/saketh/.local/share/uv/tools/harbor/lib/python3.12/site-packages/tenacity/__init__.py\", line 393, in <lambda>\n    self._add_action_func(lambda rs: rs.outcome.result())\n                                     ^^^^^^^^^^^^^^^^^^^\n  File \"/home/saketh/.local/share/uv/python/cpython-3.12.12-linux-x86_64-gnu/lib/python3.12/concurrent/futures/_base.py\", line 449, in result\n    return self.__get_result()\n           ^^^^^^^^^^^^^^^^^^^\n  File \"/home/saketh/.local/share/uv/python/cpython-3.12.12-linux-x86_64-gnu/lib/python3.12/concurrent/futures/_base.py\", line 401, in __get_result\n    raise self._exception\n  File \"/home/saketh/.local/share/uv/tools/harbor/lib/python3.12/site-packages/tenacity/asyncio/__init__.py\", line 116, in __call__\n    result = await fn(*args, **kwargs)\n             ^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/saketh/.local/share/uv/tools/harbor/lib/python3.12/site-packages/harbor/llms/lite_llm.py\", line 360, in call\n    response = await litellm.acompletion(**completion_kwargs)\n               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/saketh/.local/share/uv/tools/harbor/lib/python3.12/site-packages/litellm/utils.py\", line 1879, in wrapper_async\n    result = await original_function(*args, **kwargs)\n             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/saketh/.local/share/uv/tools/harbor/lib/python3.12/site-packages/litellm/main.py\", line 617, in acompletion\n    response = await init_response\n               ^^^^^^^^^^^^^^^^^^^\n  File \"/home/saketh/.local/share/uv/tools/harbor/lib/python3.12/site-packages/litellm/llms/custom_httpx/llm_http_handler.py\", line 309, in async_completion\n    response = await self._make_common_async_call(\n               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/saketh/.local/share/uv/tools/harbor/lib/python3.12/site-packages/litellm/llms/custom_httpx/llm_http_handler.py\", line 177, in _make_common_async_call\n    response = await async_httpx_client.post(\n               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/saketh/.local/share/uv/tools/harbor/lib/python3.12/site-packages/litellm/litellm_core_utils/logging_utils.py\", line 297, in async_wrapper\n    result = await func(*args, **kwargs)\n             ^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/saketh/.local/share/uv/tools/harbor/lib/python3.12/site-packages/litellm/llms/custom_httpx/http_handler.py\", line 466, in post\n    response = await self.client.send(req, stream=stream)\n               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/saketh/.local/share/uv/tools/harbor/lib/python3.12/site-packages/httpx/_client.py\", line 1643, in send\n    raise exc\n  File \"/home/saketh/.local/share/uv/tools/harbor/lib/python3.12/site-packages/httpx/_client.py\", line 1637, in send\n    await response.aread()\n  File \"/home/saketh/.local/share/uv/tools/harbor/lib/python3.12/site-packages/httpx/_models.py\", line 979, in aread\n    self._content = b\"\".join([part async for part in self.aiter_bytes()])\n                             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/saketh/.local/share/uv/tools/harbor/lib/python3.12/site-packages/httpx/_models.py\", line 997, in aiter_bytes\n    async for raw_bytes in self.aiter_raw():\n  File \"/home/saketh/.local/share/uv/tools/harbor/lib/python3.12/site-packages/httpx/_models.py\", line 1055, in aiter_raw\n    async for raw_stream_bytes in self.stream:\n  File \"/home/saketh/.local/share/uv/tools/harbor/lib/python3.12/site-packages/httpx/_client.py\", line 176, in __aiter__\n    async for chunk in self._stream:\n  File \"/home/saketh/.local/share/uv/tools/harbor/lib/python3.12/site-packages/litellm/llms/custom_httpx/aiohttp_transport.py\", line 86, in __aiter__\n    async for chunk in self._aiohttp_response.content.iter_chunked(self.CHUNK_SIZE):\n  File \"/home/saketh/.local/share/uv/tools/harbor/lib/python3.12/site-packages/aiohttp/streams.py\", line 52, in __anext__\n    rv = await self.read_func()\n         ^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/saketh/.local/share/uv/tools/harbor/lib/python3.12/site-packages/aiohttp/streams.py\", line 452, in read\n    await self._wait(\"read\")\n  File \"/home/saketh/.local/share/uv/tools/harbor/lib/python3.12/site-packages/aiohttp/streams.py\", line 371, in _wait\n    await waiter\nasyncio.exceptions.CancelledError\n\nThe above exception was the direct cause of the following exception:\n\nTraceback (most recent call last):\n  File \"/home/saketh/.local/share/uv/tools/harbor/lib/python3.12/site-packages/harbor/trial/trial.py\", line 259, in _execute_agent\n    await asyncio.wait_for(\n  File \"/home/saketh/.local/share/uv/python/cpython-3.12.12-linux-x86_64-gnu/lib/python3.12/asyncio/tasks.py\", line 519, in wait_for\n    async with timeouts.timeout(timeout):\n               ^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/saketh/.local/share/uv/python/cpython-3.12.12-linux-x86_64-gnu/lib/python3.12/asyncio/timeouts.py\", line 115, in __aexit__\n    raise TimeoutError from exc_val\nTimeoutError\n\nThe above exception was the direct cause of the following exception:\n\nTraceback (most recent call last):\n  File \"/home/saketh/.local/share/uv/tools/harbor/lib/python3.12/site-packages/harbor/trial/trial.py\", line 483, in run\n    await self._execute_agent()\n  File \"/home/saketh/.local/share/uv/tools/harbor/lib/python3.12/site-packages/harbor/trial/trial.py\", line 268, in _execute_agent\n    raise AgentTimeoutError(\nharbor.trial.trial.AgentTimeoutError: Agent execution timed out after 1200.0 seconds\n",
+        "occurred_at": "2026-03-13T08:41:42.019515"
+    },
+    "started_at": "2026-03-13T12:21:35.182642Z",
+    "finished_at": "2026-03-13T12:41:52.809291Z",
+    "environment_setup": {
+        "started_at": "2026-03-13T12:21:35.183127Z",
+        "finished_at": "2026-03-13T12:21:37.056123Z"
+    },
+    "agent_setup": {
+        "started_at": "2026-03-13T12:21:37.056129Z",
+        "finished_at": "2026-03-13T12:21:41.996125Z"
+    },
+    "agent_execution": {
+        "started_at": "2026-03-13T12:21:41.996158Z",
+        "finished_at": "2026-03-13T12:41:42.018129Z"
+    },
+    "verifier": {
+        "started_at": "2026-03-13T12:41:42.021006Z",
+        "finished_at": "2026-03-13T12:41:42.417413Z"
+    }
+}

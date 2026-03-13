@@ -1,0 +1,101 @@
+{
+    "id": "7092937d-0954-4feb-8353-3d38e6bcacaa",
+    "started_at": "2026-03-13T06:25:43.915976",
+    "finished_at": "2026-03-13T08:42:49.138157",
+    "n_total_trials": 46,
+    "stats": {
+        "n_trials": 46,
+        "n_errors": 24,
+        "evals": {
+            "terminus-2__openai-gpt-4o-mini__cvdp_v1.0.4_agentic_code_generation_no_commercial": {
+                "n_trials": 46,
+                "n_errors": 24,
+                "metrics": [
+                    {
+                        "mean": 0.0
+                    }
+                ],
+                "reward_stats": {
+                    "reward": {
+                        "0.0": [
+                            "cvdp_agentic_des_0001__VWBcbWM",
+                            "cvdp_agentic_des_0005__XG77YYW",
+                            "cvdp_agentic_des_0007__uRGfb2v",
+                            "cvdp_agentic_arithmetic_progress__RxssoXR",
+                            "cvdp_agentic_axi4lite_to_pcie_co__tAW8a65",
+                            "cvdp_agentic_axis_broadcaster_00__FWcqKTM",
+                            "cvdp_agentic_axis_to_uart_0004__LH5nEhr",
+                            "cvdp_agentic_barrel_shifter_0002__FFf7eYf",
+                            "cvdp_agentic_binary_search_tree___mwhK6TB",
+                            "cvdp_agentic_binary_search_tree___kBGhs9E",
+                            "cvdp_agentic_cache_controller_00__bddUhwH",
+                            "cvdp_agentic_custom_fifo_0004__NfAuYCq",
+                            "cvdp_agentic_direct_map_cache_00__cNt3bJ4",
+                            "cvdp_agentic_door_lock_0001__NMqBc5Z",
+                            "cvdp_agentic_dual_port_memory_00__2gVXcAr",
+                            "cvdp_agentic_dynamic_equalizer_0__aw58GDC",
+                            "cvdp_agentic_dynamic_equalizer_0__azwouzg",
+                            "cvdp_agentic_dynamic_equalizer_0__TfT7rzV",
+                            "cvdp_agentic_elevator_control_00__rGHX6Je",
+                            "cvdp_agentic_ethernet_mii_0004__dNFdv3K",
+                            "cvdp_agentic_event_scheduler_000__kb5cKgJ",
+                            "cvdp_agentic_event_storing_0001__rKGQtVz",
+                            "cvdp_agentic_fixed_arbiter_0010__bU4pohz",
+                            "cvdp_agentic_gcd_0007__aT2pPEi",
+                            "cvdp_agentic_jpeg_runlength_enc___hRY5WnS",
+                            "cvdp_agentic_lfsr_0001__TjnLfk2",
+                            "cvdp_agentic_lfsr_0005__v7xr2is",
+                            "cvdp_agentic_low_power_channel_0__kut2YGi",
+                            "cvdp_agentic_monte_carlo_0006__cjWgecS",
+                            "cvdp_agentic_multiplexer_0001__KdgRsD6",
+                            "cvdp_agentic_nmea_gps_0008__sa3rLNv",
+                            "cvdp_agentic_phase_rotation_0013__YVk5tF8",
+                            "cvdp_agentic_phase_rotation_0015__cMvVxkC",
+                            "cvdp_agentic_phase_rotation_0019__Ys4BaPK",
+                            "cvdp_agentic_phase_rotation_0028__7RVJgQn",
+                            "cvdp_agentic_phase_rotation_0038__eX5h9T3",
+                            "cvdp_agentic_poly_decimator_0001__LHFHHPF",
+                            "cvdp_agentic_rgb_color_space_con__VMK4pJ5",
+                            "cvdp_agentic_rgb_color_space_con__2RfkxEM",
+                            "cvdp_agentic_sorter_0009__7fQopgh",
+                            "cvdp_agentic_sorter_0026__PHKbsHF",
+                            "cvdp_agentic_sync_serial_communi__gtfADE9",
+                            "cvdp_agentic_systolic_array_0001__oLPVh9M",
+                            "cvdp_agentic_ttc_lite_0001__yvXW43M",
+                            "cvdp_agentic_universal_shift_reg__JrWxk4c",
+                            "cvdp_agentic_universal_shift_reg__zN67gGV"
+                        ]
+                    }
+                },
+                "exception_stats": {
+                    "AgentTimeoutError": [
+                        "cvdp_agentic_des_0001__VWBcbWM",
+                        "cvdp_agentic_des_0005__XG77YYW",
+                        "cvdp_agentic_des_0007__uRGfb2v",
+                        "cvdp_agentic_arithmetic_progress__RxssoXR",
+                        "cvdp_agentic_axis_to_uart_0004__LH5nEhr",
+                        "cvdp_agentic_binary_search_tree___mwhK6TB",
+                        "cvdp_agentic_cache_controller_00__bddUhwH",
+                        "cvdp_agentic_custom_fifo_0004__NfAuYCq",
+                        "cvdp_agentic_direct_map_cache_00__cNt3bJ4",
+                        "cvdp_agentic_dynamic_equalizer_0__azwouzg",
+                        "cvdp_agentic_dynamic_equalizer_0__TfT7rzV",
+                        "cvdp_agentic_ethernet_mii_0004__dNFdv3K",
+                        "cvdp_agentic_lfsr_0005__v7xr2is",
+                        "cvdp_agentic_monte_carlo_0006__cjWgecS",
+                        "cvdp_agentic_multiplexer_0001__KdgRsD6",
+                        "cvdp_agentic_nmea_gps_0008__sa3rLNv",
+                        "cvdp_agentic_phase_rotation_0019__Ys4BaPK",
+                        "cvdp_agentic_phase_rotation_0028__7RVJgQn",
+                        "cvdp_agentic_phase_rotation_0038__eX5h9T3",
+                        "cvdp_agentic_poly_decimator_0001__LHFHHPF",
+                        "cvdp_agentic_sorter_0009__7fQopgh",
+                        "cvdp_agentic_systolic_array_0001__oLPVh9M",
+                        "cvdp_agentic_ttc_lite_0001__yvXW43M",
+                        "cvdp_agentic_universal_shift_reg__JrWxk4c"
+                    ]
+                }
+            }
+        }
+    }
+}

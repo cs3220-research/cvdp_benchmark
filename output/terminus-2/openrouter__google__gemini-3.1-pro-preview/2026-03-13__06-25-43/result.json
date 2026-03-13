@@ -1,0 +1,65 @@
+{
+    "id": "bc424f45-d6d7-4977-bc0b-6ae2d6638caf",
+    "started_at": "2026-03-13T06:25:43.879787",
+    "finished_at": "2026-03-13T08:09:31.449580",
+    "n_total_trials": 27,
+    "stats": {
+        "n_trials": 27,
+        "n_errors": 5,
+        "evals": {
+            "terminus-2__google-gemini-3.1-pro-preview__cvdp_v1.0.4_agentic_code_generation_no_commercial": {
+                "n_trials": 27,
+                "n_errors": 5,
+                "metrics": [
+                    {
+                        "mean": 0.25925925925925924
+                    }
+                ],
+                "reward_stats": {
+                    "reward": {
+                        "1.0": [
+                            "cvdp_agentic_aes_encryption_decr__3Dy2TgY",
+                            "cvdp_agentic_cipher_0001__BbpEFVn",
+                            "cvdp_agentic_digital_stopwatch_0__zHu7heG",
+                            "cvdp_agentic_direct_map_cache_00__PXL7TEW",
+                            "cvdp_agentic_direct_map_cache_00__RWtVZV3",
+                            "cvdp_agentic_phase_rotation_0019__45X6tLr",
+                            "cvdp_agentic_sync_serial_communi__ZEaP9Xz"
+                        ],
+                        "0.0": [
+                            "cvdp_agentic_axis_broadcaster_00__LSvmePV",
+                            "cvdp_agentic_binary_search_tree___uPbwTpm",
+                            "cvdp_agentic_dma_xfer_engine_000__ENJYWTD",
+                            "cvdp_agentic_dynamic_equalizer_0__JmVhctB",
+                            "cvdp_agentic_ethernet_mii_0006__88qFhkw",
+                            "cvdp_agentic_fixed_arbiter_0010__4CJoXGc",
+                            "cvdp_agentic_gcd_0007__Tds78LJ",
+                            "cvdp_agentic_hdbn_codec_0001__cp5Nfso",
+                            "cvdp_agentic_jpeg_runlength_enc___3cyDCba",
+                            "cvdp_agentic_lfsr_0005__6oNX8xD",
+                            "cvdp_agentic_monte_carlo_0006__XBzsgSE",
+                            "cvdp_agentic_phase_rotation_0015__76CcW7R",
+                            "cvdp_agentic_phase_rotation_0028__nzXNpK8",
+                            "cvdp_agentic_phase_rotation_0031__pqp3WaE",
+                            "cvdp_agentic_poly_decimator_0001__TNusXCg",
+                            "cvdp_agentic_rc5_0001__oyDUVJH",
+                            "cvdp_agentic_rgb_color_space_con__HcL2xtk",
+                            "cvdp_agentic_sorter_0009__56KQZAM",
+                            "cvdp_agentic_sorter_0016__hpVAYQo",
+                            "cvdp_agentic_ttc_lite_0001__7G5hCVk"
+                        ]
+                    }
+                },
+                "exception_stats": {
+                    "AgentTimeoutError": [
+                        "cvdp_agentic_digital_stopwatch_0__zHu7heG",
+                        "cvdp_agentic_hdbn_codec_0001__cp5Nfso",
+                        "cvdp_agentic_jpeg_runlength_enc___3cyDCba",
+                        "cvdp_agentic_phase_rotation_0031__pqp3WaE",
+                        "cvdp_agentic_rgb_color_space_con__HcL2xtk"
+                    ]
+                }
+            }
+        }
+    }
+}

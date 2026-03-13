@@ -1,0 +1,133 @@
+{
+    "id": "7ffa7962-a2b7-489b-96d4-54e80aaaf8c5",
+    "task_name": "cvdp_agentic_jpeg_runlength_enc_0001",
+    "trial_name": "cvdp_agentic_jpeg_runlength_enc___C8uen8c",
+    "trial_uri": "file:///home/saketh/research/cvdp_benchmark/output/terminus-2/openrouter__anthropic__claude-opus-4.6/2026-03-13__06-25-44/cvdp_agentic_jpeg_runlength_enc___C8uen8c",
+    "task_id": {
+        "path": "/home/saketh/research/cvdp_benchmark/harbor_output/cvdp_agentic_jpeg_runlength_enc_0001"
+    },
+    "source": "cvdp_v1.0.4_agentic_code_generation_no_commercial",
+    "task_checksum": "a229311427dd509f01bb2b3a0c47f6676f39ecdad06a4c39fe61d9977b438a97",
+    "config": {
+        "task": {
+            "path": "/home/saketh/research/cvdp_benchmark/harbor_output/cvdp_agentic_jpeg_runlength_enc_0001",
+            "git_url": null,
+            "git_commit_id": null,
+            "overwrite": false,
+            "download_dir": null,
+            "source": "cvdp_v1.0.4_agentic_code_generation_no_commercial"
+        },
+        "trial_name": "cvdp_agentic_jpeg_runlength_enc___C8uen8c",
+        "trials_dir": "/home/saketh/research/cvdp_benchmark/output/terminus-2/openrouter__anthropic__claude-opus-4.6/2026-03-13__06-25-44",
+        "timeout_multiplier": 1.0,
+        "agent_timeout_multiplier": null,
+        "verifier_timeout_multiplier": null,
+        "agent_setup_timeout_multiplier": null,
+        "environment_build_timeout_multiplier": null,
+        "agent": {
+            "name": "terminus-2",
+            "import_path": null,
+            "model_name": "openrouter/anthropic/claude-opus-4.6",
+            "override_timeout_sec": null,
+            "override_setup_timeout_sec": null,
+            "max_timeout_sec": null,
+            "kwargs": {},
+            "env": {}
+        },
+        "environment": {
+            "type": "docker",
+            "import_path": null,
+            "force_build": false,
+            "delete": true,
+            "override_cpus": null,
+            "override_memory_mb": null,
+            "override_storage_mb": null,
+            "override_gpus": null,
+            "suppress_override_warnings": false,
+            "kwargs": {}
+        },
+        "verifier": {
+            "override_timeout_sec": null,
+            "max_timeout_sec": null,
+            "disable": false
+        },
+        "artifacts": [],
+        "job_id": "3784170f-eefd-4d08-bc8a-1126cbd080d3"
+    },
+    "agent_info": {
+        "name": "terminus-2",
+        "version": "2.0.0",
+        "model_info": {
+            "name": "anthropic/claude-opus-4.6",
+            "provider": "openrouter"
+        }
+    },
+    "agent_result": {
+        "n_input_tokens": 902522,
+        "n_cache_tokens": 825321,
+        "n_output_tokens": 44096,
+        "cost_usd": null,
+        "rollout_details": [],
+        "metadata": {
+            "n_episodes": 26,
+            "api_request_times_msec": [
+                5539.812803268433,
+                4636.743783950806,
+                63457.700967788696,
+                6355.1154136657715,
+                2912.815570831299,
+                4554.5525550842285,
+                4971.250057220459,
+                5093.2512283325195,
+                6575.33597946167,
+                4627.65908241272,
+                47855.24368286133,
+                37473.22463989258,
+                23043.742895126343,
+                5528.037548065186,
+                9660.828590393066,
+                38985.09764671326,
+                48257.471561431885,
+                59335.166454315186,
+                36652.30369567871,
+                26722.72539138794,
+                41896.72493934631,
+                37496.020555496216,
+                42866.07122421265,
+                49658.08820724487,
+                30516.73698425293,
+                88179.45551872253
+            ],
+            "summarization_count": 0
+        }
+    },
+    "verifier_result": {
+        "rewards": {
+            "reward": 0.0
+        }
+    },
+    "exception_info": {
+        "exception_type": "AgentTimeoutError",
+        "exception_message": "Agent execution timed out after 1200.0 seconds",
+        "exception_traceback": "Traceback (most recent call last):\n  File \"/home/saketh/.local/share/uv/python/cpython-3.12.12-linux-x86_64-gnu/lib/python3.12/asyncio/tasks.py\", line 520, in wait_for\n    return await fut\n           ^^^^^^^^^\n  File \"/home/saketh/.local/share/uv/tools/harbor/lib/python3.12/site-packages/harbor/agents/terminus_2/terminus_2.py\", line 1504, in run\n    await self._run_agent_loop(\n  File \"/home/saketh/.local/share/uv/tools/harbor/lib/python3.12/site-packages/harbor/agents/terminus_2/terminus_2.py\", line 1325, in _run_agent_loop\n    timeout_occurred, terminal_output = await self._execute_commands(\n                                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/saketh/.local/share/uv/tools/harbor/lib/python3.12/site-packages/harbor/agents/terminus_2/terminus_2.py\", line 1142, in _execute_commands\n    await session.send_keys(\n  File \"/home/saketh/.local/share/uv/tools/harbor/lib/python3.12/site-packages/harbor/agents/terminus_2/tmux_session.py\", line 563, in send_keys\n    await self._send_non_blocking_keys(\n  File \"/home/saketh/.local/share/uv/tools/harbor/lib/python3.12/site-packages/harbor/agents/terminus_2/tmux_session.py\", line 523, in _send_non_blocking_keys\n    await asyncio.sleep(min_timeout_sec - elapsed_time_sec)\n  File \"/home/saketh/.local/share/uv/python/cpython-3.12.12-linux-x86_64-gnu/lib/python3.12/asyncio/tasks.py\", line 665, in sleep\n    return await future\n           ^^^^^^^^^^^^\nasyncio.exceptions.CancelledError\n\nThe above exception was the direct cause of the following exception:\n\nTraceback (most recent call last):\n  File \"/home/saketh/.local/share/uv/tools/harbor/lib/python3.12/site-packages/harbor/trial/trial.py\", line 259, in _execute_agent\n    await asyncio.wait_for(\n  File \"/home/saketh/.local/share/uv/python/cpython-3.12.12-linux-x86_64-gnu/lib/python3.12/asyncio/tasks.py\", line 519, in wait_for\n    async with timeouts.timeout(timeout):\n               ^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/saketh/.local/share/uv/python/cpython-3.12.12-linux-x86_64-gnu/lib/python3.12/asyncio/timeouts.py\", line 115, in __aexit__\n    raise TimeoutError from exc_val\nTimeoutError\n\nThe above exception was the direct cause of the following exception:\n\nTraceback (most recent call last):\n  File \"/home/saketh/.local/share/uv/tools/harbor/lib/python3.12/site-packages/harbor/trial/trial.py\", line 483, in run\n    await self._execute_agent()\n  File \"/home/saketh/.local/share/uv/tools/harbor/lib/python3.12/site-packages/harbor/trial/trial.py\", line 268, in _execute_agent\n    raise AgentTimeoutError(\nharbor.trial.trial.AgentTimeoutError: Agent execution timed out after 1200.0 seconds\n",
+        "occurred_at": "2026-03-13T07:08:43.373787"
+    },
+    "started_at": "2026-03-13T10:48:36.509563Z",
+    "finished_at": "2026-03-13T11:08:54.160775Z",
+    "environment_setup": {
+        "started_at": "2026-03-13T10:48:36.510334Z",
+        "finished_at": "2026-03-13T10:48:38.471890Z"
+    },
+    "agent_setup": {
+        "started_at": "2026-03-13T10:48:38.471896Z",
+        "finished_at": "2026-03-13T10:48:43.370346Z"
+    },
+    "agent_execution": {
+        "started_at": "2026-03-13T10:48:43.370372Z",
+        "finished_at": "2026-03-13T11:08:43.373217Z"
+    },
+    "verifier": {
+        "started_at": "2026-03-13T11:08:43.374432Z",
+        "finished_at": "2026-03-13T11:08:43.774003Z"
+    }
+}

@@ -1,0 +1,149 @@
+{
+    "id": "3a03136a-8c98-4234-aeb0-d14710967c83",
+    "task_name": "cvdp_agentic_binary_search_tree_algorithms_0014",
+    "trial_name": "cvdp_agentic_binary_search_tree___yMyrtXd",
+    "trial_uri": "file:///home/saketh/research/cvdp_benchmark/output/terminus-2/openrouter__anthropic__claude-opus-4.6/2026-03-13__06-25-44/cvdp_agentic_binary_search_tree___yMyrtXd",
+    "task_id": {
+        "path": "/home/saketh/research/cvdp_benchmark/harbor_output/cvdp_agentic_binary_search_tree_algorithms_0014"
+    },
+    "source": "cvdp_v1.0.4_agentic_code_generation_no_commercial",
+    "task_checksum": "c6eda9e7cf5274cd41e3eaced124a0ee331049c706e5827d3bde47b2e6f8771e",
+    "config": {
+        "task": {
+            "path": "/home/saketh/research/cvdp_benchmark/harbor_output/cvdp_agentic_binary_search_tree_algorithms_0014",
+            "git_url": null,
+            "git_commit_id": null,
+            "overwrite": false,
+            "download_dir": null,
+            "source": "cvdp_v1.0.4_agentic_code_generation_no_commercial"
+        },
+        "trial_name": "cvdp_agentic_binary_search_tree___yMyrtXd",
+        "trials_dir": "/home/saketh/research/cvdp_benchmark/output/terminus-2/openrouter__anthropic__claude-opus-4.6/2026-03-13__06-25-44",
+        "timeout_multiplier": 1.0,
+        "agent_timeout_multiplier": null,
+        "verifier_timeout_multiplier": null,
+        "agent_setup_timeout_multiplier": null,
+        "environment_build_timeout_multiplier": null,
+        "agent": {
+            "name": "terminus-2",
+            "import_path": null,
+            "model_name": "openrouter/anthropic/claude-opus-4.6",
+            "override_timeout_sec": null,
+            "override_setup_timeout_sec": null,
+            "max_timeout_sec": null,
+            "kwargs": {},
+            "env": {}
+        },
+        "environment": {
+            "type": "docker",
+            "import_path": null,
+            "force_build": false,
+            "delete": true,
+            "override_cpus": null,
+            "override_memory_mb": null,
+            "override_storage_mb": null,
+            "override_gpus": null,
+            "suppress_override_warnings": false,
+            "kwargs": {}
+        },
+        "verifier": {
+            "override_timeout_sec": null,
+            "max_timeout_sec": null,
+            "disable": false
+        },
+        "artifacts": [],
+        "job_id": "3784170f-eefd-4d08-bc8a-1126cbd080d3"
+    },
+    "agent_info": {
+        "name": "terminus-2",
+        "version": "2.0.0",
+        "model_info": {
+            "name": "anthropic/claude-opus-4.6",
+            "provider": "openrouter"
+        }
+    },
+    "agent_result": {
+        "n_input_tokens": 1942603,
+        "n_cache_tokens": 1850285,
+        "n_output_tokens": 40147,
+        "cost_usd": null,
+        "rollout_details": [],
+        "metadata": {
+            "n_episodes": 42,
+            "api_request_times_msec": [
+                5720.979452133179,
+                3566.585063934326,
+                3160.1016521453857,
+                4883.543491363525,
+                3779.7017097473145,
+                6268.423318862915,
+                3847.762107849121,
+                4475.693225860596,
+                3785.6030464172363,
+                10675.514221191406,
+                3523.0724811553955,
+                29176.684141159058,
+                21782.36484527588,
+                21753.38625907898,
+                61142.85349845886,
+                5765.091896057129,
+                3126.5511512756348,
+                2983.278751373291,
+                4251.724481582642,
+                6673.2165813446045,
+                5097.714900970459,
+                8250.110626220703,
+                4826.420783996582,
+                13617.15054512024,
+                8232.779026031494,
+                5969.919204711914,
+                4429.125070571899,
+                55781.59832954407,
+                43826.01857185364,
+                6785.443067550659,
+                46665.42077064514,
+                45438.67015838623,
+                32160.89963912964,
+                20735.299348831177,
+                9190.978050231934,
+                24983.129262924194,
+                14239.33744430542,
+                12733.52599143982,
+                15203.062057495117,
+                9695.327520370483,
+                25449.536085128784,
+                4521.886110305786
+            ],
+            "summarization_count": 0
+        }
+    },
+    "verifier_result": {
+        "rewards": {
+            "reward": 0.0
+        }
+    },
+    "exception_info": {
+        "exception_type": "AgentTimeoutError",
+        "exception_message": "Agent execution timed out after 1200.0 seconds",
+        "exception_traceback": "Traceback (most recent call last):\n  File \"/home/saketh/.local/share/uv/python/cpython-3.12.12-linux-x86_64-gnu/lib/python3.12/asyncio/tasks.py\", line 520, in wait_for\n    return await fut\n           ^^^^^^^^^\n  File \"/home/saketh/.local/share/uv/tools/harbor/lib/python3.12/site-packages/harbor/agents/terminus_2/terminus_2.py\", line 1504, in run\n    await self._run_agent_loop(\n  File \"/home/saketh/.local/share/uv/tools/harbor/lib/python3.12/site-packages/harbor/agents/terminus_2/terminus_2.py\", line 1325, in _run_agent_loop\n    timeout_occurred, terminal_output = await self._execute_commands(\n                                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/saketh/.local/share/uv/tools/harbor/lib/python3.12/site-packages/harbor/agents/terminus_2/terminus_2.py\", line 1142, in _execute_commands\n    await session.send_keys(\n  File \"/home/saketh/.local/share/uv/tools/harbor/lib/python3.12/site-packages/harbor/agents/terminus_2/tmux_session.py\", line 563, in send_keys\n    await self._send_non_blocking_keys(\n  File \"/home/saketh/.local/share/uv/tools/harbor/lib/python3.12/site-packages/harbor/agents/terminus_2/tmux_session.py\", line 523, in _send_non_blocking_keys\n    await asyncio.sleep(min_timeout_sec - elapsed_time_sec)\n  File \"/home/saketh/.local/share/uv/python/cpython-3.12.12-linux-x86_64-gnu/lib/python3.12/asyncio/tasks.py\", line 665, in sleep\n    return await future\n           ^^^^^^^^^^^^\nasyncio.exceptions.CancelledError\n\nThe above exception was the direct cause of the following exception:\n\nTraceback (most recent call last):\n  File \"/home/saketh/.local/share/uv/tools/harbor/lib/python3.12/site-packages/harbor/trial/trial.py\", line 259, in _execute_agent\n    await asyncio.wait_for(\n  File \"/home/saketh/.local/share/uv/python/cpython-3.12.12-linux-x86_64-gnu/lib/python3.12/asyncio/tasks.py\", line 519, in wait_for\n    async with timeouts.timeout(timeout):\n               ^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/saketh/.local/share/uv/python/cpython-3.12.12-linux-x86_64-gnu/lib/python3.12/asyncio/timeouts.py\", line 115, in __aexit__\n    raise TimeoutError from exc_val\nTimeoutError\n\nThe above exception was the direct cause of the following exception:\n\nTraceback (most recent call last):\n  File \"/home/saketh/.local/share/uv/tools/harbor/lib/python3.12/site-packages/harbor/trial/trial.py\", line 483, in run\n    await self._execute_agent()\n  File \"/home/saketh/.local/share/uv/tools/harbor/lib/python3.12/site-packages/harbor/trial/trial.py\", line 268, in _execute_agent\n    raise AgentTimeoutError(\nharbor.trial.trial.AgentTimeoutError: Agent execution timed out after 1200.0 seconds\n",
+        "occurred_at": "2026-03-13T06:46:13.152361"
+    },
+    "started_at": "2026-03-13T10:25:44.024741Z",
+    "finished_at": "2026-03-13T10:46:23.944486Z",
+    "environment_setup": {
+        "started_at": "2026-03-13T10:25:44.026251Z",
+        "finished_at": "2026-03-13T10:26:05.732925Z"
+    },
+    "agent_setup": {
+        "started_at": "2026-03-13T10:26:05.732933Z",
+        "finished_at": "2026-03-13T10:26:13.146084Z"
+    },
+    "agent_execution": {
+        "started_at": "2026-03-13T10:26:13.146117Z",
+        "finished_at": "2026-03-13T10:46:13.151697Z"
+    },
+    "verifier": {
+        "started_at": "2026-03-13T10:46:13.152979Z",
+        "finished_at": "2026-03-13T10:46:13.541503Z"
+    }
+}

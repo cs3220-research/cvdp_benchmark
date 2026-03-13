@@ -1,0 +1,49 @@
+{
+    "id": "ba5cfb88-33ef-4736-ac22-c33f2291c849",
+    "started_at": "2026-03-13T06:25:44.004792",
+    "finished_at": "2026-03-13T06:48:31.613600",
+    "n_total_trials": 15,
+    "stats": {
+        "n_trials": 15,
+        "n_errors": 1,
+        "evals": {
+            "terminus-2__openai-gpt-5.4__cvdp_v1.0.4_agentic_code_generation_no_commercial": {
+                "n_trials": 15,
+                "n_errors": 1,
+                "metrics": [
+                    {
+                        "mean": 0.13333333333333333
+                    }
+                ],
+                "reward_stats": {
+                    "reward": {
+                        "0.0": [
+                            "cvdp_agentic_aes_encryption_decr__QCrqx8a",
+                            "cvdp_agentic_ethernet_mii_0004__qExR2Me",
+                            "cvdp_agentic_ethernet_mii_0006__aH34832",
+                            "cvdp_agentic_event_storing_0001__GDkdwkD",
+                            "cvdp_agentic_hdbn_codec_0001__792dQwj",
+                            "cvdp_agentic_jpeg_runlength_enc___y5bpBFv",
+                            "cvdp_agentic_nbit_swizzling_0001__hZsdCbj",
+                            "cvdp_agentic_nmea_gps_0008__8i6NgnA",
+                            "cvdp_agentic_phase_rotation_0013__T8N9bn5",
+                            "cvdp_agentic_phase_rotation_0015__CUUbi4k",
+                            "cvdp_agentic_phase_rotation_0028__mpRMDft",
+                            "cvdp_agentic_phase_rotation_0031__MP26nec",
+                            "cvdp_agentic_poly_decimator_0001__bVqa2cg"
+                        ],
+                        "1.0": [
+                            "cvdp_agentic_axis_to_uart_0004__w4HC6NJ",
+                            "cvdp_agentic_multiplexer_0001__NXmUXMP"
+                        ]
+                    }
+                },
+                "exception_stats": {
+                    "AgentTimeoutError": [
+                        "cvdp_agentic_hdbn_codec_0001__792dQwj"
+                    ]
+                }
+            }
+        }
+    }
+}

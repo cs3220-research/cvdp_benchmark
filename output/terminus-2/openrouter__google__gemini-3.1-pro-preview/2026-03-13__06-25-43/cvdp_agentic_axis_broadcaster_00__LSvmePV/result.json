@@ -1,0 +1,119 @@
+{
+    "id": "c38a89f5-e465-4a41-ae70-b17fe96ee6b7",
+    "task_name": "cvdp_agentic_axis_broadcaster_0001",
+    "trial_name": "cvdp_agentic_axis_broadcaster_00__LSvmePV",
+    "trial_uri": "file:///home/saketh/research/cvdp_benchmark/output/terminus-2/openrouter__google__gemini-3.1-pro-preview/2026-03-13__06-25-43/cvdp_agentic_axis_broadcaster_00__LSvmePV",
+    "task_id": {
+        "path": "/home/saketh/research/cvdp_benchmark/harbor_output/cvdp_agentic_axis_broadcaster_0001"
+    },
+    "source": "cvdp_v1.0.4_agentic_code_generation_no_commercial",
+    "task_checksum": "51ac99d313a69f7fbcd9160f9de93626aa64b1c7d61589801b5815619d4a22b8",
+    "config": {
+        "task": {
+            "path": "/home/saketh/research/cvdp_benchmark/harbor_output/cvdp_agentic_axis_broadcaster_0001",
+            "git_url": null,
+            "git_commit_id": null,
+            "overwrite": false,
+            "download_dir": null,
+            "source": "cvdp_v1.0.4_agentic_code_generation_no_commercial"
+        },
+        "trial_name": "cvdp_agentic_axis_broadcaster_00__LSvmePV",
+        "trials_dir": "/home/saketh/research/cvdp_benchmark/output/terminus-2/openrouter__google__gemini-3.1-pro-preview/2026-03-13__06-25-43",
+        "timeout_multiplier": 1.0,
+        "agent_timeout_multiplier": null,
+        "verifier_timeout_multiplier": null,
+        "agent_setup_timeout_multiplier": null,
+        "environment_build_timeout_multiplier": null,
+        "agent": {
+            "name": "terminus-2",
+            "import_path": null,
+            "model_name": "openrouter/google/gemini-3.1-pro-preview",
+            "override_timeout_sec": null,
+            "override_setup_timeout_sec": null,
+            "max_timeout_sec": null,
+            "kwargs": {},
+            "env": {}
+        },
+        "environment": {
+            "type": "docker",
+            "import_path": null,
+            "force_build": false,
+            "delete": true,
+            "override_cpus": null,
+            "override_memory_mb": null,
+            "override_storage_mb": null,
+            "override_gpus": null,
+            "suppress_override_warnings": false,
+            "kwargs": {}
+        },
+        "verifier": {
+            "override_timeout_sec": null,
+            "max_timeout_sec": null,
+            "disable": false
+        },
+        "artifacts": [],
+        "job_id": "bc424f45-d6d7-4977-bc0b-6ae2d6638caf"
+    },
+    "agent_info": {
+        "name": "terminus-2",
+        "version": "2.0.0",
+        "model_info": {
+            "name": "google/gemini-3.1-pro-preview",
+            "provider": "openrouter"
+        }
+    },
+    "agent_result": {
+        "n_input_tokens": 188384,
+        "n_cache_tokens": 105757,
+        "n_output_tokens": 114996,
+        "cost_usd": null,
+        "rollout_details": [],
+        "metadata": {
+            "n_episodes": 17,
+            "api_request_times_msec": [
+                5277.755498886108,
+                4628.38077545166,
+                3985.736846923828,
+                57817.54446029663,
+                154649.2989063263,
+                4394.024133682251,
+                166907.39488601685,
+                37183.242321014404,
+                72166.74208641052,
+                5562.8602504730225,
+                70413.26570510864,
+                10063.03334236145,
+                147602.31041908264,
+                102915.01331329346,
+                169801.43547058105,
+                11366.18709564209,
+                69137.94779777527
+            ],
+            "summarization_count": 0
+        }
+    },
+    "verifier_result": {
+        "rewards": {
+            "reward": 0.0
+        }
+    },
+    "exception_info": null,
+    "started_at": "2026-03-13T10:25:43.885642Z",
+    "finished_at": "2026-03-13T10:45:49.621160Z",
+    "environment_setup": {
+        "started_at": "2026-03-13T10:25:43.886194Z",
+        "finished_at": "2026-03-13T10:26:11.105027Z"
+    },
+    "agent_setup": {
+        "started_at": "2026-03-13T10:26:11.105037Z",
+        "finished_at": "2026-03-13T10:26:17.676780Z"
+    },
+    "agent_execution": {
+        "started_at": "2026-03-13T10:26:17.676821Z",
+        "finished_at": "2026-03-13T10:45:38.709469Z"
+    },
+    "verifier": {
+        "started_at": "2026-03-13T10:45:38.709517Z",
+        "finished_at": "2026-03-13T10:45:39.207720Z"
+    }
+}

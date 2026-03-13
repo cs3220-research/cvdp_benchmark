@@ -3,7 +3,7 @@ import os
 import pytest
 import random
 import math
-from cocotb_tools.runner import get_runner
+from cocotb.runner import get_runner
 
 # Environment configuration
 verilog_sources = os.getenv("VERILOG_SOURCES").split()

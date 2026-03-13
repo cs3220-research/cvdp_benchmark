@@ -1,0 +1,111 @@
+{
+    "id": "50f4e67f-3aaa-426b-8e40-224fea7c078d",
+    "task_name": "cvdp_agentic_gcd_0007",
+    "trial_name": "cvdp_agentic_gcd_0007__Tds78LJ",
+    "trial_uri": "file:///home/saketh/research/cvdp_benchmark/output/terminus-2/openrouter__google__gemini-3.1-pro-preview/2026-03-13__06-25-43/cvdp_agentic_gcd_0007__Tds78LJ",
+    "task_id": {
+        "path": "/home/saketh/research/cvdp_benchmark/harbor_output/cvdp_agentic_gcd_0007"
+    },
+    "source": "cvdp_v1.0.4_agentic_code_generation_no_commercial",
+    "task_checksum": "2e818a5eb06bce55c88b723fda09272111ccc3026029edf385847f33b3522179",
+    "config": {
+        "task": {
+            "path": "/home/saketh/research/cvdp_benchmark/harbor_output/cvdp_agentic_gcd_0007",
+            "git_url": null,
+            "git_commit_id": null,
+            "overwrite": false,
+            "download_dir": null,
+            "source": "cvdp_v1.0.4_agentic_code_generation_no_commercial"
+        },
+        "trial_name": "cvdp_agentic_gcd_0007__Tds78LJ",
+        "trials_dir": "/home/saketh/research/cvdp_benchmark/output/terminus-2/openrouter__google__gemini-3.1-pro-preview/2026-03-13__06-25-43",
+        "timeout_multiplier": 1.0,
+        "agent_timeout_multiplier": null,
+        "verifier_timeout_multiplier": null,
+        "agent_setup_timeout_multiplier": null,
+        "environment_build_timeout_multiplier": null,
+        "agent": {
+            "name": "terminus-2",
+            "import_path": null,
+            "model_name": "openrouter/google/gemini-3.1-pro-preview",
+            "override_timeout_sec": null,
+            "override_setup_timeout_sec": null,
+            "max_timeout_sec": null,
+            "kwargs": {},
+            "env": {}
+        },
+        "environment": {
+            "type": "docker",
+            "import_path": null,
+            "force_build": false,
+            "delete": true,
+            "override_cpus": null,
+            "override_memory_mb": null,
+            "override_storage_mb": null,
+            "override_gpus": null,
+            "suppress_override_warnings": false,
+            "kwargs": {}
+        },
+        "verifier": {
+            "override_timeout_sec": null,
+            "max_timeout_sec": null,
+            "disable": false
+        },
+        "artifacts": [],
+        "job_id": "bc424f45-d6d7-4977-bc0b-6ae2d6638caf"
+    },
+    "agent_info": {
+        "name": "terminus-2",
+        "version": "2.0.0",
+        "model_info": {
+            "name": "google/gemini-3.1-pro-preview",
+            "provider": "openrouter"
+        }
+    },
+    "agent_result": {
+        "n_input_tokens": 71076,
+        "n_cache_tokens": 32581,
+        "n_output_tokens": 30936,
+        "cost_usd": null,
+        "rollout_details": [],
+        "metadata": {
+            "n_episodes": 9,
+            "api_request_times_msec": [
+                5341.823577880859,
+                6028.853893280029,
+                23803.586721420288,
+                29018.612384796143,
+                104734.71260070801,
+                25875.351190567017,
+                16770.308017730713,
+                5217.445135116577,
+                48962.774991989136
+            ],
+            "summarization_count": 0
+        }
+    },
+    "verifier_result": {
+        "rewards": {
+            "reward": 0.0
+        }
+    },
+    "exception_info": null,
+    "started_at": "2026-03-13T10:53:21.208837Z",
+    "finished_at": "2026-03-13T10:58:11.761376Z",
+    "environment_setup": {
+        "started_at": "2026-03-13T10:53:21.209606Z",
+        "finished_at": "2026-03-13T10:53:25.221925Z"
+    },
+    "agent_setup": {
+        "started_at": "2026-03-13T10:53:25.221932Z",
+        "finished_at": "2026-03-13T10:53:30.134007Z"
+    },
+    "agent_execution": {
+        "started_at": "2026-03-13T10:53:30.134029Z",
+        "finished_at": "2026-03-13T10:58:00.944056Z"
+    },
+    "verifier": {
+        "started_at": "2026-03-13T10:58:00.944114Z",
+        "finished_at": "2026-03-13T10:58:01.353609Z"
+    }
+}

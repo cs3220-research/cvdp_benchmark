@@ -1,0 +1,111 @@
+{
+    "id": "a95298b1-f9b6-4b47-9f1f-abfbb0a08555",
+    "task_name": "cvdp_agentic_rgb_color_space_conversion_0004",
+    "trial_name": "cvdp_agentic_rgb_color_space_con__2RfkxEM",
+    "trial_uri": "file:///home/saketh/research/cvdp_benchmark/output/terminus-2/openrouter__openai__gpt-4o-mini/2026-03-13__06-25-43/cvdp_agentic_rgb_color_space_con__2RfkxEM",
+    "task_id": {
+        "path": "/home/saketh/research/cvdp_benchmark/harbor_output/cvdp_agentic_rgb_color_space_conversion_0004"
+    },
+    "source": "cvdp_v1.0.4_agentic_code_generation_no_commercial",
+    "task_checksum": "9df8261bc67b7bd1a3c2854283e19f56235c11c6a11359abc1478227587b0082",
+    "config": {
+        "task": {
+            "path": "/home/saketh/research/cvdp_benchmark/harbor_output/cvdp_agentic_rgb_color_space_conversion_0004",
+            "git_url": null,
+            "git_commit_id": null,
+            "overwrite": false,
+            "download_dir": null,
+            "source": "cvdp_v1.0.4_agentic_code_generation_no_commercial"
+        },
+        "trial_name": "cvdp_agentic_rgb_color_space_con__2RfkxEM",
+        "trials_dir": "/home/saketh/research/cvdp_benchmark/output/terminus-2/openrouter__openai__gpt-4o-mini/2026-03-13__06-25-43",
+        "timeout_multiplier": 1.0,
+        "agent_timeout_multiplier": null,
+        "verifier_timeout_multiplier": null,
+        "agent_setup_timeout_multiplier": null,
+        "environment_build_timeout_multiplier": null,
+        "agent": {
+            "name": "terminus-2",
+            "import_path": null,
+            "model_name": "openrouter/openai/gpt-4o-mini",
+            "override_timeout_sec": null,
+            "override_setup_timeout_sec": null,
+            "max_timeout_sec": null,
+            "kwargs": {},
+            "env": {}
+        },
+        "environment": {
+            "type": "docker",
+            "import_path": null,
+            "force_build": false,
+            "delete": true,
+            "override_cpus": null,
+            "override_memory_mb": null,
+            "override_storage_mb": null,
+            "override_gpus": null,
+            "suppress_override_warnings": false,
+            "kwargs": {}
+        },
+        "verifier": {
+            "override_timeout_sec": null,
+            "max_timeout_sec": null,
+            "disable": false
+        },
+        "artifacts": [],
+        "job_id": "7092937d-0954-4feb-8353-3d38e6bcacaa"
+    },
+    "agent_info": {
+        "name": "terminus-2",
+        "version": "2.0.0",
+        "model_info": {
+            "name": "openai/gpt-4o-mini",
+            "provider": "openrouter"
+        }
+    },
+    "agent_result": {
+        "n_input_tokens": 32958,
+        "n_cache_tokens": 26624,
+        "n_output_tokens": 2678,
+        "cost_usd": null,
+        "rollout_details": [],
+        "metadata": {
+            "n_episodes": 9,
+            "api_request_times_msec": [
+                4108.898878097534,
+                3118.08443069458,
+                3276.5848636627197,
+                3490.9985065460205,
+                3421.788215637207,
+                3665.963888168335,
+                25522.783994674683,
+                3165.0125980377197,
+                2660.7093811035156
+            ],
+            "summarization_count": 0
+        }
+    },
+    "verifier_result": {
+        "rewards": {
+            "reward": 0.0
+        }
+    },
+    "exception_info": null,
+    "started_at": "2026-03-13T12:18:14.169874Z",
+    "finished_at": "2026-03-13T12:19:31.691075Z",
+    "environment_setup": {
+        "started_at": "2026-03-13T12:18:14.170500Z",
+        "finished_at": "2026-03-13T12:18:16.164991Z"
+    },
+    "agent_setup": {
+        "started_at": "2026-03-13T12:18:16.164997Z",
+        "finished_at": "2026-03-13T12:18:21.080065Z"
+    },
+    "agent_execution": {
+        "started_at": "2026-03-13T12:18:21.080089Z",
+        "finished_at": "2026-03-13T12:19:20.890927Z"
+    },
+    "verifier": {
+        "started_at": "2026-03-13T12:19:20.890973Z",
+        "finished_at": "2026-03-13T12:19:21.297793Z"
+    }
+}

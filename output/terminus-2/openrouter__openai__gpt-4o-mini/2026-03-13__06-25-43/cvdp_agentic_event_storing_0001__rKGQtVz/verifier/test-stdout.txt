@@ -1,0 +1,42 @@
+Running service: sanity
+============================= test session starts ==============================
+platform linux -- Python 3.9.2, pytest-8.3.2, pluggy-1.5.0 -- /usr/bin/python3
+cachedir: /rundir/harness/.cache
+rootdir: /src
+collecting ... collected 0 items / 1 error
+
+==================================== ERRORS ====================================
+_________________ ERROR collecting test_runner_event_array.py __________________
+ImportError while importing test module '/src/test_runner_event_array.py'.
+Hint: make sure your test modules/packages have valid Python names.
+Traceback:
+/usr/lib/python3.9/importlib/__init__.py:127: in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+/src/test_runner_event_array.py:5: in <module>
+    from cocotb.runner import get_runner
+E   ModuleNotFoundError: No module named 'cocotb.runner'
+=========================== short test summary info ============================
+ERROR ../../src/test_runner_event_array.py
+!!!!!!!!!!!!!!!!!!!! Interrupted: 1 error during collection !!!!!!!!!!!!!!!!!!!!
+=============================== 1 error in 0.10s ===============================
+Running service: storage_sanity
+============================= test session starts ==============================
+platform linux -- Python 3.9.2, pytest-8.3.2, pluggy-1.5.0 -- /usr/bin/python3
+cachedir: /rundir/harness/.cache
+rootdir: /src
+collecting ... collected 0 items / 1 error
+
+==================================== ERRORS ====================================
+________________ ERROR collecting test_runner_event_storage.py _________________
+ImportError while importing test module '/src/test_runner_event_storage.py'.
+Hint: make sure your test modules/packages have valid Python names.
+Traceback:
+/usr/lib/python3.9/importlib/__init__.py:127: in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+/src/test_runner_event_storage.py:5: in <module>
+    from cocotb.runner import get_runner
+E   ModuleNotFoundError: No module named 'cocotb.runner'
+=========================== short test summary info ============================
+ERROR ../../src/test_runner_event_storage.py
+!!!!!!!!!!!!!!!!!!!! Interrupted: 1 error during collection !!!!!!!!!!!!!!!!!!!!
+=============================== 1 error in 0.10s ===============================

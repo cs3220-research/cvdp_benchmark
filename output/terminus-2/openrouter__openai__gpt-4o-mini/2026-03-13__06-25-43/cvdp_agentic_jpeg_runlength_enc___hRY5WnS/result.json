@@ -1,0 +1,116 @@
+{
+    "id": "e853e4ad-3cd4-4044-baea-ce5fe0134f5c",
+    "task_name": "cvdp_agentic_jpeg_runlength_enc_0001",
+    "trial_name": "cvdp_agentic_jpeg_runlength_enc___hRY5WnS",
+    "trial_uri": "file:///home/saketh/research/cvdp_benchmark/output/terminus-2/openrouter__openai__gpt-4o-mini/2026-03-13__06-25-43/cvdp_agentic_jpeg_runlength_enc___hRY5WnS",
+    "task_id": {
+        "path": "/home/saketh/research/cvdp_benchmark/harbor_output/cvdp_agentic_jpeg_runlength_enc_0001"
+    },
+    "source": "cvdp_v1.0.4_agentic_code_generation_no_commercial",
+    "task_checksum": "a229311427dd509f01bb2b3a0c47f6676f39ecdad06a4c39fe61d9977b438a97",
+    "config": {
+        "task": {
+            "path": "/home/saketh/research/cvdp_benchmark/harbor_output/cvdp_agentic_jpeg_runlength_enc_0001",
+            "git_url": null,
+            "git_commit_id": null,
+            "overwrite": false,
+            "download_dir": null,
+            "source": "cvdp_v1.0.4_agentic_code_generation_no_commercial"
+        },
+        "trial_name": "cvdp_agentic_jpeg_runlength_enc___hRY5WnS",
+        "trials_dir": "/home/saketh/research/cvdp_benchmark/output/terminus-2/openrouter__openai__gpt-4o-mini/2026-03-13__06-25-43",
+        "timeout_multiplier": 1.0,
+        "agent_timeout_multiplier": null,
+        "verifier_timeout_multiplier": null,
+        "agent_setup_timeout_multiplier": null,
+        "environment_build_timeout_multiplier": null,
+        "agent": {
+            "name": "terminus-2",
+            "import_path": null,
+            "model_name": "openrouter/openai/gpt-4o-mini",
+            "override_timeout_sec": null,
+            "override_setup_timeout_sec": null,
+            "max_timeout_sec": null,
+            "kwargs": {},
+            "env": {}
+        },
+        "environment": {
+            "type": "docker",
+            "import_path": null,
+            "force_build": false,
+            "delete": true,
+            "override_cpus": null,
+            "override_memory_mb": null,
+            "override_storage_mb": null,
+            "override_gpus": null,
+            "suppress_override_warnings": false,
+            "kwargs": {}
+        },
+        "verifier": {
+            "override_timeout_sec": null,
+            "max_timeout_sec": null,
+            "disable": false
+        },
+        "artifacts": [],
+        "job_id": "7092937d-0954-4feb-8353-3d38e6bcacaa"
+    },
+    "agent_info": {
+        "name": "terminus-2",
+        "version": "2.0.0",
+        "model_info": {
+            "name": "openai/gpt-4o-mini",
+            "provider": "openrouter"
+        }
+    },
+    "agent_result": {
+        "n_input_tokens": 56102,
+        "n_cache_tokens": 44032,
+        "n_output_tokens": 2838,
+        "cost_usd": null,
+        "rollout_details": [],
+        "metadata": {
+            "n_episodes": 14,
+            "api_request_times_msec": [
+                6872.988700866699,
+                5678.258419036865,
+                4777.111053466797,
+                5944.093704223633,
+                8751.179933547974,
+                6679.724216461182,
+                7386.540651321411,
+                4954.243898391724,
+                3688.800573348999,
+                5131.050825119019,
+                4348.302364349365,
+                4450.837850570679,
+                2952.2581100463867,
+                2386.134386062622
+            ],
+            "summarization_count": 0
+        }
+    },
+    "verifier_result": {
+        "rewards": {
+            "reward": 0.0
+        }
+    },
+    "exception_info": null,
+    "started_at": "2026-03-13T11:32:14.452919Z",
+    "finished_at": "2026-03-13T11:33:52.876174Z",
+    "environment_setup": {
+        "started_at": "2026-03-13T11:32:14.453421Z",
+        "finished_at": "2026-03-13T11:32:16.710776Z"
+    },
+    "agent_setup": {
+        "started_at": "2026-03-13T11:32:16.710783Z",
+        "finished_at": "2026-03-13T11:32:21.817641Z"
+    },
+    "agent_execution": {
+        "started_at": "2026-03-13T11:32:21.817677Z",
+        "finished_at": "2026-03-13T11:33:42.096016Z"
+    },
+    "verifier": {
+        "started_at": "2026-03-13T11:33:42.096056Z",
+        "finished_at": "2026-03-13T11:33:42.482597Z"
+    }
+}

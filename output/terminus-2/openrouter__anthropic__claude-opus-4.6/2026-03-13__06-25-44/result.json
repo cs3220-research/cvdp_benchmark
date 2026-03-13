@@ -1,0 +1,51 @@
+{
+    "id": "3784170f-eefd-4d08-bc8a-1126cbd080d3",
+    "started_at": "2026-03-13T06:25:44.019042",
+    "finished_at": "2026-03-13T07:26:05.189680",
+    "n_total_trials": 12,
+    "stats": {
+        "n_trials": 12,
+        "n_errors": 6,
+        "evals": {
+            "terminus-2__anthropic-claude-opus-4.6__cvdp_v1.0.4_agentic_code_generation_no_commercial": {
+                "n_trials": 12,
+                "n_errors": 6,
+                "metrics": [
+                    {
+                        "mean": 0.08333333333333333
+                    }
+                ],
+                "reward_stats": {
+                    "reward": {
+                        "0.0": [
+                            "cvdp_agentic_binary_search_tree___yMyrtXd",
+                            "cvdp_agentic_digital_stopwatch_0__KGNjzMX",
+                            "cvdp_agentic_dynamic_equalizer_0__f8ZsNKc",
+                            "cvdp_agentic_ethernet_mii_0004__R9JCD7H",
+                            "cvdp_agentic_ethernet_mii_0006__ktdjiwh",
+                            "cvdp_agentic_hdbn_codec_0001__JSK9uiz",
+                            "cvdp_agentic_jpeg_runlength_enc___C8uen8c",
+                            "cvdp_agentic_nmea_gps_0008__tpERdz5",
+                            "cvdp_agentic_phase_rotation_0015__hhSVTsD",
+                            "cvdp_agentic_poly_decimator_0001__jzA3LP3",
+                            "cvdp_agentic_rgb_color_space_con__WXKZkG7"
+                        ],
+                        "1.0": [
+                            "cvdp_agentic_dma_xfer_engine_000__cYkMGo9"
+                        ]
+                    }
+                },
+                "exception_stats": {
+                    "AgentTimeoutError": [
+                        "cvdp_agentic_binary_search_tree___yMyrtXd",
+                        "cvdp_agentic_digital_stopwatch_0__KGNjzMX",
+                        "cvdp_agentic_dynamic_equalizer_0__f8ZsNKc",
+                        "cvdp_agentic_hdbn_codec_0001__JSK9uiz",
+                        "cvdp_agentic_jpeg_runlength_enc___C8uen8c",
+                        "cvdp_agentic_nmea_gps_0008__tpERdz5"
+                    ]
+                }
+            }
+        }
+    }
+}

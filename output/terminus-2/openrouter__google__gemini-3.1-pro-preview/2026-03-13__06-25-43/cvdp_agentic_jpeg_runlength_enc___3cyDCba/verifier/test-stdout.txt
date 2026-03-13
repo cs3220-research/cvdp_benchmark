@@ -1,0 +1,869 @@
+Running service: direct
+============================= test session starts ==============================
+platform linux -- Python 3.9.2, pytest-8.3.2, pluggy-1.5.0 -- /usr/bin/python3
+cachedir: /code/rundir/.cache
+rootdir: /src
+collecting ... collected 1 item
+
+../../src/test_runner.py::test_runner      -.--ns INFO     gpi                                ..mbed/gpi_embed.cpp:76   in set_program_name_in_venv        Did not detect Python virtual environment. Using system-wide Python interpreter
+     -.--ns INFO     gpi                                ../gpi/GpiCommon.cpp:101  in gpi_print_registered_impl       VPI registered
+     0.00ns INFO     cocotb                             Running on Icarus Verilog version 13.0 (devel)
+     0.00ns INFO     cocotb                             Running tests with cocotb v1.8.1 from /usr/local/lib/python3.9/dist-packages/cocotb
+     0.00ns INFO     cocotb                             Seeding Python random module with 1773400537
+     0.00ns INFO     cocotb.regression                  Found test test_jpeg_runlength_enc.test_basic_functionality
+     0.00ns INFO     cocotb.regression                  Found test test_jpeg_runlength_enc.test_zrl_handling
+     0.00ns INFO     cocotb.regression                  Found test test_jpeg_runlength_enc.test_eob_handling
+     0.00ns INFO     cocotb.regression                  Found test test_jpeg_runlength_enc.test_negative_coefficients
+     0.00ns INFO     cocotb.regression                  Found test test_jpeg_runlength_enc.test_multiple_zrl_sequences
+     0.00ns INFO     cocotb.regression                  Found test test_jpeg_runlength_enc.test_consecutive_zrl
+     0.00ns INFO     cocotb.regression                  Found test test_jpeg_runlength_enc.test_large_negative_dc
+     0.00ns INFO     cocotb.regression                  running test_basic_functionality (1/7)
+                                                          Test basic functionality with mixed coefficients
+
+[TB] DUT initialized
+
+
+============================================================
+TEST CASE 1: Basic block with mixed coefficients
+============================================================
+
+
+[REF] BLOCK START: DC = 42
+[IN] DC: 42 (dstrb_in=1)
+[REF] AC #1: Input = 0, Zero Run = 0
+[IN] AC: 0 (dstrb_in=0)
+[REF] AC #2: Input = 0, Zero Run = 1
+[IN] AC: 0 (dstrb_in=0)
+[REF] AC #3: Input = 15, Zero Run = 2
+[REF] Emitting (rlen=2, size=4, amp=15)
+[IN] AC: 15 (dstrb_in=0)
+[REF] AC #4: Input = 0, Zero Run = 0
+[IN] AC: 0 (dstrb_in=0)
+[REF] AC #5: Input = 127, Zero Run = 1
+[REF] Emitting (rlen=1, size=7, amp=127)
+[IN] AC: 127 (dstrb_in=0)
+
+[TEST 1.6] OUTPUT COMPARISON:
+==================================================
+[ACTUAL]   rlen=0, size=6, amp=42, bstart=True
+[EXPECTED] rlen=1, size=7, amp=127, bstart=False
+==================================================
+    80.00ns INFO     cocotb.regression                  test_basic_functionality failed
+                                                        Traceback (most recent call last):
+                                                          File "/code/src/test_jpeg_runlength_enc.py", line 144, in test_basic_functionality
+                                                            if await verify_output(dut, expected, 1, i):
+                                                          File "/code/src/test_jpeg_runlength_enc.py", line 114, in verify_output
+                                                            assert actual == expected, f"Test {test_case}.{cycle} failed: Expected {expected}, got {actual}"
+                                                        AssertionError: Test 1.6 failed: Expected (1, 7, 127, False), got (0, 6, 42, True)
+                                                        assert (0, 6, 42, True) == (1, 7, 127, False)
+    80.00ns INFO     cocotb.regression                  running test_zrl_handling (2/7)
+                                                          Test Zero Run Length (15,0) sequences
+
+[TB] DUT initialized
+
+
+============================================================
+TEST CASE 2: Block with Zero Run Length (ZRL)
+============================================================
+
+
+[REF] BLOCK START: DC = 128
+[IN] DC: 128 (dstrb_in=1)
+[REF] AC #1: Input = 0, Zero Run = 0
+[IN] AC: 0 (dstrb_in=0)
+[REF] AC #2: Input = 0, Zero Run = 1
+[IN] AC: 0 (dstrb_in=0)
+[REF] AC #3: Input = 0, Zero Run = 2
+[IN] AC: 0 (dstrb_in=0)
+[REF] AC #4: Input = 0, Zero Run = 3
+[IN] AC: 0 (dstrb_in=0)
+[REF] AC #5: Input = 0, Zero Run = 4
+[IN] AC: 0 (dstrb_in=0)
+[REF] AC #6: Input = 0, Zero Run = 5
+[IN] AC: 0 (dstrb_in=0)
+[REF] AC #7: Input = 0, Zero Run = 6
+[IN] AC: 0 (dstrb_in=0)
+[REF] AC #8: Input = 0, Zero Run = 7
+[IN] AC: 0 (dstrb_in=0)
+[REF] AC #9: Input = 0, Zero Run = 8
+[IN] AC: 0 (dstrb_in=0)
+[REF] AC #10: Input = 0, Zero Run = 9
+[IN] AC: 0 (dstrb_in=0)
+[REF] AC #11: Input = 0, Zero Run = 10
+[IN] AC: 0 (dstrb_in=0)
+[REF] AC #12: Input = 0, Zero Run = 11
+[IN] AC: 0 (dstrb_in=0)
+[REF] AC #13: Input = 0, Zero Run = 12
+[IN] AC: 0 (dstrb_in=0)
+[REF] AC #14: Input = 0, Zero Run = 13
+[IN] AC: 0 (dstrb_in=0)
+[REF] AC #15: Input = 0, Zero Run = 14
+[IN] AC: 0 (dstrb_in=0)
+[REF] AC #16: Input = 0, Zero Run = 15
+[REF] Emitting ZRL (15,0,0)
+[IN] AC: 0 (dstrb_in=0)
+[REF] AC #17: Input = 255, Zero Run = 0
+[REF] Emitting (rlen=0, size=8, amp=255)
+[IN] AC: 255 (dstrb_in=0)
+[REF] AC #18: Input = 0, Zero Run = 0
+[IN] AC: 0 (dstrb_in=0)
+[REF] AC #19: Input = 0, Zero Run = 1
+[IN] AC: 0 (dstrb_in=0)
+[REF] AC #20: Input = 0, Zero Run = 2
+[IN] AC: 0 (dstrb_in=0)
+[REF] AC #21: Input = 0, Zero Run = 3
+[IN] AC: 0 (dstrb_in=0)
+[REF] AC #22: Input = 0, Zero Run = 4
+[IN] AC: 0 (dstrb_in=0)
+[REF] AC #23: Input = 0, Zero Run = 5
+[IN] AC: 0 (dstrb_in=0)
+[REF] AC #24: Input = 0, Zero Run = 6
+[IN] AC: 0 (dstrb_in=0)
+[REF] AC #25: Input = 0, Zero Run = 7
+[IN] AC: 0 (dstrb_in=0)
+[REF] AC #26: Input = 0, Zero Run = 8
+[IN] AC: 0 (dstrb_in=0)
+[REF] AC #27: Input = 0, Zero Run = 9
+[IN] AC: 0 (dstrb_in=0)
+[REF] AC #28: Input = 0, Zero Run = 10
+[IN] AC: 0 (dstrb_in=0)
+[REF] AC #29: Input = 0, Zero Run = 11
+[IN] AC: 0 (dstrb_in=0)
+[REF] AC #30: Input = 0, Zero Run = 12
+[IN] AC: 0 (dstrb_in=0)
+[REF] AC #31: Input = 0, Zero Run = 13
+[IN] AC: 0 (dstrb_in=0)
+[REF] AC #32: Input = 0, Zero Run = 14
+[IN] AC: 0 (dstrb_in=0)
+[REF] AC #33: Input = 0, Zero Run = 15
+[REF] Emitting ZRL (15,0,0)
+[IN] AC: 0 (dstrb_in=0)
+[REF] AC #34: Input = 0, Zero Run = 0
+[IN] AC: 0 (dstrb_in=0)
+[REF] AC #35: Input = 0, Zero Run = 1
+[IN] AC: 0 (dstrb_in=0)
+[REF] AC #36: Input = 0, Zero Run = 2
+[IN] AC: 0 (dstrb_in=0)
+[REF] AC #37: Input = 0, Zero Run = 3
+[IN] AC: 0 (dstrb_in=0)
+[REF] AC #38: Input = 0, Zero Run = 4
+[IN] AC: 0 (dstrb_in=0)
+[REF] AC #39: Input = 0, Zero Run = 5
+[IN] AC: 0 (dstrb_in=0)
+[REF] AC #40: Input = 0, Zero Run = 6
+[IN] AC: 0 (dstrb_in=0)
+[REF] AC #41: Input = 0, Zero Run = 7
+[IN] AC: 0 (dstrb_in=0)
+[REF] AC #42: Input = 0, Zero Run = 8
+[IN] AC: 0 (dstrb_in=0)
+[REF] AC #43: Input = 0, Zero Run = 9
+[IN] AC: 0 (dstrb_in=0)
+[REF] AC #44: Input = 0, Zero Run = 10
+[IN] AC: 0 (dstrb_in=0)
+[REF] AC #45: Input = 0, Zero Run = 11
+[IN] AC: 0 (dstrb_in=0)
+[REF] AC #46: Input = 0, Zero Run = 12
+[IN] AC: 0 (dstrb_in=0)
+[REF] AC #47: Input = 0, Zero Run = 13
+[IN] AC: 0 (dstrb_in=0)
+[REF] AC #48: Input = 0, Zero Run = 14
+[IN] AC: 0 (dstrb_in=0)
+[REF] AC #49: Input = 0, Zero Run = 15
+[REF] Emitting ZRL (15,0,0)
+[IN] AC: 0 (dstrb_in=0)
+[REF] AC #50: Input = 0, Zero Run = 0
+[IN] AC: 0 (dstrb_in=0)
+[REF] AC #51: Input = 0, Zero Run = 1
+[IN] AC: 0 (dstrb_in=0)
+[REF] AC #52: Input = 0, Zero Run = 2
+[IN] AC: 0 (dstrb_in=0)
+[REF] AC #53: Input = 0, Zero Run = 3
+[IN] AC: 0 (dstrb_in=0)
+[REF] AC #54: Input = 0, Zero Run = 4
+[IN] AC: 0 (dstrb_in=0)
+[REF] AC #55: Input = 0, Zero Run = 5
+[IN] AC: 0 (dstrb_in=0)
+[REF] AC #56: Input = 0, Zero Run = 6
+[IN] AC: 0 (dstrb_in=0)
+[REF] AC #57: Input = 0, Zero Run = 7
+[IN] AC: 0 (dstrb_in=0)
+[REF] AC #58: Input = 0, Zero Run = 8
+[IN] AC: 0 (dstrb_in=0)
+[REF] AC #59: Input = 0, Zero Run = 9
+[IN] AC: 0 (dstrb_in=0)
+[REF] AC #60: Input = 0, Zero Run = 10
+[IN] AC: 0 (dstrb_in=0)
+[REF] AC #61: Input = 0, Zero Run = 11
+[IN] AC: 0 (dstrb_in=0)
+[REF] AC #62: Input = 0, Zero Run = 12
+[IN] AC: 0 (dstrb_in=0)
+[REF] AC #63: Input = 0, Zero Run = 13
+[REF] Emitting EOB (0,0,0)
+[IN] AC: 0 (dstrb_in=0)
+[REF] AC #64: Input = 0, Zero Run = 14
+[IN] AC: 0 (dstrb_in=0)
+   760.00ns INFO     cocotb.regression                  test_zrl_handling passed
+   760.00ns INFO     cocotb.regression                  running test_eob_handling (3/7)
+                                                          Test End-of-Block (0,0) marker generation
+
+[TB] DUT initialized
+
+
+============================================================
+TEST CASE 3: All zeros after DC (EOB only)
+============================================================
+
+
+[REF] BLOCK START: DC = 64
+[IN] DC: 64 (dstrb_in=1)
+[REF] AC #1: Input = 0, Zero Run = 0
+[IN] AC: 0 (dstrb_in=0)
+[REF] AC #2: Input = 0, Zero Run = 1
+[IN] AC: 0 (dstrb_in=0)
+[REF] AC #3: Input = 0, Zero Run = 2
+[IN] AC: 0 (dstrb_in=0)
+[REF] AC #4: Input = 0, Zero Run = 3
+[IN] AC: 0 (dstrb_in=0)
+[REF] AC #5: Input = 0, Zero Run = 4
+[IN] AC: 0 (dstrb_in=0)
+[REF] AC #6: Input = 0, Zero Run = 5
+[IN] AC: 0 (dstrb_in=0)
+[REF] AC #7: Input = 0, Zero Run = 6
+[IN] AC: 0 (dstrb_in=0)
+[REF] AC #8: Input = 0, Zero Run = 7
+[IN] AC: 0 (dstrb_in=0)
+[REF] AC #9: Input = 0, Zero Run = 8
+[IN] AC: 0 (dstrb_in=0)
+[REF] AC #10: Input = 0, Zero Run = 9
+[IN] AC: 0 (dstrb_in=0)
+[REF] AC #11: Input = 0, Zero Run = 10
+[IN] AC: 0 (dstrb_in=0)
+[REF] AC #12: Input = 0, Zero Run = 11
+[IN] AC: 0 (dstrb_in=0)
+[REF] AC #13: Input = 0, Zero Run = 12
+[IN] AC: 0 (dstrb_in=0)
+[REF] AC #14: Input = 0, Zero Run = 13
+[IN] AC: 0 (dstrb_in=0)
+[REF] AC #15: Input = 0, Zero Run = 14
+[IN] AC: 0 (dstrb_in=0)
+[REF] AC #16: Input = 0, Zero Run = 15
+[REF] Emitting ZRL (15,0,0)
+[IN] AC: 0 (dstrb_in=0)
+[REF] AC #17: Input = 0, Zero Run = 0
+[IN] AC: 0 (dstrb_in=0)
+[REF] AC #18: Input = 0, Zero Run = 1
+[IN] AC: 0 (dstrb_in=0)
+[REF] AC #19: Input = 0, Zero Run = 2
+[IN] AC: 0 (dstrb_in=0)
+[REF] AC #20: Input = 0, Zero Run = 3
+[IN] AC: 0 (dstrb_in=0)
+[REF] AC #21: Input = 0, Zero Run = 4
+[IN] AC: 0 (dstrb_in=0)
+[REF] AC #22: Input = 0, Zero Run = 5
+[IN] AC: 0 (dstrb_in=0)
+[REF] AC #23: Input = 0, Zero Run = 6
+[IN] AC: 0 (dstrb_in=0)
+[REF] AC #24: Input = 0, Zero Run = 7
+[IN] AC: 0 (dstrb_in=0)
+[REF] AC #25: Input = 0, Zero Run = 8
+[IN] AC: 0 (dstrb_in=0)
+[REF] AC #26: Input = 0, Zero Run = 9
+[IN] AC: 0 (dstrb_in=0)
+[REF] AC #27: Input = 0, Zero Run = 10
+[IN] AC: 0 (dstrb_in=0)
+[REF] AC #28: Input = 0, Zero Run = 11
+[IN] AC: 0 (dstrb_in=0)
+[REF] AC #29: Input = 0, Zero Run = 12
+[IN] AC: 0 (dstrb_in=0)
+[REF] AC #30: Input = 0, Zero Run = 13
+[IN] AC: 0 (dstrb_in=0)
+[REF] AC #31: Input = 0, Zero Run = 14
+[IN] AC: 0 (dstrb_in=0)
+[REF] AC #32: Input = 0, Zero Run = 15
+[REF] Emitting ZRL (15,0,0)
+[IN] AC: 0 (dstrb_in=0)
+[REF] AC #33: Input = 0, Zero Run = 0
+[IN] AC: 0 (dstrb_in=0)
+[REF] AC #34: Input = 0, Zero Run = 1
+[IN] AC: 0 (dstrb_in=0)
+[REF] AC #35: Input = 0, Zero Run = 2
+[IN] AC: 0 (dstrb_in=0)
+[REF] AC #36: Input = 0, Zero Run = 3
+[IN] AC: 0 (dstrb_in=0)
+[REF] AC #37: Input = 0, Zero Run = 4
+[IN] AC: 0 (dstrb_in=0)
+[REF] AC #38: Input = 0, Zero Run = 5
+[IN] AC: 0 (dstrb_in=0)
+[REF] AC #39: Input = 0, Zero Run = 6
+[IN] AC: 0 (dstrb_in=0)
+[REF] AC #40: Input = 0, Zero Run = 7
+[IN] AC: 0 (dstrb_in=0)
+[REF] AC #41: Input = 0, Zero Run = 8
+[IN] AC: 0 (dstrb_in=0)
+[REF] AC #42: Input = 0, Zero Run = 9
+[IN] AC: 0 (dstrb_in=0)
+[REF] AC #43: Input = 0, Zero Run = 10
+[IN] AC: 0 (dstrb_in=0)
+[REF] AC #44: Input = 0, Zero Run = 11
+[IN] AC: 0 (dstrb_in=0)
+[REF] AC #45: Input = 0, Zero Run = 12
+[IN] AC: 0 (dstrb_in=0)
+[REF] AC #46: Input = 0, Zero Run = 13
+[IN] AC: 0 (dstrb_in=0)
+[REF] AC #47: Input = 0, Zero Run = 14
+[IN] AC: 0 (dstrb_in=0)
+[REF] AC #48: Input = 0, Zero Run = 15
+[REF] Emitting ZRL (15,0,0)
+[IN] AC: 0 (dstrb_in=0)
+[REF] AC #49: Input = 0, Zero Run = 0
+[IN] AC: 0 (dstrb_in=0)
+[REF] AC #50: Input = 0, Zero Run = 1
+[IN] AC: 0 (dstrb_in=0)
+[REF] AC #51: Input = 0, Zero Run = 2
+[IN] AC: 0 (dstrb_in=0)
+[REF] AC #52: Input = 0, Zero Run = 3
+[IN] AC: 0 (dstrb_in=0)
+[REF] AC #53: Input = 0, Zero Run = 4
+[IN] AC: 0 (dstrb_in=0)
+[REF] AC #54: Input = 0, Zero Run = 5
+[IN] AC: 0 (dstrb_in=0)
+[REF] AC #55: Input = 0, Zero Run = 6
+[IN] AC: 0 (dstrb_in=0)
+[REF] AC #56: Input = 0, Zero Run = 7
+[IN] AC: 0 (dstrb_in=0)
+[REF] AC #57: Input = 0, Zero Run = 8
+[IN] AC: 0 (dstrb_in=0)
+[REF] AC #58: Input = 0, Zero Run = 9
+[IN] AC: 0 (dstrb_in=0)
+[REF] AC #59: Input = 0, Zero Run = 10
+[IN] AC: 0 (dstrb_in=0)
+[REF] AC #60: Input = 0, Zero Run = 11
+[IN] AC: 0 (dstrb_in=0)
+[REF] AC #61: Input = 0, Zero Run = 12
+[IN] AC: 0 (dstrb_in=0)
+[REF] AC #62: Input = 0, Zero Run = 13
+[IN] AC: 0 (dstrb_in=0)
+[REF] AC #63: Input = 0, Zero Run = 14
+[REF] Emitting EOB (0,0,0)
+[IN] AC: 0 (dstrb_in=0)
+  1430.00ns INFO     cocotb.regression                  test_eob_handling passed
+  1430.00ns INFO     cocotb.regression                  running test_negative_coefficients (4/7)
+                                                          Test negative coefficient handling
+
+[TB] DUT initialized
+
+
+============================================================
+TEST CASE 4: Negative coefficients
+============================================================
+
+
+[REF] BLOCK START: DC = 64
+[IN] DC: 64 (dstrb_in=1)
+[REF] AC #1: Input = -5, Zero Run = 0
+[REF] Emitting (rlen=0, size=3, amp=-5)
+[IN] AC: -5 (dstrb_in=0)
+[REF] AC #2: Input = 0, Zero Run = 0
+[IN] AC: 0 (dstrb_in=0)
+[REF] AC #3: Input = 0, Zero Run = 1
+[IN] AC: 0 (dstrb_in=0)
+[REF] AC #4: Input = -12, Zero Run = 2
+[REF] Emitting (rlen=2, size=4, amp=-12)
+[IN] AC: -12 (dstrb_in=0)
+[REF] AC #5: Input = -25, Zero Run = 0
+[REF] Emitting (rlen=0, size=5, amp=-25)
+[IN] AC: -25 (dstrb_in=0)
+
+[TEST 4.6] OUTPUT COMPARISON:
+==================================================
+[ACTUAL]   rlen=0, size=7, amp=64, bstart=True
+[EXPECTED] rlen=0, size=5, amp=-25, bstart=False
+==================================================
+  1520.00ns INFO     cocotb.regression                  test_negative_coefficients failed
+                                                        Traceback (most recent call last):
+                                                          File "/code/src/test_jpeg_runlength_enc.py", line 231, in test_negative_coefficients
+                                                            if await verify_output(dut, expected, 4, i):
+                                                          File "/code/src/test_jpeg_runlength_enc.py", line 114, in verify_output
+                                                            assert actual == expected, f"Test {test_case}.{cycle} failed: Expected {expected}, got {actual}"
+                                                        AssertionError: Test 4.6 failed: Expected (0, 5, -25, False), got (0, 7, 64, True)
+                                                        assert (0, 7, 64, True) == (0, 5, -25, False)
+  1520.00ns INFO     cocotb.regression                  running test_multiple_zrl_sequences (5/7)
+                                                          Test multiple Zero Run Length sequences in one block
+
+[TB] DUT initialized
+
+
+============================================================
+TEST CASE 5: Multiple ZRL sequences
+============================================================
+
+
+[REF] BLOCK START: DC = 100
+[IN] DC: 100 (dstrb_in=1)
+[REF] AC #1: Input = 0, Zero Run = 0
+[IN] AC: 0 (dstrb_in=0)
+[REF] AC #2: Input = 0, Zero Run = 1
+[IN] AC: 0 (dstrb_in=0)
+[REF] AC #3: Input = 0, Zero Run = 2
+[IN] AC: 0 (dstrb_in=0)
+[REF] AC #4: Input = 0, Zero Run = 3
+[IN] AC: 0 (dstrb_in=0)
+[REF] AC #5: Input = 0, Zero Run = 4
+[IN] AC: 0 (dstrb_in=0)
+[REF] AC #6: Input = 0, Zero Run = 5
+[IN] AC: 0 (dstrb_in=0)
+[REF] AC #7: Input = 0, Zero Run = 6
+[IN] AC: 0 (dstrb_in=0)
+[REF] AC #8: Input = 0, Zero Run = 7
+[IN] AC: 0 (dstrb_in=0)
+[REF] AC #9: Input = 0, Zero Run = 8
+[IN] AC: 0 (dstrb_in=0)
+[REF] AC #10: Input = 0, Zero Run = 9
+[IN] AC: 0 (dstrb_in=0)
+[REF] AC #11: Input = 0, Zero Run = 10
+[IN] AC: 0 (dstrb_in=0)
+[REF] AC #12: Input = 0, Zero Run = 11
+[IN] AC: 0 (dstrb_in=0)
+[REF] AC #13: Input = 0, Zero Run = 12
+[IN] AC: 0 (dstrb_in=0)
+[REF] AC #14: Input = 0, Zero Run = 13
+[IN] AC: 0 (dstrb_in=0)
+[REF] AC #15: Input = 0, Zero Run = 14
+[IN] AC: 0 (dstrb_in=0)
+[REF] AC #16: Input = 0, Zero Run = 15
+[REF] Emitting ZRL (15,0,0)
+[IN] AC: 0 (dstrb_in=0)
+[REF] AC #17: Input = 0, Zero Run = 0
+[IN] AC: 0 (dstrb_in=0)
+[REF] AC #18: Input = 0, Zero Run = 1
+[IN] AC: 0 (dstrb_in=0)
+[REF] AC #19: Input = 0, Zero Run = 2
+[IN] AC: 0 (dstrb_in=0)
+[REF] AC #20: Input = 0, Zero Run = 3
+[IN] AC: 0 (dstrb_in=0)
+[REF] AC #21: Input = 5, Zero Run = 4
+[REF] Emitting (rlen=4, size=3, amp=5)
+[IN] AC: 5 (dstrb_in=0)
+[REF] AC #22: Input = 0, Zero Run = 0
+[IN] AC: 0 (dstrb_in=0)
+[REF] AC #23: Input = 0, Zero Run = 1
+[IN] AC: 0 (dstrb_in=0)
+[REF] AC #24: Input = 0, Zero Run = 2
+[IN] AC: 0 (dstrb_in=0)
+[REF] AC #25: Input = 0, Zero Run = 3
+[IN] AC: 0 (dstrb_in=0)
+[REF] AC #26: Input = 0, Zero Run = 4
+[IN] AC: 0 (dstrb_in=0)
+[REF] AC #27: Input = 0, Zero Run = 5
+[IN] AC: 0 (dstrb_in=0)
+[REF] AC #28: Input = 0, Zero Run = 6
+[IN] AC: 0 (dstrb_in=0)
+[REF] AC #29: Input = 0, Zero Run = 7
+[IN] AC: 0 (dstrb_in=0)
+[REF] AC #30: Input = 0, Zero Run = 8
+[IN] AC: 0 (dstrb_in=0)
+[REF] AC #31: Input = 0, Zero Run = 9
+[IN] AC: 0 (dstrb_in=0)
+[REF] AC #32: Input = 0, Zero Run = 10
+[IN] AC: 0 (dstrb_in=0)
+[REF] AC #33: Input = 0, Zero Run = 11
+[IN] AC: 0 (dstrb_in=0)
+[REF] AC #34: Input = 0, Zero Run = 12
+[IN] AC: 0 (dstrb_in=0)
+[REF] AC #35: Input = 0, Zero Run = 13
+[IN] AC: 0 (dstrb_in=0)
+[REF] AC #36: Input = 0, Zero Run = 14
+[IN] AC: 0 (dstrb_in=0)
+[REF] AC #37: Input = 0, Zero Run = 15
+[REF] Emitting ZRL (15,0,0)
+[IN] AC: 0 (dstrb_in=0)
+[REF] AC #38: Input = 0, Zero Run = 0
+[IN] AC: 0 (dstrb_in=0)
+[REF] AC #39: Input = 0, Zero Run = 1
+[IN] AC: 0 (dstrb_in=0)
+[REF] AC #40: Input = 10, Zero Run = 2
+[REF] Emitting (rlen=2, size=4, amp=10)
+[IN] AC: 10 (dstrb_in=0)
+[REF] AC #41: Input = 0, Zero Run = 0
+[IN] AC: 0 (dstrb_in=0)
+[REF] AC #42: Input = 0, Zero Run = 1
+[IN] AC: 0 (dstrb_in=0)
+[REF] AC #43: Input = 0, Zero Run = 2
+[IN] AC: 0 (dstrb_in=0)
+[REF] AC #44: Input = 0, Zero Run = 3
+[IN] AC: 0 (dstrb_in=0)
+[REF] AC #45: Input = 0, Zero Run = 4
+[IN] AC: 0 (dstrb_in=0)
+[REF] AC #46: Input = 0, Zero Run = 5
+[IN] AC: 0 (dstrb_in=0)
+[REF] AC #47: Input = 0, Zero Run = 6
+[IN] AC: 0 (dstrb_in=0)
+[REF] AC #48: Input = 0, Zero Run = 7
+[IN] AC: 0 (dstrb_in=0)
+[REF] AC #49: Input = 0, Zero Run = 8
+[IN] AC: 0 (dstrb_in=0)
+[REF] AC #50: Input = 0, Zero Run = 9
+[IN] AC: 0 (dstrb_in=0)
+[REF] AC #51: Input = 0, Zero Run = 10
+[IN] AC: 0 (dstrb_in=0)
+[REF] AC #52: Input = 0, Zero Run = 11
+[IN] AC: 0 (dstrb_in=0)
+[REF] AC #53: Input = 0, Zero Run = 12
+[IN] AC: 0 (dstrb_in=0)
+[REF] AC #54: Input = 0, Zero Run = 13
+[IN] AC: 0 (dstrb_in=0)
+[REF] AC #55: Input = 0, Zero Run = 14
+[IN] AC: 0 (dstrb_in=0)
+[REF] AC #56: Input = 0, Zero Run = 15
+[REF] Emitting ZRL (15,0,0)
+[IN] AC: 0 (dstrb_in=0)
+[REF] AC #57: Input = 0, Zero Run = 0
+[IN] AC: 0 (dstrb_in=0)
+[REF] AC #58: Input = 0, Zero Run = 1
+[IN] AC: 0 (dstrb_in=0)
+[REF] AC #59: Input = 0, Zero Run = 2
+[IN] AC: 0 (dstrb_in=0)
+[REF] AC #60: Input = 0, Zero Run = 3
+[IN] AC: 0 (dstrb_in=0)
+[REF] AC #61: Input = 0, Zero Run = 4
+[IN] AC: 0 (dstrb_in=0)
+[REF] AC #62: Input = 0, Zero Run = 5
+[IN] AC: 0 (dstrb_in=0)
+[REF] AC #63: Input = 0, Zero Run = 6
+[REF] Emitting EOB (0,0,0)
+[IN] AC: 0 (dstrb_in=0)
+[REF] AC #64: Input = 0, Zero Run = 7
+[IN] AC: 0 (dstrb_in=0)
+  2200.01ns INFO     cocotb.regression                  test_multiple_zrl_sequences passed
+  2200.01ns INFO     cocotb.regression                  running test_consecutive_zrl (6/7)
+                                                          Test consecutive ZRL sequences with single non-zero
+
+[TB] DUT initialized
+
+
+============================================================
+TEST CASE 6: Consecutive ZRL and single non-zero
+============================================================
+
+
+[REF] BLOCK START: DC = -32
+[IN] DC: -32 (dstrb_in=1)
+[REF] AC #1: Input = 0, Zero Run = 0
+[IN] AC: 0 (dstrb_in=0)
+[REF] AC #2: Input = 0, Zero Run = 1
+[IN] AC: 0 (dstrb_in=0)
+[REF] AC #3: Input = 0, Zero Run = 2
+[IN] AC: 0 (dstrb_in=0)
+[REF] AC #4: Input = 0, Zero Run = 3
+[IN] AC: 0 (dstrb_in=0)
+[REF] AC #5: Input = 0, Zero Run = 4
+[IN] AC: 0 (dstrb_in=0)
+[REF] AC #6: Input = 0, Zero Run = 5
+[IN] AC: 0 (dstrb_in=0)
+[REF] AC #7: Input = 0, Zero Run = 6
+[IN] AC: 0 (dstrb_in=0)
+[REF] AC #8: Input = 0, Zero Run = 7
+[IN] AC: 0 (dstrb_in=0)
+[REF] AC #9: Input = 0, Zero Run = 8
+[IN] AC: 0 (dstrb_in=0)
+[REF] AC #10: Input = 0, Zero Run = 9
+[IN] AC: 0 (dstrb_in=0)
+[REF] AC #11: Input = 0, Zero Run = 10
+[IN] AC: 0 (dstrb_in=0)
+[REF] AC #12: Input = 0, Zero Run = 11
+[IN] AC: 0 (dstrb_in=0)
+[REF] AC #13: Input = 0, Zero Run = 12
+[IN] AC: 0 (dstrb_in=0)
+[REF] AC #14: Input = 0, Zero Run = 13
+[IN] AC: 0 (dstrb_in=0)
+[REF] AC #15: Input = 0, Zero Run = 14
+[IN] AC: 0 (dstrb_in=0)
+[REF] AC #16: Input = 0, Zero Run = 15
+[REF] Emitting ZRL (15,0,0)
+[IN] AC: 0 (dstrb_in=0)
+[REF] AC #17: Input = 0, Zero Run = 0
+[IN] AC: 0 (dstrb_in=0)
+[REF] AC #18: Input = 0, Zero Run = 1
+[IN] AC: 0 (dstrb_in=0)
+[REF] AC #19: Input = 0, Zero Run = 2
+[IN] AC: 0 (dstrb_in=0)
+[REF] AC #20: Input = 0, Zero Run = 3
+[IN] AC: 0 (dstrb_in=0)
+[REF] AC #21: Input = 0, Zero Run = 4
+[IN] AC: 0 (dstrb_in=0)
+[REF] AC #22: Input = 0, Zero Run = 5
+[IN] AC: 0 (dstrb_in=0)
+[REF] AC #23: Input = 0, Zero Run = 6
+[IN] AC: 0 (dstrb_in=0)
+[REF] AC #24: Input = 0, Zero Run = 7
+[IN] AC: 0 (dstrb_in=0)
+[REF] AC #25: Input = 0, Zero Run = 8
+[IN] AC: 0 (dstrb_in=0)
+[REF] AC #26: Input = 0, Zero Run = 9
+[IN] AC: 0 (dstrb_in=0)
+[REF] AC #27: Input = 0, Zero Run = 10
+[IN] AC: 0 (dstrb_in=0)
+[REF] AC #28: Input = 0, Zero Run = 11
+[IN] AC: 0 (dstrb_in=0)
+[REF] AC #29: Input = 0, Zero Run = 12
+[IN] AC: 0 (dstrb_in=0)
+[REF] AC #30: Input = 0, Zero Run = 13
+[IN] AC: 0 (dstrb_in=0)
+[REF] AC #31: Input = 0, Zero Run = 14
+[IN] AC: 0 (dstrb_in=0)
+[REF] AC #32: Input = 0, Zero Run = 15
+[REF] Emitting ZRL (15,0,0)
+[IN] AC: 0 (dstrb_in=0)
+[REF] AC #33: Input = 10, Zero Run = 0
+[REF] Emitting (rlen=0, size=4, amp=10)
+[IN] AC: 10 (dstrb_in=0)
+[REF] AC #34: Input = 0, Zero Run = 0
+[IN] AC: 0 (dstrb_in=0)
+[REF] AC #35: Input = 0, Zero Run = 1
+[IN] AC: 0 (dstrb_in=0)
+[REF] AC #36: Input = 0, Zero Run = 2
+[IN] AC: 0 (dstrb_in=0)
+[REF] AC #37: Input = 0, Zero Run = 3
+[IN] AC: 0 (dstrb_in=0)
+[REF] AC #38: Input = 0, Zero Run = 4
+[IN] AC: 0 (dstrb_in=0)
+[REF] AC #39: Input = 0, Zero Run = 5
+[IN] AC: 0 (dstrb_in=0)
+[REF] AC #40: Input = 0, Zero Run = 6
+[IN] AC: 0 (dstrb_in=0)
+[REF] AC #41: Input = 0, Zero Run = 7
+[IN] AC: 0 (dstrb_in=0)
+[REF] AC #42: Input = 0, Zero Run = 8
+[IN] AC: 0 (dstrb_in=0)
+[REF] AC #43: Input = 0, Zero Run = 9
+[IN] AC: 0 (dstrb_in=0)
+[REF] AC #44: Input = 0, Zero Run = 10
+[IN] AC: 0 (dstrb_in=0)
+[REF] AC #45: Input = 0, Zero Run = 11
+[IN] AC: 0 (dstrb_in=0)
+[REF] AC #46: Input = 0, Zero Run = 12
+[IN] AC: 0 (dstrb_in=0)
+[REF] AC #47: Input = 0, Zero Run = 13
+[IN] AC: 0 (dstrb_in=0)
+[REF] AC #48: Input = 0, Zero Run = 14
+[IN] AC: 0 (dstrb_in=0)
+[REF] AC #49: Input = 0, Zero Run = 15
+[REF] Emitting ZRL (15,0,0)
+[IN] AC: 0 (dstrb_in=0)
+[REF] AC #50: Input = 0, Zero Run = 0
+[IN] AC: 0 (dstrb_in=0)
+[REF] AC #51: Input = 0, Zero Run = 1
+[IN] AC: 0 (dstrb_in=0)
+[REF] AC #52: Input = 0, Zero Run = 2
+[IN] AC: 0 (dstrb_in=0)
+[REF] AC #53: Input = 0, Zero Run = 3
+[IN] AC: 0 (dstrb_in=0)
+[REF] AC #54: Input = 0, Zero Run = 4
+[IN] AC: 0 (dstrb_in=0)
+[REF] AC #55: Input = 0, Zero Run = 5
+[IN] AC: 0 (dstrb_in=0)
+[REF] AC #56: Input = 0, Zero Run = 6
+[IN] AC: 0 (dstrb_in=0)
+[REF] AC #57: Input = 0, Zero Run = 7
+[IN] AC: 0 (dstrb_in=0)
+[REF] AC #58: Input = 0, Zero Run = 8
+[IN] AC: 0 (dstrb_in=0)
+[REF] AC #59: Input = 0, Zero Run = 9
+[IN] AC: 0 (dstrb_in=0)
+[REF] AC #60: Input = 0, Zero Run = 10
+[IN] AC: 0 (dstrb_in=0)
+[REF] AC #61: Input = 0, Zero Run = 11
+[IN] AC: 0 (dstrb_in=0)
+[REF] AC #62: Input = 0, Zero Run = 12
+[IN] AC: 0 (dstrb_in=0)
+[REF] AC #63: Input = 0, Zero Run = 13
+[REF] Emitting EOB (0,0,0)
+[IN] AC: 0 (dstrb_in=0)
+[REF] AC #64: Input = 0, Zero Run = 14
+[IN] AC: 0 (dstrb_in=0)
+  2880.01ns INFO     cocotb.regression                  test_consecutive_zrl passed
+  2880.01ns INFO     cocotb.regression                  running test_large_negative_dc (7/7)
+                                                          Test large negative DC coefficient with all zero AC
+
+[TB] DUT initialized
+
+
+============================================================
+TEST CASE 7: Large negative DC with all zeros
+============================================================
+
+
+[REF] BLOCK START: DC = -2047
+[IN] DC: -2047 (dstrb_in=1)
+[REF] AC #1: Input = 0, Zero Run = 0
+[IN] AC: 0 (dstrb_in=0)
+[REF] AC #2: Input = 0, Zero Run = 1
+[IN] AC: 0 (dstrb_in=0)
+[REF] AC #3: Input = 0, Zero Run = 2
+[IN] AC: 0 (dstrb_in=0)
+[REF] AC #4: Input = 0, Zero Run = 3
+[IN] AC: 0 (dstrb_in=0)
+[REF] AC #5: Input = 0, Zero Run = 4
+[IN] AC: 0 (dstrb_in=0)
+[REF] AC #6: Input = 0, Zero Run = 5
+[IN] AC: 0 (dstrb_in=0)
+[REF] AC #7: Input = 0, Zero Run = 6
+[IN] AC: 0 (dstrb_in=0)
+[REF] AC #8: Input = 0, Zero Run = 7
+[IN] AC: 0 (dstrb_in=0)
+[REF] AC #9: Input = 0, Zero Run = 8
+[IN] AC: 0 (dstrb_in=0)
+[REF] AC #10: Input = 0, Zero Run = 9
+[IN] AC: 0 (dstrb_in=0)
+[REF] AC #11: Input = 0, Zero Run = 10
+[IN] AC: 0 (dstrb_in=0)
+[REF] AC #12: Input = 0, Zero Run = 11
+[IN] AC: 0 (dstrb_in=0)
+[REF] AC #13: Input = 0, Zero Run = 12
+[IN] AC: 0 (dstrb_in=0)
+[REF] AC #14: Input = 0, Zero Run = 13
+[IN] AC: 0 (dstrb_in=0)
+[REF] AC #15: Input = 0, Zero Run = 14
+[IN] AC: 0 (dstrb_in=0)
+[REF] AC #16: Input = 0, Zero Run = 15
+[REF] Emitting ZRL (15,0,0)
+[IN] AC: 0 (dstrb_in=0)
+[REF] AC #17: Input = 0, Zero Run = 0
+[IN] AC: 0 (dstrb_in=0)
+[REF] AC #18: Input = 0, Zero Run = 1
+[IN] AC: 0 (dstrb_in=0)
+[REF] AC #19: Input = 0, Zero Run = 2
+[IN] AC: 0 (dstrb_in=0)
+[REF] AC #20: Input = 0, Zero Run = 3
+[IN] AC: 0 (dstrb_in=0)
+[REF] AC #21: Input = 0, Zero Run = 4
+[IN] AC: 0 (dstrb_in=0)
+[REF] AC #22: Input = 0, Zero Run = 5
+[IN] AC: 0 (dstrb_in=0)
+[REF] AC #23: Input = 0, Zero Run = 6
+[IN] AC: 0 (dstrb_in=0)
+[REF] AC #24: Input = 0, Zero Run = 7
+[IN] AC: 0 (dstrb_in=0)
+[REF] AC #25: Input = 0, Zero Run = 8
+[IN] AC: 0 (dstrb_in=0)
+[REF] AC #26: Input = 0, Zero Run = 9
+[IN] AC: 0 (dstrb_in=0)
+[REF] AC #27: Input = 0, Zero Run = 10
+[IN] AC: 0 (dstrb_in=0)
+[REF] AC #28: Input = 0, Zero Run = 11
+[IN] AC: 0 (dstrb_in=0)
+[REF] AC #29: Input = 0, Zero Run = 12
+[IN] AC: 0 (dstrb_in=0)
+[REF] AC #30: Input = 0, Zero Run = 13
+[IN] AC: 0 (dstrb_in=0)
+[REF] AC #31: Input = 0, Zero Run = 14
+[IN] AC: 0 (dstrb_in=0)
+[REF] AC #32: Input = 0, Zero Run = 15
+[REF] Emitting ZRL (15,0,0)
+[IN] AC: 0 (dstrb_in=0)
+[REF] AC #33: Input = 0, Zero Run = 0
+[IN] AC: 0 (dstrb_in=0)
+[REF] AC #34: Input = 0, Zero Run = 1
+[IN] AC: 0 (dstrb_in=0)
+[REF] AC #35: Input = 0, Zero Run = 2
+[IN] AC: 0 (dstrb_in=0)
+[REF] AC #36: Input = 0, Zero Run = 3
+[IN] AC: 0 (dstrb_in=0)
+[REF] AC #37: Input = 0, Zero Run = 4
+[IN] AC: 0 (dstrb_in=0)
+[REF] AC #38: Input = 0, Zero Run = 5
+[IN] AC: 0 (dstrb_in=0)
+[REF] AC #39: Input = 0, Zero Run = 6
+[IN] AC: 0 (dstrb_in=0)
+[REF] AC #40: Input = 0, Zero Run = 7
+[IN] AC: 0 (dstrb_in=0)
+[REF] AC #41: Input = 0, Zero Run = 8
+[IN] AC: 0 (dstrb_in=0)
+[REF] AC #42: Input = 0, Zero Run = 9
+[IN] AC: 0 (dstrb_in=0)
+[REF] AC #43: Input = 0, Zero Run = 10
+[IN] AC: 0 (dstrb_in=0)
+[REF] AC #44: Input = 0, Zero Run = 11
+[IN] AC: 0 (dstrb_in=0)
+[REF] AC #45: Input = 0, Zero Run = 12
+[IN] AC: 0 (dstrb_in=0)
+[REF] AC #46: Input = 0, Zero Run = 13
+[IN] AC: 0 (dstrb_in=0)
+[REF] AC #47: Input = 0, Zero Run = 14
+[IN] AC: 0 (dstrb_in=0)
+[REF] AC #48: Input = 0, Zero Run = 15
+[REF] Emitting ZRL (15,0,0)
+[IN] AC: 0 (dstrb_in=0)
+[REF] AC #49: Input = 0, Zero Run = 0
+[IN] AC: 0 (dstrb_in=0)
+[REF] AC #50: Input = 0, Zero Run = 1
+[IN] AC: 0 (dstrb_in=0)
+[REF] AC #51: Input = 0, Zero Run = 2
+[IN] AC: 0 (dstrb_in=0)
+[REF] AC #52: Input = 0, Zero Run = 3
+[IN] AC: 0 (dstrb_in=0)
+[REF] AC #53: Input = 0, Zero Run = 4
+[IN] AC: 0 (dstrb_in=0)
+[REF] AC #54: Input = 0, Zero Run = 5
+[IN] AC: 0 (dstrb_in=0)
+[REF] AC #55: Input = 0, Zero Run = 6
+[IN] AC: 0 (dstrb_in=0)
+[REF] AC #56: Input = 0, Zero Run = 7
+[IN] AC: 0 (dstrb_in=0)
+[REF] AC #57: Input = 0, Zero Run = 8
+[IN] AC: 0 (dstrb_in=0)
+[REF] AC #58: Input = 0, Zero Run = 9
+[IN] AC: 0 (dstrb_in=0)
+[REF] AC #59: Input = 0, Zero Run = 10
+[IN] AC: 0 (dstrb_in=0)
+[REF] AC #60: Input = 0, Zero Run = 11
+[IN] AC: 0 (dstrb_in=0)
+[REF] AC #61: Input = 0, Zero Run = 12
+[IN] AC: 0 (dstrb_in=0)
+[REF] AC #62: Input = 0, Zero Run = 13
+[IN] AC: 0 (dstrb_in=0)
+[REF] AC #63: Input = 0, Zero Run = 14
+[REF] Emitting EOB (0,0,0)
+[IN] AC: 0 (dstrb_in=0)
+  3550.01ns INFO     cocotb.regression                  test_large_negative_dc passed
+  3550.01ns INFO     cocotb.regression                  *************************************************************************************************************
+                                                        ** TEST                                                 STATUS  SIM TIME (ns)  REAL TIME (s)  RATIO (ns/s) **
+                                                        *************************************************************************************************************
+                                                        ** test_jpeg_runlength_enc.test_basic_functionality      FAIL          80.00           0.00      40642.99  **
+                                                        ** test_jpeg_runlength_enc.test_zrl_handling             PASS         680.00           0.01      67549.22  **
+                                                        ** test_jpeg_runlength_enc.test_eob_handling             PASS         670.00           0.01      65200.06  **
+                                                        ** test_jpeg_runlength_enc.test_negative_coefficients    FAIL          90.00           0.00      55277.72  **
+                                                        ** test_jpeg_runlength_enc.test_multiple_zrl_sequences   PASS         680.00           0.01      70386.49  **
+                                                        ** test_jpeg_runlength_enc.test_consecutive_zrl          PASS         680.00           0.01      61670.36  **
+                                                        ** test_jpeg_runlength_enc.test_large_negative_dc        PASS         670.00           0.01      69792.32  **
+                                                        *************************************************************************************************************
+                                                        ** TESTS=7 PASS=5 FAIL=2 SKIP=0                                      3550.01           0.09      40415.31  **
+                                                        *************************************************************************************************************
+                                                        
+INFO: Running command iverilog -o /code/rundir/sim_build/sim.vvp -D COCOTB_SIM=1 -g2012 /code/rtl/jpeg_runlength_enc.sv /code/rtl/jpeg_runlength_rzs.sv /code/rtl/jpeg_runlength_stage1.sv in directory /code/rundir/sim_build
+INFO: Running command vvp -M /usr/local/lib/python3.9/dist-packages/cocotb/libs -m libcocotbvpi_icarus /code/rundir/sim_build/sim.vvp in directory /code/rundir/sim_build
+FAILED
+
+=================================== FAILURES ===================================
+_________________________________ test_runner __________________________________
+
+    def test_runner():
+        runner = get_runner(sim)
+        runner.build(
+            verilog_sources=verilog_sources,
+            hdl_toplevel=toplevel,
+            always=True
+        )
+>       runner.test(hdl_toplevel=toplevel, test_module=module)
+E       SystemExit: ERROR: Failed 2 of 7 tests.
+
+/src/test_runner.py:16: SystemExit
+=============================== warnings summary ===============================
+../../src/test_runner.py:2
+  /src/test_runner.py:2: UserWarning: Python runners and associated APIs are an experimental feature and subject to change.
+    from cocotb.runner import get_runner
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+=========================== short test summary info ============================
+FAILED ../../src/test_runner.py::test_runner - SystemExit: ERROR: Failed 2 of...
+========================= 1 failed, 1 warning in 0.28s =========================

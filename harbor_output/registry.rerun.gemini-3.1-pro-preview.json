@@ -1,0 +1,117 @@
+[
+  {
+    "name": "cvdp_v1.0.4_agentic_code_generation_no_commercial",
+    "version": "1.0",
+    "description": "Harbor conversion of cvdp_v1.0.4_agentic_code_generation_no_commercial.jsonl",
+    "tasks": [
+      {
+        "name": "cvdp_agentic_aes_encryption_decryption_0003",
+        "path": "/home/saketh/research/cvdp_benchmark/harbor_output/cvdp_agentic_aes_encryption_decryption_0003"
+      },
+      {
+        "name": "cvdp_agentic_axis_broadcaster_0001",
+        "path": "/home/saketh/research/cvdp_benchmark/harbor_output/cvdp_agentic_axis_broadcaster_0001"
+      },
+      {
+        "name": "cvdp_agentic_binary_search_tree_algorithms_0014",
+        "path": "/home/saketh/research/cvdp_benchmark/harbor_output/cvdp_agentic_binary_search_tree_algorithms_0014"
+      },
+      {
+        "name": "cvdp_agentic_cipher_0001",
+        "path": "/home/saketh/research/cvdp_benchmark/harbor_output/cvdp_agentic_cipher_0001"
+      },
+      {
+        "name": "cvdp_agentic_digital_stopwatch_0001",
+        "path": "/home/saketh/research/cvdp_benchmark/harbor_output/cvdp_agentic_digital_stopwatch_0001"
+      },
+      {
+        "name": "cvdp_agentic_direct_map_cache_0001",
+        "path": "/home/saketh/research/cvdp_benchmark/harbor_output/cvdp_agentic_direct_map_cache_0001"
+      },
+      {
+        "name": "cvdp_agentic_direct_map_cache_0003",
+        "path": "/home/saketh/research/cvdp_benchmark/harbor_output/cvdp_agentic_direct_map_cache_0003"
+      },
+      {
+        "name": "cvdp_agentic_dma_xfer_engine_0001",
+        "path": "/home/saketh/research/cvdp_benchmark/harbor_output/cvdp_agentic_dma_xfer_engine_0001"
+      },
+      {
+        "name": "cvdp_agentic_dynamic_equalizer_0001",
+        "path": "/home/saketh/research/cvdp_benchmark/harbor_output/cvdp_agentic_dynamic_equalizer_0001"
+      },
+      {
+        "name": "cvdp_agentic_ethernet_mii_0006",
+        "path": "/home/saketh/research/cvdp_benchmark/harbor_output/cvdp_agentic_ethernet_mii_0006"
+      },
+      {
+        "name": "cvdp_agentic_fixed_arbiter_0010",
+        "path": "/home/saketh/research/cvdp_benchmark/harbor_output/cvdp_agentic_fixed_arbiter_0010"
+      },
+      {
+        "name": "cvdp_agentic_gcd_0007",
+        "path": "/home/saketh/research/cvdp_benchmark/harbor_output/cvdp_agentic_gcd_0007"
+      },
+      {
+        "name": "cvdp_agentic_hdbn_codec_0001",
+        "path": "/home/saketh/research/cvdp_benchmark/harbor_output/cvdp_agentic_hdbn_codec_0001"
+      },
+      {
+        "name": "cvdp_agentic_jpeg_runlength_enc_0001",
+        "path": "/home/saketh/research/cvdp_benchmark/harbor_output/cvdp_agentic_jpeg_runlength_enc_0001"
+      },
+      {
+        "name": "cvdp_agentic_lfsr_0005",
+        "path": "/home/saketh/research/cvdp_benchmark/harbor_output/cvdp_agentic_lfsr_0005"
+      },
+      {
+        "name": "cvdp_agentic_monte_carlo_0006",
+        "path": "/home/saketh/research/cvdp_benchmark/harbor_output/cvdp_agentic_monte_carlo_0006"
+      },
+      {
+        "name": "cvdp_agentic_phase_rotation_0015",
+        "path": "/home/saketh/research/cvdp_benchmark/harbor_output/cvdp_agentic_phase_rotation_0015"
+      },
+      {
+        "name": "cvdp_agentic_phase_rotation_0019",
+        "path": "/home/saketh/research/cvdp_benchmark/harbor_output/cvdp_agentic_phase_rotation_0019"
+      },
+      {
+        "name": "cvdp_agentic_phase_rotation_0028",
+        "path": "/home/saketh/research/cvdp_benchmark/harbor_output/cvdp_agentic_phase_rotation_0028"
+      },
+      {
+        "name": "cvdp_agentic_phase_rotation_0031",
+        "path": "/home/saketh/research/cvdp_benchmark/harbor_output/cvdp_agentic_phase_rotation_0031"
+      },
+      {
+        "name": "cvdp_agentic_poly_decimator_0001",
+        "path": "/home/saketh/research/cvdp_benchmark/harbor_output/cvdp_agentic_poly_decimator_0001"
+      },
+      {
+        "name": "cvdp_agentic_rc5_0001",
+        "path": "/home/saketh/research/cvdp_benchmark/harbor_output/cvdp_agentic_rc5_0001"
+      },
+      {
+        "name": "cvdp_agentic_rgb_color_space_conversion_0004",
+        "path": "/home/saketh/research/cvdp_benchmark/harbor_output/cvdp_agentic_rgb_color_space_conversion_0004"
+      },
+      {
+        "name": "cvdp_agentic_sorter_0009",
+        "path": "/home/saketh/research/cvdp_benchmark/harbor_output/cvdp_agentic_sorter_0009"
+      },
+      {
+        "name": "cvdp_agentic_sorter_0016",
+        "path": "/home/saketh/research/cvdp_benchmark/harbor_output/cvdp_agentic_sorter_0016"
+      },
+      {
+        "name": "cvdp_agentic_sync_serial_communication_0001",
+        "path": "/home/saketh/research/cvdp_benchmark/harbor_output/cvdp_agentic_sync_serial_communication_0001"
+      },
+      {
+        "name": "cvdp_agentic_ttc_lite_0001",
+        "path": "/home/saketh/research/cvdp_benchmark/harbor_output/cvdp_agentic_ttc_lite_0001"
+      }
+    ]
+  }
+]

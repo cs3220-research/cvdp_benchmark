@@ -1,0 +1,193 @@
+[
+  {
+    "name": "cvdp_v1.0.4_agentic_code_generation_no_commercial",
+    "version": "1.0",
+    "description": "Harbor conversion of cvdp_v1.0.4_agentic_code_generation_no_commercial.jsonl",
+    "tasks": [
+      {
+        "name": "cvdp_agentic_des_0001",
+        "path": "/home/saketh/research/cvdp_benchmark/harbor_output/cvdp_agentic_des_0001"
+      },
+      {
+        "name": "cvdp_agentic_des_0005",
+        "path": "/home/saketh/research/cvdp_benchmark/harbor_output/cvdp_agentic_des_0005"
+      },
+      {
+        "name": "cvdp_agentic_des_0007",
+        "path": "/home/saketh/research/cvdp_benchmark/harbor_output/cvdp_agentic_des_0007"
+      },
+      {
+        "name": "cvdp_agentic_arithmetic_progression_generator_0001",
+        "path": "/home/saketh/research/cvdp_benchmark/harbor_output/cvdp_agentic_arithmetic_progression_generator_0001"
+      },
+      {
+        "name": "cvdp_agentic_axi4lite_to_pcie_config_0003",
+        "path": "/home/saketh/research/cvdp_benchmark/harbor_output/cvdp_agentic_axi4lite_to_pcie_config_0003"
+      },
+      {
+        "name": "cvdp_agentic_axis_broadcaster_0001",
+        "path": "/home/saketh/research/cvdp_benchmark/harbor_output/cvdp_agentic_axis_broadcaster_0001"
+      },
+      {
+        "name": "cvdp_agentic_axis_to_uart_0004",
+        "path": "/home/saketh/research/cvdp_benchmark/harbor_output/cvdp_agentic_axis_to_uart_0004"
+      },
+      {
+        "name": "cvdp_agentic_barrel_shifter_0002",
+        "path": "/home/saketh/research/cvdp_benchmark/harbor_output/cvdp_agentic_barrel_shifter_0002"
+      },
+      {
+        "name": "cvdp_agentic_binary_search_tree_algorithms_0001",
+        "path": "/home/saketh/research/cvdp_benchmark/harbor_output/cvdp_agentic_binary_search_tree_algorithms_0001"
+      },
+      {
+        "name": "cvdp_agentic_binary_search_tree_algorithms_0014",
+        "path": "/home/saketh/research/cvdp_benchmark/harbor_output/cvdp_agentic_binary_search_tree_algorithms_0014"
+      },
+      {
+        "name": "cvdp_agentic_cache_controller_0001",
+        "path": "/home/saketh/research/cvdp_benchmark/harbor_output/cvdp_agentic_cache_controller_0001"
+      },
+      {
+        "name": "cvdp_agentic_custom_fifo_0004",
+        "path": "/home/saketh/research/cvdp_benchmark/harbor_output/cvdp_agentic_custom_fifo_0004"
+      },
+      {
+        "name": "cvdp_agentic_direct_map_cache_0003",
+        "path": "/home/saketh/research/cvdp_benchmark/harbor_output/cvdp_agentic_direct_map_cache_0003"
+      },
+      {
+        "name": "cvdp_agentic_door_lock_0001",
+        "path": "/home/saketh/research/cvdp_benchmark/harbor_output/cvdp_agentic_door_lock_0001"
+      },
+      {
+        "name": "cvdp_agentic_dual_port_memory_0004",
+        "path": "/home/saketh/research/cvdp_benchmark/harbor_output/cvdp_agentic_dual_port_memory_0004"
+      },
+      {
+        "name": "cvdp_agentic_dynamic_equalizer_0001",
+        "path": "/home/saketh/research/cvdp_benchmark/harbor_output/cvdp_agentic_dynamic_equalizer_0001"
+      },
+      {
+        "name": "cvdp_agentic_dynamic_equalizer_0004",
+        "path": "/home/saketh/research/cvdp_benchmark/harbor_output/cvdp_agentic_dynamic_equalizer_0004"
+      },
+      {
+        "name": "cvdp_agentic_dynamic_equalizer_0008",
+        "path": "/home/saketh/research/cvdp_benchmark/harbor_output/cvdp_agentic_dynamic_equalizer_0008"
+      },
+      {
+        "name": "cvdp_agentic_elevator_control_0004",
+        "path": "/home/saketh/research/cvdp_benchmark/harbor_output/cvdp_agentic_elevator_control_0004"
+      },
+      {
+        "name": "cvdp_agentic_ethernet_mii_0004",
+        "path": "/home/saketh/research/cvdp_benchmark/harbor_output/cvdp_agentic_ethernet_mii_0004"
+      },
+      {
+        "name": "cvdp_agentic_event_scheduler_0004",
+        "path": "/home/saketh/research/cvdp_benchmark/harbor_output/cvdp_agentic_event_scheduler_0004"
+      },
+      {
+        "name": "cvdp_agentic_event_storing_0001",
+        "path": "/home/saketh/research/cvdp_benchmark/harbor_output/cvdp_agentic_event_storing_0001"
+      },
+      {
+        "name": "cvdp_agentic_fixed_arbiter_0010",
+        "path": "/home/saketh/research/cvdp_benchmark/harbor_output/cvdp_agentic_fixed_arbiter_0010"
+      },
+      {
+        "name": "cvdp_agentic_gcd_0007",
+        "path": "/home/saketh/research/cvdp_benchmark/harbor_output/cvdp_agentic_gcd_0007"
+      },
+      {
+        "name": "cvdp_agentic_jpeg_runlength_enc_0001",
+        "path": "/home/saketh/research/cvdp_benchmark/harbor_output/cvdp_agentic_jpeg_runlength_enc_0001"
+      },
+      {
+        "name": "cvdp_agentic_lfsr_0001",
+        "path": "/home/saketh/research/cvdp_benchmark/harbor_output/cvdp_agentic_lfsr_0001"
+      },
+      {
+        "name": "cvdp_agentic_lfsr_0005",
+        "path": "/home/saketh/research/cvdp_benchmark/harbor_output/cvdp_agentic_lfsr_0005"
+      },
+      {
+        "name": "cvdp_agentic_low_power_channel_0001",
+        "path": "/home/saketh/research/cvdp_benchmark/harbor_output/cvdp_agentic_low_power_channel_0001"
+      },
+      {
+        "name": "cvdp_agentic_monte_carlo_0006",
+        "path": "/home/saketh/research/cvdp_benchmark/harbor_output/cvdp_agentic_monte_carlo_0006"
+      },
+      {
+        "name": "cvdp_agentic_multiplexer_0001",
+        "path": "/home/saketh/research/cvdp_benchmark/harbor_output/cvdp_agentic_multiplexer_0001"
+      },
+      {
+        "name": "cvdp_agentic_nmea_gps_0008",
+        "path": "/home/saketh/research/cvdp_benchmark/harbor_output/cvdp_agentic_nmea_gps_0008"
+      },
+      {
+        "name": "cvdp_agentic_phase_rotation_0013",
+        "path": "/home/saketh/research/cvdp_benchmark/harbor_output/cvdp_agentic_phase_rotation_0013"
+      },
+      {
+        "name": "cvdp_agentic_phase_rotation_0015",
+        "path": "/home/saketh/research/cvdp_benchmark/harbor_output/cvdp_agentic_phase_rotation_0015"
+      },
+      {
+        "name": "cvdp_agentic_phase_rotation_0019",
+        "path": "/home/saketh/research/cvdp_benchmark/harbor_output/cvdp_agentic_phase_rotation_0019"
+      },
+      {
+        "name": "cvdp_agentic_phase_rotation_0028",
+        "path": "/home/saketh/research/cvdp_benchmark/harbor_output/cvdp_agentic_phase_rotation_0028"
+      },
+      {
+        "name": "cvdp_agentic_phase_rotation_0038",
+        "path": "/home/saketh/research/cvdp_benchmark/harbor_output/cvdp_agentic_phase_rotation_0038"
+      },
+      {
+        "name": "cvdp_agentic_poly_decimator_0001",
+        "path": "/home/saketh/research/cvdp_benchmark/harbor_output/cvdp_agentic_poly_decimator_0001"
+      },
+      {
+        "name": "cvdp_agentic_rgb_color_space_conversion_0001",
+        "path": "/home/saketh/research/cvdp_benchmark/harbor_output/cvdp_agentic_rgb_color_space_conversion_0001"
+      },
+      {
+        "name": "cvdp_agentic_rgb_color_space_conversion_0004",
+        "path": "/home/saketh/research/cvdp_benchmark/harbor_output/cvdp_agentic_rgb_color_space_conversion_0004"
+      },
+      {
+        "name": "cvdp_agentic_sorter_0009",
+        "path": "/home/saketh/research/cvdp_benchmark/harbor_output/cvdp_agentic_sorter_0009"
+      },
+      {
+        "name": "cvdp_agentic_sorter_0026",
+        "path": "/home/saketh/research/cvdp_benchmark/harbor_output/cvdp_agentic_sorter_0026"
+      },
+      {
+        "name": "cvdp_agentic_sync_serial_communication_0001",
+        "path": "/home/saketh/research/cvdp_benchmark/harbor_output/cvdp_agentic_sync_serial_communication_0001"
+      },
+      {
+        "name": "cvdp_agentic_systolic_array_0001",
+        "path": "/home/saketh/research/cvdp_benchmark/harbor_output/cvdp_agentic_systolic_array_0001"
+      },
+      {
+        "name": "cvdp_agentic_ttc_lite_0001",
+        "path": "/home/saketh/research/cvdp_benchmark/harbor_output/cvdp_agentic_ttc_lite_0001"
+      },
+      {
+        "name": "cvdp_agentic_universal_shift_reg_0001",
+        "path": "/home/saketh/research/cvdp_benchmark/harbor_output/cvdp_agentic_universal_shift_reg_0001"
+      },
+      {
+        "name": "cvdp_agentic_universal_shift_reg_0003",
+        "path": "/home/saketh/research/cvdp_benchmark/harbor_output/cvdp_agentic_universal_shift_reg_0003"
+      }
+    ]
+  }
+]

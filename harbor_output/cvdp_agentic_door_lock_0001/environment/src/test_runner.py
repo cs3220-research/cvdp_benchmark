@@ -1,6 +1,6 @@
 import os
 from pathlib import Path
-from cocotb_tools.runner import get_runner
+from cocotb.runner import get_runner
 import pytest
 import random
 

@@ -1,5 +1,5 @@
 import os
-from cocotb_tools.runner import get_runner
+from cocotb.runner import get_runner
 
 verilog_sources = os.getenv("VERILOG_SOURCES").split()
 toplevel_lang   = os.getenv("TOPLEVEL_LANG")

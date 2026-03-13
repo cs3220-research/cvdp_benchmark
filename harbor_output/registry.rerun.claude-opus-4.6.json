@@ -1,0 +1,57 @@
+[
+  {
+    "name": "cvdp_v1.0.4_agentic_code_generation_no_commercial",
+    "version": "1.0",
+    "description": "Harbor conversion of cvdp_v1.0.4_agentic_code_generation_no_commercial.jsonl",
+    "tasks": [
+      {
+        "name": "cvdp_agentic_binary_search_tree_algorithms_0014",
+        "path": "/home/saketh/research/cvdp_benchmark/harbor_output/cvdp_agentic_binary_search_tree_algorithms_0014"
+      },
+      {
+        "name": "cvdp_agentic_digital_stopwatch_0001",
+        "path": "/home/saketh/research/cvdp_benchmark/harbor_output/cvdp_agentic_digital_stopwatch_0001"
+      },
+      {
+        "name": "cvdp_agentic_dma_xfer_engine_0001",
+        "path": "/home/saketh/research/cvdp_benchmark/harbor_output/cvdp_agentic_dma_xfer_engine_0001"
+      },
+      {
+        "name": "cvdp_agentic_dynamic_equalizer_0001",
+        "path": "/home/saketh/research/cvdp_benchmark/harbor_output/cvdp_agentic_dynamic_equalizer_0001"
+      },
+      {
+        "name": "cvdp_agentic_ethernet_mii_0004",
+        "path": "/home/saketh/research/cvdp_benchmark/harbor_output/cvdp_agentic_ethernet_mii_0004"
+      },
+      {
+        "name": "cvdp_agentic_ethernet_mii_0006",
+        "path": "/home/saketh/research/cvdp_benchmark/harbor_output/cvdp_agentic_ethernet_mii_0006"
+      },
+      {
+        "name": "cvdp_agentic_hdbn_codec_0001",
+        "path": "/home/saketh/research/cvdp_benchmark/harbor_output/cvdp_agentic_hdbn_codec_0001"
+      },
+      {
+        "name": "cvdp_agentic_jpeg_runlength_enc_0001",
+        "path": "/home/saketh/research/cvdp_benchmark/harbor_output/cvdp_agentic_jpeg_runlength_enc_0001"
+      },
+      {
+        "name": "cvdp_agentic_nmea_gps_0008",
+        "path": "/home/saketh/research/cvdp_benchmark/harbor_output/cvdp_agentic_nmea_gps_0008"
+      },
+      {
+        "name": "cvdp_agentic_phase_rotation_0015",
+        "path": "/home/saketh/research/cvdp_benchmark/harbor_output/cvdp_agentic_phase_rotation_0015"
+      },
+      {
+        "name": "cvdp_agentic_poly_decimator_0001",
+        "path": "/home/saketh/research/cvdp_benchmark/harbor_output/cvdp_agentic_poly_decimator_0001"
+      },
+      {
+        "name": "cvdp_agentic_rgb_color_space_conversion_0004",
+        "path": "/home/saketh/research/cvdp_benchmark/harbor_output/cvdp_agentic_rgb_color_space_conversion_0004"
+      }
+    ]
+  }
+]

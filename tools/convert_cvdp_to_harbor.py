@@ -608,6 +608,14 @@ def convert_row(row: dict[str, Any], task_dir: Path) -> None:
         write_text(task_dir / "solution" / "solve.sh", SOLVE_SH_TEMPLATE, executable=True)
         write_tree(task_dir / "solution" / "files", solution_files)
 
+    # Fix known upstream bug: cocotb_tools.runner -> cocotb.runner
+    task_env_src_dir = task_dir / "environment" / "src"
+    if task_env_src_dir.is_dir():
+        for py_file in task_env_src_dir.rglob("*.py"):
+            content = py_file.read_text()
+            if "cocotb_tools.runner" in content:
+                py_file.write_text(content.replace("cocotb_tools.runner", "cocotb.runner"))
+
 
 def main() -> None:
     args = parse_args()
